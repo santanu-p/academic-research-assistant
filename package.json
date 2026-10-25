@@ -1,0 +1,25 @@
+{
+  "name": "academic-research-assistant",
+  "version": "3.0.0",
+  "description": "Portable academic research skills, a local MCP server and scientific workflow tools.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {"type": "git", "url": "git+https://github.com/santanu-p/academic-research-assistant.git"},
+  "homepage": "https://github.com/santanu-p/academic-research-assistant#readme",
+  "bugs": {"url": "https://github.com/santanu-p/academic-research-assistant/issues"},
+  "engines": {"node": ">=22"},
+  "bin": {"academic-research-assistant": "cli/ara.mjs"},
+  "files": [
+    "cli/", "lib/", "server/", "skills/", "catalog/", "docs/", "tools/", "workflows/", "examples/",
+    ".codex-plugin/", ".claude-plugin/", "plugin.json", "mcp.json", ".mcp.json", "SKILL.md",
+    "README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "node dev/build-catalog.mjs",
+    "validate": "node dev/validate.mjs",
+    "test": "node --test",
+    "test:python": "python -B -m unittest discover -s tests/python",
+    "prepack": "npm run build && npm run validate && npm test"
+  },
+  "keywords": ["research", "academic", "agent-skills", "mcp", "codex", "claude", "scientific-writing"]
+}

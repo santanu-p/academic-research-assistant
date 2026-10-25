@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "academic-research-assistant",
+  "version": "3.0.0",
+  "description": "Evidence-grounded research, writing, analysis and academic artifacts with portable skills and local navigation tools.",
+  "keywords": ["research", "academic", "writing", "scientific", "reproducibility"],
+  "extensions": {
+    "com.openai": {
+      "requires_local_executor": true,
+      "onboardingSkill": "./skills/research-assistant/SKILL.md",
+      "interface": {
+        "displayName": "Academic Research Assistant",
+        "shortDescription": "Research methods and writing",
+        "category": "Education & Research",
+        "longDescription": "Canonical methods for questions, evidence, design, analysis, writing, publication and academic artifacts. Local MCP provides read-only navigation and bundle consistency checks. Scientific execution uses actual host tools or optional Python helpers; no scholarly account or paid model connection is bundled.",
+        "capabilities": ["Academic research methods", "Scientific writing and artifacts", "Local capability navigation"],
+        "defaultPrompt": [
+          "Help me investigate a research question using available evidence.",
+          "Review my research design and prepare a reproducible workflow.",
+          "Help me write and verify an academic artifact."
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,489 @@
+[
+  {
+    "name": "academic-editing",
+    "description": "Edit, proofread, translate, paraphrase, and shorten academic text while retaining technical meaning, evidence, citations, and author intent.",
+    "path": "skills/academic-editing/SKILL.md",
+    "keywords": [
+      "edit",
+      "proofread",
+      "humanize",
+      "paraphrase",
+      "translate",
+      "shorten",
+      "word limit"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "adversarial-revision",
+    "description": "Critically review and revise research artifacts through bounded, evidence-linked challenge, repair, and rechecking without treating iteration counts as success.",
+    "path": "skills/adversarial-revision/SKILL.md",
+    "keywords": [
+      "review loop",
+      "adversarial review",
+      "iterative revision"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "citations-and-bibliographies",
+    "description": "Create and repair source-traceable citations and reference lists, including BibTeX, biblatex, Biber, natbib, and manuscript citation-backend consistency.",
+    "path": "skills/citations-and-bibliographies/SKILL.md",
+    "keywords": [
+      "bibliography",
+      "references",
+      "bibtex",
+      "biber",
+      "citation style",
+      "natbib"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "document-conversion",
+    "description": "Convert academic documents among LaTeX, word-processing, Markdown, HTML, and PDF workflows while tracking semantic, structural, and visual fidelity.",
+    "path": "skills/document-conversion/SKILL.md",
+    "keywords": [
+      "convert document",
+      "pandoc",
+      "latex to word",
+      "format conversion"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "document-production",
+    "description": "Produce editable academic documents and checked deliverables through explicit source, build, rendering, inspection, and packaging steps.",
+    "path": "skills/document-production/SKILL.md",
+    "keywords": [
+      "academic document",
+      "report",
+      "manual",
+      "book",
+      "lecture notes",
+      "latex document"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "evidence-extraction",
+    "description": "Extract auditable study-level or claim-level evidence into a defined schema while preserving source locations, missing values, versions, and dependent reports.",
+    "path": "skills/evidence-extraction/SKILL.md",
+    "keywords": [
+      "extract evidence",
+      "extraction table",
+      "data extraction"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "journal-submission",
+    "description": "Assess journal fit and prepare a verified submission package against current venue requirements, with truthful declarations, complete files, and unresolved items clearly identified.",
+    "path": "skills/journal-submission/SKILL.md",
+    "keywords": [
+      "journal selection",
+      "submission",
+      "author guidelines",
+      "cover letter"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "literature-review",
+    "description": "Synthesize a bounded body of literature into a source-traceable narrative organized by questions, mechanisms, methods, findings, and unresolved disagreements.",
+    "path": "skills/literature-review/SKILL.md",
+    "keywords": [
+      "literature review",
+      "evidence synthesis",
+      "claim check",
+      "decision brief",
+      "debate"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "literature-search",
+    "description": "Build and execute a documented scholarly search using concept blocks, suitable discovery sources, citation chaining, and transparent coverage limits.",
+    "path": "skills/literature-search/SKILL.md",
+    "keywords": [
+      "find papers",
+      "literature search",
+      "citation chaining",
+      "full text",
+      "database"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "manuscript-writing",
+    "description": "Draft and restructure research manuscripts, abstracts, proposals, and grant narratives from traceable evidence while preserving contribution and uncertainty.",
+    "path": "skills/manuscript-writing/SKILL.md",
+    "keywords": [
+      "write manuscript",
+      "abstract",
+      "introduction",
+      "paper outline",
+      "paper sections"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "mathematical-modeling",
+    "description": "Build and analyze mathematical models with explicit assumptions, dimensions, boundary conditions, identifiability, and limits of interpretation.",
+    "path": "skills/mathematical-modeling/SKILL.md",
+    "keywords": [
+      "mathematical model",
+      "derivation",
+      "equation code",
+      "theoretical model"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "mathematics-notation",
+    "description": "Express mathematical arguments in consistent, readable LaTeX while preserving definitions, domains, dimensions, quantifiers, and the distinction between proof and illustration.",
+    "path": "skills/mathematics-notation/SKILL.md",
+    "keywords": [
+      "equation",
+      "proof",
+      "theorem",
+      "algorithm",
+      "pseudocode",
+      "units"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "meta-analysis",
+    "description": "Assess whether quantitative study results can be pooled and conduct a reproducible synthesis with compatible estimands, dependency handling, uncertainty, and sensitivity analysis.",
+    "path": "skills/meta-analysis/SKILL.md",
+    "keywords": [
+      "meta-analysis",
+      "meta analysis",
+      "pooled effect",
+      "heterogeneity"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "methodology-design",
+    "description": "Design an empirical, qualitative, theoretical, or computational study whose evidence and analysis can answer a specified research question.",
+    "path": "skills/methodology-design/SKILL.md",
+    "keywords": [
+      "study design",
+      "methodology",
+      "framework",
+      "survey",
+      "experiment",
+      "sampling"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "paper-reading",
+    "description": "Read and explain a research paper with a traceable account of its question, methods, results, assumptions, and limitations, including equations and figures when relevant.",
+    "path": "skills/paper-reading/SKILL.md",
+    "keywords": [
+      "explain paper",
+      "summarize paper",
+      "paper summary"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "presentations-posters",
+    "description": "Create research talks, slide decks, Beamer sources, and academic posters with audience-appropriate claims, readable visuals, and rehearsal-based timing.",
+    "path": "skills/presentations-posters/SKILL.md",
+    "keywords": [
+      "presentation",
+      "slides",
+      "poster",
+      "talk",
+      "beamer",
+      "powerpoint",
+      "defense"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "professional-documents",
+    "description": "Prepare truthful academic CVs, applications, cover letters, statements, correspondence, and proposal documents tailored to a specific audience and requirements.",
+    "path": "skills/professional-documents/SKILL.md",
+    "keywords": [
+      "cv",
+      "resume",
+      "recommendation letter",
+      "certificate",
+      "invitation",
+      "flyer"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "qualitative-analysis",
+    "description": "Analyze interviews, observations, documents, and other qualitative materials with a coherent methodological stance, contextual interpretation, reflexivity, and traceable evidence.",
+    "path": "skills/qualitative-analysis/SKILL.md",
+    "keywords": [
+      "qualitative",
+      "thematic analysis",
+      "coding",
+      "interview",
+      "reflexivity"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "research-appraisal",
+    "description": "Appraise a study or research manuscript by matching claims to design, evidence, analysis, reporting, and inference, with actionable and proportionate judgments.",
+    "path": "skills/research-appraisal/SKILL.md",
+    "keywords": [
+      "appraise",
+      "peer review",
+      "manuscript review",
+      "risk of bias"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "research-assistant",
+    "description": "Coordinate academic research tasks, select specialist methods and explain the available local tools and their limits.",
+    "path": "skills/research-assistant/SKILL.md",
+    "keywords": [
+      "help",
+      "capabilities",
+      "onboarding"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "research-communication",
+    "description": "Translate research into an audience-appropriate talk, summary, explanation, or public narrative while preserving the evidence, uncertainty, ownership, and practical limits.",
+    "path": "skills/research-communication/SKILL.md",
+    "keywords": [
+      "plain language",
+      "public audience",
+      "policy brief",
+      "research blog",
+      "press release"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "research-integrity",
+    "description": "Review research provenance, attribution, authorship, consent, disclosure, and recordkeeping, and prepare transparent corrections or escalation questions from documented evidence.",
+    "path": "skills/research-integrity/SKILL.md",
+    "keywords": [
+      "ethics",
+      "consent",
+      "plagiarism",
+      "data privacy",
+      "research integrity"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "research-pipeline",
+    "description": "Coordinate research from a defined question to reproducible analyses and communication using explicit stage inputs, decisions, handoffs, and completion evidence.",
+    "path": "skills/research-pipeline/SKILL.md",
+    "keywords": [
+      "research pipeline",
+      "end to end",
+      "orchestration"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "research-planning",
+    "description": "Convert a research objective into a dependency-aware plan with concrete outputs, decision milestones, resource constraints, risks, and honest completion criteria.",
+    "path": "skills/research-planning/SKILL.md",
+    "keywords": [
+      "timeline",
+      "research plan",
+      "schedule",
+      "milestones",
+      "project management"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "research-proposals",
+    "description": "Develop a research or funding proposal with a verified problem statement, coherent aims, feasible methods, risks, milestones, and evidence-bounded significance.",
+    "path": "skills/research-proposals/SKILL.md",
+    "keywords": [
+      "grant",
+      "research proposal",
+      "funding",
+      "proposal background"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "research-question",
+    "description": "Turn a research interest or unresolved finding into a bounded, answerable question with explicit concepts, scope, alternatives, and feasibility criteria.",
+    "path": "skills/research-question/SKILL.md",
+    "keywords": [
+      "research gap",
+      "topic",
+      "hypothesis",
+      "objectives",
+      "question"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "research-validation",
+    "description": "Design and perform proportionate validation of scientific claims, analyses, models, and computational results with traceable evidence and explicit limits.",
+    "path": "skills/research-validation/SKILL.md",
+    "keywords": [
+      "validate",
+      "verification",
+      "simulation",
+      "convergence",
+      "sensitivity",
+      "reproducibility"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "reviewer-response",
+    "description": "Convert editorial and reviewer comments into an evidence-based revision plan and point-by-point response linked to actual manuscript changes and verified analyses.",
+    "path": "skills/reviewer-response/SKILL.md",
+    "keywords": [
+      "reviewer response",
+      "rebuttal",
+      "response to reviewers",
+      "respond to reviewers",
+      "reviewer comments"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "scientific-reasoning",
+    "description": "Examine scientific arguments, hypotheses, mechanisms, and alternative explanations across empirical, qualitative, theoretical, and computational research.",
+    "path": "skills/scientific-reasoning/SKILL.md",
+    "keywords": [
+      "mechanism",
+      "scientific argument",
+      "causal reasoning",
+      "explanation"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "scientific-visuals",
+    "description": "Create and inspect scientific figures and tables with explicit data provenance, uncertainty meaning, physical dimensions, and reproducible local exports.",
+    "path": "skills/scientific-visuals/SKILL.md",
+    "keywords": [
+      "figure",
+      "chart",
+      "plot",
+      "visualization",
+      "numerical table",
+      "pareto"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "source-verification",
+    "description": "Verify a scholarly source's identity, version, provenance, publication status, and support for a specific claim without confusing metadata checks with quality appraisal.",
+    "path": "skills/source-verification/SKILL.md",
+    "keywords": [
+      "verify citation",
+      "doi",
+      "retraction",
+      "source credibility"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "statistical-analysis",
+    "description": "Plan and execute reproducible quantitative analysis with a defined estimand, design-aware models, diagnostics, uncertainty, and restrained interpretation.",
+    "path": "skills/statistical-analysis/SKILL.md",
+    "keywords": [
+      "statistics",
+      "regression",
+      "statistical analysis",
+      "data analysis",
+      "p-value"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "systematic-review",
+    "description": "Plan and conduct protocol-driven evidence reviews with explicit eligibility, reproducible searching, study linkage, screening records, appraisal, and transparent synthesis.",
+    "path": "skills/systematic-review/SKILL.md",
+    "keywords": [
+      "systematic review",
+      "scoping review",
+      "prisma",
+      "screening"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "teaching-materials",
+    "description": "Design lessons, lecture notes, problem sets, examinations, and worked solutions with aligned learning goals, defensible difficulty, and checked mathematical or scientific content.",
+    "path": "skills/teaching-materials/SKILL.md",
+    "keywords": [
+      "homework",
+      "exam",
+      "quiz",
+      "assessment",
+      "worksheet",
+      "solutions"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "tex-build-repair",
+    "description": "Diagnose and repair LaTeX build failures and consequential warnings while preserving document meaning, project structure, and reproducible build instructions.",
+    "path": "skills/tex-build-repair/SKILL.md",
+    "keywords": [
+      "compile",
+      "latex error",
+      "missing package",
+      "build failure",
+      "latex cleanup"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "tex-figures-tables",
+    "description": "Construct and integrate research figures and tables in LaTeX with faithful data, interpretable labels, accessible encodings, and checked placement.",
+    "path": "skills/tex-figures-tables/SKILL.md",
+    "keywords": [
+      "tikz",
+      "pgfplots",
+      "latex table",
+      "latex figure",
+      "longtable"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "tex-layout",
+    "description": "Improve LaTeX page structure, typography, spacing, and navigation through measured layout decisions and inspection of freshly built pages.",
+    "path": "skills/tex-layout/SKILL.md",
+    "keywords": [
+      "font",
+      "layout",
+      "multilingual",
+      "macro",
+      "hyperref",
+      "cross-reference"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "thesis-preparation",
+    "description": "Plan, organize, draft, and prepare theses and dissertations with explicit contribution boundaries, institutional checks, reproducible sources, and evidence-based viva preparation.",
+    "path": "skills/thesis-preparation/SKILL.md",
+    "keywords": [
+      "thesis",
+      "dissertation",
+      "viva",
+      "degree"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  }
+]
