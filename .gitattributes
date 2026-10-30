@@ -1,1 +1,3 @@
-* text=auto eol=lf
+# Inventories and upstream source mappings hash exact file bytes.
+# Preserve those bytes when Git checks files in and out on any platform.
+* -text whitespace=cr-at-eol

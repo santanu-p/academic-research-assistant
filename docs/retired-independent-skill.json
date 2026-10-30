@@ -1,0 +1,10 @@
+{
+  "reason": "Removed from the independent draft at the user request; specialized LaTeX skills and the original collection are preserved.",
+  "former_import": {
+    "source_name": "latex-document-workflow",
+    "target_name": "latex-document-workflow",
+    "source_sha256": "86d214cfcd542b23f6f2f089962945c1046eab77d96a37e46612ed66b688ce90",
+    "target_sha256": "86d214cfcd542b23f6f2f089962945c1046eab77d96a37e46612ed66b688ce90",
+    "note": "Copied unchanged."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "purpose": "Illustrate how to document an editable table; all entries are hypothetical.",
+  "source": {"description": "Synthetic illustration, not research data", "locator": null, "version": null},
+  "variables": [
+    {"name": "Condition", "role": "row label", "unit": null, "definition": "Hypothetical condition", "uncertainty": null},
+    {"name": "Duration", "role": "measurement", "unit": "s", "definition": "Illustrative duration", "uncertainty": "Not supplied"}
+  ],
+  "display": {"form": "table", "medium": "document or web", "width_mm": null, "height_mm": null},
+  "missing_values": "An em dash indicates an unavailable measurement; it is not zero.",
+  "notes": ["Values are invented for template demonstration; no inference is intended."]
+}

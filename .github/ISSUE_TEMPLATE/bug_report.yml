@@ -1,0 +1,21 @@
+name: Bug report
+description: Report a reproducible problem in the local draft.
+title: '[Bug]: '
+body:
+  - type: markdown
+    attributes:
+      value: Do not include credentials, private research data, or sensitive review correspondence.
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps and expected behavior
+      description: Include a minimal sanitized command or request and what should happen.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and environment
+      description: Include sanitized output, operating system, Node version, draft version and any checks run.
+    validations:
+      required: true

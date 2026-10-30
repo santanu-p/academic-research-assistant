@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hypothetical research table</title>
+  <style>
+    body { font: 1rem/1.5 system-ui, sans-serif; color: #202124; max-width: 42rem; margin: 2rem auto; padding: 0 1rem; }
+    table { border-collapse: collapse; width: 100%; }
+    caption { text-align: left; font-weight: 600; margin-bottom: .5rem; }
+    th, td { padding: .45rem .6rem; border-bottom: 1px solid #d5d7da; text-align: left; }
+    th[scope="col"] { border-bottom: 2px solid #555; }
+    .number { text-align: right; font-variant-numeric: tabular-nums; }
+    .note { font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <table aria-describedby="table-note">
+    <caption>Hypothetical durations for demonstrating table layout</caption>
+    <thead><tr><th scope="col">Condition</th><th scope="col" class="number">Duration (s)</th></tr></thead>
+    <tbody><tr><th scope="row">A</th><td class="number">1.2</td></tr><tr><th scope="row">B</th><td class="number">&mdash;</td></tr></tbody>
+  </table>
+  <p class="note" id="table-note">Values are synthetic. An em dash means unavailable, not zero. Uncertainty was not supplied. Source: synthetic illustration; replace with the actual dataset and version when adapting this template.</p>
+</body>
+</html>

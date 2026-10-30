@@ -23,6 +23,8 @@ Identify the central claims and their intended scope. Select criteria appropriat
 6. Assess transparency and reproducibility: availability of methods, data, code, derivations, model settings, and provenance sufficient for the claimed result. Inaccessibility is a reproducibility limitation; it does not alone prove that a result is false.
 7. Review reporting for omitted information that prevents judgment. Ask for specific missing details rather than asserting that an unreported procedure was not performed. Note discrepancies with protocols or registrations without assuming intent.
 
+For each concern that could change a central claim, make the causal or inferential pathway explicit: identify the observed design or analysis feature and its source location; explain how it could affect the particular comparison, outcome, and time point; and state its implication for the claim. Describe a plausible direction or magnitude only when the evidence and assumptions support it; otherwise leave it undetermined. If reporting is insufficient, label the judgment uncertain and specify the missing information or a feasible sensitivity check. Precision does not by itself rule out systematic bias.
+
 ## Apply the appropriate lens
 
 For quantitative research, assess the estimand, design, identification assumptions, precision, model diagnostics, missing-data handling, and alternative explanations. Separate internal validity from generalizability and statistical uncertainty from systematic bias.

@@ -27,6 +27,45 @@ For Markdown or HTML, preserve hierarchy, links, code, math delimiters, and refe
 
 For scanned PDFs or images, separate optical recognition from correction. Flag uncertain characters, negative signs, decimals, superscripts, subscripts, and reference identifiers. Reconstruct tables by rows and columns, then reconcile values with the visible source. Never silently invent text hidden by cropping or illegibility.
 
+## Spreadsheet or CSV to a LaTeX table
+
+Identify the workbook, sheet, exact range, header rows, units, formula cells and whether the user wants displayed values or formulas. Preserve the original workbook. CSV export can lose multiple sheets, formulas, number formats, leading zeros, dates and metadata; compare the export against the intended workbook cells and record the export settings. Determine delimiter, encoding, decimal convention, and meanings of blanks and missing-value markers before processing. Record the source path, sheet or range, export date, row order and any changes; never silently turn blank or unavailable cells into zero.
+
+For a simple UTF-8 comma-separated file containing a single header row and plain text cells, the following Python standard-library example produces an editable `tabular` fragment. Save it as `csv_to_tex.py` and run `python csv_to_tex.py input.csv output.tex` with a new output path. It preserves cell strings without numeric conversion or rounding, escapes LaTeX special characters, rejects inconsistent widths and multiline cells, leaves blank cells blank, and refuses to overwrite an existing output. It does not recover spreadsheet formulas or formatting, interpret units or missingness, or support embedded LaTeX commands; document those limitations and choose a richer workflow when needed.
+
+~~~python
+import csv
+import sys
+from pathlib import Path
+
+if len(sys.argv) != 3:
+    raise SystemExit("Usage: python csv_to_tex.py input.csv output.tex")
+source, destination = map(Path, sys.argv[1:])
+if source.resolve() == destination.resolve():
+    raise SystemExit("Input and output must be different files")
+with source.open(encoding="utf-8-sig", newline="") as stream:
+    rows = list(csv.reader(stream, strict=True))
+if not rows or not rows[0] or any(len(row) != len(rows[0]) for row in rows):
+    raise SystemExit("Expected a nonempty rectangular CSV with a header")
+if any("\n" in cell or "\r" in cell for row in rows for cell in row):
+    raise SystemExit("Multiline cells require a different table workflow")
+escapes = {"\\": r"\textbackslash{}", "&": r"\&", "%": r"\%",
+           "$": r"\$", "#": r"\#", "_": r"\_", "{": r"\{",
+           "}": r"\}", "~": r"\textasciitilde{}", "^": r"\textasciicircum{}"}
+def escape(cell):
+    return "".join(escapes.get(character, character) for character in cell)
+lines = [r"\begin{tabular}{" + "l" * len(rows[0]) + "}", r"\hline"]
+for index, row in enumerate(rows):
+    lines.append(" & ".join(escape(cell) for cell in row) + r" \\")
+    if index == 0:
+        lines.append(r"\hline")
+lines.extend([r"\hline", r"\end{tabular}"])
+with destination.open("x", encoding="utf-8", newline="\n") as stream:
+    stream.write("\n".join(lines) + "\n")
+~~~
+
+Keep units in unambiguous headers or an accompanying note, and define whether blank, unavailable and not applicable cells differ. For numeric alignment or long and wide tables, adapt the fragment using the project's table packages without altering values. Reconcile row and column counts and compare every value, sign, decimal spelling and unit against the authoritative source, especially after sorting, formatting or unit conversion. Compile in a minimal wrapper using the intended engine, then inspect the actual table at delivery size for clipped columns, wrapped labels, missing glyphs and correct rendering of escapes. Report whether the script ran, the table compiled and the output was visually inspected as separate checks.
+
 ## Rebuild and compare
 
 Produce a trial conversion and inspect representative difficult content before processing a long document. Revise the mapping if equations, citations, or tables fail. Preserve asset files with portable relative paths and meaningful names. Keep captions attached to the correct figures and references.

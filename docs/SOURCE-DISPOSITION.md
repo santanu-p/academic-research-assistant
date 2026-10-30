@@ -1,5 +1,7 @@
 # Supplied material and public release
 
+**Historical v3 record:** The statements below describe the earlier 38-skill public v3 tree. Version 3.1.0 adds 50 methods and includes the two MIT Humanizer sources with their notices. See [current third-party notices](../THIRD_PARTY_NOTICES.md) and [host setup](DRAFT-SETUP.md). The full original collection remains separately preserved; functional parity and redistribution rights for its other components remain unresolved.
+
 The original request called for preserving every supplied item. A subsequent request changed distribution to an open-source local project. These requirements are handled separately: the supplied files and earlier integrations remain recoverable in a private archive, while this public tree contains newly authored methods and implementations.
 
 Removing source credits or paraphrasing restricted text does not create redistribution rights. Version 3 does not vendor supplied source bodies, diagrams, example corpora, research cases, templates or scripts. It makes no claim that an existing work has been relicensed.

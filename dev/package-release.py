@@ -36,15 +36,24 @@ def main():
     assert set(archive) == expected, sorted(set(archive) ^ expected)
     for rel, data in archive.items():
         assert data == (ROOT / rel).read_bytes(), rel
-        assert not any(part in {".private-archive", "resources", "dev", "tests", "build", ".test-deps", ".npm-cache", "__pycache__"} for part in PurePosixPath(rel).parts), rel
+        assert not any(part in {".private-archive", "dev", "tests", "build", ".test-deps", ".npm-cache", "__pycache__"} for part in PurePosixPath(rel).parts), rel
     for entry in inventory:
         assert digest(archive[entry["path"]]) == entry["sha256"], entry["path"]
+    mapping = json.loads(archive["docs/humanizer-source-map.json"])
+    mapped = {item["destination"] for item in mapping}
+    for name in ("humanizer-main", "academic-humanizer-main"):
+        assert f"resources/upstream/{name}/LICENSE" in mapped
+    for item in mapping:
+        assert digest(archive[item["destination"]]) == item["sha256"], item["destination"]
     target = out / args.tarball.name
     target.write_bytes(args.tarball.read_bytes())
     plugin_zip = out / ("academic-research-assistant-" + version + ".zip")
     with zipfile.ZipFile(plugin_zip, "x", zipfile.ZIP_DEFLATED, compresslevel=9) as saved:
         for rel, data in sorted(archive.items()):
-            saved.writestr("academic-research-assistant/" + rel, data)
+            info = zipfile.ZipInfo("academic-research-assistant/" + rel, (2026, 1, 1, 0, 0, 0))
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.external_attr = 0o100644 << 16
+            saved.writestr(info, data, compresslevel=9)
     with zipfile.ZipFile(plugin_zip) as saved:
         assert saved.testzip() is None
         for rel, data in archive.items():

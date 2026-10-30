@@ -1,5 +1,7 @@
 # Installation and host support
 
+This is the historical v3 guide. Version 3.1.0 uses updated host wrappers; follow [host setup](DRAFT-SETUP.md) instead of the commands below.
+
 Use Node.js 22+ on a host with a local filesystem. Keep exported bundles intact because skill links refer to shared methods, documents, and optional tools. None of the exports edits global host configuration. Install/export means filesystem copying.
 
 ## Codex plugin marketplace

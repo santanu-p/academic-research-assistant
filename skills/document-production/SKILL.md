@@ -47,6 +47,12 @@ Render the fresh output and inspect every page when final visual delivery is req
 
 Confirm that graphics retain labels and that tables do not clip. Check bookmarks, links, searchable text, or accessibility features when the delivery specification requires them and available tools can inspect them. If a check cannot be performed, preserve the artifact and report the unverified property.
 
+## Accessible delivery
+
+When accessible delivery is requested, establish the intended readers, format, and any applicable requirements. Preserve semantic headings, lists, document language, meaningful link text, and logical reading order in the editable source. Provide useful text alternatives for informative figures and identify decorative material appropriately; keep captions and alternatives consistent with the evidence. Use table headers and a coherent cell order, and provide mathematical content in an accessible form supported by the chosen destination. Do not assume that a visually faithful image of an equation is accessible mathematics.
+
+Check the destination's actual support and the capabilities of the chosen authoring and export tools before promising a tagged PDF or a specific accessibility standard. Inspect tags and reading order, heading hierarchy, language, alternatives, links, tables, and mathematics with available tools and, where practical, assistive technology. Check that exported text corresponds to the visual content, including symbols and order. Searchable or selectable text, a successful build, and an automated check alone do not establish accessibility. Report the checks performed, failures or unsupported features, and any required manual or assistive-technology review; offer an accessible editable source or alternative format when the requested export cannot be verified.
+
 ## Package and verify
 
 Deliver the requested final format, editable source, necessary figures and bibliography, and concise build or usage instructions. Use relative asset paths within the package. Avoid embedding personal absolute paths, temporary credentials, or unrelated source collections.

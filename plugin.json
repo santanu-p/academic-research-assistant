@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "academic-research-assistant",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Evidence-grounded research, writing, analysis and academic artifacts with portable skills and local navigation tools.",
   "keywords": ["research", "academic", "writing", "scientific", "reproducibility"],
   "extensions": {

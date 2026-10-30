@@ -1,0 +1,24 @@
+% Standalone editable demonstration; replace the synthetic values and source.
+\documentclass{article}
+\usepackage{booktabs}
+\begin{document}
+\begin{table}[ht]
+  \centering
+  \caption{Hypothetical durations for demonstrating table layout}
+  \label{tab:duration-example}
+  \begin{tabular}{lr}
+    \toprule
+    Condition & Duration (s) \\
+    \midrule
+    A & 1.2 \\
+    B & --- \\
+    \bottomrule
+  \end{tabular}
+  \par\smallskip
+  \begin{minipage}{0.8\linewidth}\small
+    Note: Values are synthetic. --- indicates an unavailable value, not zero.
+    Uncertainty was not supplied. Source: synthetic illustration; replace with
+    the actual dataset and version when adapting this template.
+  \end{minipage}
+\end{table}
+\end{document}

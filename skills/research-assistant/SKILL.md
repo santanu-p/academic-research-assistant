@@ -34,6 +34,15 @@ Read [the research contract](../../docs/RESEARCH-CONTRACT.md). If local MCP is c
 | Create teaching or professional documents | teaching-materials; professional-documents |
 | Communicate through figures, talks or public prose | scientific-visuals; presentations-posters; research-communication |
 
+The table is a starting point; it does not enumerate the whole catalog. Search the catalog for the requested operation and read a narrower specialist when it fits:
+
+- For prose in the author's voice, use `humanizer` for general writing or `academic-humanizer` for scholarly writing. Respect a request not to use them; retain citations, claims and uncertainty.
+- For a particular evidence step, look for methods such as `citation-network-search`, `legal-open-access-search`, `reference-identity-verification`, `evidence-extraction-tables` and `evidence-strength-assessment`.
+- For a particular TeX artifact or repair, search the `latex-*` methods as well as the broader TeX methods. Choose the requested artifact, such as a thesis, Beamer slides, poster, PGFPlots chart, TikZ diagram, multilingual text or build repair.
+- For a detailed research handoff, look for methods such as `research-workflow-coordination`, `research-brief-development`, `research-proposal-development`, `scientific-peer-review` and `reviewer-response-workflow`.
+
+Confirm suggestions against the whole request, especially exclusions and conflicts. A keyword match is a candidate, not proof that a skill or external tool is suitable.
+
 ## Compose the work
 
 Use only methods that contribute to the requested result. An early question may need evidence exploration before a design is defensible. A synthesis may require extraction/appraisal but no new experiment. A theoretical project may need a derivation and counterexamples rather than participants or a performance benchmark.

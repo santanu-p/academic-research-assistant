@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Research visual specification",
+  "description": "A record of intended visual semantics and provenance; not proof of execution or scientific validity.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["purpose", "source", "variables", "display", "missing_values", "notes"],
+  "properties": {
+    "purpose": {"type": "string", "minLength": 1},
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["description", "locator", "version"],
+      "properties": {
+        "description": {"type": "string", "minLength": 1},
+        "locator": {"type": ["string", "null"]},
+        "version": {"type": ["string", "null"]}
+      }
+    },
+    "variables": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["name", "role", "unit", "definition", "uncertainty"],
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "role": {"type": "string", "minLength": 1},
+          "unit": {"type": ["string", "null"]},
+          "definition": {"type": "string", "minLength": 1},
+          "uncertainty": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "display": {
+      "type": "object", "additionalProperties": false,
+      "required": ["form", "medium", "width_mm", "height_mm"],
+      "properties": {
+        "form": {"type": "string", "minLength": 1},
+        "medium": {"type": "string", "minLength": 1},
+        "width_mm": {"type": ["number", "null"], "exclusiveMinimum": 0},
+        "height_mm": {"type": ["number", "null"], "exclusiveMinimum": 0}
+      }
+    },
+    "missing_values": {"type": "string", "minLength": 1},
+    "notes": {"type": "array", "items": {"type": "string"}}
+  }
+}

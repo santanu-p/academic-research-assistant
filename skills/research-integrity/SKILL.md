@@ -29,6 +29,16 @@ Quantitative integrity includes honest denominators, exclusions, analysis histor
 
 Theoretical integrity includes identifying borrowed arguments, distinguishing established propositions from conjectures, and retaining counterexamples or gaps that change the conclusion. Computational integrity includes dataset and software provenance, licenses, seeds where relevant, parameter and environment records, and truthful claims about execution and reproducibility. A successful local run does not establish universal reproducibility or scientific validity.
 
+## Review textual overlap and reuse
+
+When the user supplies a similarity report, examine the matched passages and accessible sources, not just the overall percentage. Locate each match in context and check whether it is a quotation, a citation, a reference-list entry, conventional terminology, a description of a standard procedure, or a substantive passage or idea requiring attribution. A match is not by itself proof of misconduct, and an unmatched passage is not proof of originality. Report source access and report configuration limits, including exclusions that affect what the score counts; do not invent a universal acceptable threshold.
+
+For a consequential match, compare meaning and attribution, retaining enough context to distinguish a properly marked quotation from uncredited borrowing or an overly close paraphrase. Recommend a proportionate action: add or correct attribution, mark a justified quotation, revise the explanation in the author's own structure while retaining its source, or remove material that is unnecessary. Preserve technical accuracy and the strength of the source's claim. A citation alone does not resolve a need for quotation marks or permission. Do not assist with disguising borrowed material or manipulating a detection score.
+
+For reuse of the author's own prior text, data, figures, or publications, identify the earlier work and intended reuse, check applicable institutional and venue rules and permissions, and disclose the relationship as required. Prior authorship does not automatically establish permission to republish a figure or permit redundant publication. Escalate uncertain cases instead of declaring a violation or granting permission.
+
+Deliver an editable overlap review table with location, source or match, contextual assessment, proposed correction, and unresolved verification or permission. Label entries that lack the original passage or source as pending; do not claim to have assessed a report or cleared a manuscript without inspecting the relevant material.
+
 ## Deliverable and verification
 
 Return a factual issue register with evidence location, applicable requirement, uncertainty, potential effect on the research record, and a proposed next action. Separate routine repairs from questions needing an ethics office, data steward, journal, legal adviser, or research-integrity process. Draft communications only within the requested scope; sending them requires explicit authorization.

@@ -15,7 +15,7 @@ export const extraKeywords={
  'systematic-review':['systematic review','scoping review','prisma','screening'],
  'meta-analysis':['meta-analysis','meta analysis','pooled effect','heterogeneity'],
  'citations-and-bibliographies':['bibliography','references','bibtex','biber','citation style','natbib'],
- 'statistical-analysis':['statistics','regression','statistical analysis','data analysis','p-value'],
+ 'statistical-analysis':['statistics','regression','statistical analysis','data analysis','p-value','confidence interval','credible interval','odds ratio','risk ratio','risk difference'],
  'qualitative-analysis':['qualitative','thematic analysis','coding','interview','reflexivity'],
  'research-proposals':['grant','research proposal','funding','proposal background'],
  'research-planning':['timeline','research plan','schedule','milestones','project management'],
@@ -25,10 +25,12 @@ export const extraKeywords={
  'research-communication':['plain language','public audience','policy brief','research blog','press release'],
  'manuscript-writing':['write manuscript','abstract','introduction','paper outline','paper sections'],
  'academic-editing':['edit','proofread','humanize','paraphrase','translate','shorten','word limit'],
+ 'humanizer':['humanize general prose','humanize my blog','humanize this email'],
+ 'academic-humanizer':['humanize academic prose','humanize my manuscript','humanize the manuscript','humanize my abstract'],
  'scientific-reasoning':['mechanism','scientific argument','causal reasoning','explanation'],
  'mathematical-modeling':['mathematical model','derivation','equation code','theoretical model'],
  'research-validation':['validate','verification','simulation','convergence','sensitivity','reproducibility'],
- 'adversarial-revision':['review loop','adversarial review','iterative revision'],
+ 'adversarial-revision':['review loop','adversarial review','iterative revision','manuscript versions','compare versions','compare revisions','text revision'],
  'research-pipeline':['research pipeline','end to end','orchestration'],
  'document-production':['academic document','report','manual','book','lecture notes','latex document'],
  'tex-layout':['font','layout','multilingual','macro','hyperref','cross-reference'],
@@ -36,12 +38,17 @@ export const extraKeywords={
  'tex-figures-tables':['tikz','pgfplots','latex table','latex figure','longtable'],
  'professional-documents':['cv','resume','recommendation letter','certificate','invitation','flyer'],
  'teaching-materials':['homework','exam','quiz','assessment','worksheet','solutions'],
- 'tex-build-repair':['compile','latex error','missing package','build failure','latex cleanup'],
- 'document-conversion':['convert document','pandoc','latex to word','format conversion'],
+ 'tex-build-repair':['compile','latex error','latex build','missing package','build failure','latex cleanup'],
+ 'document-conversion':['convert document','pandoc','latex to word','format conversion','csv to','convert csv','spreadsheet to latex'],
  'presentations-posters':['presentation','slides','poster','talk','beamer','powerpoint','defense'],
  'thesis-preparation':['thesis','dissertation','viva','degree'],
  'scientific-visuals':['figure','chart','plot','visualization','numerical table','pareto']
 };
+const draftImports=JSON.parse(await fs.readFile(path.join(ROOT,'docs/independent-skill-import.json'),'utf8'));
+for(const item of draftImports){
+ if(extraKeywords[item.target_name])throw Error('Independent skill name collides: '+item.target_name);
+ extraKeywords[item.target_name]=[item.target_name.replaceAll('-',' ')];
+}
 export function frontmatter(raw){
  const parts=raw.replace(/^\uFEFF/,'').split(/^---\s*$/m);
  if(parts.length<3||parts[0].trim())throw Error('Expected YAML front matter');

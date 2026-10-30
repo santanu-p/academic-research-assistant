@@ -6,21 +6,26 @@ const failures=[];let checks=0,links=0;
 function check(ok,message){checks++;if(!ok)failures.push(message);}
 const read=rel=>fs.readFile(path.join(ROOT,rel),'utf8');
 const pkg=JSON.parse(await read('package.json'));
-check(pkg.version==='3.0.0'&&pkg.license==='MIT','Expected v3 and MIT license');
+check(pkg.version==='3.1.0'&&pkg.license==='MIT'&&pkg.private===false,'Expected publishable MIT package metadata');
 check(Object.keys(pkg.dependencies||{}).length===0,'Runtime must have no Node dependencies');
 check(!Object.keys(pkg.scripts||{}).some(x=>['install','postinstall','preinstall'].includes(x)),'Unexpected install hook');
 const entries=await catalog();
-check(entries.length===38,'Expected all 38 canonical skills');
+const imported=JSON.parse(await read('docs/independent-skill-import.json'));
+const draftNames=new Set(imported.map(item=>item.target_name));
+check(imported.length===50&&entries.length===90,'Expected 38 existing skills, 50 independent drafts and two MIT humanizers');
+check(!draftNames.has('latex-document-workflow')&&!entries.some(x=>x.name==='latex-document-workflow'),'Retired general skill remains in the draft');
+check(!await fs.stat(path.join(ROOT,'skills/latex-document-workflow')).then(()=>true,()=>false),'Retired general skill directory remains in the draft');
 check(JSON.stringify(entries.map(x=>x.name).sort())===JSON.stringify(Object.keys(extraKeywords).sort()),'Skill coverage differs from release plan');
 for(const entry of entries){
  const f=frontmatter(await read(entry.path));
  check(f.name===entry.name&&f.description===entry.description,'Catalog metadata differs: '+entry.name);
- check(f.body.split(/\s+/).length>=250,'Skill is too brief: '+entry.name);
+ check(f.body.split(/\s+/).length>=(draftNames.has(entry.name)?150:250),'Skill is too brief: '+entry.name);
 }
 const files=await publicFiles();
 for(const rel of files){
  if(rel.endsWith('.json')){try{JSON.parse(await read(rel));check(true,'');}catch{check(false,'Invalid JSON: '+rel);}}
- check(!/\.(zip|tgz|tar|gz|pyc|pdf|png|jpe?g)$/i.test(rel),'Generated or historical binary in runtime: '+rel);
+ const originalHumanizerImage=/^resources\/upstream\/academic-humanizer-main\/assets\/(rednote-zh|x-en)\.png$/.test(rel);
+ check(originalHumanizerImage||!/\.(zip|tgz|tar|gz|pyc|pdf|png|jpe?g)$/i.test(rel),'Generated or historical binary in runtime: '+rel);
  if(!rel.endsWith('.md'))continue;
  const raw=await read(rel);
  check(!/plugins_6adda4eb33a88191935589dfe7d8a506|D:[\\/]PLUGIN|C:[\\/]Users[\\/]psant|resources\/originals/i.test(raw),'Historical or machine-specific reference: '+rel);

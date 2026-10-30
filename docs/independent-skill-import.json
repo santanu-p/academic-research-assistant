@@ -1,0 +1,352 @@
+[
+  {
+    "source_name": "academic-word-reduction",
+    "target_name": "academic-word-reduction",
+    "source_sha256": "6738cf60842bfdd2e9cde716f5ab48e5c28318318270856a239d51bd15bc2185",
+    "target_sha256": "6738cf60842bfdd2e9cde716f5ab48e5c28318318270856a239d51bd15bc2185",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "citation-network-search",
+    "target_name": "citation-network-search",
+    "source_sha256": "f9be9deb202224618c16caa9c2bde6b6788d3a83f21471ba8c3487ff3f6ce485",
+    "target_sha256": "f9be9deb202224618c16caa9c2bde6b6788d3a83f21471ba8c3487ff3f6ce485",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "comparative-study-appraisal",
+    "target_name": "comparative-study-appraisal",
+    "source_sha256": "c2c6affbaa138a27075178fd52706beffa92cc24c9e732fe2136832384d5f138",
+    "target_sha256": "c2c6affbaa138a27075178fd52706beffa92cc24c9e732fe2136832384d5f138",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "evidence-discovery-appraisal",
+    "target_name": "evidence-discovery-appraisal",
+    "source_sha256": "e619e74968b3ce1b624a9cd84a97967947ddcab6dbf8ecbddc5ef3c06b9e3fd6",
+    "target_sha256": "e619e74968b3ce1b624a9cd84a97967947ddcab6dbf8ecbddc5ef3c06b9e3fd6",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "evidence-extraction-tables",
+    "target_name": "evidence-extraction-tables",
+    "source_sha256": "3c920d7567fcbd92e011e916fb51f4fdf2eb6dea8dd31641caba23b73acec0e4",
+    "target_sha256": "3c920d7567fcbd92e011e916fb51f4fdf2eb6dea8dd31641caba23b73acec0e4",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "evidence-grounded-synthesis",
+    "target_name": "evidence-grounded-synthesis",
+    "source_sha256": "bcfc0a2d56e2e42225f45dca539255d513dc4327c7f0335527d74cc1a794b380",
+      "target_sha256": "8edc91093319328e3fbe6692b0d797e50ea4ea6bde851aba9dbdeccb47f536e0",
+      "note": "Originally copied from the independent draft; subsequently extended with decision and argument comparison guidance."
+  },
+  {
+    "source_name": "evidence-linked-revision",
+    "target_name": "evidence-linked-revision",
+    "source_sha256": "556b84075a075e420c2daab388e35992fdb298f67ad7d985f4bb55cd8c1b2abf",
+    "target_sha256": "556b84075a075e420c2daab388e35992fdb298f67ad7d985f4bb55cd8c1b2abf",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "latex-beamer-presentations",
+    "target_name": "latex-beamer-presentations",
+    "source_sha256": "7b0bf699a49716e034db3878f653df7413322e3c353a575a56b3bf9e52c3519e",
+    "target_sha256": "7b0bf699a49716e034db3878f653df7413322e3c353a575a56b3bf9e52c3519e",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "latex-bibliography-crossrefs",
+    "target_name": "latex-bibliography-crossrefs",
+    "source_sha256": "d41fb42d15652b90d496b68b233540d94eb3559ad4d45d3e73a80e371192a7c5",
+    "target_sha256": "d41fb42d15652b90d496b68b233540d94eb3559ad4d45d3e73a80e371192a7c5",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "latex-build-debugging",
+    "target_name": "latex-build-debugging",
+    "source_sha256": "67a702399a2bce77e8a92ae4e3d01d5d09418ee6be52e84549a7a73675901396",
+    "target_sha256": "67a702399a2bce77e8a92ae4e3d01d5d09418ee6be52e84549a7a73675901396",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "latex-figures-tables",
+    "target_name": "latex-figures-tables",
+    "source_sha256": "caa41bcd4b6e19b03ba3b2a08ade8db48749183c7ca2b666bb3ca319164827ea",
+    "target_sha256": "caa41bcd4b6e19b03ba3b2a08ade8db48749183c7ca2b666bb3ca319164827ea",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "latex-math-typesetting",
+    "target_name": "latex-math-typesetting",
+    "source_sha256": "af81ac7b79fe280928e0d65ea4f1e2e4f7cf97f5eb45414c44429f457deba25e",
+      "target_sha256": "f7cf5da25ec233e2cd421e825038adfcbcb73bd398e0734ffaea55debd50b216",
+      "note": "Originally copied from the independent draft; subsequently extended with scientific notation and diagram guidance."
+  },
+  {
+    "source_name": "latex-pgfplots-charts",
+    "target_name": "latex-pgfplots-charts",
+    "source_sha256": "28b7b4beb7035a6e78d60bd2a7b6ea0e857a5503aa852c93fcc54fee46377354",
+    "target_sha256": "28b7b4beb7035a6e78d60bd2a7b6ea0e857a5503aa852c93fcc54fee46377354",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "latex-research-manuscript",
+    "target_name": "latex-research-manuscript",
+    "source_sha256": "ee4154cf6b8110edebc3411ff08095d44d115e43d959d87c073368134500511b",
+    "target_sha256": "ee4154cf6b8110edebc3411ff08095d44d115e43d959d87c073368134500511b",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "latex-scientific-poster",
+    "target_name": "latex-scientific-poster",
+    "source_sha256": "43c4ce7a9c369eb9692523a732c84efc7e5adb62913d648ef3afaf7c08ee48dc",
+    "target_sha256": "43c4ce7a9c369eb9692523a732c84efc7e5adb62913d648ef3afaf7c08ee48dc",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "latex-thesis-project",
+    "target_name": "latex-thesis-project",
+    "source_sha256": "b27994718fa353ad1bbd3b49e98560369f3d663771a8cd3b4f19a59c79df0fa2",
+      "target_sha256": "226f33c26f8aabc1fe30da6eaed43bf46f01c4be66c0b40d4a938f87c2c37313",
+      "note": "Originally copied from the independent draft; subsequently extended with thesis-specific production guidance."
+  },
+  {
+    "source_name": "latex-tikz-diagrams",
+    "target_name": "latex-tikz-diagrams",
+    "source_sha256": "e5f97617cf2a73d9a71eeb8f9c4882b7f4c9591c55ed319a96d76227d10379d8",
+    "target_sha256": "e5f97617cf2a73d9a71eeb8f9c4882b7f4c9591c55ed319a96d76227d10379d8",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "legal-open-access-search",
+    "target_name": "legal-open-access-search",
+    "source_sha256": "e96ee2acb6f81587feada4d0dc52a4f6a9ccd107e9368be29bbb354b470bbe4e",
+    "target_sha256": "e96ee2acb6f81587feada4d0dc52a4f6a9ccd107e9368be29bbb354b470bbe4e",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "literature-search-strategy",
+    "target_name": "literature-search-strategy",
+    "source_sha256": "a25a2213cba8f0ed9d4104fd8f28968ddf6fab6e83daba26007e7d0da91e6f3b",
+    "target_sha256": "a25a2213cba8f0ed9d4104fd8f28968ddf6fab6e83daba26007e7d0da91e6f3b",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "meta-analysis-planning",
+    "target_name": "meta-analysis-planning",
+    "source_sha256": "5fc486031cf9baeb4db9229bc1eaec05780af57af8380d9b2a6f7aeda3c78569",
+    "target_sha256": "5fc486031cf9baeb4db9229bc1eaec05780af57af8380d9b2a6f7aeda3c78569",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "methodology-design",
+    "target_name": "independent-methodology-design",
+    "source_sha256": "26552b66dde5a817f8d7116858973a53f518717979b349e3030d287cfc436b64",
+    "target_sha256": "c639dd0a10321e9ff4fb646a571147bd97404557330b8c0c357e15ce9373b883",
+    "note": "Frontmatter name changed to avoid a collision."
+  },
+  {
+    "source_name": "reference-identity-verification",
+    "target_name": "reference-identity-verification",
+    "source_sha256": "97c477caf95e5440eb28cfaa443262c2a6416c6d7cf3eab596c9b917366f4f76",
+    "target_sha256": "97c477caf95e5440eb28cfaa443262c2a6416c6d7cf3eab596c9b917366f4f76",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "research-abstract-introduction",
+    "target_name": "research-abstract-introduction",
+    "source_sha256": "3f97c88ff4f9ff0ce19d62e3f86bd76eaf30203088568247bb2cd9c214917233",
+    "target_sha256": "3f97c88ff4f9ff0ce19d62e3f86bd76eaf30203088568247bb2cd9c214917233",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "research-claim-evaluation",
+    "target_name": "research-claim-evaluation",
+    "source_sha256": "592716d1ef203214d0969c7c23b3547e6ef669f7b5d7b17a9a5dab64a4ca4c51",
+    "target_sha256": "592716d1ef203214d0969c7c23b3547e6ef669f7b5d7b17a9a5dab64a4ca4c51",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "research-ethics-data-management",
+    "target_name": "research-ethics-data-management",
+    "source_sha256": "51f3a4b69c924e4317afbca88baf371d348411517854d52b855359e748be2ea0",
+      "target_sha256": "aa3d07d887f4cf196bc28ccf861fc565e8c2ab2f791d4ba4ed1ff9d0e6b10698",
+      "note": "Originally copied from the independent draft; subsequently extended with participant-facing materials guidance."
+  },
+  {
+    "source_name": "research-gap-assessment",
+    "target_name": "research-gap-assessment",
+    "source_sha256": "2474f4e4d0b5bfe30793a4878f8e7595e83943ea0072b679a697889c9d96e34b",
+    "target_sha256": "2474f4e4d0b5bfe30793a4878f8e7595e83943ea0072b679a697889c9d96e34b",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "research-paper-summary",
+    "target_name": "research-paper-summary",
+    "source_sha256": "c5a86965278f392269d1bfa7adbb93dba3c1f177a35580c2f4b8fcf7e152e2c0",
+    "target_sha256": "c5a86965278f392269d1bfa7adbb93dba3c1f177a35580c2f4b8fcf7e152e2c0",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "research-planning",
+    "target_name": "independent-research-planning",
+    "source_sha256": "34b1af24911bb66ba3c804144da1d19403358fd35a8900f8fc53162af7c039e2",
+    "target_sha256": "6b0264b16ffefa58aa2d0cd12758ceb28245f496172a574d1637bd226beee622",
+    "note": "Frontmatter name changed to avoid a collision."
+  },
+  {
+    "source_name": "research-proposal-development",
+    "target_name": "research-proposal-development",
+    "source_sha256": "b01f93a8b43a07e9d44f8191e5620e637288fb263c5910d62fae15fd888661a0",
+    "target_sha256": "b01f93a8b43a07e9d44f8191e5620e637288fb263c5910d62fae15fd888661a0",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "research-question-development",
+    "target_name": "research-question-development",
+    "source_sha256": "f5c124d62c783d058b24aa4fb1940592a4e1cc3fc111116c2091ad72c01a01fa",
+    "target_sha256": "f5c124d62c783d058b24aa4fb1940592a4e1cc3fc111116c2091ad72c01a01fa",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "research-results-interpretation",
+    "target_name": "research-results-interpretation",
+    "source_sha256": "341ea2b184d8c0044b2d921fdc0989286cdda4dab3aee93c543d883dc0ecff95",
+    "target_sha256": "341ea2b184d8c0044b2d921fdc0989286cdda4dab3aee93c543d883dc0ecff95",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "research-workflow-coordination",
+    "target_name": "research-workflow-coordination",
+    "source_sha256": "d41e41578fd6c0616bf81ef66384a5b0fbaf936f5a527ef79241dd5edb7e5e99",
+      "target_sha256": "42fc68b608f0e73788ce74744a37ec323d00a1565542502475006feb1192bbc1",
+      "note": "Originally copied unchanged from the independent draft; subsequently extended with lifecycle, continuity and external handoff guidance."
+  },
+  {
+    "source_name": "reviewer-response-workflow",
+    "target_name": "reviewer-response-workflow",
+    "source_sha256": "bbcb79ac4936416a874c00c0e0577ef200a013bc16c919b4ba9937bf3b69d4f8",
+    "target_sha256": "bbcb79ac4936416a874c00c0e0577ef200a013bc16c919b4ba9937bf3b69d4f8",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "scholarly-translation",
+    "target_name": "scholarly-translation",
+    "source_sha256": "e28063eead2313dabfff5134f702b6fc2e599d817aff32a886d5e54bf2661ab3",
+    "target_sha256": "e28063eead2313dabfff5134f702b6fc2e599d817aff32a886d5e54bf2661ab3",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "scientific-peer-review",
+    "target_name": "scientific-peer-review",
+    "source_sha256": "bc5f5c75348e76c906dd11f608037d63e5a68bc7e728b927bef3c289b3cf8720",
+    "target_sha256": "bc5f5c75348e76c906dd11f608037d63e5a68bc7e728b927bef3c289b3cf8720",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "scientific-writing",
+    "target_name": "scientific-writing",
+    "source_sha256": "859671145f9b9e6091b2ada89b54f0974735e0c67c926da535c58938bb79f8df",
+    "target_sha256": "859671145f9b9e6091b2ada89b54f0974735e0c67c926da535c58938bb79f8df",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "specialist-database-selection",
+    "target_name": "specialist-database-selection",
+    "source_sha256": "349245c91e5d5bff7beb333df813a1c5fbcac347a40a63833c57dbddf2200bd1",
+    "target_sha256": "349245c91e5d5bff7beb333df813a1c5fbcac347a40a63833c57dbddf2200bd1",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "survey-interview-design",
+    "target_name": "survey-interview-design",
+    "source_sha256": "fe97f8764c64059947ed3998c6a188c056afd05525c8c4432b3a2c73226dc7c3",
+      "target_sha256": "c5fad14f8ecbc51d5ca0cde944df4370e1dac3799dc35a149bada5a932d6f7f6",
+      "note": "Originally copied from the independent draft; subsequently extended with a survey-item revision record."
+  },
+  {
+    "source_name": "systematic-review-protocol",
+    "target_name": "systematic-review-protocol",
+    "source_sha256": "00eea28120a168924a4f81cf9ee6049b43c798b1997e94012e16f7b4f526e654",
+    "target_sha256": "00eea28120a168924a4f81cf9ee6049b43c798b1997e94012e16f7b4f526e654",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "theoretical-framework-development",
+    "target_name": "theoretical-framework-development",
+    "source_sha256": "2ecc3f1c575b9741016953a4191a02e43ce40c1c4a1e7a57e33035e46558ac62",
+      "target_sha256": "f67e3264ac753e62be965ca3339f2cbaf1ed3c742e1e26338bbfca20cb082e02",
+      "note": "Originally copied from the independent draft; subsequently extended with relationship mapping and a framework narrative."
+  },
+  {
+    "source_name": "evidence-strength-assessment",
+    "target_name": "evidence-strength-assessment",
+    "source_sha256": "2d1b08ae803fa5d2239d511c2a4131a742868f105227b9b296a1fae72e1db56c",
+    "target_sha256": "2d1b08ae803fa5d2239d511c2a4131a742868f105227b9b296a1fae72e1db56c",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "latex-algorithms-and-code",
+    "target_name": "latex-algorithms-and-code",
+    "source_sha256": "3ea918c99e2691f2d0a35e66db1dc9101ca6283f2c601e5223974fe04b4dda65",
+      "target_sha256": "b1c7cb5ed9772df54ba671ee9f6dc5a44c3e62a7fda114b76e8e4a220bc857fb",
+      "note": "Originally copied from the independent draft; subsequently extended with package choices and illustrative code."
+  },
+  {
+    "source_name": "latex-custom-command-design",
+    "target_name": "latex-custom-command-design",
+    "source_sha256": "1a809734e7446dbe05a0b6df71a6b7efdd87bada04168c8dc17ec53c6fea0551",
+    "target_sha256": "1a809734e7446dbe05a0b6df71a6b7efdd87bada04168c8dc17ec53c6fea0551",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "latex-multilingual-text",
+    "target_name": "latex-multilingual-text",
+    "source_sha256": "aa697689b48a806b0181174ce96879245b07b76ec5f8810afa373d393964fa1b",
+      "target_sha256": "c450cd1cf763528a010c56f0968b52999ec6281611da33e21408bad45d633b83",
+      "note": "Originally copied from the independent draft; subsequently extended with script and engine selection guidance."
+  },
+  {
+    "source_name": "research-brief-development",
+    "target_name": "research-brief-development",
+    "source_sha256": "802af1d878f2d0772a78d57c5d96e03658979309466d2a6e24d24d0739b2b712",
+    "target_sha256": "802af1d878f2d0772a78d57c5d96e03658979309466d2a6e24d24d0739b2b712",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "academic-writing-tool-evaluation",
+    "target_name": "academic-writing-tool-evaluation",
+    "source_sha256": "d7a903b4597948f9251986bfacd68a50e2f7e00fd79bfc1ef470426bc5959b1a",
+    "target_sha256": "d7a903b4597948f9251986bfacd68a50e2f7e00fd79bfc1ef470426bc5959b1a",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "latex-certificates-and-flyers",
+    "target_name": "latex-certificates-and-flyers",
+    "source_sha256": "e9afdb66649a651f1bbe87b78bd543628fccdc19ccc8ff6b240b39cd3c1b643d",
+    "target_sha256": "e9afdb66649a651f1bbe87b78bd543628fccdc19ccc8ff6b240b39cd3c1b643d",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "research-field-evidence-guide",
+    "target_name": "research-field-evidence-guide",
+    "source_sha256": "010a0f2e202cdfa9c1dd264e8e6ed09a8b91e2191e3b0346cb5967b403487641",
+    "target_sha256": "010a0f2e202cdfa9c1dd264e8e6ed09a8b91e2191e3b0346cb5967b403487641",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "research-manuscript-evaluation",
+    "target_name": "research-manuscript-evaluation",
+    "source_sha256": "e8a27ec1be8af8a4ea921325de6d4bc87439d94d219233f112457751af98729a",
+    "target_sha256": "e8a27ec1be8af8a4ea921325de6d4bc87439d94d219233f112457751af98729a",
+    "note": "Copied unchanged."
+  },
+  {
+    "source_name": "research-venue-style-review",
+    "target_name": "research-venue-style-review",
+    "source_sha256": "a855edfada326a7afbbce58d943b75b98ee987dbfecb2a6da2e093df11fb7698",
+    "target_sha256": "a855edfada326a7afbbce58d943b75b98ee987dbfecb2a6da2e093df11fb7698",
+    "note": "Copied unchanged."
+  }
+]

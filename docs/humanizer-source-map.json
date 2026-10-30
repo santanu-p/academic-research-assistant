@@ -1,0 +1,122 @@
+[
+  {
+    "source": "humanizer-main/.claude-plugin/marketplace.json",
+    "destination": "resources/upstream/humanizer-main/.claude-plugin/marketplace.json",
+    "sha256": "e539740285b660d2288a38b6d9b237396c6769828c671c46b9f91e760db6cc29"
+  },
+  {
+    "source": "humanizer-main/.claude-plugin/plugin.json",
+    "destination": "resources/upstream/humanizer-main/.claude-plugin/plugin.json",
+    "sha256": "054c0afeeb03c12f01a7f156da949edfdec3a2b756588f5ff4ee7357b0c07f6a"
+  },
+  {
+    "source": "humanizer-main/.cursor-plugin/plugin.json",
+    "destination": "resources/upstream/humanizer-main/.cursor-plugin/plugin.json",
+    "sha256": "d1e0b50594cf4bbe57fd164b771b401713a91b76b5a213ebe8f4558bb2036546"
+  },
+  {
+    "source": "humanizer-main/.github/ISSUE_TEMPLATE/config.yml",
+    "destination": "resources/upstream/humanizer-main/.github/ISSUE_TEMPLATE/config.yml",
+    "sha256": "cb7e95de7606d07654024c8d47916796b307033e23ddb2b0a821a9bf89e999ef"
+  },
+  {
+    "source": "humanizer-main/.github/ISSUE_TEMPLATE/new-pattern.yml",
+    "destination": "resources/upstream/humanizer-main/.github/ISSUE_TEMPLATE/new-pattern.yml",
+    "sha256": "7436d578fa0056a09da5da6da950a03cb49f3ce27cf268ae295eb3d7ca19f604"
+  },
+  {
+    "source": "humanizer-main/.github/ISSUE_TEMPLATE/rewrite-problem.yml",
+    "destination": "resources/upstream/humanizer-main/.github/ISSUE_TEMPLATE/rewrite-problem.yml",
+    "sha256": "ecfe5e82c5b6d44683e0cb63cfad117dfdd16e30cc6f03510ef335414eea4947"
+  },
+  {
+    "source": "humanizer-main/.github/workflows/validate.yml",
+    "destination": "resources/upstream/humanizer-main/.github/workflows/validate.yml",
+    "sha256": "f2d6a8780fb0b3cf6fa7d2ffccd72d0fc8bee29b4e63ea0fd65924712c9055fd"
+  },
+  {
+    "source": "humanizer-main/agents/openai.yaml",
+    "destination": "resources/upstream/humanizer-main/agents/openai.yaml",
+    "sha256": "9d87ff83149a04f86a372948b8ee35fa249de20923867bbc2a49304290aad736"
+  },
+  {
+    "source": "humanizer-main/AGENTS.md",
+    "destination": "resources/upstream/humanizer-main/AGENTS.md",
+    "sha256": "de84a449da400454df1225ddb1ced728c35bf0be7811b239e3370c7dbe1f4e69"
+  },
+  {
+    "source": "humanizer-main/CHANGELOG.md",
+    "destination": "resources/upstream/humanizer-main/CHANGELOG.md",
+    "sha256": "b3591fe203429f1a6bd2f713c79272e9a8e58a487843d0908d2bbe0700722afa"
+  },
+  {
+    "source": "humanizer-main/LICENSE",
+    "destination": "resources/upstream/humanizer-main/LICENSE",
+    "sha256": "4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96"
+  },
+  {
+    "source": "humanizer-main/README.md",
+    "destination": "resources/upstream/humanizer-main/README.md",
+    "sha256": "500b53c0d29cd3219d160b5f9a109c0969f706aec74b49a4a081d2026ba48ec7"
+  },
+  {
+    "source": "humanizer-main/scripts/validate-package.py",
+    "destination": "resources/upstream/humanizer-main/scripts/validate-package.py",
+    "sha256": "941bd99e52b2ba21449719bb7969607ac8117e3dc173d0c9dfe64fd274c65938"
+  },
+  {
+    "source": "humanizer-main/SKILL.md",
+    "destination": "resources/upstream/humanizer-main/SKILL.md",
+    "sha256": "0612f1dfb1672b0ea9b97e139bf1f06cabe98d8b27424fe8ff01e1fb4cc99cad"
+  },
+  {
+    "source": "academic-humanizer-main/.gitignore",
+    "destination": "resources/upstream/academic-humanizer-main/gitignore.original.txt",
+    "sha256": "cf237c7aff44efbe6e502e645c3e06da03a69d7bdeb43392108ef3348143417e"
+  },
+  {
+    "source": "academic-humanizer-main/assets/banner.svg",
+    "destination": "resources/upstream/academic-humanizer-main/assets/banner.svg",
+    "sha256": "e3a332cac2dcb74c57137ed29231bc154534191827f1d8488201440e7e6803cb"
+  },
+  {
+    "source": "academic-humanizer-main/assets/rednote-zh.png",
+    "destination": "resources/upstream/academic-humanizer-main/assets/rednote-zh.png",
+    "sha256": "cf1ada64d95deef03b484e5d27421fd47a5591ea255aceedf955d4af3d43eb53"
+  },
+  {
+    "source": "academic-humanizer-main/assets/rednote-zh.svg",
+    "destination": "resources/upstream/academic-humanizer-main/assets/rednote-zh.svg",
+    "sha256": "935e4c7d9c2606a652fc5710dd4b33a087a00e08d93aa6eba3a772bbe1a7a153"
+  },
+  {
+    "source": "academic-humanizer-main/assets/x-en.png",
+    "destination": "resources/upstream/academic-humanizer-main/assets/x-en.png",
+    "sha256": "016424a96666490e96802b9900fd6047f1297e313bcd526cdef03c6c15659615"
+  },
+  {
+    "source": "academic-humanizer-main/assets/x-en.svg",
+    "destination": "resources/upstream/academic-humanizer-main/assets/x-en.svg",
+    "sha256": "7b699c6b14a6be52eb0722db513e52156f814b7d0b17f50a7fe01171abba5f01"
+  },
+  {
+    "source": "academic-humanizer-main/examples/before-after.md",
+    "destination": "resources/upstream/academic-humanizer-main/examples/before-after.md",
+    "sha256": "60e73dfa2bab743998af2ed389b9afffa38e2c63e7248fca48bae32a19458a5e"
+  },
+  {
+    "source": "academic-humanizer-main/LICENSE",
+    "destination": "resources/upstream/academic-humanizer-main/LICENSE",
+    "sha256": "95201f07cd5d4454f205a53a65337cbe00298a4d21a4e68a1fc516958e7cdaf9"
+  },
+  {
+    "source": "academic-humanizer-main/README.md",
+    "destination": "resources/upstream/academic-humanizer-main/README.md",
+    "sha256": "ed40692dbee51ed2f2c53a02c7c34772ce23f94cab2394877544e98c0b445b54"
+  },
+  {
+    "source": "academic-humanizer-main/SKILL.md",
+    "destination": "resources/upstream/academic-humanizer-main/SKILL.md",
+    "sha256": "1f4501cb7331cffe9018960f8db045c719eea0658ce04e4af5e273ee59785a9c"
+  }
+]

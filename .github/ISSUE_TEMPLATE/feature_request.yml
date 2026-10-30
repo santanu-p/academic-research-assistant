@@ -1,0 +1,16 @@
+name: Feature request
+description: Suggest an improvement to an independent research workflow.
+title: '[Feature]: '
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and desired outcome
+      description: Describe the task, why current behavior is insufficient, and what a successful result would look like.
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints and verification
+      description: Include relevant inputs, tools, dependencies and ways to verify the result. Do not paste private material.

@@ -5,7 +5,7 @@ const definition=(name,description,properties={},required=[])=>({name,descriptio
 const TOOLS=[
  definition('search_capabilities','Find canonical research instructions; does not execute them.',{query:{type:'string',minLength:1},limit:{type:'integer',minimum:1,maximum:250}},['query']),
  definition('route_task','Select skills for a research task and report execution boundaries.',{task:{type:'string',minLength:1}},['task']),
- definition('read_resource','Read UTF-8 public package resources with character pagination.',{path:{type:'string'},offset:{type:'integer',minimum:0},max_chars:{type:'integer',minimum:1,maximum:64000}},['path']),
+ definition('read_resource','Read UTF-8 public package resources with pagination measured in Unicode code points.',{path:{type:'string'},offset:{type:'integer',minimum:0},max_chars:{type:'integer',minimum:1,maximum:64000}},['path']),
  definition('environment_status','Report this runtime and declared optional requirements; no commands or network probes.'),
  definition('verify_package','Compare the public bundle with its local SHA-256 inventory; not a research or publisher attestation.'),
 ];

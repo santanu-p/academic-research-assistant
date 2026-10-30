@@ -15,13 +15,56 @@
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
   {
+    "name": "academic-humanizer",
+    "description": "Edit academic and proposal prose for author voice while preserving evidence, citations, uncertainty and technical meaning.",
+    "path": "skills/academic-humanizer/SKILL.md",
+    "keywords": [
+      "humanize academic prose",
+      "humanize my manuscript",
+      "humanize the manuscript",
+      "humanize my abstract"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "academic-word-reduction",
+    "description": "Use when shortening an academic passage, abstract, manuscript, or proposal to a specified word limit while preserving its meaning.",
+    "path": "skills/academic-word-reduction/SKILL.md",
+    "keywords": [
+      "academic word reduction"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "academic-writing-tool-evaluation",
+    "description": "Use when comparing academic writing, editing, citation, or submission-support tools for a researcher's requirements.",
+    "path": "skills/academic-writing-tool-evaluation/SKILL.md",
+    "keywords": [
+      "academic writing tool evaluation"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
     "name": "adversarial-revision",
     "description": "Critically review and revise research artifacts through bounded, evidence-linked challenge, repair, and rechecking without treating iteration counts as success.",
     "path": "skills/adversarial-revision/SKILL.md",
     "keywords": [
       "review loop",
       "adversarial review",
-      "iterative revision"
+      "iterative revision",
+      "manuscript versions",
+      "compare versions",
+      "compare revisions",
+      "text revision"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "citation-network-search",
+    "description": "Find related research through backward references and forward citation links, documenting seeds, sources, dates, and coverage limits.",
+    "path": "skills/citation-network-search/SKILL.md",
+    "keywords": [
+      "citation network search"
     ],
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
@@ -40,6 +83,15 @@
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
   {
+    "name": "comparative-study-appraisal",
+    "description": "Compare research studies by their questions, methods, results, and limitations while preserving differences in context and evidence quality.",
+    "path": "skills/comparative-study-appraisal/SKILL.md",
+    "keywords": [
+      "comparative study appraisal"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
     "name": "document-conversion",
     "description": "Convert academic documents among LaTeX, word-processing, Markdown, HTML, and PDF workflows while tracking semantic, structural, and visual fidelity.",
     "path": "skills/document-conversion/SKILL.md",
@@ -47,7 +99,10 @@
       "convert document",
       "pandoc",
       "latex to word",
-      "format conversion"
+      "format conversion",
+      "csv to",
+      "convert csv",
+      "spreadsheet to latex"
     ],
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
@@ -66,6 +121,15 @@
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
   {
+    "name": "evidence-discovery-appraisal",
+    "description": "Use when searching for research sources, verifying references, or assessing the strength and relevance of evidence.",
+    "path": "skills/evidence-discovery-appraisal/SKILL.md",
+    "keywords": [
+      "evidence discovery appraisal"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
     "name": "evidence-extraction",
     "description": "Extract auditable study-level or claim-level evidence into a defined schema while preserving source locations, missing values, versions, and dependent reports.",
     "path": "skills/evidence-extraction/SKILL.md",
@@ -73,6 +137,71 @@
       "extract evidence",
       "extraction table",
       "data extraction"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "evidence-extraction-tables",
+    "description": "Design or populate traceable evidence extraction tables from research reports, with source locations and explicit missing data.",
+    "path": "skills/evidence-extraction-tables/SKILL.md",
+    "keywords": [
+      "evidence extraction tables"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "evidence-grounded-synthesis",
+    "description": "Use when answering a research question by combining evidence, interpreting conflicting findings, or assessing a proposed research claim.",
+    "path": "skills/evidence-grounded-synthesis/SKILL.md",
+    "keywords": [
+      "evidence grounded synthesis"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "evidence-linked-revision",
+    "description": "Use when revising scientific or scholarly prose so its claims remain traceable to supplied evidence, data, and citations.",
+    "path": "skills/evidence-linked-revision/SKILL.md",
+    "keywords": [
+      "evidence linked revision"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "evidence-strength-assessment",
+    "description": "Use when weighing whether a collection of studies supports a specific research claim or decision.",
+    "path": "skills/evidence-strength-assessment/SKILL.md",
+    "keywords": [
+      "evidence strength assessment"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "humanizer",
+    "description": "Edit general prose for a natural author voice while preserving the facts and intended meaning.",
+    "path": "skills/humanizer/SKILL.md",
+    "keywords": [
+      "humanize general prose",
+      "humanize my blog",
+      "humanize this email"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "independent-methodology-design",
+    "description": "Use when designing or assessing a research methodology that must answer a specified question under practical constraints.",
+    "path": "skills/independent-methodology-design/SKILL.md",
+    "keywords": [
+      "independent methodology design"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "independent-research-planning",
+    "description": "Use when turning a research question or idea into a feasible investigation, protocol, or project plan.",
+    "path": "skills/independent-research-planning/SKILL.md",
+    "keywords": [
+      "independent research planning"
     ],
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
@@ -85,6 +214,141 @@
       "submission",
       "author guidelines",
       "cover letter"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "latex-algorithms-and-code",
+    "description": "Use when typesetting an algorithm, pseudocode, or source-code listing in a LaTeX document.",
+    "path": "skills/latex-algorithms-and-code/SKILL.md",
+    "keywords": [
+      "latex algorithms and code"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "latex-beamer-presentations",
+    "description": "Use when creating or editing a LaTeX Beamer slide presentation.",
+    "path": "skills/latex-beamer-presentations/SKILL.md",
+    "keywords": [
+      "latex beamer presentations"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "latex-bibliography-crossrefs",
+    "description": "Use when repairing or creating LaTeX citations, bibliographies, labels, and cross-references.",
+    "path": "skills/latex-bibliography-crossrefs/SKILL.md",
+    "keywords": [
+      "latex bibliography crossrefs"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "latex-build-debugging",
+    "description": "Use when a LaTeX project fails to compile, has build warnings, or produces incorrect references.",
+    "path": "skills/latex-build-debugging/SKILL.md",
+    "keywords": [
+      "latex build debugging"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "latex-certificates-and-flyers",
+    "description": "Use when creating or editing an editable LaTeX certificate, flyer, announcement, or other short visual document.",
+    "path": "skills/latex-certificates-and-flyers/SKILL.md",
+    "keywords": [
+      "latex certificates and flyers"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "latex-custom-command-design",
+    "description": "Use when designing, reviewing, or repairing reusable LaTeX commands, environments, counters, or semantic notation.",
+    "path": "skills/latex-custom-command-design/SKILL.md",
+    "keywords": [
+      "latex custom command design"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "latex-figures-tables",
+    "description": "Use when inserting, revising, or laying out figures and tables in LaTeX.",
+    "path": "skills/latex-figures-tables/SKILL.md",
+    "keywords": [
+      "latex figures tables"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "latex-math-typesetting",
+    "description": "Use when writing or revising mathematical equations, theorem environments, and proofs in a LaTeX document.",
+    "path": "skills/latex-math-typesetting/SKILL.md",
+    "keywords": [
+      "latex math typesetting"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "latex-multilingual-text",
+    "description": "Use when setting up multilingual or non-Latin text, fonts, directionality, or script-specific typography in a LaTeX project.",
+    "path": "skills/latex-multilingual-text/SKILL.md",
+    "keywords": [
+      "latex multilingual text"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "latex-pgfplots-charts",
+    "description": "Use when creating or editing data charts using PGFPlots in LaTeX.",
+    "path": "skills/latex-pgfplots-charts/SKILL.md",
+    "keywords": [
+      "latex pgfplots charts"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "latex-research-manuscript",
+    "description": "Use when creating or revising a scientific research manuscript in LaTeX.",
+    "path": "skills/latex-research-manuscript/SKILL.md",
+    "keywords": [
+      "latex research manuscript"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "latex-scientific-poster",
+    "description": "Use when creating or editing a scientific poster with LaTeX.",
+    "path": "skills/latex-scientific-poster/SKILL.md",
+    "keywords": [
+      "latex scientific poster"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "latex-thesis-project",
+    "description": "Use when creating or editing a multi-chapter thesis or dissertation in LaTeX.",
+    "path": "skills/latex-thesis-project/SKILL.md",
+    "keywords": [
+      "latex thesis project"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "latex-tikz-diagrams",
+    "description": "Use when drawing or editing a diagram with TikZ in a LaTeX project.",
+    "path": "skills/latex-tikz-diagrams/SKILL.md",
+    "keywords": [
+      "latex tikz diagrams"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "legal-open-access-search",
+    "description": "Locate legitimately accessible scholarly full texts and distinguish author manuscripts, preprints, and publisher versions.",
+    "path": "skills/legal-open-access-search/SKILL.md",
+    "keywords": [
+      "legal open access search"
     ],
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
@@ -111,6 +375,15 @@
       "citation chaining",
       "full text",
       "database"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "literature-search-strategy",
+    "description": "Design, adapt, document, or execute reproducible scholarly literature searches for a defined research question.",
+    "path": "skills/literature-search-strategy/SKILL.md",
+    "keywords": [
+      "literature search strategy"
     ],
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
@@ -162,6 +435,15 @@
       "meta analysis",
       "pooled effect",
       "heterogeneity"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "meta-analysis-planning",
+    "description": "Plan a defensible quantitative evidence synthesis, including effect measures, pooling criteria, dependence, heterogeneity, and sensitivity analyses.",
+    "path": "skills/meta-analysis-planning/SKILL.md",
+    "keywords": [
+      "meta analysis planning"
     ],
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
@@ -233,6 +515,24 @@
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
   {
+    "name": "reference-identity-verification",
+    "description": "Verify whether references identify real scholarly works and reconcile bibliographic metadata across authoritative records.",
+    "path": "skills/reference-identity-verification/SKILL.md",
+    "keywords": [
+      "reference identity verification"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "research-abstract-introduction",
+    "description": "Use when drafting or revising a research abstract or introduction from a study, manuscript, or proposal.",
+    "path": "skills/research-abstract-introduction/SKILL.md",
+    "keywords": [
+      "research abstract introduction"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
     "name": "research-appraisal",
     "description": "Appraise a study or research manuscript by matching claims to design, evidence, analysis, reporting, and inference, with actionable and proportionate judgments.",
     "path": "skills/research-appraisal/SKILL.md",
@@ -256,6 +556,24 @@
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
   {
+    "name": "research-brief-development",
+    "description": "Use when expanding a short research brief into an organized proposal or manuscript plan without inventing evidence.",
+    "path": "skills/research-brief-development/SKILL.md",
+    "keywords": [
+      "research brief development"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "research-claim-evaluation",
+    "description": "Evaluate a specific research claim against relevant primary evidence, study design, uncertainty, and scope.",
+    "path": "skills/research-claim-evaluation/SKILL.md",
+    "keywords": [
+      "research claim evaluation"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
     "name": "research-communication",
     "description": "Translate research into an audience-appropriate talk, summary, explanation, or public narrative while preserving the evidence, uncertainty, ownership, and practical limits.",
     "path": "skills/research-communication/SKILL.md",
@@ -269,6 +587,33 @@
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
   {
+    "name": "research-ethics-data-management",
+    "description": "Plan research ethics and data handling for a study, including consent, access, retention, sharing, and institutional review dependencies.",
+    "path": "skills/research-ethics-data-management/SKILL.md",
+    "keywords": [
+      "research ethics data management"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "research-field-evidence-guide",
+    "description": "Use when planning how to find and evaluate research evidence in a particular discipline or interdisciplinary question.",
+    "path": "skills/research-field-evidence-guide/SKILL.md",
+    "keywords": [
+      "research field evidence guide"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "research-gap-assessment",
+    "description": "Assess candidate research gaps against available literature and frame testable next steps without asserting unverified novelty.",
+    "path": "skills/research-gap-assessment/SKILL.md",
+    "keywords": [
+      "research gap assessment"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
     "name": "research-integrity",
     "description": "Review research provenance, attribution, authorship, consent, disclosure, and recordkeeping, and prepare transparent corrections or escalation questions from documented evidence.",
     "path": "skills/research-integrity/SKILL.md",
@@ -278,6 +623,24 @@
       "plagiarism",
       "data privacy",
       "research integrity"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "research-manuscript-evaluation",
+    "description": "Use when reviewing or scoring a research manuscript against explicit, evidence-linked criteria.",
+    "path": "skills/research-manuscript-evaluation/SKILL.md",
+    "keywords": [
+      "research manuscript evaluation"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "research-paper-summary",
+    "description": "Summarize a research paper's question, methods, findings, and limitations with faithful attribution to the available text.",
+    "path": "skills/research-paper-summary/SKILL.md",
+    "keywords": [
+      "research paper summary"
     ],
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
@@ -302,6 +665,15 @@
       "schedule",
       "milestones",
       "project management"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "research-proposal-development",
+    "description": "Use when preparing or revising a research proposal, project rationale, or study plan for a named audience or call.",
+    "path": "skills/research-proposal-development/SKILL.md",
+    "keywords": [
+      "research proposal development"
     ],
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
@@ -331,6 +703,24 @@
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
   {
+    "name": "research-question-development",
+    "description": "Use when turning a research topic, practical problem, or tentative hypothesis into a focused, answerable research question.",
+    "path": "skills/research-question-development/SKILL.md",
+    "keywords": [
+      "research question development"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "research-results-interpretation",
+    "description": "Use when interpreting research results, statistical output, model estimates, or qualitative findings supplied by the user.",
+    "path": "skills/research-results-interpretation/SKILL.md",
+    "keywords": [
+      "research results interpretation"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
     "name": "research-validation",
     "description": "Design and perform proportionate validation of scientific claims, analyses, models, and computational results with traceable evidence and explicit limits.",
     "path": "skills/research-validation/SKILL.md",
@@ -345,6 +735,24 @@
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
   {
+    "name": "research-venue-style-review",
+    "description": "Use when editing a scientific manuscript to meet a named journal, conference, or institutional style while protecting its evidence.",
+    "path": "skills/research-venue-style-review/SKILL.md",
+    "keywords": [
+      "research venue style review"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "research-workflow-coordination",
+    "description": "Use when coordinating multiple stages of a research project across questions, evidence gathering, analysis, writing, and deliverables.",
+    "path": "skills/research-workflow-coordination/SKILL.md",
+    "keywords": [
+      "research workflow coordination"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
     "name": "reviewer-response",
     "description": "Convert editorial and reviewer comments into an evidence-based revision plan and point-by-point response linked to actual manuscript changes and verified analyses.",
     "path": "skills/reviewer-response/SKILL.md",
@@ -354,6 +762,33 @@
       "response to reviewers",
       "respond to reviewers",
       "reviewer comments"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "reviewer-response-workflow",
+    "description": "Prepare a point-by-point response to journal or academic reviewer comments and reconcile each response with actual revisions.",
+    "path": "skills/reviewer-response-workflow/SKILL.md",
+    "keywords": [
+      "reviewer response workflow"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "scholarly-translation",
+    "description": "Use when translating academic or scientific writing between languages while retaining its technical meaning and citation structure.",
+    "path": "skills/scholarly-translation/SKILL.md",
+    "keywords": [
+      "scholarly translation"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "scientific-peer-review",
+    "description": "Use when critically reviewing a research manuscript, preprint, protocol, or scientific argument for an author or reviewer.",
+    "path": "skills/scientific-peer-review/SKILL.md",
+    "keywords": [
+      "scientific peer review"
     ],
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
@@ -384,6 +819,15 @@
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
   {
+    "name": "scientific-writing",
+    "description": "Use when drafting, revising, or critically editing scientific prose, including papers, research reports, and abstracts.",
+    "path": "skills/scientific-writing/SKILL.md",
+    "keywords": [
+      "scientific writing"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
     "name": "source-verification",
     "description": "Verify a scholarly source's identity, version, provenance, publication status, and support for a specific claim without confusing metadata checks with quality appraisal.",
     "path": "skills/source-verification/SKILL.md",
@@ -396,6 +840,15 @@
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
   {
+    "name": "specialist-database-selection",
+    "description": "Select and compare research databases or archives for a subject, source type, and search purpose, including access and coverage constraints.",
+    "path": "skills/specialist-database-selection/SKILL.md",
+    "keywords": [
+      "specialist database selection"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
     "name": "statistical-analysis",
     "description": "Plan and execute reproducible quantitative analysis with a defined estimand, design-aware models, diagnostics, uncertainty, and restrained interpretation.",
     "path": "skills/statistical-analysis/SKILL.md",
@@ -404,7 +857,21 @@
       "regression",
       "statistical analysis",
       "data analysis",
-      "p-value"
+      "p-value",
+      "confidence interval",
+      "credible interval",
+      "odds ratio",
+      "risk ratio",
+      "risk difference"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "survey-interview-design",
+    "description": "Design or improve research surveys and interview guides with attention to measurement, participant experience, sampling, and pilot testing.",
+    "path": "skills/survey-interview-design/SKILL.md",
+    "keywords": [
+      "survey interview design"
     ],
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
@@ -417,6 +884,15 @@
       "scoping review",
       "prisma",
       "screening"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "systematic-review-protocol",
+    "description": "Develop or revise a systematic or scoping review protocol, including eligibility, screening, extraction, appraisal, and synthesis plans.",
+    "path": "skills/systematic-review-protocol/SKILL.md",
+    "keywords": [
+      "systematic review protocol"
     ],
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
@@ -441,6 +917,7 @@
     "keywords": [
       "compile",
       "latex error",
+      "latex build",
       "missing package",
       "build failure",
       "latex cleanup"
@@ -471,6 +948,15 @@
       "macro",
       "hyperref",
       "cross-reference"
+    ],
+    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+  },
+  {
+    "name": "theoretical-framework-development",
+    "description": "Develop or evaluate a theoretical or conceptual framework that connects a research question, assumptions, constructs, and expected relationships.",
+    "path": "skills/theoretical-framework-development/SKILL.md",
+    "keywords": [
+      "theoretical framework development"
     ],
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },

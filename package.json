@@ -1,6 +1,7 @@
 {
   "name": "academic-research-assistant",
-  "version": "3.0.0",
+  "version": "3.1.0",
+  "private": false,
   "description": "Portable academic research skills, a local MCP server and scientific workflow tools.",
   "type": "module",
   "license": "MIT",
@@ -10,9 +11,10 @@
   "engines": {"node": ">=22"},
   "bin": {"academic-research-assistant": "cli/ara.mjs"},
   "files": [
-    "cli/", "lib/", "server/", "skills/", "catalog/", "docs/", "tools/", "workflows/", "examples/",
+    "cli/", "lib/", "server/", "skills/", "catalog/", "docs/", "tools/", "workflows/", "examples/", "resources/",
     ".codex-plugin/", ".claude-plugin/", "plugin.json", "mcp.json", ".mcp.json", "SKILL.md",
-    "README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "CHANGELOG.md"
+    "README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "CHANGELOG.md",
+    "!**/__pycache__/**", "!**/*.pyc", "!**/*.pyo"
   ],
   "scripts": {
     "build": "node dev/build-catalog.mjs",

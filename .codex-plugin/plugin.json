@@ -1,6 +1,6 @@
 {
   "name": "academic-research-assistant",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Evidence-grounded academic research and scientific writing with local tools.",
   "skills": "./skills/",
   "mcpServers": "./mcp.json"

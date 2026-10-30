@@ -2,6 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {handle,serve} from '../server/mcp.mjs';
 import {Readable,Writable} from 'node:stream';
+import {readFile} from 'node:fs/promises';
 test('reject invalid identifiers, null arguments and null params',async()=>{
  for(const id of [null,true,1.5])assert.equal((await handle({jsonrpc:'2.0',id,method:'ping'})).error.code,-32600);
  assert.equal((await handle({jsonrpc:'2.0',id:1,method:'ping',params:null})).error.code,-32602);
@@ -20,4 +21,18 @@ test('resource reads paginate without exposing developer files',async()=>{
  const next=JSON.parse((await request({path:'README.md',offset:first.next_offset,max_chars:10},2)).result.content[0].text);
  assert.equal(first.text.length,10);assert.equal(next.text.length,10);assert.equal(next.total_chars,first.total_chars);
  for(const file of ['dev/PLAN.md','package.json:secret','C:/Windows/win.ini','../README.md'])assert.equal((await request({path:file},3)).result.isError,true);
+});
+test('resource pagination preserves supplementary Unicode characters',async()=>{
+ const path='skills/humanizer/SKILL.md';
+ const source=await readFile(new URL('../'+path,import.meta.url),'utf8');
+ const before=source.indexOf('🚀');
+ assert.notEqual(before,-1);
+ const offset=Array.from(source.slice(0,before)).length;
+ const request=async(offset)=>JSON.parse((await handle({jsonrpc:'2.0',id:1,method:'tools/call',params:{name:'read_resource',arguments:{path,offset,max_chars:1}}})).result.content[0].text);
+ const first=await request(offset);
+ assert.equal(first.text,'🚀');
+ assert.equal(first.next_offset,offset+1);
+ assert.equal(first.total_chars,Array.from(source).length);
+ const next=await request(first.next_offset);
+ assert.equal(next.text,' ');
 });

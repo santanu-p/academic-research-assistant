@@ -10,9 +10,30 @@ from __future__ import annotations
 import atexit
 import math
 import os
+import re
 import shutil
 import tempfile
 from pathlib import Path
+
+
+def contrast_ratio(foreground, background):
+    """Return the WCAG sRGB luminance contrast of two opaque hex colors.
+
+    Accepts #RGB or #RRGGBB; transparency and other color spaces must be
+    resolved by the caller. A ratio alone does not establish accessibility.
+    """
+    def luminance(value):
+        if not isinstance(value, str) or not re.fullmatch(r"#(?:[0-9a-fA-F]{3}|[0-9a-fA-F]{6})", value):
+            raise ValueError("colors must be opaque sRGB hex values in #RGB or #RRGGBB form")
+        digits = value[1:]
+        if len(digits) == 3:
+            digits = ''.join(c * 2 for c in digits)
+        channels = [int(digits[i:i + 2], 16) / 255 for i in (0, 2, 4)]
+        linear = [c / 12.92 if c <= 0.04045 else ((c + 0.055) / 1.055) ** 2.4 for c in channels]
+        return sum(weight * channel for weight, channel in zip((0.2126, 0.7152, 0.0722), linear))
+
+    a, b = luminance(foreground), luminance(background)
+    return (max(a, b) + 0.05) / (min(a, b) + 0.05)
 
 
 def _dependencies():
@@ -132,6 +153,98 @@ def interval_plot(labels, estimates, lower, upper, *, xlabel="Estimate", referen
     ax.invert_yaxis()
     ax.set(xlabel=xlabel, title=title or "")
     ax.margins(y=.2)
+    return fig, ax
+
+
+
+def distribution_plot(groups, labels, *, ylabel="Value", title=None, width=160, height=100):
+    """Show each supplied observation without estimating a distribution or interval.
+
+    Each group is a nonempty finite vector. Horizontal displacement is a
+    deterministic display aid, has no quantitative meaning, and does not
+    guarantee separation in dense data. Missing observations must be handled
+    and reported by the caller rather than silently discarded here.
+    """
+    np, _ = _dependencies()
+    groups = list(groups)
+    if not groups or len(labels) != len(groups) or not all(isinstance(label, str) for label in labels):
+        raise ValueError("labels must contain one string per nonempty group")
+    vectors = [_vector(group, "group") for group in groups]
+    fig, ax = figure_mm(width, height)
+    for index, values in enumerate(vectors):
+        offsets = np.linspace(-.2, .2, len(values)) if len(values) > 1 else np.zeros(1)
+        ax.scatter(index + offsets, values, color="#277DA8", s=20, alpha=.8)
+    ax.set_xticks(np.arange(len(vectors)), labels)
+    ax.set(ylabel=ylabel, title=title or "")
+    ax.margins(x=.2, y=.15)
+    return fig, ax
+
+
+def paired_plot(values, labels, *, subject_labels=None, ylabel="Value", title=None, width=160, height=100):
+    """Plot each row as one paired unit; NaN marks an unavailable observation.
+
+    Rows with one missing value retain the observed point without a connection.
+    Rows missing both observations are rejected because they cannot be shown.
+    """
+    np, _ = _dependencies()
+    data = np.ma.asarray(values, dtype=float).filled(np.nan)
+    if data.ndim != 2 or data.shape[0] == 0 or data.shape[1] != 2:
+        raise ValueError("values must have shape (n, 2) with at least one row")
+    if np.isinf(data).any() or np.isnan(data).all(axis=1).any():
+        raise ValueError("values cannot contain infinity or rows with both observations missing")
+    if len(labels) != 2 or not all(isinstance(label, str) for label in labels):
+        raise ValueError("labels must contain two strings")
+    if subject_labels is not None and (len(subject_labels) != len(data) or
+                                      not all(isinstance(label, str) for label in subject_labels)):
+        raise ValueError("subject_labels must contain one string per row")
+    fig, ax = figure_mm(width, height)
+    for i, row in enumerate(data):
+        ax.plot([0, 1], row, marker="o", color="#277DA8", linewidth=.8, markersize=4, alpha=.8)
+        if subject_labels is not None:
+            last = int(np.flatnonzero(~np.isnan(row))[-1])
+            ax.annotate(subject_labels[i], (last, row[last]), xytext=(5, 4),
+                        textcoords="offset points", fontsize=8)
+    ax.set_xticks([0, 1], labels)
+    ax.set(ylabel=ylabel, title=title or "")
+    ax.margins(x=.2, y=.15)
+    return fig, ax
+
+
+def grid_heatmap(values, x_labels, y_labels, *, value_label="Value", xlabel="", ylabel="",
+                 vmin=None, vmax=None, title=None, width=160, height=100):
+    """Display an ordered categorical grid with row zero at the top.
+
+    NaN and masked entries appear as missing, rather than being interpolated.
+    Optional color limits must be a finite, increasing pair containing all
+    observed values, so extremes cannot silently saturate at the scale ends.
+    """
+    np, _ = _dependencies()
+    data = np.ma.asarray(values, dtype=float).filled(np.nan)
+    if data.ndim != 2 or not all(data.shape) or np.isinf(data).any() or np.isnan(data).all():
+        raise ValueError("values must be a nonempty 2D grid with finite data and optional missing cells")
+    if (len(x_labels) != data.shape[1] or len(y_labels) != data.shape[0] or
+        not all(isinstance(label, str) for label in (*x_labels, *y_labels))):
+        raise ValueError("x_labels and y_labels must match grid columns and rows")
+    if (vmin is None) != (vmax is None):
+        raise ValueError("supply both vmin and vmax, or neither")
+    if vmin is not None and (not math.isfinite(float(vmin)) or not math.isfinite(float(vmax)) or vmin >= vmax):
+        raise ValueError("vmin and vmax must be finite and increasing")
+    if vmin is not None and ((data < vmin).any() or (data > vmax).any()):
+        raise ValueError("vmin and vmax must include all observed values")
+    fig, ax = figure_mm(width, height)
+    import matplotlib
+    cmap = matplotlib.colormaps["viridis"].copy()
+    cmap.set_bad("#d0d0d0")
+    image = ax.imshow(np.ma.masked_invalid(data), origin="upper", interpolation="nearest",
+                      aspect="auto", cmap=cmap, vmin=vmin, vmax=vmax)
+    ax.set_xticks(np.arange(data.shape[1]), x_labels)
+    ax.set_yticks(np.arange(data.shape[0]), y_labels)
+    ax.set(xlabel=xlabel, ylabel=ylabel, title=title or "")
+    fig.colorbar(image, ax=ax, label=value_label)
+    if np.isnan(data).any():
+        from matplotlib.patches import Patch
+        ax.legend(handles=[Patch(facecolor="#d0d0d0", edgecolor="0.3", label="Missing")],
+                  loc="upper left", bbox_to_anchor=(1.02, 1))
     return fig, ax
 
 
