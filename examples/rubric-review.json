@@ -1,0 +1,24 @@
+{
+  "title": "Synthetic demonstration only; replace every score and evidence note",
+  "scale": {
+    "min": 0,
+    "max": 5
+  },
+  "criteria": [
+    {
+      "id": "research-question",
+      "label": "Research question and contribution",
+      "weight": 2,
+      "score": 3,
+      "evidence": "Synthetic example: placeholder location in an invented draft.",
+      "rationale": "Placeholder rationale; this is not an assessment of a real manuscript."
+    },
+    {
+      "id": "methods",
+      "label": "Methods and assumptions",
+      "weight": 3,
+      "score": null,
+      "not_assessed_reason": "No actual manuscript or methods evidence is supplied in this example."
+    }
+  ]
+}

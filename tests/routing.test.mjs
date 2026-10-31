@@ -14,6 +14,10 @@ test('statistical interpretation requests discover the statistics method',async(
  for(const task of ['Explain a confidence interval and odds ratio','Interpret an absolute risk difference'])
   assert.equal((await route(task)).skills[0].name,'statistical-analysis',task);
 });
+test('weighted manuscript-rubric scoring selects manuscript evaluation',async()=>{
+ const result=await route('Score this paper using the supplied weighted rubric');
+ assert.equal(result.skills[0].name,'research-manuscript-evaluation');
+});
 test('conversion and version comparison discover their actionable workflows',async()=>{
  assert.ok((await route('Convert this CSV to a LaTeX table')).skills.slice(0,3).some(s=>s.name==='document-conversion'));
  assert.ok((await route('Compare these two manuscript versions')).skills.slice(0,3).some(s=>s.name==='adversarial-revision'));

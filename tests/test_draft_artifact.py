@@ -70,6 +70,8 @@ class DraftArtifactTest(unittest.TestCase):
             self.assertEqual(run('route', 'Humanize my email to a colleague')['skills'][0]['name'], 'humanizer')
             self.assertEqual(run('route', 'Explain a confidence interval and odds ratio')['skills'][0]['name'],
                              'statistical-analysis')
+            self.assertEqual(run('route', 'Score this paper using the supplied weighted rubric')['skills'][0]['name'],
+                             'research-manuscript-evaluation')
             self.assertIn('document-conversion',
                           [skill['name'] for skill in run('route', 'Convert this CSV to a LaTeX table')['skills'][:3]])
             excluded = run('route', 'Do not humanize my manuscript; check citations')
@@ -90,6 +92,18 @@ class DraftArtifactTest(unittest.TestCase):
                                                capture_output=True, text=True, encoding='utf-8', timeout=60)
             self.assertEqual(presentation_help.returncode, 0, presentation_help.stderr)
             self.assertIn('output', presentation_help.stdout)
+            rubric_tool = installed / 'tools/rubric_score.py'
+            rubric_help = subprocess.run([sys.executable, '-B', str(rubric_tool), '--help'],
+                                         capture_output=True, text=True, encoding='utf-8', timeout=60)
+            self.assertEqual(rubric_help.returncode, 0, rubric_help.stderr)
+            rubric_example = installed / 'examples/rubric-review.json'
+            rubric_result = subprocess.run([sys.executable, '-B', str(rubric_tool), str(rubric_example)],
+                                           capture_output=True, text=True, encoding='utf-8', timeout=60)
+            self.assertEqual(rubric_result.returncode, 0, rubric_result.stderr)
+            rubric_report = json.loads(rubric_result.stdout)
+            self.assertEqual(rubric_report['summary']['status'], 'partial')
+            self.assertEqual(rubric_report['summary']['weight_coverage_percent'], 40.0)
+            self.assertIsNone(rubric_report['summary']['complete_weighted_mean'])
             revision_help = subprocess.run([sys.executable, '-B', str(installed / 'tools/latex_revision.py'), '--help'],
                                            capture_output=True, text=True, encoding='utf-8', timeout=60)
             self.assertEqual(revision_help.returncode, 0, revision_help.stderr)

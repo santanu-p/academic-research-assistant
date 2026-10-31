@@ -49,6 +49,9 @@ for(const item of draftImports){
  if(extraKeywords[item.target_name])throw Error('Independent skill name collides: '+item.target_name);
  extraKeywords[item.target_name]=[item.target_name.replaceAll('-',' ')];
 }
+const rubricEvaluation=extraKeywords['research-manuscript-evaluation'];
+if(!rubricEvaluation)throw Error('Expected imported research-manuscript-evaluation skill');
+rubricEvaluation.push('score a manuscript','score this paper','paper grading','weighted rubric','manuscript scoring');
 export function frontmatter(raw){
  const parts=raw.replace(/^\uFEFF/,'').split(/^---\s*$/m);
  if(parts.length<3||parts[0].trim())throw Error('Expected YAML front matter');

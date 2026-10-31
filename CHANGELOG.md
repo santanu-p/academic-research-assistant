@@ -4,6 +4,7 @@
 
 - Add an optional LaTeX revision helper that calls separately installed latexdiff and Tectonic to build clean and marked PDFs from two project versions.
 - Route tracked PDF and LaTeX redline requests to the revision workflow. Review the PDFs and tool logs; included assets and bibliography files are not compared.
+- Add evidence-required weighted rubric arithmetic that withholds a complete score while any criterion remains unassessed.
 
 ## 3.1.0 — 2026-10-30
 

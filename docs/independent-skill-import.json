@@ -339,8 +339,8 @@
     "source_name": "research-manuscript-evaluation",
     "target_name": "research-manuscript-evaluation",
     "source_sha256": "e8a27ec1be8af8a4ea921325de6d4bc87439d94d219233f112457751af98729a",
-    "target_sha256": "e8a27ec1be8af8a4ea921325de6d4bc87439d94d219233f112457751af98729a",
-    "note": "Copied unchanged."
+    "target_sha256": "98b7f772fa9faddbf6638e58fe967c661fb5f9a490d76e9437d373a3502dd2f2",
+    "note": "Copied from the independent draft; extended with optional user-supplied rubric arithmetic instructions."
   },
   {
     "source_name": "research-venue-style-review",

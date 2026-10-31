@@ -16,8 +16,8 @@
   },
   {
     "path": "CHANGELOG.md",
-    "bytes": 1617,
-    "sha256": "f868da9fdaccb36eea95aa64b2ff9dd84b5b775c9760ad43cdd0f579ce51d287"
+    "bytes": 1740,
+    "sha256": "d3affee85fcd3c1b33936746a74378cb5d4f2abd4b7d67d3c0574cced79448de"
   },
   {
     "path": "LICENSE",
@@ -26,8 +26,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 8537,
-    "sha256": "7a2e0ba05efbb5224b2d710e53998009a8f6a281f5c37fbbb72c28c6f782dd1e"
+    "bytes": 8859,
+    "sha256": "5fdf4d37924177432093c227643f2a8a95bf6cf948455e6d8d6aa64e6d22213e"
   },
   {
     "path": "SKILL.md",
@@ -41,8 +41,8 @@
   },
   {
     "path": "catalog/skills.json",
-    "bytes": 42814,
-    "sha256": "36e55522a11105a926dd73f44b075d55c06eb0ee3b23049f79a375b5e26e102f"
+    "bytes": 42944,
+    "sha256": "564991d45a6604d92f689a213b8a508d41be63d62c2ed2ab43af413e6d741935"
   },
   {
     "path": "cli/ara.mjs",
@@ -80,6 +80,11 @@
     "sha256": "3220aeca441a95edb29ef074a071d645694f796b6db3784f33286c5bf53cb1b3"
   },
   {
+    "path": "docs/RUBRIC-SCORING.md",
+    "bytes": 2464,
+    "sha256": "798434a4693f7aebb4b4fbdbe104698584ee662d853d2c694ce5a604c7a1494a"
+  },
+  {
     "path": "docs/SOURCE-DISPOSITION.md",
     "bytes": 3286,
     "sha256": "3336c26e379e26ca3aa1dc532d3a3148837691159d54e420296de0a74c8b7be6"
@@ -91,8 +96,8 @@
   },
   {
     "path": "docs/independent-skill-import.json",
-    "bytes": 17128,
-    "sha256": "08a8d7ed288356fca0c780457de62f1fb418256a90de6fa4e4cda9d9e02c9b5c"
+    "bytes": 17214,
+    "sha256": "7ba738f60a3f98677be3f8a51606f54e6f99fb565a1db987c5aa55e5cc4ce4fa"
   },
   {
     "path": "docs/retired-independent-skill.json",
@@ -103,6 +108,11 @@
     "path": "examples/presentation.json",
     "bytes": 484,
     "sha256": "6fd1304688e5d5f456fbd7746cf68acae89cd21312ef5e0b5d66392a72ec5f0b"
+  },
+  {
+    "path": "examples/rubric-review.json",
+    "bytes": 680,
+    "sha256": "0c10fb4ff3190f5be1d201f7c0e9dbd64bf493c7f55939b861797433156a21aa"
   },
   {
     "path": "examples/scientific_figures.py",
@@ -571,8 +581,8 @@
   },
   {
     "path": "skills/research-manuscript-evaluation/SKILL.md",
-    "bytes": 1726,
-    "sha256": "e8a27ec1be8af8a4ea921325de6d4bc87439d94d219233f112457751af98729a"
+    "bytes": 2340,
+    "sha256": "98b7f772fa9faddbf6638e58fe967c661fb5f9a490d76e9437d373a3502dd2f2"
   },
   {
     "path": "skills/research-paper-summary/SKILL.md",
@@ -828,6 +838,11 @@
     "path": "tools/revise.py",
     "bytes": 26437,
     "sha256": "200cbb72fc454aaa506e1b589c3daab44f7272426d83afbd4a2529ca15225707"
+  },
+  {
+    "path": "tools/rubric_score.py",
+    "bytes": 9800,
+    "sha256": "0b6f1206ef8442a819feff124fc63b3cba76eefe12fc88248451296be5154a7a"
   },
   {
     "path": "tools/scientific_visuals.py",
