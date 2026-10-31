@@ -1,13 +1,13 @@
 [
   {
     "path": ".claude-plugin/plugin.json",
-    "bytes": 179,
-    "sha256": "6908fd66cac0a2bb6a3b1e6b22acfebd052df3b747b488e75bf55e581188691e"
+    "bytes": 185,
+    "sha256": "c93eb07af4ed339ec9ac3f55027976dec69926de6141ce78cccd316f6d634311"
   },
   {
     "path": ".codex-plugin/plugin.json",
-    "bytes": 218,
-    "sha256": "24dd793dfe3a74778941ee8dc00b026e362906ef5c046c46f039d56c96aa4135"
+    "bytes": 224,
+    "sha256": "2856ded749af39dc45f115215fc2c2e1158f475b965ea7039163bbc300aec0dc"
   },
   {
     "path": ".mcp.json",
@@ -16,8 +16,8 @@
   },
   {
     "path": "CHANGELOG.md",
-    "bytes": 1271,
-    "sha256": "4f0e0e701bb6dcff69a48abec7fe492bd9a5832e46baa1d6d2c6ad79b218821b"
+    "bytes": 1617,
+    "sha256": "f868da9fdaccb36eea95aa64b2ff9dd84b5b775c9760ad43cdd0f579ce51d287"
   },
   {
     "path": "LICENSE",
@@ -26,8 +26,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 8090,
-    "sha256": "ad80ed9206f5f91ad372be8b8bd638ee4eaa80bf29736d662b3edbb4dbc5d257"
+    "bytes": 8537,
+    "sha256": "7a2e0ba05efbb5224b2d710e53998009a8f6a281f5c37fbbb72c28c6f782dd1e"
   },
   {
     "path": "SKILL.md",
@@ -41,8 +41,8 @@
   },
   {
     "path": "catalog/skills.json",
-    "bytes": 42757,
-    "sha256": "0419c5e3594b9f3e496f01cc70df2bf7bc0c1217dd7ed496da2129e3e2bf329d"
+    "bytes": 42814,
+    "sha256": "36e55522a11105a926dd73f44b075d55c06eb0ee3b23049f79a375b5e26e102f"
   },
   {
     "path": "cli/ara.mjs",
@@ -56,8 +56,8 @@
   },
   {
     "path": "docs/DRAFT-SETUP.md",
-    "bytes": 7091,
-    "sha256": "6f119002442b3859e63961a8f6b9aaaa1eaf2438218d8a321810d81c960d0c07"
+    "bytes": 7087,
+    "sha256": "4a3e26c42615b0f283545674fdf9be47e9307dfe8283f4122079ffaa50e3dd86"
   },
   {
     "path": "docs/INSTALLATION.md",
@@ -76,8 +76,8 @@
   },
   {
     "path": "docs/REVISION-RUNNER.md",
-    "bytes": 3099,
-    "sha256": "ad0d64c9d35fe33f4a518657539d64817d17fcf20b9035fe10fdbff30c1d5c70"
+    "bytes": 5489,
+    "sha256": "3220aeca441a95edb29ef074a071d645694f796b6db3784f33286c5bf53cb1b3"
   },
   {
     "path": "docs/SOURCE-DISPOSITION.md",
@@ -121,13 +121,13 @@
   },
   {
     "path": "package.json",
-    "bytes": 1307,
-    "sha256": "a1d0ebaaa0179bdeb35f842c368af913c5650916c7c7ceae86c2cd2f8f1e13e6"
+    "bytes": 1312,
+    "sha256": "e15cb15ffd184978890dfae860371b2f3c493c59d4d0178895c688954c464577"
   },
   {
     "path": "plugin.json",
-    "bytes": 1413,
-    "sha256": "6c233db14dd86116ca8c315db17f6ac6deab74f25b53d902ecb6b2ade805cf74"
+    "bytes": 1419,
+    "sha256": "6c70efb3f5956f78492a4f1db20917e23c3865ec39a1ccdba3128ded7fc3aef1"
   },
   {
     "path": "resources/upstream/academic-humanizer-main/LICENSE",
@@ -281,8 +281,8 @@
   },
   {
     "path": "skills/adversarial-revision/SKILL.md",
-    "bytes": 6327,
-    "sha256": "4e9c247f217f79a288570cca604b16a80c1f2f9bc5464d4e1e47dcf7f3903c0b"
+    "bytes": 6844,
+    "sha256": "1b339533befc5ca035e1ad5896e0280e7d9c80ace8c26ffc2987566e766cf270"
   },
   {
     "path": "skills/citation-network-search/SKILL.md",
@@ -803,6 +803,11 @@
     "path": "tools/external_handoff.mjs",
     "bytes": 4011,
     "sha256": "520b1ed66d2947783a35d287926072a42f6c516e3c82bfb7cec9c331bb28768e"
+  },
+  {
+    "path": "tools/latex_revision.py",
+    "bytes": 8004,
+    "sha256": "594b8640b0337cf923553a2c7c0a214d45eb69af15da3d592760ec459b3d398c"
   },
   {
     "path": "tools/pipeline_checkpoint.py",

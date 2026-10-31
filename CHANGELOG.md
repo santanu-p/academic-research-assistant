@@ -1,5 +1,10 @@
 # Changes
 
+## 3.2.0-dev.0 — unreleased
+
+- Add an optional LaTeX revision helper that calls separately installed latexdiff and Tectonic to build clean and marked PDFs from two project versions.
+- Route tracked PDF and LaTeX redline requests to the revision workflow. Review the PDFs and tool logs; included assets and bibliography files are not compared.
+
 ## 3.1.0 — 2026-10-30
 
 - Add 50 research and specialized LaTeX skills alongside the 38 existing methods; retain overlapping methods under distinct names. The general `latex-document-workflow` skill is excluded.

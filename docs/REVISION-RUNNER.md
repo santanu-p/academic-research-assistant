@@ -20,3 +20,17 @@ The runner snapshots the manuscript and sidecars, preserves supplied evidence by
 Command timeouts terminate the command's process tree using a Windows Job Object or a POSIX process group. Windows processes are assigned before execution starts. Input and output use receipt files so inherited pipes cannot hold the runner open. POSIX processes that deliberately detach can escape their group; this runner is not an operating-system sandbox. The POSIX branch has not been executed in this Windows release verification.
 
 Optional `--check` command arrays perform project-specific checks. For execution, return code 0 means both reviewers accepted and configured checks succeeded; successful preflight also returns 0 without running any review. Code 3 means the round budget was exhausted; 4 means a scientific stop; 2 means an input, command or protocol failure. These are orchestration states, not proof that a manuscript is correct or publishable. Two reviewer commands may use the same system; independence of the underlying models or scientific judgment remains the caller's responsibility.
+
+## Clean and marked LaTeX PDFs
+
+The separate helper `tools/latex_revision.py` can compare two saved LaTeX versions and build a clean updated PDF and a marked PDF. Install [latexdiff](https://github.com/ftilmann/latexdiff) and [Tectonic](https://tectonic-typesetting.github.io/) separately; neither is bundled. With both commands on `PATH`:
+
+```sh
+python -B tools/latex_revision.py /path/to/old/main.tex /path/to/new/main.tex --out /path/to/new-output-directory
+```
+
+The output directory must not already exist and must be outside both input project directories. The helper copies the updated main file's directory to temporary workspace inside that output directory, excluding `.git`, and refuses symbolic links or reparse points in the copied tree. If the main file is in a subdirectory, pass `--project-root /path/to/new` to include its project resources. The temporary copy is removed after the build; the original inputs are not edited. Do not place private credentials in the project tree or command arguments. External commands run with the user's permissions; Tectonic is invoked with `--untrusted`, which is not an operating-system sandbox.
+
+The helper runs `latexdiff --flatten` and compiles the updated and marked files with Tectonic. It produces `clean.pdf`, `marked.pdf`, `marked.tex`, command and TeX logs when available, and a hash report. The marked source may still reference figures or other files in the updated project. Its PDF uses the updated project's resources: image and bibliography-file changes are not compared, and old and new assets with the same name can render as the updated asset. Review figures, citations, math, warnings, and every PDF page against the actual sources. Hashes in the report cover the two main input files, not all included files. Some classes, custom commands, external programs, bibliography backends, or multi-file projects may need a different build procedure; a successful compile is not proof that every change is marked correctly.
+
+If the programs are not on `PATH`, `--latexdiff-command` and `--tectonic-command` accept JSON arrays of executable and fixed arguments. For example, a standalone latexdiff Perl script can be invoked with `["perl", "/path/to/latexdiff-so"]`. Use shell-appropriate quoting to pass each array as one argument. The helper does not install tools, call a model, or send the manuscript to a review service.

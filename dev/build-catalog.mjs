@@ -30,7 +30,7 @@ export const extraKeywords={
  'scientific-reasoning':['mechanism','scientific argument','causal reasoning','explanation'],
  'mathematical-modeling':['mathematical model','derivation','equation code','theoretical model'],
  'research-validation':['validate','verification','simulation','convergence','sensitivity','reproducibility'],
- 'adversarial-revision':['review loop','adversarial review','iterative revision','manuscript versions','compare versions','compare revisions','text revision'],
+ 'adversarial-revision':['review loop','adversarial review','iterative revision','manuscript versions','compare versions','compare revisions','text revision','tracked pdf','tracked pdfs','marked pdf','latex redline','latexdiff'],
  'research-pipeline':['research pipeline','end to end','orchestration'],
  'document-production':['academic document','report','manual','book','lecture notes','latex document'],
  'tex-layout':['font','layout','multilingual','macro','hyperref','cross-reference'],

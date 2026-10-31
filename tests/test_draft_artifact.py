@@ -29,6 +29,7 @@ class DraftArtifactTest(unittest.TestCase):
                 actual = packed.extractfile('package/' + entry['path']).read()
                 self.assertEqual(hashlib.sha256(actual).digest(), hashlib.sha256(source).digest(), entry['path'])
             for rel in ('tools/scientific_visuals.py', 'tools/presentation_builder.py', 'tools/text_revision_report.py',
+                        'tools/latex_revision.py',
                         'tools/pipeline_checkpoint.py', 'tools/check_external_skills.mjs', 'tools/external_handoff.mjs',
                         'examples/presentation.json',
                         'skills/systematic-review/templates/screening-flow.md',
@@ -89,6 +90,28 @@ class DraftArtifactTest(unittest.TestCase):
                                                capture_output=True, text=True, encoding='utf-8', timeout=60)
             self.assertEqual(presentation_help.returncode, 0, presentation_help.stderr)
             self.assertIn('output', presentation_help.stdout)
+            revision_help = subprocess.run([sys.executable, '-B', str(installed / 'tools/latex_revision.py'), '--help'],
+                                           capture_output=True, text=True, encoding='utf-8', timeout=60)
+            self.assertEqual(revision_help.returncode, 0, revision_help.stderr)
+            self.assertIn('--latexdiff-command', revision_help.stdout)
+            old_project, new_project = project / 'old manuscript', project / 'new manuscript'
+            old_project.mkdir()
+            new_project.mkdir()
+            (old_project / 'main.tex').write_text('Earlier version.\n', encoding='utf-8')
+            (new_project / 'main.tex').write_text('Updated version.\n', encoding='utf-8')
+            (new_project / 'chapter.tex').write_text('Included material.\n', encoding='utf-8')
+            (new_project / 'figure.dat').write_bytes(b'figure')
+            fixture = ROOT / 'tests/fixtures/latex_revision_tools.py'
+            diff_command = json.dumps([sys.executable, '-B', str(fixture), 'diff'])
+            compiler_command = json.dumps([sys.executable, '-B', str(fixture), 'tectonic'])
+            revision_out = project / 'revision-output'
+            revision = subprocess.run([sys.executable, '-B', str(installed / 'tools/latex_revision.py'),
+                str(old_project / 'main.tex'), str(new_project / 'main.tex'), '--out', str(revision_out),
+                '--latexdiff-command', diff_command, '--tectonic-command', compiler_command],
+                capture_output=True, text=True, encoding='utf-8', timeout=60)
+            self.assertEqual(revision.returncode, 0, revision.stdout + revision.stderr)
+            self.assertTrue((revision_out / 'clean.pdf').read_bytes().startswith(b'%PDF-'))
+            self.assertTrue((revision_out / 'marked.pdf').read_bytes().startswith(b'%PDF-'))
             old_text, new_text = project / 'before.txt', project / 'after.txt'
             report_path = project / 'comparison.html'
             old_text.write_text('The effect was large.\n', encoding='utf-8')

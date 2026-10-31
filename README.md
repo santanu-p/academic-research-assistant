@@ -1,12 +1,14 @@
 # Academic Research Assistant
 
-A toolkit for research planning, literature work, scientific reasoning, writing, figures, and academic documents. Version 3.1.0 combines 38 skills from the existing public v3 source, 50 additional skills, and the separately credited MIT Humanizer and Academic Humanizer projects, plus a local MCP server and optional Python tools.
+A toolkit for research planning, literature work, scientific reasoning, writing, figures, and academic documents. This development version builds on the 3.1.0 release: 38 skills from the existing public v3 source, 50 additional skills, and the separately credited MIT Humanizer and Academic Humanizer projects, plus a local MCP server and optional Python tools.
+
+This branch is an unreleased development snapshot. The latest published package is [3.1.0](https://github.com/santanu-p/academic-research-assistant/releases/tag/v3.1.0).
 
 Skills are methods that a host assistant reads and follows. The MCP server discovers and reads these methods; it does not search scholarly databases, generate research results, compile documents, or call models by itself. External research tools remain separately configured host capabilities. Routing is advisory and recognizes only some explicit exclusions; check suggestions against the full request.
 
-This incremental release contains 90 skills. It is not yet demonstrated to reproduce all 118 workflows in the separately preserved full collection. [Import mapping](docs/independent-skill-import.json) records how the 50 additional skills were included, including two renamed to avoid replacing existing skills; [Humanizer mapping](docs/humanizer-source-map.json) records the upstream source files.
+This development version contains 90 skills. It is not yet demonstrated to reproduce all 118 workflows in the separately preserved full collection. [Import mapping](docs/independent-skill-import.json) records how the 50 additional skills were included, including two renamed to avoid replacing existing skills; [Humanizer mapping](docs/humanizer-source-map.json) records the upstream source files.
 
-The separately preserved full collection has different license terms and is not part of this package. This release does not claim complete functional parity or redistribution rights for that collection.
+The separately preserved full collection has different license terms and is not part of this package. This development version does not claim complete functional parity or redistribution rights for that collection.
 
 ## Quick start
 
@@ -61,6 +63,7 @@ Python 3.10+ is optional and separate from the Node runtime.
 | ` tools/scientific_visuals.py ` | Plot comparisons, intervals, grouped observations, paired data, grids and Pareto frontiers; calculate opaque color contrast | NumPy, Matplotlib for plotting; contrast calculation needs none |
 | ` tools/presentation_builder.py ` | Create a simple slide deck with editable text and optional supplied images | python-pptx |
 | ` tools/text_revision_report.py ` | Create a text-level HTML comparison of two saved versions | None |
+| ` tools/latex_revision.py ` | Build clean and marked LaTeX PDFs from saved project versions | Separately installed latexdiff and Tectonic |
 | ` tools/pipeline_checkpoint.py ` | Check recorded phase dependencies and artifact hashes | None |
 | ` tools/revise.py ` | Run two reviewers and a reviser supplied as explicit command arrays | None; caller supplies commands |
 
@@ -69,12 +72,13 @@ python -X utf8 -B tools/prose_metrics.py draft.md --json
 python -X utf8 -B tools/table_qa.py results.tsv --json
 python -X utf8 -B tools/presentation_builder.py --help
 python -X utf8 -B tools/text_revision_report.py --help
+python -X utf8 -B tools/latex_revision.py --help
 python -X utf8 -B tools/pipeline_checkpoint.py --help
 python -X utf8 -B examples/scientific_figures.py --out outputs/synthetic
 python -X utf8 -B tools/revise.py --help
 ```
 
-See the [scientific helper API](skills/scientific-visuals/references/api.md), [presentation guidance](skills/presentations-posters/SKILL.md), and [revision runner](docs/REVISION-RUNNER.md). The PowerPoint helper creates basic editable text and shapes and can embed supplied images; inspect each resulting slide for fit and meaning. The revision report compares plain text approximately; it does not interpret LaTeX or produce tracked PDFs. Inspection reports are aids to review, not scientific or stylistic certificates. No plagiarism or AI-authorship detector is included.
+See the [scientific helper API](skills/scientific-visuals/references/api.md), [presentation guidance](skills/presentations-posters/SKILL.md), and [revision runner](docs/REVISION-RUNNER.md). The PowerPoint helper creates basic editable text and shapes and can embed supplied images; inspect each resulting slide for fit and meaning. The HTML revision report compares plain text approximately; the separate LaTeX helper calls installed tools to build PDFs and requires visual review. Inspection reports are aids to review, not scientific or stylistic certificates. No plagiarism or AI-authorship detector is included.
 
 For a synthetic PowerPoint example, install the optional `python-pptx` library in your Python environment and run `python -X utf8 -B tools/presentation_builder.py examples/presentation.json example.pptx`. Choose a new output path; the builder refuses to overwrite an existing file. The sample contains placeholders, not research results.
 

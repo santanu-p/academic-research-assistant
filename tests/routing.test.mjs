@@ -17,6 +17,11 @@ test('statistical interpretation requests discover the statistics method',async(
 test('conversion and version comparison discover their actionable workflows',async()=>{
  assert.ok((await route('Convert this CSV to a LaTeX table')).skills.slice(0,3).some(s=>s.name==='document-conversion'));
  assert.ok((await route('Compare these two manuscript versions')).skills.slice(0,3).some(s=>s.name==='adversarial-revision'));
+ for(const task of [
+  'Create clean and tracked PDFs comparing two versions of my LaTeX manuscript',
+  'Build a marked PDF of LaTeX revisions with latexdiff',
+  'Create a LaTeX redline for my revised manuscript'
+ ])assert.ok((await route(task)).skills.slice(0,3).some(s=>s.name==='adversarial-revision'),task);
 });
 test('representative stage requests select their canonical method first',async()=>{
  const cases=[['respond to reviewers','reviewer-response'],['create a scientific figure','scientific-visuals'],['repair a LaTeX build error','tex-build-repair'],['plan a grant proposal','research-proposals'],['qualitative thematic analysis','qualitative-analysis'],['derive a mathematical model','mathematical-modeling'],['translate and shorten my manuscript','academic-editing']];

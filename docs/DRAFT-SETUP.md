@@ -1,6 +1,6 @@
 # Host setup
 
-This release has 90 methods, including two separately credited MIT Humanizer skills. It does not establish complete coverage of the separately preserved 118-entry source collection. Node.js 22 or newer is required for the CLI and navigation MCP server; optional scientific tools have their own dependencies. The host checks described below used earlier snapshots of this release; live assistant activation has not been established.
+This development version has 90 methods, including two separately credited MIT Humanizer skills. It does not establish complete coverage of the separately preserved 118-entry source collection. Node.js 22 or newer is required for the CLI and navigation MCP server; optional scientific tools have their own dependencies. The host checks described below used earlier snapshots; live assistant activation has not been established.
 
 From the project root, run `node cli/ara.mjs verify` and `node cli/ara.mjs route "plan a systematic review protocol"`. Export to a new path; the CLI checks source integrity, refuses existing targets and prints the appropriate next steps. It does not change account settings.
 

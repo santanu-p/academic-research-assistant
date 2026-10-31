@@ -1,6 +1,6 @@
 ---
 name: adversarial-revision
-description: Critically review and revise research artifacts through bounded, evidence-linked challenge, repair, and rechecking without treating iteration counts as success.
+description: Use when critically reviewing research artifacts or comparing manuscript versions, including tracked LaTeX PDFs.
 ---
 
 # Adversarial revision
@@ -32,6 +32,8 @@ The optional [revision helper](../../tools/revise.py) may organize a bounded rev
 The runner takes a manuscript path, two `--reviewer` JSON commands, one `--reviser` JSON command, and `--out` pointing to a new run directory. Optional inputs include `--source`, `--rounds`, `--timeout`, and `--check`. Inspect its help for command encoding. Default preflight performs no subprocess or provider calls and creates no run directory; execution requires `--execute`. Configured commands receive prompts on standard input. Reviewers return a decision of `accept`, `revise`, or `stop` with located issues; an acceptance cannot retain major issues. A reviser reports changes and unresolved issues. For an executed run, exit zero requires both acceptances and successful configured checks; a successful preflight also returns zero without executing any review. Exhaustion, scientific stop, and operational failure remain distinct outcomes. None of these states independently certifies scientific truth.
 
 For two saved UTF-8 plain-text versions, `python -B tools/text_revision_report.py BEFORE AFTER NEW_REPORT.html` creates an offline, readable HTML comparison without modifying the inputs or overwriting an existing report. Inspect additions and deletions in context: token alignment is approximate, and this helper does not interpret LaTeX, compare rendered documents, produce tracked PDFs, or judge the validity of changes. Input and token limits are reported by the helper.
+
+For saved LaTeX project versions, the separate `python -B tools/latex_revision.py BEFORE.tex AFTER.tex --out NEW_DIRECTORY` can build clean and marked PDFs using separately installed latexdiff and Tectonic. Follow the [LaTeX revision setup and limits](../../docs/REVISION-RUNNER.md#clean-and-marked-latex-pdfs). Inspect both PDFs and the logs, including figures, citations, and math; the marked build uses updated project resources and does not compare changed image or bibliography files. A compiled comparison is not proof that every change is marked correctly.
 
 ## Deliver and verify
 

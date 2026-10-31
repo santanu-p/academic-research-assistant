@@ -6,7 +6,7 @@ const failures=[];let checks=0,links=0;
 function check(ok,message){checks++;if(!ok)failures.push(message);}
 const read=rel=>fs.readFile(path.join(ROOT,rel),'utf8');
 const pkg=JSON.parse(await read('package.json'));
-check(pkg.version==='3.1.0'&&pkg.license==='MIT'&&pkg.private===false,'Expected publishable MIT package metadata');
+check(pkg.version==='3.2.0-dev.0'&&pkg.license==='MIT'&&pkg.private===true,'Expected private development metadata');
 check(Object.keys(pkg.dependencies||{}).length===0,'Runtime must have no Node dependencies');
 check(!Object.keys(pkg.scripts||{}).some(x=>['install','postinstall','preinstall'].includes(x)),'Unexpected install hook');
 const entries=await catalog();

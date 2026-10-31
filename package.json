@@ -1,7 +1,7 @@
 {
   "name": "academic-research-assistant",
-  "version": "3.1.0",
-  "private": false,
+  "version": "3.2.0-dev.0",
+  "private": true,
   "description": "Portable academic research skills, a local MCP server and scientific workflow tools.",
   "type": "module",
   "license": "MIT",

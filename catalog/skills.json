@@ -46,7 +46,7 @@
   },
   {
     "name": "adversarial-revision",
-    "description": "Critically review and revise research artifacts through bounded, evidence-linked challenge, repair, and rechecking without treating iteration counts as success.",
+    "description": "Use when critically reviewing research artifacts or comparing manuscript versions, including tracked LaTeX PDFs.",
     "path": "skills/adversarial-revision/SKILL.md",
     "keywords": [
       "review loop",
@@ -55,7 +55,12 @@
       "manuscript versions",
       "compare versions",
       "compare revisions",
-      "text revision"
+      "text revision",
+      "tracked pdf",
+      "tracked pdfs",
+      "marked pdf",
+      "latex redline",
+      "latexdiff"
     ],
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },

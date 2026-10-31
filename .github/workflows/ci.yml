@@ -40,5 +40,5 @@ jobs:
       - run: npm pack --ignore-scripts --pack-destination .
       - name: Check offline installation from the actual package tarball
         env:
-          ARA_DRAFT_TARBALL: academic-research-assistant-3.1.0.tgz
+          ARA_DRAFT_TARBALL: academic-research-assistant-3.2.0-dev.0.tgz
         run: python -B tests/test_draft_artifact.py
