@@ -52,6 +52,9 @@ for(const item of draftImports){
 const rubricEvaluation=extraKeywords['research-manuscript-evaluation'];
 if(!rubricEvaluation)throw Error('Expected imported research-manuscript-evaluation skill');
 rubricEvaluation.push('score a manuscript','score this paper','paper grading','weighted rubric','manuscript scoring');
+const researchPipeline=extraKeywords['research-pipeline'];
+if(!researchPipeline)throw Error('Expected research-pipeline skill');
+researchPipeline.push('workflow manifest','run workflow phases','execute workflow plan','run research pipeline steps');
 export function frontmatter(raw){
  const parts=raw.replace(/^\uFEFF/,'').split(/^---\s*$/m);
  if(parts.length<3||parts[0].trim())throw Error('Expected YAML front matter');

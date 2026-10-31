@@ -27,6 +27,8 @@ Use [scientific reasoning](../scientific-reasoning/SKILL.md) to clarify inferent
 
 Maintain a compact project ledger: artifact; source or parent artifact; current status; check performed; next dependency. Distinguish planned, drafted, executed, inspected, and accepted states. A generated script is not an executed analysis, a rendered document is not a visually inspected document, and a citation string is not a verified reference.
 
+For a user-supplied manifest of local command phases, use the [workflow runner](../../docs/WORKFLOW-RUNNER.md). Inspect every command and path first. It prints a dependency-ordered plan without running commands by default; add `--execute` only for authorized actions. Its receipts record process and file facts, not scientific validity. The runner does not implement provider-specific agent dispatch.
+
 Batch independent read-only work when it helps, but sequence decisions that depend on previous findings. Parallel agent work, external actions, publication, or messages must follow the user's authorization and available tools. When evidence is missing, continue independent work and mark the dependent branch. Do not silently substitute guessed data or a different research question.
 
 At each handoff, summarize what changed, why, what evidence supports it, and what remains uncertain. Avoid large status reports that obscure the next consequential decision. Define stopping conditions in terms of deliverables and checks, with resource bounds as separate limits. Iteration counts and elapsed time alone do not establish scientific success.

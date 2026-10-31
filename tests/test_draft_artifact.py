@@ -104,6 +104,24 @@ class DraftArtifactTest(unittest.TestCase):
             self.assertEqual(rubric_report['summary']['status'], 'partial')
             self.assertEqual(rubric_report['summary']['weight_coverage_percent'], 40.0)
             self.assertIsNone(rubric_report['summary']['complete_weighted_mean'])
+            workflow_tool = installed / 'tools/workflow_runner.py'
+            workflow_example = installed / 'examples/research-workflow.json'
+            workflow_root = Path(temporary) / 'workflow-project'
+            workflow_root.mkdir()
+            workflow_plan = subprocess.run([sys.executable, '-B', str(workflow_tool), str(workflow_example),
+                '--root', str(workflow_root)], capture_output=True, text=True, encoding='utf-8', timeout=60)
+            self.assertEqual(workflow_plan.returncode, 0, workflow_plan.stderr)
+            self.assertEqual(json.loads(workflow_plan.stdout)['mode'], 'plan')
+            self.assertFalse((workflow_root / 'results').exists())
+            workflow_report = Path(temporary) / 'workflow-receipt.json'
+            workflow_run = subprocess.run([sys.executable, '-B', str(workflow_tool), str(workflow_example),
+                '--root', str(workflow_root), '--execute', '--report', str(workflow_report)],
+                capture_output=True, text=True, encoding='utf-8', timeout=60)
+            self.assertEqual(workflow_run.returncode, 0, workflow_run.stdout + workflow_run.stderr)
+            self.assertEqual([row['status'] for row in json.loads(workflow_report.read_text(encoding='utf-8'))['phases']],
+                             ['completed', 'completed'])
+            self.assertEqual((workflow_root / 'results/summary.txt').read_text(encoding='utf-8'),
+                             'SYNTHETIC EXAMPLE ONLY.\n')
             revision_help = subprocess.run([sys.executable, '-B', str(installed / 'tools/latex_revision.py'), '--help'],
                                            capture_output=True, text=True, encoding='utf-8', timeout=60)
             self.assertEqual(revision_help.returncode, 0, revision_help.stderr)

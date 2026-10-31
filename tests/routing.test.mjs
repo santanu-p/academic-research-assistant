@@ -18,6 +18,10 @@ test('weighted manuscript-rubric scoring selects manuscript evaluation',async()=
  const result=await route('Score this paper using the supplied weighted rubric');
  assert.equal(result.skills[0].name,'research-manuscript-evaluation');
 });
+test('explicit workflow-manifest execution selects research-pipeline',async()=>{
+ const result=await route('Execute the phases in this workflow manifest');
+ assert.equal(result.skills[0].name,'research-pipeline');
+});
 test('conversion and version comparison discover their actionable workflows',async()=>{
  assert.ok((await route('Convert this CSV to a LaTeX table')).skills.slice(0,3).some(s=>s.name==='document-conversion'));
  assert.ok((await route('Compare these two manuscript versions')).skills.slice(0,3).some(s=>s.name==='adversarial-revision'));

@@ -65,6 +65,7 @@ Python 3.10+ is optional and separate from the Node runtime.
 | ` tools/text_revision_report.py ` | Create a text-level HTML comparison of two saved versions | None |
 | ` tools/latex_revision.py ` | Build clean and marked LaTeX PDFs from saved project versions | Separately installed latexdiff and Tectonic |
 | ` tools/rubric_score.py ` | Calculate evidence-tracked weighted summaries from a user-supplied rubric | None |
+| ` tools/workflow_runner.py ` | Plan or explicitly execute user-supplied local command phases | Python 3.10+ |
 | ` tools/pipeline_checkpoint.py ` | Check recorded phase dependencies and artifact hashes | None |
 | ` tools/revise.py ` | Run two reviewers and a reviser supplied as explicit command arrays | None; caller supplies commands |
 
@@ -75,12 +76,13 @@ python -X utf8 -B tools/presentation_builder.py --help
 python -X utf8 -B tools/text_revision_report.py --help
 python -X utf8 -B tools/latex_revision.py --help
 python -X utf8 -B tools/rubric_score.py examples/rubric-review.json
+python -X utf8 -B tools/workflow_runner.py examples/research-workflow.json
 python -X utf8 -B tools/pipeline_checkpoint.py --help
 python -X utf8 -B examples/scientific_figures.py --out outputs/synthetic
 python -X utf8 -B tools/revise.py --help
 ```
 
-See the [scientific helper API](skills/scientific-visuals/references/api.md), [presentation guidance](skills/presentations-posters/SKILL.md), [revision runner](docs/REVISION-RUNNER.md), and [rubric scoring guide](docs/RUBRIC-SCORING.md). The PowerPoint helper creates basic editable text and shapes and can embed supplied images; inspect each resulting slide for fit and meaning. The HTML revision report compares plain text approximately; the separate LaTeX helper calls installed tools to build PDFs and requires visual review. Rubric arithmetic uses only reviewer-assigned scores and does not assess manuscript content. Inspection reports are aids to review, not scientific or stylistic certificates. No plagiarism or AI-authorship detector is included.
+See the [scientific helper API](skills/scientific-visuals/references/api.md), [presentation guidance](skills/presentations-posters/SKILL.md), [revision runner](docs/REVISION-RUNNER.md), [rubric scoring guide](docs/RUBRIC-SCORING.md), and [workflow runner guide](docs/WORKFLOW-RUNNER.md). The PowerPoint helper creates basic editable text and shapes and can embed supplied images; inspect each resulting slide for fit and meaning. The HTML revision report compares plain text approximately; the separate LaTeX helper calls installed tools to build PDFs and requires visual review. Rubric arithmetic uses only reviewer-assigned scores and does not assess manuscript content. The workflow runner plans by default; `--execute` runs caller-supplied commands with the current user's permissions, without a sandbox. Inspection reports are aids to review, not scientific or stylistic certificates. No plagiarism or AI-authorship detector is included.
 
 For a synthetic PowerPoint example, install the optional `python-pptx` library in your Python environment and run `python -X utf8 -B tools/presentation_builder.py examples/presentation.json example.pptx`. Choose a new output path; the builder refuses to overwrite an existing file. The sample contains placeholders, not research results.
 

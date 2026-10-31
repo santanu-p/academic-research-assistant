@@ -16,8 +16,8 @@
   },
   {
     "path": "CHANGELOG.md",
-    "bytes": 1740,
-    "sha256": "d3affee85fcd3c1b33936746a74378cb5d4f2abd4b7d67d3c0574cced79448de"
+    "bytes": 1862,
+    "sha256": "88139e4e7c1b19f51e770d48f7ff2ab0139516918c23b1fa45e5662ac86640ad"
   },
   {
     "path": "LICENSE",
@@ -26,8 +26,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 8859,
-    "sha256": "5fdf4d37924177432093c227643f2a8a95bf6cf948455e6d8d6aa64e6d22213e"
+    "bytes": 9232,
+    "sha256": "bef664cde25dc042d1e6ed1bf1204d3d7ef5e269180a0c4647f731dd9f2c5019"
   },
   {
     "path": "SKILL.md",
@@ -41,8 +41,8 @@
   },
   {
     "path": "catalog/skills.json",
-    "bytes": 42944,
-    "sha256": "564991d45a6604d92f689a213b8a508d41be63d62c2ed2ab43af413e6d741935"
+    "bytes": 43068,
+    "sha256": "362d4cd3db13cc5a0f71971a6f60ba2b651e98faf247fa2d406353dc3d259ecd"
   },
   {
     "path": "cli/ara.mjs",
@@ -90,6 +90,11 @@
     "sha256": "3336c26e379e26ca3aa1dc532d3a3148837691159d54e420296de0a74c8b7be6"
   },
   {
+    "path": "docs/WORKFLOW-RUNNER.md",
+    "bytes": 2841,
+    "sha256": "2a530aec323cc1bf8a2a19bb4a90e5d9ea4b27f10e2b2eb4ca2dd70f06633292"
+  },
+  {
     "path": "docs/humanizer-source-map.json",
     "bytes": 5563,
     "sha256": "29854cb76bf8a31f7df07cfb89560c1bf40edaf4ea9966c0c3f8c70a3b0ee167"
@@ -108,6 +113,11 @@
     "path": "examples/presentation.json",
     "bytes": 484,
     "sha256": "6fd1304688e5d5f456fbd7746cf68acae89cd21312ef5e0b5d66392a72ec5f0b"
+  },
+  {
+    "path": "examples/research-workflow.json",
+    "bytes": 746,
+    "sha256": "e408a144ecb58ac72eea068528934410c2f4f1c9344f12e0e49854777a6216cd"
   },
   {
     "path": "examples/rubric-review.json",
@@ -591,8 +601,8 @@
   },
   {
     "path": "skills/research-pipeline/SKILL.md",
-    "bytes": 4985,
-    "sha256": "b8c29499ece863ae6e0059c8bacf5e6a1866f96bf04a05c1c3a1598cb795db23"
+    "bytes": 5387,
+    "sha256": "93599efa3fde61d655f676536c310b728221b418f30dc4695618862a49212c73"
   },
   {
     "path": "skills/research-planning/SKILL.md",
@@ -863,5 +873,10 @@
     "path": "tools/visual_qa.py",
     "bytes": 9318,
     "sha256": "1fea559e1065ad671e54be990bc179245e3776b79e34b84764583807e2fa8478"
+  },
+  {
+    "path": "tools/workflow_runner.py",
+    "bytes": 14414,
+    "sha256": "baccc80b2937b82518664fbf671dbb4fcf7a6d90f8eeea27e577514bfaf2701a"
   }
 ]

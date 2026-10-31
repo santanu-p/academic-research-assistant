@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "title": "Synthetic local workflow example",
+  "phases": [
+    {
+      "id": "prepare",
+      "command": [
+        "python",
+        "-c",
+        "from pathlib import Path; Path('results').mkdir(parents=True, exist_ok=True); Path('results/prepared.txt').write_text('Synthetic example only.\\n', encoding='utf-8')"
+      ],
+      "outputs": ["results/prepared.txt"]
+    },
+    {
+      "id": "summarize",
+      "depends_on": ["prepare"],
+      "command": [
+        "python",
+        "-c",
+        "from pathlib import Path; source = Path('results/prepared.txt').read_text(encoding='utf-8'); Path('results/summary.txt').write_text(source.upper(), encoding='utf-8')"
+      ],
+      "outputs": ["results/summary.txt"]
+    }
+  ]
+}

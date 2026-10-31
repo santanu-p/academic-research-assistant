@@ -661,7 +661,11 @@
     "keywords": [
       "research pipeline",
       "end to end",
-      "orchestration"
+      "orchestration",
+      "workflow manifest",
+      "run workflow phases",
+      "execute workflow plan",
+      "run research pipeline steps"
     ],
     "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
   },
