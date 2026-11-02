@@ -14,7 +14,16 @@ NPM = 'npm.cmd' if os.name == 'nt' else 'npm'
 
 class DraftArtifactTest(unittest.TestCase):
     def test_archive_and_installed_cli(self):
-        archive = Path(os.environ['ARA_DRAFT_TARBALL']).resolve(strict=True)
+        archive_name = os.environ.get('ARA_DRAFT_TARBALL')
+        if archive_name:
+            archive = Path(archive_name)
+        else:
+            candidates = sorted(Path.cwd().glob('*.tgz'))
+            self.assertEqual(len(candidates), 1,
+                             f'Expected one npm pack archive in {Path.cwd()}, found: '
+                             f'{[path.name for path in candidates]}')
+            archive = candidates[0]
+        archive = archive.resolve(strict=True)
         with tarfile.open(archive, 'r:gz') as packed:
             inventory = json.load(packed.extractfile('package/catalog/files.json'))
             expected = {'package/' + item['path'] for item in inventory} | {'package/catalog/files.json'}
