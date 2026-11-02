@@ -1,13 +1,18 @@
 [
   {
+    "path": ".claude-plugin/marketplace.json",
+    "bytes": 519,
+    "sha256": "980d7115bb228e74842352aeb786eb78f2c02b62587a5cb6e15c121f8ab66d94"
+  },
+  {
     "path": ".claude-plugin/plugin.json",
-    "bytes": 185,
-    "sha256": "c93eb07af4ed339ec9ac3f55027976dec69926de6141ce78cccd316f6d634311"
+    "bytes": 179,
+    "sha256": "38de88a0965df6a39a299269b65e8a43afde4a7fc73f75d009eee8f0e37e25b1"
   },
   {
     "path": ".codex-plugin/plugin.json",
-    "bytes": 224,
-    "sha256": "2856ded749af39dc45f115215fc2c2e1158f475b965ea7039163bbc300aec0dc"
+    "bytes": 218,
+    "sha256": "d377401af602cb7a58b8458909cbf072f7a5f2da8db17e7a11e283a5290bca01"
   },
   {
     "path": ".mcp.json",
@@ -16,8 +21,8 @@
   },
   {
     "path": "CHANGELOG.md",
-    "bytes": 1862,
-    "sha256": "88139e4e7c1b19f51e770d48f7ff2ab0139516918c23b1fa45e5662ac86640ad"
+    "bytes": 1856,
+    "sha256": "428e005c22e1e4e95f675d0b21382e281da8d705d4c23f65cc263626235a0483"
   },
   {
     "path": "LICENSE",
@@ -26,8 +31,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 9232,
-    "sha256": "bef664cde25dc042d1e6ed1bf1204d3d7ef5e269180a0c4647f731dd9f2c5019"
+    "bytes": 9771,
+    "sha256": "2c06fe856202a90e3a41aaad9bff58401b9f017da083b42f6aec51cf6aead659"
   },
   {
     "path": "SKILL.md",
@@ -56,8 +61,8 @@
   },
   {
     "path": "docs/DRAFT-SETUP.md",
-    "bytes": 7087,
-    "sha256": "4a3e26c42615b0f283545674fdf9be47e9307dfe8283f4122079ffaa50e3dd86"
+    "bytes": 8161,
+    "sha256": "85389e5e13d791dceeb7fbcf8c3130543b941a395d8ed14bb021df98b01db0c0"
   },
   {
     "path": "docs/INSTALLATION.md",
@@ -65,9 +70,14 @@
     "sha256": "9f8cc8cbe75caf4961654e9689b13b78b876b8bcafc868bcf4b5670ea9700cd3"
   },
   {
+    "path": "docs/RELEASE-LICENSES.md",
+    "bytes": 5416,
+    "sha256": "87e4dd8977c598f0afff8f7ff6dafac09bf7412ed78537a31d3f7a4805374f5a"
+  },
+  {
     "path": "docs/RELEASE.md",
-    "bytes": 1617,
-    "sha256": "40e6f1d21e2cc98d7e84efe83d962ff2aed021e9d4b3f1b5ec86fb7740218216"
+    "bytes": 4527,
+    "sha256": "2ddc58ed06d4d65ad70514581e008c0355afe2b7c0ec4b842c34fdce0f12aa6f"
   },
   {
     "path": "docs/RESEARCH-CONTRACT.md",
@@ -141,13 +151,13 @@
   },
   {
     "path": "package.json",
-    "bytes": 1312,
-    "sha256": "e15cb15ffd184978890dfae860371b2f3c493c59d4d0178895c688954c464577"
+    "bytes": 1306,
+    "sha256": "088f85a8afa1f696970ff1d587af758726184b38b3ec337910215341238cb4eb"
   },
   {
     "path": "plugin.json",
-    "bytes": 1419,
-    "sha256": "6c70efb3f5956f78492a4f1db20917e23c3865ec39a1ccdba3128ded7fc3aef1"
+    "bytes": 1413,
+    "sha256": "a35428d59e150a9a9b7aeb51fc7f2d1ad59f430cfe5f1fa51dabce6088651966"
   },
   {
     "path": "resources/upstream/academic-humanizer-main/LICENSE",

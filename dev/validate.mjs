@@ -6,7 +6,7 @@ const failures=[];let checks=0,links=0;
 function check(ok,message){checks++;if(!ok)failures.push(message);}
 const read=rel=>fs.readFile(path.join(ROOT,rel),'utf8');
 const pkg=JSON.parse(await read('package.json'));
-check(pkg.version==='3.2.0-dev.0'&&pkg.license==='MIT'&&pkg.private===true,'Expected private development metadata');
+check(pkg.version==='3.2.0'&&pkg.license==='MIT'&&pkg.private===true,'Expected private 3.2.0 GitHub-release metadata');
 check(Object.keys(pkg.dependencies||{}).length===0,'Runtime must have no Node dependencies');
 check(!Object.keys(pkg.scripts||{}).some(x=>['install','postinstall','preinstall'].includes(x)),'Unexpected install hook');
 const entries=await catalog();
@@ -44,6 +44,9 @@ for(const rel of ['plugin.json','.codex-plugin/plugin.json','.claude-plugin/plug
 const codex=JSON.parse(await read('mcp.json')),claude=JSON.parse(await read('.mcp.json'));
 check(codex.mcpServers[pkg.name].args[0]==='${PLUGIN_ROOT}/server/mcp.mjs','Codex MCP root placeholder');
 check(claude.mcpServers[pkg.name].args[0]==='${CLAUDE_PLUGIN_ROOT}/server/mcp.mjs','Claude MCP root placeholder');
+const claudeMarketplace=JSON.parse(await read('.claude-plugin/marketplace.json'));
+check(claudeMarketplace.name==='academic-research-assistant'&&claudeMarketplace.owner?.name==='santanu-p','Claude marketplace identity');
+check(claudeMarketplace.plugins?.length===1&&claudeMarketplace.plugins[0].name===pkg.name&&claudeMarketplace.plugins[0].source==='.', 'Claude marketplace points to the root plugin');
 const integrity=await verify();check(integrity.passed,'Runtime integrity: '+JSON.stringify(integrity));
 const report={version:pkg.version,skills:entries.length,runtimeFiles:files.length,localLinks:links,checks,failures};
 await fs.mkdir(path.join(ROOT,'build'),{recursive:true});

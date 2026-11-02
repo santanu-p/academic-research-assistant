@@ -1,6 +1,6 @@
 # Changes
 
-## 3.2.0-dev.0 — unreleased
+## 3.2.0 — 2026-11-02
 
 - Add an optional LaTeX revision helper that calls separately installed latexdiff and Tectonic to build clean and marked PDFs from two project versions.
 - Route tracked PDF and LaTeX redline requests to the revision workflow. Review the PDFs and tool logs; included assets and bibliography files are not compared.

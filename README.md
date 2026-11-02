@@ -1,18 +1,23 @@
 # Academic Research Assistant
 
-A toolkit for research planning, literature work, scientific reasoning, writing, figures, and academic documents. This development version builds on the 3.1.0 release: 38 skills from the existing public v3 source, 50 additional skills, and the separately credited MIT Humanizer and Academic Humanizer projects, plus a local MCP server and optional Python tools.
+Reusable research workflows, scientific writing guidance, document helpers, and a local navigation server for AI assistants. The package contains skill instructions and optional tools; the assistant and its configured tools perform the research work.
 
-This branch is an unreleased development snapshot. The latest published package is [3.1.0](https://github.com/santanu-p/academic-research-assistant/releases/tag/v3.1.0).
+**Release status:** Version 3.2.0 is distributed through the GitHub release assets. The npm manifest remains `private: true`, so npm registry publication is separate. This release contains 90 skills and does not claim to reproduce the separately preserved 118-entry reviewed collection.
 
-Skills are methods that a host assistant reads and follows. The MCP server discovers and reads these methods; it does not search scholarly databases, generate research results, compile documents, or call models by itself. External research tools remain separately configured host capabilities. Routing is advisory and recognizes only some explicit exclusions; check suggestions against the full request.
+The MCP server is local and read-only: it searches, routes to, and reads bundled instructions, and checks the installed bundle. It does not query scholarly databases, call models, run experiments, or compile documents by itself. External services and optional software are configured separately.
 
-This development version contains 90 skills. It is not yet demonstrated to reproduce all 118 workflows in the separately preserved full collection. [Import mapping](docs/independent-skill-import.json) records how the 50 additional skills were included, including two renamed to avoid replacing existing skills; [Humanizer mapping](docs/humanizer-source-map.json) records the upstream source files.
+## Install the published release
 
-The separately preserved full collection has different license terms and is not part of this package. This development version does not claim complete functional parity or redistribution rights for that collection.
+The 3.2.0 tarball can be run directly from GitHub with Node.js 22 or newer and npm. This avoids assuming the package is available from the npm registry.
 
-## Quick start
+```sh
+npx --yes --package=https://github.com/santanu-p/academic-research-assistant/releases/download/v3.2.0/academic-research-assistant-3.2.0.tgz academic-research-assistant verify
+npx --yes --package=https://github.com/santanu-p/academic-research-assistant/releases/download/v3.2.0/academic-research-assistant-3.2.0.tgz academic-research-assistant route "plan a systematic literature review"
+```
 
-Requires Node.js 22 or later. No Node dependencies or account setup are needed for the local CLI.
+The release tarball was installed and checked offline before publication. The npm registry lookup returned E404, which does not distinguish an absent package from one inaccessible to the current account; the manifest is explicitly private, so a bare `npx academic-research-assistant` command is not documented as an install method.
+
+To work from source, clone the repository and use the local CLI:
 
 ```sh
 git clone https://github.com/santanu-p/academic-research-assistant.git
@@ -23,79 +28,100 @@ node cli/ara.mjs route "plan a systematic literature review"
 node cli/ara.mjs verify
 ```
 
-You can also use the downloadable release archive after extracting it. Registry installation depends on publication to npm; check the registry before relying on an `npx` command.
+## Use with AI assistants
 
-## Use with a host
+The CLI exports complete bundles to new directories and prints host-specific next steps. It refuses to overwrite an existing destination. From a source checkout, run each `node cli/ara.mjs` command from the repository root.
 
-Run exports from this project directory. Choose a new destination: existing folders are refused. Export/install copy the complete runtime bundle and print the next steps. They do not change host settings or install host applications.
-
-| Host/profile | Command |
-| --- | --- |
-| Codex local marketplace | ` node cli/ara.mjs export --host codex --target ../ara-codex-marketplace ` |
-| Claude Code plugin | ` node cli/ara.mjs export --host claude --target ../ara-claude-plugin ` |
-| Antigravity plugin | ` node cli/ara.mjs export --host antigravity --target ../ara-antigravity-plugin ` |
-| Codex single entry skill | ` node cli/ara.mjs export --host codex-skill --target ../ara-codex-skill ` |
-| Claude single entry skill | ` node cli/ara.mjs export --host claude-skill --target ../ara-claude-skill ` |
-| Antigravity single entry skill | ` node cli/ara.mjs export --host antigravity-skill --target ../ara-antigravity-skill ` |
-| Other assistant / local MCP | ` node cli/ara.mjs export --host generic --target ../ara-generic ` |
-
-The profiles emit local files only. A local export does not establish activation in Codex, Claude, or Antigravity. Claude and Antigravity wrappers contain the complete nested bundle as one outer skill; keep that bundle intact. Antigravity MCP configuration is optional and uses the installed bundle's absolute path. Generic compatibility depends on the host supporting local files, Agent Skills, or stdio MCP.
-
-See [host setup](docs/DRAFT-SETUP.md) for registration commands and verification limits. The historical [v3 installation guide](docs/INSTALLATION.md) is retained as a reference. Each export prints its own follow-up steps.
-
-For separately installed skills, the setup guide also describes an opt-in local preflight that checks only user-specified paths. Actual registration and invocation depend on the host; the preflight does not connect external services or establish permission to use third-party material.
-
-## Research coverage
-
-The [skill catalog](catalog/skills.json) lists all methods. Start with [research-assistant](skills/research-assistant/SKILL.md), which routes by research stage. Every skill shares the [research contract](docs/RESEARCH-CONTRACT.md): preserve evidence, identify assumptions, distinguish completed work from proposals, and verify artifacts before claiming completion.
-
-Coverage includes research questions, methods, literature searching and appraisal, systematic reviews, meta-analysis, quantitative and qualitative analysis, citations, research integrity, proposals and planning, scientific models and validation, manuscript preparation and revision, LaTeX production and repair, conversion, figures and tables, slides, posters, theses, professional documents, teaching materials, and public communication.
-
-## Executable tools
-
-Python 3.10+ is optional and separate from the Node runtime.
-
-| Tool | Purpose | Additional libraries |
+| Host | Supported installation route | Verification boundary |
 | --- | --- | --- |
-| ` tools/prose_metrics.py ` | Descriptive prose counts and optional exemplar comparison | None |
-| ` tools/table_qa.py ` | Inspect delimited numerical tables and uncertainty notation | None |
-| ` tools/visual_qa.py ` | Inspect SVG, raster, or PDF artifacts | Pillow for raster; PyMuPDF for PDF |
-| ` tools/scientific_visuals.py ` | Plot comparisons, intervals, grouped observations, paired data, grids and Pareto frontiers; calculate opaque color contrast | NumPy, Matplotlib for plotting; contrast calculation needs none |
-| ` tools/presentation_builder.py ` | Create a simple slide deck with editable text and optional supplied images | python-pptx |
-| ` tools/text_revision_report.py ` | Create a text-level HTML comparison of two saved versions | None |
-| ` tools/latex_revision.py ` | Build clean and marked LaTeX PDFs from saved project versions | Separately installed latexdiff and Tectonic |
-| ` tools/rubric_score.py ` | Calculate evidence-tracked weighted summaries from a user-supplied rubric | None |
-| ` tools/workflow_runner.py ` | Plan or explicitly execute user-supplied local command phases | Python 3.10+ |
-| ` tools/pipeline_checkpoint.py ` | Check recorded phase dependencies and artifact hashes | None |
-| ` tools/revise.py ` | Run two reviewers and a reviser supplied as explicit command arrays | None; caller supplies commands |
+| Codex CLI / app | Export a local marketplace, register it, then install the plugin with Codex. The portable skill profile is also available. | The 3.2.0 tarball exported a Codex marketplace and its nested bundle passed `verify`; Codex CLI 0.163.0-alpha.10.2 exposes the marketplace/add commands. A separate 4.0.0-local.1 artifact passed isolated install and app-server discovery for 118 skill entries and six MCP tools; no live assistant task was tested. |
+| Claude Code | Export a native plugin. Use `--plugin-dir` for one session, or register a marketplace and install by name. | The current machine has no `claude` command. Claude Code 2.1.311 validated a wrapper from the separate 4.0.0-local.1 artifact; no live task was tested. |
+| Antigravity | Install the plugin from a GitHub repository or a local directory with `agy plugin install`; optional MCP configuration is separate. | The current machine has no `agy` command. Antigravity CLI 1.4.9 validated and installed the separate 4.0.0-local.1 artifact; no live assistant task or MCP discovery was tested. |
+| Other compatible agents | Use the portable skill bundle where Agent Skills are supported, or configure the printed stdio MCP entry where MCP is supported. | There is no universal skill path. Check the target host's current documentation and verify discovery there. |
+
+### Codex
 
 ```sh
-python -X utf8 -B tools/prose_metrics.py draft.md --json
-python -X utf8 -B tools/table_qa.py results.tsv --json
-python -X utf8 -B tools/presentation_builder.py --help
-python -X utf8 -B tools/text_revision_report.py --help
-python -X utf8 -B tools/latex_revision.py --help
-python -X utf8 -B tools/rubric_score.py examples/rubric-review.json
-python -X utf8 -B tools/workflow_runner.py examples/research-workflow.json
-python -X utf8 -B tools/pipeline_checkpoint.py --help
-python -X utf8 -B examples/scientific_figures.py --out outputs/synthetic
-python -X utf8 -B tools/revise.py --help
+npx --yes --package=https://github.com/santanu-p/academic-research-assistant/releases/download/v3.2.0/academic-research-assistant-3.2.0.tgz academic-research-assistant export --host codex --target ../ara-codex-marketplace
+codex plugin marketplace add ../ara-codex-marketplace
+codex plugin add academic-research-assistant@academic-research-assistant-local
 ```
 
-See the [scientific helper API](skills/scientific-visuals/references/api.md), [presentation guidance](skills/presentations-posters/SKILL.md), [revision runner](docs/REVISION-RUNNER.md), [rubric scoring guide](docs/RUBRIC-SCORING.md), and [workflow runner guide](docs/WORKFLOW-RUNNER.md). The PowerPoint helper creates basic editable text and shapes and can embed supplied images; inspect each resulting slide for fit and meaning. The HTML revision report compares plain text approximately; the separate LaTeX helper calls installed tools to build PDFs and requires visual review. Rubric arithmetic uses only reviewer-assigned scores and does not assess manuscript content. The workflow runner plans by default; `--execute` runs caller-supplied commands with the current user's permissions, without a sandbox. Inspection reports are aids to review, not scientific or stylistic certificates. No plagiarism or AI-authorship detector is included.
+The marketplace export and nested bundle verification were run from the actual 3.2.0 tarball. Codex's current [plugin guide](https://developers.openai.com/plugins/build/plugins) documents local marketplaces; `codex plugin marketplace add` registers a source and `codex plugin add` installs from it.
 
-For a synthetic PowerPoint example, install the optional `python-pptx` library in your Python environment and run `python -X utf8 -B tools/presentation_builder.py examples/presentation.json example.pptx`. Choose a new output path; the builder refuses to overwrite an existing file. The sample contains placeholders, not research results.
+### Claude Code
 
-## Develop and package
+```sh
+npx --yes --package=https://github.com/santanu-p/academic-research-assistant/releases/download/v3.2.0/academic-research-assistant-3.2.0.tgz academic-research-assistant export --host claude --target ../ara-claude
+claude plugin validate ../ara-claude
+claude --plugin-dir ../ara-claude
+```
+
+`--plugin-dir` loads the plugin for one session. The 3.2.0 source also includes `.claude-plugin/marketplace.json` for persistent installation from a local checkout:
+
+```sh
+claude plugin marketplace add /absolute/path/to/academic-research-assistant
+claude plugin install academic-research-assistant@academic-research-assistant --scope user
+```
+
+The persistent flow uses the marketplace manifest included in 3.2.0. See Anthropic's current [plugin installation](https://code.claude.com/docs/en/plugins/install) and [marketplace reference](https://code.claude.com/docs/en/plugins/marketplace-reference). The manifest has structural checks but was not checked with the Claude CLI on this machine.
+
+### Antigravity
+
+```sh
+agy plugin install https://github.com/santanu-p/academic-research-assistant
+agy plugin list
+```
+
+The current official [Antigravity plugin guide](https://antigravity.google/docs/plugins?tab=cli) supports GitHub and local-directory plugin installation. A separate MCP connection is optional; see [Antigravity MCP setup](https://antigravity.google/docs/mcp). Verify the installed plugin in the host before relying on it.
+
+### Portable skills and MCP
+
+```sh
+node cli/ara.mjs export --host generic --target ../ara-generic
+node ../ara-generic/cli/ara.mjs config --host generic --root ../ara-generic
+```
+
+Use the emitted skill folder at a location supported by the target host. Add the printed stdio MCP configuration only where the host supports MCP. Agent Skills uses a `SKILL.md` file with required `name` and `description` frontmatter; see the [format specification](https://agentskills.io/specification). Keep the full exported bundle together because skills can refer to shared files.
+
+## Capabilities and examples
+
+The 90-skill release covers research planning and questions, evidence discovery and appraisal, literature reviews, study methods, quantitative and qualitative analysis, citations, academic writing, thesis and proposal work, LaTeX, scientific figures and tables, presentations, and research communication. The [catalog](catalog/skills.json) lists the installed methods. Start with [research-assistant](skills/research-assistant/SKILL.md) for stage-based routing and the [research contract](docs/RESEARCH-CONTRACT.md) for evidence and artifact checks.
+
+Example local commands:
+
+```sh
+node cli/ara.mjs route "compare these studies and identify the evidence gaps"
+node cli/ara.mjs read skills/systematic-review/SKILL.md
+python -X utf8 -B tools/workflow_runner.py examples/research-workflow.json
+python -X utf8 -B tools/rubric_score.py examples/rubric-review.json
+```
+
+Optional tools include descriptive prose and table checks, figures, editable PowerPoint output, text and LaTeX revision reports, evidence-tracked rubric arithmetic, and a dry-run-first local workflow runner. See [tool requirements and limits](docs/DEVELOPMENT.md) and the individual guides in `docs/`. Python 3.10+ is optional; some tools require separately installed libraries or programs.
+
+## Requirements and troubleshooting
+
+- Node.js 22 or newer for the CLI and MCP server. The Node runtime has no npm dependencies.
+- Python 3.10 or newer only for optional Python tools and tests. Optional package dependencies are listed in [development notes](docs/DEVELOPMENT.md).
+- GitHub download for the public release tarball; the host application and its account are installed and configured separately.
+
+If an export says its target exists, choose a new path. If a host cannot find Node, use the absolute executable path reported by `node cli/ara.mjs doctor` in its MCP configuration. If the host does not show the plugin or skill, check the host's plugin list or skill browser and reload it. Exporting a bundle does not activate it. If a Python helper reports a missing module or executable, install its documented optional dependency; the core CLI does not install it.
+
+## Verification and contribution
+
+CI runs on Windows and Ubuntu with Node.js 22 and Python 3.11. From the source checkout, run:
 
 ```sh
 npm run build
 npm run validate
 npm test
 python -X utf8 -B -m unittest discover -s tests/python
+python -X utf8 -B tests/test_package_release.py
 npm pack
 ```
 
-No ` npm install ` is required for the Node runtime. Python tests involving optional libraries report skips when those libraries are absent. Developer tests, generated outputs, and private recovery material are excluded from the npm tarball. See [development](docs/DEVELOPMENT.md), the historical [v3 release record](docs/RELEASE.md), and the historical [v3 source disposition](docs/SOURCE-DISPOSITION.md).
+The pack preflight runs build, validation, and Node tests. Python tests and actual-artifact installation checks are separate. See [contributing](CONTRIBUTING.md) and [changelog](CHANGELOG.md). No CI badge is shown because no verified CI result is claimed here.
 
-The two MIT Humanizer sources are included with their notices. Other supplied source collections and previous private integrations are not vendored here. [LICENSE](LICENSE) covers this project's newly authored code and text; [third-party notices](THIRD_PARTY_NOTICES.md) describe the separate source licenses. Rewriting existing third-party material would not remove its license conditions.
+## Licensing and collection scope
+
+The root [MIT license](LICENSE) covers this project's own code and text. The bundled Humanizer projects retain their separate MIT notices. The original complete reviewed collection is preserved separately and is not included in this 90-skill package; the full collection has mixed terms and unresolved redistribution permissions. Do not infer a new license from paraphrasing. See [release rights](docs/RELEASE-LICENSES.md), [source disposition](docs/SOURCE-DISPOSITION.md), and [third-party notices](THIRD_PARTY_NOTICES.md); credits and notices remain intact.

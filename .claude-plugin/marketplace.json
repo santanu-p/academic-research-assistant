@@ -1,0 +1,17 @@
+{
+  "name": "academic-research-assistant",
+  "description": "Research planning, evidence appraisal, scientific writing, and local academic workflow tools.",
+  "owner": {
+    "name": "santanu-p",
+    "url": "https://github.com/santanu-p"
+  },
+  "plugins": [
+    {
+      "name": "academic-research-assistant",
+      "source": ".",
+      "description": "Portable academic research skills with local navigation tools.",
+      "category": "Research",
+      "tags": ["academic", "research", "writing", "science"]
+    }
+  ]
+}

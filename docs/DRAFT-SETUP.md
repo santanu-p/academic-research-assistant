@@ -1,6 +1,6 @@
 # Host setup
 
-This development version has 90 methods, including two separately credited MIT Humanizer skills. It does not establish complete coverage of the separately preserved 118-entry source collection. Node.js 22 or newer is required for the CLI and navigation MCP server; optional scientific tools have their own dependencies. The host checks described below used earlier snapshots; live assistant activation has not been established.
+This 3.2.0 release has 90 methods, including two separately credited MIT Humanizer skills. It does not establish complete coverage of the separately preserved 118-entry source collection. Node.js 22 or newer is required for the CLI and navigation MCP server; optional scientific tools have their own dependencies. Host-format and isolated-profile checks below are distinguished from live research tasks, which have not been verified. On the current machine, Codex CLI is `0.163.0-alpha.10.2`; Claude Code and Antigravity CLIs are not installed.
 
 From the project root, run `node cli/ara.mjs verify` and `node cli/ara.mjs route "plan a systematic review protocol"`. Export to a new path; the CLI checks source integrity, refuses existing targets and prints the appropriate next steps. It does not change account settings.
 
@@ -12,7 +12,7 @@ codex plugin marketplace add /absolute/new/ara-marketplace
 codex plugin add academic-research-assistant@academic-research-assistant-local
 ```
 
-The two `codex` commands registered and installed this local marketplace plugin in an isolated Codex profile; the installed CLI verified its indexed files. A live assistant task and MCP discovery in a Codex session have not been tested. Alternatively use `--host codex-skill` and place the complete exported folder at the host's documented skills location.
+The 3.2.0 tarball was installed offline, exported to a Codex marketplace, and its nested plugin bundle passed `verify`. The current Codex CLI help confirms `codex plugin marketplace add` and `codex plugin add`; an earlier isolated-profile install is recorded, but a live assistant task is untested. Alternatively use `--host codex-skill` and place the complete exported folder at the host's documented skills location. See the current [Codex plugin guide](https://developers.openai.com/plugins/build/plugins).
 
 ## Claude Code
 
@@ -22,7 +22,14 @@ claude plugin validate /absolute/new/ara-claude
 claude --plugin-dir /absolute/new/ara-claude
 ```
 
-The wrapper contains one outer skill with the complete nested bundle and its local MCP configuration. `--plugin-dir` loads for a session. Claude Code 2.1.311 validated the exported wrapper; a live assistant session remains untested. `--host claude-skill` produces an instruction-only folder instead.
+The wrapper contains one outer skill with the complete nested bundle and its local MCP configuration. `--plugin-dir` loads it for one session. The 3.2.0 tarball export passed structural checks; no Claude CLI is installed here to validate it. This release includes `.claude-plugin/marketplace.json` for persistent installation from the repository checkout:
+
+```sh
+claude plugin marketplace add /absolute/path/to/academic-research-assistant
+claude plugin install academic-research-assistant@academic-research-assistant --scope user
+```
+
+The current [Claude plugin installation guide](https://code.claude.com/docs/en/plugins/install) and [marketplace reference](https://code.claude.com/docs/en/plugins/marketplace-reference) describe the supported commands and manifest. `--host claude-skill` produces an instruction-only folder instead.
 
 ## Antigravity
 
@@ -32,7 +39,7 @@ agy plugin install /absolute/new/ara-antigravity
 agy plugin list --json
 ```
 
-The plugin wrapper contains one outer skill. MCP is optional and not automatically configured: after installation, use `node INSTALLED_BUNDLE/cli/ara.mjs config --host antigravity --root INSTALLED_BUNDLE` with the actual absolute nested bundle path, then apply the printed configuration in the host. Regenerate it if the bundle moves. `--host antigravity-skill` is an instruction-only option. Antigravity CLI 1.4.8 validated and installed this wrapper in an isolated profile. A live assistant task and host MCP discovery remain untested.
+The plugin wrapper contains one outer skill. MCP is optional and not automatically configured: after installation, use `node INSTALLED_BUNDLE/cli/ara.mjs config --host antigravity --root INSTALLED_BUNDLE` with the actual absolute nested bundle path, then apply the printed configuration in the host. Regenerate it if the bundle moves. Antigravity CLI 1.4.9 validated and installed the full artifact in an isolated profile; no live assistant task or host MCP discovery was tested, and this machine has no `agy` command. The current [Antigravity plugin](https://antigravity.google/docs/plugins?tab=cli), [skills](https://antigravity.google/docs/skills), and [MCP](https://antigravity.google/docs/mcp) documentation describes supported formats. `--host antigravity-skill` is an instruction-only option.
 
 ## Generic hosts
 

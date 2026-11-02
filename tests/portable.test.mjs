@@ -81,7 +81,7 @@ test('stdio speaks MCP, rejects malformed initialize, and recovers after bad JSO
  JSON.stringify({jsonrpc:'2.0',id:5,method:'tools/call',params:{name:'read_resource',arguments:{path:'../../secrets'}}})+'\n'];
  const r=run(['mcp'],messages.join(''));assert.equal(r.status,0,r.stderr);
  const rows=r.stdout.trim().split('\n').map(JSON.parse);assert.equal(rows.length,6);
- assert.equal(rows[0].error.code,-32700);assert.equal(rows[1].error.code,-32602);assert.equal(rows[2].result.serverInfo.version,'3.2.0-dev.0');
+ assert.equal(rows[0].error.code,-32700);assert.equal(rows[1].error.code,-32602);assert.equal(rows[2].result.serverInfo.version,'3.2.0');
  assert.ok(rows[3].result.tools.some(x=>x.name==='read_resource'));assert.equal(rows[4].result.isError,false);
  assert.match(rows[4].result.content[0].text,/research-assistant/);assert.equal(rows[5].result.isError,true);
 });
