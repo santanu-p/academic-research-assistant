@@ -1,4 +1,5 @@
 # Academic Research Assistant
+[![Package checks](https://github.com/santanu-p/academic-research-assistant/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/santanu-p/academic-research-assistant/actions/workflows/ci.yml)
 
 Reusable research workflows, scientific writing guidance, document helpers, and a local navigation server for AI assistants. The package contains skill instructions and optional tools; the assistant and its configured tools perform the research work.
 
@@ -120,7 +121,7 @@ python -X utf8 -B tests/test_package_release.py
 npm pack
 ```
 
-The pack preflight runs build, validation, and Node tests. Python tests and actual-artifact installation checks are separate. See [contributing](CONTRIBUTING.md) and [changelog](CHANGELOG.md). No CI badge is shown because no verified CI result is claimed here.
+The workflow badge reports the current `main` branch status. CI runs the validation and Node suites, Python helper tests, release ZIP construction, and an offline install check from the actual npm tarball on Windows and Ubuntu. The separate `v3.2.0` release tag predates the latest CI fix on `main`; see the [workflow history](https://github.com/santanu-p/academic-research-assistant/actions/workflows/ci.yml) for results by commit. See [contributing](CONTRIBUTING.md) and [changelog](CHANGELOG.md) for local commands.
 
 ## Licensing and collection scope
 
