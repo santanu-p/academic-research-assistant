@@ -1,0 +1,470 @@
+{
+  "reviewer": "shared_file_audit",
+  "scope": "Shared historical audit, development implementation/tests/docs/schemas, compatibility manifest, catalog and PPTX archive in immutable600-file baseline",
+  "files_read": [
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\.codex-plugin\\plugin.json",
+      "sha256": "c771798e2842471e181b768d1f74dcd994b19f1161d09d58805a7fdd6a2a0000",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\adaptations.json",
+      "sha256": "57e5043e8a1588ae466e55e8e6a07320bc928f62a6d9dd0d61acb6040d2600f1",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\arms-audit.json",
+      "sha256": "26baa68429292308a68923f7fe753c3f11100f6c50aae8067bf9f056b52acc4c",
+      "inspection": "Full findings, tests, dependencies, licenses, numerical/PDF/Python/CSV evidence read in compact field-preserving views; all69 inventory hashes/207 source-line excerpts/13 frontmatter-heading records independently compared with source bytes."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\arms-audit.md",
+      "sha256": "63e41c762c3f179b031e3e83b53a00257f412ecdb310614aa7937ed4a4fcfd1d",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\collection-audit.json",
+      "sha256": "5faa28b07320a225ebe9683579e1ade2c8d43e6c0596bbdd5c101b82ebca3f87",
+      "inspection": "All32 findings, scope/source summary/corpus fields read; all200 inventories and image/PDF/text metadata checked against source; all8 Python sources statically parsed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\collection-audit.md",
+      "sha256": "d456d0f352ced26041418552e6597a62a144c30c2c22988c192005a12eca404e",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\completion-matrix.md",
+      "sha256": "2f413dbb43817e3e9de05069d6523d1e7ee2e42db26f4b08f839cd964ce356ba",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\component-adaptations.json",
+      "sha256": "d85a6188838da13fe37bd30cf21b7c84dce16be8160d3e7174703d0c5acbe884",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\environment-status.json",
+      "sha256": "d316f73b7c7ae924d37fb52f540f1918bf4a03c48e8f976c42ff5f2524364071",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\inventory-summary.json",
+      "sha256": "4fc68f5869039bf079f89b9c2807ff9b91576c77664803b288724fbf8b98e990",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\mcp-smoke.json",
+      "sha256": "b4479ad715d83b666964b1e9d7af684982a8c219111cf80b7c130e8ed38e69b5",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\numerical-smoke.json",
+      "sha256": "ae80fc920f7e9a53c064007ff9df3aa2744a2129327b3837bb8833980c6a4e78",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\package-files.json",
+      "sha256": "e2e5d2d79a740f709cb5d1a06643b6aff56c831f5ffe33dd59eb2becb4509379",
+      "inspection": "All599 file records and every bytes/SHA pair independently compared with immutable baseline; index exclusion text read."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\package-review.md",
+      "sha256": "64008e6ae43384307943782fb901aec41cb0d250f5c6f0c08ab20986401c70f1",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\package-validation.json",
+      "sha256": "57ed4d79bec4c0d9b40e6da8a32f9fc0785b2e3dfb8a35a773a5ebc90410d999",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\reconstruction-result.json",
+      "sha256": "bdf18d67fad8eae1898d353fd299193bf14624306c4b71ac40e505a17661532a",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\REFERENCE-AUDIT.md",
+      "sha256": "26ef8ca4e9d4738c2338570d96ca7f1de653d5dfa2825c3a03c9e37f8d3f83a7",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\reference-links.json",
+      "sha256": "4af8c02146dea70b48062b64a5d3da7cd3633464d83445e21d2f17a9e9673101",
+      "inspection": "All269 records and3 fields traversed; all recorded flags and current targets checked."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\source-inspection.json",
+      "sha256": "1776a21c68549e54a12a1433b034d556d2a30b16bf5225473a9088958f9854d4",
+      "inspection": "Complete structured read of all273 records and field schemas; independently reconstructed1458 derived fields from preserved bytes (headings, URLs, links, dependencies, JSON/YAML, frontmatter, imports, CSV, ZIP/image/PDF metadata/text). JSON-normalized YAML on-key coercion accounted; unchanged excerpts inherit source-body reviews."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\source-map.csv",
+      "sha256": "05e52b32eb32f8f37f68db01457e1e60d90f81a62fb6f8cc2e9910d1fbfeabe0",
+      "inspection": "All452 rows and10 columns parsed and compared field-for-field with JSON; all referenced byte payloads verified."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\source-map.json",
+      "sha256": "5ef2bf4ee81c36aa4a40108f9f0a1052b9c22486bccfcdebd0468fbfb311d5cd",
+      "inspection": "Complete structured traversal of452 records, every field compared with CSV; every source SHA/directory/active target checked; all8 role/reason values read."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\suite-results.json",
+      "sha256": "34ad3721f5c0e905eb1d477336963bbf8c9897a911ab85a466dfb34c5975164e",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\synthetic-figure-smoke\\cost_frontier.png",
+      "sha256": "6f1c9a8f362df95d2325ba826d560f2b945b906d8834ce5de16b91a37cac49cd",
+      "inspection": "Opened and visually inspected full PNG: axes/marks/errorbar labels/endpoint labels and canvas. Historical synthetic implementation example only."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\synthetic-figure-smoke\\cost_frontier.svg",
+      "sha256": "6610d6305aa92226aca7a4487281fba90af5cbe29d07375d7acf343ec7d8045d",
+      "inspection": "Full SVG XML source read including geometry/text/styles/metadata; paired PNG visually inspected. Historical synthetic example, no scientific result claim."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\synthetic-figure-smoke\\model_comparison.png",
+      "sha256": "859c090e335822088428a6abb8882b6c6256f7be7185498afc5afcc446b2e005",
+      "inspection": "Opened and visually inspected full PNG: axes/marks/errorbar labels/endpoint labels and canvas. Historical synthetic implementation example only."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\synthetic-figure-smoke\\model_comparison.svg",
+      "sha256": "90a51f4aa5f86524829b843df5a42029885ecf3473131ea8882c271e57db8020",
+      "inspection": "Full SVG XML source read including geometry/text/styles/metadata; paired PNG visually inspected. Historical synthetic example, no scientific result claim."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\synthetic-figure-smoke\\README.md",
+      "sha256": "f6bd5c6f7ea0f3f87ea6987fb59cb6ed3955acb28c8492f489278fab284ae4ea",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\synthetic-figure-smoke\\reliability_curve.png",
+      "sha256": "40e5d446e38b2558504981dae67e3d361b80ba3aa3115ffb047077ade3ed4725",
+      "inspection": "Opened and visually inspected full PNG: axes/marks/errorbar labels/endpoint labels and canvas. Historical synthetic implementation example only."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\synthetic-figure-smoke\\reliability_curve.svg",
+      "sha256": "94767af38be5812953ddd3249f406267ff64daa1193863b0958b830ef53e3cc1",
+      "inspection": "Full SVG XML source read including geometry/text/styles/metadata; paired PNG visually inspected. Historical synthetic example, no scientific result claim."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\audit\\VERIFICATION.md",
+      "sha256": "c9b060e358e361b36e67a0cc35318ee4478df41e637e030663734bc61c4a9549",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\catalog\\skills.json",
+      "sha256": "6fc9d1bf28fdc69338456d771bae68989862fda90f8e97c3152fa0ab91d4157d",
+      "inspection": "All117 metadata entries and descriptions read; every source hash/path/support entry checked; common execution/change strings factored; no router entry in this historical catalog."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\build_tools\\adapt_arms.py",
+      "sha256": "83a327fbbd18179e67dbc383aae4841f04f3d3fd79403f067e7edbb980f44c7d",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\build_tools\\adapt_visuals.py",
+      "sha256": "663dd62fec7595eda0ac18912a79c7b4dd340b2341f9b9150967a8335921bbc3",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\build_tools\\build_plugin.py",
+      "sha256": "bf06cbeac01ce1ed617ebc0e78ea9888585b1fe2861fcf1e6d5f58333409e1b4",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\build_tools\\inspect_sources.py",
+      "sha256": "d6557a0516722e97134b796f0bfaeb1e381a19cf5c10062a5061aa47f21c8cb1",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\build_tools\\package_release.py",
+      "sha256": "f1797c21f7b819475f85069377f7ac69b8cd572f36f257438c458117a76e68d5",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\build_tools\\prepare_development_bundle.py",
+      "sha256": "6657eba3511e9f4882bef254486183882e8fbaf398fbec339cbec529945758d7",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\build_tools\\reconstruct.py",
+      "sha256": "eed1d0c2e3faf972dd2d9bdcb49919d44af1d2783c80adcd6ce81d979e6fcd90",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\build_tools\\smoke_runtime.py",
+      "sha256": "835e1996eeae438c36e702dcbe29d71b42780ec7429f41c152e0e76ab69130d8",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\build_tools\\validate_package.py",
+      "sha256": "80af53904f78ee4da16370222f17b9951ae2479050665d50466ff746741f2df6",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\docs\\design.md",
+      "sha256": "bea317343aff60d61894a4485189f7d3d03f32c62836ff4c3876e0afeae4e6f0",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\docs\\implementation-plan.md",
+      "sha256": "c35e44da6422f869c272c2f00c5c2d8ca642769a2e1c502e7c62485594a7be0d",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\docs\\progress.md",
+      "sha256": "e33efd8ce648e4b00143a40eaa13fc9a411bf63adf684e7a0ab6bb19e91ec507",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\adaptations.json",
+      "sha256": "57e5043e8a1588ae466e55e8e6a07320bc928f62a6d9dd0d61acb6040d2600f1",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\arms-audit.json",
+      "sha256": "26baa68429292308a68923f7fe753c3f11100f6c50aae8067bf9f056b52acc4c",
+      "inspection": "Full findings, tests, dependencies, licenses, numerical/PDF/Python/CSV evidence read in compact field-preserving views; all69 inventory hashes/207 source-line excerpts/13 frontmatter-heading records independently compared with source bytes."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\arms-audit.md",
+      "sha256": "63e41c762c3f179b031e3e83b53a00257f412ecdb310614aa7937ed4a4fcfd1d",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\collection-audit.json",
+      "sha256": "5faa28b07320a225ebe9683579e1ade2c8d43e6c0596bbdd5c101b82ebca3f87",
+      "inspection": "All32 findings, scope/source summary/corpus fields read; all200 inventories and image/PDF/text metadata checked against source; all8 Python sources statically parsed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\collection-audit.md",
+      "sha256": "d456d0f352ced26041418552e6597a62a144c30c2c22988c192005a12eca404e",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\completion-matrix.md",
+      "sha256": "2f413dbb43817e3e9de05069d6523d1e7ee2e42db26f4b08f839cd964ce356ba",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\component-adaptations.json",
+      "sha256": "d85a6188838da13fe37bd30cf21b7c84dce16be8160d3e7174703d0c5acbe884",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\environment-status.json",
+      "sha256": "d316f73b7c7ae924d37fb52f540f1918bf4a03c48e8f976c42ff5f2524364071",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\inventory-summary.json",
+      "sha256": "4fc68f5869039bf079f89b9c2807ff9b91576c77664803b288724fbf8b98e990",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\mcp-smoke.json",
+      "sha256": "b4479ad715d83b666964b1e9d7af684982a8c219111cf80b7c130e8ed38e69b5",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\numerical-smoke.json",
+      "sha256": "ae80fc920f7e9a53c064007ff9df3aa2744a2129327b3837bb8833980c6a4e78",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\package-review.md",
+      "sha256": "64008e6ae43384307943782fb901aec41cb0d250f5c6f0c08ab20986401c70f1",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\package-validation.json",
+      "sha256": "4de942bd8edabd83799fbc52d3e992f9c2a6f24bd67dc3a3fcfb572ad1275f87",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\reconstruction-result.json",
+      "sha256": "bdf18d67fad8eae1898d353fd299193bf14624306c4b71ac40e505a17661532a",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\REFERENCE-AUDIT.md",
+      "sha256": "26ef8ca4e9d4738c2338570d96ca7f1de653d5dfa2825c3a03c9e37f8d3f83a7",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\reference-links.json",
+      "sha256": "4af8c02146dea70b48062b64a5d3da7cd3633464d83445e21d2f17a9e9673101",
+      "inspection": "All269 records and3 fields traversed; all recorded flags and current targets checked."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\source-inspection.json",
+      "sha256": "1776a21c68549e54a12a1433b034d556d2a30b16bf5225473a9088958f9854d4",
+      "inspection": "Complete structured read of all273 records and field schemas; independently reconstructed1458 derived fields from preserved bytes (headings, URLs, links, dependencies, JSON/YAML, frontmatter, imports, CSV, ZIP/image/PDF metadata/text). JSON-normalized YAML on-key coercion accounted; unchanged excerpts inherit source-body reviews."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\source-map.csv",
+      "sha256": "05e52b32eb32f8f37f68db01457e1e60d90f81a62fb6f8cc2e9910d1fbfeabe0",
+      "inspection": "All452 rows and10 columns parsed and compared field-for-field with JSON; all referenced byte payloads verified."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\source-map.json",
+      "sha256": "5ef2bf4ee81c36aa4a40108f9f0a1052b9c22486bccfcdebd0468fbfb311d5cd",
+      "inspection": "Complete structured traversal of452 records, every field compared with CSV; every source SHA/directory/active target checked; all8 role/reason values read."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\suite-results.json",
+      "sha256": "34ad3721f5c0e905eb1d477336963bbf8c9897a911ab85a466dfb34c5975164e",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\synthetic-figure-smoke\\cost_frontier.png",
+      "sha256": "6f1c9a8f362df95d2325ba826d560f2b945b906d8834ce5de16b91a37cac49cd",
+      "inspection": "Opened and visually inspected full PNG: axes/marks/errorbar labels/endpoint labels and canvas. Historical synthetic implementation example only."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\synthetic-figure-smoke\\cost_frontier.svg",
+      "sha256": "6610d6305aa92226aca7a4487281fba90af5cbe29d07375d7acf343ec7d8045d",
+      "inspection": "Full SVG XML source read including geometry/text/styles/metadata; paired PNG visually inspected. Historical synthetic example, no scientific result claim."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\synthetic-figure-smoke\\model_comparison.png",
+      "sha256": "859c090e335822088428a6abb8882b6c6256f7be7185498afc5afcc446b2e005",
+      "inspection": "Opened and visually inspected full PNG: axes/marks/errorbar labels/endpoint labels and canvas. Historical synthetic implementation example only."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\synthetic-figure-smoke\\model_comparison.svg",
+      "sha256": "90a51f4aa5f86524829b843df5a42029885ecf3473131ea8882c271e57db8020",
+      "inspection": "Full SVG XML source read including geometry/text/styles/metadata; paired PNG visually inspected. Historical synthetic example, no scientific result claim."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\synthetic-figure-smoke\\README.md",
+      "sha256": "f6bd5c6f7ea0f3f87ea6987fb59cb6ed3955acb28c8492f489278fab284ae4ea",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\synthetic-figure-smoke\\reliability_curve.png",
+      "sha256": "40e5d446e38b2558504981dae67e3d361b80ba3aa3115ffb047077ade3ed4725",
+      "inspection": "Opened and visually inspected full PNG: axes/marks/errorbar labels/endpoint labels and canvas. Historical synthetic implementation example only."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\synthetic-figure-smoke\\reliability_curve.svg",
+      "sha256": "94767af38be5812953ddd3249f406267ff64daa1193863b0958b830ef53e3cc1",
+      "inspection": "Full SVG XML source read including geometry/text/styles/metadata; paired PNG visually inspected. Historical synthetic example, no scientific result claim."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\audit\\VERIFICATION.md",
+      "sha256": "c9b060e358e361b36e67a0cc35318ee4478df41e637e030663734bc61c4a9549",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\docs\\build-design.md",
+      "sha256": "bea317343aff60d61894a4485189f7d3d03f32c62836ff4c3876e0afeae4e6f0",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\docs\\build-implementation-plan.md",
+      "sha256": "c35e44da6422f869c272c2f00c5c2d8ca642769a2e1c502e7c62485594a7be0d",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\docs\\build-progress.md",
+      "sha256": "a2b422368e3a34d3059fe31555e380ab7c8b2aac46f7389555c640f00ab21f3e",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\docs\\goal-objective.md",
+      "sha256": "2e1d914e75ec84c2c7cb7fd9b963544a2e3623379e26f6efa013e04d3c9a917a",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\integration\\docs\\INVENTORY.md",
+      "sha256": "126dbde1043263415d8479cf94f0bb025d11ba606f61a3ebbab188edbac6e3ee",
+      "inspection": "Intro/family counts and entire generated table inspected by catalog-equivalent description factoring; every117 table description matched exactly to the fully read catalog values."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\reconstruct.py",
+      "sha256": "eed1d0c2e3faf972dd2d9bdcb49919d44af1d2783c80adcd6ce81d979e6fcd90",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\requirements-dev.txt",
+      "sha256": "ce902071f06b5868ce5ed66fcf79ea6d4d282460a17c84a1b41bd32abd5451d1",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\schemas\\mcp.schema.json",
+      "sha256": "6539175bfcdf43085855183e86da40ea94b166547a72b47ae9a0a390516d3acb",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\schemas\\plugin.schema.json",
+      "sha256": "0a4aad95ce337878ad38802ebf0daa3fde76abe3f65400c86bcbb1ec0b3ab883",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\tests\\test_arms_adapters.py",
+      "sha256": "e26716ce2bfc67ae73756d400fe897b9f995de051622e9eb4fe935526c7753c2",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\tests\\test_runtime.py",
+      "sha256": "00f2efff8e26f342db460fe2d59c3912dcd9f2e2374ef59a46ed4adb40cb865f",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\dev\\tests\\test_visual_adapters.py",
+      "sha256": "adcfa05526651b8fdf2a47133377a5e6c98da2e90d40cc4c28d3ad9efc68de97",
+      "inspection": "Full text read, including all implementation branches, generated snippets, tests, examples, schema properties or historical receipt fields; no source/package script executed."
+    },
+    {
+      "path": "D:\\PLUGIN\\.review-118\\original\\resources\\originals\\academic-pptx-skill-main.zip",
+      "sha256": "9ef8a6ce65bc4ae7418c768f4568b6d94f2dedab089d752002ba47d28e607800",
+      "inspection": "ZIP member records/metadata and CRC read; all6 file payloads hashed and byte-compared with the separately reviewed expanded resources;5-page PDF/text/support bodies inherit artifact review, container never treated as text."
+    }
+  ],
+  "read_methods": {
+    "duplicates": "Identical SHA256 payloads share the explicit read; all duplicate paths retain individual entries.",
+    "structured": "Generated inventories inspected by complete schema/record traversal, lossless repeated-value factoring and independent source-field comparison rather than interpreting digest strings as prose.",
+    "limits": "No source/package mutation, source program execution, live external service check, benchmark, compile, public release or current test-pass claim."
+  },
+  "structured_crosscheck_receipt": "D:/PLUGIN/.review-118/reviews/shared-structured-crosschecks.json",
+  "findings": [
+    {
+      "id": "SH01",
+      "priority": "P1",
+      "location": "catalog/skills.json + dev/build_tools/build_plugin.py ARMS_DESCRIPTIONS",
+      "finding": "arms-paper-modeler metadata describes general derivation/model development although its supplied workflow performs production evaluation of a validated frozen method. The old builder recreates this scope error.",
+      "action": "Refine active metadata/routing and synchronize authored rebuild sources; preserve full source workflow."
+    },
+    {
+      "id": "SH02",
+      "priority": "P2",
+      "location": "dev/tests/test_runtime.py:test_routes_research_lifecycle",
+      "finding": "Semantic route cases only assert membership within first5; source reachability by exact name does not prove primary selection or near-neighbor exclusion.",
+      "action": "Verify ranked primary and excluded-neighbor behavior with domain fixtures."
+    },
+    {
+      "id": "SH03",
+      "priority": "P2",
+      "location": "audit/VERIFICATION.md + dev/integration/audit/*",
+      "finding": "Existing33-test/32-pass receipts and environment snapshots are dated25Oct2026 historical evidence. Nested package-validation differs only in historical JSON count62 vs64.",
+      "action": "Preserve as historical, create fresh review-specific receipts after authorized implementation; do not relabel old checks current."
+    },
+    {
+      "id": "SH04",
+      "priority": "P2",
+      "location": "catalog/skills.json",
+      "finding": "Catalog has117 source skills; active router is the118th entrypoint but absent from search inventory.",
+      "action": "Account router explicitly when generating complete118-entry mapping/catalog."
+    },
+    {
+      "id": "SH05",
+      "priority": "P3",
+      "location": "dev/build_tools/build_plugin.py and inspect_sources.py",
+      "finding": "Development build copies into existing output/work trees with dirs_exist_ok and does not remove stale files, so source deletions/renames in a reused authoring workspace can persist in a later build.",
+      "action": "For fresh verification reconstruct/build in a new empty authoring workspace or explicitly validate exact expected payload set."
+    }
+  ],
+  "unreviewed": []
+}

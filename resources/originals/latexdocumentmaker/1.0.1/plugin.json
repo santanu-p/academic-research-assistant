@@ -1,0 +1,27 @@
+{
+  "name": "latexdocumentmaker",
+  "version": "1.0.1",
+  "description": "LaTeX Document Maker: your expert LaTeX engineer and typesetter. Complete, compile-ready documents from a description, research papers, IEEE, ACM, Springer and Elsevier templates, theses, resumes and CVs, cover letters, Beamer slides, posters, math equations, image and handwriting to LaTeX, tables, figures, TikZ diagrams, pgfplots charts, BibTeX and biblatex, cross-references, page formatting, custom macros, compile error fixes, Overleaf setup, homework and exams, books, theorems, algorithms, science notation, multilingual fonts, reports, certificates, format conversion, code cleanup and LaTeX proofreading.",
+  "author": {
+    "name": "Fasih"
+  },
+  "keywords": [
+    "latex",
+    "overleaf",
+    "latex document",
+    "latex template",
+    "beamer",
+    "tikz",
+    "bibtex",
+    "thesis latex",
+    "latex resume",
+    "latex equations",
+    "latex tables",
+    "latex error"
+  ],
+  "interface": {
+    "shortDescription": "Your expert LaTeX engineer: complete, compile-ready documents, papers, theses, resumes, Beamer slides, posters, equations, tables, TikZ diagrams, bibliographies, journal templates and fast compile-error fixes.",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
+  }
+}

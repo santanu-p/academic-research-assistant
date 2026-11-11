@@ -1,0 +1,5 @@
+PyYAML>=6.0
+jsonschema>=4.18
+Pillow>=10
+pypdf>=5.0
+# Optional integration tests use NumPy/SciPy/Matplotlib from requirements-optional.txt.

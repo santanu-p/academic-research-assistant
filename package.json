@@ -1,27 +1,69 @@
 {
-  "name": "academic-research-assistant",
-  "version": "3.2.0",
-  "private": true,
-  "description": "Portable academic research skills, a local MCP server and scientific workflow tools.",
+  "name": "academic-research-assistant-full",
+  "version": "4.0.0",
+  "private": false,
+  "description": "Portable academic research toolkit with 118 preserved skills, a local MCP server, and Codex and Claude exports.",
   "type": "module",
-  "license": "MIT",
-  "repository": {"type": "git", "url": "git+https://github.com/santanu-p/academic-research-assistant.git"},
-  "homepage": "https://github.com/santanu-p/academic-research-assistant#readme",
-  "bugs": {"url": "https://github.com/santanu-p/academic-research-assistant/issues"},
-  "engines": {"node": ">=22"},
-  "bin": {"academic-research-assistant": "cli/ara.mjs"},
-  "files": [
-    "cli/", "lib/", "server/", "skills/", "catalog/", "docs/", "tools/", "workflows/", "examples/", "resources/",
-    ".codex-plugin/", ".claude-plugin/", "plugin.json", "mcp.json", ".mcp.json", "SKILL.md",
-    "README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "CHANGELOG.md",
-    "!**/__pycache__/**", "!**/*.pyc", "!**/*.pyo"
-  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "academic-research-assistant-full": "cli/ara.mjs"
+  },
   "scripts": {
-    "build": "node dev/build-catalog.mjs",
-    "validate": "node dev/validate.mjs",
-    "test": "node --test",
-    "test:python": "python -B -m unittest discover -s tests/python",
+    "build": "node dev/build-index.mjs",
+    "validate": "python -B dev/validate-full.py",
+    "test": "node --test tests/*.test.mjs",
     "prepack": "npm run build && npm run validate && npm test"
   },
-  "keywords": ["research", "academic", "agent-skills", "mcp", "codex", "claude", "scientific-writing"]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santanu-p/academic-research-assistant.git"
+  },
+  "homepage": "https://github.com/santanu-p/academic-research-assistant#readme",
+  "bugs": {
+    "url": "https://github.com/santanu-p/academic-research-assistant/issues"
+  },
+  "keywords": [
+    "academic",
+    "research",
+    "skills",
+    "codex",
+    "claude",
+    "antigravity",
+    "mcp"
+  ],
+  "files": [
+    "agents/",
+    "audit/",
+    "catalog/",
+    "cli/",
+    "dev/",
+    "docs/",
+    "examples/",
+    "lib/",
+    "licenses/",
+    "resources/",
+    "server/",
+    "skills/",
+    "tools/",
+    "workflows/",
+    "tests/*.test.mjs",
+    "tests/test_package_artifact.py",
+    "tests/test_python_server.py",
+    "tests/fixtures/",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "mcp.json",
+    "plugin.json",
+    "requirements-optional.txt",
+    "SKILL.md",
+    "THIRD_PARTY_NOTICES.md",
+    ".codex-plugin/",
+    ".claude-plugin/",
+    ".mcp.json",
+    ".github/",
+    ".gitattributes"
+  ]
 }

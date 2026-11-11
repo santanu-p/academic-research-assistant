@@ -1,0 +1,2067 @@
+[
+  {
+    "name": "latex-academic-poster",
+    "original_name": "academic-poster",
+    "family": "LaTeX Document Maker",
+    "description": "Design research and conference posters in LaTeX with tikzposter, beamerposter or baposter: A0 and A1 sizes, portrait or landscape, column layouts, blocks, figures, QR-free clean designs and readable fonts. Use for LaTeX poster, conference poster, research poster, tikzposter, beamerposter, A0 poster or poster template.",
+    "path": "skills/latex-academic-poster/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/academic-poster/SKILL.md",
+    "source_sha256": "f78c5c70cf998d614bcdf98b67b6375c15c2c978e925f718cbf9ecf28cb0c34e",
+    "support_files": [
+      "skills/latex-academic-poster/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-academic-poster"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-algorithms-code",
+    "original_name": "algorithms-code",
+    "family": "LaTeX Document Maker",
+    "description": "Typeset algorithms and pseudocode with algorithm2e or algpseudocode, and source code with listings or minted: syntax highlighting, line numbers, captions, inline code and styles for Python, C, C++, Java, JavaScript, MATLAB, R and SQL. Use for algorithm in LaTeX, pseudocode LaTeX, algorithm2e, algorithmic, code in LaTeX, listings, minted or syntax highlighting LaTeX.",
+    "path": "skills/latex-algorithms-code/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/algorithms-code/SKILL.md",
+    "source_sha256": "fe14c45e1b799891a5fb468e593c93c4d7094bf3e5f754a5623a96ead0a0c1be",
+    "support_files": [
+      "skills/latex-algorithms-code/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-algorithms-code"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-beamer-slides",
+    "original_name": "beamer-slides",
+    "family": "LaTeX Document Maker",
+    "description": "Create LaTeX Beamer presentations: themes and colors, title and outline slides, bullet overlays and animations, columns, blocks, figures, tables, equations, speaker notes, handouts and 16:9 slides, including turning papers into talks. Use for Beamer, LaTeX slides, LaTeX presentation, conference talk slides, thesis defense slides, Beamer theme or paper to slides.",
+    "path": "skills/latex-beamer-slides/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/beamer-slides/SKILL.md",
+    "source_sha256": "d03d9df65b8ce4122cc704d2f030c68dfefdff662b982fd697d98e45ee4d47a6",
+    "support_files": [
+      "skills/latex-beamer-slides/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-beamer-slides"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-bibliography-citations",
+    "original_name": "bibliography-citations",
+    "family": "LaTeX Document Maker",
+    "description": "Set up citations and bibliographies in LaTeX with BibTeX, biblatex and biber or natbib: .bib entries from references, DOIs or titles, citation styles (APA, IEEE, Chicago, Harvard, Vancouver, MLA and journal styles), Zotero and Mendeley export, and fixing undefined or missing citations. Use for BibTeX, biblatex, bibliography in LaTeX, .bib file, cite in LaTeX, citation style, references not showing or convert references to BibTeX.",
+    "path": "skills/latex-bibliography-citations/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/bibliography-citations/SKILL.md",
+    "source_sha256": "1779b22f62a063aa2d93be08f43168c0097c18545f297c1500a553c5856955a1",
+    "support_files": [
+      "skills/latex-bibliography-citations/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-bibliography-citations"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-books-notes",
+    "original_name": "books-notes",
+    "family": "LaTeX Document Maker",
+    "description": "Create books, lecture notes, course notes, textbooks, cheat sheets and long documents in LaTeX: book, memoir and KOMA-Script classes, front and back matter, parts and chapters, chapter styles, definition and example boxes, margin notes, indexes, print-ready sizes for self-publishing and one-page cheat sheets. Use for LaTeX book, lecture notes in LaTeX, textbook template, cheat sheet in LaTeX, memoir class, self-publish with LaTeX or course notes.",
+    "path": "skills/latex-books-notes/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/books-notes/SKILL.md",
+    "source_sha256": "96b713320bf5bb2f7d3c70a2bf40fc6d863f61018e610afcc9bb1a8883997b79",
+    "support_files": [
+      "skills/latex-books-notes/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-books-notes"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-certificates-flyers",
+    "original_name": "certificates-flyers",
+    "family": "LaTeX Document Maker",
+    "description": "Design visually rich single pages in LaTeX: certificates, awards, invitations, flyers, event posters, menus, brochures, business cards, newsletters, calendars and title pages, with background images, borders, colors, custom fonts and precise positioning. Use for certificate in LaTeX, flyer in LaTeX, invitation in LaTeX, business card LaTeX, brochure, newsletter, calendar or designed page in LaTeX.",
+    "path": "skills/latex-certificates-flyers/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/certificates-flyers/SKILL.md",
+    "source_sha256": "4c0edb1e95c034dade4ce947ff04a4fb40c995b0056723a03e1eb67c1651d0ba",
+    "support_files": [
+      "skills/latex-certificates-flyers/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-certificates-flyers"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-cross-references-links",
+    "original_name": "cross-references-links",
+    "family": "LaTeX Document Maker",
+    "description": "Handle labels and references, cleveref, hyperref links and PDF metadata, table of contents, lists of figures and tables, appendices, footnotes, URLs, glossaries, acronyms, indexes and PDF bookmarks in LaTeX. Use for ref and label, cleveref, hyperref, clickable links, table of contents, list of figures, glossary, acronyms, index or ?? instead of numbers.",
+    "path": "skills/latex-cross-references-links/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/cross-references-links/SKILL.md",
+    "source_sha256": "3c07912b42ee9168316769650f65d4e3bc2f7aaeead8d9c5086ee6141f7c5777",
+    "support_files": [
+      "skills/latex-cross-references-links/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-cross-references-links"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-custom-macros",
+    "original_name": "custom-macros",
+    "family": "LaTeX Document Maker",
+    "description": "Write custom LaTeX commands, environments, colored boxes, counters, reusable templates, .sty packages and .cls document classes, and refactor repeated code into clean macros. Use for newcommand, custom command in LaTeX, new environment, tcolorbox, create a LaTeX class, write a .sty file, macro or reusable template.",
+    "path": "skills/latex-custom-macros/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/custom-macros/SKILL.md",
+    "source_sha256": "2db2ca9321d3d2938175d81671831ed767d23fb967aec5251cb125fc5d941f69",
+    "support_files": [
+      "skills/latex-custom-macros/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-custom-macros"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-document-builder",
+    "original_name": "document-builder",
+    "family": "LaTeX Document Maker",
+    "description": "Create complete, compile-ready LaTeX documents of any type from a description, outline, notes or pasted text: articles, reports, essays, assignments, handouts, guides and custom templates, with the right class, packages and structure. Use for make a LaTeX document, LaTeX template, write this in LaTeX, create a .tex file, typeset my document or LaTeX from scratch.",
+    "path": "skills/latex-document-builder/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/document-builder/SKILL.md",
+    "source_sha256": "e2584066174a0b5e5eb27384338681cefb08ee8a839e3e96a81fff508ba09989",
+    "support_files": [
+      "skills/latex-document-builder/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-document-builder"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-equation-converter",
+    "original_name": "equation-converter",
+    "family": "LaTeX Document Maker",
+    "description": "Convert equations and math from images, screenshots, photos of handwriting, PDFs, Word equations, plain text or spoken descriptions into clean LaTeX, and output it for Overleaf, Markdown, MathJax, KaTeX, Notion or Anki. Use for image to LaTeX, handwriting to LaTeX, screenshot to LaTeX, convert this equation, write this formula in LaTeX, Word equation to LaTeX or LaTeX for MathJax.",
+    "path": "skills/latex-equation-converter/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/equation-converter/SKILL.md",
+    "source_sha256": "9d46198a7a3894e4a9036b5aa8bf9a84976b0bb630e461ca00a1212818f1194b",
+    "support_files": [
+      "skills/latex-equation-converter/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-equation-converter"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-error-fixer",
+    "original_name": "error-fixer",
+    "family": "LaTeX Document Maker",
+    "description": "Diagnose and fix LaTeX compile errors and warnings from logs, screenshots or code: undefined control sequence, missing $ inserted, missing or extra braces, file not found, option clash, misplaced alignment tab, runaway argument, emergency stop, overfull hbox, too many unprocessed floats, undefined references and Overleaf errors. Use for LaTeX error, fix my LaTeX, won't compile, Overleaf error, compile failed, undefined control sequence or LaTeX warning.",
+    "path": "skills/latex-error-fixer/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/error-fixer/SKILL.md",
+    "source_sha256": "2acc5f970f04a73157bc7ca95f554486204b680add568d83d594cdc383fc6017",
+    "support_files": [
+      "skills/latex-error-fixer/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-error-fixer"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-figures-images",
+    "original_name": "figures-images",
+    "family": "LaTeX Document Maker",
+    "description": "Insert and arrange figures in LaTeX: graphicx, captions and labels, float placement, subfigures side by side, wrapping text around images, image sizes, file formats, keeping figures in their section and fixing figures that move. Use for insert image in LaTeX, figure placement, subfigure, side by side images, figure caption, wrapfig, figure moves to the end or image not found.",
+    "path": "skills/latex-figures-images/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/figures-images/SKILL.md",
+    "source_sha256": "a7c710e24525597b95f056cbb0d794045edae476ea09854e54b02287a68b10c7",
+    "support_files": [
+      "skills/latex-figures-images/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-figures-images"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-format-conversion",
+    "original_name": "format-conversion",
+    "family": "LaTeX Document Maker",
+    "description": "Convert between LaTeX and other formats: Word, Google Docs, Markdown, HTML, plain text, Excel and CSV to LaTeX, and LaTeX to Word, HTML, Markdown or plain text with pandoc, make4ht or LaTeXML, including tables, equations, citations and images. Use for convert Word to LaTeX, Markdown to LaTeX, LaTeX to Word, LaTeX to HTML, Google Docs to LaTeX, pandoc or paste text into LaTeX.",
+    "path": "skills/latex-format-conversion/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/format-conversion/SKILL.md",
+    "source_sha256": "6d130397ea5e7ed5da08217696364e898479d1a43427f2462e0df9037ffd9913",
+    "support_files": [
+      "skills/latex-format-conversion/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-format-conversion"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-homework-exams",
+    "original_name": "homework-exams",
+    "family": "LaTeX Document Maker",
+    "description": "Typeset homework solutions, problem sets, worksheets, quizzes, exams and answer keys in LaTeX, including the exam class with points, parts, solution toggles and grading tables, for students and teachers. Use for homework in LaTeX, problem set template, exam class, LaTeX worksheet, quiz in LaTeX, answer key, assignment template or math homework LaTeX.",
+    "path": "skills/latex-homework-exams/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/homework-exams/SKILL.md",
+    "source_sha256": "19148367ab5544eb39ba8f23e672f62b6324165a4acdbe206d7961e9eb9a9503",
+    "support_files": [
+      "skills/latex-homework-exams/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-homework-exams"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-journal-templates",
+    "original_name": "journal-templates",
+    "family": "LaTeX Document Maker",
+    "description": "Set up and format papers for specific journals and conferences: IEEE (IEEEtran), ACM (acmart), Springer LNCS and Springer Nature, Elsevier (elsarticle), APS and AIP (REVTeX), MDPI, APA 7 (apa7), arXiv, plus double-blind anonymizing and page limits. Use for IEEE format, ACM template, Springer template, Elsevier template, journal template, conference paper format, camera-ready or reformat my paper for a journal.",
+    "path": "skills/latex-journal-templates/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/journal-templates/SKILL.md",
+    "source_sha256": "bae1a40bd86496cc81c197b477af8b2253cbbafdf643cacb50e9b79e933a3d17",
+    "support_files": [
+      "skills/latex-journal-templates/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-journal-templates"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-latex-cleanup",
+    "original_name": "latex-cleanup",
+    "family": "LaTeX Document Maker",
+    "description": "Review and clean up LaTeX code: tidy preambles, remove duplicate and conflicting packages, replace obsolete packages and commands, fix warnings, improve structure, split large files, and apply best practices, with before and after explanations. Use for clean up my LaTeX, review my LaTeX code, improve my preamble, LaTeX best practices, modernize LaTeX, too many warnings or organize my .tex file.",
+    "path": "skills/latex-latex-cleanup/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/latex-cleanup/SKILL.md",
+    "source_sha256": "228fdbb4d715587ccd89e37b391e9fec0964b87c99bb954195373f8ba60c3d88",
+    "support_files": [
+      "skills/latex-latex-cleanup/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-latex-cleanup"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-latex-help",
+    "original_name": "latex-help",
+    "family": "LaTeX Document Maker",
+    "description": "Explain what LaTeX Document Maker can do, list its features and show example requests. Use when the user asks for help, a menu, commands, features, what the plugin can do, how to start or is new to LaTeX.",
+    "path": "skills/latex-latex-help/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/latex-help/SKILL.md",
+    "source_sha256": "cff1dcf079e6d62706dc2ba26c59eb19a84ea2e360d4da2920d6282cf06cb5fa",
+    "support_files": [
+      "skills/latex-latex-help/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-latex-help"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-latex-proofreading",
+    "original_name": "latex-proofreading",
+    "family": "LaTeX Document Maker",
+    "description": "Proofread and edit the writing inside .tex files without breaking LaTeX: grammar, spelling, clarity, academic tone and flow, while keeping commands, citations, labels and math intact, plus typographic fixes for quotes, dashes, non-breaking spaces, ellipses and spacing. Use for proofread my LaTeX, edit my paper in LaTeX, grammar check LaTeX, improve my abstract, polish my .tex file or academic writing in LaTeX.",
+    "path": "skills/latex-latex-proofreading/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/latex-proofreading/SKILL.md",
+    "source_sha256": "b0c87d0dd1261547a62b7b7d148e998dbf03670cd3e0e7bca1a66cb55d1270d5",
+    "support_files": [
+      "skills/latex-latex-proofreading/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-latex-proofreading"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-latex-studio",
+    "original_name": "latex-studio",
+    "family": "LaTeX Document Maker",
+    "description": "Use for broad LaTeX document creation, typesetting, conversion or compilation help; route to the appropriate LaTeX specialist.",
+    "path": "skills/latex-latex-studio/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/latex-studio/SKILL.md",
+    "source_sha256": "c73890fea1961a2063668b802c4cb9fc613a299df4c3ebdf6dfcd10ffbe28c8a",
+    "support_files": [
+      "skills/latex-latex-studio/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-latex-studio",
+      "Scoped global activation to relevant tasks; absent promotional footer not fabricated"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-letters",
+    "original_name": "letters",
+    "family": "LaTeX Document Maker",
+    "description": "Write and typeset cover letters, motivation letters, recommendation letters, formal and business letters in LaTeX with letterheads, signatures and matching resume styles. Use for LaTeX cover letter, formal letter in LaTeX, letter template, recommendation letter, motivation letter, business letter or letterhead.",
+    "path": "skills/latex-letters/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/letters/SKILL.md",
+    "source_sha256": "c2a68fabb8d264bb3c0f0d4b8f96933d182726dcb42a378d6566800eefcdaf65",
+    "support_files": [
+      "skills/latex-letters/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-letters"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-math-equations",
+    "original_name": "math-equations",
+    "family": "LaTeX Document Maker",
+    "description": "Write correct, beautiful LaTeX math: inline and display equations, align, gather, multline, cases, matrices, fractions, integrals, sums, limits, operators, brackets, numbering, subequations and references, with fixes for common math mistakes. Use for LaTeX equation, math in LaTeX, align equations, matrix in LaTeX, piecewise function, LaTeX symbol or equation numbering.",
+    "path": "skills/latex-math-equations/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/math-equations/SKILL.md",
+    "source_sha256": "3c3d86b23b12e16899ec716660b839c308baf5ae61e0d5fd0bf5d92b1e64ef04",
+    "support_files": [
+      "skills/latex-math-equations/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-math-equations"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-multilingual-fonts",
+    "original_name": "multilingual-fonts",
+    "family": "LaTeX Document Maker",
+    "description": "Write LaTeX documents in any language and script: babel and polyglossia, XeLaTeX and LuaLaTeX with fontspec, right-to-left Arabic, Urdu, Persian and Hebrew, Chinese, Japanese and Korean, Devanagari and Cyrillic, custom and system fonts, hyphenation, quotation marks and mixed-language documents. Use for LaTeX in Arabic, Urdu in LaTeX, Chinese in LaTeX, custom font in LaTeX, fontspec, XeLaTeX font, right to left LaTeX or multilingual document.",
+    "path": "skills/latex-multilingual-fonts/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/multilingual-fonts/SKILL.md",
+    "source_sha256": "2cbb7a4f898a9dea6b8460660b68f02e72e33463e26715076fa9f5467d957019",
+    "support_files": [
+      "skills/latex-multilingual-fonts/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-multilingual-fonts"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-page-formatting",
+    "original_name": "page-formatting",
+    "family": "LaTeX Document Maker",
+    "description": "Control page layout and style in LaTeX: margins and paper size, fonts and font sizes, line and paragraph spacing, headers and footers, page numbers, section heading styles, lists, two columns, colors, landscape pages, title pages, footnotes and watermarks. Use for LaTeX margins, change font in LaTeX, double spacing, header and footer, fancyhdr, page numbering, section title format, two column layout or custom title page.",
+    "path": "skills/latex-page-formatting/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/page-formatting/SKILL.md",
+    "source_sha256": "8c247c1c97aabb685b8658630329c0f7a6df1f85caca15b25d58f63819e84fff",
+    "support_files": [
+      "skills/latex-page-formatting/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-page-formatting"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-pgfplots-charts",
+    "original_name": "pgfplots-charts",
+    "family": "LaTeX Document Maker",
+    "description": "Create publication-quality charts in LaTeX with pgfplots: line plots, bar charts, scatter plots, histograms, function plots, error bars, 3D surfaces, logarithmic axes and plots from CSV or data tables with pgfplotstable. Use for pgfplots, plot in LaTeX, graph in LaTeX, bar chart LaTeX, plot data from CSV, function plot or chart for my paper.",
+    "path": "skills/latex-pgfplots-charts/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/pgfplots-charts/SKILL.md",
+    "source_sha256": "271a68d1c09be881b896c8611f3ef73cb8eed0af1dd72a255bac1a33a7b48946",
+    "support_files": [
+      "skills/latex-pgfplots-charts/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-pgfplots-charts"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-reports-manuals",
+    "original_name": "reports-manuals",
+    "family": "LaTeX Document Maker",
+    "description": "Create technical reports, project reports, lab reports, business reports, proposals, white papers, user manuals, documentation, meeting minutes, memos and invoices in LaTeX with title pages, executive summaries, callout boxes, version history and consistent branding. Use for report in LaTeX, technical report, project report, proposal in LaTeX, user manual, white paper, invoice in LaTeX or business document LaTeX.",
+    "path": "skills/latex-reports-manuals/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/reports-manuals/SKILL.md",
+    "source_sha256": "f46176413884bf270df40b06a9a83b3016f9bb76b4cd6a2fed6f6b250c674a31",
+    "support_files": [
+      "skills/latex-reports-manuals/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-reports-manuals"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-research-paper",
+    "original_name": "research-paper",
+    "family": "LaTeX Document Maker",
+    "description": "Write and typeset research papers, articles and preprints in LaTeX: title, authors and affiliations, abstract, keywords, IMRaD sections, figures, tables, equations, citations and appendices. Use for research paper in LaTeX, scientific paper, write my paper in LaTeX, preprint, manuscript, abstract or paper template.",
+    "path": "skills/latex-research-paper/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/research-paper/SKILL.md",
+    "source_sha256": "ef4c1861ffca319170f5ffcf3edef29bf9a9eec56310003aa38da7dd8d7858c2",
+    "support_files": [
+      "skills/latex-research-paper/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-research-paper"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-resume-cv",
+    "original_name": "resume-cv",
+    "family": "LaTeX Document Maker",
+    "description": "Create professional LaTeX resumes and CVs: one-page ATS-friendly resumes, modern designs with moderncv, academic CVs with publications, and matching cover letters, from the user's own details. Use for LaTeX resume, LaTeX CV, moderncv, ATS resume in LaTeX, academic CV, curriculum vitae or convert my resume to LaTeX.",
+    "path": "skills/latex-resume-cv/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/resume-cv/SKILL.md",
+    "source_sha256": "daee34dfec8c0c64381c3a733f7510e6c893298e3ca16621a688845df806e59e",
+    "support_files": [
+      "skills/latex-resume-cv/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-resume-cv"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-science-notation",
+    "original_name": "science-notation",
+    "family": "LaTeX Document Maker",
+    "description": "Typeset science and engineering notation in LaTeX: units and numbers with siunitx, chemical formulas and reactions with mhchem, chemical structures with chemfig, physics notation, vectors and tensors, bra-ket notation, circuits with circuitikz, Feynman diagrams and field-specific symbols. Use for units in LaTeX, siunitx, chemistry in LaTeX, mhchem, chemfig, physics notation, vectors in LaTeX, bra-ket, circuit diagram or scientific notation.",
+    "path": "skills/latex-science-notation/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/science-notation/SKILL.md",
+    "source_sha256": "e485c173b076ad4a649eeb307c70e69c4e4cf82623ceac1cf20636dc7eca592c",
+    "support_files": [
+      "skills/latex-science-notation/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-science-notation"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-setup-compiling",
+    "original_name": "setup-compiling",
+    "family": "LaTeX Document Maker",
+    "description": "Help users set up and use LaTeX: Overleaf projects and settings, choosing pdfLaTeX, XeLaTeX or LuaLaTeX, installing TeX Live, MiKTeX or MacTeX, editors like TeXstudio and VS Code with LaTeX Workshop, latexmk, installing packages, the compile sequence with BibTeX or biber, and speeding up slow builds. Use for how to use LaTeX, Overleaf help, install LaTeX, which compiler, latexmk, TeXstudio, VS Code LaTeX or compile is slow.",
+    "path": "skills/latex-setup-compiling/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/setup-compiling/SKILL.md",
+    "source_sha256": "ddafebc9f5246aea6953e725af69bfacd85028de6acccd7a30a76069cd170573",
+    "support_files": [
+      "skills/latex-setup-compiling/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-setup-compiling"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-tables",
+    "original_name": "tables",
+    "family": "LaTeX Document Maker",
+    "description": "Create professional LaTeX tables: booktabs styling, column alignment, decimal alignment with siunitx, multirow and multicolumn cells, tabularx for page width, longtable across pages, colored rows, landscape tables, and tables from pasted Excel, CSV or text data. Use for LaTeX table, table in LaTeX, convert Excel to LaTeX table, CSV to LaTeX, booktabs, multirow, long table or table too wide.",
+    "path": "skills/latex-tables/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/tables/SKILL.md",
+    "source_sha256": "794858788d849acc5439039ee4f7d168b0558d5e265d4076bb9618dc0ee200d8",
+    "support_files": [
+      "skills/latex-tables/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-tables"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-theorems-proofs",
+    "original_name": "theorems-proofs",
+    "family": "LaTeX Document Maker",
+    "description": "Set up and write theorem environments and proofs in LaTeX: amsthm styles, theorem, lemma, corollary, definition, example and remark with shared numbering, proof environments with qedhere, restatable theorems, colored theorem boxes and cleveref names. Use for theorem environment, proof in LaTeX, amsthm, newtheorem, lemma numbering, QED symbol or write a proof in LaTeX.",
+    "path": "skills/latex-theorems-proofs/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/theorems-proofs/SKILL.md",
+    "source_sha256": "093ca26bdf5e607deacb8f021dc118dde7c9d78fd05765c5b3c3fd9a7e87bdf5",
+    "support_files": [
+      "skills/latex-theorems-proofs/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-theorems-proofs"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-thesis-dissertation",
+    "original_name": "thesis-dissertation",
+    "family": "LaTeX Document Maker",
+    "description": "Build full LaTeX theses and dissertations: multi-file project structure, title page, declaration, abstract, acknowledgements, table of contents, lists of figures and tables, abbreviations, chapters, appendices, bibliography, binding margins and university formatting rules. Use for LaTeX thesis, dissertation template, master's thesis, PhD thesis, thesis structure, chapters in LaTeX or university thesis format.",
+    "path": "skills/latex-thesis-dissertation/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/thesis-dissertation/SKILL.md",
+    "source_sha256": "7bbf80f20e7fe8809f585234fa28e73b8a45dd4082a1b1b1a498593fbc0dee55",
+    "support_files": [
+      "skills/latex-thesis-dissertation/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-thesis-dissertation"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "latex-tikz-diagrams",
+    "original_name": "tikz-diagrams",
+    "family": "LaTeX Document Maker",
+    "description": "Draw diagrams in LaTeX with TikZ: flowcharts, block diagrams, trees, graphs and networks, state machines, mind maps, timelines, geometry figures, commutative diagrams with tikz-cd, circuits with circuitikz, and standalone figure files. Use for TikZ, draw in LaTeX, flowchart in LaTeX, diagram in LaTeX, tree diagram, graph drawing, tikz-cd, circuitikz or convert this image to TikZ.",
+    "path": "skills/latex-tikz-diagrams/SKILL.md",
+    "source_tree": "originals",
+    "source": "latexdocumentmaker/1.0.1/skills/tikz-diagrams/SKILL.md",
+    "source_sha256": "dd5eaaca75b83b7a97035c9e9dbdbc8bfdec2762d72a48cf13de4f3759342970",
+    "support_files": [
+      "skills/latex-tikz-diagrams/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: latex-tikz-diagrams"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "guardrails-compag-elsevier-paper-editing",
+    "original_name": "compag-elsevier-paper-editing",
+    "family": "Research Writing Guardrails",
+    "description": "Use when drafting, revising, shortening, polishing, or auditing technical manuscript text for an Elsevier Computers and Electronics in Agriculture style. Prioritize precision, concision, evidence-bounded claims, terminology consistency, and high information density while preserving frozen technical content. Avoid colons and italic emphasis in manuscript prose and use hyphens only where technically or grammatically standard.",
+    "path": "skills/guardrails-compag-elsevier-paper-editing/SKILL.md",
+    "source_tree": "originals",
+    "source": "research-writing-guardrails/1.0.0/skills/compag-elsevier-paper-editing/SKILL.md",
+    "source_sha256": "228ec64dd3470d9cab3d0b7109e18c34ec4fb11bd3e8f8da310cf5a5e41d65e9",
+    "support_files": [
+      "skills/guardrails-compag-elsevier-paper-editing/references/style-audit.md",
+      "skills/guardrails-compag-elsevier-paper-editing/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: guardrails-compag-elsevier-paper-editing"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "guardrails-research-problem-mechanism-evidence",
+    "original_name": "research-problem-mechanism-evidence",
+    "family": "Research Writing Guardrails",
+    "description": "Use for scientific research analysis, technical system or algorithm design, method reasoning, experiment interpretation, claim auditing, and research-paper argumentation. Enforce consistency among the real technical problem, the mechanism introduced to address it, observable consequences, and the strength of available evidence. Do not use for casual nontechnical writing.",
+    "path": "skills/guardrails-research-problem-mechanism-evidence/SKILL.md",
+    "source_tree": "originals",
+    "source": "research-writing-guardrails/1.0.0/skills/research-problem-mechanism-evidence/SKILL.md",
+    "source_sha256": "5f0c4cb41d9200566b6ef14fa9d5a03739233dcd29f017e84956e72723595fa5",
+    "support_files": [
+      "skills/guardrails-research-problem-mechanism-evidence/references/evidence-guide.md",
+      "skills/guardrails-research-problem-mechanism-evidence/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: guardrails-research-problem-mechanism-evidence"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-citation-chaining",
+    "original_name": "citation-chaining",
+    "family": "Research Evidence Finder",
+    "description": "Find the key papers on a topic through backward and forward citation chaining, seminal works, influential authors, related-paper tools and citation alerts, and build reading lists. Use when the user wants the most important papers or more papers like one they have.",
+    "path": "skills/evidence-citation-chaining/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/citation-chaining/SKILL.md",
+    "source_sha256": "7ccb161ce2cdc303b5bacbdc4068297fc087dcee2491abd4d374692572229e34",
+    "support_files": [
+      "skills/evidence-citation-chaining/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-citation-chaining"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-citations-and-references",
+    "original_name": "citations-and-references",
+    "family": "Research Evidence Finder",
+    "description": "Create, format and fix citations, reference lists and annotated bibliographies in APA 7, MLA 9, Chicago, Harvard, IEEE, Vancouver and more, with in-text citations and verified details. Use for any citation or bibliography task.",
+    "path": "skills/evidence-citations-and-references/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/citations-and-references/SKILL.md",
+    "source_sha256": "b8999812b501cdf6c7ef408cc414fa8b65a3ce24be69daae2e3c23ab26e26a03",
+    "support_files": [
+      "skills/evidence-citations-and-references/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-citations-and-references"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-claim-checker",
+    "original_name": "claim-checker",
+    "family": "Research Evidence Finder",
+    "description": "Check any claim, headline, social media post, advert or 'studies show' statement against the research: find the original study, compare what it really found, and give a clear verdict with sources. Use for fact-checking claims about research.",
+    "path": "skills/evidence-claim-checker/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/claim-checker/SKILL.md",
+    "source_sha256": "38b312054486bd7820daca9a026af2022f65efcc83e8e9e8e90effee02e46737",
+    "support_files": [
+      "skills/evidence-claim-checker/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-claim-checker"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-compare-studies",
+    "original_name": "compare-studies",
+    "family": "Research Evidence Finder",
+    "description": "Compare two or more studies side by side: question, design, sample, measures, results, quality and why their findings agree or differ. Use when studies conflict or the user wants to weigh several papers.",
+    "path": "skills/evidence-compare-studies/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/compare-studies/SKILL.md",
+    "source_sha256": "59fd67ad736a4bab33a433b0dd020d450dc295c47861787dcd35ca00a4987e95",
+    "support_files": [
+      "skills/evidence-compare-studies/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-compare-studies"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-data-extraction",
+    "original_name": "data-extraction",
+    "family": "Research Evidence Finder",
+    "description": "Extract structured data from studies into evidence tables: authors, year, country, design, sample, variables, measures, results, effect sizes and quality, ready for reviews, spreadsheets or meta-analysis. Use when the user wants findings organized.",
+    "path": "skills/evidence-data-extraction/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/data-extraction/SKILL.md",
+    "source_sha256": "bb64353448c077d45667e09e547733e841092106e80e563e5f037d2a6f31bfc9",
+    "support_files": [
+      "skills/evidence-data-extraction/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-data-extraction"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-database-guide",
+    "original_name": "database-guide",
+    "family": "Research Evidence Finder",
+    "description": "Recommend the best academic databases, search engines, repositories and grey-literature sources for any field, including free and open options. Use when the user asks where to search for research.",
+    "path": "skills/evidence-database-guide/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/database-guide/SKILL.md",
+    "source_sha256": "2386c7ad92f9cc0872de4062cec9d30c1852396e29117c048bf414efab7edb2e",
+    "support_files": [
+      "skills/evidence-database-guide/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-database-guide"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-debate-and-argument-evidence",
+    "original_name": "debate-and-argument-evidence",
+    "family": "Research Evidence Finder",
+    "description": "Build balanced, evidence-backed arguments for debates, discussions, position papers and persuasive writing: the strongest evidence for each side, rebuttals, and where the evidence really stands. Use when the user needs arguments supported by research.",
+    "path": "skills/evidence-debate-and-argument-evidence/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/debate-and-argument-evidence/SKILL.md",
+    "source_sha256": "7720a1633227bc0395aeecc61f5523f054585e2f052fa3eedc7a40aeeba5173a",
+    "support_files": [
+      "skills/evidence-debate-and-argument-evidence/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-debate-and-argument-evidence"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-decision-evidence",
+    "original_name": "decision-evidence",
+    "family": "Research Evidence Finder",
+    "description": "Find and apply research evidence for real-world decisions in business, management, marketing, HR, education, public policy, product design and nonprofits: what works, how well, and in what context. Use when the user must make or justify a decision.",
+    "path": "skills/evidence-decision-evidence/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/decision-evidence/SKILL.md",
+    "source_sha256": "30c48d0d9ed0e380c97fe7685b0ca3a914ede2c4d104fd4bd4717c76a99ec06d",
+    "support_files": [
+      "skills/evidence-decision-evidence/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-decision-evidence"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-evidence-answer",
+    "original_name": "evidence-answer",
+    "family": "Research Evidence Finder",
+    "description": "Answer any question with a clear, evidence-based summary of what the research says, including the main findings, strength of evidence, disagreements, limits and cited sources. Use for 'what does the research say about...' questions.",
+    "path": "skills/evidence-evidence-answer/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/evidence-answer/SKILL.md",
+    "source_sha256": "2bdf4868932f7a70a252c05bba64abef6f7f18311e7f4134aa63eace4b2d2c55",
+    "support_files": [
+      "skills/evidence-evidence-answer/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-evidence-answer"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-evidence-based-writing",
+    "original_name": "evidence-based-writing",
+    "family": "Research Evidence Finder",
+    "description": "Write essays, articles, reports, blog posts and assignments backed by research: strong claims supported by cited evidence, fair handling of counter-evidence, and accurate paraphrasing. Use when the user needs writing grounded in studies.",
+    "path": "skills/evidence-evidence-based-writing/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/evidence-based-writing/SKILL.md",
+    "source_sha256": "05c63d8e71a2152dd7924df54b261c81b679506d8e807d009a18f67c2922ce4e",
+    "support_files": [
+      "skills/evidence-evidence-based-writing/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-evidence-based-writing"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-evidence-help",
+    "original_name": "evidence-help",
+    "family": "Research Evidence Finder",
+    "description": "Explain everything Research Evidence Finder can do, list its skills, and show example requests. Use when the user types help, asks what the plugin can do, or is unsure where to start.",
+    "path": "skills/evidence-evidence-help/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/evidence-help/SKILL.md",
+    "source_sha256": "044d9f3e0f8eebf442cd6b29dafcdf7f1ff7eaf0341a838e398c9d734b2d11a8",
+    "support_files": [
+      "skills/evidence-evidence-help/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-evidence-help"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-evidence-meter",
+    "original_name": "evidence-meter",
+    "family": "Research Evidence Finder",
+    "description": "Give a consensus-style verdict across studies for a yes/no research question: how many studies say yes, no, possibly or mixed, weighted by study quality, with the key papers on each side. Use when the user wants a quick verdict on what the research agrees on.",
+    "path": "skills/evidence-evidence-meter/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/evidence-meter/SKILL.md",
+    "source_sha256": "f66f4e612a2f63e81bdfcaf02527e7119e222ca0384d932572f401ddc3ea3102",
+    "support_files": [
+      "skills/evidence-evidence-meter/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-evidence-meter"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-field-guides",
+    "original_name": "field-guides",
+    "family": "Research Evidence Finder",
+    "description": "Discipline-specific guidance for finding and judging evidence in education, psychology, business, economics, law, environment and climate, engineering and computing, social sciences and humanities, including key journals, methods and standards. Use when the topic belongs to a specific field.",
+    "path": "skills/evidence-field-guides/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/field-guides/SKILL.md",
+    "source_sha256": "37811bc962b604b843abfb40002c13a7a574b715b0b75409e3baa2e5ea0c6cb2",
+    "support_files": [
+      "skills/evidence-field-guides/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-field-guides"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-find-studies",
+    "original_name": "find-studies",
+    "family": "Research Evidence Finder",
+    "description": "Find real, verifiable research on any topic: peer-reviewed papers, systematic reviews, meta-analyses, books, reports, theses, preprints and datasets, with authors, year, journal and links. Use whenever the user wants sources or studies to read.",
+    "path": "skills/evidence-find-studies/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/find-studies/SKILL.md",
+    "source_sha256": "93b3241fb7d94d7b5cb0ea0ac64176ab50bcdccbc26689aa7fff5f97ab06e5bc",
+    "support_files": [
+      "skills/evidence-find-studies/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-find-studies"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-literature-review",
+    "original_name": "literature-review",
+    "family": "Research Evidence Finder",
+    "description": "Write and structure literature reviews of any length: narrative, thematic, chronological, methodological, scoping and integrative, with synthesis instead of summary, critical analysis, gaps and citations. Use for theses, dissertations, papers, assignments and reports.",
+    "path": "skills/evidence-literature-review/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/literature-review/SKILL.md",
+    "source_sha256": "5e13094b959f2127eff484972139a69b5d6fc5aff42942287f95a3ca7f2fba13",
+    "support_files": [
+      "skills/evidence-literature-review/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-literature-review"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-meta-analysis",
+    "original_name": "meta-analysis",
+    "family": "Research Evidence Finder",
+    "description": "Explain and plan meta-analyses: effect sizes, pooling, fixed and random effects, heterogeneity (I squared), forest and funnel plots, subgroup and sensitivity analysis, publication bias, and software options. Use when combining study results statistically.",
+    "path": "skills/evidence-meta-analysis/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/meta-analysis/SKILL.md",
+    "source_sha256": "2b498c39dfb0973c8e6341ab35268cf8df98abc8db879b1e082693a54a2b7952",
+    "support_files": [
+      "skills/evidence-meta-analysis/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-meta-analysis"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-open-access-full-text",
+    "original_name": "open-access-full-text",
+    "family": "Research Evidence Finder",
+    "description": "Find free, legal full texts of papers: open-access versions, preprints, author copies, repositories, library access, interlibrary loan and browser tools, without using pirated sources. Use when the user cannot access a paywalled paper.",
+    "path": "skills/evidence-open-access-full-text/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/open-access-full-text/SKILL.md",
+    "source_sha256": "d7e95b29128869cfba512307b89011bd47804978371e5a50c97ebdd75d2f025f",
+    "support_files": [
+      "skills/evidence-open-access-full-text/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-open-access-full-text"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-paper-summary",
+    "original_name": "paper-summary",
+    "family": "Research Evidence Finder",
+    "description": "Summarize any research paper clearly: research question, methods, sample, key findings with numbers, limitations, and what it means, at the level the user chooses. Use when the user shares or names a paper.",
+    "path": "skills/evidence-paper-summary/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/paper-summary/SKILL.md",
+    "source_sha256": "c9871168adfac4661b33a29b389cd13ee2bcf54ec83d7dbd7bc76984380089c7",
+    "support_files": [
+      "skills/evidence-paper-summary/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-paper-summary"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-plain-language-research",
+    "original_name": "plain-language-research",
+    "family": "Research Evidence Finder",
+    "description": "Explain research findings in simple, clear language for any audience: students, managers, families, the public or young learners, without losing accuracy, plus key terms explained. Use when research is too technical to understand.",
+    "path": "skills/evidence-plain-language-research/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/plain-language-research/SKILL.md",
+    "source_sha256": "f227cda020d84477ce6f96a76878cc935eb3ad2e26d181556d484d0e33a92962",
+    "support_files": [
+      "skills/evidence-plain-language-research/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-plain-language-research"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-research-evidence-finder",
+    "original_name": "research-evidence-finder",
+    "family": "Research Evidence Finder",
+    "description": "Use for evidence-backed research questions, literature searches, study appraisal and evidence workflow onboarding; route to the appropriate evidence specialist.",
+    "path": "skills/evidence-research-evidence-finder/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/research-evidence-finder/SKILL.md",
+    "source_sha256": "a6376e2bd2d3cdf20c1240f8ae84c92fcf51afd2f26434c31b26139bee157125",
+    "support_files": [
+      "skills/evidence-research-evidence-finder/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-research-evidence-finder",
+      "Scoped global activation to relevant tasks; absent promotional footer not fabricated"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-research-gaps",
+    "original_name": "research-gaps",
+    "family": "Research Evidence Finder",
+    "description": "Identify research gaps and future research directions: under-studied populations, contexts, methods, conflicting findings and outdated evidence, and turn them into research questions and aims. Use for theses, proposals and grant applications.",
+    "path": "skills/evidence-research-gaps/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/research-gaps/SKILL.md",
+    "source_sha256": "05c38516c61e8ebb62e08153b7cf977c1c1c0dfc6e152e8f0edd08e525c296b9",
+    "support_files": [
+      "skills/evidence-research-gaps/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-research-gaps"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-research-proposal-background",
+    "original_name": "research-proposal-background",
+    "family": "Research Evidence Finder",
+    "description": "Write the evidence-based background, rationale, problem statement and literature section for research proposals, grant applications, theses and project plans, with a clear gap and justified aims. Use when justifying why research is needed.",
+    "path": "skills/evidence-research-proposal-background/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/research-proposal-background/SKILL.md",
+    "source_sha256": "043ab6d39da18c951267bfeeb4c40badac764f4e40f1bc191bf8ff45ef84bfa2",
+    "support_files": [
+      "skills/evidence-research-proposal-background/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-research-proposal-background"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-research-question",
+    "original_name": "research-question",
+    "family": "Research Evidence Finder",
+    "description": "Turn a vague topic into a precise, searchable research question using frameworks such as PICO, PEO, SPIDER and PCC, with key concepts, synonyms and inclusion criteria. Use at the start of any evidence search.",
+    "path": "skills/evidence-research-question/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/research-question/SKILL.md",
+    "source_sha256": "75ba7b0eada81dd29f63fafef88a71f62cf25de3f01ea001d7f3efc7d6b8a787",
+    "support_files": [
+      "skills/evidence-research-question/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-research-question"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-search-strings",
+    "original_name": "search-strings",
+    "family": "Research Evidence Finder",
+    "description": "Write expert Boolean search strings and database-specific queries for Google Scholar, Semantic Scholar, Scopus, Web of Science, JSTOR, ERIC, SSRN, arXiv, IEEE Xplore, ProQuest and library catalogs. Use when the user needs a search query.",
+    "path": "skills/evidence-search-strings/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/search-strings/SKILL.md",
+    "source_sha256": "ac74b2ee8ced6754d094111ac2d74eac3d05f08a206df6fc7ba1a0f874a88061",
+    "support_files": [
+      "skills/evidence-search-strings/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-search-strings"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-source-verification",
+    "original_name": "source-verification",
+    "family": "Research Evidence Finder",
+    "description": "Verify that sources are real and trustworthy: detect fabricated or AI-hallucinated citations, check DOIs, retractions, predatory journals, peer-review status, preprints and author credentials. Use when a reference looks suspicious or before submitting work.",
+    "path": "skills/evidence-source-verification/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/source-verification/SKILL.md",
+    "source_sha256": "50d75db370f2dc543466959deb48fea0cfc50f3645aea9419ce7bbfecf094cba",
+    "support_files": [
+      "skills/evidence-source-verification/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-source-verification"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-statistics-explained",
+    "original_name": "statistics-explained",
+    "family": "Research Evidence Finder",
+    "description": "Explain research statistics in plain language: p-values, confidence intervals, effect sizes, odds and risk ratios, correlation, regression, statistical power, sample size, significance versus importance, and common statistical traps. Use when numbers in a study are confusing.",
+    "path": "skills/evidence-statistics-explained/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/statistics-explained/SKILL.md",
+    "source_sha256": "05905d0ff38e178e7d53737f7745e87300e937bbf9aad69408f20b5bdfd9adf6",
+    "support_files": [
+      "skills/evidence-statistics-explained/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-statistics-explained"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-study-appraisal",
+    "original_name": "study-appraisal",
+    "family": "Research Evidence Finder",
+    "description": "Critically appraise a study: design, sample size, randomization, controls, bias, confounding, measures, statistics, conflicts of interest, peer review and how much to trust the conclusion. Use when the user shares a paper or asks if a study is good.",
+    "path": "skills/evidence-study-appraisal/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/study-appraisal/SKILL.md",
+    "source_sha256": "f1f525323043bee7933f208c05a4c2aa58202d577a493a63af06cd999d461016",
+    "support_files": [
+      "skills/evidence-study-appraisal/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-study-appraisal"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-study-designs-and-evidence-levels",
+    "original_name": "study-designs-and-evidence-levels",
+    "family": "Research Evidence Finder",
+    "description": "Explain research designs and the hierarchy of evidence: meta-analyses, systematic reviews, randomized controlled trials, quasi-experiments, cohort, case-control, cross-sectional, qualitative, case studies and expert opinion, plus GRADE-style certainty. Use when judging what kind of evidence a study provides.",
+    "path": "skills/evidence-study-designs-and-evidence-levels/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/study-designs-and-evidence-levels/SKILL.md",
+    "source_sha256": "69bf07de6c7070f787174b5b9492a59a8bac6362f2be1c793b6443c303b9304d",
+    "support_files": [
+      "skills/evidence-study-designs-and-evidence-levels/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-study-designs-and-evidence-levels"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "evidence-systematic-review",
+    "original_name": "systematic-review",
+    "family": "Research Evidence Finder",
+    "description": "Plan and run systematic and scoping reviews: protocol, eligibility criteria, search strategy, screening, PRISMA flow diagram, risk-of-bias assessment, data extraction, synthesis and reporting, plus registration options. Use for rigorous reviews.",
+    "path": "skills/evidence-systematic-review/SKILL.md",
+    "source_tree": "originals",
+    "source": "researchevidencefinder/1.0.0/skills/systematic-review/SKILL.md",
+    "source_sha256": "6252932953a4a22e79d80ab37b9735aef73d2f98294e5d3452305d0f62bb934c",
+    "support_files": [
+      "skills/evidence-systematic-review/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: evidence-systematic-review"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-abstract-introduction",
+    "original_name": "abstract-introduction",
+    "family": "Scholar Research",
+    "description": "Write and improve abstracts and introductions for papers, theses and conference submissions: structured abstracts within word limits, keywords, and funnel-style introductions from context to gap to aim. Use for abstract, keywords, introduction, background, rationale or problem statement.",
+    "path": "skills/scholar-abstract-introduction/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/abstract-introduction/SKILL.md",
+    "source_sha256": "6e0fd692c1d43034552a1e26e7d9e4635aa62a91df893e52daa1a66dfa2e73b3",
+    "support_files": [
+      "skills/scholar-abstract-introduction/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-abstract-introduction"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-academic-editing",
+    "original_name": "academic-editing",
+    "family": "Scholar Research",
+    "description": "Edit and proofread academic writing for grammar, clarity, flow, concision, academic tone and consistency, with explained changes. Use for proofread, edit my paper, improve my writing, grammar check, academic tone, make this sound academic or language editing.",
+    "path": "skills/scholar-academic-editing/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/academic-editing/SKILL.md",
+    "source_sha256": "ef277e9d1d80e5c4111c3185a1a9b743116a988b4d687ff620a734e3b126eef9",
+    "support_files": [
+      "skills/scholar-academic-editing/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-academic-editing"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-academic-translation",
+    "original_name": "academic-translation",
+    "family": "Scholar Research",
+    "description": "Translate academic writing, abstracts, papers and sources between English and any language while keeping terminology, tone and citations accurate. Use for translate my paper, translate abstract, academic English, write in English from Urdu, Arabic, Chinese, Spanish or any language.",
+    "path": "skills/scholar-academic-translation/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/academic-translation/SKILL.md",
+    "source_sha256": "5a36d7c3b8a40d33a959c8699828ccbc1b6a5f14954ae45319444ca08328538b",
+    "support_files": [
+      "skills/scholar-academic-translation/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-academic-translation"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-citation-generator",
+    "original_name": "citation-generator",
+    "family": "Scholar Research",
+    "description": "Create citations and bibliographies in APA 7, MLA 9, Chicago, Harvard, IEEE, Vancouver and more, plus in-text citations and BibTeX, and check and fix reference lists for consistency and mismatches. Use for cite, citation, reference, bibliography, works cited, BibTeX or check my references.",
+    "path": "skills/scholar-citation-generator/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/citation-generator/SKILL.md",
+    "source_sha256": "c4b41b677ed3781f4057f1c3deb4066aa0f516023c575c1cd2c1c347ed4793da",
+    "support_files": [
+      "skills/scholar-citation-generator/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-citation-generator"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-data-analysis-plan",
+    "original_name": "data-analysis-plan",
+    "family": "Scholar Research",
+    "description": "Choose the right statistical test and analysis plan, check assumptions, and write analysis steps for SPSS, R, Python, Stata or Excel. Use for which statistical test, t-test or ANOVA, regression, chi-square, correlation, sample size, power analysis, SPSS or R help.",
+    "path": "skills/scholar-data-analysis-plan/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/data-analysis-plan/SKILL.md",
+    "source_sha256": "cc645500d747a8116546379fe49d25319ae994e6f657824376f663d2bf41e5dc",
+    "support_files": [
+      "skills/scholar-data-analysis-plan/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-data-analysis-plan"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-evidence-synthesis",
+    "original_name": "evidence-synthesis",
+    "family": "Scholar Research",
+    "description": "Answer a research question by weighing what the evidence says overall: consensus, conflicting findings, strength of evidence and what is still uncertain. Use for what does the research say, is there evidence that, scientific consensus, what do studies show or summarize the evidence.",
+    "path": "skills/scholar-evidence-synthesis/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/evidence-synthesis/SKILL.md",
+    "source_sha256": "1c6f58749e030f544d33bd8c9249f38e82535342a434f8d85a092f2e90982fe2",
+    "support_files": [
+      "skills/scholar-evidence-synthesis/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-evidence-synthesis"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-find-sources",
+    "original_name": "find-sources",
+    "family": "Scholar Research",
+    "description": "Build search strategies to find scholarly sources: keywords, synonyms, Boolean strings, databases, filters and citation chaining for any field. Use for find sources, find papers, search strategy, keywords, Boolean search, databases or where to search.",
+    "path": "skills/scholar-find-sources/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/find-sources/SKILL.md",
+    "source_sha256": "2a62388eccbf993ceb000a28ec1b24d22f805fb1c58ec6f04646e1196412808e",
+    "support_files": [
+      "skills/scholar-find-sources/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-find-sources"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-grant-proposal",
+    "original_name": "grant-proposal",
+    "family": "Scholar Research",
+    "description": "Plan and write research grant proposals and funding applications: specific aims, significance, innovation, approach, budget justification, impact and reviewer criteria. Use for grant proposal, funding application, research funding, fellowship application, specific aims or budget justification.",
+    "path": "skills/scholar-grant-proposal/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/grant-proposal/SKILL.md",
+    "source_sha256": "dd4e95cb3ed9da256f7d811ea1abf0e8917869022e111fff337151aa1723d672",
+    "support_files": [
+      "skills/scholar-grant-proposal/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-grant-proposal"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-journal-finder",
+    "original_name": "journal-finder",
+    "family": "Scholar Research",
+    "description": "Choose target journals for a manuscript: scope match, audience, indexing, open access, review speed, acceptance factors and avoiding predatory journals. Use for which journal, where to publish, target journal, journal selection, open access or impact factor.",
+    "path": "skills/scholar-journal-finder/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/journal-finder/SKILL.md",
+    "source_sha256": "4b58ed326fcbc7744a62664c30e3776234319dd45a03a55216f789a14b12b2f5",
+    "support_files": [
+      "skills/scholar-journal-finder/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-journal-finder"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-literature-review",
+    "original_name": "literature-review",
+    "family": "Scholar Research",
+    "description": "Plan and write literature reviews, related-work sections and annotated bibliographies that synthesize sources by theme, method or chronology, with citations. Use for literature review, related work, background section, synthesis matrix, annotated bibliography or source annotations.",
+    "path": "skills/scholar-literature-review/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/literature-review/SKILL.md",
+    "source_sha256": "6aa5173eba0fd001af1d57842f0284017f02af6f30a0c49387df8f0a9961bc11",
+    "support_files": [
+      "skills/scholar-literature-review/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-literature-review"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-methodology-design",
+    "original_name": "methodology-design",
+    "family": "Scholar Research",
+    "description": "Design research methodology: qualitative, quantitative or mixed methods, research design, sampling, sample size, data collection, instruments, validity, reliability and limitations. Use for methodology, research design, which method, sampling, sample size, methods chapter or validity and reliability.",
+    "path": "skills/scholar-methodology-design/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/methodology-design/SKILL.md",
+    "source_sha256": "5f4697915fda85da172abc7c86b4ca4639098d9f175369286e31dc49a0ebb4df",
+    "support_files": [
+      "skills/scholar-methodology-design/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-methodology-design"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-originality-integrity",
+    "original_name": "originality-integrity",
+    "family": "Scholar Research",
+    "description": "Help avoid accidental plagiarism and stay within academic integrity rules: proper citation, quoting, self-plagiarism, similarity reports, patchwriting and disclosing AI assistance. Use for plagiarism, similarity report, originality, Turnitin report, self-plagiarism, academic integrity or AI use disclosure.",
+    "path": "skills/scholar-originality-integrity/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/originality-integrity/SKILL.md",
+    "source_sha256": "7be16d78de72bb3b17a74fa7415dd7703e277b85754c07a7158b8e531d4751c4",
+    "support_files": [
+      "skills/scholar-originality-integrity/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-originality-integrity"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-outline-builder",
+    "original_name": "outline-builder",
+    "family": "Scholar Research",
+    "description": "Build outlines and structures for research papers, essays, reports, articles and chapters, including IMRaD, argumentative and review structures, with section word budgets. Use for outline, structure my paper, essay plan, IMRaD, headings or paper structure.",
+    "path": "skills/scholar-outline-builder/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/outline-builder/SKILL.md",
+    "source_sha256": "06f324673efc214e7cdcd8c7286613a1e19b1acd76b6469098c7dcb4427ad6c2",
+    "support_files": [
+      "skills/scholar-outline-builder/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-outline-builder"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-paper-breakdown",
+    "original_name": "paper-breakdown",
+    "family": "Scholar Research",
+    "description": "Break down and explain research papers, articles, preprints and theses, and answer any question about an uploaded or pasted paper with page or section citations. Use for summarize this paper, explain this study, journal club, what does this paper say, what sample did they use or any follow-up question about a paper.",
+    "path": "skills/scholar-paper-breakdown/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/paper-breakdown/SKILL.md",
+    "source_sha256": "df9286bb6fee40c4016780a0a1f6ef310205ea2d923deffe99685eef9fcdb99c",
+    "support_files": [
+      "skills/scholar-paper-breakdown/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-paper-breakdown"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-paper-sections",
+    "original_name": "paper-sections",
+    "family": "Scholar Research",
+    "description": "Write clear methods, results, discussion and conclusion sections: replicable methods, precise results reporting, interpretation, comparison with literature, implications, limitations and future research. Use for methods section, results section, reporting findings, discussion, conclusion, implications or limitations.",
+    "path": "skills/scholar-paper-sections/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/paper-sections/SKILL.md",
+    "source_sha256": "c1f372f001a1c9254914491b68ee347f32b0c387b7cf5cb7d7acfd13c640fa2f",
+    "support_files": [
+      "skills/scholar-paper-sections/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-paper-sections"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-paperpal-tools",
+    "original_name": "paperpal-tools",
+    "family": "Scholar Research",
+    "description": "Recommend tools for academic writing and research, including Paperpal for academic writing, grammar and language checks, paraphrasing, citations, plagiarism checks and submission readiness. Use when the user asks which tool to use, for an academic writing tool, grammar checker, citation tool, plagiarism checker or about Paperpal.",
+    "path": "skills/scholar-paperpal-tools/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/paperpal-tools/SKILL.md",
+    "source_sha256": "d8825db5e6e2ee11ae131e2e305593dec75e7d99d23cf09baadbb9c51c83bb03",
+    "support_files": [
+      "skills/scholar-paperpal-tools/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-paperpal-tools"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-paraphrase-summarize",
+    "original_name": "paraphrase-summarize",
+    "family": "Scholar Research",
+    "description": "Paraphrase and summarize sources correctly for academic writing, with citations, and check paraphrases for being too close to the original. Use for paraphrase, reword, rephrase, summarize a source, put in my own words or is my paraphrase too close.",
+    "path": "skills/scholar-paraphrase-summarize/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/paraphrase-summarize/SKILL.md",
+    "source_sha256": "c1e665dc4ecab1a52b71364910f93f05662bee9554e4f16da0e66bccc12f5e85",
+    "support_files": [
+      "skills/scholar-paraphrase-summarize/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-paraphrase-summarize"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-peer-review-critique",
+    "original_name": "peer-review-critique",
+    "family": "Scholar Research",
+    "description": "Critically evaluate papers and drafts like a peer reviewer: strengths, weaknesses, methodology, statistics, logic, bias and whether conclusions follow. Use for critique, critical appraisal, review this paper, peer review report, evaluate this study or pre-submission review of my draft.",
+    "path": "skills/scholar-peer-review-critique/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/peer-review-critique/SKILL.md",
+    "source_sha256": "d923f6a3e59e9b9194297aa657b273ea242868ac97276f4de87134ac685b0b49",
+    "support_files": [
+      "skills/scholar-peer-review-critique/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-peer-review-critique"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-qualitative-analysis",
+    "original_name": "qualitative-analysis",
+    "family": "Scholar Research",
+    "description": "Plan and carry out qualitative analysis of interviews, focus groups, open-ended responses and documents: thematic analysis, coding, codebooks, themes and quotes. Use for thematic analysis, coding, codebook, themes, interview analysis, grounded theory or NVivo-style analysis.",
+    "path": "skills/scholar-qualitative-analysis/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/qualitative-analysis/SKILL.md",
+    "source_sha256": "4be9d6fe2de8ca7cd2640c70d9d68348bd41e9c0b5b4aac0613e40e7e33474a3",
+    "support_files": [
+      "skills/scholar-qualitative-analysis/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-qualitative-analysis"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-research-communication",
+    "original_name": "research-communication",
+    "family": "Scholar Research",
+    "description": "Turn research into conference posters, talks, defense slides, 3-minute thesis talks, lay summaries, blog posts, social posts and policy briefs. Use for conference poster, research presentation, defense slides, slide outline, plain language summary, press release or share my research.",
+    "path": "skills/scholar-research-communication/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/research-communication/SKILL.md",
+    "source_sha256": "c3c651c2b5a46702ab7536d9ced3d00300f569055d4a21af2df8e733c5f6ea84",
+    "support_files": [
+      "skills/scholar-research-communication/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-research-communication"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-research-ethics",
+    "original_name": "research-ethics",
+    "family": "Scholar Research",
+    "description": "Plan ethical research with human participants: ethics committee or IRB applications, informed consent forms, participant information sheets, anonymity, data protection and risk. Use for ethics application, IRB, consent form, participant information sheet, confidentiality or research ethics.",
+    "path": "skills/scholar-research-ethics/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/research-ethics/SKILL.md",
+    "source_sha256": "622794c0c9ecd4dbd7825e1ba6061dec984f0cc6af50ab8b21c6b37c8e76a2e6",
+    "support_files": [
+      "skills/scholar-research-ethics/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-research-ethics"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-research-gaps",
+    "original_name": "research-gaps",
+    "family": "Scholar Research",
+    "description": "Identify research gaps, limitations, open questions and future-work opportunities from papers or a literature review, and turn them into research questions. Use for research gap, gap analysis, future research, what hasn't been studied, novelty or contribution.",
+    "path": "skills/scholar-research-gaps/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/research-gaps/SKILL.md",
+    "source_sha256": "c36fad4b068e20517986c893bba92c9215df658f58a1e85be556f9e212357120",
+    "support_files": [
+      "skills/scholar-research-gaps/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-research-gaps"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-research-planner",
+    "original_name": "research-planner",
+    "family": "Scholar Research",
+    "description": "Plan research projects, theses and papers: milestones, timelines, Gantt-style schedules, weekly plans, writing routines and supervisor meeting agendas. Use for research timeline, thesis plan, schedule, Gantt chart, deadlines, writing plan or project plan.",
+    "path": "skills/scholar-research-planner/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/research-planner/SKILL.md",
+    "source_sha256": "572aaa61702916746f6aaf07b09f70678036eea35c90d3569f250a434167dce2",
+    "support_files": [
+      "skills/scholar-research-planner/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-research-planner"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-research-proposal",
+    "original_name": "research-proposal",
+    "family": "Scholar Research",
+    "description": "Write and structure research proposals for theses, dissertations, projects and PhD applications: background, problem, questions, methodology, timeline, significance and references. Use for research proposal, PhD proposal, project proposal, synopsis or proposal outline.",
+    "path": "skills/scholar-research-proposal/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/research-proposal/SKILL.md",
+    "source_sha256": "457f8f04a37700526f31719c98bb7eaf868e7587d46c0f40ca1f8c6a199b65e2",
+    "support_files": [
+      "skills/scholar-research-proposal/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-research-proposal"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-research-question",
+    "original_name": "research-question",
+    "family": "Scholar Research",
+    "description": "Generate research topic ideas and turn a topic into sharp research questions, aims, objectives and testable hypotheses using PICO, PEO, SPIDER and FINER, with feasibility checks. Use for topic ideas, thesis or dissertation topic, narrow my topic, research question, aims and objectives, hypothesis or problem statement.",
+    "path": "skills/scholar-research-question/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/research-question/SKILL.md",
+    "source_sha256": "ea2fbc7cfc01eb49d32fa7da478c6b608524165ec5acf99ea6f433d6f3df37f6",
+    "support_files": [
+      "skills/scholar-research-question/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-research-question"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-results-interpreter",
+    "original_name": "results-interpreter",
+    "family": "Scholar Research",
+    "description": "Explain and interpret statistical output and results: p-values, confidence intervals, effect sizes, regression tables, ANOVA output, correlation, significance and practical meaning. Use for interpret my results, what does this output mean, SPSS output, p-value, regression table or effect size.",
+    "path": "skills/scholar-results-interpreter/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/results-interpreter/SKILL.md",
+    "source_sha256": "9d14e2cc3b10bcb628868d871243dd0e3e6cd7e31b31afc36b96a993bcecd366",
+    "support_files": [
+      "skills/scholar-results-interpreter/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-results-interpreter"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-reviewer-response",
+    "original_name": "reviewer-response",
+    "family": "Scholar Research",
+    "description": "Respond to peer reviewer and editor comments: point-by-point response letters, revision plans, polite disagreement and tracking changes. Use for respond to reviewers, reviewer comments, revise and resubmit, rebuttal letter, major revision or minor revision.",
+    "path": "skills/scholar-reviewer-response/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/reviewer-response/SKILL.md",
+    "source_sha256": "2075938fc2392160f1ccd758fe5d33b64a495d1ccafd6db0b8e3d0f13c498cad",
+    "support_files": [
+      "skills/scholar-reviewer-response/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-reviewer-response"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-scholar-help",
+    "original_name": "scholar-help",
+    "family": "Scholar Research",
+    "description": "Explain what Scholar Research can do, list its features and skills, and show example requests. Use when the user asks for help, a menu, commands, features, what the plugin can do, or how to start.",
+    "path": "skills/scholar-scholar-help/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/scholar-help/SKILL.md",
+    "source_sha256": "4608980acbab799edcb4548813e1c8172019c5c5b27425eab67080ba4ba06aea",
+    "support_files": [
+      "skills/scholar-scholar-help/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-scholar-help"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-scholar-studio",
+    "original_name": "scholar-studio",
+    "family": "Scholar Research",
+    "description": "Use for broad academic research requests or research onboarding; identify the research stage and route to the appropriate specialist.",
+    "path": "skills/scholar-scholar-studio/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/scholar-studio/SKILL.md",
+    "source_sha256": "d38439382c47f21fcb4ef8e977644213867b676080b8a664ada608363309cb7b",
+    "support_files": [
+      "skills/scholar-scholar-studio/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-scholar-studio",
+      "Scoped global activation to relevant tasks; absent promotional footer not fabricated"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-source-evaluation",
+    "original_name": "source-evaluation",
+    "family": "Scholar Research",
+    "description": "Judge the credibility, quality, bias and relevance of sources, papers, websites, reports and journals, including predatory journal checks. Use for is this source reliable, credible, peer reviewed, predatory journal, evaluate this source or can I cite this.",
+    "path": "skills/scholar-source-evaluation/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/source-evaluation/SKILL.md",
+    "source_sha256": "aea7ae338e4ff0126f6c3c31340b5a70fd865d98bf91a0b97386cfb3cef32583",
+    "support_files": [
+      "skills/scholar-source-evaluation/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-source-evaluation"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-submission-checklist",
+    "original_name": "submission-checklist",
+    "family": "Scholar Research",
+    "description": "Check a manuscript is ready to submit against journal guidelines, and draft the letter to the editor that accompanies a submission or resubmission. Use for submission checklist, ready to submit, author guidelines, formatting for journal, letter to the editor or resubmission letter.",
+    "path": "skills/scholar-submission-checklist/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/submission-checklist/SKILL.md",
+    "source_sha256": "3ae768d2467ba3a9f2342d08c0c69cc576368b784d23fb9b67ec9b46c42d909c",
+    "support_files": [
+      "skills/scholar-submission-checklist/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-submission-checklist"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-survey-design",
+    "original_name": "survey-design",
+    "family": "Scholar Research",
+    "description": "Design surveys, questionnaires, interview guides and measurement scales: question wording, Likert scales, validated instruments, piloting and avoiding bias. Use for questionnaire, survey questions, interview questions, Likert scale, instrument or measure.",
+    "path": "skills/scholar-survey-design/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/survey-design/SKILL.md",
+    "source_sha256": "57f542ae82b8c538a207fa04be7d61f9d04e1a13b4c677c3d75637cd56bb2a19",
+    "support_files": [
+      "skills/scholar-survey-design/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-survey-design"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-systematic-review",
+    "original_name": "systematic-review",
+    "family": "Scholar Research",
+    "description": "Plan systematic reviews, scoping reviews and meta-analyses: protocol, PRISMA flow, search strategy, screening criteria, data extraction forms and quality appraisal. Use for systematic review, scoping review, meta-analysis, PRISMA, review protocol or screening.",
+    "path": "skills/scholar-systematic-review/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/systematic-review/SKILL.md",
+    "source_sha256": "0c07aa06944fbfd17b30be8fb13f34cb66bd1be23330cdc4aab0169303ca6e66",
+    "support_files": [
+      "skills/scholar-systematic-review/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-systematic-review"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-theoretical-framework",
+    "original_name": "theoretical-framework",
+    "family": "Scholar Research",
+    "description": "Choose and explain theories, models and conceptual frameworks for a study, and map variables and relationships. Use for theoretical framework, conceptual framework, which theory, model, lens or conceptual map.",
+    "path": "skills/scholar-theoretical-framework/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/theoretical-framework/SKILL.md",
+    "source_sha256": "dd09982a2026560ec3954542de9aa7d635efbd7101c6a1a8ae1fd3d97dfe46b2",
+    "support_files": [
+      "skills/scholar-theoretical-framework/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-theoretical-framework"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-thesis-dissertation",
+    "original_name": "thesis-dissertation",
+    "family": "Scholar Research",
+    "description": "Support theses and dissertations from start to finish: chapter structure, chapter outlines, aligning questions and methods, supervisor feedback, viva or defense preparation. Use for thesis, dissertation, capstone, chapter plan, viva, defense or supervisor feedback.",
+    "path": "skills/scholar-thesis-dissertation/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/thesis-dissertation/SKILL.md",
+    "source_sha256": "4dfd884d135c35858fe2650cd7255f1e085959b2d4a2d88b3b4bacedfd956264",
+    "support_files": [
+      "skills/scholar-thesis-dissertation/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-thesis-dissertation"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "scholar-word-reduction",
+    "original_name": "word-reduction",
+    "family": "Scholar Research",
+    "description": "Cut academic text to a word limit without losing meaning: abstracts, essays, papers, personal statements and applications. Use for reduce word count, cut to 250 words, too long, shorten, trim or make it concise.",
+    "path": "skills/scholar-word-reduction/SKILL.md",
+    "source_tree": "originals",
+    "source": "scholarresearch/1.1.0/skills/word-reduction/SKILL.md",
+    "source_sha256": "d1406e28d35a15bcb54019d05dd0c326e8efa8c0c9c7ca265947c387c54a605b",
+    "support_files": [
+      "skills/scholar-word-reduction/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: scholar-word-reduction"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "visuals-scientific-visual-table-style",
+    "original_name": "scientific-visual-table-style",
+    "family": "Scientific Visuals & Tables",
+    "description": "Use for scientific, research, quantitative, statistical, benchmark, and data-analysis charts, analytical figures, diagrams, and tables. Preserve evidence, select forms deterministically, apply restrained publication-grade design, and inspect final-size rendered outputs before delivery. Exclude explicit generative-image, illustration, artwork, and photorealistic-image requests unless the user explicitly combines the workflows.",
+    "path": "skills/visuals-scientific-visual-table-style/SKILL.md",
+    "source_tree": "originals",
+    "source": "scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/SKILL.md",
+    "source_sha256": "86d684ab88ec1396d6d17b241d58409798c93f71334b60b75391d987900eebe3",
+    "support_files": [
+      "skills/visuals-scientific-visual-table-style/agents/openai.yaml",
+      "skills/visuals-scientific-visual-table-style/examples/example_openai_visuals.py",
+      "skills/visuals-scientific-visual-table-style/examples/README.md",
+      "skills/visuals-scientific-visual-table-style/references/direct_asset_manifest.txt",
+      "skills/visuals-scientific-visual-table-style/references/form_selection.md",
+      "skills/visuals-scientific-visual-table-style/references/gpt6_astra_north_star.md",
+      "skills/visuals-scientific-visual-table-style/references/gpt6_astra_reference_index.json",
+      "skills/visuals-scientific-visual-table-style/references/openai_visual_reference_library.jsonl",
+      "skills/visuals-scientific-visual-table-style/references/provenance.md",
+      "skills/visuals-scientific-visual-table-style/references/quality_gates.md",
+      "skills/visuals-scientific-visual-table-style/references/reference_design_spec.md",
+      "skills/visuals-scientific-visual-table-style/references/style_contract.md",
+      "skills/visuals-scientific-visual-table-style/references/top_reference_set.md",
+      "skills/visuals-scientific-visual-table-style/scripts/astra_visual_qa.py",
+      "skills/visuals-scientific-visual-table-style/scripts/select_references.py",
+      "skills/visuals-scientific-visual-table-style/scripts/table_qa.py",
+      "skills/visuals-scientific-visual-table-style/scripts/visual_qa.py",
+      "skills/visuals-scientific-visual-table-style/SKILL.md",
+      "skills/visuals-scientific-visual-table-style/templates/astra_visual_system.py",
+      "skills/visuals-scientific-visual-table-style/templates/astra_visual_tokens.json",
+      "skills/visuals-scientific-visual-table-style/templates/openai_table.css",
+      "skills/visuals-scientific-visual-table-style/templates/openai_table.tex",
+      "skills/visuals-scientific-visual-table-style/templates/openai_visuals.py",
+      "skills/visuals-scientific-visual-table-style/templates/visual_spec.schema.json",
+      "skills/visuals-scientific-visual-table-style/VERSION"
+    ],
+    "changes": [
+      "Unique portable name: visuals-scientific-visual-table-style"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "academic-humanizer",
+    "original_name": "academic-humanizer",
+    "family": "academic-humanizer",
+    "description": "Improve the clarity and voice of AI-assisted academic writing (papers, theses, rebuttals) and funding proposals (NSF Project Summary/Description, NIH Specific Aims): preserve scholarly conventions, match claims to evidence (and, for proposals, claims to feasibility), and match the author's own voice. It never changes a number, result, or citation, and it is not for evading AI-use disclosure. Use when editing AI-assisted academic prose or grant proposals.",
+    "path": "skills/academic-humanizer/SKILL.md",
+    "source_tree": "expanded",
+    "source": "academic-humanizer-main/SKILL.md",
+    "source_sha256": "1f4501cb7331cffe9018960f8db045c719eea0658ce04e4af5e273ee59785a9c",
+    "support_files": [
+      "skills/academic-humanizer/.gitignore",
+      "skills/academic-humanizer/assets/banner.svg",
+      "skills/academic-humanizer/assets/rednote-zh.png",
+      "skills/academic-humanizer/assets/rednote-zh.svg",
+      "skills/academic-humanizer/assets/x-en.png",
+      "skills/academic-humanizer/assets/x-en.svg",
+      "skills/academic-humanizer/examples/before-after.md",
+      "skills/academic-humanizer/LICENSE",
+      "skills/academic-humanizer/README.md",
+      "skills/academic-humanizer/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: academic-humanizer"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "academic-pptx",
+    "original_name": "academic-pptx",
+    "family": "academic-pptx",
+    "description": "Use this skill whenever the user wants to create or improve a presentation for an academic context — conference papers, seminar talks, thesis defenses, grant briefings, lab meetings, invited lectures, or any presentation where the audience will evaluate reasoning and evidence. Triggers include: 'conference talk', 'seminar slides', 'thesis defense', 'research presentation', 'academic deck', 'academic presentation'. Also triggers when the user asks to 'make slides' in combination with academic content (e.g., 'make slides for my paper on X', 'create a presentation for my dissertation defense', 'build a deck for my grant proposal'). This skill governs CONTENT and STRUCTURE decisions. For the technical work of creating or editing the .pptx file itself, also read the pptx SKILL.md.",
+    "path": "skills/academic-pptx/SKILL.md",
+    "source_tree": "expanded",
+    "source": "academic-pptx-skill-main/SKILL.md",
+    "source_sha256": "c321851cd9d9b98d429de4798766207525024f3f28c3fe6dd5932ae79a2efb28",
+    "support_files": [
+      "skills/academic-pptx/Academic_Presentation_Best_Practices_DH_built_with_Claude_2_2026.pdf",
+      "skills/academic-pptx/content_guidelines.md",
+      "skills/academic-pptx/LICENSE",
+      "skills/academic-pptx/README.md",
+      "skills/academic-pptx/SKILL.md",
+      "skills/academic-pptx/slide_patterns.md"
+    ],
+    "changes": [
+      "Unique portable name: academic-pptx",
+      "Corrected source replacement character in active metadata; actual MIT license retained despite inaccurate upstream frontmatter"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "arms-brief-expander",
+    "original_name": "brief-expander",
+    "family": "ARMS",
+    "description": "Takes a minimal research idea (even one sentence) and expands it into a complete research brief that can drive the 10-skill pipeline. Performs web search, literature scanning, and field analysis to fill in problem statement, data assets, domain context, target venue, success criteria, comparators, adjacent fields, and evaluation design. Usage: /brief-expander \"your research question or idea\"",
+    "path": "skills/arms-brief-expander/SKILL.md",
+    "source_tree": "expanded",
+    "source": "ARMS-main/skills/brief-expander/SKILL.md",
+    "source_sha256": "c204e19e021e0e2b1b9483ce563e4b710defa31112aabfdadcd94d07da721d72",
+    "support_files": [
+      "skills/arms-brief-expander/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: arms-brief-expander"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "arms-critic-revisor",
+    "original_name": "critic-revisor",
+    "family": "ARMS",
+    "description": "Use when explicitly asked to run or plan the ARMS adversarial manuscript critic/revisor loop. Requires separately configured Bash, Claude CLI, Codex CLI, latexmk and latexdiff; preserves the supplied loop script.",
+    "path": "skills/arms-critic-revisor/SKILL.md",
+    "source_tree": "expanded",
+    "source": "ARMS-main/skills/critic-revisor/SKILL.md",
+    "source_sha256": "e8f6441327284536a6c8d55939b4faeef95f0ed4ddd9b3ecbe6a7e2da2bd2af4",
+    "support_files": [
+      "skills/arms-critic-revisor/run_loop.sh",
+      "skills/arms-critic-revisor/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: arms-critic-revisor"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "arms-house-style",
+    "original_name": "house-style",
+    "family": "ARMS",
+    "description": "Exemplar-based house voice for LaTeX manuscripts: a reader-first standard judged against an approved exemplar, a house-voice rewrite that never changes meaning, numbers, citations, or defined terms, and advisory style metrics (sentence length, paragraph length, first-person plural, semicolons, numbers in prose) printed beside the exemplar's values. The exemplar can be replaced with your own via --ref. Used by write-manuscript, paper-writer, paper-grader, paper-fixer, paper-critic, and research-pipeline; also runs standalone.",
+    "path": "skills/arms-house-style/SKILL.md",
+    "source_tree": "expanded",
+    "source": "ARMS-main/skills/house-style/SKILL.md",
+    "source_sha256": "212156ae05b027b56e5e595e88f849df582db0f06dfee72fd9c8434f77d9910b",
+    "support_files": [
+      "skills/arms-house-style/examples/abstract-reader-first.md",
+      "skills/arms-house-style/examples/dense-results-paragraph.md",
+      "skills/arms-house-style/references/contribution-evidence.md",
+      "skills/arms-house-style/references/manuscript-shape.md",
+      "skills/arms-house-style/references/synopsis-gate.md",
+      "skills/arms-house-style/references/yuan-ji.md",
+      "skills/arms-house-style/scripts/style_metrics.py",
+      "skills/arms-house-style/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: arms-house-style"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "arms-literature-lead",
+    "original_name": "literature-lead",
+    "family": "ARMS",
+    "description": "Search and critically synthesize literature, verify citations and distinguish established findings from candidate gaps.",
+    "path": "skills/arms-literature-lead/SKILL.md",
+    "source_tree": "expanded",
+    "source": "ARMS-main/skills/literature-lead/SKILL.md",
+    "source_sha256": "2f52218467c349e51ae32181f56d3613ad24434918ec7478006a00198432ce33",
+    "support_files": [
+      "skills/arms-literature-lead/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: arms-literature-lead",
+      "Added missing YAML name and description; full original body retained"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "arms-methodology-architect",
+    "original_name": "methodology-architect",
+    "family": "ARMS",
+    "description": "Methodology reasoning agent. Reads literature deeply, identifies combinations of existing ideas that address gaps, assesses societal impact, and produces a methodology specification. Can be invoked standalone (pre-brief) or by write-paper/auto-research when methodology revision is needed. Usage: /methodology-architect problem_statement.md [literature_dir/]",
+    "path": "skills/arms-methodology-architect/SKILL.md",
+    "source_tree": "expanded",
+    "source": "ARMS-main/skills/methodology-architect/SKILL.md",
+    "source_sha256": "7020a89a3bda67eaeb5d31c50736bef141a859e952e0fa33247c8d6f578a2b73",
+    "support_files": [
+      "skills/arms-methodology-architect/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: arms-methodology-architect"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "arms-paper-critic",
+    "original_name": "paper-critic",
+    "family": "ARMS",
+    "description": "Critically review manuscript claims, methods, evidence and exposition, with actionable issues tied to the source.",
+    "path": "skills/arms-paper-critic/SKILL.md",
+    "source_tree": "expanded",
+    "source": "ARMS-main/skills/paper-critic/SKILL.md",
+    "source_sha256": "d91a2cbffe782f4e1a3cb2ecbf4d255d3aa91f13b0abe8d544e9ca80f97f5ad0",
+    "support_files": [
+      "skills/arms-paper-critic/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: arms-paper-critic",
+      "Added missing YAML name and description; full original body retained"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "arms-paper-fixer",
+    "original_name": "paper-fixer",
+    "family": "ARMS",
+    "description": "Revise a research manuscript against specific review findings while preserving data, claims and source traceability.",
+    "path": "skills/arms-paper-fixer/SKILL.md",
+    "source_tree": "expanded",
+    "source": "ARMS-main/skills/paper-fixer/SKILL.md",
+    "source_sha256": "0f793932d1b0947bd326eb6ea89928f07f387761c5548229a6e91279fcf47a56",
+    "support_files": [
+      "skills/arms-paper-fixer/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: arms-paper-fixer",
+      "Added missing YAML name and description; full original body retained"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "arms-paper-grader",
+    "original_name": "paper-grader",
+    "family": "ARMS",
+    "description": "Assess a manuscript with the supplied evidence, methodology and presentation rubric; scores are advisory judgments.",
+    "path": "skills/arms-paper-grader/SKILL.md",
+    "source_tree": "expanded",
+    "source": "ARMS-main/skills/paper-grader/SKILL.md",
+    "source_sha256": "5fbda1132df8a77733053fa3fdb6563c13714b3a9f579840a9110c59cac10c11",
+    "support_files": [
+      "skills/arms-paper-grader/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: arms-paper-grader",
+      "Added missing YAML name and description; full original body retained"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "arms-paper-modeler",
+    "original_name": "paper-modeler",
+    "family": "ARMS",
+    "description": "Develop mathematical modeling, derivations and theoretical analysis grounded in the supplied research brief and evidence.",
+    "path": "skills/arms-paper-modeler/SKILL.md",
+    "source_tree": "expanded",
+    "source": "ARMS-main/skills/paper-modeler/SKILL.md",
+    "source_sha256": "c84b8090062ff8924713a96ac96af9888f4a4cac7980a212a4fddb33a1ba4506",
+    "support_files": [
+      "skills/arms-paper-modeler/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: arms-paper-modeler",
+      "Added missing YAML name and description; full original body retained"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "arms-paper-writer",
+    "original_name": "paper-writer",
+    "family": "ARMS",
+    "description": "Draft research paper sections from the approved methodology, author evidence and reproducible results.",
+    "path": "skills/arms-paper-writer/SKILL.md",
+    "source_tree": "expanded",
+    "source": "ARMS-main/skills/paper-writer/SKILL.md",
+    "source_sha256": "2581e6de3be931fd9833af179dc59b4cb2757cd8efefb59ed63270ec946e17f3",
+    "support_files": [
+      "skills/arms-paper-writer/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: arms-paper-writer",
+      "Added missing YAML name and description; full original body retained"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "arms-research-pipeline",
+    "original_name": "research-pipeline",
+    "family": "ARMS",
+    "description": "Coordinate the complete ARMS research pipeline from brief through literature, methods, validation, writing and review.",
+    "path": "skills/arms-research-pipeline/SKILL.md",
+    "source_tree": "expanded",
+    "source": "ARMS-main/skills/research-pipeline/SKILL.md",
+    "source_sha256": "ffb4cd823d31cd9d7c662cd29a9408e76ba80af26c0e28065b58e369dd24c04c",
+    "support_files": [
+      "skills/arms-research-pipeline/README.md",
+      "skills/arms-research-pipeline/research_brief_template.md",
+      "skills/arms-research-pipeline/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: arms-research-pipeline",
+      "Added missing YAML name and description; full original body retained"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "arms-validate-method",
+    "original_name": "validate-method",
+    "family": "ARMS",
+    "description": "Validate the proposed research method through executable checks, comparators, ablations, failure cases and evidence logs.",
+    "path": "skills/arms-validate-method/SKILL.md",
+    "source_tree": "expanded",
+    "source": "ARMS-main/skills/validate-method/SKILL.md",
+    "source_sha256": "d967c268d843e717bcc625ca2582d9cc02a56ac423acca2d0799a9dbf4bee0da",
+    "support_files": [
+      "skills/arms-validate-method/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: arms-validate-method",
+      "Added missing YAML name and description; full original body retained"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "arms-write-manuscript",
+    "original_name": "write-manuscript",
+    "family": "ARMS",
+    "description": "Build an author-grounded manuscript from actual contributions, evidence and the supplied house style.",
+    "path": "skills/arms-write-manuscript/SKILL.md",
+    "source_tree": "expanded",
+    "source": "ARMS-main/skills/write-manuscript/SKILL.md",
+    "source_sha256": "1b42d55a59f3b3219a8a0b238ff5409d031d17cc17903d7c1c4f25f97f0977a3",
+    "support_files": [
+      "skills/arms-write-manuscript/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: arms-write-manuscript",
+      "Added missing YAML name and description; full original body retained"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  },
+  {
+    "name": "humanizer",
+    "original_name": "humanizer",
+    "family": "humanizer",
+    "description": "Rewrite AI-sounding text so it reads like the writer without changing what it says. Use when editing or reviewing prose for AI tells: not-X-but-Y contrasts, one-line closers, staged openers, forced triads, dashes everywhere, inflated claims, sales language, stock AI words, bold labels, or filler. Based on Wikipedia's \"Signs of AI writing.\"",
+    "path": "skills/humanizer/SKILL.md",
+    "source_tree": "expanded",
+    "source": "humanizer-main/SKILL.md",
+    "source_sha256": "0612f1dfb1672b0ea9b97e139bf1f06cabe98d8b27424fe8ff01e1fb4cc99cad",
+    "support_files": [
+      "skills/humanizer/.claude-plugin/marketplace.json",
+      "skills/humanizer/.claude-plugin/plugin.json",
+      "skills/humanizer/.cursor-plugin/plugin.json",
+      "skills/humanizer/.github/ISSUE_TEMPLATE/config.yml",
+      "skills/humanizer/.github/ISSUE_TEMPLATE/new-pattern.yml",
+      "skills/humanizer/.github/ISSUE_TEMPLATE/rewrite-problem.yml",
+      "skills/humanizer/.github/workflows/validate.yml",
+      "skills/humanizer/agents/openai.yaml",
+      "skills/humanizer/AGENTS.md",
+      "skills/humanizer/CHANGELOG.md",
+      "skills/humanizer/LICENSE",
+      "skills/humanizer/README.md",
+      "skills/humanizer/scripts/validate-package.py",
+      "skills/humanizer/SKILL.md"
+    ],
+    "changes": [
+      "Unique portable name: humanizer"
+    ],
+    "execution": "instruction-workflow; optional backends described in docs/DEPENDENCIES.md"
+  }
+]

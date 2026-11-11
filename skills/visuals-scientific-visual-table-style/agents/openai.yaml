@@ -1,0 +1,10 @@
+interface:
+  display_name: "Scientific Visuals & Tables"
+  short_description: "Research figures and tables"
+  brand_color: "#1F6F5F"
+  default_prompt: "Create and QA scientific figures or tables from the supplied evidence."
+policy:
+  products:
+    - CHAT
+    - CODEX
+  allow_implicit_invocation: true

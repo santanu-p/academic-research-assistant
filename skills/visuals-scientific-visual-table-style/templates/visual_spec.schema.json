@@ -1,0 +1,264 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openai.local/schemas/quantitative-visual-spec.schema.json",
+  "title": "Quantitative Visual Specification",
+  "description": "Intermediate contract used before generating an OpenAI-inspired research visual or table.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "claim",
+    "visual_form",
+    "metric",
+    "target",
+    "series_order",
+    "output_formats"
+  ],
+  "properties": {
+    "claim": {
+      "type": "string",
+      "minLength": 8,
+      "description": "One sentence-level scientific message. Must not overstate the evidence."
+    },
+    "audience": {
+      "type": "string",
+      "enum": ["expert", "technical-generalist", "general", "executive"],
+      "default": "expert"
+    },
+    "visual_form": {
+      "type": "string",
+      "enum": [
+        "table",
+        "horizontal_bar",
+        "vertical_bar",
+        "grouped_bar",
+        "stacked_bar",
+        "dot_plot",
+        "dot_interval",
+        "line",
+        "line_with_interval",
+        "scatter",
+        "pareto_frontier",
+        "dumbbell",
+        "slope",
+        "calibration",
+        "histogram",
+        "ecdf",
+        "box",
+        "violin",
+        "heatmap",
+        "small_multiples",
+        "pass_at_k",
+        "worst_of_k",
+        "quantitative_diagram",
+        "table_plus_chart"
+      ]
+    },
+    "metric": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "unit", "direction"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "unit": {"type": "string"},
+        "direction": {
+          "type": "string",
+          "enum": ["higher", "lower", "neutral", "toward_zero"]
+        },
+        "aggregation": {"type": "string"},
+        "denominator": {"type": "string"},
+        "precision_decimals": {"type": "integer", "minimum": 0, "maximum": 6},
+        "scale": {
+          "type": "string",
+          "enum": ["linear", "log10", "log2", "symlog"],
+          "default": "linear"
+        }
+      }
+    },
+    "secondary_metric": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {"type": "string"},
+        "unit": {"type": "string"},
+        "direction": {
+          "type": "string",
+          "enum": ["higher", "lower", "neutral", "toward_zero"]
+        },
+        "scale": {
+          "type": "string",
+          "enum": ["linear", "log10", "log2", "symlog"]
+        }
+      }
+    },
+    "data_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "path_or_identifier": {"type": "string"},
+        "immutable_fields": {
+          "type": "array",
+          "items": {"type": "string"},
+          "uniqueItems": true
+        },
+        "checksum": {"type": "string"},
+        "notes": {"type": "string"}
+      }
+    },
+    "focal_series": {
+      "type": ["string", "null"],
+      "description": "The method/model/condition that receives primary visual emphasis. It need not be the best result."
+    },
+    "required_baselines": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true,
+      "default": []
+    },
+    "series_order": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "category_order": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "ordering_rationale": {
+      "type": "string",
+      "enum": [
+        "causal",
+        "chronological",
+        "predefined_benchmark",
+        "baseline_to_focal",
+        "numeric_rank",
+        "semantic_group",
+        "other"
+      ]
+    },
+    "uncertainty": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["available"],
+      "properties": {
+        "available": {"type": "boolean"},
+        "type": {
+          "type": "string",
+          "enum": ["none", "standard_error", "standard_deviation", "confidence_interval", "credible_interval", "bootstrap_interval", "raw_points", "other"]
+        },
+        "level": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "sample_or_seed_count": {"type": ["integer", "null"], "minimum": 1},
+        "note": {"type": "string"}
+      }
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["medium", "width"],
+      "properties": {
+        "medium": {
+          "type": "string",
+          "enum": ["paper", "slide", "web", "document", "spreadsheet"]
+        },
+        "width": {"type": "number", "exclusiveMinimum": 0},
+        "height": {"type": ["number", "null"], "exclusiveMinimum": 0},
+        "unit": {
+          "type": "string",
+          "enum": ["mm", "in", "px", "pt"],
+          "default": "mm"
+        },
+        "minimum_text_size_pt": {"type": "number", "minimum": 6, "maximum": 30},
+        "background": {
+          "type": "string",
+          "enum": ["white", "warm_white", "transparent"],
+          "default": "white"
+        }
+      }
+    },
+    "annotations": {
+      "type": "array",
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["purpose", "text"],
+        "properties": {
+          "purpose": {
+            "type": "string",
+            "enum": ["threshold", "intervention", "change_point", "frontier", "operating_point", "outlier", "counterexample"]
+          },
+          "text": {"type": "string", "minLength": 1},
+          "target": {"type": "string"}
+        }
+      }
+    },
+    "table_rules": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "show_actual_values": {"const": true},
+        "show_deltas": {"type": "boolean", "default": false},
+        "delta_is_subordinate": {"type": "boolean", "default": true},
+        "numeric_alignment": {
+          "type": "string",
+          "enum": ["decimal", "right"],
+          "default": "decimal"
+        },
+        "best_value_emphasis": {
+          "type": "string",
+          "enum": ["none", "bold", "focal_only", "ties_bold"],
+          "default": "bold"
+        },
+        "missing_symbol": {"type": "string", "default": "—"}
+      }
+    },
+    "cost_latency_assumptions": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "price_date": {"type": "string"},
+        "hardware": {"type": "string"},
+        "batch_or_concurrency": {"type": "string"},
+        "input_length": {"type": "string"},
+        "output_length": {"type": "string"},
+        "latency_statistic": {"type": "string"},
+        "other": {"type": "string"}
+      }
+    },
+    "selected_reference_ids": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^OAI-VIS-[0-9]{3}$"},
+      "uniqueItems": true
+    },
+    "output_formats": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["svg", "pdf", "png", "html", "tex", "xlsx", "pptx", "docx"]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "caption_requirements": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["task", "sample", "estimator", "uncertainty", "exclusions", "metric_direction", "cost_basis", "latency_basis"]
+      },
+      "uniqueItems": true
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["rule", "reason"],
+        "properties": {
+          "rule": {"type": "string"},
+          "reason": {"type": "string", "minLength": 8}
+        }
+      }
+    }
+  }
+}

@@ -1,54 +1,65 @@
 ---
 name: research-assistant
-description: Coordinate academic research tasks, select specialist methods and explain the available local tools and their limits.
+description: "Coordinate research onboarding, specialist selection and multi-stage academic tasks across the collection. Route by requested artifact, research stage and available evidence/tools; hand narrow requests to the relevant skill and verify actual outputs."
 ---
+## Selection and handoffs
 
-# Academic Research Assistant
+Choose and coordinate the complete collection by research stage, artifact and actual host capabilities.
 
-Use this entrypoint for a broad academic task, a capability question or a handoff between research stages. For a narrow request, load the relevant specialist instead of making the user complete unrelated stages.
+**Select for:** Plugin onboarding/capability selection; Research request crosses literature, method, analysis, writing, LaTeX, visualization or publication stages; User needs a coordinator rather than a specific leaf operation
 
-Begin with the intended decision or artifact. Inspect the material already available and identify the research stage, audience, discipline, format, constraints and evidence gaps. Resolve tools from the actual host inventory. Ask about a missing choice only when its answer would materially change the work.
+**Expected work:** Identify artifact/question, discipline, stage, evidence and constraints from attached material; Use actual router/search catalog if present, read selected skills in full and choose workflow; Check available execution dependencies/authentication before service/build/calculation; Use portable roles sequentially or with authorized host agents; Record each stage inputs/skill/decisions/tool results/files/unresolved items and claim-evidence lineage; Deliver substantive editable artifacts with verification and rendered inspection where applicable
 
-Read [the research contract](../../docs/RESEARCH-CONTRACT.md). If local MCP is connected, use route_task or search_capabilities to locate methods, then read their files with read_resource. Otherwise read [the catalog](../../catalog/skills.json) directly. A route is guidance, not an executed investigation.
+**Expected output:** Appropriate specialist/workflow handoff; Stage/claim-to-evidence ledger; Requested research artifacts and reproducible commands
 
-## Choose a method
+**Scope boundaries:** A narrow task with an obvious specialist should not trigger all skills; Claiming authentication or scientific validation from environment metadata; Automatically imposing COMPAG on every paper
 
-| Task | Methods |
+**Related skills:** [arms-research-pipeline](../arms-research-pipeline/SKILL.md), [evidence-research-evidence-finder](../evidence-research-evidence-finder/SKILL.md)
+
+Apply this skill only to the selected task. Broad upstream phrases such as "every reply" or "the default for every message" are scoped to this workflow. They do not activate it for unrelated chat. User instructions and the [integration contract](../../docs/INTEGRATION.md) govern combined work. Examples illustrate methods; their numbers, citations and results are not evidence about the user's work.
+
+## Preserved source instructions
+
+
+# Unified Academic Research Assistant
+
+Read [the integration contract](../../docs/INTEGRATION.md) before combining components. This is the unified entrypoint; all 117 upstream skills remain separately discoverable.
+
+## Start and route
+
+1. Identify the requested artifact/question, discipline, stage, user level, existing evidence and relevant constraints. Read attached material first. Infer information already present; ask only for missing information that materially blocks execution, while completing independent work.
+2. If available, call `route_task` with the actual task. Read every selected SKILL.md before using its instructions. `search_capabilities` exposes overlapping or specialist alternatives. Without MCP use [the complete inventory](../../docs/INVENTORY.md) and [routing catalog](../../catalog/routes.json); read relevant files using host tools. Routing is advisory and is not a substitute for judgment.
+3. Select one workflow below or combine stages. Preserve the full capability set: narrower tasks can invoke any catalog skill directly. Avoid loading every skill into context at once; support resources stay available at their original full length.
+4. Check actual execution dependencies before a build, calculation or external query. Call `environment_status` for presence checks, then exercise necessary tools. Read [dependencies](../../docs/DEPENDENCIES.md) and [ARMS limits](../../docs/ARMS.md). Never infer authentication or successful execution from metadata.
+
+## Workflow handoffs
+
+| Task | Workflow |
 |---|---|
-| Clarify a problem, question, hypothesis or possible gap | research-question |
-| Select a study, framework or instrument | methodology-design |
-| Find sources and obtain lawful access | literature-search |
-| Check reference identity, versions and corrections | source-verification |
-| Explain a paper or capture structured evidence | paper-reading; evidence-extraction |
-| Judge validity or synthesize a body of work | research-appraisal; literature-review |
-| Conduct a protocol-led review or quantitative synthesis | systematic-review; meta-analysis |
-| Analyze observations or interpret qualitative material | statistical-analysis; qualitative-analysis |
-| Develop a mechanism, formal model or verification plan | scientific-reasoning; mathematical-modeling; research-validation |
-| Draft, revise or respond to criticism | manuscript-writing; academic-editing; reviewer-response |
-| Coordinate a substantial review loop | adversarial-revision; research-pipeline |
-| Plan a project, proposal or governance materials | research-planning; research-proposals; research-integrity |
-| Select an outlet and prepare a submission | journal-submission |
-| Prepare degree work or a structured academic document | thesis-preparation; document-production |
-| Typeset layout, mathematics, graphics or references | tex-layout; mathematics-notation; tex-figures-tables; citations-and-bibliographies |
-| Repair a build or change document format | tex-build-repair; document-conversion |
-| Create teaching or professional documents | teaching-materials; professional-documents |
-| Communicate through figures, talks or public prose | scientific-visuals; presentations-posters; research-communication |
+| Topic/question/gap and scholarly evidence | [Discover and synthesize](../../workflows/discover-and-synthesize.md) |
+| Systematic/scoping review and meta-analysis | [Evidence review](../../workflows/evidence-review.md) |
+| Quantitative, qualitative, mixed methods, modeling and reproducibility | [Design and validate](../../workflows/design-and-validate.md) |
+| Proposal, grants and project management | [Plan and fund](../../workflows/plan-and-fund.md) |
+| Paper, thesis, editing, LaTeX and citations | [Write and typeset](../../workflows/write-and-typeset.md) |
+| Scientific plots, tables, talks and posters | [Visualize and communicate](../../workflows/visualize-and-communicate.md) |
+| Journal selection, submission and review responses | [Review and publish](../../workflows/review-and-publish.md) |
+| Complete ARMS pipeline and optional adversarial loop | [ARMS orchestration](../../workflows/arms-orchestration.md) |
 
-The table is a starting point; it does not enumerate the whole catalog. Search the catalog for the requested operation and read a narrower specialist when it fits:
+## Combined execution
 
-- For prose in the author's voice, use `humanizer` for general writing or `academic-humanizer` for scholarly writing. Respect a request not to use them; retain citations, claims and uncertainty.
-- For a particular evidence step, look for methods such as `citation-network-search`, `legal-open-access-search`, `reference-identity-verification`, `evidence-extraction-tables` and `evidence-strength-assessment`.
-- For a particular TeX artifact or repair, search the `latex-*` methods as well as the broader TeX methods. Choose the requested artifact, such as a thesis, Beamer slides, poster, PGFPlots chart, TikZ diagram, multilingual text or build repair.
-- For a detailed research handoff, look for methods such as `research-workflow-coordination`, `research-brief-development`, `research-proposal-development`, `scientific-peer-review` and `reviewer-response-workflow`.
+Use [reusable role instructions](../../agents/README.md) when the task benefits from distinct research responsibilities. These are portable role cards; the host may execute them sequentially or use authorized available agents. They do not register a new host agent type. Missing ARMS helpers have clearly labelled compatibility roles, not invented upstream implementations.
 
-Confirm suggestions against the whole request, especially exclusions and conflicts. A keyword match is a candidate, not proof that a skill or external tool is suitable.
+For each stage, record inputs, chosen skill/version, decisions, actual tool calls/results, output paths and unresolved items. Keep a claim-to-evidence ledger. Distinguish fetched primary sources, user-provided results, historical examples, analysis and proposals. Preserve uncertainty, citations, numbers, data ownership, licenses and institutional AI rules.
 
-## Compose the work
+For manuscript editing, apply `guardrails-research-problem-mechanism-evidence` and `guardrails-compag-elsevier-paper-editing` when relevant; use `academic-humanizer` or `arms-house-style` for evidence-preserving prose, and general `humanizer` only under the scientific evidence protections. For actual LaTeX/PPTX/plots, produce editable files and run the chosen backend and rendered-output checks; state exact limits if unavailable.
 
-Use only methods that contribute to the requested result. An early question may need evidence exploration before a design is defensible. A synthesis may require extraction/appraisal but no new experiment. A theoretical project may need a derivation and counterexamples rather than participants or a performance benchmark.
+## Delivery gate
 
-For a substantial task, make the dependencies visible: what evidence is available, what must be learned, what can proceed independently and what would change the conclusion. Preserve unresolved scientific issues through writing; do not silently turn them into minor presentation concerns. Keep completed, proposed and unverified work distinct.
+- Satisfy the user's actual request with substantive artifacts, not just a plan or menu.
+- Verify citations and source fidelity; flag unverified or inaccessible sources.
+- Run meaningful technical checks for code/calculations and inspect rendered scientific artifacts when a render is required.
+- State what ran, what passed, what is historical and what remains untested or blocked.
+- Include source/code/data references and reproducible commands for technical work.
+- `verify_sources` audits collection preservation when relevant. It does not validate the science.
 
-The package's Node MCP server performs read-only discovery, routing, text access, environment reporting and local consistency checks. Optional Python helpers calculate advisory prose measures, produce figures, inspect artifacts and coordinate explicitly configured review commands. Databases, converters, compilers, model providers and authoring apps must actually be available to execute their operations.
-
-Finish with the requested artifact, supporting provenance/reproduction details and an accurate verification statement. Identify consequential missing evidence or unavailable execution clearly. Do not claim a result was published, approved, replicated or installed in another host because its local files exist.
+Package help: [setup](../../docs/SETUP.md), [limitations](../../docs/LIMITATIONS.md), [inventory](../../docs/INVENTORY.md), [source mapping](../../audit/source-map.json).

@@ -1,0 +1,6 @@
+interface:
+  display_name: Academic Research Assistant
+  short_description: Coordinate academic and scientific research workflows
+  default_prompt: Help me complete my research task using the available evidence and appropriate integrated skills.
+policy:
+  allow_implicit_invocation: true

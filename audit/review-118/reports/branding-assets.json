@@ -1,0 +1,51 @@
+{
+  "reviewer": "primary",
+  "files_read": [
+    {
+      "path": "D:/PLUGIN/.review-118/original/resources/originals/researchevidencefinder/1.0.0/.codex-plugin/assets/composer-icon-dark.png",
+      "sha256": "63d8b623d8d678e19db235e5ccae1abf0742a5b10e0f1314769662e54753174c",
+      "inspection": "Viewed full image via native view_image. Branding asset: document/search/checkmark for evidence family; open book/search/molecular motif for scholar family. Original binary preserved; no research-result claim."
+    },
+    {
+      "path": "D:/PLUGIN/.review-118/original/resources/originals/researchevidencefinder/1.0.0/.codex-plugin/assets/composer-icon.png",
+      "sha256": "51495bdf03cb64e61fc0f9772105046e3be6d4860829fc36655d30ceb7accabe",
+      "inspection": "Viewed full image via native view_image. Branding asset: document/search/checkmark for evidence family; open book/search/molecular motif for scholar family. Original binary preserved; no research-result claim."
+    },
+    {
+      "path": "D:/PLUGIN/.review-118/original/resources/originals/researchevidencefinder/1.0.0/.codex-plugin/assets/logo-dark.png",
+      "sha256": "ea4d23621cda53134d3bba76c4d1d8578daac24514715af8c474a2e9b589fdf8",
+      "inspection": "Viewed full image via native view_image. Branding asset: document/search/checkmark for evidence family; open book/search/molecular motif for scholar family. Original binary preserved; no research-result claim."
+    },
+    {
+      "path": "D:/PLUGIN/.review-118/original/resources/originals/researchevidencefinder/1.0.0/.codex-plugin/assets/logo.png",
+      "sha256": "4bd4f10e99d65b9a49d0c16d0e13198af5f32ae45b1762593a69ef3ec79a6995",
+      "inspection": "Viewed full image via native view_image. Branding asset: document/search/checkmark for evidence family; open book/search/molecular motif for scholar family. Original binary preserved; no research-result claim."
+    },
+    {
+      "path": "D:/PLUGIN/.review-118/original/resources/originals/scholarresearch/1.1.0/.codex-plugin/assets/composer-icon.png",
+      "sha256": "c0c9a2a6c0b142d26c718255fe1b4b3e1c116dbb48b7dd51cb00614929820401",
+      "inspection": "Viewed full image via native view_image. Branding asset: document/search/checkmark for evidence family; open book/search/molecular motif for scholar family. Original binary preserved; no research-result claim."
+    },
+    {
+      "path": "D:/PLUGIN/.review-118/original/resources/originals/scholarresearch/1.1.0/.codex-plugin/assets/logo-dark.png",
+      "sha256": "4ac0a2a5033d2ecc3c9127f8a9dc66721aa5fb0a29ffeb8078732588037d4bc1",
+      "inspection": "Viewed full image via native view_image. Branding asset: document/search/checkmark for evidence family; open book/search/molecular motif for scholar family. Original binary preserved; no research-result claim."
+    },
+    {
+      "path": "D:/PLUGIN/.review-118/original/resources/originals/scholarresearch/1.1.0/.codex-plugin/assets/logo.png",
+      "sha256": "09a173703f731000c52b430e57d2411ea54acb8e3dd852c7278af8dcd309d216",
+      "inspection": "Viewed full image via native view_image. Branding asset: document/search/checkmark for evidence family; open book/search/molecular motif for scholar family. Original binary preserved; no research-result claim."
+    },
+    {
+      "path": "D:/PLUGIN/.review-118/original/resources/originals/research-writing-guardrails/1.0.0/.codex-plugin/assets/composer-icon.png",
+      "sha256": "33c0bc82ab860299f2d0894234a5ed2deb29d69d0d5447cdaf684e6f754af8d3",
+      "inspection": "Viewed full image using view_image. Guardrails branding: manuscript/pen/check shield, and research book/charts/magnifier/check shield; no scientific data or executable behavior."
+    },
+    {
+      "path": "D:/PLUGIN/.review-118/original/resources/originals/research-writing-guardrails/1.0.0/.codex-plugin/assets/logo.png",
+      "sha256": "0d8299ccbf4c24642b8bd1df5d7fc5b5d5c047b8172c2eed95e5d5409f2259b6",
+      "inspection": "Viewed full image using view_image. Guardrails branding: manuscript/pen/check shield, and research book/charts/magnifier/check shield; no scientific data or executable behavior."
+    }
+  ],
+  "unreviewed": []
+}

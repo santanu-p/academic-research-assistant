@@ -1,0 +1,1028 @@
+[
+  {
+    "request": "I have one useful paper; find seminal papers it builds on and later work citing it.",
+    "primary": "evidence-citation-chaining",
+    "not_primary": "scholar-find-sources",
+    "reason": "Seed citation-network expansion, not initial concept-query planning."
+  },
+  {
+    "request": "Build a reproducible search plan for my topic, including filters, criteria and a log.",
+    "primary": "scholar-find-sources",
+    "not_primary": "evidence-find-studies",
+    "reason": "Strategy artifact; no actual retrieval has been requested."
+  },
+  {
+    "request": "Find six real recent studies I can open, with verified links and their main findings.",
+    "primary": "evidence-find-studies",
+    "not_primary": "scholar-find-sources",
+    "reason": "Executed and verified source retrieval is required."
+  },
+  {
+    "request": "Turn remote work and productivity into a searchable review question with synonyms.",
+    "primary": "evidence-research-question",
+    "not_primary": "scholar-research-question",
+    "reason": "Evidence-search framing and synonym blocks."
+  },
+  {
+    "request": "Suggest feasible thesis topics using data I can access, then write objectives and hypotheses.",
+    "primary": "scholar-research-question",
+    "not_primary": "evidence-research-question",
+    "reason": "Study ideation, constraints, objectives and H0/H1."
+  },
+  {
+    "request": "Extract each paper's sample, means, standard deviations and group sizes into CSV.",
+    "primary": "evidence-data-extraction",
+    "not_primary": "evidence-meta-analysis",
+    "reason": "Reported-value extraction only, no pooling."
+  },
+  {
+    "request": "Pool these comparable effect sizes and examine heterogeneity and small-study bias.",
+    "primary": "evidence-meta-analysis",
+    "not_primary": "evidence-evidence-meter",
+    "reason": "Statistical synthesis, not directional vote counts."
+  },
+  {
+    "request": "How many of the studies you reviewed supported or opposed the intervention?",
+    "primary": "evidence-evidence-meter",
+    "not_primary": "evidence-meta-analysis",
+    "reason": "Counts with denominator and quality caveat, not pooled effect."
+  },
+  {
+    "request": "How trustworthy is this trial? Apply an appropriate risk-of-bias checklist.",
+    "primary": "evidence-study-appraisal",
+    "not_primary": "scholar-peer-review-critique",
+    "reason": "Design-specific methodological confidence audit."
+  },
+  {
+    "request": "Write a reviewer report with major and minor concerns and a publication recommendation.",
+    "primary": "scholar-peer-review-critique",
+    "not_primary": "evidence-study-appraisal",
+    "reason": "Editor-facing assessment and disposition."
+  },
+  {
+    "request": "What does Table 3 say about exclusions, and where does the paper define them?",
+    "primary": "scholar-paper-breakdown",
+    "not_primary": "evidence-paper-summary",
+    "reason": "Focused source-grounded Q&A and page/section evidence."
+  },
+  {
+    "request": "Give a three-line summary and explain what kind of claim I can cite the paper for.",
+    "primary": "evidence-paper-summary",
+    "not_primary": "scholar-paper-breakdown",
+    "reason": "Chosen summary depth and citing-use guidance."
+  },
+  {
+    "request": "This DOI may be invented; verify that it matches the cited authors and title.",
+    "primary": "evidence-source-verification",
+    "not_primary": "scholar-source-evaluation",
+    "reason": "Bibliographic identity/status checking."
+  },
+  {
+    "request": "Can I use this advocacy website, and should it count as evidence or a viewpoint?",
+    "primary": "scholar-source-evaluation",
+    "not_primary": "evidence-source-verification",
+    "reason": "Credibility, relevance and suitable use."
+  },
+  {
+    "request": "Check that every citation in my chapter appears in the reference list and give BibTeX.",
+    "primary": "scholar-citation-generator",
+    "not_primary": "evidence-citations-and-references",
+    "reason": "Bidirectional manuscript consistency plus BibTeX."
+  },
+  {
+    "request": "Gather verified reference fields, then write 150-word annotations judging each source's methods, limits and relevance.",
+    "primary": "evidence-citations-and-references",
+    "not_primary": "scholar-citation-generator",
+    "reason": "Substantive annotation mode, not field-formatting only.",
+    "review_adjustment": "The original standalone annotation request also fits scholar-literature-review. This fixture now states the verified-reference workflow; a separate test covers genuine ambiguity."
+  },
+  {
+    "request": "Explain this risk ratio to parents in natural frequencies and define the key terms.",
+    "primary": "evidence-plain-language-research",
+    "not_primary": "scholar-research-communication",
+    "reason": "Comprehension and glossary, not a communication artifact package."
+  },
+  {
+    "request": "Turn my study into a ten-minute talk with notes and likely audience questions.",
+    "primary": "scholar-research-communication",
+    "not_primary": "evidence-plain-language-research",
+    "reason": "Timed talk structure, speaker notes and Q&A."
+  },
+  {
+    "request": "Choose a qualitative or mixed-method design and justify the sampling.",
+    "primary": "scholar-methodology-design",
+    "not_primary": "scholar-survey-design",
+    "reason": "Overall study design and rigor."
+  },
+  {
+    "request": "Write neutral questionnaire items and an interview guide for these constructs.",
+    "primary": "scholar-survey-design",
+    "not_primary": "scholar-methodology-design",
+    "reason": "Question-level instrument construction and pilot."
+  },
+  {
+    "request": "Use the funder call to align my aims, budget, impact and review criteria.",
+    "primary": "scholar-grant-proposal",
+    "not_primary": "scholar-research-proposal",
+    "reason": "Funding-specific scoring and budget workflow."
+  },
+  {
+    "request": "Give a quality-weighted answer from these studies, and mark what still needs searching.",
+    "primary": "scholar-evidence-synthesis",
+    "not_primary": "evidence-find-studies",
+    "reason": "Supplied-source synthesis and verification boundary; retrieval can follow."
+  },
+  {
+    "request": "Create a systematic-review protocol with screening disagreement rules and count templates.",
+    "primary": "evidence-systematic-review",
+    "not_primary": "evidence-literature-review",
+    "reason": "Rigorous protocol/templates, not narrative review prose."
+  },
+  {
+    "request": "Build a thematic review with a synthesis matrix and evaluated source annotations.",
+    "primary": "scholar-literature-review",
+    "not_primary": "evidence-paper-summary",
+    "reason": "Cross-source argument plus the preserved annotated-bibliography branch."
+  },
+  {
+    "request": "From these reviews, map gaps to source pages and draft a cautious contribution statement.",
+    "primary": "evidence-research-gaps",
+    "not_primary": "scholar-research-question",
+    "reason": "Evidence-based gap mapping and contribution prose, not unconstrained ideation."
+  },
+  {
+    "request": "My bibliography is blank and citations show question marks after I changed from BibTeX to biber.",
+    "primary": "latex-bibliography-citations",
+    "not_primary": "scholar-citation-generator",
+    "reason": "TeX backend/configuration and compile-sequence repair, not reference-formatting alone."
+  },
+  {
+    "request": "Convert these references to APA entries and check every in-text name and year matches the list.",
+    "primary": "scholar-citation-generator",
+    "not_primary": "latex-bibliography-citations",
+    "reason": "Manuscript/reference consistency without TeX setup or compiler debugging."
+  },
+  {
+    "request": "Turn these results into an A0 portrait tikzposter for my conference.",
+    "source_id": "latex-academic-poster",
+    "primary": "latex-academic-poster",
+    "not_primary": [
+      "latex-beamer-slides"
+    ],
+    "reason": "A large printed surface requires poster classes and distance legibility, not timed frames."
+  },
+  {
+    "request": "Put this Python listing and binary-search pseudocode into my thesis with line numbers.",
+    "source_id": "latex-algorithms-code",
+    "primary": "latex-algorithms-code",
+    "not_primary": [
+      "latex-math-equations"
+    ],
+    "reason": "Programming syntax and algorithm control-flow environments are the primary task."
+  },
+  {
+    "request": "Create editable Beamer frames with two click reveals and speaker notes.",
+    "source_id": "latex-beamer-slides",
+    "primary": "latex-beamer-slides",
+    "not_primary": [
+      "academic-pptx"
+    ],
+    "reason": "The user selected LaTeX implementation; content guidance can complement it without changing backend."
+  },
+  {
+    "request": "My biblatex references show question marks; I use biber and these keys.",
+    "source_id": "latex-bibliography-citations",
+    "primary": "latex-bibliography-citations",
+    "not_primary": [
+      "latex-cross-references-links"
+    ],
+    "reason": "This is bibliographic backend/key wiring, not internal figure/section labels."
+  },
+  {
+    "request": "Build a 6x9-inch textbook with theorem boxes, margin notes and chapter exercises.",
+    "source_id": "latex-books-notes",
+    "primary": "latex-books-notes",
+    "not_primary": [
+      "latex-thesis-dissertation"
+    ],
+    "reason": "Pedagogy and print trim are not institution-specific dissertation front matter."
+  },
+  {
+    "request": "Make 30 named course certificates in LaTeX using my logo.",
+    "source_id": "latex-certificates-flyers",
+    "primary": "latex-certificates-flyers",
+    "not_primary": [
+      "latex-academic-poster"
+    ],
+    "reason": "Batch-designed certificates require absolute positioning/mail merge, not research poster blocks."
+  },
+  {
+    "request": "Fix Figure ?? labels and add a clickable contents list and glossary.",
+    "source_id": "latex-cross-references-links",
+    "primary": "latex-cross-references-links",
+    "not_primary": [
+      "latex-bibliography-citations"
+    ],
+    "reason": "Internal object references/navigation are primary."
+  },
+  {
+    "request": "Package my repeated definition boxes as a .sty with optional title arguments.",
+    "source_id": "latex-custom-macros",
+    "primary": "latex-custom-macros",
+    "not_primary": [
+      "latex-latex-cleanup"
+    ],
+    "reason": "Reusable command/environment interface authoring is primary, rather than whole-project code cleanup."
+  },
+  {
+    "request": "Turn this outline into a complete 3-page article-class LaTeX document.",
+    "source_id": "latex-document-builder",
+    "primary": "latex-document-builder",
+    "not_primary": [
+      "latex-latex-studio"
+    ],
+    "reason": "Clear creation request should execute builder; studio only helps route."
+  },
+  {
+    "request": "Transcribe this handwritten matrix equation exactly into LaTeX for Anki.",
+    "source_id": "latex-equation-converter",
+    "primary": "latex-equation-converter",
+    "not_primary": [
+      "latex-math-equations"
+    ],
+    "reason": "Input is a visual transcription with renderer compatibility and ambiguity handling."
+  },
+  {
+    "request": "My build stops at Undefined control sequence on line 42; here is the log.",
+    "source_id": "latex-error-fixer",
+    "primary": "latex-error-fixer",
+    "not_primary": [
+      "latex-setup-compiling"
+    ],
+    "reason": "Log-driven failing-source repair is primary."
+  },
+  {
+    "request": "Place these two existing PDF figures side by side and keep them in this section.",
+    "source_id": "latex-figures-images",
+    "primary": "latex-figures-images",
+    "not_primary": [
+      "latex-tikz-diagrams"
+    ],
+    "reason": "Asset inclusion/subfigures/floats are needed, not constructing new node/edge geometry."
+  },
+  {
+    "request": "Convert this .docx into LaTeX and retain citations and tables.",
+    "source_id": "latex-format-conversion",
+    "primary": "latex-format-conversion",
+    "not_primary": [
+      "latex-document-builder"
+    ],
+    "reason": "Existing-format migration needs conversion and loss accounting."
+  },
+  {
+    "request": "Create a printable exam with point totals and a separately toggled answer key.",
+    "source_id": "latex-homework-exams",
+    "primary": "latex-homework-exams",
+    "not_primary": [
+      "latex-books-notes"
+    ],
+    "reason": "Assessment grading/solution toggles are distinctive."
+  },
+  {
+    "request": "Move my manuscript into the official IEEE conference template for double-blind review.",
+    "source_id": "latex-journal-templates",
+    "primary": "latex-journal-templates",
+    "not_primary": [
+      "latex-research-paper"
+    ],
+    "reason": "Named venue class and anonymization govern."
+  },
+  {
+    "request": "Modernize this preamble and replace obsolete packages without changing the layout.",
+    "source_id": "latex-latex-cleanup",
+    "primary": "latex-latex-cleanup",
+    "not_primary": [
+      "latex-latex-proofreading"
+    ],
+    "reason": "Code/package maintenance is primary; prose editing is not requested."
+  },
+  {
+    "request": "What can LaTeX Document Maker do, and how should I start?",
+    "source_id": "latex-latex-help",
+    "primary": "latex-latex-help",
+    "not_primary": [
+      "latex-document-builder"
+    ],
+    "reason": "The user requests a capabilities menu, not a finished document."
+  },
+  {
+    "request": "Copyedit the prose in this .tex file but keep commands and equations untouched.",
+    "source_id": "latex-latex-proofreading",
+    "primary": "latex-latex-proofreading",
+    "not_primary": [
+      "latex-latex-cleanup"
+    ],
+    "reason": "Text-only editing with protected tokens is primary."
+  },
+  {
+    "request": "I have a LaTeX project and need help deciding whether to convert, repair or restructure it.",
+    "source_id": "latex-latex-studio",
+    "primary": "latex-latex-studio",
+    "not_primary": [
+      "latex-document-builder"
+    ],
+    "reason": "Broad triage is appropriate until actual operation is known."
+  },
+  {
+    "request": "Write a one-page LaTeX cover letter using these supplied achievements.",
+    "source_id": "latex-letters",
+    "primary": "latex-letters",
+    "not_primary": [
+      "latex-resume-cv"
+    ],
+    "reason": "Correspondence requires recipient/purpose/evidence/closing rather than a career chronology."
+  },
+  {
+    "request": "Typeset this piecewise expression with aligned derivation and equation numbers.",
+    "source_id": "latex-math-equations",
+    "primary": "latex-math-equations",
+    "not_primary": [
+      "latex-equation-converter"
+    ],
+    "reason": "Math environment layout is primary, not image/handwriting transcription."
+  },
+  {
+    "request": "Make Arabic and English work in one LuaLaTeX document with correct direction and fonts.",
+    "source_id": "latex-multilingual-fonts",
+    "primary": "latex-multilingual-fonts",
+    "not_primary": [
+      "latex-page-formatting"
+    ],
+    "reason": "Bidi, glyph/script and engine compatibility dominate ordinary page geometry."
+  },
+  {
+    "request": "Set A4, 1-inch margins, double spacing and page numbers at top right.",
+    "source_id": "latex-page-formatting",
+    "primary": "latex-page-formatting",
+    "not_primary": [
+      "latex-multilingual-fonts"
+    ],
+    "reason": "Known layout rules do not require language/script selection."
+  },
+  {
+    "request": "Plot this CSV with PGFPlots, logarithmic time axis and explicit error bars.",
+    "source_id": "latex-pgfplots-charts",
+    "primary": "latex-pgfplots-charts",
+    "not_primary": [
+      "latex-tikz-diagrams"
+    ],
+    "reason": "Numerical axes/scales/imports differ from graph topology; cross-reference evidence styling."
+  },
+  {
+    "request": "Build a branded LaTeX equipment manual with version history and troubleshooting callouts.",
+    "source_id": "latex-reports-manuals",
+    "primary": "latex-reports-manuals",
+    "not_primary": [
+      "latex-research-paper"
+    ],
+    "reason": "Task-oriented documentation/versioning differs from a scholarly manuscript."
+  },
+  {
+    "request": "Typeset our supplied theoretical paper as a LaTeX preprint with proofs and refs.bib.",
+    "source_id": "latex-research-paper",
+    "primary": "latex-research-paper",
+    "not_primary": [
+      "latex-reports-manuals"
+    ],
+    "reason": "Research manuscript source and preprint packaging govern."
+  },
+  {
+    "request": "Turn my real employment and publications into an ATS-readable LaTeX academic CV.",
+    "source_id": "latex-resume-cv",
+    "primary": "latex-resume-cv",
+    "not_primary": [
+      "latex-letters"
+    ],
+    "reason": "CV structure and text parsing requirements are primary."
+  },
+  {
+    "request": "Use siunitx, mhchem and braket for these units, reactions and quantum states.",
+    "source_id": "latex-science-notation",
+    "primary": "latex-science-notation",
+    "not_primary": [
+      "latex-math-equations"
+    ],
+    "reason": "Discipline-specific packages and conventions are primary."
+  },
+  {
+    "request": "Which engine and latexmk command should I use for system fonts and biber?",
+    "source_id": "latex-setup-compiling",
+    "primary": "latex-setup-compiling",
+    "not_primary": [
+      "latex-error-fixer"
+    ],
+    "reason": "Environment/build-sequence advice precedes any source error."
+  },
+  {
+    "request": "Convert this CSV into a longtable with decimal columns and repeated page headers.",
+    "source_id": "latex-tables",
+    "primary": "latex-tables",
+    "not_primary": [
+      "visuals-scientific-visual-table-style"
+    ],
+    "reason": "Table source/page flow is primary; scientific evidence styling can supplement."
+  },
+  {
+    "request": "Set shared theorem/lemma counters and place the QED at the end of a displayed equation.",
+    "source_id": "latex-theorems-proofs",
+    "primary": "latex-theorems-proofs",
+    "not_primary": [
+      "latex-math-equations"
+    ],
+    "reason": "Theorem/proof structure and QED handling are primary."
+  },
+  {
+    "request": "Set up my university thesis template with declaration, roman front matter and chapter files.",
+    "source_id": "latex-thesis-dissertation",
+    "primary": "latex-thesis-dissertation",
+    "not_primary": [
+      "latex-reports-manuals"
+    ],
+    "reason": "Institutional thesis source structure differs from generic planning/report formats."
+  },
+  {
+    "request": "Draw this branching workflow in standalone TikZ with named nodes and a feedback connector.",
+    "source_id": "latex-tikz-diagrams",
+    "primary": "latex-tikz-diagrams",
+    "not_primary": [
+      "latex-pgfplots-charts"
+    ],
+    "reason": "Relationships/topology are primary; there is no quantitative axis or dataset."
+  },
+  {
+    "request": "Improve my seminar deck's argument, action titles, evidence annotations and Q&A backups.",
+    "source_id": "academic-pptx",
+    "primary": "academic-pptx",
+    "not_primary": [
+      "latex-beamer-slides"
+    ],
+    "reason": "Deck content/structure is primary; no LaTeX backend was requested."
+  },
+  {
+    "request": "Redesign these benchmark plots and tables while preserving every value and inspect them at final size.",
+    "source_id": "visuals-scientific-visual-table-style",
+    "primary": "visuals-scientific-visual-table-style",
+    "not_primary": [
+      "latex-tables"
+    ],
+    "reason": "Cross-format evidence-form/style/QA is primary, rather than table syntax."
+  },
+  {
+    "request": "Plan the research milestones for my dissertation over the next year.",
+    "source_id": "latex-thesis-dissertation",
+    "primary": "scholar-research-planner",
+    "not_primary": [
+      "latex-thesis-dissertation"
+    ],
+    "reason": "Research scheduling requires the research planner; thesis names alone do not select typesetting."
+  },
+  {
+    "request": "Help align my dissertation questions with methods and organize chapters.",
+    "source_id": "latex-thesis-dissertation",
+    "primary": "scholar-thesis-dissertation",
+    "not_primary": [
+      "latex-thesis-dissertation"
+    ],
+    "reason": "Academic thesis structure without LaTeX production belongs to scholarly thesis guidance."
+  },
+  {
+    "request": "Create a PhD research proposal with aims, methods and feasibility.",
+    "source_id": "latex-reports-manuals",
+    "primary": "scholar-research-proposal",
+    "not_primary": [
+      "latex-reports-manuals"
+    ],
+    "reason": "Proposal content/design is distinct from explicitly requested LaTeX formatting."
+  },
+  {
+    "request": "Typeset this supplied research proposal in LaTeX with a budget table.",
+    "source_id": "latex-reports-manuals",
+    "primary": "latex-reports-manuals",
+    "not_primary": [
+      "scholar-research-proposal"
+    ],
+    "reason": "Approved supplied content needs a formatted report artifact."
+  },
+  {
+    "request": "Make a PowerPoint from my conference paper.",
+    "source_id": "academic-pptx",
+    "primary": "academic-pptx",
+    "not_primary": [
+      "latex-beamer-slides"
+    ],
+    "reason": "PowerPoint backend intent must not switch to Beamer."
+  },
+  {
+    "request": "Make a LaTeX Beamer talk from my conference paper.",
+    "source_id": "latex-beamer-slides",
+    "primary": "latex-beamer-slides",
+    "not_primary": [
+      "academic-pptx"
+    ],
+    "reason": "Explicit implementation format chooses Beamer; presentation principles can support."
+  },
+  {
+    "request": "Design an A1 beamerposter research poster from these results.",
+    "source_id": "latex-academic-poster",
+    "primary": "latex-academic-poster",
+    "not_primary": [
+      "latex-beamer-slides",
+      "academic-pptx"
+    ],
+    "reason": "beamerposter is a poster class, not a frame-based Beamer talk."
+  },
+  {
+    "request": "Plot the measured uncertainties in pgfplots from this data table.",
+    "source_id": "latex-pgfplots-charts",
+    "primary": "latex-pgfplots-charts",
+    "not_primary": [
+      "latex-tikz-diagrams"
+    ],
+    "reason": "Quantitative coordinates, uncertainty and axes distinguish charts from structural drawings."
+  },
+  {
+    "request": "Draw the state-transition network in TikZ with arrows and node names.",
+    "source_id": "latex-tikz-diagrams",
+    "primary": "latex-tikz-diagrams",
+    "not_primary": [
+      "latex-pgfplots-charts"
+    ],
+    "reason": "Topology is primary; plot terminology must not imply numerical axes."
+  },
+  {
+    "request": "Read this equation screenshot and return faithful KaTeX for my notes.",
+    "source_id": "latex-equation-converter",
+    "primary": "latex-equation-converter",
+    "not_primary": [
+      "latex-math-equations"
+    ],
+    "reason": "Visual-input transcription needs ambiguity handling and target-renderer compatibility."
+  },
+  {
+    "request": "Align these supplied LaTeX equations and number only the final line.",
+    "source_id": "latex-math-equations",
+    "primary": "latex-math-equations",
+    "not_primary": [
+      "latex-equation-converter"
+    ],
+    "reason": "The input is already source; environment layout is primary."
+  },
+  {
+    "request": "Overleaf reports a runaway argument after my last edit; fix the source.",
+    "source_id": "latex-error-fixer",
+    "primary": "latex-error-fixer",
+    "not_primary": [
+      "latex-setup-compiling"
+    ],
+    "reason": "An actual compile diagnostic needs source repair."
+  },
+  {
+    "request": "Set up Overleaf with the right compiler and bibliography build sequence.",
+    "source_id": "latex-setup-compiling",
+    "primary": "latex-setup-compiling",
+    "not_primary": [
+      "latex-error-fixer"
+    ],
+    "reason": "Build setup has no failing-source diagnostic."
+  },
+  {
+    "request": "Fix the undefined citation keys in my .bib and natbib project.",
+    "source_id": "latex-bibliography-citations",
+    "primary": "latex-bibliography-citations",
+    "not_primary": [
+      "latex-cross-references-links",
+      "evidence-source-verification"
+    ],
+    "reason": "Citation-key/backend wiring differs from authenticating external sources."
+  },
+  {
+    "request": "Check whether these cited DOIs correspond to real papers.",
+    "source_id": "latex-bibliography-citations",
+    "primary": "evidence-source-verification",
+    "not_primary": [
+      "latex-bibliography-citations"
+    ],
+    "reason": "Reference authenticity does not require LaTeX bibliography configuration."
+  },
+  {
+    "request": "Create a table in LaTeX from these CSV rows with S columns.",
+    "source_id": "latex-tables",
+    "primary": "latex-tables",
+    "not_primary": [
+      "latex-format-conversion"
+    ],
+    "reason": "Native table syntax and decimal alignment are primary, not general document migration."
+  },
+  {
+    "request": "Convert my entire LaTeX manuscript to Word with images and citations.",
+    "source_id": "latex-format-conversion",
+    "primary": "latex-format-conversion",
+    "not_primary": [
+      "latex-latex-proofreading"
+    ],
+    "reason": "Format migration needs conversion and explicit loss checks."
+  },
+  {
+    "request": "Improve the uncertainty encodings and axes on our scientific figures.",
+    "source_id": "visuals-scientific-visual-table-style",
+    "primary": "visuals-scientific-visual-table-style",
+    "not_primary": [
+      "latex-figures-images"
+    ],
+    "reason": "Evidence-design review differs from placing existing assets in TeX."
+  },
+  {
+    "request": "Insert the existing chart PDF into LaTeX with a caption and label.",
+    "source_id": "latex-figures-images",
+    "primary": "latex-figures-images",
+    "not_primary": [
+      "visuals-scientific-visual-table-style"
+    ],
+    "reason": "Existing-asset placement does not require figure redesign."
+  },
+  {
+    "request": "Polish the grammar in my LaTeX methods prose, preserving cite keys.",
+    "source_id": "latex-latex-proofreading",
+    "primary": "latex-latex-proofreading",
+    "not_primary": [
+      "latex-latex-cleanup"
+    ],
+    "reason": "Prose editing differs from code/package maintenance."
+  },
+  {
+    "request": "Create an informed-consent form for my interview study.",
+    "source_id": "latex-document-builder",
+    "primary": "scholar-research-ethics",
+    "not_primary": [
+      "latex-document-builder"
+    ],
+    "reason": "Ethics content creation is not inferred to be LaTeX typesetting."
+  },
+  {
+    "request": "Use mhchem to typeset these ionic reactions without changing chemistry.",
+    "source_id": "latex-science-notation",
+    "primary": "latex-science-notation",
+    "not_primary": [
+      "latex-math-equations"
+    ],
+    "reason": "Discipline-specific conventions and package syntax are distinctive."
+  },
+  {
+    "request": "Repair my theorem numbering and shared lemma counter in amsthm.",
+    "source_id": "latex-theorems-proofs",
+    "primary": "latex-theorems-proofs",
+    "not_primary": [
+      "latex-math-equations"
+    ],
+    "reason": "Logical environments and counters differ from equation layout."
+  },
+  {
+    "request": "Apply the Elsevier class and double-blind formatting to my .tex article.",
+    "source_id": "latex-journal-templates",
+    "primary": "latex-journal-templates",
+    "not_primary": [
+      "scholar-journal-finder"
+    ],
+    "reason": "A selected venue and concrete source format require template application, not journal recommendation."
+  },
+  {
+    "request": "Choose a suitable journal for this manuscript.",
+    "source_id": "latex-journal-templates",
+    "primary": "scholar-journal-finder",
+    "not_primary": [
+      "latex-journal-templates"
+    ],
+    "reason": "Venue selection is distinct from applying a known class."
+  },
+  {
+    "request": "Expand my one-sentence research idea into a complete brief with data assets, comparators and evaluation criteria.",
+    "primary": "arms-brief-expander",
+    "not_primary": [
+      "arms-methodology-architect"
+    ],
+    "reason": "Problem scoping before solution design."
+  },
+  {
+    "request": "Run the external Claude review, Codex revise and latexdiff manuscript loop with my local source pack.",
+    "primary": "arms-critic-revisor",
+    "not_primary": [
+      "arms-paper-critic",
+      "arms-paper-fixer"
+    ],
+    "reason": "Explicit external review/revision loop with in-place mutation and build dependencies."
+  },
+  {
+    "request": "Rewrite manuscript.tex into our house voice using the exemplar and a number-relocation ledger.",
+    "primary": "arms-house-style",
+    "not_primary": [
+      "academic-humanizer",
+      "humanizer"
+    ],
+    "reason": "Exemplar/structural/number-integrity contract."
+  },
+  {
+    "request": "Fill Phase 3 positioning coverage gaps and reuse Phase 1 literature extractions for the writer briefing.",
+    "primary": "arms-literature-lead",
+    "not_primary": [
+      "arms-methodology-architect",
+      "evidence-literature-review"
+    ],
+    "reason": "Incremental positioning after design, not method synthesis."
+  },
+  {
+    "request": "Design a new research methodology from this brief using a Provides/Needs matrix, adjacent fields and a red-team candidate check.",
+    "primary": "arms-methodology-architect",
+    "not_primary": [
+      "arms-paper-modeler",
+      "arms-brief-expander"
+    ],
+    "reason": "Method design/specification phase."
+  },
+  {
+    "request": "Review this manuscript read-only and return at most five located critical, major or minor challenges.",
+    "primary": "arms-paper-critic",
+    "not_primary": [
+      "arms-paper-grader",
+      "arms-paper-fixer"
+    ],
+    "reason": "Bounded read-only challenges rather than grading or fixing."
+  },
+  {
+    "request": "Apply the grade report to fix manuscript table cells against the CSV and repair cross-references; keep validated code fixed.",
+    "primary": "arms-paper-fixer",
+    "not_primary": [
+      "arms-paper-critic",
+      "arms-paper-writer"
+    ],
+    "reason": "Concrete grade-report corrections."
+  },
+  {
+    "request": "Grade this completed manuscript out of 50 with the seven-dimension rubric and an independent code audit.",
+    "primary": "arms-paper-grader",
+    "not_primary": [
+      "arms-paper-critic",
+      "scholar-peer-review-critique"
+    ],
+    "reason": "Completed-paper weighted rubric and audit."
+  },
+  {
+    "request": "Scale our validated code to production evaluations at unchanged parameters and create the canonical formula-code audit and anomaly log.",
+    "primary": "arms-paper-modeler",
+    "not_primary": [
+      "arms-methodology-architect",
+      "arms-validate-method"
+    ],
+    "reason": "Frozen-method final evaluation and canonical audit ownership."
+  },
+  {
+    "request": "Draft the assigned Results section from current-run CSV files, validated methodology and canonical audits.",
+    "primary": "arms-paper-writer",
+    "not_primary": [
+      "arms-write-manuscript",
+      "scholar-paper-sections"
+    ],
+    "reason": "One assigned section from source evidence."
+  },
+  {
+    "request": "Run the full ARMS research pipeline from statistical methodology idea through validation, author-approved manuscript and bounded polish.",
+    "primary": "arms-research-pipeline",
+    "not_primary": [
+      "research-assistant",
+      "arms-write-manuscript"
+    ],
+    "reason": "Full specialized staged protocol."
+  },
+  {
+    "request": "Implement and validate this proposed method from the methodology specification with a pilot experiment and GO/NO-GO report before writing.",
+    "primary": "arms-validate-method",
+    "not_primary": [
+      "arms-paper-modeler",
+      "arms-methodology-architect"
+    ],
+    "reason": "Pre-writing validation may implement and diagnose; production role cannot redesign."
+  },
+  {
+    "request": "Build the complete manuscript package after Phase 2 has validated the method and the current synopsis is approved.",
+    "primary": "arms-write-manuscript",
+    "not_primary": [
+      "arms-paper-writer",
+      "arms-research-pipeline"
+    ],
+    "reason": "Whole Phase 3 orchestration after validated entry gate."
+  },
+  {
+    "request": "Humanize this blog post in my voice and keep the personal jokes and all quoted facts.",
+    "primary": "humanizer",
+    "not_primary": [
+      "academic-humanizer",
+      "arms-house-style"
+    ],
+    "reason": "General personal prose with factual preservation."
+  },
+  {
+    "request": "Humanize my paper abstract while preserving technical meaning, equations, citations and evidence-tied hedging.",
+    "primary": "academic-humanizer",
+    "not_primary": [
+      "humanizer",
+      "arms-house-style"
+    ],
+    "reason": "Academic register and evidence safeguards."
+  },
+  {
+    "request": "Edit this manuscript paragraph in COMPAG style with frozen terminology, no colons and no italic emphasis.",
+    "primary": "guardrails-compag-elsevier-paper-editing",
+    "not_primary": [
+      "academic-humanizer",
+      "humanizer"
+    ],
+    "reason": "Explicit requested specialized style profile."
+  },
+  {
+    "request": "Audit whether this ablation supports the claimed mechanism; two modules changed together, so explain what the evidence actually isolates.",
+    "primary": "guardrails-research-problem-mechanism-evidence",
+    "not_primary": [
+      "guardrails-compag-elsevier-paper-editing",
+      "arms-paper-grader"
+    ],
+    "reason": "Actual intervention and causal attribution."
+  },
+  {
+    "request": "Which plugin skill should I choose to coordinate literature, analysis, LaTeX and slides for this research project?",
+    "primary": "research-assistant",
+    "not_primary": [
+      "arms-research-pipeline",
+      "evidence-research-evidence-finder"
+    ],
+    "reason": "Cross-collection onboarding and stage selection."
+  },
+  {
+    "request": "Polish my NIH Specific Aims page, preserve the long-term vision, and flag unsupported preliminary data or partner letters.",
+    "primary": "academic-humanizer",
+    "not_primary": [
+      "humanizer",
+      "arms-house-style"
+    ],
+    "reason": "Proposal claim-feasibility and real-record safeguard."
+  },
+  {
+    "request": "Edit this NSF Project Summary to improve voice and keep Overview, Intellectual Merit and Broader Impacts.",
+    "primary": "academic-humanizer",
+    "not_primary": [
+      "humanizer",
+      "arms-house-style"
+    ],
+    "reason": "Proposal register and agency-specific stable structure."
+  },
+  {
+    "request": "Remove AI tells from this academic rebuttal text without replacing technical terms or strengthening the claims.",
+    "primary": "academic-humanizer",
+    "not_primary": [
+      "humanizer"
+    ],
+    "reason": "Scholarly response editing."
+  },
+  {
+    "request": "Humanize this personal email; keep my mixed feelings and asides.",
+    "primary": "humanizer",
+    "not_primary": [
+      "academic-humanizer"
+    ],
+    "reason": "General voice may retain personal reactions."
+  },
+  {
+    "request": "Humanize this blog about my paper; it is for general readers and should keep my jokes.",
+    "primary": "humanizer",
+    "not_primary": [
+      "academic-humanizer"
+    ],
+    "reason": "Output artifact is a blog; mere mention of a paper is not scholarly prose."
+  },
+  {
+    "request": "Humanize the abstract of my thesis and keep the uncertainty and cite keys.",
+    "primary": "academic-humanizer",
+    "not_primary": [
+      "humanizer"
+    ],
+    "reason": "Requested output is scholarly abstract, independent of general humanize verb."
+  },
+  {
+    "request": "Read manuscript.tex in reader-first review-only mode against our reference-paper exemplar and report failing paragraphs.",
+    "primary": "arms-house-style",
+    "not_primary": [
+      "academic-humanizer",
+      "arms-paper-critic"
+    ],
+    "reason": "Specific house-voice review contract and exemplar."
+  },
+  {
+    "request": "Check the technical argument for unsupported causal attribution; explain the mechanism and evidence without editing punctuation.",
+    "primary": "guardrails-research-problem-mechanism-evidence",
+    "not_primary": [
+      "guardrails-compag-elsevier-paper-editing"
+    ],
+    "reason": "Evidence logic independent of venue style."
+  },
+  {
+    "request": "Polish the paper section prose in Elsevier style, preserving the experiment scope and frozen numerical values.",
+    "primary": "guardrails-compag-elsevier-paper-editing",
+    "not_primary": [
+      "humanizer",
+      "academic-humanizer"
+    ],
+    "reason": "Explicit requested Elsevier/COMPAG style."
+  },
+  {
+    "request": "I need a new mathematical derivation; there is no validated Phase 2 code or implementation yet.",
+    "primary": "arms-methodology-architect",
+    "not_primary": [
+      "arms-paper-modeler"
+    ],
+    "reason": "No production evaluation role before validation."
+  },
+  {
+    "request": "Validate the proposed research method using the minimum viable evaluation, faithful comparators and failure diagnosis.",
+    "primary": "arms-validate-method",
+    "not_primary": [
+      "arms-paper-modeler"
+    ],
+    "reason": "Skeptical pilot validation, not final scaling."
+  },
+  {
+    "request": "Run post-validation production precision checks on frozen code without changing hyperparameters.",
+    "primary": "arms-paper-modeler",
+    "not_primary": [
+      "arms-validate-method",
+      "arms-methodology-architect"
+    ],
+    "reason": "Final evaluation from accepted implementation."
+  },
+  {
+    "request": "Write one assigned manuscript section from the validated evidence and current-run CSV values.",
+    "primary": "arms-paper-writer",
+    "not_primary": [
+      "arms-write-manuscript"
+    ],
+    "reason": "One deliverable, not whole manuscript coordination."
+  },
+  {
+    "request": "Coordinate the complete manuscript from validated inputs, including production evaluations, multiple writers, critique and final compilation.",
+    "primary": "arms-write-manuscript",
+    "not_primary": [
+      "arms-paper-writer",
+      "arms-paper-modeler"
+    ],
+    "reason": "Whole Phase 3 artifact, despite containing production terms."
+  },
+  {
+    "request": "Apply the grader’s findings to repair the manuscript formula transcription from the canonical audit; do not rerun experiments.",
+    "primary": "arms-paper-fixer",
+    "not_primary": [
+      "arms-paper-modeler",
+      "arms-paper-writer"
+    ],
+    "reason": "Consumer repairs source transcription rather than owns canonical reconciliation."
+  },
+  {
+    "request": "Review this draft without editing and list at most five issues with evidence, severity and concrete suggested fixes.",
+    "primary": "arms-paper-critic",
+    "not_primary": [
+      "arms-paper-grader",
+      "arms-critic-revisor"
+    ],
+    "reason": "Read-only bounded critique."
+  },
+  {
+    "request": "Assess the completed paper using a weighted seven-dimension rubric; separate correctness, novelty, impact and performance.",
+    "primary": "arms-paper-grader",
+    "not_primary": [
+      "arms-paper-critic"
+    ],
+    "reason": "Advisory whole-paper scoring and distinct research-quality dimensions."
+  },
+  {
+    "request": "Plan the Bash adversarial review/revision loop for my manuscript, including preflight and clean plus tracked PDFs.",
+    "primary": "arms-critic-revisor",
+    "not_primary": [
+      "arms-paper-critic"
+    ],
+    "reason": "Planning an explicitly requested external executable loop."
+  },
+  {
+    "request": "Resume the statistical ARMS run from pipeline_state.md and respect MARGINAL_decision_required.md.",
+    "primary": "arms-research-pipeline",
+    "not_primary": [
+      "arms-write-manuscript"
+    ],
+    "reason": "Resumable whole-pipeline state and actual human marginal decision."
+  }
+]

@@ -1,0 +1,180 @@
+[
+  {
+    "kind": "bug",
+    "request": "Find recent studies; do not write a systematic review.",
+    "prohibited": [
+      "evidence-systematic-review"
+    ],
+    "preferred": "evidence-find-studies"
+  },
+  {
+    "kind": "bug",
+    "request": "Do not write a systematic review; instead find recent studies.",
+    "prohibited": [
+      "evidence-systematic-review"
+    ],
+    "preferred": "evidence-find-studies"
+  },
+  {
+    "kind": "bug",
+    "request": "Make a scatter plot of these data; do not use pgfplots or LaTeX.",
+    "prohibited": [
+      "latex-pgfplots-charts"
+    ],
+    "preferred": "visuals-scientific-visual-table-style"
+  },
+  {
+    "kind": "bug",
+    "request": "Review my manuscript read-only; do not grade it out of 50.",
+    "prohibited": [
+      "arms-paper-grader"
+    ],
+    "preferred": "scholar-peer-review-critique"
+  },
+  {
+    "kind": "bug",
+    "request": "Make a LaTeX research poster, not a PowerPoint poster.",
+    "prohibited": [
+      "academic-pptx"
+    ],
+    "preferred": "latex-academic-poster"
+  },
+  {
+    "kind": "bug",
+    "request": "Do not create a scatter plot; summarize the paper.",
+    "prohibited": [
+      "visuals-scientific-visual-table-style"
+    ],
+    "preferred": "evidence-paper-summary"
+  },
+  {
+    "kind": "bug",
+    "request": "Don't write a systematic review; find recent studies.",
+    "prohibited": [
+      "evidence-systematic-review"
+    ],
+    "preferred": "evidence-find-studies"
+  },
+  {
+    "kind": "bug",
+    "request": "Never create a scatter plot; summarize the paper.",
+    "prohibited": [
+      "visuals-scientific-visual-table-style"
+    ],
+    "preferred": "evidence-paper-summary"
+  },
+  {
+    "kind": "bug",
+    "request": "Do not create a scatter plot.",
+    "prohibited": [
+      "visuals-scientific-visual-table-style"
+    ],
+    "clarification": true
+  },
+  {
+    "kind": "bug",
+    "request": "Create a scatter plot. Do not create a scatter plot.",
+    "prohibited": [
+      "visuals-scientific-visual-table-style"
+    ],
+    "clarification": true
+  },
+  {
+    "kind": "bug",
+    "request": "Create Beamer slides; do not create PowerPoint.",
+    "prohibited": [
+      "academic-pptx"
+    ],
+    "preferred": "latex-beamer-slides"
+  },
+  {
+    "kind": "bug",
+    "request": "Develop a question using PICO and synonyms; do not generate search strings.",
+    "prohibited": [
+      "evidence-search-strings"
+    ],
+    "preferred": "evidence-research-question"
+  },
+  {
+    "kind": "bug",
+    "request": "Create Beamer slides; do not create PowerPoint, and draft a grant proposal.",
+    "prohibited": [
+      "academic-pptx"
+    ],
+    "preferred": "latex-beamer-slides"
+  },
+  {
+    "kind": "bug",
+    "request": "Develop a question using PICO and synonyms; do not generate search strings; summarize this paper.",
+    "prohibited": [
+      "evidence-search-strings"
+    ],
+    "preferred": "evidence-research-question"
+  },
+  {
+    "kind": "bug",
+    "request": "Find recent studies. Don't search online.",
+    "prohibited": [
+      "evidence-find-studies"
+    ],
+    "clarification": true
+  },
+  {
+    "kind": "bug",
+    "request": "Find recent studies. Never search online.",
+    "prohibited": [
+      "evidence-find-studies"
+    ],
+    "clarification": true
+  },
+  {
+    "kind": "control",
+    "request": "Create Beamer slides; do not add a PowerPoint slide template.",
+    "expected": "latex-beamer-slides"
+  },
+  {
+    "kind": "control",
+    "request": "Develop a question using PICO and synonyms; do not limit search strings to PubMed.",
+    "expected": "evidence-research-question"
+  },
+  {
+    "kind": "control",
+    "request": "Find recent studies.",
+    "expected": "evidence-find-studies"
+  },
+  {
+    "kind": "control",
+    "request": "Make a scatter plot of these data.",
+    "expected": "visuals-scientific-visual-table-style"
+  },
+  {
+    "kind": "control",
+    "request": "Write a systematic review, but do not search online.",
+    "expected": "evidence-systematic-review"
+  },
+  {
+    "kind": "control",
+    "request": "Review this draft without editing and list at most five issues with evidence, severity and concrete suggested fixes.",
+    "expected": "arms-paper-critic"
+  },
+  {
+    "kind": "control",
+    "request": "I need a new mathematical derivation; there is no validated Phase 2 code or implementation yet.",
+    "expected": "arms-methodology-architect"
+  },
+  {
+    "kind": "control",
+    "request": "Using only these six supplied studies, weigh the evidence and explain disagreements; do not search.",
+    "expected": "scholar-evidence-synthesis"
+  },
+  {
+    "kind": "control",
+    "request": "Not only a scatter plot, but also a scientific table.",
+    "expected": "visuals-scientific-visual-table-style"
+  },
+  {
+    "kind": "control",
+    "request": "academic-humanizer",
+    "expected": "academic-humanizer"
+  }
+]

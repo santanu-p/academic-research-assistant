@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
   "mcpServers": {
-    "academic-research-assistant": {
+    "academic-research-assistant-full": {
       "type": "stdio",
       "command": "node",
       "args": ["${PLUGIN_ROOT}/server/mcp.mjs"],

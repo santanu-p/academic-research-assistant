@@ -1,0 +1,25 @@
+{
+  "name": "researchevidencefinder",
+  "version": "1.0.0",
+  "description": "Research Evidence Finder: an expert research librarian and evidence analyst. Finds what the research really says: evidence-based answers with verified citations, real peer-reviewed studies, evidence meters across studies, expert search strings, claim and headline checks, source verification, study appraisal, statistics explained, paper summaries and comparisons, data extraction, literature reviews, systematic reviews and meta-analyses, research gaps, evidence-based writing, debate and decision evidence, plain-language explanations, free legal full texts, proposal backgrounds and citations in every major style.",
+  "author": {
+    "name": "Fasih"
+  },
+  "keywords": [
+    "research evidence",
+    "evidence finder",
+    "find research papers",
+    "scientific studies",
+    "literature review",
+    "academic search",
+    "fact check claims",
+    "systematic review",
+    "citations",
+    "scholar"
+  ],
+  "interface": {
+    "shortDescription": "Find what the research really says: evidence-based answers with verified citations, real peer-reviewed studies, claim checks, study quality ratings, literature reviews and expert search strings.",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
+  }
+}

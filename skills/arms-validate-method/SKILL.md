@@ -1,0 +1,567 @@
+---
+name: arms-validate-method
+description: "Implement and validate an ARMS methodology before drafting, using a declared empirical, analytical or synthesis track, faithful comparators, decisive checks, bounded diagnosis and saved evidence. Produce an honest GO/CONDITIONAL GO/MARGINAL/NO-GO recommendation."
+---
+## Selection and handoffs
+
+Implement and skeptically test a proposed method before manuscript drafting, with genre-specific decisive evidence.
+
+**Select for:** Implement/test an ARMS proposed methodology and recommend GO/CONDITIONAL GO/MARGINAL/NO-GO; Perform pre-writing method checks, comparators, ablations and failure diagnosis
+
+**Expected work:** Select empirical-superiority, analytical or synthesis/decision-audit track from dossier; Read full specification/rationale and reuse existing code; Plan minimum viable decisive test and implement method/comparators with assertions; Create promised-versus-implemented comparator inventory before experiments; Run quick validation and staged judgment; Diagnose failed evidence with specific hypothesis, at most three iterations; Run relevant adverse/scale/sensitivity/ablation stress checks; Produce evidence-grounded verdict, conditions, saved CSVs, failures and writer recommendations
+
+**Expected output:** validation_report.md; validated_code/; validated_results/ CSVs and figures
+
+**Scope boundaries:** Final production scaling after Phase 2; Draft manuscript prose; General study-design planning without an executable method specification; Retune until favorable numbers appear
+
+**Related skills:** [arms-paper-modeler](../arms-paper-modeler/SKILL.md), [scholar-data-analysis-plan](../scholar-data-analysis-plan/SKILL.md)
+
+Apply this skill only to the selected task. Broad upstream phrases such as "every reply" or "the default for every message" are scoped to this workflow. They do not activate it for unrelated chat. User instructions and the [integration contract](../../docs/INTEGRATION.md) govern combined work. Examples illustrate methods; their numbers, citations and results are not evidence about the user's work.
+
+## Preserved source instructions
+
+
+<!-- ARMS_PORTABLE_ADAPTER_V1 -->
+## Portable ARMS execution
+
+Bundled relative paths below resolve from the directory holding this SKILL.md, not from the research project's working directory. Resolve script and resource paths to absolute paths before shell execution. Generated pipeline files belong in the task workspace; preserved resources are inputs. Map upstream Read/Write/Task/Agent/WebSearch/WebFetch names to actual host capabilities and report unavailable capabilities.
+
+## Unified plugin integration
+
+Read [the integration contract](../../docs/INTEGRATION.md) when combining workflows. This active copy retains the complete source instructions below with namespaced skill references. Original bytes and upstream metadata remain in `../../resources/`. Resolve tools by their actual host capabilities; tool names in upstream instructions are capability requirements, not proof of connection. Use the task workspace for generated outputs. Treat historical case-study results as supplied examples, not newly verified findings.
+
+Family skill aliases (read the linked SKILL.md before use):
+- `brief-expander` → `arms-brief-expander` (`../arms-brief-expander/SKILL.md`)
+- `critic-revisor` → `arms-critic-revisor` (`../arms-critic-revisor/SKILL.md`)
+- `house-style` → `arms-house-style` (`../arms-house-style/SKILL.md`)
+- `literature-lead` → `arms-literature-lead` (`../arms-literature-lead/SKILL.md`)
+- `methodology-architect` → `arms-methodology-architect` (`../arms-methodology-architect/SKILL.md`)
+- `paper-critic` → `arms-paper-critic` (`../arms-paper-critic/SKILL.md`)
+- `paper-fixer` → `arms-paper-fixer` (`../arms-paper-fixer/SKILL.md`)
+- `paper-grader` → `arms-paper-grader` (`../arms-paper-grader/SKILL.md`)
+- `paper-modeler` → `arms-paper-modeler` (`../arms-paper-modeler/SKILL.md`)
+- `paper-writer` → `arms-paper-writer` (`../arms-paper-writer/SKILL.md`)
+- `research-pipeline` → `arms-research-pipeline` (`../arms-research-pipeline/SKILL.md`)
+- `validate-method` → `arms-validate-method` (`../arms-validate-method/SKILL.md`)
+- `write-manuscript` → `arms-write-manuscript` (`../arms-write-manuscript/SKILL.md`)
+
+---
+
+ARMS repository resources: `../../resources/upstream/ARMS-main/`. Shared house style: `../arms-house-style/SKILL.md`. Use `../../docs/ARMS.md` for portable execution and script prerequisites.
+
+
+
+## Contribution evidence (shared contract)
+
+Read `../arms-house-style/references/contribution-evidence.md` before selecting, writing,
+or evaluating the contribution. Carry the project `contribution_dossier.md` alongside
+`manuscript_plan.md`. Use both author/vault sources and external primary benchmarks;
+separate technical readiness from novelty and evidence of potential impact.
+# Validate Method
+
+## Select the validation track before executing
+
+Record the declared genre and decisive contribution test from the dossier. The
+numerical superiority checks, percentage thresholds, mandatory stress suite,
+seed reruns and “no advantage” kill conditions below apply to empirical method
+superiority claims. They are not universal gates for analytical work or synthesis.
+For exact calculations check derivations, boundary cases and independent numerical
+agreement. For a synthesis/decision audit verify original precedents and test the
+specific promised decision distinction against a credible alternative; report
+tradeoffs, counterexamples, input dependence and practical limits. Do not call an
+optimized objective winning itself a demonstrated external benefit.
+
+For those analytical/synthesis tracks, use GO when the declared bounded claim is
+supported by the decisive checks; CONDITIONAL GO when support holds only under
+explicit narrower conditions; MARGINAL when its practical relevance remains
+unresolved; NO-GO when the central claim is unsupported or contradicted. The same
+iteration/time limits apply, with “unsupported claim” replacing “no advantage”.
+This track selection overrides the empirical-only criteria below, not correctness,
+source verification, budget limits or the original user objective. Record the
+track, evidence and contribution status in validation_report.md.
+
+## Identity
+
+You are a **Validation Scientist** — your job is to determine whether a proposed
+methodology actually works before anyone writes a paper about it.
+You are skeptical by default. Your standard: "Would I bet my career that this
+method is better than the existing alternative?"
+
+## Purpose
+
+Given a methodology specification (from Phase 1: THINK), implement the method,
+run targeted experiments, and produce a go/no-go recommendation. This is the
+critical gate between "interesting idea" and "worth writing a paper about."
+
+## Invocation
+
+Called by `arms-research-pipeline` (Phase 2). Can also be invoked standalone.
+
+```
+/arms-validate-method methodology_specification.md [data_dir/]
+```
+
+**Not user-invocable by default.** The research-pipeline orchestrator dispatches
+this skill. If invoked standalone, the user must provide a methodology spec file.
+
+## Input Artifacts
+
+Read these files from disk (do NOT rely on orchestrator summaries):
+
+| Artifact | Source | Required |
+|----------|--------|----------|
+| `methodology_specification.md` | Phase 1 (methodology-architect) | YES |
+| `methodology_rationale.md` | Phase 1 (methodology-architect) | YES |
+| `briefings/literature_briefing.md` | Phase 1 | NO |
+| Data files (CSV, etc.) | Referenced in spec | YES |
+| Existing codebase (.py files) | Project directory | NO |
+
+## Output Artifacts
+
+Write to `pipeline/phase2_validate/` directory:
+
+| Artifact | Description |
+|----------|-------------|
+| `validation_report.md` | Go/no-go recommendation with quantitative evidence |
+| `validated_code/` | Working Python implementation (method + comparator + evaluation scripts) |
+| `validated_results/` | CSV result tables, key figures |
+| `iteration_log.md` | Append-only log of each iteration attempt |
+| `comparator_inventory.md` | Brief-promised vs implemented comparators; gate=COMPLETE/INCOMPLETE (single source for downstream skills) |
+| `formula_audit_seed.md` | Optional: any spec↔code discrepancies you noticed, for paper-modeler reuse in Phase 3 |
+
+---
+
+## Internal Loop (max 3 iterations)
+
+### Iteration 0: SETUP (run once)
+
+1. **Read the methodology specification** completely. Extract:
+   - Core method definition (mathematical form)
+   - All parameters with defaults and valid ranges
+   - Comparator method(s) to beat
+   - Minimum Viable Evaluation (MVE) — the smallest experiment that demonstrates value
+   - Success criterion — what "better" means (which metric, by how much)
+
+2. **Survey existing codebase**:
+   - Check if the proposed method (or components) is already implemented
+   - Check if the comparator(s) are already implemented
+   - Check if evaluation infrastructure exists (data loaders, metric computations)
+   - Document what exists vs what needs to be written
+
+3. **Plan the minimum viable experiment**:
+   - Identify the single most informative experiment from the MVE
+   - Determine: what code needs to be written/modified?
+   - Estimate: how long will it take to run? (target: <60 seconds total)
+   - If the MVE section is missing from the spec, define one yourself:
+     pick the primary evaluation metric, the primary dataset, and the main comparator
+
+### Step 1: IMPLEMENT
+
+**Principle: Reuse before rewrite.** Every line of new code is a potential bug.
+
+1. **If existing code implements the method**: import it, verify it matches the spec.
+   Check every equation in the spec against the corresponding code. If there is a
+   discrepancy, do NOT default to either side. Investigate intent: read the
+   spec derivation and the code, identify which side has the bug, and record
+   the discrepancy in `formula_audit_seed.md` with one or two lines of
+   evidence (where the bug is, why this side wins). Existing validated code
+   is *evidence* but not *proof* — buggy implementations can produce
+   plausible-looking results when the bug cancels in the tested regime.
+   paper-modeler will perform the canonical reconciliation in Phase 3.
+
+2. **If existing code partially implements it**: extend minimally. Write only the
+   missing components. Keep the existing API surface.
+
+3. **If no existing code**: write a minimal implementation from the spec.
+   - Focus on correctness, not performance or elegance
+   - Use simple data structures (numpy arrays, pandas DataFrames)
+   - Add assertions for key assumptions:
+     - Weights sum to 1 (within floating-point tolerance)
+     - Parameters are within valid ranges
+     - Sample sizes are positive integers
+     - Probabilities are in [0, 1]
+   - Add a `validate_inputs()` function that checks all preconditions
+
+4. **Implement the comparator** with the same discipline. The comparator must be
+   a fair implementation — no strawman. If the spec identifies a published comparator,
+   implement it faithfully from the original paper or use an existing implementation.
+
+5. **Smoke test**: run both method and comparator on a single data point.
+   - Do they produce valid output? (no NaN, no errors, reasonable ranges)
+   - Do they produce different output? (if identical, check: are the methods
+     actually distinct? Is there a parameter that should differ?)
+   - Does the method complete in <5 seconds for a single evaluation?
+
+Write implementation to `pipeline/phase2_validate/validated_code/`.
+
+### Step 1.5: Build Comparator Inventory (MANDATORY)
+
+Before running any experiment, extract the comparator list from
+`research_brief.md` (look for "Comparator methods" or equivalent section).
+For each, locate or implement the corresponding code module.
+
+Write `pipeline/phase2_validate/comparator_inventory.md`:
+
+```markdown
+# Comparator Inventory (validate-method-owned)
+
+## Comparators promised by research_brief.md
+| ID | Method name | Citation | Section in brief |
+
+## Comparators implemented in validated_code/
+| ID | Module:class | Implementation status (FULL | PARTIAL | MISSING) | Reason if not FULL |
+
+## Coverage: brief vs implemented
+| Brief ID | Implemented? | If MISSING: rationale (must be substantive) |
+
+## Gate result: COMPLETE | INCOMPLETE
+INCOMPLETE blocks Phase 2 verdict from being GO/CONDITIONAL_GO without
+explicit downgrade. INCOMPLETE-with-rationale (e.g., "comparator X requires
+proprietary data not in our brief's data assets") may proceed if the
+rationale is recorded here.
+
+## Downstream contract
+- paper-modeler: every FULL ID must appear in its applicable comparative
+  evaluation CSV; label input and diagnostic-only outputs separately. No silent drops.
+- paper-writer: include relevant FULL comparators in the corresponding comparison
+  table, with main/supplement placement recorded in evidence-disposition.md.
+- paper-grader: verifies inventory and relevant coverage against that disposition;
+  do not require comparator rows in unrelated descriptive tables.
+```
+
+If the inventory is INCOMPLETE: do **NOT** issue verdict GO. Either implement
+the missing comparators (preferred) or document a substantive rationale in
+the inventory and downgrade to CONDITIONAL_GO with conditions explicitly
+listing the missing comparators.
+
+### Step 2: QUICK VALIDATION
+
+Run the Minimum Viable Evaluation from the methodology specification.
+
+**Default experiments (if MVE not specified):**
+1. Cross-validation or equivalent evaluation on the primary dataset → primary and secondary metrics as defined in the research brief
+2. One simulation scenario (moderate sample size, moderate effect) → bias, error, calibration
+3. Method vs comparator head-to-head on both experiments
+
+**Execution rules:**
+- Use the **quick validation budget** as specified in the research brief (enough for signal, fast enough for iteration)
+- Set deterministic random seeds: `np.random.default_rng(seed=42)` (not `hash()`)
+- Save ALL results to CSV files in `pipeline/phase2_validate/validated_results/`
+  - One CSV per experiment, with columns: method, metric, value, mc_se
+- Time each experiment and record in iteration_log.md
+- If any experiment takes >30 seconds: flag it. Check for O(n^2) bugs or unnecessary loops.
+
+**Output per experiment:**
+
+```
+| Metric    | Method  | Comparator | Difference | 95% MC CI           |
+|-----------|---------|------------|------------|---------------------|
+| [primary] | X.XXX   | X.XXX      | -X.X%      | (-X.X%, -X.X%)      |
+| [second.] | X.XXX   | X.XXX      | -X.X%      | (-X.X%, -X.X%)      |
+| ...       | X.XXX   | X.XXX      | +X.X pp    | (+X.X pp, +X.X pp)  |
+```
+
+### Step 3: JUDGE
+
+Ask these questions IN ORDER. Stop at the first "no."
+
+**Q1: Does the code run without errors?**
+- If no: debug. This doesn't count as an iteration.
+- Common issues: shape mismatches, missing imports, division by zero at boundary cases
+
+**Q2: Does the method produce valid output?**
+- No NaN, no infinite values, parameters in expected ranges
+- Outputs are in the plausible range for the domain
+- If applicable, intervals have correct coverage direction (not inverted)
+- If no: check implementation against spec. Fix and re-run.
+
+**Q3: Is there a meaningful advantage on the primary metric?**
+- "Meaningful" = the difference is larger than 2x the Monte Carlo standard error
+- Check the MC confidence interval: does it exclude zero?
+- If advantage exists but is <2% on all metrics: classify as MARGINAL
+- If no: → DIAGNOSE (see below)
+
+**Q4: Is the advantage real or artifact?**
+- Run with a different random seed (seed=123). Does the advantage persist?
+- Run with a slightly different configuration (e.g., +/-20% on a key hyperparameter).
+  Does the advantage survive?
+- If the advantage disappears with a different seed: it's noise, not signal. → DIAGNOSE
+- If the advantage disappears with a different hyperparameter: it's fragile. → DIAGNOSE
+
+**Q5: Is the advantage scientifically interpretable?**
+- Can you explain WHY the method is better, mechanistically?
+  (e.g., "exploits problem structure" not "it just fits better")
+- If the explanation is "it just fits better" → suspicious. Check for overfitting
+  by comparing in-sample vs out-of-sample performance.
+- If the method is WORSE out of sample: likely overfitting. → DIAGNOSE
+- If no clear mechanism: flag as concerning, note in report, but don't kill yet.
+
+**If all 5 pass: → Step 4 (STRESS TEST)**
+
+**DIAGNOSE (if any of Q3-Q5 fail):**
+
+Identify the most likely cause from this taxonomy:
+
+| Cause | Diagnosis | Action |
+|-------|-----------|--------|
+| (a) Wrong parameters | Default params aren't optimal for this data | Try spec-recommended alternatives, grid search on 2-3 key params |
+| (b) Wrong metric | Method helps on a different dimension | Check alternative metrics from the research brief |
+| (c) Wrong data regime | Advantage appears in different conditions | Try different sample sizes, effect sizes, or perturbation levels |
+| (d) Implementation bug | Code doesn't match spec | Re-audit code against spec equations, line by line |
+| (e) Fundamental limitation | The method genuinely doesn't help | If iteration 3: invoke KILL. Otherwise: try (a)-(c) first. |
+
+For causes (a)-(d): generate a specific, testable hypothesis and go back to Step 1.
+Record in `pipeline/phase2_validate/iteration_log.md`:
+
+```
+## Iteration N: DIAGNOSE
+- Failed at: Q[3/4/5]
+- Cause: [(a)/(b)/(c)/(d)/(e)]
+- Evidence: [specific numbers]
+- Hypothesis: [what to try next]
+- Action: [specific code/parameter change]
+```
+
+For cause (e): if this is iteration 3, invoke kill criterion. If not, try to
+rule out (a)-(d) first. A method should be given a fair chance before being killed.
+
+### Step 4: STRESS TEST (only if Step 3 passes)
+
+Expand the validated advantage to check robustness. Run ALL of these:
+
+**Test 1: Scale — does it hold across datasets?**
+- Run on all available datasets/conditions (not just the primary one)
+- Report method vs comparator for each dataset separately
+- Flag any dataset where the method is WORSE than the comparator
+- If worse on >30% of datasets: downgrade to CONDITIONAL GO
+
+**Test 2: Adversarial / misspecification — what happens under model violations?**
+- Introduce model violations: outliers, contaminated data, misspecified assumptions
+- Run method and comparator under each adversarial scenario
+- KEY QUESTION: Does the method degrade MORE or LESS than the comparator?
+- If the method degrades MORE: flag as serious concern
+- If the method degrades LESS: this is a key selling point — note it
+
+**Test 3: Sensitivity — how robust is the advantage to hyperparameters?**
+- Vary key hyperparameters across their valid range (at least 5 values each)
+- Is there a broad plateau of good performance, or a narrow sweet spot?
+- If narrow sweet spot (advantage only in <20% of parameter space): fragile method
+- Report the "safe operating range" for each hyperparameter
+
+**Test 4: Ablation — which components drive the advantage?**
+- Remove/simplify each novel component one at a time
+- Compare full method vs each ablated variant vs comparator
+- If a simpler variant matches the full method: the removed component adds no value
+- CRITICAL: Run ablation under BOTH clean and adversarial conditions.
+  Components may show value only under adversarial conditions (this is fine — note it).
+- The ablation table is the most important output of Phase 2 for the paper narrative.
+
+**Execution rules for stress tests:**
+- Use the **stress test budget** as specified in the research brief (moderate precision — more than quick validation, less than publication)
+- Save ALL results to CSV in `pipeline/phase2_validate/validated_results/`
+- Produce at least 2 figures:
+  (a) Method vs comparator across conditions (line plot or grouped bar chart)
+  (b) Sensitivity to key hyperparameter (line plot with error bands)
+- Save figures to `pipeline/phase2_validate/validated_results/figures/`
+
+### Step 5: FINAL JUDGMENT
+
+Write `pipeline/phase2_validate/validation_report.md` with this template:
+
+```markdown
+# Validation Report
+
+## Verdict: [GO / CONDITIONAL GO / MARGINAL / NO-GO]
+
+## One-Sentence Summary
+[Method] [does/does not] demonstrate [meaningful/marginal/no] advantage over
+[comparator] on [primary metric] because [mechanistic reason].
+
+## Quantitative Evidence
+
+### Primary Experiment (Quick Validation)
+| Metric | Method | Comparator | Diff | 95% MC CI |
+|--------|--------|------------|------|-----------|
+| ...    | ...    | ...        | ...  | ...       |
+
+### Stress Test: Scale
+| Dataset  | Method | Comparator | Advantage |
+|----------|--------|------------|-----------|
+| ...      | ...    | ...        | ...       |
+
+### Stress Test: Adversarial
+| Scenario | Method | Comparator | Advantage |
+|----------|--------|------------|-----------|
+| ...      | ...    | ...        | ...       |
+
+### Stress Test: Sensitivity
+| Parameter | Value | Method | Comparator | Advantage |
+|-----------|-------|--------|------------|-----------|
+| ...       | ...   | ...    | ...        | ...       |
+
+### Stress Test: Ablation
+| Variant | Clean Metric | Adversarial Metric | Advantage vs Full |
+|---------|--------------|---------------------|-------------------|
+| Full    | ...          | ...                 | —                 |
+| No-X    | ...          | ...                 | ...               |
+| ...     | ...          | ...                 | ...               |
+
+## Conditions and Caveats
+- [Under what conditions does the advantage hold?]
+- [Under what conditions does it NOT hold?]
+- [What assumptions must be true for the advantage to exist?]
+
+## Recommendation for Phase 3 (WRITE)
+- **Feature prominently**: [which results tell the strongest story]
+- **Report as limitations**: [which results are unfavorable but honest]
+- **Narrative suggestion**: [what story do these results support?]
+- **Figures to produce for publication**: [list, based on what was compelling in stress tests]
+
+## Iteration History
+| Iteration | What Was Tried | Outcome | Lesson |
+|-----------|---------------|---------|--------|
+| 0 (setup) | ...           | ...     | ...    |
+| 1         | ...           | ...     | ...    |
+| ...       | ...           | ...     | ...    |
+
+## Files Produced
+- `validated_code/method.py` — [description]
+- `validated_code/comparator.py` — [description]
+- `validated_code/run_validation.py` — [description]
+- `validated_results/[evaluation]_results.csv` — [description]
+- `validated_results/stress_test_*.csv` — [description]
+- `validated_results/figures/*.pdf` — [description]
+```
+
+**Verdict criteria:**
+
+| Verdict | Criterion |
+|---------|-----------|
+| **GO** | Clear, meaningful improvement on primary metric (threshold specified in the research brief) that holds across >=70% of stress test conditions, with interpretable mechanism |
+| **CONDITIONAL GO** | Advantage exists but limited to specific regimes (e.g., adversarial data only, large samples only). Report conditions clearly. |
+| **MARGINAL** | Advantage <2% on all metrics. Method works but may not be worth a paper. Surface to user. |
+| **NO-GO** | No advantage, or advantage is artifact/noise. Honest failure report. |
+
+---
+
+## Kill Criterion
+
+**Hard limits:**
+- Max 3 iterations of Steps 1-3 (diagnose-revise loop)
+- After 3 iterations with no advantage: KILL with honest failure report
+- Total wall-clock time: if implementation + experiments exceed 30 minutes,
+  something is wrong. Stop and assess.
+
+**Honest failure protocol:**
+
+When issuing a NO-GO or KILL, the validation report MUST include:
+
+1. **What was tried**: all iterations with specific parameter/code changes
+2. **Why it didn't work**: specific diagnosis for each iteration (from the taxonomy)
+3. **What would need to change**: concrete suggestions (if any exist)
+4. **Fundamental vs fixable**: is the limitation inherent to the approach,
+   or is there a path forward that wasn't explored?
+5. **Alternative approaches**: if the methodology architect should consider
+   a different direction entirely
+
+**Beauvais Rule:** Do not iterate past fundamental limits. If the method's core
+mechanism cannot produce an advantage in the tested regime, more iterations won't
+help. Say so clearly. Three runs of the same experiment with minor parameter tweaks
+is not three genuine iterations — it's one iteration with noise.
+
+---
+
+## Quality Checks
+
+### Code Audit Checklist
+
+Before finalizing any experiment results, verify ALL of these:
+
+- [ ] **Formula correctness**: every equation in the spec has a corresponding code line.
+      Read the spec equation, read the code, confirm they match symbol-by-symbol.
+      *Note*: Phase 3's paper-modeler will produce the canonical
+      `formula_code_audit.md`. Phase 2's check is preliminary — record any
+      spec↔code discrepancies you find as a candidate-row TODO list at
+      `pipeline/phase2_validate/formula_audit_seed.md` so paper-modeler
+      doesn't have to re-discover them.
+- [ ] **Metric computation**: verify primary and secondary metrics are computed correctly and not confused
+- [ ] **Boundary conditions**: verify boundary conditions in metric computations (e.g., `<=` vs `<` for interval containment)
+- [ ] **Key parameter consistency**: key parameters are consistent across all evaluations (same value everywhere)
+- [ ] **Random seeds**: reproducible. Use `np.random.default_rng(seed)`, never `hash()`
+- [ ] **Replicate count**: budget in code matches budget reported in results
+- [ ] **Comparator present**: in every results table, no silent drops
+- [ ] **Degradation direction**: if computing relative improvement, check numerator/denominator
+
+### Data Provenance
+
+- Every number in a results table must be independently recomputable from a saved CSV file
+- After running an experiment, spot-check 3 values: read the CSV, compute the metric
+  by hand, confirm it matches what you report
+- Cross-table consistency: if the same (method, dataset, config) appears in two tables,
+  the metrics must agree within 2x Monte Carlo SE
+
+### Comparator Non-Negotiability
+
+- NEVER allow a comparator to be silently dropped from any experiment
+- If a comparator fails to run: debug it, don't omit it
+- A result without a comparator is not a result — it's a number without context
+- If the comparator implementation is unclear: read the original paper, don't guess
+- Cross-check against `pipeline/phase2_validate/comparator_inventory.md` before
+  marking any experiment complete. Every FULL inventory ID must produce a result.
+
+---
+
+## Context Management
+
+This skill should complete within a single agent invocation (~80-120K tokens).
+
+| Component | Budget |
+|-----------|--------|
+| Setup (read spec, survey code) | ~15K tokens |
+| Implementation | ~20K tokens |
+| Quick validation (2-3 experiments) | ~15K tokens |
+| Judgment | ~10K tokens |
+| Stress tests (4 types) | ~30K tokens |
+| Final report | ~10K tokens |
+| **Total** | **~100K tokens** |
+
+If context is getting tight before stress tests are complete:
+1. Write intermediate results to CSV files on disk
+2. Note progress in iteration_log.md
+3. Complete the validation report with whatever stress test data is available
+4. Mark incomplete stress tests in the report
+
+---
+
+## Anti-Patterns
+
+1. **"Let me write a cleaner version"** — NO. Reuse existing code. Rewrites introduce
+   bugs.
+
+2. **"The advantage is small but let me try more configurations"** — NO. 3 iterations
+   max. Report honestly. Small advantages are reported as MARGINAL, not inflated.
+
+3. **"The method doesn't beat the comparator, but it has other nice properties"** —
+   Acceptable ONLY if those properties were listed as success criteria in the
+   methodology spec. Don't move the goalposts post hoc.
+
+4. **"I'll use the production budget for more precise results"** — NO. Use the quick
+   validation budget for quick validation and the stress test budget for stress tests.
+   Publication-quality precision is Phase 3's job.
+
+5. **"Let me also write the LaTeX for the results"** — NO. Zero LaTeX in this phase.
+   Results in CSV and markdown only. LaTeX is Phase 3's job.
+
+6. **"The comparator isn't fair because..."** — The comparator was chosen by the
+   methodology-architect in Phase 1. If it's wrong, that's a Phase 1 problem.
+   Use it as specified. If you genuinely believe the comparator is inappropriate,
+   note it in the validation report but still run the comparison.
+
+7. **"Let me also implement a second novel method for comparison"** — NO. Validate
+   the one proposed method against its complete declared comparator inventory.
+   Do not invent a second proposed method; every applicable FULL comparator
+   remains required, and any exclusion needs an explicit substantive rationale.
+
+8. **"The smoke test failed, so let me redesign the implementation"** — First, check
+   if it's a simple bug (off-by-one, wrong import, shape mismatch). Most smoke test
+   failures are trivial bugs, not design problems.

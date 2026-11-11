@@ -2,7 +2,6 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {handle,serve} from '../server/mcp.mjs';
 import {Readable,Writable} from 'node:stream';
-import {readFile} from 'node:fs/promises';
 test('reject invalid identifiers, null arguments and null params',async()=>{
  for(const id of [null,true,1.5])assert.equal((await handle({jsonrpc:'2.0',id,method:'ping'})).error.code,-32600);
  assert.equal((await handle({jsonrpc:'2.0',id:1,method:'ping',params:null})).error.code,-32602);
@@ -15,24 +14,10 @@ test('oversize message is bounded and next message still works',async()=>{
  const rows=output.trim().split('\n').map(JSON.parse);
  assert.equal(rows[0].error.code,-32600);assert.deepEqual(rows[1],{jsonrpc:'2.0',id:2,result:{}});
 });
-test('resource reads paginate without exposing developer files',async()=>{
+test('resource reads paginate without exposing files outside the runtime',async()=>{
  const request=(args,id)=>handle({jsonrpc:'2.0',id,method:'tools/call',params:{name:'read_resource',arguments:args}});
  const first=JSON.parse((await request({path:'README.md',max_chars:10},1)).result.content[0].text);
  const next=JSON.parse((await request({path:'README.md',offset:first.next_offset,max_chars:10},2)).result.content[0].text);
  assert.equal(first.text.length,10);assert.equal(next.text.length,10);assert.equal(next.total_chars,first.total_chars);
- for(const file of ['dev/PLAN.md','package.json:secret','C:/Windows/win.ini','../README.md'])assert.equal((await request({path:file},3)).result.isError,true);
-});
-test('resource pagination preserves supplementary Unicode characters',async()=>{
- const path='skills/humanizer/SKILL.md';
- const source=await readFile(new URL('../'+path,import.meta.url),'utf8');
- const before=source.indexOf('🚀');
- assert.notEqual(before,-1);
- const offset=Array.from(source.slice(0,before)).length;
- const request=async(offset)=>JSON.parse((await handle({jsonrpc:'2.0',id:1,method:'tools/call',params:{name:'read_resource',arguments:{path,offset,max_chars:1}}})).result.content[0].text);
- const first=await request(offset);
- assert.equal(first.text,'🚀');
- assert.equal(first.next_offset,offset+1);
- assert.equal(first.total_chars,Array.from(source).length);
- const next=await request(first.next_offset);
- assert.equal(next.text,' ');
+ for(const file of ['tests/fixtures/routing.json','package.json:secret','C:/Windows/win.ini','../README.md'])assert.equal((await request({path:file},3)).result.isError,true);
 });

@@ -1,989 +1,2794 @@
 [
   {
-    "name": "academic-editing",
-    "description": "Edit, proofread, translate, paraphrase, and shorten academic text while retaining technical meaning, evidence, citations, and author intent.",
-    "path": "skills/academic-editing/SKILL.md",
-    "keywords": [
-      "edit",
-      "proofread",
-      "humanize",
-      "paraphrase",
-      "translate",
-      "shorten",
-      "word limit"
-    ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
     "name": "academic-humanizer",
-    "description": "Edit academic and proposal prose for author voice while preserving evidence, citations, uncertainty and technical meaning.",
+    "description": "Edit AI-assisted papers, theses, abstracts, rebuttals and funding proposals for clear scholarly author voice. Preserve technical meaning, numbers, equations and citations; match claims to evidence and proposal ambition to real feasibility. Keep general prose with humanizer.",
     "path": "skills/academic-humanizer/SKILL.md",
     "keywords": [
-      "humanize academic prose",
-      "humanize my manuscript",
-      "humanize the manuscript",
-      "humanize my abstract"
+      "Humanize academic manuscript or rebuttal prose while preserving evidence and citations",
+      "Edit an NSF Project Summary/Description or NIH Specific Aims in proposal mode",
+      "Match a researcher writing sample and venue register"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers editing paper sections, theses, abstracts, rebuttals, related work, NSF/NIH/fellowship/foundation proposals.",
+    "activation_conditions": [
+      "Humanize academic manuscript or rebuttal prose while preserving evidence and citations",
+      "Edit an NSF Project Summary/Description or NIH Specific Aims in proposal mode",
+      "Match a researcher writing sample and venue register"
+    ],
+    "scope_boundaries": [
+      "Blogs/marketing/personal essays",
+      "Inventing evidence or editing results",
+      "A full ARMS production orchestration request",
+      "Disclosure or detector evasion"
+    ],
+    "related": [
+      "humanizer",
+      "arms-house-style",
+      "guardrails-compag-elsevier-paper-editing"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "academic-word-reduction",
-    "description": "Use when shortening an academic passage, abstract, manuscript, or proposal to a specified word limit while preserving its meaning.",
-    "path": "skills/academic-word-reduction/SKILL.md",
+    "name": "academic-pptx",
+    "description": "Plan and improve academic slide arguments, exhibits, citations, timing and Q&A; use the selected presentation backend for the requested file format.",
+    "path": "skills/academic-pptx/SKILL.md",
     "keywords": [
-      "academic word reduction"
+      "Academic conference/seminar/defense/grant presentation.",
+      "Paper or research findings to an evidence-led talk.",
+      "Improve an academic deck's argument, action titles or exhibit discipline."
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers, graduate students, lecturers and grant/lab presenters; separate public/non-specialist narrative mode.",
+    "activation_conditions": [
+      "Create or improve academic conference/seminar/defense/grant/lab slides or paper-to-talk content.",
+      "Use structured-argument mode by default for academic evidence; choose visual/narrative mode for public engagement or lay panels."
+    ],
+    "scope_boundaries": [
+      "Printed research poster.",
+      "Generic research manuscript editing or figure-only task without a deck.",
+      "LaTeX Beamer implementation alone without changes to presentation content."
+    ],
+    "related": [
+      "latex-beamer-slides",
+      "latex-academic-poster",
+      "visuals-scientific-visual-table-style"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "academic-writing-tool-evaluation",
-    "description": "Use when comparing academic writing, editing, citation, or submission-support tools for a researcher's requirements.",
-    "path": "skills/academic-writing-tool-evaluation/SKILL.md",
+    "name": "arms-brief-expander",
+    "description": "Expand a sparse research idea into a source-grounded problem brief with data, constraints, comparators, adjacent fields and evaluation criteria. Scope the problem before methodology design.",
+    "path": "skills/arms-brief-expander/SKILL.md",
     "keywords": [
-      "academic writing tool evaluation"
+      "Expand a research one-liner or partial brief",
+      "ARMS Phase 0 detects fewer than five substantive canonical sections or insufficient comparators"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers with a one-line idea, partial brief, or incomplete project specification; Phase 0 orchestrator.",
+    "activation_conditions": [
+      "Expand a research one-liner or partial brief",
+      "ARMS Phase 0 detects fewer than five substantive canonical sections or insufficient comparators"
+    ],
+    "scope_boundaries": [
+      "A complete brief needing method invention",
+      "A request to rewrite a manuscript section",
+      "A standalone literature-review deliverable"
+    ],
+    "related": [
+      "arms-methodology-architect",
+      "scholar-research-question"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "adversarial-revision",
-    "description": "Use when critically reviewing research artifacts or comparing manuscript versions, including tracked LaTeX PDFs.",
-    "path": "skills/adversarial-revision/SKILL.md",
+    "name": "arms-critic-revisor",
+    "description": "Run or plan the explicitly requested ARMS Bash critic-revisor loop for an existing LaTeX manuscript, using independent reviews, source verification, bounded revisions, builds and tracked changes. Requires configured external CLIs.",
+    "path": "skills/arms-critic-revisor/SKILL.md",
     "keywords": [
-      "review loop",
-      "adversarial review",
-      "iterative revision",
-      "manuscript versions",
-      "compare versions",
-      "compare revisions",
-      "text revision",
-      "tracked pdf",
-      "tracked pdfs",
-      "marked pdf",
-      "latex redline",
-      "latexdiff"
+      "Explicit ARMS critic-revisor loop request",
+      "Plan or preflight the supplied run_loop.sh"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Authors explicitly requesting the Bash/Claude/Codex critic-revisor loop and able to configure its dependencies.",
+    "activation_conditions": [
+      "Explicit ARMS critic-revisor loop request",
+      "Plan or preflight the supplied run_loop.sh"
+    ],
+    "scope_boundaries": [
+      "One read-only manuscript critique",
+      "Rubric grading",
+      "A request to edit one paragraph",
+      "A general ARMS pipeline request without explicit external-loop selection"
+    ],
+    "related": [
+      "arms-paper-critic",
+      "arms-paper-fixer"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "citation-network-search",
-    "description": "Find related research through backward references and forward citation links, documenting seeds, sources, dates, and coverage limits.",
-    "path": "skills/citation-network-search/SKILL.md",
+    "name": "arms-house-style",
+    "description": "Review or rewrite scholarly LaTeX prose to an author or paper exemplar using a reader-first paragraph audit, structural editing, advisory metrics and scientific-content integrity checks. Retain all claims and evidence.",
+    "path": "skills/arms-house-style/SKILL.md",
     "keywords": [
-      "citation network search"
+      "Match an author or reference-paper house voice",
+      "Review reader-first prose and report register",
+      "Restructure dense scholarly prose without changing evidence"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Manuscript authors and ARMS writers, critics, graders and fixers needing article/paragraph voice calibration.",
+    "activation_conditions": [
+      "Match an author or reference-paper house voice",
+      "Review reader-first prose and report register",
+      "Restructure dense scholarly prose without changing evidence"
+    ],
+    "scope_boundaries": [
+      "General blog/email prose",
+      "New results or method invention",
+      "Replacing claim strength without author/evidence review",
+      "Styling to satisfy numeric metrics alone"
+    ],
+    "related": [
+      "academic-humanizer",
+      "humanizer",
+      "guardrails-compag-elsevier-paper-editing"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "citations-and-bibliographies",
-    "description": "Create and repair source-traceable citations and reference lists, including BibTeX, biblatex, Biber, natbib, and manuscript citation-backend consistency.",
-    "path": "skills/citations-and-bibliographies/SKILL.md",
+    "name": "arms-literature-lead",
+    "description": "Coordinate ARMS post-validation literature work for manuscript positioning and related work: reuse Phase 1 extractions, fill coverage gaps, verify precedents and contradictions, and deliver a source-traceable writer briefing.",
+    "path": "skills/arms-literature-lead/SKILL.md",
     "keywords": [
-      "bibliography",
-      "references",
-      "bibtex",
-      "biber",
-      "citation style",
-      "natbib"
+      "ARMS Phase 3 writing-positioning literature synthesis",
+      "Fill explicit Phase 1 literature coverage gaps before manuscript drafting"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Post-validation manuscript orchestrators and writers who need a defensible related-work/positioning briefing.",
+    "activation_conditions": [
+      "ARMS Phase 3 writing-positioning literature synthesis",
+      "Fill explicit Phase 1 literature coverage gaps before manuscript drafting"
+    ],
+    "scope_boundaries": [
+      "Design a new method from cross-field combinations",
+      "A standalone short paper summary",
+      "A generic source-search request without Phase 3 artifacts"
+    ],
+    "related": [
+      "arms-methodology-architect",
+      "evidence-literature-review"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "comparative-study-appraisal",
-    "description": "Compare research studies by their questions, methods, results, and limitations while preserving differences in context and evidence quality.",
-    "path": "skills/comparative-study-appraisal/SKILL.md",
+    "name": "arms-methodology-architect",
+    "description": "Design or rethink a research methodology from a concrete brief and original literature, using compatibility matrices, cross-field candidates, red-team checks, impact evidence and a testable mathematical specification. Do not implement or claim unvalidated results.",
+    "path": "skills/arms-methodology-architect/SKILL.md",
     "keywords": [
-      "comparative study appraisal"
+      "Design a statistical/technical methodology from a research brief",
+      "Revise a methodology using validation failure or plateau feedback"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers with a concrete brief; Phase 1/RETHINK orchestrators seeking a testable method specification.",
+    "activation_conditions": [
+      "Design a statistical/technical methodology from a research brief",
+      "Revise a methodology using validation failure or plateau feedback"
+    ],
+    "scope_boundaries": [
+      "Only expand a vague brief",
+      "Run the validation code",
+      "Scale an already validated method",
+      "Polish manuscript prose"
+    ],
+    "related": [
+      "arms-brief-expander",
+      "arms-paper-modeler",
+      "scholar-methodology-design"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "document-conversion",
-    "description": "Convert academic documents among LaTeX, word-processing, Markdown, HTML, and PDF workflows while tracking semantic, structural, and visual fidelity.",
-    "path": "skills/document-conversion/SKILL.md",
+    "name": "arms-paper-critic",
+    "description": "Critique one ARMS deliverable without editing, returning at most five source-located correctness, evidence, completeness or clarity challenges. In Phase 3, respect frozen methodology and canonical audits; report missing shared-rubric limitations.",
+    "path": "skills/arms-paper-critic/SKILL.md",
     "keywords": [
-      "convert document",
-      "pandoc",
-      "latex to word",
-      "format conversion",
-      "csv to",
-      "convert csv",
-      "spreadsheet to latex"
+      "Review one ARMS manuscript/section, code or synthesis deliverable",
+      "Phase 3 internal critique"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "ARMS manuscript orchestrators needing prioritized actionable challenges before finalization.",
+    "activation_conditions": [
+      "Review one ARMS manuscript/section, code or synthesis deliverable",
+      "Phase 3 internal critique"
+    ],
+    "scope_boundaries": [
+      "Apply reviewer fixes",
+      "Assign a full seven-dimension grade",
+      "Launch the external critic-revisor loop"
+    ],
+    "related": [
+      "arms-paper-grader",
+      "arms-paper-fixer"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "document-production",
-    "description": "Produce editable academic documents and checked deliverables through explicit source, build, rendering, inspection, and packaging steps.",
-    "path": "skills/document-production/SKILL.md",
+    "name": "arms-paper-fixer",
+    "description": "Apply concrete ARMS grade-report fixes to manuscript exposition, formula transcription, tables, citations and clarity while preserving validated code, evaluations, conclusions and adverse findings. Log research gaps instead of manufacturing new results.",
+    "path": "skills/arms-paper-fixer/SKILL.md",
     "keywords": [
-      "academic document",
-      "report",
-      "manual",
-      "book",
-      "lecture notes",
-      "latex document"
+      "Repair specific ARMS grader findings",
+      "Apply grade-report formula/table/citation/cross-reference/clarity fixes"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Phase 4 polish orchestrators with a completed manuscript, grade report, validated code and production evidence.",
+    "activation_conditions": [
+      "Repair specific ARMS grader findings",
+      "Apply grade-report formula/table/citation/cross-reference/clarity fixes"
+    ],
+    "scope_boundaries": [
+      "Open-ended rewrite without review findings",
+      "Redesign a weak method",
+      "Add experiments or improve novelty",
+      "Independent grading"
+    ],
+    "related": [
+      "arms-paper-writer",
+      "academic-humanizer"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "evidence-discovery-appraisal",
-    "description": "Use when searching for research sources, verifying references, or assessing the strength and relevance of evidence.",
-    "path": "skills/evidence-discovery-appraisal/SKILL.md",
+    "name": "arms-paper-grader",
+    "description": "Grade a completed ARMS research manuscript with a seven-dimension advisory /50 rubric, independent computational audit, original-source contribution comparison and reader-first clarity review. Separate technical readiness, contribution and potential impact.",
+    "path": "skills/arms-paper-grader/SKILL.md",
     "keywords": [
-      "evidence discovery appraisal"
+      "Grade a completed ARMS manuscript, code, data and figures",
+      "Assess contribution, impact and evidence readiness under the supplied rubric"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Authors and Phase 4 orchestrators deciding whether a validated paper needs editorial fixes or further research.",
+    "activation_conditions": [
+      "Grade a completed ARMS manuscript, code, data and figures",
+      "Assess contribution, impact and evidence readiness under the supplied rubric"
+    ],
+    "scope_boundaries": [
+      "One prioritized read-only challenge report",
+      "Edit the paper",
+      "A journal acceptance prediction",
+      "A prose-only humanization request"
+    ],
+    "related": [
+      "arms-paper-critic",
+      "scholar-peer-review-critique"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "evidence-extraction",
-    "description": "Extract auditable study-level or claim-level evidence into a defined schema while preserving source locations, missing values, versions, and dependent reports.",
-    "path": "skills/evidence-extraction/SKILL.md",
+    "name": "arms-paper-modeler",
+    "description": "Execute ARMS post-validation production evaluations from frozen validated code, preserving method and parameters. Produce traceable CSVs and figures, reconcile formula-versus-code discrepancies into the canonical audit, and catalog anomalies for manuscript consumers.",
+    "path": "skills/arms-paper-modeler/SKILL.md",
     "keywords": [
-      "extract evidence",
-      "extraction table",
-      "data extraction"
+      "ARMS post-validation production evaluation",
+      "Scale fixed validated code and reconcile equations against intended mathematical objects",
+      "Create canonical production anomaly log and publication figures"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "ARMS Phase 3 manuscript orchestrator with Phase 2 validated implementation, fixed parameters, report and comparator inventory.",
+    "activation_conditions": [
+      "ARMS post-validation production evaluation",
+      "Scale fixed validated code and reconcile equations against intended mathematical objects",
+      "Create canonical production anomaly log and publication figures"
+    ],
+    "scope_boundaries": [
+      "Design a method or derive a new theory",
+      "Validate an unimplemented proposal for the first time",
+      "Improve results by retuning",
+      "A generic modeling question without frozen Phase 2 inputs"
+    ],
+    "related": [
+      "arms-methodology-architect",
+      "arms-validate-method",
+      "scholar-results-interpreter"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "evidence-extraction-tables",
-    "description": "Design or populate traceable evidence extraction tables from research reports, with source locations and explicit missing data.",
-    "path": "skills/evidence-extraction-tables/SKILL.md",
+    "name": "arms-paper-writer",
+    "description": "Draft one approved ARMS research-paper section in LaTeX from existing method, literature and current-run results. Preserve canonical reconciled equations, CSV provenance, comparator scope, adverse findings and author/exemplar voice.",
+    "path": "skills/arms-paper-writer/SKILL.md",
     "keywords": [
-      "evidence extraction tables"
+      "Draft an assigned ARMS paper section from approved evidence",
+      "Integrate supplied CSV results, figures and canonical formulas into LaTeX"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "ARMS manuscript orchestrator and authors with completed literature/method/evaluation evidence.",
+    "activation_conditions": [
+      "Draft an assigned ARMS paper section from approved evidence",
+      "Integrate supplied CSV results, figures and canonical formulas into LaTeX"
+    ],
+    "scope_boundaries": [
+      "Orchestrate an entire manuscript project",
+      "Design a method or execute evaluations",
+      "General copyediting without source results",
+      "Claim novelty from a supplied example"
+    ],
+    "related": [
+      "arms-write-manuscript",
+      "scholar-paper-sections"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "evidence-grounded-synthesis",
-    "description": "Use when answering a research question by combining evidence, interpreting conflicting findings, or assessing a proposed research claim.",
-    "path": "skills/evidence-grounded-synthesis/SKILL.md",
+    "name": "arms-research-pipeline",
+    "description": "Run or resume the complete ARMS pipeline for statistical methodology papers: scope, source-grounded design, executable validation, author-approved manuscript production and bounded grading/fixing. Enforce phase, contribution, synopsis and evidence gates with honest stop outcomes.",
+    "path": "skills/arms-research-pipeline/SKILL.md",
     "keywords": [
-      "evidence grounded synthesis"
+      "Run or resume the complete ARMS SCOPE→THINK→VALIDATE→WRITE→POLISH pipeline",
+      "Coordinate method design, validation and manuscript production for a statistical methodology paper"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers explicitly seeking end-to-end ARMS methodology-paper production from a brief, with actual tools and bounded computation.",
+    "activation_conditions": [
+      "Run or resume the complete ARMS SCOPE→THINK→VALIDATE→WRITE→POLISH pipeline",
+      "Coordinate method design, validation and manuscript production for a statistical methodology paper"
+    ],
+    "scope_boundaries": [
+      "One paper section or editing pass",
+      "All-purpose research onboarding",
+      "A non-statistics genre requiring another tailored workflow",
+      "External critic-revisor CLI loop unless explicitly requested"
+    ],
+    "related": [
+      "research-assistant",
+      "arms-write-manuscript"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "evidence-linked-revision",
-    "description": "Use when revising scientific or scholarly prose so its claims remain traceable to supplied evidence, data, and citations.",
-    "path": "skills/evidence-linked-revision/SKILL.md",
+    "name": "arms-validate-method",
+    "description": "Implement and validate an ARMS methodology before drafting, using a declared empirical, analytical or synthesis track, faithful comparators, decisive checks, bounded diagnosis and saved evidence. Produce an honest GO/CONDITIONAL GO/MARGINAL/NO-GO recommendation.",
+    "path": "skills/arms-validate-method/SKILL.md",
     "keywords": [
-      "evidence linked revision"
+      "Implement/test an ARMS proposed methodology and recommend GO/CONDITIONAL GO/MARGINAL/NO-GO",
+      "Perform pre-writing method checks, comparators, ablations and failure diagnosis"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers with a methodology specification and data; Phase 2 or standalone validation callers.",
+    "activation_conditions": [
+      "Implement/test an ARMS proposed methodology and recommend GO/CONDITIONAL GO/MARGINAL/NO-GO",
+      "Perform pre-writing method checks, comparators, ablations and failure diagnosis"
+    ],
+    "scope_boundaries": [
+      "Final production scaling after Phase 2",
+      "Draft manuscript prose",
+      "General study-design planning without an executable method specification",
+      "Retune until favorable numbers appear"
+    ],
+    "related": [
+      "arms-paper-modeler",
+      "scholar-data-analysis-plan"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "evidence-strength-assessment",
-    "description": "Use when weighing whether a collection of studies supports a specific research claim or decision.",
-    "path": "skills/evidence-strength-assessment/SKILL.md",
+    "name": "arms-write-manuscript",
+    "description": "Coordinate complete ARMS manuscript production after method validation and approval of the current synopsis: incremental positioning, frozen-code final evaluations, focused section drafting, critique, compilation and evidence-preserving final checks.",
+    "path": "skills/arms-write-manuscript/SKILL.md",
     "keywords": [
-      "evidence strength assessment"
+      "Build the complete ARMS manuscript package after validated inputs exist",
+      "Coordinate positioning, production evaluations, section writers and bounded critique"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "ARMS pipeline and authors with completed specification, rationale, validation report/code/results and research brief.",
+    "activation_conditions": [
+      "Build the complete ARMS manuscript package after validated inputs exist",
+      "Coordinate positioning, production evaluations, section writers and bounded critique"
+    ],
+    "scope_boundaries": [
+      "A request to draft one section",
+      "Pre-validation idea or method design",
+      "General research capability selection",
+      "Unbounded rewrite that bypasses author synopsis approval"
+    ],
+    "related": [
+      "arms-paper-writer",
+      "arms-research-pipeline",
+      "latex-research-paper"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-citation-chaining",
+    "description": "Expand seed papers into a verified reading list using backward and forward citations, related-paper maps, influential authors and seminal versus recent work.",
+    "path": "skills/evidence-citation-chaining/SKILL.md",
+    "keywords": [
+      "Backward/forward chaining",
+      "Related-paper recommendations",
+      "Citation maps",
+      "Key author tracking",
+      "Citation/search alerts",
+      "Foundational and recent reading groups"
+    ],
+    "users": "Literature readers building a connected reading list.",
+    "activation_conditions": [
+      "Expand seed papers into a verified reading list using backward and forward citations, related-paper maps, influential authors and seminal versus recent work."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-find-sources. Keep: initial concept-query planning differs from citation-network expansion, seminal-paper identification and grouped reading lists.",
+      "Residual every-response/off-topic preamble should be scoped to citation-chaining; retain maps and alerts."
+    ],
+    "related": [
+      "scholar-find-sources"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-citations-and-references",
+    "description": "Format supplied or verified references and in-text citations in major styles, or write evaluated annotated bibliographies.",
+    "path": "skills/evidence-citations-and-references/SKILL.md",
+    "keywords": [
+      "Gather verified fields",
+      "Six citation styles",
+      "In-text references",
+      "Ordering",
+      "100-200 word summary-method-strength-limit-relevance annotations"
+    ],
+    "users": "Writers needing references or annotated bibliographies.",
+    "activation_conditions": [
+      "Format supplied or verified references and in-text citations in major styles, or write evaluated annotated bibliographies."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-citation-generator. Keep modes: evidence adds verified-field sourcing and substantive annotations; scholar adds BibTeX and bidirectional manuscript/reference-list checks."
+    ],
+    "related": [
+      "scholar-citation-generator",
+      "latex-bibliography-citations"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-claim-checker",
+    "description": "Check a research claim or headline against its original study and wider evidence, giving a sourced verdict and an accurate replacement claim.",
+    "path": "skills/evidence-claim-checker/SKILL.md",
+    "keywords": [
+      "Original-source tracing",
+      "Population/effect/design comparison",
+      "Wider-evidence check",
+      "Six-category verdict",
+      "Distortion checklist",
+      "Corrected claim wording"
+    ],
+    "users": "Readers evaluating headlines, adverts or studies-show assertions.",
+    "activation_conditions": [
+      "Check a research claim or headline against its original study and wider evidence, giving a sourced verdict and an accurate replacement claim."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-source-verification. Keep: proposition truth and claim scope differ from whether a source exists or its DOI matches."
+    ],
+    "related": [
+      "evidence-source-verification"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-compare-studies",
+    "description": "Compare studies in an aligned evidence table, explain agreement or disagreement, and weigh their conclusions by quality.",
+    "path": "skills/evidence-compare-studies/SKILL.md",
+    "keywords": [
+      "Matched-field extraction",
+      "Side-by-side table",
+      "Population/measure/dose/time/design/era disagreement analysis",
+      "Quality-weighted judgment"
+    ],
+    "users": "Readers weighing inconsistent papers.",
+    "activation_conditions": [
+      "Compare studies in an aligned evidence table, explain agreement or disagreement, and weigh their conclusions by quality."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-data-extraction. Keep: extraction records reported values; comparison adds cross-study explanation and adjudication."
+    ],
+    "related": [
+      "evidence-data-extraction"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-data-extraction",
+    "description": "Extract reported study characteristics, findings and statistics into tables or CSV rows, preserving units and marking missing values.",
+    "path": "skills/evidence-data-extraction/SKILL.md",
+    "keywords": [
+      "User-agreed fields",
+      "Exact reported units/statistics",
+      "Not-reported values",
+      "Markdown/CSV rows",
+      "Means/SD/N or effect/SE/CI for pooling",
+      "Qualitative themes"
+    ],
+    "users": "Reviewers organizing evidence for tables, spreadsheets or synthesis.",
+    "activation_conditions": [
+      "Extract reported study characteristics, findings and statistics into tables or CSV rows, preserving units and marking missing values."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-compare-studies. Keep: reusable data capture, including pooling statistics and qualitative themes, does not itself adjudicate studies."
+    ],
+    "related": [
+      "evidence-compare-studies"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-database-guide",
+    "description": "Rank databases, repositories and grey-literature sources for a specified field and evidence type, with access options and fit.",
+    "path": "skills/evidence-database-guide/SKILL.md",
+    "keywords": [
+      "Discipline database matrix",
+      "Grey-literature sources",
+      "Dataset repositories",
+      "Free/library access",
+      "Ranked 4-8 sources",
+      "Multiple database coverage"
+    ],
+    "users": "Researchers deciding where to search.",
+    "activation_conditions": [
+      "Rank databases, repositories and grey-literature sources for a specified field and evidence type, with access options and fit."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-field-guides. Keep: database selection concerns where to search; field guides concern methodological standards and evidence suitability."
+    ],
+    "related": [
+      "evidence-field-guides"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-debate-and-argument-evidence",
+    "description": "Prepare research-supported arguments and rebuttals for a debate or position paper, fairly presenting the strongest evidence and weaknesses on each side.",
+    "path": "skills/evidence-debate-and-argument-evidence/SKILL.md",
+    "keywords": [
+      "Exact motion",
+      "Best case on each side",
+      "Claim-evidence-weakness matrix",
+      "Evidence rebuttals",
+      "Accurate statistics",
+      "Empirical/value separation"
+    ],
+    "users": "Debaters and position-paper writers.",
+    "activation_conditions": [
+      "Prepare research-supported arguments and rebuttals for a debate or position paper, fairly presenting the strongest evidence and weaknesses on each side."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-evidence-based-writing. Keep: explicit opposing-case/rebuttal preparation differs from drafting evidence-backed prose for a chosen genre."
+    ],
+    "related": [
+      "evidence-evidence-based-writing"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-decision-evidence",
+    "description": "Apply research, organizational information and stakeholder knowledge to a practical decision, with context fit, confidence and a measurable pilot.",
+    "path": "skills/evidence-decision-evidence/SKILL.md",
+    "keywords": [
+      "Ask-acquire-appraise-aggregate-apply-assess",
+      "Organizational/stakeholder/expertise evidence",
+      "Context fit",
+      "Recommendation confidence",
+      "Pilot and measures"
+    ],
+    "users": "Managers, educators, policy, product and nonprofit teams.",
+    "activation_conditions": [
+      "Apply research, organizational information and stakeholder knowledge to a practical decision, with context fit, confidence and a measurable pilot."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-evidence-answer. Keep: local applicability, stakeholder evidence, recommendation and pilot are additional decision tasks, not just synthesis."
+    ],
+    "related": [
+      "evidence-evidence-answer"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-evidence-answer",
+    "description": "Answer what research says across verified sources, explaining effect magnitude, disagreements, limitations and evidence strength.",
+    "path": "skills/evidence-evidence-answer/SKILL.md",
+    "keywords": [
+      "Actual search",
+      "Best-fit evidence selection",
+      "Effect magnitude and populations",
+      "Five-level certainty",
+      "Disagreements",
+      "Verified factual citations",
+      "Causation restraint"
+    ],
+    "users": "Readers asking what the research says.",
+    "activation_conditions": [
+      "Answer what research says across verified sources, explaining effect magnitude, disagreements, limitations and evidence strength."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-evidence-synthesis. Candidate only for identical cross-study question/context and confidence-first output. Preserve actual retrieval/verification mode and scholar's clearly labeled unverified planning fallback."
+    ],
+    "related": [
+      "scholar-evidence-synthesis"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-evidence-based-writing",
+    "description": "Draft essays, articles or reports from supplied or verified studies using claim-evidence-explanation paragraphs and fair counterevidence.",
+    "path": "skills/evidence-evidence-based-writing/SKILL.md",
+    "keywords": [
+      "Claim-evidence-explanation",
+      "Certainty-matched language",
+      "Counterevidence",
+      "Cited paraphrases",
+      "Essay/blog/report structures",
+      "Plain numbers"
+    ],
+    "users": "Essay, blog, article, report and assignment writers.",
+    "activation_conditions": [
+      "Draft essays, articles or reports from supplied or verified studies using claim-evidence-explanation paragraphs and fair counterevidence."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-paper-sections. Keep: generic supported argument/genre workflows differ from replicable methods and empirical results/discussion conventions."
+    ],
+    "related": [
+      "scholar-paper-sections"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-evidence-help",
+    "description": "Explain the evidence workflow's capabilities and give starter requests when the user asks for a menu or help getting started.",
+    "path": "skills/evidence-evidence-help/SKILL.md",
+    "keywords": [
+      "Capability menu",
+      "Eight example prompts",
+      "Who-what-outcome question guidance"
+    ],
+    "users": "New users explicitly requesting help.",
+    "activation_conditions": [
+      "Explain the evidence workflow's capabilities and give starter requests when the user asks for a menu or help getting started."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-research-evidence-finder. Keep as explicit help mode: a capability menu differs from diagnosing and carrying out broad evidence work."
+    ],
+    "related": [
+      "evidence-research-evidence-finder"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-evidence-meter",
+    "description": "Classify the studies actually reviewed for a yes/no research question and give a quality-weighted verdict, denominator and key papers.",
+    "path": "skills/evidence-evidence-meter/SKILL.md",
+    "keywords": [
+      "Yes/possibly/mixed/no classification",
+      "Reviewed-sample denominator",
+      "Quality weighting",
+      "Confidence",
+      "3-6 supporting studies",
+      "Unsettled limits"
+    ],
+    "users": "Readers wanting a quick yes/no consensus snapshot.",
+    "activation_conditions": [
+      "Classify the studies actually reviewed for a yes/no research question and give a quality-weighted verdict, denominator and key papers."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-evidence-answer. Keep: requested directional counts and denominator form a distinct artifact; do not substitute vote-counting for narrative synthesis or pooling."
+    ],
+    "related": [
+      "evidence-evidence-answer"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-field-guides",
+    "description": "Select discipline-appropriate research designs, evidence standards and appraisal cautions when those standards change the research workflow.",
+    "path": "skills/evidence-field-guides/SKILL.md",
+    "keywords": [
+      "Nine-field design/standard matrix",
+      "Qualitative and humanities standards",
+      "Law jurisdiction/date",
+      "Computing reproducibility",
+      "Cross-field search"
+    ],
+    "users": "Researchers adapting workflows across fields.",
+    "activation_conditions": [
+      "Select discipline-appropriate research designs, evidence standards and appraisal cautions when those standards change the research workflow."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-database-guide. Keep: what counts as appropriate evidence differs from selecting search indexes. Narrow the current trigger that activates whenever a topic belongs to a field."
+    ],
+    "related": [
+      "evidence-database-guide"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-find-studies",
+    "description": "Find and verify research sources for a specific question, with bibliographic details, study type, sample, findings and usable links.",
+    "path": "skills/evidence-find-studies/SKILL.md",
+    "keywords": [
+      "Clarify question",
+      "Execute search",
+      "Match title/authors/year/venue",
+      "Screen",
+      "Order relevant studies",
+      "Sample/finding/link summaries",
+      "No-search fallback",
+      "Preprint/retraction flags"
+    ],
+    "users": "Readers asking for actual papers or other research sources.",
+    "activation_conditions": [
+      "Find and verify research sources for a specific question, with bibliographic details, study type, sample, findings and usable links."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-find-sources. Keep: actual source retrieval and verified records differ from planning queries, criteria, databases and search logs."
+    ],
+    "related": [
+      "scholar-find-sources"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-literature-review",
+    "description": "Write literature reviews from supplied or verified sources using a synthesis matrix, critical comparisons and a gap-focused structure.",
+    "path": "skills/evidence-literature-review/SKILL.md",
+    "keywords": [
+      "Seven review types",
+      "Scope",
+      "Search/screen",
+      "Source-theme matrix",
+      "Thematic/debate outline",
+      "Synthesis",
+      "Gap and fit",
+      "Long-review outline first"
+    ],
+    "users": "Thesis, paper, assignment and report authors.",
+    "activation_conditions": [
+      "Write literature reviews from supplied or verified sources using a synthesis matrix, critical comparisons and a gap-focused structure."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-literature-review. Candidate for same review-author context/task: preserve evidence's review-type choices, scope and verified-source rules plus scholar's theoretical structure, topic sentences and separate annotated-bibliography mode."
+    ],
+    "related": [
+      "scholar-literature-review"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-meta-analysis",
+    "description": "Plan or interpret meta-analysis with compatible studies, effect measures, pooling models, heterogeneity, bias checks and sensitivity analyses.",
+    "path": "skills/evidence-meta-analysis/SKILL.md",
+    "keywords": [
+      "Compatibility check",
+      "d/g/OR/RR/correlation",
+      "Fixed/random models",
+      "I-squared",
+      "Forest/funnel",
+      "Egger",
+      "Subgroup/sensitivity",
+      "Software options"
+    ],
+    "users": "Reviewers combining study results.",
+    "activation_conditions": [
+      "Plan or interpret meta-analysis with compatible studies, effect measures, pooling models, heterogeneity, bias checks and sensitivity analyses."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-systematic-review. Keep: numerical pooling and diagnostics differ from the protocol/search/screen/extract/report lifecycle, which may remain narrative.",
+      "Statistical thresholds, model defaults and test matrices are contextual heuristics, not universal rules or executed analyses."
+    ],
+    "related": [
+      "evidence-systematic-review"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-open-access-full-text",
+    "description": "Locate legal full-text access routes for a named paywalled paper, prioritizing repositories, author versions and library options.",
+    "path": "skills/evidence-open-access-full-text/SKILL.md",
+    "keywords": [
+      "Exact-title/all-versions",
+      "OA finders",
+      "Preprints",
+      "Institutional repositories",
+      "Author pages",
+      "Author-request advice",
+      "Library/ILL",
+      "Publisher programs",
+      "Version caveat"
+    ],
+    "users": "Readers blocked by paywalls.",
+    "activation_conditions": [
+      "Locate legal full-text access routes for a named paywalled paper, prioritizing repositories, author versions and library options."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-find-studies. Keep: finding an accessible version of an identified work differs from discovering which publications answer a question."
+    ],
+    "related": [
+      "evidence-find-studies"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-paper-summary",
+    "description": "Summarize a supplied or located paper's question, methods, numerical findings and limitations at brief or detailed depth, including which claims it supports.",
+    "path": "skills/evidence-paper-summary/SKILL.md",
+    "keywords": [
+      "Read full available text",
+      "Verify title-only inputs",
+      "Abstract-only fallback",
+      "Key numeric findings",
+      "Stated/missed limitations",
+      "Three depths",
+      "Good-for-citing-when"
+    ],
+    "users": "Readers needing a reliable study overview.",
+    "activation_conditions": [
+      "Summarize a supplied or located paper's question, methods, numerical findings and limitations at brief or detailed depth, including which claims it supports."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-paper-breakdown. Keep specialized modes: three depth levels and citing-use guidance differ from persistent page-grounded paper Q&A and supplement inspection."
+    ],
+    "related": [
+      "scholar-paper-breakdown"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-plain-language-research",
+    "description": "Explain research findings for a chosen audience in everyday language, preserving uncertainty, key numerical meaning and technical accuracy.",
+    "path": "skills/evidence-plain-language-research/SKILL.md",
+    "keywords": [
+      "Main finding",
+      "Jargon replacement",
+      "Natural frequencies",
+      "Confidence",
+      "Practical meaning/boundaries",
+      "Three levels",
+      "Glossary",
+      "Effect-size comparisons"
+    ],
+    "users": "Public, young learners, families, managers and professionals.",
+    "activation_conditions": [
+      "Explain research findings for a chosen audience in everyday language, preserving uncertainty, key numerical meaning and technical accuracy."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-research-communication. Keep: comprehension levels, natural frequencies and a glossary differ from authoring posters, timed talks, policy briefs or press materials."
+    ],
+    "related": [
+      "scholar-research-communication"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-research-evidence-finder",
+    "description": "Identify the appropriate evidence specialist for broad requests about research findings, studies or claims and begin that workflow.",
+    "path": "skills/evidence-research-evidence-finder/SKILL.md",
+    "keywords": [
+      "Intent router",
+      "Direct clear-task answer",
+      "Broad-question short answer",
+      "Starter prompts",
+      "No-search fallback",
+      "Evidence dates and strength"
+    ],
+    "users": "Users unsure which evidence task they need.",
+    "activation_conditions": [
+      "Identify the appropriate evidence specialist for broad requests about research findings, studies or claims and begin that workflow."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-scholar-studio. Keep scope distinction: evidence front door focuses on discovery/appraisal/claims, while scholar covers design, analysis, writing and publication."
+    ],
+    "related": [
+      "scholar-scholar-studio"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-research-gaps",
+    "description": "Identify evidence-backed research gaps and turn them into source-located gap tables, questions, candidate designs and contribution statements. Distinguish supplied-corpus gaps from current literature confirmation.",
+    "path": "skills/evidence-research-gaps/SKILL.md",
+    "keywords": [
+      "Seven gap categories",
+      "Limitations/future-work reading",
+      "Empty-cell population/setting/method/outcome matrix",
+      "Disagreements",
+      "Recent closure check",
+      "3-6 cited gaps/questions/designs"
+    ],
+    "users": "Proposal, thesis and grant authors.",
+    "activation_conditions": [
+      "Identify supported gaps in a literature corpus, check whether recent work filled them, and propose research questions and study designs."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-research-gaps. Candidate for identical gap-finding context/task: preserve evidence's discovery matrix and recency check plus scholar's source/page table and gap/contribution prose. Neither certifies novelty from an incomplete corpus."
+    ],
+    "related": [
+      "scholar-research-gaps"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-research-proposal-background",
+    "description": "Draft a proposal's evidence-backed background, problem and rationale from context through a knowledge gap to measurable study aims.",
+    "path": "skills/evidence-research-proposal-background/SKILL.md",
+    "keywords": [
+      "Context-known-gap-cost-study funnel",
+      "Recent reviews versus primary sources",
+      "Funder priorities",
+      "Measurable aims",
+      "Cited draft/outline"
+    ],
+    "users": "Authors justifying why a proposed study is needed.",
+    "activation_conditions": [
+      "Draft a proposal's evidence-backed background, problem and rationale from context through a knowledge gap to measurable study aims."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-research-proposal. Keep: rationale-section funnel and evidence selection differ from a complete project proposal with framework, methods, ethics and timeline."
+    ],
+    "related": [
+      "scholar-research-proposal"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-research-question",
+    "description": "Turn an evidence-search topic into a PICO, PEO, SPIDER or PCC question with synonyms, scope variants and suggested eligibility limits.",
+    "path": "skills/evidence-research-question/SKILL.md",
+    "keywords": [
+      "PICO/PEO/SPIDER/PCC",
+      "Concept table",
+      "3-6 synonyms per concept",
+      "Eligibility limits",
+      "Broader/narrower variants"
+    ],
+    "users": "Researchers beginning evidence searches.",
+    "activation_conditions": [
+      "Turn an evidence-search topic into a PICO, PEO, SPIDER or PCC question with synonyms, scope variants and suggested eligibility limits."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-research-question. Keep: searchable evidence-question design with PCC and synonyms differs from feasible study topics, FINER, SMART objectives and H0/H1 hypotheses."
+    ],
+    "related": [
+      "scholar-research-question"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-search-strings",
+    "description": "Build Boolean research queries for selected databases with synonyms, field tags, syntax limits, filters and too-many/too-few-result adjustments.",
+    "path": "skills/evidence-search-strings/SKILL.md",
+    "keywords": [
+      "OR/AND/NOT",
+      "Phrases/truncation/fields",
+      "Scholar no truncation",
+      "Scopus TITLE-ABS-KEY",
+      "WoS TS/NEAR",
+      "ERIC descriptors",
+      "2-3 database adaptations",
+      "Recovery filters"
+    ],
+    "users": "Researchers needing query strings.",
+    "activation_conditions": [
+      "Build Boolean research queries for selected databases with synonyms, field tags, syntax limits, filters and too-many/too-few-result adjustments."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-find-sources. Keep: concrete syntax and query adaptation differ from broader strategy planning with eligibility, search logs and chaining."
+    ],
+    "related": [
+      "scholar-find-sources"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-source-verification",
+    "description": "Verify citation identity and DOI matches, then check retractions, corrections, venue reliability and peer-review status.",
+    "path": "skills/evidence-source-verification/SKILL.md",
+    "keywords": [
+      "Exact title",
+      "DOI target match",
+      "Publisher record",
+      "Retractions",
+      "Predatory signs",
+      "Peer review",
+      "Authors/conflicts",
+      "Errata/replies",
+      "Five-status verdict",
+      "No invented repairs"
+    ],
+    "users": "Authors concerned about fake or questionable references.",
+    "activation_conditions": [
+      "Verify citation identity and DOI matches, then check retractions, corrections, venue reliability and peer-review status."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-source-evaluation. Keep: bibliographic identity/status audit differs from broad authority, bias, relevance and appropriate viewpoint-use judgments."
+    ],
+    "related": [
+      "scholar-source-evaluation"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-statistics-explained",
+    "description": "Explain research statistics in plain language, emphasizing uncertainty, effect magnitude, absolute risk and common interpretation traps.",
+    "path": "skills/evidence-statistics-explained/SKILL.md",
+    "keywords": [
+      "p/CI/effect/risk/r/regression/power",
+      "Absolute versus relative",
+      "Natural frequency example",
+      "P-hacking/subgroups/selection/averages traps",
+      "One-sentence implication"
+    ],
+    "users": "Readers confused by numbers in a study.",
+    "activation_conditions": [
+      "Explain research statistics in plain language, emphasizing uncertainty, effect magnitude, absolute risk and common interpretation traps."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-results-interpreter. Keep: concept teaching and traps differ from reading a supplied test output and drafting a formal reported result.",
+      "Statistical thresholds, model defaults and test matrices are contextual heuristics, not universal rules or executed analyses."
+    ],
+    "related": [
+      "scholar-results-interpreter"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-study-appraisal",
+    "description": "Appraise a study's design, bias, measures, analysis and warranted conclusions using a design-appropriate risk-of-bias approach.",
+    "path": "skills/evidence-study-appraisal/SKILL.md",
+    "keywords": [
+      "Ten-item checklist",
+      "RoB2/ROBINS-I/CASP/MMAT/AMSTAR2",
+      "Strengths/weaknesses",
+      "Confidence",
+      "Rated table",
+      "Can/cannot infer"
+    ],
+    "users": "Readers asking whether a study is reliable.",
+    "activation_conditions": [
+      "Appraise a study's design, bias, measures, analysis and warranted conclusions using a design-appropriate risk-of-bias approach."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-peer-review-critique. Keep: formal appraisal tools and confidence ratings differ from editor-facing major/minor concerns, author questions and publication recommendation."
+    ],
+    "related": [
+      "scholar-peer-review-critique"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-study-designs-and-evidence-levels",
+    "description": "Explain what study designs can support and how certainty is judged for the research question, including design limitations and GRADE-style factors.",
+    "path": "skills/evidence-study-designs-and-evidence-levels/SKILL.md",
+    "keywords": [
+      "Effects-specific pyramid",
+      "Design strengths/caveats",
+      "Qualitative exception",
+      "Within-level quality",
+      "GRADE-style downgrade/upgrade",
+      "Four certainty levels"
+    ],
+    "users": "Readers learning how designs support claims.",
+    "activation_conditions": [
+      "Explain what study designs can support and how certainty is judged for the research question, including design limitations and GRADE-style factors."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-study-appraisal. Keep: a framework explanation differs from applying a full checklist and bias tool to an individual paper.",
+      "Statistical thresholds, model defaults and test matrices are contextual heuristics, not universal rules or executed analyses."
+    ],
+    "related": [
+      "evidence-study-appraisal"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "evidence-systematic-review",
+    "description": "Plan, conduct or report systematic, scoping and rapid reviews with complete protocols, search and screening logs, extraction, appraisal, synthesis, certainty and PRISMA templates. Distinguish planned and executed work.",
+    "path": "skills/evidence-systematic-review/SKILL.md",
+    "keywords": [
+      "Question/protocol",
+      "Registration",
+      "Exact dates/strings",
+      "2-3 databases/grey/chaining",
+      "Two-stage/two-reviewer screening",
+      "Exclusion reasons",
+      "Piloted extraction",
+      "Bias tools",
+      "SWiM/meta-analysis",
+      "Outcome GRADE",
+      "PRISMA counts"
+    ],
+    "users": "Systematic and scoping reviewers.",
+    "activation_conditions": [
+      "Plan a systematic or scoping review with reproducible searches, screening, extraction, bias appraisal, synthesis, certainty and PRISMA reporting."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-systematic-review. Candidate for same review-planning context/task: preserve search ledger, extraction pilot, SWiM and GRADE plus scholar's rapid-review option, disagreement resolution and PRISMA/extraction templates."
+    ],
+    "related": [
+      "scholar-systematic-review"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "guardrails-compag-elsevier-paper-editing",
+    "description": "Edit or audit scientific manuscript prose when Elsevier/COMPAG style is requested: concise evidence-driven logic, consistent terminology and tense, and the specified punctuation/emphasis rules. Preserve all frozen technical content and evaluation scope.",
+    "path": "skills/guardrails-compag-elsevier-paper-editing/SKILL.md",
+    "keywords": [
+      "Draft/revise/shorten/polish/audit manuscript text with Elsevier/COMPAG style requested",
+      "Apply COMPAG style to captions, methods, results, abstracts, conclusions or review responses"
+    ],
+    "users": "Technical authors targeting Computers and Electronics in Agriculture or explicitly requesting its compact evidence-driven style.",
+    "activation_conditions": [
+      "Draft/revise/shorten/polish/audit manuscript text with Elsevier/COMPAG style requested",
+      "Apply COMPAG style to captions, methods, results, abstracts, conclusions or review responses"
+    ],
+    "scope_boundaries": [
+      "Every academic task without requested COMPAG/Elsevier style",
+      "Research design or mechanism invention",
+      "General casual prose",
+      "Replacing a journal compliance check with stylistic preferences"
+    ],
+    "related": [
+      "guardrails-research-problem-mechanism-evidence",
+      "academic-humanizer"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "guardrails-research-problem-mechanism-evidence",
+    "description": "Audit or develop scientific and technical arguments by connecting an observable problem, the exact mechanism changed, expected intermediate effects and evidence-bounded conclusions. Distinguish theory, implementation, ablation, comparison and diagnostics; preserve frozen content.",
+    "path": "skills/guardrails-research-problem-mechanism-evidence/SKILL.md",
+    "keywords": [
+      "Scientific claim audit",
+      "Explain what a technical design changes and which evidence supports its consequence",
+      "Interpret ablations, comparisons, diagnostics or implementation without causal overreach"
+    ],
+    "users": "Researchers, technical system/algorithm designers and authors interpreting experiments or auditing scientific arguments.",
+    "activation_conditions": [
+      "Scientific claim audit",
+      "Explain what a technical design changes and which evidence supports its consequence",
+      "Interpret ablations, comparisons, diagnostics or implementation without causal overreach"
+    ],
+    "scope_boundaries": [
+      "Casual writing",
+      "Stylistic cleanup with no scientific reasoning",
+      "Claiming a measured benefit from design intent alone",
+      "Forcing all parallel technical branches into one causal chain"
+    ],
+    "related": [
+      "guardrails-compag-elsevier-paper-editing",
+      "evidence-claim-checker"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
     "name": "humanizer",
-    "description": "Edit general prose for a natural author voice while preserving the facts and intended meaning.",
+    "description": "Rewrite general prose such as blogs, emails, essays and replies to remove AI-sounding structure while preserving facts, author voice and reader context. For scholarly manuscripts, rebuttals and funding proposals use academic-humanizer and its evidence safeguards.",
     "path": "skills/humanizer/SKILL.md",
     "keywords": [
-      "humanize general prose",
-      "humanize my blog",
-      "humanize this email"
+      "Humanize a blog, email, personal essay or general prose",
+      "Remove structural AI tells while retaining source facts and intended reader voice",
+      "Edit prose in a named file while preserving code/data/metadata/link targets"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Writers of blogs, essays, product/release text, letters, comments, reference prose and conversational replies.",
+    "activation_conditions": [
+      "Humanize a blog, email, personal essay or general prose",
+      "Remove structural AI tells while retaining source facts and intended reader voice",
+      "Edit prose in a named file while preserving code/data/metadata/link targets"
+    ],
+    "scope_boundaries": [
+      "Academic paper/thesis/rebuttal/proposal as primary route",
+      "Changing scientific results or citations",
+      "AI-disclosure or detector evasion",
+      "Code/data transformation"
+    ],
+    "related": [
+      "academic-humanizer",
+      "arms-house-style"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "independent-methodology-design",
-    "description": "Use when designing or assessing a research methodology that must answer a specified question under practical constraints.",
-    "path": "skills/independent-methodology-design/SKILL.md",
+    "name": "latex-academic-poster",
+    "description": "Build large-format research posters in LaTeX using poster classes, readable type, columns and evidence blocks.",
+    "path": "skills/latex-academic-poster/SKILL.md",
     "keywords": [
-      "independent methodology design"
+      "LaTeX conference/research poster, A0/A1, tikzposter, beamerposter or baposter"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers presenting printed conference posters",
+    "activation_conditions": [
+      "LaTeX conference/research poster, A0/A1, tikzposter, beamerposter or baposter"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-beamer-slides without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-beamer-slides",
+      "academic-pptx"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "independent-research-planning",
-    "description": "Use when turning a research question or idea into a feasible investigation, protocol, or project plan.",
-    "path": "skills/independent-research-planning/SKILL.md",
+    "name": "latex-algorithms-code",
+    "description": "Typeset pseudocode and source listings in LaTeX.",
+    "path": "skills/latex-algorithms-code/SKILL.md",
     "keywords": [
-      "independent research planning"
+      "LaTeX algorithm, algorithm2e/algpseudocode, listings/minted, syntax-highlighted code"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Authors of technical papers, theses and programming notes",
+    "activation_conditions": [
+      "LaTeX algorithm, algorithm2e/algpseudocode, listings/minted, syntax-highlighted code"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-math-equations without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-math-equations"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "journal-submission",
-    "description": "Assess journal fit and prepare a verified submission package against current venue requirements, with truthful declarations, complete files, and unresolved items clearly identified.",
-    "path": "skills/journal-submission/SKILL.md",
+    "name": "latex-beamer-slides",
+    "description": "Create or edit Beamer slide source with frames, overlays, blocks, notes and handouts when the requested presentation format is LaTeX.",
+    "path": "skills/latex-beamer-slides/SKILL.md",
     "keywords": [
-      "journal selection",
-      "submission",
-      "author guidelines",
-      "cover letter"
+      "Beamer, LaTeX slides, .tex presentation, paper-to-Beamer"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers, lecturers and thesis candidates choosing LaTeX slides",
+    "activation_conditions": [
+      "Beamer, LaTeX slides, .tex presentation, paper-to-Beamer"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring academic-pptx without this skill's artifact or operation."
+    ],
+    "related": [
+      "academic-pptx",
+      "latex-academic-poster"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "latex-algorithms-and-code",
-    "description": "Use when typesetting an algorithm, pseudocode, or source-code listing in a LaTeX document.",
-    "path": "skills/latex-algorithms-and-code/SKILL.md",
+    "name": "latex-bibliography-citations",
+    "description": "Create and repair LaTeX bibliographies and citation wiring in LaTeX.",
+    "path": "skills/latex-bibliography-citations/SKILL.md",
     "keywords": [
-      "latex algorithms and code"
+      "BibTeX/biblatex/natbib, .bib entries, undefined citations or backend mismatch"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "LaTeX authors managing references and citation backends",
+    "activation_conditions": [
+      "BibTeX/biblatex/natbib, .bib entries, undefined citations or backend mismatch"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-cross-references-links without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-cross-references-links"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "latex-beamer-presentations",
-    "description": "Use when creating or editing a LaTeX Beamer slide presentation.",
-    "path": "skills/latex-beamer-presentations/SKILL.md",
+    "name": "latex-books-notes",
+    "description": "Build books, lecture notes and cheat sheets in LaTeX in LaTeX.",
+    "path": "skills/latex-books-notes/SKILL.md",
     "keywords": [
-      "latex beamer presentations"
+      "LaTeX book/textbook/lecture notes, memoir, course notes or cheat sheet"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Teachers, book authors and self-publishers",
+    "activation_conditions": [
+      "LaTeX book/textbook/lecture notes, memoir, course notes or cheat sheet"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-thesis-dissertation without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-thesis-dissertation"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "latex-bibliography-crossrefs",
-    "description": "Use when repairing or creating LaTeX citations, bibliographies, labels, and cross-references.",
-    "path": "skills/latex-bibliography-crossrefs/SKILL.md",
+    "name": "latex-certificates-flyers",
+    "description": "Lay out certificates, invitations, flyers and other designed pages in LaTeX.",
+    "path": "skills/latex-certificates-flyers/SKILL.md",
     "keywords": [
-      "latex bibliography crossrefs"
+      "LaTeX certificate/flyer/invitation/business card/newsletter/calendar, precise page positioning"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "People producing designed print pages in LaTeX",
+    "activation_conditions": [
+      "LaTeX certificate/flyer/invitation/business card/newsletter/calendar, precise page positioning"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-academic-poster without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-academic-poster"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "latex-build-debugging",
-    "description": "Use when a LaTeX project fails to compile, has build warnings, or produces incorrect references.",
-    "path": "skills/latex-build-debugging/SKILL.md",
+    "name": "latex-cross-references-links",
+    "description": "Repair labels, links, contents, glossaries and indexes in LaTeX.",
+    "path": "skills/latex-cross-references-links/SKILL.md",
     "keywords": [
-      "latex build debugging"
+      "label/ref/cleveref/hyperref, ?? markers, contents/lists, glossary/acronyms/index/bookmarks"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "LaTeX authors maintaining navigation and internal references",
+    "activation_conditions": [
+      "label/ref/cleveref/hyperref, ?? markers, contents/lists, glossary/acronyms/index/bookmarks"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-bibliography-citations without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-bibliography-citations"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "latex-certificates-and-flyers",
-    "description": "Use when creating or editing an editable LaTeX certificate, flyer, announcement, or other short visual document.",
-    "path": "skills/latex-certificates-and-flyers/SKILL.md",
+    "name": "latex-custom-macros",
+    "description": "Create semantic commands, environments, boxes, packages and classes in LaTeX.",
+    "path": "skills/latex-custom-macros/SKILL.md",
     "keywords": [
-      "latex certificates and flyers"
+      "newcommand/NewDocumentCommand, custom environment/tcolorbox, .sty/.cls or reusable LaTeX template"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "LaTeX authors maintaining reusable code and house styles",
+    "activation_conditions": [
+      "newcommand/NewDocumentCommand, custom environment/tcolorbox, .sty/.cls or reusable LaTeX template"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-cleanup without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-latex-cleanup"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "latex-custom-command-design",
-    "description": "Use when designing, reviewing, or repairing reusable LaTeX commands, environments, counters, or semantic notation.",
-    "path": "skills/latex-custom-command-design/SKILL.md",
+    "name": "latex-document-builder",
+    "description": "Create a complete LaTeX document from a description, outline or supplied content, choosing a suitable class and minimal preamble.",
+    "path": "skills/latex-document-builder/SKILL.md",
     "keywords": [
-      "latex custom command design"
+      "Make a LaTeX document/template/.tex from scratch, typeset supplied text"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Users starting a LaTeX document from supplied description or prose",
+    "activation_conditions": [
+      "Make a LaTeX document/template/.tex from scratch, typeset supplied text"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-studio without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-latex-studio"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "latex-figures-tables",
-    "description": "Use when inserting, revising, or laying out figures and tables in LaTeX.",
-    "path": "skills/latex-figures-tables/SKILL.md",
+    "name": "latex-equation-converter",
+    "description": "Transcribe equations from supplied images, handwriting, PDFs, text or Word math into LaTeX or compatible web-math syntax, preserving symbols and flagging ambiguity.",
+    "path": "skills/latex-equation-converter/SKILL.md",
     "keywords": [
-      "latex figures tables"
+      "Equation image/screenshot/handwriting/PDF/Word equation/plain or spoken math to LaTeX, MathJax/KaTeX/Anki/Notion"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Users transcribing displayed or handwritten mathematics",
+    "activation_conditions": [
+      "Equation image/screenshot/handwriting/PDF/Word equation/plain or spoken math to LaTeX, MathJax/KaTeX/Anki/Notion"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-math-equations without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-math-equations",
+      "latex-science-notation"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "latex-math-typesetting",
-    "description": "Use when writing or revising mathematical equations, theorem environments, and proofs in a LaTeX document.",
-    "path": "skills/latex-math-typesetting/SKILL.md",
+    "name": "latex-error-fixer",
+    "description": "Diagnose and fix LaTeX source/build errors from logs, screenshots or code, starting with the first error and isolating unclear causes.",
+    "path": "skills/latex-error-fixer/SKILL.md",
     "keywords": [
-      "latex math typesetting"
+      "LaTeX/Overleaf error, failed compilation, warnings, undefined command, missing delimiters or files"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "LaTeX users with a failing build or warning",
+    "activation_conditions": [
+      "LaTeX/Overleaf error, failed compilation, warnings, undefined command, missing delimiters or files"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-cleanup without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-latex-cleanup",
+      "latex-setup-compiling"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "latex-multilingual-text",
-    "description": "Use when setting up multilingual or non-Latin text, fonts, directionality, or script-specific typography in a LaTeX project.",
-    "path": "skills/latex-multilingual-text/SKILL.md",
+    "name": "latex-figures-images",
+    "description": "Arrange figures, subfigures, captions and floats in LaTeX.",
+    "path": "skills/latex-figures-images/SKILL.md",
     "keywords": [
-      "latex multilingual text"
+      "Insert image, figure placement, side-by-side subfigures, wrapfig or moving float"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "LaTeX authors inserting existing image assets",
+    "activation_conditions": [
+      "Insert image, figure placement, side-by-side subfigures, wrapfig or moving float"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-tikz-diagrams without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-tikz-diagrams"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "latex-format-conversion",
+    "description": "Convert LaTeX and document formats while preserving structure in LaTeX.",
+    "path": "skills/latex-format-conversion/SKILL.md",
+    "keywords": [
+      "Word/Google Docs/Markdown/HTML/text/CSV/Excel to or from LaTeX; pandoc/make4ht/LaTeXML"
+    ],
+    "users": "Users moving existing documents into or out of LaTeX",
+    "activation_conditions": [
+      "Word/Google Docs/Markdown/HTML/text/CSV/Excel to or from LaTeX; pandoc/make4ht/LaTeXML"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-equation-converter without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-equation-converter"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "latex-homework-exams",
+    "description": "Typeset problem sets, worksheets, exams and answer keys in LaTeX.",
+    "path": "skills/latex-homework-exams/SKILL.md",
+    "keywords": [
+      "LaTeX homework/worksheet/quiz/exam class/answer key/problem-set template"
+    ],
+    "users": "Students typesetting their solutions and teachers making assessments",
+    "activation_conditions": [
+      "LaTeX homework/worksheet/quiz/exam class/answer key/problem-set template"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-books-notes without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-books-notes"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "latex-journal-templates",
+    "description": "Apply official journal/conference classes and submission format in LaTeX.",
+    "path": "skills/latex-journal-templates/SKILL.md",
+    "keywords": [
+      "IEEE/ACM/LNCS/Springer/Elsevier/REVTeX/APA journal template, camera-ready, double-blind or venue page limit"
+    ],
+    "users": "Authors formatting for a named publication venue",
+    "activation_conditions": [
+      "IEEE/ACM/LNCS/Springer/Elsevier/REVTeX/APA journal template, camera-ready, double-blind or venue page limit"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-research-paper without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-research-paper"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "latex-latex-cleanup",
+    "description": "Refactor and modernize LaTeX source and preambles while preserving intended document output.",
+    "path": "skills/latex-latex-cleanup/SKILL.md",
+    "keywords": [
+      "Clean up/review preamble, obsolete packages, organize .tex, reduce warnings"
+    ],
+    "users": "Authors maintaining or modernizing LaTeX source",
+    "activation_conditions": [
+      "Clean up/review preamble, obsolete packages, organize .tex, reduce warnings"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-proofreading without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-latex-proofreading"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "latex-latex-help",
+    "description": "Explain LaTeX Document Maker capabilities and offer relevant starter prompts when the user requests its help, menu or onboarding.",
+    "path": "skills/latex-latex-help/SKILL.md",
+    "keywords": [
+      "Help/menu/features/how to start specifically for LaTeX Document Maker"
+    ],
+    "users": "New users or people asking what the LaTeX plugin can do",
+    "activation_conditions": [
+      "Help/menu/features/how to start specifically for LaTeX Document Maker"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-studio without this skill's artifact or operation.",
+      "Generic help unrelated to LaTeX Document Maker."
+    ],
+    "related": [
+      "latex-latex-studio",
+      "latex-document-builder"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "latex-latex-proofreading",
+    "description": "Proofread or copyedit prose inside LaTeX while preserving commands, citations, labels, mathematics and the author's claims.",
+    "path": "skills/latex-latex-proofreading/SKILL.md",
+    "keywords": [
+      "Proofread/edit .tex prose, LaTeX grammar/academic tone and typography"
+    ],
+    "users": "Authors editing prose embedded in .tex source",
+    "activation_conditions": [
+      "Proofread/edit .tex prose, LaTeX grammar/academic tone and typography"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-cleanup without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-latex-cleanup"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "latex-latex-studio",
+    "description": "Route broad or unclear LaTeX creation, typesetting, conversion or compilation requests to the appropriate specialist.",
+    "path": "skills/latex-latex-studio/SKILL.md",
+    "keywords": [
+      "Broad LaTeX creation/typesetting/conversion/compilation or unclear LaTeX request"
+    ],
+    "users": "Users with broad or unclear LaTeX work requiring routing",
+    "activation_conditions": [
+      "Broad LaTeX creation/typesetting/conversion/compilation or unclear LaTeX request"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-document-builder without this skill's artifact or operation.",
+      "Greetings, thanks or unrelated requests without LaTeX intent."
+    ],
+    "related": [
+      "latex-document-builder",
+      "latex-latex-help"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "latex-letters",
+    "description": "Write and typeset LaTeX letters with supplied facts in LaTeX.",
+    "path": "skills/latex-letters/SKILL.md",
+    "keywords": [
+      "LaTeX cover/motivation/recommendation/business/formal letter or letterhead"
+    ],
+    "users": "Job applicants and authors of formal correspondence",
+    "activation_conditions": [
+      "LaTeX cover/motivation/recommendation/business/formal letter or letterhead"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-resume-cv without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-resume-cv"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "latex-math-equations",
+    "description": "Typeset mathematical expressions, matrices, cases and aligned or numbered equations in LaTeX; use the transcription specialist for supplied equation images.",
+    "path": "skills/latex-math-equations/SKILL.md",
+    "keywords": [
+      "LaTeX equation/align/matrix/cases/symbol/numbering"
+    ],
+    "users": "Authors typesetting mathematical expressions",
+    "activation_conditions": [
+      "LaTeX equation/align/matrix/cases/symbol/numbering"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-science-notation without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-science-notation"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "latex-multilingual-fonts",
+    "description": "Configure LaTeX languages, scripts, direction and fonts in LaTeX.",
+    "path": "skills/latex-multilingual-fonts/SKILL.md",
+    "keywords": [
+      "Arabic/Urdu/Persian/Hebrew/CJK/Devanagari/Cyrillic, bidi, fontspec/system fonts or mixed-language LaTeX"
+    ],
+    "users": "Authors working with non-Latin or mixed-language text",
+    "activation_conditions": [
+      "Arabic/Urdu/Persian/Hebrew/CJK/Devanagari/Cyrillic, bidi, fontspec/system fonts or mixed-language LaTeX"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-page-formatting without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-page-formatting"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "latex-page-formatting",
+    "description": "Set document geometry, typography, spacing and page furniture in LaTeX.",
+    "path": "skills/latex-page-formatting/SKILL.md",
+    "keywords": [
+      "Margins/paper/fonts/line spacing/fancyhdr/page numbers/headings/columns/landscape/title page"
+    ],
+    "users": "LaTeX authors meeting institutional layout rules",
+    "activation_conditions": [
+      "Margins/paper/fonts/line spacing/fancyhdr/page numbers/headings/columns/landscape/title page"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-journal-templates without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-journal-templates"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
     "name": "latex-pgfplots-charts",
-    "description": "Use when creating or editing data charts using PGFPlots in LaTeX.",
+    "description": "Create quantitative LaTeX plots with PGFPlots axes, data or function curves, units, errors and file imports.",
     "path": "skills/latex-pgfplots-charts/SKILL.md",
     "keywords": [
-      "latex pgfplots charts"
+      "pgfplots or CSV/function/error-bar/bar/scatter/log/3D quantitative plot in LaTeX"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Authors requiring data/function plots authored in LaTeX",
+    "activation_conditions": [
+      "pgfplots or CSV/function/error-bar/bar/scatter/log/3D quantitative plot in LaTeX"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-tikz-diagrams without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-tikz-diagrams",
+      "visuals-scientific-visual-table-style"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "latex-research-manuscript",
-    "description": "Use when creating or revising a scientific research manuscript in LaTeX.",
-    "path": "skills/latex-research-manuscript/SKILL.md",
+    "name": "latex-reports-manuals",
+    "description": "Typeset structured reports, manuals and business documents in LaTeX.",
+    "path": "skills/latex-reports-manuals/SKILL.md",
     "keywords": [
-      "latex research manuscript"
+      "LaTeX technical/lab/project report, proposal, manual, white paper, invoice or memo"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers, engineers and teams producing technical/business documents",
+    "activation_conditions": [
+      "LaTeX technical/lab/project report, proposal, manual, white paper, invoice or memo"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-research-paper without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-research-paper"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "latex-scientific-poster",
-    "description": "Use when creating or editing a scientific poster with LaTeX.",
-    "path": "skills/latex-scientific-poster/SKILL.md",
+    "name": "latex-research-paper",
+    "description": "Structure and typeset supplied research content as a LaTeX manuscript or preprint, preserving findings and references.",
+    "path": "skills/latex-research-paper/SKILL.md",
     "keywords": [
-      "latex scientific poster"
+      "Research paper/manuscript/preprint explicitly in LaTeX, supplied draft to .tex"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers typesetting scientific articles and preprints",
+    "activation_conditions": [
+      "Research paper/manuscript/preprint explicitly in LaTeX, supplied draft to .tex"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-journal-templates without this skill's artifact or operation.",
+      "A research problem/proposal or abstract-writing request with no LaTeX artifact intent."
+    ],
+    "related": [
+      "latex-journal-templates"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "latex-thesis-project",
-    "description": "Use when creating or editing a multi-chapter thesis or dissertation in LaTeX.",
-    "path": "skills/latex-thesis-project/SKILL.md",
+    "name": "latex-resume-cv",
+    "description": "Create factual LaTeX resumes and academic CVs in LaTeX.",
+    "path": "skills/latex-resume-cv/SKILL.md",
     "keywords": [
-      "latex thesis project"
+      "LaTeX resume/CV/moderncv/ATS/academic curriculum vitae"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Job seekers and academics preparing career documents",
+    "activation_conditions": [
+      "LaTeX resume/CV/moderncv/ATS/academic curriculum vitae"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-letters without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-letters"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "latex-science-notation",
+    "description": "Typeset LaTeX units, chemical formulas, quantum/vector notation and other field-specific scientific symbols with suitable packages.",
+    "path": "skills/latex-science-notation/SKILL.md",
+    "keywords": [
+      "siunitx, mhchem/chemfig, bra-ket/vectors/tensors, circuitikz or Feynman notation"
+    ],
+    "users": "Scientists and engineers requiring discipline-specific notation",
+    "activation_conditions": [
+      "siunitx, mhchem/chemfig, bra-ket/vectors/tensors, circuitikz or Feynman notation"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-math-equations without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-math-equations"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "latex-setup-compiling",
+    "description": "Help configure LaTeX engines, editors, package management and build sequences or diagnose slow builds using actual available tools.",
+    "path": "skills/latex-setup-compiling/SKILL.md",
+    "keywords": [
+      "Overleaf setup, install LaTeX/editor, compiler choice, latexmk or slow compile"
+    ],
+    "users": "Users configuring or optimizing a LaTeX environment",
+    "activation_conditions": [
+      "Overleaf setup, install LaTeX/editor, compiler choice, latexmk or slow compile"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-error-fixer without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-error-fixer",
+      "latex-latex-cleanup"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "latex-tables",
+    "description": "Build LaTeX table source from supplied data with suitable alignment, merged cells, width control and multi-page handling.",
+    "path": "skills/latex-tables/SKILL.md",
+    "keywords": [
+      "LaTeX table/CSV/Excel conversion, booktabs/siunitx/multirow/longtable or wide table"
+    ],
+    "users": "LaTeX authors converting or formatting table data",
+    "activation_conditions": [
+      "LaTeX table/CSV/Excel conversion, booktabs/siunitx/multirow/longtable or wide table"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring visuals-scientific-visual-table-style without this skill's artifact or operation."
+    ],
+    "related": [
+      "visuals-scientific-visual-table-style"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "latex-theorems-proofs",
+    "description": "Define theorem structures and typeset proofs consistently in LaTeX.",
+    "path": "skills/latex-theorems-proofs/SKILL.md",
+    "keywords": [
+      "amsthm theorem/lemma/corollary/definition/remark, proof/QED/restatable numbering"
+    ],
+    "users": "Mathematical authors and teachers",
+    "activation_conditions": [
+      "amsthm theorem/lemma/corollary/definition/remark, proof/QED/restatable numbering"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-math-equations without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-math-equations"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
+  },
+  {
+    "name": "latex-thesis-dissertation",
+    "description": "Build institution-compliant multi-file LaTeX thesis projects in LaTeX.",
+    "path": "skills/latex-thesis-dissertation/SKILL.md",
+    "keywords": [
+      "LaTeX thesis/dissertation/master/PhD university template or chapter structure"
+    ],
+    "users": "Graduate students typesetting university theses/dissertations",
+    "activation_conditions": [
+      "LaTeX thesis/dissertation/master/PhD university template or chapter structure"
+    ],
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-books-notes without this skill's artifact or operation."
+    ],
+    "related": [
+      "latex-books-notes",
+      "latex-reports-manuals"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
     "name": "latex-tikz-diagrams",
-    "description": "Use when drawing or editing a diagram with TikZ in a LaTeX project.",
+    "description": "Draw editable structural diagrams, flowcharts, networks and geometric figures in standalone TikZ source.",
     "path": "skills/latex-tikz-diagrams/SKILL.md",
     "keywords": [
-      "latex tikz diagrams"
+      "TikZ flowchart/block diagram/tree/network/state machine/geometry/tikz-cd/circuitikz/image reconstruction"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "legal-open-access-search",
-    "description": "Locate legitimately accessible scholarly full texts and distinguish author manuscripts, preprints, and publisher versions.",
-    "path": "skills/legal-open-access-search/SKILL.md",
-    "keywords": [
-      "legal open access search"
+    "users": "Authors needing editable LaTeX vector schematics",
+    "activation_conditions": [
+      "TikZ flowchart/block diagram/tree/network/state machine/geometry/tikz-cd/circuitikz/image reconstruction"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "literature-review",
-    "description": "Synthesize a bounded body of literature into a source-traceable narrative organized by questions, mechanisms, methods, findings, and unresolved disagreements.",
-    "path": "skills/literature-review/SKILL.md",
-    "keywords": [
-      "literature review",
-      "evidence synthesis",
-      "claim check",
-      "decision brief",
-      "debate"
+    "scope_boundaries": [
+      "Broad topic overlap alone; tasks requiring latex-pgfplots-charts without this skill's artifact or operation."
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "literature-search",
-    "description": "Build and execute a documented scholarly search using concept blocks, suitable discovery sources, citation chaining, and transparent coverage limits.",
-    "path": "skills/literature-search/SKILL.md",
-    "keywords": [
-      "find papers",
-      "literature search",
-      "citation chaining",
-      "full text",
-      "database"
+    "related": [
+      "latex-pgfplots-charts",
+      "visuals-scientific-visual-table-style"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "literature-search-strategy",
-    "description": "Design, adapt, document, or execute reproducible scholarly literature searches for a defined research question.",
-    "path": "skills/literature-search-strategy/SKILL.md",
-    "keywords": [
-      "literature search strategy"
-    ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "manuscript-writing",
-    "description": "Draft and restructure research manuscripts, abstracts, proposals, and grant narratives from traceable evidence while preserving contribution and uncertainty.",
-    "path": "skills/manuscript-writing/SKILL.md",
-    "keywords": [
-      "write manuscript",
-      "abstract",
-      "introduction",
-      "paper outline",
-      "paper sections"
-    ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "mathematical-modeling",
-    "description": "Build and analyze mathematical models with explicit assumptions, dimensions, boundary conditions, identifiability, and limits of interpretation.",
-    "path": "skills/mathematical-modeling/SKILL.md",
-    "keywords": [
-      "mathematical model",
-      "derivation",
-      "equation code",
-      "theoretical model"
-    ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "mathematics-notation",
-    "description": "Express mathematical arguments in consistent, readable LaTeX while preserving definitions, domains, dimensions, quantifiers, and the distinction between proof and illustration.",
-    "path": "skills/mathematics-notation/SKILL.md",
-    "keywords": [
-      "equation",
-      "proof",
-      "theorem",
-      "algorithm",
-      "pseudocode",
-      "units"
-    ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "meta-analysis",
-    "description": "Assess whether quantitative study results can be pooled and conduct a reproducible synthesis with compatible estimands, dependency handling, uncertainty, and sensitivity analysis.",
-    "path": "skills/meta-analysis/SKILL.md",
-    "keywords": [
-      "meta-analysis",
-      "meta analysis",
-      "pooled effect",
-      "heterogeneity"
-    ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "meta-analysis-planning",
-    "description": "Plan a defensible quantitative evidence synthesis, including effect measures, pooling criteria, dependence, heterogeneity, and sensitivity analyses.",
-    "path": "skills/meta-analysis-planning/SKILL.md",
-    "keywords": [
-      "meta analysis planning"
-    ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "methodology-design",
-    "description": "Design an empirical, qualitative, theoretical, or computational study whose evidence and analysis can answer a specified research question.",
-    "path": "skills/methodology-design/SKILL.md",
-    "keywords": [
-      "study design",
-      "methodology",
-      "framework",
-      "survey",
-      "experiment",
-      "sampling"
-    ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "paper-reading",
-    "description": "Read and explain a research paper with a traceable account of its question, methods, results, assumptions, and limitations, including equations and figures when relevant.",
-    "path": "skills/paper-reading/SKILL.md",
-    "keywords": [
-      "explain paper",
-      "summarize paper",
-      "paper summary"
-    ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "presentations-posters",
-    "description": "Create research talks, slide decks, Beamer sources, and academic posters with audience-appropriate claims, readable visuals, and rehearsal-based timing.",
-    "path": "skills/presentations-posters/SKILL.md",
-    "keywords": [
-      "presentation",
-      "slides",
-      "poster",
-      "talk",
-      "beamer",
-      "powerpoint",
-      "defense"
-    ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "professional-documents",
-    "description": "Prepare truthful academic CVs, applications, cover letters, statements, correspondence, and proposal documents tailored to a specific audience and requirements.",
-    "path": "skills/professional-documents/SKILL.md",
-    "keywords": [
-      "cv",
-      "resume",
-      "recommendation letter",
-      "certificate",
-      "invitation",
-      "flyer"
-    ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "qualitative-analysis",
-    "description": "Analyze interviews, observations, documents, and other qualitative materials with a coherent methodological stance, contextual interpretation, reflexivity, and traceable evidence.",
-    "path": "skills/qualitative-analysis/SKILL.md",
-    "keywords": [
-      "qualitative",
-      "thematic analysis",
-      "coding",
-      "interview",
-      "reflexivity"
-    ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "reference-identity-verification",
-    "description": "Verify whether references identify real scholarly works and reconcile bibliographic metadata across authoritative records.",
-    "path": "skills/reference-identity-verification/SKILL.md",
-    "keywords": [
-      "reference identity verification"
-    ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "research-abstract-introduction",
-    "description": "Use when drafting or revising a research abstract or introduction from a study, manuscript, or proposal.",
-    "path": "skills/research-abstract-introduction/SKILL.md",
-    "keywords": [
-      "research abstract introduction"
-    ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "research-appraisal",
-    "description": "Appraise a study or research manuscript by matching claims to design, evidence, analysis, reporting, and inference, with actionable and proportionate judgments.",
-    "path": "skills/research-appraisal/SKILL.md",
-    "keywords": [
-      "appraise",
-      "peer review",
-      "manuscript review",
-      "risk of bias"
-    ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
     "name": "research-assistant",
-    "description": "Coordinate academic research tasks, select specialist methods and explain the available local tools and their limits.",
+    "description": "Coordinate research onboarding, specialist selection and multi-stage academic tasks across the collection. Route by requested artifact, research stage and available evidence/tools; hand narrow requests to the relevant skill and verify actual outputs.",
     "path": "skills/research-assistant/SKILL.md",
     "keywords": [
-      "help",
-      "capabilities",
-      "onboarding"
+      "Plugin onboarding/capability selection",
+      "Research request crosses literature, method, analysis, writing, LaTeX, visualization or publication stages",
+      "User needs a coordinator rather than a specific leaf operation"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "New or returning researchers needing onboarding, specialist selection or multi-stage interdisciplinary assistance.",
+    "activation_conditions": [
+      "Plugin onboarding/capability selection",
+      "Research request crosses literature, method, analysis, writing, LaTeX, visualization or publication stages",
+      "User needs a coordinator rather than a specific leaf operation"
+    ],
+    "scope_boundaries": [
+      "A narrow task with an obvious specialist should not trigger all skills",
+      "Claiming authentication or scientific validation from environment metadata",
+      "Automatically imposing COMPAG on every paper"
+    ],
+    "related": [
+      "arms-research-pipeline",
+      "evidence-research-evidence-finder"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "research-brief-development",
-    "description": "Use when expanding a short research brief into an organized proposal or manuscript plan without inventing evidence.",
-    "path": "skills/research-brief-development/SKILL.md",
+    "name": "scholar-abstract-introduction",
+    "description": "Draft or revise a study abstract with word count and keywords, or an introduction using context, gap and aim, from supplied results and sources.",
+    "path": "skills/scholar-abstract-introduction/SKILL.md",
     "keywords": [
-      "research brief development"
+      "Five-move abstract",
+      "Structured headings if required",
+      "Word count",
+      "Real results",
+      "4-6 keywords",
+      "CARS territory/niche/aim",
+      "Citation-needed markers",
+      "Move explanations"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Paper, thesis and conference authors.",
+    "activation_conditions": [
+      "Draft or revise a study abstract with word count and keywords, or an introduction using context, gap and aim, from supplied results and sources."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-research-proposal-background. Keep: results-bearing abstract and CARS introduction modes differ from a proposal's evidence-based rationale for future work."
+    ],
+    "related": [
+      "evidence-research-proposal-background"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "research-claim-evaluation",
-    "description": "Evaluate a specific research claim against relevant primary evidence, study design, uncertainty, and scope.",
-    "path": "skills/research-claim-evaluation/SKILL.md",
+    "name": "scholar-academic-editing",
+    "description": "Proofread, copyedit or substantively edit supplied academic prose while preserving technical meaning and voice, with key changes explained.",
+    "path": "skills/scholar-academic-editing/SKILL.md",
     "keywords": [
-      "research claim evaluation"
+      "Proofread/copyedit/substantive levels",
+      "Copyedit default",
+      "Technical meaning/voice",
+      "Field voice conventions",
+      "Spelling consistency",
+      "Key-change table"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Academic authors seeking language or flow edits.",
+    "activation_conditions": [
+      "Proofread, copyedit or substantively edit supplied academic prose while preserving technical meaning and voice, with key changes explained."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-word-reduction. Keep: selectable edit levels differ from a constrained target count with explicit content-loss disclosure."
+    ],
+    "related": [
+      "scholar-word-reduction"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "research-communication",
-    "description": "Translate research into an audience-appropriate talk, summary, explanation, or public narrative while preserving the evidence, uncertainty, ownership, and practical limits.",
-    "path": "skills/research-communication/SKILL.md",
+    "name": "scholar-academic-translation",
+    "description": "Translate supplied academic text between specified languages while preserving terminology, citations, numbers and uncertainty, and flag ambiguous phrasing.",
+    "path": "skills/scholar-academic-translation/SKILL.md",
     "keywords": [
-      "plain language",
-      "public audience",
-      "policy brief",
-      "research blog",
-      "press release"
+      "Confirm languages/variety",
+      "Meaning-based register",
+      "Consistent technical terms",
+      "Original term when useful",
+      "Citations/numbers/units/format intact",
+      "Ambiguity notes",
+      "Section tracking",
+      "Expert final-check suggestion"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers working or publishing across languages.",
+    "activation_conditions": [
+      "Translate supplied academic text between specified languages while preserving terminology, citations, numbers and uncertainty, and flag ambiguous phrasing."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-academic-editing. Keep: bilingual terminology and language transfer differ from within-language editing. Clarify dangling mandatory-footer instruction; no footer text is supplied.",
+      "Dangling mandatory-footer sentence has no footer supplied; do not invent it."
+    ],
+    "related": [
+      "scholar-academic-editing"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "research-ethics-data-management",
-    "description": "Plan research ethics and data handling for a study, including consent, access, retention, sharing, and institutional review dependencies.",
-    "path": "skills/research-ethics-data-management/SKILL.md",
+    "name": "scholar-citation-generator",
+    "description": "Generate citations or BibTeX, or check a manuscript's references for missing entries, inconsistent fields, ordering and style mismatches.",
+    "path": "skills/scholar-citation-generator/SKILL.md",
     "keywords": [
-      "research ethics data management"
+      "Source-field collection",
+      "Six style patterns",
+      "APA default",
+      "Narrative/parenthetical",
+      "BibTeX",
+      "Missing-field markers",
+      "Bidirectional text/list checks",
+      "Problem-location-fix",
+      "Corrected full list"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Authors maintaining citations and bibliographies.",
+    "activation_conditions": [
+      "Generate citations or BibTeX, or check a manuscript's references for missing entries, inconsistent fields, ordering and style mismatches."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-citations-and-references. Keep modes: BibTeX and bidirectional consistency are distinct extras; evidence adds substantive annotations and explicit record verification."
+    ],
+    "related": [
+      "evidence-citations-and-references",
+      "latex-bibliography-citations"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "research-field-evidence-guide",
-    "description": "Use when planning how to find and evaluate research evidence in a particular discipline or interdisciplinary question.",
-    "path": "skills/research-field-evidence-guide/SKILL.md",
+    "name": "scholar-data-analysis-plan",
+    "description": "Choose statistical tests and plan analysis from the question, variables and design, including assumptions, missing data, software steps and reporting.",
+    "path": "skills/scholar-data-analysis-plan/SKILL.md",
     "keywords": [
-      "research field evidence guide"
+      "Variables/groups/pairing/N",
+      "Eight-goal test matrix",
+      "Nonparametric alternatives",
+      "Nested/repeated mixed models",
+      "Assumptions",
+      "Code/instructions",
+      "Missingness/outliers/multiplicity",
+      "Reporting"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers with study designs or datasets.",
+    "activation_conditions": [
+      "Choose statistical tests and plan analysis from the question, variables and design, including assumptions, missing data, software steps and reporting."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-results-interpreter. Keep: prospective analysis choices and code differ from interpreting existing output. Test lookup is a heuristic conditioned on assumptions.",
+      "Statistical thresholds, model defaults and test matrices are contextual heuristics, not universal rules or executed analyses."
+    ],
+    "related": [
+      "scholar-results-interpreter"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "research-gap-assessment",
-    "description": "Assess candidate research gaps against available literature and frame testable next steps without asserting unverified novelty.",
-    "path": "skills/research-gap-assessment/SKILL.md",
+    "name": "scholar-evidence-synthesis",
+    "description": "Synthesize supplied research into an overall answer with confidence, disagreements and open questions, identifying further searches when verification is needed.",
+    "path": "skills/scholar-evidence-synthesis/SKILL.md",
     "keywords": [
-      "research gap assessment"
+      "Confidence-first synthesis",
+      "Evidence types",
+      "Disagreement reasons",
+      "Unknowns",
+      "Memory-source verification labels",
+      "Search terms/databases fallback"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Readers seeking an overall answer across sources.",
+    "activation_conditions": [
+      "Synthesize supplied research into an overall answer with confidence, disagreements and open questions, identifying further searches when verification is needed."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-evidence-answer. Candidate for the same cross-study question/task: preserve supplied-source and actual retrieved/verified-source modes and do not promote remembered references to verified."
+    ],
+    "related": [
+      "evidence-evidence-answer"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "research-integrity",
-    "description": "Review research provenance, attribution, authorship, consent, disclosure, and recordkeeping, and prepare transparent corrections or escalation questions from documented evidence.",
-    "path": "skills/research-integrity/SKILL.md",
+    "name": "scholar-find-sources",
+    "description": "Design a literature-search strategy with concept blocks, Boolean queries, databases, filters, eligibility criteria, chaining and a search log.",
+    "path": "skills/scholar-find-sources/SKILL.md",
     "keywords": [
-      "ethics",
-      "consent",
-      "plagiarism",
-      "data privacy",
-      "research integrity"
+      "2-4 concept blocks",
+      "Synonyms/spellings/acronyms/truncation",
+      "Boolean",
+      "Databases",
+      "Filters",
+      "Backward/forward chaining",
+      "Inclusion/exclusion",
+      "Search log"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers planning scholarly source discovery.",
+    "activation_conditions": [
+      "Design a literature-search strategy with concept blocks, Boolean queries, databases, filters, eligibility criteria, chaining and a search log."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-find-studies. Keep: strategy deliverables differ from actual retrieved and verified source records; no search execution is implied."
+    ],
+    "related": [
+      "evidence-find-studies"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "research-manuscript-evaluation",
-    "description": "Use when reviewing or scoring a research manuscript against explicit, evidence-linked criteria.",
-    "path": "skills/research-manuscript-evaluation/SKILL.md",
+    "name": "scholar-grant-proposal",
+    "description": "Plan or draft a research funding application against a specific call, aligning aims, approach, budget and impact with reviewer criteria.",
+    "path": "skills/scholar-grant-proposal/SKILL.md",
     "keywords": [
-      "research manuscript evaluation",
-      "score a manuscript",
-      "score this paper",
-      "paper grading",
-      "weighted rubric",
-      "manuscript scoring"
+      "Read call/eligibility/deadlines/limits",
+      "One-page aims",
+      "Criteria mapping",
+      "Feasibility/risks/alternatives/timeline",
+      "Budget-to-aim links",
+      "Impact pathways/measures",
+      "Reviewer weaknesses"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Grant and fellowship applicants.",
+    "activation_conditions": [
+      "Plan or draft a research funding application against a specific call, aligning aims, approach, budget and impact with reviewer criteria."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-research-proposal. Keep: funder scoring, budget and impact differ from a supervisor/admissions/committee academic proposal."
+    ],
+    "related": [
+      "scholar-research-proposal"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "research-paper-summary",
-    "description": "Summarize a research paper's question, methods, findings, and limitations with faithful attribution to the available text.",
-    "path": "skills/research-paper-summary/SKILL.md",
+    "name": "scholar-journal-finder",
+    "description": "Compare target journals for a manuscript's scope, audience and article type, with current indexing, access and fee checks and a scope-match paragraph.",
+    "path": "skills/scholar-journal-finder/SKILL.md",
     "keywords": [
-      "research paper summary"
+      "Manuscript profile",
+      "Scope/type/audience/indexing/OA/fees/speed/limits",
+      "Cited-literature venues",
+      "Ambitious/realistic/safe tiers",
+      "Predatory checks",
+      "Scope-match paragraph"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Authors deciding where to submit.",
+    "activation_conditions": [
+      "Compare target journals for a manuscript's scope, audience and article type, with current indexing, access and fee checks and a scope-match paragraph."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-submission-checklist. Keep: choosing among venues differs from auditing and packaging for a selected journal."
+    ],
+    "related": [
+      "scholar-submission-checklist"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "research-pipeline",
-    "description": "Coordinate research from a defined question to reproducible analyses and communication using explicit stage inputs, decisions, handoffs, and completion evidence.",
-    "path": "skills/research-pipeline/SKILL.md",
+    "name": "scholar-literature-review",
+    "description": "Build literature reviews or related work from supplied sources using a synthesis matrix, theme-based argument and gap statement; also prepare evaluated source annotations.",
+    "path": "skills/scholar-literature-review/SKILL.md",
     "keywords": [
-      "research pipeline",
-      "end to end",
-      "orchestration",
-      "workflow manifest",
-      "run workflow phases",
-      "execute workflow plan",
-      "run research pipeline steps"
+      "Full synthesis matrix",
+      "Thematic/methodological/chronological/theoretical organization",
+      "Theme topic sentences",
+      "Comparisons",
+      "Field trajectory",
+      "Gap",
+      "Reference list",
+      "100-150 word summary/evaluation/relevance annotations"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Authors synthesizing a literature corpus.",
+    "activation_conditions": [
+      "Build literature reviews or related work from supplied sources using a synthesis matrix, theme-based argument and gap statement; also prepare evaluated source annotations."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-literature-review. Candidate for same review context/task: preserve theoretical organization, topic sentences and annotation mode plus evidence's review-type choices, scope/search/screen stages and verified-source rule."
+    ],
+    "related": [
+      "evidence-literature-review"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "research-planning",
-    "description": "Convert a research objective into a dependency-aware plan with concrete outputs, decision milestones, resource constraints, risks, and honest completion criteria.",
-    "path": "skills/research-planning/SKILL.md",
+    "name": "scholar-methodology-design",
+    "description": "Design a qualitative, quantitative or mixed-methods study with justified sampling, data collection, quality checks and limitations.",
+    "path": "skills/scholar-methodology-design/SKILL.md",
     "keywords": [
-      "timeline",
-      "research plan",
-      "schedule",
-      "milestones",
-      "project management"
+      "Qual/quant/mixed",
+      "Experimental/quasi/survey/longitudinal/case/ethnography/grounded/phenomenology/action/design science",
+      "Convergent/sequential mixed",
+      "Sampling frame/techniques",
+      "Power/information power",
+      "Pilot",
+      "Validity or trustworthiness",
+      "Limitations"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers designing a study or methods chapter.",
+    "activation_conditions": [
+      "Design a qualitative, quantitative or mixed-methods study with justified sampling, data collection, quality checks and limitations."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-survey-design. Keep: overall design, sampling and epistemic rigor differ from constructing question-level measurement instruments."
+    ],
+    "related": [
+      "scholar-survey-design"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "research-proposal-development",
-    "description": "Use when preparing or revising a research proposal, project rationale, or study plan for a named audience or call.",
-    "path": "skills/research-proposal-development/SKILL.md",
+    "name": "scholar-originality-integrity",
+    "description": "Review similarity and attribution concerns and help repair plagiarism, patchwriting or self-reuse problems through honest credit and rewriting.",
+    "path": "skills/scholar-originality-integrity/SKILL.md",
     "keywords": [
-      "research proposal development"
+      "Plagiarism/patchwriting/self-reuse",
+      "Similarity-report triage",
+      "Quote/cite/rewrite/cut",
+      "Policy-based self-reuse",
+      "AI disclosure",
+      "No AI authorship",
+      "No evasion"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Authors with plagiarism or disclosure concerns.",
+    "activation_conditions": [
+      "Review similarity and attribution concerns and help repair plagiarism, patchwriting or self-reuse problems through honest credit and rewriting."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-paraphrase-summarize. Keep: broader attribution/policy diagnosis differs from source-passage transformation and close-paraphrase checks."
+    ],
+    "related": [
+      "scholar-paraphrase-summarize"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "research-proposals",
-    "description": "Develop a research or funding proposal with a verified problem statement, coherent aims, feasible methods, risks, milestones, and evidence-bounded significance.",
-    "path": "skills/research-proposals/SKILL.md",
+    "name": "scholar-outline-builder",
+    "description": "Create an academic paper, essay, review or report outline with section purposes, evidence, topic sentences and word budgets.",
+    "path": "skills/scholar-outline-builder/SKILL.md",
     "keywords": [
-      "grant",
-      "research proposal",
-      "funding",
-      "proposal background"
+      "IMRaD/argumentative/review/report structures",
+      "Type/audience/limit",
+      "Thesis",
+      "Section purposes/key points/evidence/budgets",
+      "Logical flow",
+      "Paragraph topic sentences"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Paper, essay, review and report writers.",
+    "activation_conditions": [
+      "Create an academic paper, essay, review or report outline with section purposes, evidence, topic sentences and word budgets."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-research-planner. Keep: document structure and words differ from work schedules, capacity and dated milestones."
+    ],
+    "related": [
+      "scholar-research-planner"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "research-question",
-    "description": "Turn a research interest or unresolved finding into a bounded, answerable question with explicit concepts, scope, alternatives, and feasibility criteria.",
-    "path": "skills/research-question/SKILL.md",
+    "name": "scholar-paper-breakdown",
+    "description": "Explain a supplied paper or answer focused questions with page or section evidence, checking methods, tables and supplementary notes.",
+    "path": "skills/scholar-paper-breakdown/SKILL.md",
     "keywords": [
-      "research gap",
-      "topic",
-      "hypothesis",
-      "objectives",
-      "question"
+      "Breakdown of methods/results/contribution/limits",
+      "Reading levels",
+      "Direct Q&A",
+      "Page/section evidence",
+      "Short exact quotes",
+      "Tables/captions/footnotes/supplements",
+      "Outside-paper label",
+      "Paper continuity"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Readers, students and journal clubs.",
+    "activation_conditions": [
+      "Explain a supplied paper or answer focused questions with page or section evidence, checking methods, tables and supplementary notes."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-paper-summary. Keep: persistent paper Q&A, source-location evidence and supplement checks are distinct methods beyond the summary skill's three depths and citing-use guidance."
+    ],
+    "related": [
+      "evidence-paper-summary"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "research-question-development",
-    "description": "Use when turning a research topic, practical problem, or tentative hypothesis into a focused, answerable research question.",
-    "path": "skills/research-question-development/SKILL.md",
+    "name": "scholar-paper-sections",
+    "description": "Draft methods, results, discussion or conclusions from supplied study details and findings, preserving replicability and precise statistical reporting.",
+    "path": "skills/scholar-paper-sections/SKILL.md",
     "keywords": [
-      "research question development"
+      "Replicable methods",
+      "Question-ordered descriptives/inference",
+      "Test/df/p/effect",
+      "Tables/figures",
+      "Qualitative themes/quotes",
+      "Results-interpretation separation",
+      "Discussion six moves",
+      "No-new-data conclusion",
+      "Table shells"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Authors reporting supplied methods and findings.",
+    "activation_conditions": [
+      "Draft methods, results, discussion or conclusions from supplied study details and findings, preserving replicability and precise statistical reporting."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-results-interpreter. Keep: whole-section narrative, methodological detail and discussion logic differ from interpreting a specific test output."
+    ],
+    "related": [
+      "scholar-results-interpreter"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "research-results-interpretation",
-    "description": "Use when interpreting research results, statistical output, model estimates, or qualitative findings supplied by the user.",
-    "path": "skills/research-results-interpretation/SKILL.md",
+    "name": "scholar-paperpal-tools",
+    "description": "Help choose or use academic writing and research tools, including Paperpal when relevant, while respecting tools the user already uses.",
+    "path": "skills/scholar-paperpal-tools/SKILL.md",
     "keywords": [
-      "research results interpretation"
+      "Relevant tool capabilities",
+      "Paperpal overview",
+      "No prices/discount inventions",
+      "No urgency",
+      "No unverified relationship",
+      "Respect existing tools",
+      "Continue in-chat help"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Users explicitly asking about research tools or Paperpal.",
+    "activation_conditions": [
+      "Help choose or use academic writing and research tools, including Paperpal when relevant, while respecting tools the user already uses."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-scholar-help. Keep: external tool choice differs from help about the installed skill family's own capabilities. Verify current product claims when used.",
+      "Do not promote tools unsolicited or state current product features/affiliations without verification."
+    ],
+    "related": [
+      "scholar-scholar-help"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "research-validation",
-    "description": "Design and perform proportionate validation of scientific claims, analyses, models, and computational results with traceable evidence and explicit limits.",
-    "path": "skills/research-validation/SKILL.md",
+    "name": "scholar-paraphrase-summarize",
+    "description": "Paraphrase or summarize a supplied source passage with its citation retained, or identify and repair wording too close to the source.",
+    "path": "skills/scholar-paraphrase-summarize/SKILL.md",
     "keywords": [
-      "validate",
-      "verification",
-      "simulation",
-      "convergence",
-      "sensitivity",
-      "reproducibility"
+      "Understand passage",
+      "Meaning-preserving structural paraphrase",
+      "Short summary",
+      "Citation retained",
+      "Too-close phrases marked",
+      "Exact retained wording quoted"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Academic writers incorporating source passages.",
+    "activation_conditions": [
+      "Paraphrase or summarize a supplied source passage with its citation retained, or identify and repair wording too close to the source."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-originality-integrity. Keep: passage-level production and closeness checking differ from broad similarity-report/self-reuse/disclosure diagnosis."
+    ],
+    "related": [
+      "scholar-originality-integrity"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "research-venue-style-review",
-    "description": "Use when editing a scientific manuscript to meet a named journal, conference, or institutional style while protecting its evidence.",
-    "path": "skills/research-venue-style-review/SKILL.md",
+    "name": "scholar-peer-review-critique",
+    "description": "Review a paper or draft as a peer reviewer, giving page-referenced major and minor concerns, questions and a justified publication recommendation.",
+    "path": "skills/scholar-peer-review-critique/SKILL.md",
     "keywords": [
-      "research venue style review"
+      "Design/statistics/logic/transparency checklist",
+      "Major/minor issues",
+      "Page references",
+      "Author questions",
+      "Disposition recommendation",
+      "Fatal/fixable distinction",
+      "Repairs"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Reviewers or authors requesting pre-submission review.",
+    "activation_conditions": [
+      "Review a paper or draft as a peer reviewer, giving page-referenced major and minor concerns, questions and a justified publication recommendation."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-study-appraisal. Keep: editor-facing assessment and recommendation differ from formal design-specific bias-tool confidence appraisal."
+    ],
+    "related": [
+      "evidence-study-appraisal"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "research-workflow-coordination",
-    "description": "Use when coordinating multiple stages of a research project across questions, evidence gathering, analysis, writing, and deliverables.",
-    "path": "skills/research-workflow-coordination/SKILL.md",
+    "name": "scholar-qualitative-analysis",
+    "description": "Code supplied qualitative data and develop reviewed themes, a codebook, theme map and findings grounded in participant quotes.",
+    "path": "skills/scholar-qualitative-analysis/SKILL.md",
     "keywords": [
-      "research workflow coordination"
+      "Six-stage reflexive thematic analysis",
+      "Codebook with include/exclude/example",
+      "Theme map",
+      "Quote-supported interpretation",
+      "Reflexivity/audit/member checking/agreement when relevant",
+      "Anonymity"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers with interviews, focus groups, open responses or documents.",
+    "activation_conditions": [
+      "Code supplied qualitative data and develop reviewed themes, a codebook, theme map and findings grounded in participant quotes."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-data-extraction. Keep: generates themes from primary material; data extraction records themes already reported by studies."
+    ],
+    "related": [
+      "evidence-data-extraction"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "reviewer-response",
-    "description": "Convert editorial and reviewer comments into an evidence-based revision plan and point-by-point response linked to actual manuscript changes and verified analyses.",
-    "path": "skills/reviewer-response/SKILL.md",
+    "name": "scholar-research-communication",
+    "description": "Turn supplied research into a poster, timed talk, lay summary, policy brief or press material with audience-specific structure, notes and limitations.",
+    "path": "skills/scholar-research-communication/SKILL.md",
     "keywords": [
-      "reviewer response",
-      "rebuttal",
-      "response to reviewers",
-      "respond to reviewers",
-      "reviewer comments"
+      "Poster column/visual structure",
+      "10-15 minute talk",
+      "Three-minute thesis",
+      "Speaker notes/Q&A",
+      "150-250 word lay summary",
+      "Blog/social/policy/press",
+      "Draft-quote approval",
+      "Limitations"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers preparing talks, posters, public or policy artifacts.",
+    "activation_conditions": [
+      "Turn supplied research into a poster, timed talk, lay summary, policy brief or press material with audience-specific structure, notes and limitations."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-plain-language-research. Keep: artifact formats, talk timing, speaker Q&A and policy options differ from explanatory reading levels, natural frequencies and glossary."
+    ],
+    "related": [
+      "evidence-plain-language-research"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "reviewer-response-workflow",
-    "description": "Prepare a point-by-point response to journal or academic reviewer comments and reconcile each response with actual revisions.",
-    "path": "skills/reviewer-response-workflow/SKILL.md",
+    "name": "scholar-research-ethics",
+    "description": "Draft participant ethics plans, information sheets and consent forms covering recruitment, risk, privacy and data handling under institutional requirements.",
+    "path": "skills/scholar-research-ethics/SKILL.md",
     "keywords": [
-      "reviewer response workflow"
+      "Risks/benefits",
+      "Noncoercive recruitment",
+      "Vulnerable safeguards",
+      "Consent/withdrawal",
+      "Anonymity/confidentiality",
+      "Data storage/access/retention/deletion",
+      "Deception/debriefing",
+      "Institutional priority"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers planning human-participant studies.",
+    "activation_conditions": [
+      "Draft participant ethics plans, information sheets and consent forms covering recruitment, risk, privacy and data handling under institutional requirements."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-originality-integrity. Keep: human-participant protection and institutional review differ from authorship and attribution integrity."
+    ],
+    "related": [
+      "scholar-originality-integrity"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "scholarly-translation",
-    "description": "Use when translating academic or scientific writing between languages while retaining its technical meaning and citation structure.",
-    "path": "skills/scholarly-translation/SKILL.md",
+    "name": "scholar-research-planner",
+    "description": "Plan research work around deadlines, dependencies and weekly capacity with milestones, a Gantt-style schedule and near-term measurable targets.",
+    "path": "skills/scholar-research-planner/SKILL.md",
     "keywords": [
-      "scholarly translation"
+      "Fixed dates/windows/hours",
+      "Project phases",
+      "Backward planning",
+      "15-20 percent buffer",
+      "Measurable weekly goals",
+      "Phase table",
+      "Text Gantt",
+      "Month plan",
+      "Supervisor agenda"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers coordinating projects, theses or papers.",
+    "activation_conditions": [
+      "Plan research work around deadlines, dependencies and weekly capacity with milestones, a Gantt-style schedule and near-term measurable targets."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-outline-builder. Keep: dated work scheduling and capacity differ from section structure and word budgets."
+    ],
+    "related": [
+      "scholar-outline-builder"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "scientific-peer-review",
-    "description": "Use when critically reviewing a research manuscript, preprint, protocol, or scientific argument for an author or reviewer.",
-    "path": "skills/scientific-peer-review/SKILL.md",
+    "name": "scholar-research-proposal",
+    "description": "Draft or structure an academic research proposal with aligned problem, gap, questions, framework, methods, ethics and timeline.",
+    "path": "skills/scholar-research-proposal/SKILL.md",
     "keywords": [
-      "scientific peer review"
+      "Twelve-part proposal",
+      "Field/limit/headings",
+      "User ideas",
+      "Framework/methods/ethics/timeline",
+      "Gap-question-method alignment",
+      "Feasibility/originality checklist"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Students and PhD applicants addressing committees or supervisors.",
+    "activation_conditions": [
+      "Draft or structure an academic research proposal with aligned problem, gap, questions, framework, methods, ethics and timeline."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-grant-proposal. Keep: academic feasibility/alignment differs from funder-call scoring, budgets and measured impact."
+    ],
+    "related": [
+      "scholar-grant-proposal"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "scientific-reasoning",
-    "description": "Examine scientific arguments, hypotheses, mechanisms, and alternative explanations across empirical, qualitative, theoretical, and computational research.",
-    "path": "skills/scientific-reasoning/SKILL.md",
+    "name": "scholar-research-question",
+    "description": "Generate feasible topics or sharpen a study question into aims, objectives and hypotheses, checking resources and FINER criteria.",
+    "path": "skills/scholar-research-question/SKILL.md",
     "keywords": [
-      "mechanism",
-      "scientific argument",
-      "causal reasoning",
-      "explanation"
+      "Constraints",
+      "6-10 topic angles",
+      "Feasibility table",
+      "Top-two choices",
+      "Narrowing",
+      "Question types",
+      "PICO/PECO/PEO/SPIDER",
+      "FINER",
+      "SMART objectives",
+      "H0/H1/variables"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Students and researchers defining a project.",
+    "activation_conditions": [
+      "Generate feasible topics or sharpen a study question into aims, objectives and hypotheses, checking resources and FINER criteria."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-research-question. Keep: study ideation, feasibility, objectives and hypotheses differ from an evidence-search question with PCC, synonyms and eligibility limits."
+    ],
+    "related": [
+      "evidence-research-question"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "scientific-visuals",
-    "description": "Create and inspect scientific figures and tables with explicit data provenance, uncertainty meaning, physical dimensions, and reproducible local exports.",
-    "path": "skills/scientific-visuals/SKILL.md",
+    "name": "scholar-results-interpreter",
+    "description": "Interpret supplied statistical output and write a plain-language finding plus field-style reporting with effect magnitude and caveats.",
+    "path": "skills/scholar-results-interpreter/SKILL.md",
     "keywords": [
-      "figure",
-      "chart",
-      "plot",
-      "visualization",
-      "numerical table",
-      "pareto"
+      "Identify test/values",
+      "Plain-language result",
+      "Field-style report",
+      "Practical magnitude",
+      "Assumptions/small-N/wide-CI/multiplicity",
+      "No causal overreach"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers reading statistical software output.",
+    "activation_conditions": [
+      "Interpret supplied statistical output and write a plain-language finding plus field-style reporting with effect magnitude and caveats."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-statistics-explained. Keep: actual-output interpretation and reportable finding differ from concept teaching and statistical-trap explanation."
+    ],
+    "related": [
+      "evidence-statistics-explained"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "scientific-writing",
-    "description": "Use when drafting, revising, or critically editing scientific prose, including papers, research reports, and abstracts.",
-    "path": "skills/scientific-writing/SKILL.md",
+    "name": "scholar-reviewer-response",
+    "description": "Plan revisions and draft point-by-point replies to reviewers with evidence-based disagreement and locations of actual manuscript changes.",
+    "path": "skills/scholar-reviewer-response/SKILL.md",
     "keywords": [
-      "scientific writing"
+      "Reviewer X.Y ledger",
+      "Easy/analysis/clarification/disagree classes",
+      "Priorities",
+      "Direct response",
+      "Actual page/line changes",
+      "Evidence-based disagreement/compromise",
+      "Editor note"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Authors revising after peer review.",
+    "activation_conditions": [
+      "Plan revisions and draft point-by-point replies to reviewers with evidence-based disagreement and locations of actual manuscript changes."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-peer-review-critique. Keep: responds to received assessment and tracks revisions; peer review authors assessment and recommends disposition. Do not invent completed changes.",
+      "Do not describe proposed or unperformed revisions as completed changes."
+    ],
+    "related": [
+      "scholar-peer-review-critique"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "source-verification",
-    "description": "Verify a scholarly source's identity, version, provenance, publication status, and support for a specific claim without confusing metadata checks with quality appraisal.",
-    "path": "skills/source-verification/SKILL.md",
+    "name": "scholar-scholar-help",
+    "description": "Explain the academic workflow's capabilities and starter requests when the user asks for a menu or help getting started.",
+    "path": "skills/scholar-scholar-help/SKILL.md",
     "keywords": [
-      "verify citation",
-      "doi",
-      "retraction",
-      "source credibility"
+      "Ten-stage capability/examples table",
+      "Actionable opening",
+      "Three field/level-adapted starters"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Users explicitly requesting capabilities or starter help.",
+    "activation_conditions": [
+      "Explain the academic workflow's capabilities and starter requests when the user asks for a menu or help getting started."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-scholar-studio. Keep as explicit help mode: a capability menu differs from artifact-first diagnosis and carrying out a selected task."
+    ],
+    "related": [
+      "scholar-scholar-studio"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "specialist-database-selection",
-    "description": "Select and compare research databases or archives for a subject, source type, and search purpose, including access and coverage constraints.",
-    "path": "skills/specialist-database-selection/SKILL.md",
+    "name": "scholar-scholar-studio",
+    "description": "Identify the stage of a broad academic research request and route to the appropriate design, analysis, writing or publication specialist.",
+    "path": "skills/scholar-scholar-studio/SKILL.md",
     "keywords": [
-      "specialist database selection"
+      "Clear task direct action",
+      "File-first reading",
+      "Missing-file honesty",
+      "3-5 line artifact overview",
+      "Ten-stage routing",
+      "Three starters",
+      "Next step"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Users onboarding or bringing underspecified artifacts.",
+    "activation_conditions": [
+      "Identify the stage of a broad academic research request and route to the appropriate design, analysis, writing or publication specialist."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-research-evidence-finder. Keep scope distinction: full academic lifecycle and file-first handling differ from the evidence-focused discovery/appraisal front door."
+    ],
+    "related": [
+      "evidence-research-evidence-finder"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "statistical-analysis",
-    "description": "Plan and execute reproducible quantitative analysis with a defined estimand, design-aware models, diagnostics, uncertainty, and restrained interpretation.",
-    "path": "skills/statistical-analysis/SKILL.md",
+    "name": "scholar-source-evaluation",
+    "description": "Judge the credibility, bias, relevance and appropriate use of a paper, website, report or journal, including venue warning signs.",
+    "path": "skills/scholar-source-evaluation/SKILL.md",
     "keywords": [
-      "statistics",
-      "regression",
-      "statistical analysis",
-      "data analysis",
-      "p-value",
-      "confidence interval",
-      "credible interval",
-      "odds ratio",
-      "risk ratio",
-      "risk difference"
+      "Authority/publication/currency/evidence/purpose/relevance",
+      "Predatory warning signs",
+      "Strong/care/avoid verdict",
+      "Viewpoint-versus-evidence use"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Authors evaluating papers, websites, reports and journals.",
+    "activation_conditions": [
+      "Judge the credibility, bias, relevance and appropriate use of a paper, website, report or journal, including venue warning signs."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: evidence-source-verification. Keep: broad credibility/relevance and viewpoint-use guidance differ from identity, DOI, retraction and correction checks."
+    ],
+    "related": [
+      "evidence-source-verification"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "survey-interview-design",
-    "description": "Design or improve research surveys and interview guides with attention to measurement, participant experience, sampling, and pilot testing.",
-    "path": "skills/survey-interview-design/SKILL.md",
+    "name": "scholar-submission-checklist",
+    "description": "Check a manuscript against a selected journal's guidelines and draft a submission or resubmission cover letter with required declarations.",
+    "path": "skills/scholar-submission-checklist/SKILL.md",
     "keywords": [
-      "survey interview design"
+      "Fit/format/title/content/figures/references/declarations/language",
+      "Guideline-based pass/fix",
+      "One-page letter",
+      "Scope match",
+      "Resubmission summary",
+      "User facts for declarations"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Authors preparing submission or resubmission.",
+    "activation_conditions": [
+      "Check a manuscript against a selected journal's guidelines and draft a submission or resubmission cover letter with required declarations."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-journal-finder. Keep: packaging for a selected venue differs from choosing venues. Approval/originality/concurrent-submission assertions require supplied facts.",
+      "Do not attest originality, concurrent-submission or all-author approval without supplied facts."
+    ],
+    "related": [
+      "scholar-journal-finder"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "systematic-review",
-    "description": "Plan and conduct protocol-driven evidence reviews with explicit eligibility, reproducible searching, study linkage, screening records, appraisal, and transparent synthesis.",
-    "path": "skills/systematic-review/SKILL.md",
+    "name": "scholar-survey-design",
+    "description": "Design or improve questionnaires and interview guides with construct-to-item mapping, neutral wording, balanced responses and piloting.",
+    "path": "skills/scholar-survey-design/SKILL.md",
     "keywords": [
-      "systematic review",
-      "scoping review",
-      "prisma",
-      "screening"
+      "Question-construct-item map",
+      "Validated scale caution",
+      "Neutral single-idea items",
+      "Balanced options",
+      "Sensitive ordering",
+      "Prefer-not-to-say",
+      "Pilot/time/reliability",
+      "Interview opening/probes/closing"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers designing primary data collection.",
+    "activation_conditions": [
+      "Design or improve questionnaires and interview guides with construct-to-item mapping, neutral wording, balanced responses and piloting."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-methodology-design. Keep: question-level measurement design and piloting differ from overall design/sampling/rigor planning."
+    ],
+    "related": [
+      "scholar-methodology-design"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "systematic-review-protocol",
-    "description": "Develop or revise a systematic or scoping review protocol, including eligibility, screening, extraction, appraisal, and synthesis plans.",
-    "path": "skills/systematic-review-protocol/SKILL.md",
+    "name": "scholar-theoretical-framework",
+    "description": "Compare candidate theories for a study, map constructs to variables or themes, and draft a justified framework with a conceptual diagram.",
+    "path": "skills/scholar-theoretical-framework/SKILL.md",
     "keywords": [
-      "systematic review protocol"
+      "2-4 candidate theories",
+      "Core constructs/use/strengths/limits",
+      "Justified combination",
+      "Construct-variable/theme mapping",
+      "Moderator/mediator diagram",
+      "Justification prose"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Researchers mapping concepts, variables and relationships.",
+    "activation_conditions": [
+      "Compare candidate theories for a study, map constructs to variables or themes, and draft a justified framework with a conceptual diagram."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-research-question. Keep: model comparison and construct relationships differ from project questions, aims, objectives and hypotheses."
+    ],
+    "related": [
+      "scholar-research-question"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "teaching-materials",
-    "description": "Design lessons, lecture notes, problem sets, examinations, and worked solutions with aligned learning goals, defensible difficulty, and checked mathematical or scientific content.",
-    "path": "skills/teaching-materials/SKILL.md",
+    "name": "scholar-thesis-dissertation",
+    "description": "Plan or review a thesis across chapters, check scientific alignment, turn supervisor feedback into revisions and prepare defense questions.",
+    "path": "skills/scholar-thesis-dissertation/SKILL.md",
     "keywords": [
-      "homework",
-      "exam",
-      "quiz",
-      "assessment",
-      "worksheet",
-      "solutions"
+      "Chapter purposes/budgets",
+      "Problem-gap-question-method-findings-conclusion alignment",
+      "Specific paragraph fixes",
+      "Supervisor revision list",
+      "Chapter-wise viva",
+      "Author ownership"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Thesis, dissertation and capstone authors.",
+    "activation_conditions": [
+      "Plan or review a thesis across chapters, check scientific alignment, turn supervisor feedback into revisions and prepare defense questions."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-outline-builder. Keep: cross-chapter alignment, supervisor feedback and viva support differ from document skeletons and word budgets."
+    ],
+    "related": [
+      "scholar-outline-builder"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "tex-build-repair",
-    "description": "Diagnose and repair LaTeX build failures and consequential warnings while preserving document meaning, project structure, and reproducible build instructions.",
-    "path": "skills/tex-build-repair/SKILL.md",
+    "name": "scholar-word-reduction",
+    "description": "Reduce supplied academic text to a word limit while preserving findings, numbers, citations and qualified claims, reporting the count and removals.",
+    "path": "skills/scholar-word-reduction/SKILL.md",
     "keywords": [
-      "compile",
-      "latex error",
-      "latex build",
-      "missing package",
-      "build failure",
-      "latex cleanup"
+      "Count current/target",
+      "Ordered cuts",
+      "Merge sentences",
+      "Retain results/numbers/citations/terms",
+      "Report actual count/removals",
+      "Disclose unavoidable loss"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "users": "Authors cutting abstracts, papers or applications.",
+    "activation_conditions": [
+      "Reduce supplied academic text to a word limit while preserving findings, numbers, citations and qualified claims, reporting the count and removals."
+    ],
+    "scope_boundaries": [
+      "Do not activate solely because the family was used earlier or for unrelated chat.",
+      "Use the adjacent specialist when its distinct task is requested: scholar-academic-editing. Keep: constrained measurable editing with loss disclosure differs from three-depth general editing. Preserve scientifically necessary hedges.",
+      "Do not remove hedges that carry scientific uncertainty; preserve quantitative and source evidence."
+    ],
+    "related": [
+      "scholar-academic-editing"
+    ],
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   },
   {
-    "name": "tex-figures-tables",
-    "description": "Construct and integrate research figures and tables in LaTeX with faithful data, interpretable labels, accessible encodings, and checked placement.",
-    "path": "skills/tex-figures-tables/SKILL.md",
+    "name": "visuals-scientific-visual-table-style",
+    "description": "Design and inspect evidence-faithful scientific charts, analytical figures and numeric tables at final size; select truthful forms and retain editable sources. Exclude explicit generative-art requests.",
+    "path": "skills/visuals-scientific-visual-table-style/SKILL.md",
     "keywords": [
-      "tikz",
-      "pgfplots",
-      "latex table",
-      "latex figure",
-      "longtable"
+      "Benchmark/result tables, uncertainty plots, distributions, calibration or Pareto trade-offs.",
+      "Scientific figure/table redesign or quantitative visual QA.",
+      "Cross-figure scientific visual consistency."
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "tex-layout",
-    "description": "Improve LaTeX page structure, typography, spacing, and navigation through measured layout decisions and inspection of freshly built pages.",
-    "path": "skills/tex-layout/SKILL.md",
-    "keywords": [
-      "font",
-      "layout",
-      "multilingual",
-      "macro",
-      "hyperref",
-      "cross-reference"
+    "users": "Researchers and technical authors producing manuscript, slide, web or document figures/tables; not explicit generative-art requests.",
+    "activation_conditions": [
+      "Scientific/research/quantitative/statistical/benchmark/data-analysis charts, tables and analytical diagrams.",
+      "Explicit invocation establishes default visual standard for scientific artifacts in the current task unless overridden.",
+      "Excludes explicit generative-image/artwork/photorealistic requests unless analytical and generative workflows are explicitly combined."
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "theoretical-framework-development",
-    "description": "Develop or evaluate a theoretical or conceptual framework that connects a research question, assumptions, constructs, and expected relationships.",
-    "path": "skills/theoretical-framework-development/SKILL.md",
-    "keywords": [
-      "theoretical framework development"
+    "scope_boundaries": [
+      "Explicit artwork, image generation or photorealistic scene without combined analytical task.",
+      "General manuscript/research planning with no visual output.",
+      "Pure LaTeX math/float syntax without a scientific evidence-design task."
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
-  },
-  {
-    "name": "thesis-preparation",
-    "description": "Plan, organize, draft, and prepare theses and dissertations with explicit contribution boundaries, institutional checks, reproducible sources, and evidence-based viva preparation.",
-    "path": "skills/thesis-preparation/SKILL.md",
-    "keywords": [
-      "thesis",
-      "dissertation",
-      "viva",
-      "degree"
+    "related": [
+      "latex-tables",
+      "latex-pgfplots-charts",
+      "latex-tikz-diagrams",
+      "latex-figures-images",
+      "academic-pptx"
     ],
-    "execution": "Instruction-based assistance; bundled tools require explicit execution and their documented prerequisites."
+    "execution": "Instructions; actual research/tool execution requires the documented inputs, dependencies and available host capabilities."
   }
 ]

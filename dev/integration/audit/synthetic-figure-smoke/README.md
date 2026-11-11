@@ -1,0 +1,1 @@
+Synthetic implementation examples only. Three SVG/PNG figures generated with supplied active templates and visually inspected. Endpoint clipping/errorbar-label overlap corrected; values and dimensions unchanged. No research result or empirical experiment is claimed.

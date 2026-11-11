@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "source_files_preserved": 600,
+  "source_skills_mapped": 118,
+  "canonical_methods": 116,
+  "compatibility_entries": 2,
+  "unmerged_complete_bodies": 114,
+  "active_skill_yaml_valid": 118,
+  "active_skill_links_resolved": 427,
+  "semantic_merged_method_review": "audit/review-118/reports/final-content-review.json",
+  "scope": "File preservation, complete active source bodies and package metadata; not research execution or host installation."
+}

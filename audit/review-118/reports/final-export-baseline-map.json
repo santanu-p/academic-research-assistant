@@ -1,0 +1,3004 @@
+{
+  "files": [
+    {
+      "original": ".codex-plugin/plugin.json",
+      "sha256": "c771798e2842471e181b768d1f74dcd994b19f1161d09d58805a7fdd6a2a0000",
+      "exported": "audit/baseline/.codex-plugin/plugin.json"
+    },
+    {
+      "original": "agents/consistency-auditor.md",
+      "sha256": "18f867385dbf9be172a30ce55e0f3e79c778367c3a740bb559b3a5b5cc4f8d9f",
+      "exported": "agents/consistency-auditor.md"
+    },
+    {
+      "original": "agents/evidence-librarian.md",
+      "sha256": "1a3666e357f8f9ba3fcc3a369bdb4b168d863d268f15a187bb0e9216276beff9",
+      "exported": "agents/evidence-librarian.md"
+    },
+    {
+      "original": "agents/failure-diagnoser.md",
+      "sha256": "807f0bfa078b7678cb7b21101b6b1ae74c96ea74df48e068cb4ca9fda2d216e0",
+      "exported": "agents/failure-diagnoser.md"
+    },
+    {
+      "original": "agents/manuscript-editor.md",
+      "sha256": "259061f498f97a089d9bb1f834baf5c7193879e57f47e6d53655d0cba9ec19e0",
+      "exported": "agents/manuscript-editor.md"
+    },
+    {
+      "original": "agents/methodologist.md",
+      "sha256": "3ac4d08cb117e657a75e6964775ebb3081e817f2f02819fc62f2ca4a0cf015bc",
+      "exported": "agents/methodologist.md"
+    },
+    {
+      "original": "agents/README.md",
+      "sha256": "e6aaf2da9423ae7ab059c345e4f3f1e3509e01a7a509f0de4e2d640be5fb78af",
+      "exported": "agents/README.md"
+    },
+    {
+      "original": "agents/reproducibility-reviewer.md",
+      "sha256": "0e98ff79ae5a179555d3200379ea64d9a7d0293130fab78329c4d1fc95453390",
+      "exported": "agents/reproducibility-reviewer.md"
+    },
+    {
+      "original": "agents/venue-compliance-gate.md",
+      "sha256": "c6fe376fbec81ca7bbc390eba04959828533c113cd70a7ba0f29aa40acfaaec8",
+      "exported": "agents/venue-compliance-gate.md"
+    },
+    {
+      "original": "audit/adaptations.json",
+      "sha256": "57e5043e8a1588ae466e55e8e6a07320bc928f62a6d9dd0d61acb6040d2600f1",
+      "exported": "audit/adaptations.json"
+    },
+    {
+      "original": "audit/arms-audit.json",
+      "sha256": "26baa68429292308a68923f7fe753c3f11100f6c50aae8067bf9f056b52acc4c",
+      "exported": "audit/arms-audit.json"
+    },
+    {
+      "original": "audit/arms-audit.md",
+      "sha256": "63e41c762c3f179b031e3e83b53a00257f412ecdb310614aa7937ed4a4fcfd1d",
+      "exported": "audit/arms-audit.md"
+    },
+    {
+      "original": "audit/collection-audit.json",
+      "sha256": "5faa28b07320a225ebe9683579e1ade2c8d43e6c0596bbdd5c101b82ebca3f87",
+      "exported": "audit/collection-audit.json"
+    },
+    {
+      "original": "audit/collection-audit.md",
+      "sha256": "d456d0f352ced26041418552e6597a62a144c30c2c22988c192005a12eca404e",
+      "exported": "audit/collection-audit.md"
+    },
+    {
+      "original": "audit/completion-matrix.md",
+      "sha256": "2f413dbb43817e3e9de05069d6523d1e7ee2e42db26f4b08f839cd964ce356ba",
+      "exported": "audit/completion-matrix.md"
+    },
+    {
+      "original": "audit/component-adaptations.json",
+      "sha256": "d85a6188838da13fe37bd30cf21b7c84dce16be8160d3e7174703d0c5acbe884",
+      "exported": "audit/component-adaptations.json"
+    },
+    {
+      "original": "audit/environment-status.json",
+      "sha256": "d316f73b7c7ae924d37fb52f540f1918bf4a03c48e8f976c42ff5f2524364071",
+      "exported": "audit/environment-status.json"
+    },
+    {
+      "original": "audit/inventory-summary.json",
+      "sha256": "4fc68f5869039bf079f89b9c2807ff9b91576c77664803b288724fbf8b98e990",
+      "exported": "audit/inventory-summary.json"
+    },
+    {
+      "original": "audit/mcp-smoke.json",
+      "sha256": "b4479ad715d83b666964b1e9d7af684982a8c219111cf80b7c130e8ed38e69b5",
+      "exported": "audit/mcp-smoke.json"
+    },
+    {
+      "original": "audit/numerical-smoke.json",
+      "sha256": "ae80fc920f7e9a53c064007ff9df3aa2744a2129327b3837bb8833980c6a4e78",
+      "exported": "audit/numerical-smoke.json"
+    },
+    {
+      "original": "audit/package-files.json",
+      "sha256": "e2e5d2d79a740f709cb5d1a06643b6aff56c831f5ffe33dd59eb2becb4509379",
+      "exported": "audit/package-files.json"
+    },
+    {
+      "original": "audit/package-review.md",
+      "sha256": "64008e6ae43384307943782fb901aec41cb0d250f5c6f0c08ab20986401c70f1",
+      "exported": "audit/package-review.md"
+    },
+    {
+      "original": "audit/package-validation.json",
+      "sha256": "57ed4d79bec4c0d9b40e6da8a32f9fc0785b2e3dfb8a35a773a5ebc90410d999",
+      "exported": "audit/package-validation.json"
+    },
+    {
+      "original": "audit/reconstruction-result.json",
+      "sha256": "bdf18d67fad8eae1898d353fd299193bf14624306c4b71ac40e505a17661532a",
+      "exported": "audit/reconstruction-result.json"
+    },
+    {
+      "original": "audit/REFERENCE-AUDIT.md",
+      "sha256": "26ef8ca4e9d4738c2338570d96ca7f1de653d5dfa2825c3a03c9e37f8d3f83a7",
+      "exported": "audit/REFERENCE-AUDIT.md"
+    },
+    {
+      "original": "audit/reference-links.json",
+      "sha256": "4af8c02146dea70b48062b64a5d3da7cd3633464d83445e21d2f17a9e9673101",
+      "exported": "audit/reference-links.json"
+    },
+    {
+      "original": "audit/source-inspection.json",
+      "sha256": "1776a21c68549e54a12a1433b034d556d2a30b16bf5225473a9088958f9854d4",
+      "exported": "audit/source-inspection.json"
+    },
+    {
+      "original": "audit/source-map.csv",
+      "sha256": "05e52b32eb32f8f37f68db01457e1e60d90f81a62fb6f8cc2e9910d1fbfeabe0",
+      "exported": "audit/source-map.csv"
+    },
+    {
+      "original": "audit/source-map.json",
+      "sha256": "5ef2bf4ee81c36aa4a40108f9f0a1052b9c22486bccfcdebd0468fbfb311d5cd",
+      "exported": "audit/source-map.json"
+    },
+    {
+      "original": "audit/suite-results.json",
+      "sha256": "34ad3721f5c0e905eb1d477336963bbf8c9897a911ab85a466dfb34c5975164e",
+      "exported": "audit/suite-results.json"
+    },
+    {
+      "original": "audit/synthetic-figure-smoke/cost_frontier.png",
+      "sha256": "6f1c9a8f362df95d2325ba826d560f2b945b906d8834ce5de16b91a37cac49cd",
+      "exported": "audit/synthetic-figure-smoke/cost_frontier.png"
+    },
+    {
+      "original": "audit/synthetic-figure-smoke/cost_frontier.svg",
+      "sha256": "6610d6305aa92226aca7a4487281fba90af5cbe29d07375d7acf343ec7d8045d",
+      "exported": "audit/synthetic-figure-smoke/cost_frontier.svg"
+    },
+    {
+      "original": "audit/synthetic-figure-smoke/model_comparison.png",
+      "sha256": "859c090e335822088428a6abb8882b6c6256f7be7185498afc5afcc446b2e005",
+      "exported": "audit/synthetic-figure-smoke/model_comparison.png"
+    },
+    {
+      "original": "audit/synthetic-figure-smoke/model_comparison.svg",
+      "sha256": "90a51f4aa5f86524829b843df5a42029885ecf3473131ea8882c271e57db8020",
+      "exported": "audit/synthetic-figure-smoke/model_comparison.svg"
+    },
+    {
+      "original": "audit/synthetic-figure-smoke/README.md",
+      "sha256": "f6bd5c6f7ea0f3f87ea6987fb59cb6ed3955acb28c8492f489278fab284ae4ea",
+      "exported": "audit/synthetic-figure-smoke/README.md"
+    },
+    {
+      "original": "audit/synthetic-figure-smoke/reliability_curve.png",
+      "sha256": "40e5d446e38b2558504981dae67e3d361b80ba3aa3115ffb047077ade3ed4725",
+      "exported": "audit/synthetic-figure-smoke/reliability_curve.png"
+    },
+    {
+      "original": "audit/synthetic-figure-smoke/reliability_curve.svg",
+      "sha256": "94767af38be5812953ddd3249f406267ff64daa1193863b0958b830ef53e3cc1",
+      "exported": "audit/synthetic-figure-smoke/reliability_curve.svg"
+    },
+    {
+      "original": "audit/VERIFICATION.md",
+      "sha256": "c9b060e358e361b36e67a0cc35318ee4478df41e637e030663734bc61c4a9549",
+      "exported": "audit/VERIFICATION.md"
+    },
+    {
+      "original": "catalog/routes.json",
+      "sha256": "2c51ea2a4678b054e2a80e1b5dccf3bebb8040595a29925e6ab99378599eb041",
+      "exported": "audit/baseline/catalog/routes.json"
+    },
+    {
+      "original": "catalog/skills.json",
+      "sha256": "6fc9d1bf28fdc69338456d771bae68989862fda90f8e97c3152fa0ab91d4157d",
+      "exported": "audit/baseline/catalog/skills.json"
+    },
+    {
+      "original": "dev/build_tools/adapt_arms.py",
+      "sha256": "83a327fbbd18179e67dbc383aae4841f04f3d3fd79403f067e7edbb980f44c7d",
+      "exported": "dev/build_tools/adapt_arms.py"
+    },
+    {
+      "original": "dev/build_tools/adapt_visuals.py",
+      "sha256": "663dd62fec7595eda0ac18912a79c7b4dd340b2341f9b9150967a8335921bbc3",
+      "exported": "dev/build_tools/adapt_visuals.py"
+    },
+    {
+      "original": "dev/build_tools/build_plugin.py",
+      "sha256": "bf06cbeac01ce1ed617ebc0e78ea9888585b1fe2861fcf1e6d5f58333409e1b4",
+      "exported": "dev/build_tools/build_plugin.py"
+    },
+    {
+      "original": "dev/build_tools/inspect_sources.py",
+      "sha256": "d6557a0516722e97134b796f0bfaeb1e381a19cf5c10062a5061aa47f21c8cb1",
+      "exported": "dev/build_tools/inspect_sources.py"
+    },
+    {
+      "original": "dev/build_tools/package_release.py",
+      "sha256": "f1797c21f7b819475f85069377f7ac69b8cd572f36f257438c458117a76e68d5",
+      "exported": "dev/build_tools/package_release.py"
+    },
+    {
+      "original": "dev/build_tools/prepare_development_bundle.py",
+      "sha256": "6657eba3511e9f4882bef254486183882e8fbaf398fbec339cbec529945758d7",
+      "exported": "dev/build_tools/prepare_development_bundle.py"
+    },
+    {
+      "original": "dev/build_tools/reconstruct.py",
+      "sha256": "eed1d0c2e3faf972dd2d9bdcb49919d44af1d2783c80adcd6ce81d979e6fcd90",
+      "exported": "dev/build_tools/reconstruct.py"
+    },
+    {
+      "original": "dev/build_tools/smoke_runtime.py",
+      "sha256": "835e1996eeae438c36e702dcbe29d71b42780ec7429f41c152e0e76ab69130d8",
+      "exported": "dev/build_tools/smoke_runtime.py"
+    },
+    {
+      "original": "dev/build_tools/validate_package.py",
+      "sha256": "80af53904f78ee4da16370222f17b9951ae2479050665d50466ff746741f2df6",
+      "exported": "dev/build_tools/validate_package.py"
+    },
+    {
+      "original": "dev/docs/design.md",
+      "sha256": "bea317343aff60d61894a4485189f7d3d03f32c62836ff4c3876e0afeae4e6f0",
+      "exported": "dev/docs/design.md"
+    },
+    {
+      "original": "dev/docs/implementation-plan.md",
+      "sha256": "c35e44da6422f869c272c2f00c5c2d8ca642769a2e1c502e7c62485594a7be0d",
+      "exported": "dev/docs/implementation-plan.md"
+    },
+    {
+      "original": "dev/docs/progress.md",
+      "sha256": "e33efd8ce648e4b00143a40eaa13fc9a411bf63adf684e7a0ab6bb19e91ec507",
+      "exported": "dev/docs/progress.md"
+    },
+    {
+      "original": "dev/integration/agents/consistency-auditor.md",
+      "sha256": "18f867385dbf9be172a30ce55e0f3e79c778367c3a740bb559b3a5b5cc4f8d9f",
+      "exported": "dev/integration/agents/consistency-auditor.md"
+    },
+    {
+      "original": "dev/integration/agents/evidence-librarian.md",
+      "sha256": "1a3666e357f8f9ba3fcc3a369bdb4b168d863d268f15a187bb0e9216276beff9",
+      "exported": "dev/integration/agents/evidence-librarian.md"
+    },
+    {
+      "original": "dev/integration/agents/failure-diagnoser.md",
+      "sha256": "807f0bfa078b7678cb7b21101b6b1ae74c96ea74df48e068cb4ca9fda2d216e0",
+      "exported": "dev/integration/agents/failure-diagnoser.md"
+    },
+    {
+      "original": "dev/integration/agents/manuscript-editor.md",
+      "sha256": "259061f498f97a089d9bb1f834baf5c7193879e57f47e6d53655d0cba9ec19e0",
+      "exported": "dev/integration/agents/manuscript-editor.md"
+    },
+    {
+      "original": "dev/integration/agents/methodologist.md",
+      "sha256": "3ac4d08cb117e657a75e6964775ebb3081e817f2f02819fc62f2ca4a0cf015bc",
+      "exported": "dev/integration/agents/methodologist.md"
+    },
+    {
+      "original": "dev/integration/agents/README.md",
+      "sha256": "e6aaf2da9423ae7ab059c345e4f3f1e3509e01a7a509f0de4e2d640be5fb78af",
+      "exported": "dev/integration/agents/README.md"
+    },
+    {
+      "original": "dev/integration/agents/reproducibility-reviewer.md",
+      "sha256": "0e98ff79ae5a179555d3200379ea64d9a7d0293130fab78329c4d1fc95453390",
+      "exported": "dev/integration/agents/reproducibility-reviewer.md"
+    },
+    {
+      "original": "dev/integration/agents/venue-compliance-gate.md",
+      "sha256": "c6fe376fbec81ca7bbc390eba04959828533c113cd70a7ba0f29aa40acfaaec8",
+      "exported": "dev/integration/agents/venue-compliance-gate.md"
+    },
+    {
+      "original": "dev/integration/audit/adaptations.json",
+      "sha256": "57e5043e8a1588ae466e55e8e6a07320bc928f62a6d9dd0d61acb6040d2600f1",
+      "exported": "dev/integration/audit/adaptations.json"
+    },
+    {
+      "original": "dev/integration/audit/arms-audit.json",
+      "sha256": "26baa68429292308a68923f7fe753c3f11100f6c50aae8067bf9f056b52acc4c",
+      "exported": "dev/integration/audit/arms-audit.json"
+    },
+    {
+      "original": "dev/integration/audit/arms-audit.md",
+      "sha256": "63e41c762c3f179b031e3e83b53a00257f412ecdb310614aa7937ed4a4fcfd1d",
+      "exported": "dev/integration/audit/arms-audit.md"
+    },
+    {
+      "original": "dev/integration/audit/collection-audit.json",
+      "sha256": "5faa28b07320a225ebe9683579e1ade2c8d43e6c0596bbdd5c101b82ebca3f87",
+      "exported": "dev/integration/audit/collection-audit.json"
+    },
+    {
+      "original": "dev/integration/audit/collection-audit.md",
+      "sha256": "d456d0f352ced26041418552e6597a62a144c30c2c22988c192005a12eca404e",
+      "exported": "dev/integration/audit/collection-audit.md"
+    },
+    {
+      "original": "dev/integration/audit/completion-matrix.md",
+      "sha256": "2f413dbb43817e3e9de05069d6523d1e7ee2e42db26f4b08f839cd964ce356ba",
+      "exported": "dev/integration/audit/completion-matrix.md"
+    },
+    {
+      "original": "dev/integration/audit/component-adaptations.json",
+      "sha256": "d85a6188838da13fe37bd30cf21b7c84dce16be8160d3e7174703d0c5acbe884",
+      "exported": "dev/integration/audit/component-adaptations.json"
+    },
+    {
+      "original": "dev/integration/audit/environment-status.json",
+      "sha256": "d316f73b7c7ae924d37fb52f540f1918bf4a03c48e8f976c42ff5f2524364071",
+      "exported": "dev/integration/audit/environment-status.json"
+    },
+    {
+      "original": "dev/integration/audit/inventory-summary.json",
+      "sha256": "4fc68f5869039bf079f89b9c2807ff9b91576c77664803b288724fbf8b98e990",
+      "exported": "dev/integration/audit/inventory-summary.json"
+    },
+    {
+      "original": "dev/integration/audit/mcp-smoke.json",
+      "sha256": "b4479ad715d83b666964b1e9d7af684982a8c219111cf80b7c130e8ed38e69b5",
+      "exported": "dev/integration/audit/mcp-smoke.json"
+    },
+    {
+      "original": "dev/integration/audit/numerical-smoke.json",
+      "sha256": "ae80fc920f7e9a53c064007ff9df3aa2744a2129327b3837bb8833980c6a4e78",
+      "exported": "dev/integration/audit/numerical-smoke.json"
+    },
+    {
+      "original": "dev/integration/audit/package-review.md",
+      "sha256": "64008e6ae43384307943782fb901aec41cb0d250f5c6f0c08ab20986401c70f1",
+      "exported": "dev/integration/audit/package-review.md"
+    },
+    {
+      "original": "dev/integration/audit/package-validation.json",
+      "sha256": "4de942bd8edabd83799fbc52d3e992f9c2a6f24bd67dc3a3fcfb572ad1275f87",
+      "exported": "dev/integration/audit/package-validation.json"
+    },
+    {
+      "original": "dev/integration/audit/reconstruction-result.json",
+      "sha256": "bdf18d67fad8eae1898d353fd299193bf14624306c4b71ac40e505a17661532a",
+      "exported": "dev/integration/audit/reconstruction-result.json"
+    },
+    {
+      "original": "dev/integration/audit/REFERENCE-AUDIT.md",
+      "sha256": "26ef8ca4e9d4738c2338570d96ca7f1de653d5dfa2825c3a03c9e37f8d3f83a7",
+      "exported": "dev/integration/audit/REFERENCE-AUDIT.md"
+    },
+    {
+      "original": "dev/integration/audit/reference-links.json",
+      "sha256": "4af8c02146dea70b48062b64a5d3da7cd3633464d83445e21d2f17a9e9673101",
+      "exported": "dev/integration/audit/reference-links.json"
+    },
+    {
+      "original": "dev/integration/audit/source-inspection.json",
+      "sha256": "1776a21c68549e54a12a1433b034d556d2a30b16bf5225473a9088958f9854d4",
+      "exported": "dev/integration/audit/source-inspection.json"
+    },
+    {
+      "original": "dev/integration/audit/source-map.csv",
+      "sha256": "05e52b32eb32f8f37f68db01457e1e60d90f81a62fb6f8cc2e9910d1fbfeabe0",
+      "exported": "dev/integration/audit/source-map.csv"
+    },
+    {
+      "original": "dev/integration/audit/source-map.json",
+      "sha256": "5ef2bf4ee81c36aa4a40108f9f0a1052b9c22486bccfcdebd0468fbfb311d5cd",
+      "exported": "dev/integration/audit/source-map.json"
+    },
+    {
+      "original": "dev/integration/audit/suite-results.json",
+      "sha256": "34ad3721f5c0e905eb1d477336963bbf8c9897a911ab85a466dfb34c5975164e",
+      "exported": "dev/integration/audit/suite-results.json"
+    },
+    {
+      "original": "dev/integration/audit/synthetic-figure-smoke/cost_frontier.png",
+      "sha256": "6f1c9a8f362df95d2325ba826d560f2b945b906d8834ce5de16b91a37cac49cd",
+      "exported": "dev/integration/audit/synthetic-figure-smoke/cost_frontier.png"
+    },
+    {
+      "original": "dev/integration/audit/synthetic-figure-smoke/cost_frontier.svg",
+      "sha256": "6610d6305aa92226aca7a4487281fba90af5cbe29d07375d7acf343ec7d8045d",
+      "exported": "dev/integration/audit/synthetic-figure-smoke/cost_frontier.svg"
+    },
+    {
+      "original": "dev/integration/audit/synthetic-figure-smoke/model_comparison.png",
+      "sha256": "859c090e335822088428a6abb8882b6c6256f7be7185498afc5afcc446b2e005",
+      "exported": "dev/integration/audit/synthetic-figure-smoke/model_comparison.png"
+    },
+    {
+      "original": "dev/integration/audit/synthetic-figure-smoke/model_comparison.svg",
+      "sha256": "90a51f4aa5f86524829b843df5a42029885ecf3473131ea8882c271e57db8020",
+      "exported": "dev/integration/audit/synthetic-figure-smoke/model_comparison.svg"
+    },
+    {
+      "original": "dev/integration/audit/synthetic-figure-smoke/README.md",
+      "sha256": "f6bd5c6f7ea0f3f87ea6987fb59cb6ed3955acb28c8492f489278fab284ae4ea",
+      "exported": "dev/integration/audit/synthetic-figure-smoke/README.md"
+    },
+    {
+      "original": "dev/integration/audit/synthetic-figure-smoke/reliability_curve.png",
+      "sha256": "40e5d446e38b2558504981dae67e3d361b80ba3aa3115ffb047077ade3ed4725",
+      "exported": "dev/integration/audit/synthetic-figure-smoke/reliability_curve.png"
+    },
+    {
+      "original": "dev/integration/audit/synthetic-figure-smoke/reliability_curve.svg",
+      "sha256": "94767af38be5812953ddd3249f406267ff64daa1193863b0958b830ef53e3cc1",
+      "exported": "dev/integration/audit/synthetic-figure-smoke/reliability_curve.svg"
+    },
+    {
+      "original": "dev/integration/audit/VERIFICATION.md",
+      "sha256": "c9b060e358e361b36e67a0cc35318ee4478df41e637e030663734bc61c4a9549",
+      "exported": "dev/integration/audit/VERIFICATION.md"
+    },
+    {
+      "original": "dev/integration/docs/ARMS.md",
+      "sha256": "7d3687164e59f6fe27fe5d20775cb48c59db7e2be1cbf1b6352b715cfb522113",
+      "exported": "dev/integration/docs/ARMS.md"
+    },
+    {
+      "original": "dev/integration/docs/build-design.md",
+      "sha256": "bea317343aff60d61894a4485189f7d3d03f32c62836ff4c3876e0afeae4e6f0",
+      "exported": "dev/integration/docs/build-design.md"
+    },
+    {
+      "original": "dev/integration/docs/build-implementation-plan.md",
+      "sha256": "c35e44da6422f869c272c2f00c5c2d8ca642769a2e1c502e7c62485594a7be0d",
+      "exported": "dev/integration/docs/build-implementation-plan.md"
+    },
+    {
+      "original": "dev/integration/docs/build-progress.md",
+      "sha256": "a2b422368e3a34d3059fe31555e380ab7c8b2aac46f7389555c640f00ab21f3e",
+      "exported": "dev/integration/docs/build-progress.md"
+    },
+    {
+      "original": "dev/integration/docs/BUILD.md",
+      "sha256": "480c61a55941776319da05cdc3c32194414b2ec14371de113a0713ec529f94eb",
+      "exported": "dev/integration/docs/BUILD.md"
+    },
+    {
+      "original": "dev/integration/docs/DEPENDENCIES.md",
+      "sha256": "ae573f17f6197e74278d106d46718ebca90c73fdad95e329aad55bdfa92066eb",
+      "exported": "dev/integration/docs/DEPENDENCIES.md"
+    },
+    {
+      "original": "dev/integration/docs/goal-objective.md",
+      "sha256": "2e1d914e75ec84c2c7cb7fd9b963544a2e3623379e26f6efa013e04d3c9a917a",
+      "exported": "dev/integration/docs/goal-objective.md"
+    },
+    {
+      "original": "dev/integration/docs/INTEGRATION.md",
+      "sha256": "60cfb608e4ee42eeb6cd4486c89e04c336229e4cd98dd6cbcd77f3e2a9a0be64",
+      "exported": "dev/integration/docs/INTEGRATION.md"
+    },
+    {
+      "original": "dev/integration/docs/INVENTORY.md",
+      "sha256": "126dbde1043263415d8479cf94f0bb025d11ba606f61a3ebbab188edbac6e3ee",
+      "exported": "dev/integration/docs/INVENTORY.md"
+    },
+    {
+      "original": "dev/integration/docs/LIMITATIONS.md",
+      "sha256": "ae386a31a10b9c844702a138b6ec4cc60a0044fece7cab9f40a88518c281d41b",
+      "exported": "dev/integration/docs/LIMITATIONS.md"
+    },
+    {
+      "original": "dev/integration/docs/SETUP.md",
+      "sha256": "0c339be0ca1ade4f2cbdac5ceb0541d88473bbe3f2d7f511e7f3894a027e9816",
+      "exported": "dev/integration/docs/SETUP.md"
+    },
+    {
+      "original": "dev/integration/README.md",
+      "sha256": "b6c6469be687d36e66a1927d6ec78498a9065d93df7d22282fd8b108d1f709e0",
+      "exported": "dev/integration/README.md"
+    },
+    {
+      "original": "dev/integration/requirements-optional.txt",
+      "sha256": "7a9158a9101af6f2a856905070c565f2a64b0effe46dbea7b2ce9bfcc3e4a91c",
+      "exported": "dev/integration/requirements-optional.txt"
+    },
+    {
+      "original": "dev/integration/server/assistant_server.py",
+      "sha256": "ae3f3d4a8f066b1feacc43e3875655015c49c6dc3904e4eb3347c5e064e761c6",
+      "exported": "dev/integration/server/assistant_server.py"
+    },
+    {
+      "original": "dev/integration/skills/research-assistant/agents/openai.yaml",
+      "sha256": "7f1fa4a661ee24d95fe96eed808ef5da7b20436cdf6428583f61266fec72b783",
+      "exported": "dev/integration/skills/research-assistant/agents/openai.yaml"
+    },
+    {
+      "original": "dev/integration/skills/research-assistant/SKILL.md",
+      "sha256": "27c87ec57361ba652f4349522771e1d8ffc5f5464878b9224a443901c356ade3",
+      "exported": "dev/integration/skills/research-assistant/SKILL.md"
+    },
+    {
+      "original": "dev/integration/THIRD_PARTY_NOTICES.md",
+      "sha256": "68d9e8ea02003041c92a9355e3bc8886de43d7bd67de521cd43f7974f56aae52",
+      "exported": "dev/integration/THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "original": "dev/integration/workflows/arms-orchestration.md",
+      "sha256": "8cb105e591c153d93c31c8480b28be07c0e677f97dd147a73f8c367118e18f17",
+      "exported": "dev/integration/workflows/arms-orchestration.md"
+    },
+    {
+      "original": "dev/integration/workflows/design-and-validate.md",
+      "sha256": "3876eb39a7c973e09032773945e1d9e3fdf4ced7830af4614c149d3eb82d8f27",
+      "exported": "dev/integration/workflows/design-and-validate.md"
+    },
+    {
+      "original": "dev/integration/workflows/discover-and-synthesize.md",
+      "sha256": "c688d3402d1dd5ed5ef1cad8c06ba315d1b123752f5a96fb3797f6be58d6c73c",
+      "exported": "dev/integration/workflows/discover-and-synthesize.md"
+    },
+    {
+      "original": "dev/integration/workflows/evidence-review.md",
+      "sha256": "384b480b2c8ffb91f3217db78050e34a94e6e629248c36da5640c53ecae1e561",
+      "exported": "dev/integration/workflows/evidence-review.md"
+    },
+    {
+      "original": "dev/integration/workflows/plan-and-fund.md",
+      "sha256": "e395a29c592046aa9db45a5f41510116f815a25f6ad20fa86197f56160dd10c2",
+      "exported": "dev/integration/workflows/plan-and-fund.md"
+    },
+    {
+      "original": "dev/integration/workflows/review-and-publish.md",
+      "sha256": "5f225a58215ce4b70b94b2d3a3b754a43bfe05be41d57a8bf9b5657caad081d5",
+      "exported": "dev/integration/workflows/review-and-publish.md"
+    },
+    {
+      "original": "dev/integration/workflows/visualize-and-communicate.md",
+      "sha256": "6e04fb628389894e71b23cc17d38569b02c11b94fab01de20c11f3b176640a79",
+      "exported": "dev/integration/workflows/visualize-and-communicate.md"
+    },
+    {
+      "original": "dev/integration/workflows/write-and-typeset.md",
+      "sha256": "a1c44f12a9e573da569aea4304f5ada69858e1fd7d66448950b7eb0b7dbccfd7",
+      "exported": "dev/integration/workflows/write-and-typeset.md"
+    },
+    {
+      "original": "dev/reconstruct.py",
+      "sha256": "eed1d0c2e3faf972dd2d9bdcb49919d44af1d2783c80adcd6ce81d979e6fcd90",
+      "exported": "dev/reconstruct.py"
+    },
+    {
+      "original": "dev/requirements-dev.txt",
+      "sha256": "ce902071f06b5868ce5ed66fcf79ea6d4d282460a17c84a1b41bd32abd5451d1",
+      "exported": "dev/requirements-dev.txt"
+    },
+    {
+      "original": "dev/schemas/mcp.schema.json",
+      "sha256": "6539175bfcdf43085855183e86da40ea94b166547a72b47ae9a0a390516d3acb",
+      "exported": "dev/schemas/mcp.schema.json"
+    },
+    {
+      "original": "dev/schemas/plugin.schema.json",
+      "sha256": "0a4aad95ce337878ad38802ebf0daa3fde76abe3f65400c86bcbb1ec0b3ab883",
+      "exported": "dev/schemas/plugin.schema.json"
+    },
+    {
+      "original": "dev/tests/test_arms_adapters.py",
+      "sha256": "e26716ce2bfc67ae73756d400fe897b9f995de051622e9eb4fe935526c7753c2",
+      "exported": "dev/tests/test_arms_adapters.py"
+    },
+    {
+      "original": "dev/tests/test_runtime.py",
+      "sha256": "00f2efff8e26f342db460fe2d59c3912dcd9f2e2374ef59a46ed4adb40cb865f",
+      "exported": "dev/tests/test_runtime.py"
+    },
+    {
+      "original": "dev/tests/test_visual_adapters.py",
+      "sha256": "adcfa05526651b8fdf2a47133377a5e6c98da2e90d40cc4c28d3ad9efc68de97",
+      "exported": "dev/tests/test_visual_adapters.py"
+    },
+    {
+      "original": "docs/ARMS.md",
+      "sha256": "7d3687164e59f6fe27fe5d20775cb48c59db7e2be1cbf1b6352b715cfb522113",
+      "exported": "docs/ARMS.md"
+    },
+    {
+      "original": "docs/build-design.md",
+      "sha256": "bea317343aff60d61894a4485189f7d3d03f32c62836ff4c3876e0afeae4e6f0",
+      "exported": "docs/build-design.md"
+    },
+    {
+      "original": "docs/build-implementation-plan.md",
+      "sha256": "c35e44da6422f869c272c2f00c5c2d8ca642769a2e1c502e7c62485594a7be0d",
+      "exported": "docs/build-implementation-plan.md"
+    },
+    {
+      "original": "docs/build-progress.md",
+      "sha256": "a2b422368e3a34d3059fe31555e380ab7c8b2aac46f7389555c640f00ab21f3e",
+      "exported": "docs/build-progress.md"
+    },
+    {
+      "original": "docs/BUILD.md",
+      "sha256": "480c61a55941776319da05cdc3c32194414b2ec14371de113a0713ec529f94eb",
+      "exported": "audit/baseline/docs/BUILD.md"
+    },
+    {
+      "original": "docs/DEPENDENCIES.md",
+      "sha256": "ae573f17f6197e74278d106d46718ebca90c73fdad95e329aad55bdfa92066eb",
+      "exported": "docs/DEPENDENCIES.md"
+    },
+    {
+      "original": "docs/goal-objective.md",
+      "sha256": "2e1d914e75ec84c2c7cb7fd9b963544a2e3623379e26f6efa013e04d3c9a917a",
+      "exported": "docs/goal-objective.md"
+    },
+    {
+      "original": "docs/INTEGRATION.md",
+      "sha256": "60cfb608e4ee42eeb6cd4486c89e04c336229e4cd98dd6cbcd77f3e2a9a0be64",
+      "exported": "audit/baseline/docs/INTEGRATION.md"
+    },
+    {
+      "original": "docs/INVENTORY.md",
+      "sha256": "126dbde1043263415d8479cf94f0bb025d11ba606f61a3ebbab188edbac6e3ee",
+      "exported": "docs/INVENTORY.md"
+    },
+    {
+      "original": "docs/LIMITATIONS.md",
+      "sha256": "ae386a31a10b9c844702a138b6ec4cc60a0044fece7cab9f40a88518c281d41b",
+      "exported": "docs/LIMITATIONS.md"
+    },
+    {
+      "original": "docs/SETUP.md",
+      "sha256": "0c339be0ca1ade4f2cbdac5ceb0541d88473bbe3f2d7f511e7f3894a027e9816",
+      "exported": "audit/baseline/docs/SETUP.md"
+    },
+    {
+      "original": "mcp.json",
+      "sha256": "d1caa2fef0d714e62070d7d93acc24098cc655138828ce8583f85004808990f5",
+      "exported": "audit/baseline/mcp.json"
+    },
+    {
+      "original": "plugin.json",
+      "sha256": "a33b5e80f1f480c1bc9c790c36c24d419cca2dd61319e3cf9cbf0692f1c87a82",
+      "exported": "audit/baseline/plugin.json"
+    },
+    {
+      "original": "README.md",
+      "sha256": "b6c6469be687d36e66a1927d6ec78498a9065d93df7d22282fd8b108d1f709e0",
+      "exported": "audit/baseline/README.md"
+    },
+    {
+      "original": "requirements-optional.txt",
+      "sha256": "7a9158a9101af6f2a856905070c565f2a64b0effe46dbea7b2ce9bfcc3e4a91c",
+      "exported": "requirements-optional.txt"
+    },
+    {
+      "original": "resources/originals/academic-humanizer-main.zip",
+      "sha256": "6121e036fc8c35f4fee771f3af79e43ff4e3fe051c28d9e7d290b1da181f7b05",
+      "exported": "resources/originals/academic-humanizer-main.zip"
+    },
+    {
+      "original": "resources/originals/academic-pptx-skill-main.zip",
+      "sha256": "9ef8a6ce65bc4ae7418c768f4568b6d94f2dedab089d752002ba47d28e607800",
+      "exported": "resources/originals/academic-pptx-skill-main.zip"
+    },
+    {
+      "original": "resources/originals/ARMS-main.zip",
+      "sha256": "9ee9bd2f16619935c7ccf89b93212eb9109eb23f7afbe76f3074e37283b3f7db",
+      "exported": "resources/originals/ARMS-main.zip"
+    },
+    {
+      "original": "resources/originals/humanizer-main.zip",
+      "sha256": "b1210453bc037f534d4d92cfb9b6dce194ac1428a9b11a79392009488b4d6da1",
+      "exported": "resources/originals/humanizer-main.zip"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/.codex-remote-plugin-install.json",
+      "sha256": "fc70777b6342770d660860df7b55cc30081d49df01aec2ebe0196fa37a57cc33",
+      "exported": "resources/originals/latexdocumentmaker/.codex-remote-plugin-install.json"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/.claude-plugin/plugin.json",
+      "sha256": "4b453def62f0e4d109bce288047eef227ff1614d7169e54fdebd7419f6c068c0",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/.claude-plugin/plugin.json"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/.codex-plugin/assets/composer-icon-dark.png",
+      "sha256": "fd86014853ac04946536f4eb3ba4304dc92469c7f23a147df472ae7b5f17c196",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/.codex-plugin/assets/composer-icon-dark.png"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/.codex-plugin/assets/composer-icon.png",
+      "sha256": "f4c007cc7d5aa54b3ac7dd5bf55f10d9540b90a14decb9dddf1bea6126935f59",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/.codex-plugin/assets/composer-icon.png"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/.codex-plugin/assets/logo-dark.png",
+      "sha256": "a9360bd6ea4a94eeebb0f74dd4d8468dcdf1bbc81f5c0e98457110018dd13495",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/.codex-plugin/assets/logo-dark.png"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/.codex-plugin/assets/logo.png",
+      "sha256": "bf538c803607a6e704448bd08cc172f1feaaeae23be21dab4292f502ba5a9a9c",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/.codex-plugin/assets/logo.png"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/.codex-plugin/plugin.json",
+      "sha256": "f579bb1c53a2718c8aa0a1618468839b367114b38169a0aeb312e0e64514a277",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/.codex-plugin/plugin.json"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/assets/icon.png",
+      "sha256": "f4c007cc7d5aa54b3ac7dd5bf55f10d9540b90a14decb9dddf1bea6126935f59",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/assets/icon.png"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/assets/logo.png",
+      "sha256": "bf538c803607a6e704448bd08cc172f1feaaeae23be21dab4292f502ba5a9a9c",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/assets/logo.png"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/plugin.json",
+      "sha256": "4b453def62f0e4d109bce288047eef227ff1614d7169e54fdebd7419f6c068c0",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/plugin.json"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/README.md",
+      "sha256": "8a2a693a7540ea7c3f90a0050a26299539b5e7c7ebecf5908477c09853105e90",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/README.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/academic-poster/SKILL.md",
+      "sha256": "f78c5c70cf998d614bcdf98b67b6375c15c2c978e925f718cbf9ecf28cb0c34e",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/academic-poster/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/algorithms-code/SKILL.md",
+      "sha256": "fe14c45e1b799891a5fb468e593c93c4d7094bf3e5f754a5623a96ead0a0c1be",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/algorithms-code/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/beamer-slides/SKILL.md",
+      "sha256": "d03d9df65b8ce4122cc704d2f030c68dfefdff662b982fd697d98e45ee4d47a6",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/beamer-slides/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/bibliography-citations/SKILL.md",
+      "sha256": "1779b22f62a063aa2d93be08f43168c0097c18545f297c1500a553c5856955a1",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/bibliography-citations/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/books-notes/SKILL.md",
+      "sha256": "96b713320bf5bb2f7d3c70a2bf40fc6d863f61018e610afcc9bb1a8883997b79",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/books-notes/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/certificates-flyers/SKILL.md",
+      "sha256": "4c0edb1e95c034dade4ce947ff04a4fb40c995b0056723a03e1eb67c1651d0ba",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/certificates-flyers/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/cross-references-links/SKILL.md",
+      "sha256": "3c07912b42ee9168316769650f65d4e3bc2f7aaeead8d9c5086ee6141f7c5777",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/cross-references-links/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/custom-macros/SKILL.md",
+      "sha256": "2db2ca9321d3d2938175d81671831ed767d23fb967aec5251cb125fc5d941f69",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/custom-macros/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/document-builder/SKILL.md",
+      "sha256": "e2584066174a0b5e5eb27384338681cefb08ee8a839e3e96a81fff508ba09989",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/document-builder/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/equation-converter/SKILL.md",
+      "sha256": "9d46198a7a3894e4a9036b5aa8bf9a84976b0bb630e461ca00a1212818f1194b",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/equation-converter/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/error-fixer/SKILL.md",
+      "sha256": "2acc5f970f04a73157bc7ca95f554486204b680add568d83d594cdc383fc6017",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/error-fixer/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/figures-images/SKILL.md",
+      "sha256": "a7c710e24525597b95f056cbb0d794045edae476ea09854e54b02287a68b10c7",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/figures-images/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/format-conversion/SKILL.md",
+      "sha256": "6d130397ea5e7ed5da08217696364e898479d1a43427f2462e0df9037ffd9913",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/format-conversion/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/homework-exams/SKILL.md",
+      "sha256": "19148367ab5544eb39ba8f23e672f62b6324165a4acdbe206d7961e9eb9a9503",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/homework-exams/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/journal-templates/SKILL.md",
+      "sha256": "bae1a40bd86496cc81c197b477af8b2253cbbafdf643cacb50e9b79e933a3d17",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/journal-templates/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/latex-cleanup/SKILL.md",
+      "sha256": "228fdbb4d715587ccd89e37b391e9fec0964b87c99bb954195373f8ba60c3d88",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/latex-cleanup/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/latex-help/SKILL.md",
+      "sha256": "cff1dcf079e6d62706dc2ba26c59eb19a84ea2e360d4da2920d6282cf06cb5fa",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/latex-help/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/latex-proofreading/SKILL.md",
+      "sha256": "b0c87d0dd1261547a62b7b7d148e998dbf03670cd3e0e7bca1a66cb55d1270d5",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/latex-proofreading/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/latex-studio/SKILL.md",
+      "sha256": "c73890fea1961a2063668b802c4cb9fc613a299df4c3ebdf6dfcd10ffbe28c8a",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/latex-studio/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/letters/SKILL.md",
+      "sha256": "c2a68fabb8d264bb3c0f0d4b8f96933d182726dcb42a378d6566800eefcdaf65",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/letters/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/math-equations/SKILL.md",
+      "sha256": "3c3d86b23b12e16899ec716660b839c308baf5ae61e0d5fd0bf5d92b1e64ef04",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/math-equations/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/multilingual-fonts/SKILL.md",
+      "sha256": "2cbb7a4f898a9dea6b8460660b68f02e72e33463e26715076fa9f5467d957019",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/multilingual-fonts/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/page-formatting/SKILL.md",
+      "sha256": "8c247c1c97aabb685b8658630329c0f7a6df1f85caca15b25d58f63819e84fff",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/page-formatting/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/pgfplots-charts/SKILL.md",
+      "sha256": "271a68d1c09be881b896c8611f3ef73cb8eed0af1dd72a255bac1a33a7b48946",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/pgfplots-charts/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/reports-manuals/SKILL.md",
+      "sha256": "f46176413884bf270df40b06a9a83b3016f9bb76b4cd6a2fed6f6b250c674a31",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/reports-manuals/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/research-paper/SKILL.md",
+      "sha256": "ef4c1861ffca319170f5ffcf3edef29bf9a9eec56310003aa38da7dd8d7858c2",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/research-paper/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/resume-cv/SKILL.md",
+      "sha256": "daee34dfec8c0c64381c3a733f7510e6c893298e3ca16621a688845df806e59e",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/resume-cv/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/science-notation/SKILL.md",
+      "sha256": "e485c173b076ad4a649eeb307c70e69c4e4cf82623ceac1cf20636dc7eca592c",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/science-notation/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/setup-compiling/SKILL.md",
+      "sha256": "ddafebc9f5246aea6953e725af69bfacd85028de6acccd7a30a76069cd170573",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/setup-compiling/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/tables/SKILL.md",
+      "sha256": "794858788d849acc5439039ee4f7d168b0558d5e265d4076bb9618dc0ee200d8",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/tables/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/theorems-proofs/SKILL.md",
+      "sha256": "093ca26bdf5e607deacb8f021dc118dde7c9d78fd05765c5b3c3fd9a7e87bdf5",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/theorems-proofs/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/thesis-dissertation/SKILL.md",
+      "sha256": "7bbf80f20e7fe8809f585234fa28e73b8a45dd4082a1b1b1a498593fbc0dee55",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/thesis-dissertation/SKILL.md"
+    },
+    {
+      "original": "resources/originals/latexdocumentmaker/1.0.1/skills/tikz-diagrams/SKILL.md",
+      "sha256": "dd5eaaca75b83b7a97035c9e9dbdbc8bfdec2762d72a48cf13de4f3759342970",
+      "exported": "resources/originals/latexdocumentmaker/1.0.1/skills/tikz-diagrams/SKILL.md"
+    },
+    {
+      "original": "resources/originals/research-writing-guardrails/.codex-remote-plugin-install.json",
+      "sha256": "3a70727350fb7e8fad7daa08fc58bf27f71141a0841d362f74d5b52268efebee",
+      "exported": "resources/originals/research-writing-guardrails/.codex-remote-plugin-install.json"
+    },
+    {
+      "original": "resources/originals/research-writing-guardrails/1.0.0/.codex-plugin/assets/composer-icon.png",
+      "sha256": "33c0bc82ab860299f2d0894234a5ed2deb29d69d0d5447cdaf684e6f754af8d3",
+      "exported": "resources/originals/research-writing-guardrails/1.0.0/.codex-plugin/assets/composer-icon.png"
+    },
+    {
+      "original": "resources/originals/research-writing-guardrails/1.0.0/.codex-plugin/assets/logo.png",
+      "sha256": "0d8299ccbf4c24642b8bd1df5d7fc5b5d5c047b8172c2eed95e5d5409f2259b6",
+      "exported": "resources/originals/research-writing-guardrails/1.0.0/.codex-plugin/assets/logo.png"
+    },
+    {
+      "original": "resources/originals/research-writing-guardrails/1.0.0/.codex-plugin/plugin.json",
+      "sha256": "f74b8dc18377b3372cedb99dbe87a5ac98fa61754f9abef60cc793200f7570a2",
+      "exported": "resources/originals/research-writing-guardrails/1.0.0/.codex-plugin/plugin.json"
+    },
+    {
+      "original": "resources/originals/research-writing-guardrails/1.0.0/plugin.json",
+      "sha256": "a8e0ba8db0716af6b20d9440982909c123357e209909945a3e123520419d5813",
+      "exported": "resources/originals/research-writing-guardrails/1.0.0/plugin.json"
+    },
+    {
+      "original": "resources/originals/research-writing-guardrails/1.0.0/skills/compag-elsevier-paper-editing/references/style-audit.md",
+      "sha256": "262e5badddbb078bf2af621edaeb54925490147c9038bfe26f626bdec9e06e9a",
+      "exported": "resources/originals/research-writing-guardrails/1.0.0/skills/compag-elsevier-paper-editing/references/style-audit.md"
+    },
+    {
+      "original": "resources/originals/research-writing-guardrails/1.0.0/skills/compag-elsevier-paper-editing/SKILL.md",
+      "sha256": "228ec64dd3470d9cab3d0b7109e18c34ec4fb11bd3e8f8da310cf5a5e41d65e9",
+      "exported": "resources/originals/research-writing-guardrails/1.0.0/skills/compag-elsevier-paper-editing/SKILL.md"
+    },
+    {
+      "original": "resources/originals/research-writing-guardrails/1.0.0/skills/research-problem-mechanism-evidence/references/evidence-guide.md",
+      "sha256": "8fd90444aed20610a01ce51701f33665080de08a09fb58287257d03319a0b710",
+      "exported": "resources/originals/research-writing-guardrails/1.0.0/skills/research-problem-mechanism-evidence/references/evidence-guide.md"
+    },
+    {
+      "original": "resources/originals/research-writing-guardrails/1.0.0/skills/research-problem-mechanism-evidence/SKILL.md",
+      "sha256": "5f0c4cb41d9200566b6ef14fa9d5a03739233dcd29f017e84956e72723595fa5",
+      "exported": "resources/originals/research-writing-guardrails/1.0.0/skills/research-problem-mechanism-evidence/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/.codex-remote-plugin-install.json",
+      "sha256": "89859191a053167c258de322a31e63d191722c228b115685e9d833b093bbd6e7",
+      "exported": "resources/originals/researchevidencefinder/.codex-remote-plugin-install.json"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/.claude-plugin/plugin.json",
+      "sha256": "d91f33c65cb010216d1822a75598108b79b2bff2860140334e8cfca4218c8428",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/.claude-plugin/plugin.json"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/.codex-plugin/assets/composer-icon-dark.png",
+      "sha256": "63d8b623d8d678e19db235e5ccae1abf0742a5b10e0f1314769662e54753174c",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/.codex-plugin/assets/composer-icon-dark.png"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/.codex-plugin/assets/composer-icon.png",
+      "sha256": "51495bdf03cb64e61fc0f9772105046e3be6d4860829fc36655d30ceb7accabe",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/.codex-plugin/assets/composer-icon.png"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/.codex-plugin/assets/logo-dark.png",
+      "sha256": "ea4d23621cda53134d3bba76c4d1d8578daac24514715af8c474a2e9b589fdf8",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/.codex-plugin/assets/logo-dark.png"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/.codex-plugin/assets/logo.png",
+      "sha256": "4bd4f10e99d65b9a49d0c16d0e13198af5f32ae45b1762593a69ef3ec79a6995",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/.codex-plugin/assets/logo.png"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/.codex-plugin/plugin.json",
+      "sha256": "aced40dfb3ea9a7d7f98d5310250069e03046380b99aacb8066e481c0547619c",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/.codex-plugin/plugin.json"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/assets/icon.png",
+      "sha256": "51495bdf03cb64e61fc0f9772105046e3be6d4860829fc36655d30ceb7accabe",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/assets/icon.png"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/assets/logo.png",
+      "sha256": "4bd4f10e99d65b9a49d0c16d0e13198af5f32ae45b1762593a69ef3ec79a6995",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/assets/logo.png"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/plugin.json",
+      "sha256": "d91f33c65cb010216d1822a75598108b79b2bff2860140334e8cfca4218c8428",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/plugin.json"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/README.md",
+      "sha256": "207f79a16f0886a5695dc8033c9565b67e03c0d144efd82f73d4aefd4af38a7c",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/README.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/citation-chaining/SKILL.md",
+      "sha256": "7ccb161ce2cdc303b5bacbdc4068297fc087dcee2491abd4d374692572229e34",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/citation-chaining/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/citations-and-references/SKILL.md",
+      "sha256": "b8999812b501cdf6c7ef408cc414fa8b65a3ce24be69daae2e3c23ab26e26a03",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/citations-and-references/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/claim-checker/SKILL.md",
+      "sha256": "38b312054486bd7820daca9a026af2022f65efcc83e8e9e8e90effee02e46737",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/claim-checker/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/compare-studies/SKILL.md",
+      "sha256": "59fd67ad736a4bab33a433b0dd020d450dc295c47861787dcd35ca00a4987e95",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/compare-studies/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/data-extraction/SKILL.md",
+      "sha256": "bb64353448c077d45667e09e547733e841092106e80e563e5f037d2a6f31bfc9",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/data-extraction/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/database-guide/SKILL.md",
+      "sha256": "2386c7ad92f9cc0872de4062cec9d30c1852396e29117c048bf414efab7edb2e",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/database-guide/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/debate-and-argument-evidence/SKILL.md",
+      "sha256": "7720a1633227bc0395aeecc61f5523f054585e2f052fa3eedc7a40aeeba5173a",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/debate-and-argument-evidence/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/decision-evidence/SKILL.md",
+      "sha256": "30c48d0d9ed0e380c97fe7685b0ca3a914ede2c4d104fd4bd4717c76a99ec06d",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/decision-evidence/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/evidence-answer/SKILL.md",
+      "sha256": "2bdf4868932f7a70a252c05bba64abef6f7f18311e7f4134aa63eace4b2d2c55",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/evidence-answer/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/evidence-based-writing/SKILL.md",
+      "sha256": "05c63d8e71a2152dd7924df54b261c81b679506d8e807d009a18f67c2922ce4e",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/evidence-based-writing/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/evidence-help/SKILL.md",
+      "sha256": "044d9f3e0f8eebf442cd6b29dafcdf7f1ff7eaf0341a838e398c9d734b2d11a8",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/evidence-help/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/evidence-meter/SKILL.md",
+      "sha256": "f66f4e612a2f63e81bdfcaf02527e7119e222ca0384d932572f401ddc3ea3102",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/evidence-meter/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/field-guides/SKILL.md",
+      "sha256": "37811bc962b604b843abfb40002c13a7a574b715b0b75409e3baa2e5ea0c6cb2",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/field-guides/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/find-studies/SKILL.md",
+      "sha256": "93b3241fb7d94d7b5cb0ea0ac64176ab50bcdccbc26689aa7fff5f97ab06e5bc",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/find-studies/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/literature-review/SKILL.md",
+      "sha256": "5e13094b959f2127eff484972139a69b5d6fc5aff42942287f95a3ca7f2fba13",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/literature-review/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/meta-analysis/SKILL.md",
+      "sha256": "2b498c39dfb0973c8e6341ab35268cf8df98abc8db879b1e082693a54a2b7952",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/meta-analysis/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/open-access-full-text/SKILL.md",
+      "sha256": "d7e95b29128869cfba512307b89011bd47804978371e5a50c97ebdd75d2f025f",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/open-access-full-text/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/paper-summary/SKILL.md",
+      "sha256": "c9871168adfac4661b33a29b389cd13ee2bcf54ec83d7dbd7bc76984380089c7",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/paper-summary/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/plain-language-research/SKILL.md",
+      "sha256": "f227cda020d84477ce6f96a76878cc935eb3ad2e26d181556d484d0e33a92962",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/plain-language-research/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/research-evidence-finder/SKILL.md",
+      "sha256": "a6376e2bd2d3cdf20c1240f8ae84c92fcf51afd2f26434c31b26139bee157125",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/research-evidence-finder/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/research-gaps/SKILL.md",
+      "sha256": "05c38516c61e8ebb62e08153b7cf977c1c1c0dfc6e152e8f0edd08e525c296b9",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/research-gaps/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/research-proposal-background/SKILL.md",
+      "sha256": "043ab6d39da18c951267bfeeb4c40badac764f4e40f1bc191bf8ff45ef84bfa2",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/research-proposal-background/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/research-question/SKILL.md",
+      "sha256": "75ba7b0eada81dd29f63fafef88a71f62cf25de3f01ea001d7f3efc7d6b8a787",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/research-question/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/search-strings/SKILL.md",
+      "sha256": "ac74b2ee8ced6754d094111ac2d74eac3d05f08a206df6fc7ba1a0f874a88061",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/search-strings/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/source-verification/SKILL.md",
+      "sha256": "50d75db370f2dc543466959deb48fea0cfc50f3645aea9419ce7bbfecf094cba",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/source-verification/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/statistics-explained/SKILL.md",
+      "sha256": "05905d0ff38e178e7d53737f7745e87300e937bbf9aad69408f20b5bdfd9adf6",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/statistics-explained/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/study-appraisal/SKILL.md",
+      "sha256": "f1f525323043bee7933f208c05a4c2aa58202d577a493a63af06cd999d461016",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/study-appraisal/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/study-designs-and-evidence-levels/SKILL.md",
+      "sha256": "69bf07de6c7070f787174b5b9492a59a8bac6362f2be1c793b6443c303b9304d",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/study-designs-and-evidence-levels/SKILL.md"
+    },
+    {
+      "original": "resources/originals/researchevidencefinder/1.0.0/skills/systematic-review/SKILL.md",
+      "sha256": "6252932953a4a22e79d80ab37b9735aef73d2f98294e5d3452305d0f62bb934c",
+      "exported": "resources/originals/researchevidencefinder/1.0.0/skills/systematic-review/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/.codex-remote-plugin-install.json",
+      "sha256": "ebfcc6df9a8b7596bd21d8a3200b9e5554396a30090cb9217fc8a2c854892330",
+      "exported": "resources/originals/scholarresearch/.codex-remote-plugin-install.json"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/.claude-plugin/plugin.json",
+      "sha256": "aa639c997ea6dfac778b7eb3112c300dc011fba509cceeeb38160af5f93888a5",
+      "exported": "resources/originals/scholarresearch/1.1.0/.claude-plugin/plugin.json"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/.codex-plugin/assets/composer-icon.png",
+      "sha256": "c0c9a2a6c0b142d26c718255fe1b4b3e1c116dbb48b7dd51cb00614929820401",
+      "exported": "resources/originals/scholarresearch/1.1.0/.codex-plugin/assets/composer-icon.png"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/.codex-plugin/assets/logo-dark.png",
+      "sha256": "4ac0a2a5033d2ecc3c9127f8a9dc66721aa5fb0a29ffeb8078732588037d4bc1",
+      "exported": "resources/originals/scholarresearch/1.1.0/.codex-plugin/assets/logo-dark.png"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/.codex-plugin/assets/logo.png",
+      "sha256": "09a173703f731000c52b430e57d2411ea54acb8e3dd852c7278af8dcd309d216",
+      "exported": "resources/originals/scholarresearch/1.1.0/.codex-plugin/assets/logo.png"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/.codex-plugin/plugin.json",
+      "sha256": "4dba95f0b648c63ff8b56649a8c1a4664d721839b8607178ed86f9681fbdd71b",
+      "exported": "resources/originals/scholarresearch/1.1.0/.codex-plugin/plugin.json"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/assets/icon.png",
+      "sha256": "c0c9a2a6c0b142d26c718255fe1b4b3e1c116dbb48b7dd51cb00614929820401",
+      "exported": "resources/originals/scholarresearch/1.1.0/assets/icon.png"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/assets/logo.png",
+      "sha256": "09a173703f731000c52b430e57d2411ea54acb8e3dd852c7278af8dcd309d216",
+      "exported": "resources/originals/scholarresearch/1.1.0/assets/logo.png"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/plugin.json",
+      "sha256": "aa639c997ea6dfac778b7eb3112c300dc011fba509cceeeb38160af5f93888a5",
+      "exported": "resources/originals/scholarresearch/1.1.0/plugin.json"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/README.md",
+      "sha256": "c5a2e015c002db9ead63e19551a2196f3519974c3c355035a4fb3607878848ce",
+      "exported": "resources/originals/scholarresearch/1.1.0/README.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/abstract-introduction/SKILL.md",
+      "sha256": "6e0fd692c1d43034552a1e26e7d9e4635aa62a91df893e52daa1a66dfa2e73b3",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/abstract-introduction/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/academic-editing/SKILL.md",
+      "sha256": "ef277e9d1d80e5c4111c3185a1a9b743116a988b4d687ff620a734e3b126eef9",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/academic-editing/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/academic-translation/SKILL.md",
+      "sha256": "5a36d7c3b8a40d33a959c8699828ccbc1b6a5f14954ae45319444ca08328538b",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/academic-translation/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/citation-generator/SKILL.md",
+      "sha256": "c4b41b677ed3781f4057f1c3deb4066aa0f516023c575c1cd2c1c347ed4793da",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/citation-generator/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/data-analysis-plan/SKILL.md",
+      "sha256": "cc645500d747a8116546379fe49d25319ae994e6f657824376f663d2bf41e5dc",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/data-analysis-plan/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/evidence-synthesis/SKILL.md",
+      "sha256": "1c6f58749e030f544d33bd8c9249f38e82535342a434f8d85a092f2e90982fe2",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/evidence-synthesis/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/find-sources/SKILL.md",
+      "sha256": "2a62388eccbf993ceb000a28ec1b24d22f805fb1c58ec6f04646e1196412808e",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/find-sources/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/grant-proposal/SKILL.md",
+      "sha256": "dd4e95cb3ed9da256f7d811ea1abf0e8917869022e111fff337151aa1723d672",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/grant-proposal/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/journal-finder/SKILL.md",
+      "sha256": "4b58ed326fcbc7744a62664c30e3776234319dd45a03a55216f789a14b12b2f5",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/journal-finder/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/literature-review/SKILL.md",
+      "sha256": "6aa5173eba0fd001af1d57842f0284017f02af6f30a0c49387df8f0a9961bc11",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/literature-review/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/methodology-design/SKILL.md",
+      "sha256": "5f4697915fda85da172abc7c86b4ca4639098d9f175369286e31dc49a0ebb4df",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/methodology-design/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/originality-integrity/SKILL.md",
+      "sha256": "7be16d78de72bb3b17a74fa7415dd7703e277b85754c07a7158b8e531d4751c4",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/originality-integrity/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/outline-builder/SKILL.md",
+      "sha256": "06f324673efc214e7cdcd8c7286613a1e19b1acd76b6469098c7dcb4427ad6c2",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/outline-builder/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/paper-breakdown/SKILL.md",
+      "sha256": "df9286bb6fee40c4016780a0a1f6ef310205ea2d923deffe99685eef9fcdb99c",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/paper-breakdown/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/paper-sections/SKILL.md",
+      "sha256": "c1f372f001a1c9254914491b68ee347f32b0c387b7cf5cb7d7acfd13c640fa2f",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/paper-sections/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/paperpal-tools/SKILL.md",
+      "sha256": "d8825db5e6e2ee11ae131e2e305593dec75e7d99d23cf09baadbb9c51c83bb03",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/paperpal-tools/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/paraphrase-summarize/SKILL.md",
+      "sha256": "c1e665dc4ecab1a52b71364910f93f05662bee9554e4f16da0e66bccc12f5e85",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/paraphrase-summarize/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/peer-review-critique/SKILL.md",
+      "sha256": "d923f6a3e59e9b9194297aa657b273ea242868ac97276f4de87134ac685b0b49",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/peer-review-critique/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/qualitative-analysis/SKILL.md",
+      "sha256": "4be9d6fe2de8ca7cd2640c70d9d68348bd41e9c0b5b4aac0613e40e7e33474a3",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/qualitative-analysis/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/research-communication/SKILL.md",
+      "sha256": "c3c651c2b5a46702ab7536d9ced3d00300f569055d4a21af2df8e733c5f6ea84",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/research-communication/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/research-ethics/SKILL.md",
+      "sha256": "622794c0c9ecd4dbd7825e1ba6061dec984f0cc6af50ab8b21c6b37c8e76a2e6",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/research-ethics/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/research-gaps/SKILL.md",
+      "sha256": "c36fad4b068e20517986c893bba92c9215df658f58a1e85be556f9e212357120",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/research-gaps/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/research-planner/SKILL.md",
+      "sha256": "572aaa61702916746f6aaf07b09f70678036eea35c90d3569f250a434167dce2",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/research-planner/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/research-proposal/SKILL.md",
+      "sha256": "457f8f04a37700526f31719c98bb7eaf868e7587d46c0f40ca1f8c6a199b65e2",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/research-proposal/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/research-question/SKILL.md",
+      "sha256": "ea2fbc7cfc01eb49d32fa7da478c6b608524165ec5acf99ea6f433d6f3df37f6",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/research-question/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/results-interpreter/SKILL.md",
+      "sha256": "9d14e2cc3b10bcb628868d871243dd0e3e6cd7e31b31afc36b96a993bcecd366",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/results-interpreter/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/reviewer-response/SKILL.md",
+      "sha256": "2075938fc2392160f1ccd758fe5d33b64a495d1ccafd6db0b8e3d0f13c498cad",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/reviewer-response/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/scholar-help/SKILL.md",
+      "sha256": "4608980acbab799edcb4548813e1c8172019c5c5b27425eab67080ba4ba06aea",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/scholar-help/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/scholar-studio/SKILL.md",
+      "sha256": "d38439382c47f21fcb4ef8e977644213867b676080b8a664ada608363309cb7b",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/scholar-studio/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/source-evaluation/SKILL.md",
+      "sha256": "aea7ae338e4ff0126f6c3c31340b5a70fd865d98bf91a0b97386cfb3cef32583",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/source-evaluation/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/submission-checklist/SKILL.md",
+      "sha256": "3ae768d2467ba3a9f2342d08c0c69cc576368b784d23fb9b67ec9b46c42d909c",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/submission-checklist/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/survey-design/SKILL.md",
+      "sha256": "57f542ae82b8c538a207fa04be7d61f9d04e1a13b4c677c3d75637cd56bb2a19",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/survey-design/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/systematic-review/SKILL.md",
+      "sha256": "0c07aa06944fbfd17b30be8fb13f34cb66bd1be23330cdc4aab0169303ca6e66",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/systematic-review/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/theoretical-framework/SKILL.md",
+      "sha256": "dd09982a2026560ec3954542de9aa7d635efbd7101c6a1a8ae1fd3d97dfe46b2",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/theoretical-framework/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/thesis-dissertation/SKILL.md",
+      "sha256": "4dfd884d135c35858fe2650cd7255f1e085959b2d4a2d88b3b4bacedfd956264",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/thesis-dissertation/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scholarresearch/1.1.0/skills/word-reduction/SKILL.md",
+      "sha256": "d1406e28d35a15bcb54019d05dd0c326e8efa8c0c9c7ca265947c387c54a605b",
+      "exported": "resources/originals/scholarresearch/1.1.0/skills/word-reduction/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/.codex-remote-plugin-install.json",
+      "sha256": "c787bbf98aef0eb0655096ede9f2c0d4fdd040c6df6220f9da8dac77a069486f",
+      "exported": "resources/originals/scientific-visual-table-style/.codex-remote-plugin-install.json"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/.codex-plugin/assets/composer-icon.png",
+      "sha256": "be0abc05b10c0e12aecd76b96c7106b452643d981ddc3642a225307f048e640d",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/.codex-plugin/assets/composer-icon.png"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/.codex-plugin/assets/logo.png",
+      "sha256": "f1cd1be6ba5eef68cc381d955978b287e93b76489f682cff13495f9f7e2bbe3e",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/.codex-plugin/assets/logo.png"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/.codex-plugin/plugin.json",
+      "sha256": "4d227166deb75cb40043fe995f952a73253e48684a46068e04308bdef4a9ca20",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/.codex-plugin/plugin.json"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/assets/composer-icon.png",
+      "sha256": "be0abc05b10c0e12aecd76b96c7106b452643d981ddc3642a225307f048e640d",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/assets/composer-icon.png"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/assets/logo.png",
+      "sha256": "f1cd1be6ba5eef68cc381d955978b287e93b76489f682cff13495f9f7e2bbe3e",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/assets/logo.png"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/agents/openai.yaml",
+      "sha256": "bf12e6762e241e8307d6050b77e4f87bb4c92f5308c5b0f880b794e2f9b26b1a",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/agents/openai.yaml"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/examples/example_openai_visuals.py",
+      "sha256": "94512555a8d3a528071e51c2f2dee2fa40acd451e9e3c62c587a889163c0854d",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/examples/example_openai_visuals.py"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/examples/README.md",
+      "sha256": "59bc7fb8acbc86d1549b6248b619b715e081d443eab062d604bb97c5fdef0c64",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/examples/README.md"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/direct_asset_manifest.txt",
+      "sha256": "cef99e4d82be06318c026e28066321c7870bc3b7403c9f80f66167bf29ccb856",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/direct_asset_manifest.txt"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/form_selection.md",
+      "sha256": "81db425b2cb4887149b89f2c4d63848e5cb681163f4e498543f0f3a43b2501a9",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/form_selection.md"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/gpt6_astra_north_star.md",
+      "sha256": "d5c2add660c2d2102c41a71f2b405600f7aa9eaf6a33932757d540b272626a29",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/gpt6_astra_north_star.md"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/gpt6_astra_reference_index.json",
+      "sha256": "804b93bb010c6b78c34afb0a1bfb01dfb7a56e5e3bb1daf03c3f19523baae014",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/gpt6_astra_reference_index.json"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/openai_visual_reference_library.jsonl",
+      "sha256": "fb04dc85ec9227dc6fa6780e368a03b29c38a7c5db9a6792acadbc4705403989",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/openai_visual_reference_library.jsonl"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/provenance.md",
+      "sha256": "b4c0fe139b7f54f2d9e0dae5dee36b996e02c53fde926cc926e3fd4a22b2ad1c",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/provenance.md"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/quality_gates.md",
+      "sha256": "4c5044e68757666c69e405e1ea6d95b7201a3255c2e6aa4658c723a9b7c44045",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/quality_gates.md"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/reference_design_spec.md",
+      "sha256": "2a7d8cdfd4e09a6cff708716ed17653423b9cde40b82f14f2e49a62daa0ad0ef",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/reference_design_spec.md"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/style_contract.md",
+      "sha256": "12b30c2c64a338d2ab8e37755077f40518cc158f950b7f4d865c00d03617f875",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/style_contract.md"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/top_reference_set.md",
+      "sha256": "8d2a1243b5da313f6dd8d4d777cc08d0d5eefbca394344d35c3d7144a187f626",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/top_reference_set.md"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/scripts/astra_visual_qa.py",
+      "sha256": "308a9e58d01e753b7711b576f0a59225651857a93c01acf15a0a3a32fed96efe",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/scripts/astra_visual_qa.py"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/scripts/select_references.py",
+      "sha256": "580b88559f43edc92e2362abf1545dee999e36bf0edea5fd5e2cdb8330db0cc8",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/scripts/select_references.py"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/scripts/table_qa.py",
+      "sha256": "1200cb6779c50586ab26b3765b3fa2fb9f05b97b35c5135b52d252f9f259bd70",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/scripts/table_qa.py"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/scripts/visual_qa.py",
+      "sha256": "aee6c39eab6823a8b68c45aa44bcfbacf06d9e08bf17d89638e55ed18f5e8e2e",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/scripts/visual_qa.py"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/SKILL.md",
+      "sha256": "86d684ab88ec1396d6d17b241d58409798c93f71334b60b75391d987900eebe3",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/SKILL.md"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/templates/astra_visual_system.py",
+      "sha256": "ae5fbc703f1161cea7a9dc0161bec02e929429ec31e71ac6d5ce9e4919569435",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/templates/astra_visual_system.py"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/templates/astra_visual_tokens.json",
+      "sha256": "1446818fec2c5c7a650592ccf5319edc5e66e28a581b8395662b93930381b9a9",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/templates/astra_visual_tokens.json"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/templates/openai_table.css",
+      "sha256": "2c71b61e3351b9a5ead5578466bb0c1cf6342b4ae6db1638acb12302ef53060e",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/templates/openai_table.css"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/templates/openai_table.tex",
+      "sha256": "aaf7aa5469bdb5794cf75daceb304e296da84306369614d7df2f9e761af2a080",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/templates/openai_table.tex"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/templates/openai_visuals.py",
+      "sha256": "05450d6faaca6e6ba02fd60f3c84ac20ff8cb5216e084fb0e160ca5f225d05be",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/templates/openai_visuals.py"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/templates/visual_spec.schema.json",
+      "sha256": "3e1be0bef17143d6b0863307d74ea5d613f1729b05e836fc9e6d5ea2478e6f8f",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/templates/visual_spec.schema.json"
+    },
+    {
+      "original": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/VERSION",
+      "sha256": "c4a2383a03bdb6739d16a0e24058e4b9c7da4e63d203e0be2f448868cc03c530",
+      "exported": "resources/originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/VERSION"
+    },
+    {
+      "original": "resources/upstream/academic-humanizer-main/.gitignore",
+      "sha256": "cf237c7aff44efbe6e502e645c3e06da03a69d7bdeb43392108ef3348143417e",
+      "exported": "resources/upstream/academic-humanizer-main/.gitignore"
+    },
+    {
+      "original": "resources/upstream/academic-humanizer-main/assets/banner.svg",
+      "sha256": "e3a332cac2dcb74c57137ed29231bc154534191827f1d8488201440e7e6803cb",
+      "exported": "resources/upstream/academic-humanizer-main/assets/banner.svg"
+    },
+    {
+      "original": "resources/upstream/academic-humanizer-main/assets/rednote-zh.png",
+      "sha256": "cf1ada64d95deef03b484e5d27421fd47a5591ea255aceedf955d4af3d43eb53",
+      "exported": "resources/upstream/academic-humanizer-main/assets/rednote-zh.png"
+    },
+    {
+      "original": "resources/upstream/academic-humanizer-main/assets/rednote-zh.svg",
+      "sha256": "935e4c7d9c2606a652fc5710dd4b33a087a00e08d93aa6eba3a772bbe1a7a153",
+      "exported": "resources/upstream/academic-humanizer-main/assets/rednote-zh.svg"
+    },
+    {
+      "original": "resources/upstream/academic-humanizer-main/assets/x-en.png",
+      "sha256": "016424a96666490e96802b9900fd6047f1297e313bcd526cdef03c6c15659615",
+      "exported": "resources/upstream/academic-humanizer-main/assets/x-en.png"
+    },
+    {
+      "original": "resources/upstream/academic-humanizer-main/assets/x-en.svg",
+      "sha256": "7b699c6b14a6be52eb0722db513e52156f814b7d0b17f50a7fe01171abba5f01",
+      "exported": "resources/upstream/academic-humanizer-main/assets/x-en.svg"
+    },
+    {
+      "original": "resources/upstream/academic-humanizer-main/examples/before-after.md",
+      "sha256": "60e73dfa2bab743998af2ed389b9afffa38e2c63e7248fca48bae32a19458a5e",
+      "exported": "resources/upstream/academic-humanizer-main/examples/before-after.md"
+    },
+    {
+      "original": "resources/upstream/academic-humanizer-main/LICENSE",
+      "sha256": "95201f07cd5d4454f205a53a65337cbe00298a4d21a4e68a1fc516958e7cdaf9",
+      "exported": "resources/upstream/academic-humanizer-main/LICENSE"
+    },
+    {
+      "original": "resources/upstream/academic-humanizer-main/README.md",
+      "sha256": "ed40692dbee51ed2f2c53a02c7c34772ce23f94cab2394877544e98c0b445b54",
+      "exported": "resources/upstream/academic-humanizer-main/README.md"
+    },
+    {
+      "original": "resources/upstream/academic-humanizer-main/SKILL.md",
+      "sha256": "1f4501cb7331cffe9018960f8db045c719eea0658ce04e4af5e273ee59785a9c",
+      "exported": "resources/upstream/academic-humanizer-main/SKILL.md"
+    },
+    {
+      "original": "resources/upstream/academic-pptx-skill-main/Academic_Presentation_Best_Practices_DH_built_with_Claude_2_2026.pdf",
+      "sha256": "ad89e2b8e4f276d9e9f25f7f090706906e5aac499a6e8acbd2b712d4094f9945",
+      "exported": "resources/upstream/academic-pptx-skill-main/Academic_Presentation_Best_Practices_DH_built_with_Claude_2_2026.pdf"
+    },
+    {
+      "original": "resources/upstream/academic-pptx-skill-main/content_guidelines.md",
+      "sha256": "d9b0351b31995d2aa34ac31550fb430310bf1ba6bfc19e1767eba8f24f807bf1",
+      "exported": "resources/upstream/academic-pptx-skill-main/content_guidelines.md"
+    },
+    {
+      "original": "resources/upstream/academic-pptx-skill-main/LICENSE",
+      "sha256": "20d9c009d0e5d7150da5e081c8d5a81463731dcf338323992a74a0648e6fb542",
+      "exported": "resources/upstream/academic-pptx-skill-main/LICENSE"
+    },
+    {
+      "original": "resources/upstream/academic-pptx-skill-main/README.md",
+      "sha256": "c27a1813d8af720fb1bfbbad7582df6d515fd7c9202f2e50be94aae65532fa3e",
+      "exported": "resources/upstream/academic-pptx-skill-main/README.md"
+    },
+    {
+      "original": "resources/upstream/academic-pptx-skill-main/SKILL.md",
+      "sha256": "c321851cd9d9b98d429de4798766207525024f3f28c3fe6dd5932ae79a2efb28",
+      "exported": "resources/upstream/academic-pptx-skill-main/SKILL.md"
+    },
+    {
+      "original": "resources/upstream/academic-pptx-skill-main/slide_patterns.md",
+      "sha256": "f367318f3a9e4b0031e10c179cc673b7a59abeeb3bc0249680e64d3277f18764",
+      "exported": "resources/upstream/academic-pptx-skill-main/slide_patterns.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/code/comparators.py",
+      "sha256": "8e558c082888453d50050736888bcda8a93eaaa777800f6c4e49492030e8a325",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/code/comparators.py"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/code/generate_figures.py",
+      "sha256": "d2c56a7b8abab21626994847c0d21fd478f63be5586fd38a32603b6a2955096d",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/code/generate_figures.py"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/code/method.py",
+      "sha256": "6c5d8c1585be24bf28c24c43e81b335c2f2db67c210243f2b54a3ad8df536767",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/code/method.py"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/code/run_validation.py",
+      "sha256": "fdfcda5142912b28fbb5728718197834b2a4a179b9cb005bbd822b4fcffda611",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/code/run_validation.py"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/ablation_results.csv",
+      "sha256": "4de5393cd4d82ba30cf294aef7af4145395498d20006f7f3824e019ab530150b",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/ablation_results.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/conditional_coverage_concentration.csv",
+      "sha256": "f5454ab7a56dfecaf30cdc2a0fb4f97b7dba094b6be395fc9feb3fe5173dc467",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/conditional_coverage_concentration.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/conditional_coverage_quartile.csv",
+      "sha256": "ddddc831a6c2a343671fe5029051000433569a3bf3136637058406f19b78c879",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/conditional_coverage_quartile.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/high_dim_results.csv",
+      "sha256": "a3fb0e9eec8b7122b482f7bc173426762446cfabb08280eaaf31acdbd34a0c43",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/high_dim_results.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/joint_shift.csv",
+      "sha256": "15062c55ae7c7a79f6043dabfaddc187abfaecf1943e2ab4906be10ec606bda2",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/joint_shift.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/label_shift.csv",
+      "sha256": "30855c3557b17409fbc6e4c78c24d72fb7e66325531576e1bd83f4cec8cfe1a6",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/label_shift.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/mve_production.csv",
+      "sha256": "3420645cf78a7b1ae4ded1c83a4ae4e29d6cdc073299e08d9f258d09d01a3e15",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/mve_production.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/real_world_results.csv",
+      "sha256": "8005b51598ec17c2d1710402b8dc7e31c0a3042d67fd791c7d1f382d0443ea70",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/real_world_results.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/scalability.csv",
+      "sha256": "4c64385e525f2b6fba33bd0a4ae6db842450aaa10e3498f8ec5af00a1cf5fcae",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/scalability.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/sensitivity_K.csv",
+      "sha256": "a49a4c0e9a7fd9e69743e0ca0a6fe1cd7da672551bf69ba4d44c3f0f3be3244e",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/sensitivity_K.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/sensitivity_nk.csv",
+      "sha256": "625da192d8052d1a2ccdabbd791343f6d6b120f62d9d4fb0e2862f5ce2800bd0",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/sensitivity_nk.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/sensitivity_shift.csv",
+      "sha256": "c33a5c77797d9f46175c5ef3caaa2e9acc2f6aa9165a5580e7d4f034e7923c82",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/sensitivity_shift.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/significance_tests.csv",
+      "sha256": "9d7f262d60d5f26a90e355f7c82d1212ea69901afddd1314df7339e5ea2ab739",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/significance_tests.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/source_weights.csv",
+      "sha256": "0926ccb02e4207d96cef2e80d69e25ff2f1cec274a78172fb1ff50f596d3aeaa",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/source_weights.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/stress_adversarial_source.csv",
+      "sha256": "ad6040a9ded33b8830501626c7618df649c848c3878cf49347cca47ac422f3bf",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/stress_adversarial_source.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/stress_all.csv",
+      "sha256": "e56577f92305dc7c47a4fcc4a952f01d9264b57af7c4c45ad0264d621f7a3ab8",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/stress_all.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/stress_all_bad.csv",
+      "sha256": "3de54c0bb9b136b6790ba5cd1158c9c86cb656cac7047a450a3c267544b2eea4",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/stress_all_bad.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/stress_exact_match.csv",
+      "sha256": "5db5ad013489afd3ab6eb5e44aaa81b11a8299a660081557fedacd7f86fde16a",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/stress_exact_match.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/stress_high_dim.csv",
+      "sha256": "6a6b23aa9a279f4772c6af3801d10f9c49f356a2f85335f8a677ceb063952f68",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/stress_high_dim.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/stress_single_source.csv",
+      "sha256": "92615e3c44beb069367c17e13e4dab81ee19c15210bd44f052195ec167e879bf",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/stress_single_source.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/timings.csv",
+      "sha256": "674fbd97a445cfccb9a5222cecbd5b353855a8d4969d6e77315c5e3fe0bc164b",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/timings.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/wine_results.csv",
+      "sha256": "9c805e14101b72436d49941b2215698c55be5e58484a171a43fca447c6eedc16",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/wine_results.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/wine_significance.csv",
+      "sha256": "82ad8b7f60189552aa6856b3c2561a66a7ce6573f33dac95d26d9e2ff5db0f32",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/data/wine_significance.csv"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/figures/comparison_main.pdf",
+      "sha256": "869c34075770eba5803de1e1ac7e6d370d5f42801a6b2ee103fb2dcb3a6a3925",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/figures/comparison_main.pdf"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/figures/method_overview.pdf",
+      "sha256": "13ce40b70b2091b019699395406ef1294410acf75658b384211f9fe6794805f9",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/figures/method_overview.pdf"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/figures/sensitivity_shift.pdf",
+      "sha256": "9413f1b8f7beb6d575b83a8fea9da99f993a386b4c5047afefd3198ff7298da3",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/figures/sensitivity_shift.pdf"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/figures/shift_type_comparison.pdf",
+      "sha256": "f7d168b3cb7e2f00e7ccc7f26cea923c1de3ac394c8c7fb32f2991294b515a3c",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/figures/shift_type_comparison.pdf"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/figures/source_weights.pdf",
+      "sha256": "18a24baf98eb832cd25dba72fb1db0d6108763f01a8c4199ac7d8f82088f82bc",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/figures/source_weights.pdf"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/figures/stress_heatmap.pdf",
+      "sha256": "c054c0ebbd788144f40b9fc6447833088859ad5b2e55b0e401cc919c504f56f9",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/figures/stress_heatmap.pdf"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/manuscript.tex",
+      "sha256": "32401901ebeaec1d6baaab5f9a22884ea45ba9bb33817262f1ab8c4b09e3ab5e",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/manuscript.tex"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/methodology_specification.md",
+      "sha256": "a68743129bef12153b40d69fd8b8f757ebc2e9c3c910750ac20c38ba7966b064",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/methodology_specification.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/paper_grade.md",
+      "sha256": "d375048b88ca7ccf351247f8ecd302bf9aca162b7af94e9eaad76b05fcafac3b",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/paper_grade.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/pipeline_log.md",
+      "sha256": "355c6b3a966288ae4820cf7f3b88d952cf8689d25533b01aeff2117d75bc7be5",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/pipeline_log.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/references.bib",
+      "sha256": "901ae690fb0d721df0abd2d7271d59baa00770be68a0dbfd383f0aea6cb62e68",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/references.bib"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/case-studies/conformal-prediction/validation_report.md",
+      "sha256": "fedf39eeaac6c9aae506998f2879edbe41c43df92d8f49472bfcf1c278593ef1",
+      "exported": "resources/upstream/ARMS-main/case-studies/conformal-prediction/validation_report.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/DISCLAIMER.md",
+      "sha256": "a59011c29302f8371d52c9bf76f53468fac013fe2507a914da762d67233c83b2",
+      "exported": "resources/upstream/ARMS-main/DISCLAIMER.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/docs/contribution-evidence-validation.md",
+      "sha256": "573d5f2309477676719a3ef0323268688e290480396270a97b4d7b47da337d83",
+      "exported": "resources/upstream/ARMS-main/docs/contribution-evidence-validation.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/docs/validation/author-grounded-manuscript-trial.md",
+      "sha256": "ad38710f5e3567a9c9fc077f1d5ae40eacf9fa33f4088407bec238db9b9bf58a",
+      "exported": "resources/upstream/ARMS-main/docs/validation/author-grounded-manuscript-trial.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/examples/conformal_prediction/research_brief.md",
+      "sha256": "6ed0b227b84f3cff64166d2165bc0faed6eb4769c304836c95bb9884f46b9e80",
+      "exported": "resources/upstream/ARMS-main/examples/conformal_prediction/research_brief.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/LICENSE",
+      "sha256": "117c864bc72784010cec0e140853a08818beda9369a7e5bb4bb0f34b7d14b45b",
+      "exported": "resources/upstream/ARMS-main/LICENSE"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/README.md",
+      "sha256": "1c8d6557e3fcf94c67fcf8bd218932b9d1fd65e9eba43b72a14f6e1db11e6ccf",
+      "exported": "resources/upstream/ARMS-main/README.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/research_brief_template.md",
+      "sha256": "eada60ab1bdf1624a305ab5891ef3e7a5d7f667897d6abf73d762124a87b096d",
+      "exported": "resources/upstream/ARMS-main/research_brief_template.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/brief-expander/SKILL.md",
+      "sha256": "c204e19e021e0e2b1b9483ce563e4b710defa31112aabfdadcd94d07da721d72",
+      "exported": "resources/upstream/ARMS-main/skills/brief-expander/SKILL.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/critic-revisor/run_loop.sh",
+      "sha256": "88b22066a0278711f371009cb064d3e844e43233e58efb0a12b962b3b4e82d72",
+      "exported": "resources/upstream/ARMS-main/skills/critic-revisor/run_loop.sh"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/critic-revisor/SKILL.md",
+      "sha256": "e8f6441327284536a6c8d55939b4faeef95f0ed4ddd9b3ecbe6a7e2da2bd2af4",
+      "exported": "resources/upstream/ARMS-main/skills/critic-revisor/SKILL.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/house-style/examples/abstract-reader-first.md",
+      "sha256": "dd661866cc616f2a7a511f298164af806e62bf7af07711838566f74a02c32b66",
+      "exported": "resources/upstream/ARMS-main/skills/house-style/examples/abstract-reader-first.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/house-style/examples/dense-results-paragraph.md",
+      "sha256": "b9b378628f7c5518e28694343fd0aa0eeeb916de3d6480961df964e1ad057c1c",
+      "exported": "resources/upstream/ARMS-main/skills/house-style/examples/dense-results-paragraph.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/house-style/references/contribution-evidence.md",
+      "sha256": "8891c83c6ef3b2b2e5c541d2e43f82b14e8fb3faaeaa19f3125c32d13a1a7693",
+      "exported": "resources/upstream/ARMS-main/skills/house-style/references/contribution-evidence.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/house-style/references/manuscript-shape.md",
+      "sha256": "3bf3ac32629f9728ef431913328bc0fcd39baab716556822e4b86308d726c428",
+      "exported": "resources/upstream/ARMS-main/skills/house-style/references/manuscript-shape.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/house-style/references/synopsis-gate.md",
+      "sha256": "8800f13295b924be1b21f6c3f6f61029d9a8ffd5c7bd58b4d9b4d9da087049e1",
+      "exported": "resources/upstream/ARMS-main/skills/house-style/references/synopsis-gate.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/house-style/references/yuan-ji.md",
+      "sha256": "8a26b2f8b50af03886606a6fbf8fdfec9e0d1019115b29478437692d18343c81",
+      "exported": "resources/upstream/ARMS-main/skills/house-style/references/yuan-ji.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/house-style/scripts/style_metrics.py",
+      "sha256": "f92201bb65c0af2cb63c2553c300edddfd082074c5ff84596b43caa09c4b9b14",
+      "exported": "resources/upstream/ARMS-main/skills/house-style/scripts/style_metrics.py"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/house-style/SKILL.md",
+      "sha256": "212156ae05b027b56e5e595e88f849df582db0f06dfee72fd9c8434f77d9910b",
+      "exported": "resources/upstream/ARMS-main/skills/house-style/SKILL.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/literature-lead/SKILL.md",
+      "sha256": "2f52218467c349e51ae32181f56d3613ad24434918ec7478006a00198432ce33",
+      "exported": "resources/upstream/ARMS-main/skills/literature-lead/SKILL.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/methodology-architect/SKILL.md",
+      "sha256": "7020a89a3bda67eaeb5d31c50736bef141a859e952e0fa33247c8d6f578a2b73",
+      "exported": "resources/upstream/ARMS-main/skills/methodology-architect/SKILL.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/paper-critic/SKILL.md",
+      "sha256": "d91a2cbffe782f4e1a3cb2ecbf4d255d3aa91f13b0abe8d544e9ca80f97f5ad0",
+      "exported": "resources/upstream/ARMS-main/skills/paper-critic/SKILL.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/paper-fixer/SKILL.md",
+      "sha256": "0f793932d1b0947bd326eb6ea89928f07f387761c5548229a6e91279fcf47a56",
+      "exported": "resources/upstream/ARMS-main/skills/paper-fixer/SKILL.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/paper-grader/SKILL.md",
+      "sha256": "5fbda1132df8a77733053fa3fdb6563c13714b3a9f579840a9110c59cac10c11",
+      "exported": "resources/upstream/ARMS-main/skills/paper-grader/SKILL.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/paper-modeler/SKILL.md",
+      "sha256": "c84b8090062ff8924713a96ac96af9888f4a4cac7980a212a4fddb33a1ba4506",
+      "exported": "resources/upstream/ARMS-main/skills/paper-modeler/SKILL.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/paper-writer/SKILL.md",
+      "sha256": "2581e6de3be931fd9833af179dc59b4cb2757cd8efefb59ed63270ec946e17f3",
+      "exported": "resources/upstream/ARMS-main/skills/paper-writer/SKILL.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/research-pipeline/README.md",
+      "sha256": "33915ecdd9d201b771bfcc38c51636c91cf7987d19f51cc9ca2ae699a7b90a33",
+      "exported": "resources/upstream/ARMS-main/skills/research-pipeline/README.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/research-pipeline/research_brief_template.md",
+      "sha256": "75ccca995d7a3f3fadfb48ffa9d488d7f93b0a7de2ece790deb86081fabf2c9c",
+      "exported": "resources/upstream/ARMS-main/skills/research-pipeline/research_brief_template.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/research-pipeline/SKILL.md",
+      "sha256": "ffb4cd823d31cd9d7c662cd29a9408e76ba80af26c0e28065b58e369dd24c04c",
+      "exported": "resources/upstream/ARMS-main/skills/research-pipeline/SKILL.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/validate-method/SKILL.md",
+      "sha256": "d967c268d843e717bcc625ca2582d9cc02a56ac423acca2d0799a9dbf4bee0da",
+      "exported": "resources/upstream/ARMS-main/skills/validate-method/SKILL.md"
+    },
+    {
+      "original": "resources/upstream/ARMS-main/skills/write-manuscript/SKILL.md",
+      "sha256": "1b42d55a59f3b3219a8a0b238ff5409d031d17cc17903d7c1c4f25f97f0977a3",
+      "exported": "resources/upstream/ARMS-main/skills/write-manuscript/SKILL.md"
+    },
+    {
+      "original": "resources/upstream/humanizer-main/.claude-plugin/marketplace.json",
+      "sha256": "e539740285b660d2288a38b6d9b237396c6769828c671c46b9f91e760db6cc29",
+      "exported": "resources/upstream/humanizer-main/.claude-plugin/marketplace.json"
+    },
+    {
+      "original": "resources/upstream/humanizer-main/.claude-plugin/plugin.json",
+      "sha256": "054c0afeeb03c12f01a7f156da949edfdec3a2b756588f5ff4ee7357b0c07f6a",
+      "exported": "resources/upstream/humanizer-main/.claude-plugin/plugin.json"
+    },
+    {
+      "original": "resources/upstream/humanizer-main/.cursor-plugin/plugin.json",
+      "sha256": "d1e0b50594cf4bbe57fd164b771b401713a91b76b5a213ebe8f4558bb2036546",
+      "exported": "resources/upstream/humanizer-main/.cursor-plugin/plugin.json"
+    },
+    {
+      "original": "resources/upstream/humanizer-main/.github/ISSUE_TEMPLATE/config.yml",
+      "sha256": "cb7e95de7606d07654024c8d47916796b307033e23ddb2b0a821a9bf89e999ef",
+      "exported": "resources/upstream/humanizer-main/.github/ISSUE_TEMPLATE/config.yml"
+    },
+    {
+      "original": "resources/upstream/humanizer-main/.github/ISSUE_TEMPLATE/new-pattern.yml",
+      "sha256": "7436d578fa0056a09da5da6da950a03cb49f3ce27cf268ae295eb3d7ca19f604",
+      "exported": "resources/upstream/humanizer-main/.github/ISSUE_TEMPLATE/new-pattern.yml"
+    },
+    {
+      "original": "resources/upstream/humanizer-main/.github/ISSUE_TEMPLATE/rewrite-problem.yml",
+      "sha256": "ecfe5e82c5b6d44683e0cb63cfad117dfdd16e30cc6f03510ef335414eea4947",
+      "exported": "resources/upstream/humanizer-main/.github/ISSUE_TEMPLATE/rewrite-problem.yml"
+    },
+    {
+      "original": "resources/upstream/humanizer-main/.github/workflows/validate.yml",
+      "sha256": "f2d6a8780fb0b3cf6fa7d2ffccd72d0fc8bee29b4e63ea0fd65924712c9055fd",
+      "exported": "resources/upstream/humanizer-main/.github/workflows/validate.yml"
+    },
+    {
+      "original": "resources/upstream/humanizer-main/agents/openai.yaml",
+      "sha256": "9d87ff83149a04f86a372948b8ee35fa249de20923867bbc2a49304290aad736",
+      "exported": "resources/upstream/humanizer-main/agents/openai.yaml"
+    },
+    {
+      "original": "resources/upstream/humanizer-main/AGENTS.md",
+      "sha256": "de84a449da400454df1225ddb1ced728c35bf0be7811b239e3370c7dbe1f4e69",
+      "exported": "resources/upstream/humanizer-main/AGENTS.md"
+    },
+    {
+      "original": "resources/upstream/humanizer-main/CHANGELOG.md",
+      "sha256": "b3591fe203429f1a6bd2f713c79272e9a8e58a487843d0908d2bbe0700722afa",
+      "exported": "resources/upstream/humanizer-main/CHANGELOG.md"
+    },
+    {
+      "original": "resources/upstream/humanizer-main/LICENSE",
+      "sha256": "4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96",
+      "exported": "resources/upstream/humanizer-main/LICENSE"
+    },
+    {
+      "original": "resources/upstream/humanizer-main/README.md",
+      "sha256": "500b53c0d29cd3219d160b5f9a109c0969f706aec74b49a4a081d2026ba48ec7",
+      "exported": "resources/upstream/humanizer-main/README.md"
+    },
+    {
+      "original": "resources/upstream/humanizer-main/scripts/validate-package.py",
+      "sha256": "941bd99e52b2ba21449719bb7969607ac8117e3dc173d0c9dfe64fd274c65938",
+      "exported": "resources/upstream/humanizer-main/scripts/validate-package.py"
+    },
+    {
+      "original": "resources/upstream/humanizer-main/SKILL.md",
+      "sha256": "0612f1dfb1672b0ea9b97e139bf1f06cabe98d8b27424fe8ff01e1fb4cc99cad",
+      "exported": "resources/upstream/humanizer-main/SKILL.md"
+    },
+    {
+      "original": "server/assistant_server.py",
+      "sha256": "ae3f3d4a8f066b1feacc43e3875655015c49c6dc3904e4eb3347c5e064e761c6",
+      "exported": "server/assistant_server.py"
+    },
+    {
+      "original": "skills/academic-humanizer/.gitignore",
+      "sha256": "cf237c7aff44efbe6e502e645c3e06da03a69d7bdeb43392108ef3348143417e",
+      "exported": "skills/academic-humanizer/.gitignore"
+    },
+    {
+      "original": "skills/academic-humanizer/assets/banner.svg",
+      "sha256": "e3a332cac2dcb74c57137ed29231bc154534191827f1d8488201440e7e6803cb",
+      "exported": "skills/academic-humanizer/assets/banner.svg"
+    },
+    {
+      "original": "skills/academic-humanizer/assets/rednote-zh.png",
+      "sha256": "cf1ada64d95deef03b484e5d27421fd47a5591ea255aceedf955d4af3d43eb53",
+      "exported": "skills/academic-humanizer/assets/rednote-zh.png"
+    },
+    {
+      "original": "skills/academic-humanizer/assets/rednote-zh.svg",
+      "sha256": "935e4c7d9c2606a652fc5710dd4b33a087a00e08d93aa6eba3a772bbe1a7a153",
+      "exported": "skills/academic-humanizer/assets/rednote-zh.svg"
+    },
+    {
+      "original": "skills/academic-humanizer/assets/x-en.png",
+      "sha256": "016424a96666490e96802b9900fd6047f1297e313bcd526cdef03c6c15659615",
+      "exported": "skills/academic-humanizer/assets/x-en.png"
+    },
+    {
+      "original": "skills/academic-humanizer/assets/x-en.svg",
+      "sha256": "7b699c6b14a6be52eb0722db513e52156f814b7d0b17f50a7fe01171abba5f01",
+      "exported": "skills/academic-humanizer/assets/x-en.svg"
+    },
+    {
+      "original": "skills/academic-humanizer/examples/before-after.md",
+      "sha256": "60e73dfa2bab743998af2ed389b9afffa38e2c63e7248fca48bae32a19458a5e",
+      "exported": "skills/academic-humanizer/examples/before-after.md"
+    },
+    {
+      "original": "skills/academic-humanizer/LICENSE",
+      "sha256": "95201f07cd5d4454f205a53a65337cbe00298a4d21a4e68a1fc516958e7cdaf9",
+      "exported": "skills/academic-humanizer/LICENSE"
+    },
+    {
+      "original": "skills/academic-humanizer/README.md",
+      "sha256": "ed40692dbee51ed2f2c53a02c7c34772ce23f94cab2394877544e98c0b445b54",
+      "exported": "skills/academic-humanizer/README.md"
+    },
+    {
+      "original": "skills/academic-humanizer/SKILL.md",
+      "sha256": "7560840e10d6f518ecc27ecf3a240c7876061e88c2cf27b5e138a4b941e7bb02",
+      "exported": "audit/baseline/skills/academic-humanizer/SKILL.md"
+    },
+    {
+      "original": "skills/academic-pptx/Academic_Presentation_Best_Practices_DH_built_with_Claude_2_2026.pdf",
+      "sha256": "ad89e2b8e4f276d9e9f25f7f090706906e5aac499a6e8acbd2b712d4094f9945",
+      "exported": "skills/academic-pptx/Academic_Presentation_Best_Practices_DH_built_with_Claude_2_2026.pdf"
+    },
+    {
+      "original": "skills/academic-pptx/content_guidelines.md",
+      "sha256": "d9b0351b31995d2aa34ac31550fb430310bf1ba6bfc19e1767eba8f24f807bf1",
+      "exported": "skills/academic-pptx/content_guidelines.md"
+    },
+    {
+      "original": "skills/academic-pptx/LICENSE",
+      "sha256": "20d9c009d0e5d7150da5e081c8d5a81463731dcf338323992a74a0648e6fb542",
+      "exported": "skills/academic-pptx/LICENSE"
+    },
+    {
+      "original": "skills/academic-pptx/README.md",
+      "sha256": "c27a1813d8af720fb1bfbbad7582df6d515fd7c9202f2e50be94aae65532fa3e",
+      "exported": "skills/academic-pptx/README.md"
+    },
+    {
+      "original": "skills/academic-pptx/SKILL.md",
+      "sha256": "2c39c2c70f338675a85ca6cbdb57716ecf1fd1b404697035084993977476fd80",
+      "exported": "audit/baseline/skills/academic-pptx/SKILL.md"
+    },
+    {
+      "original": "skills/academic-pptx/slide_patterns.md",
+      "sha256": "f367318f3a9e4b0031e10c179cc673b7a59abeeb3bc0249680e64d3277f18764",
+      "exported": "skills/academic-pptx/slide_patterns.md"
+    },
+    {
+      "original": "skills/arms-brief-expander/SKILL.md",
+      "sha256": "0b949ed5f495503b00a724877766d93148f8c4b6287c83eddbb23e974a10ad70",
+      "exported": "audit/baseline/skills/arms-brief-expander/SKILL.md"
+    },
+    {
+      "original": "skills/arms-critic-revisor/run_loop.sh",
+      "sha256": "a64a28f15ffe888981d4fe44d9285e983fdefb409959fb6099cddb67f6f6c3e9",
+      "exported": "skills/arms-critic-revisor/run_loop.sh"
+    },
+    {
+      "original": "skills/arms-critic-revisor/SKILL.md",
+      "sha256": "052a9f65244d8efc5d7b1411e15ea732efdf3bc89c49a89d5dd144effbf33c82",
+      "exported": "audit/baseline/skills/arms-critic-revisor/SKILL.md"
+    },
+    {
+      "original": "skills/arms-house-style/examples/abstract-reader-first.md",
+      "sha256": "dd661866cc616f2a7a511f298164af806e62bf7af07711838566f74a02c32b66",
+      "exported": "skills/arms-house-style/examples/abstract-reader-first.md"
+    },
+    {
+      "original": "skills/arms-house-style/examples/dense-results-paragraph.md",
+      "sha256": "b9b378628f7c5518e28694343fd0aa0eeeb916de3d6480961df964e1ad057c1c",
+      "exported": "skills/arms-house-style/examples/dense-results-paragraph.md"
+    },
+    {
+      "original": "skills/arms-house-style/references/contribution-evidence.md",
+      "sha256": "8891c83c6ef3b2b2e5c541d2e43f82b14e8fb3faaeaa19f3125c32d13a1a7693",
+      "exported": "skills/arms-house-style/references/contribution-evidence.md"
+    },
+    {
+      "original": "skills/arms-house-style/references/manuscript-shape.md",
+      "sha256": "3bf3ac32629f9728ef431913328bc0fcd39baab716556822e4b86308d726c428",
+      "exported": "skills/arms-house-style/references/manuscript-shape.md"
+    },
+    {
+      "original": "skills/arms-house-style/references/synopsis-gate.md",
+      "sha256": "8800f13295b924be1b21f6c3f6f61029d9a8ffd5c7bd58b4d9b4d9da087049e1",
+      "exported": "skills/arms-house-style/references/synopsis-gate.md"
+    },
+    {
+      "original": "skills/arms-house-style/references/yuan-ji.md",
+      "sha256": "8a26b2f8b50af03886606a6fbf8fdfec9e0d1019115b29478437692d18343c81",
+      "exported": "skills/arms-house-style/references/yuan-ji.md"
+    },
+    {
+      "original": "skills/arms-house-style/scripts/style_metrics.py",
+      "sha256": "f92201bb65c0af2cb63c2553c300edddfd082074c5ff84596b43caa09c4b9b14",
+      "exported": "skills/arms-house-style/scripts/style_metrics.py"
+    },
+    {
+      "original": "skills/arms-house-style/SKILL.md",
+      "sha256": "01ce333e21df1fae3333cea2a514ec7b8fe8e031aba7071bb26c17dd7d06f147",
+      "exported": "audit/baseline/skills/arms-house-style/SKILL.md"
+    },
+    {
+      "original": "skills/arms-literature-lead/SKILL.md",
+      "sha256": "8f9c65f3916f3b20d86d98a5fb29b0430f9f49878b1574ea93690117a72e741b",
+      "exported": "audit/baseline/skills/arms-literature-lead/SKILL.md"
+    },
+    {
+      "original": "skills/arms-methodology-architect/SKILL.md",
+      "sha256": "c3be29ce0cc771e1bdd4f3ae3f98ed859ff13b967c7d1973e58e758af068c49c",
+      "exported": "audit/baseline/skills/arms-methodology-architect/SKILL.md"
+    },
+    {
+      "original": "skills/arms-paper-critic/SKILL.md",
+      "sha256": "7f7cd33b39f98f462b508a8c54bee34017789b9f81a0b7bc206ed95f6b0623f8",
+      "exported": "audit/baseline/skills/arms-paper-critic/SKILL.md"
+    },
+    {
+      "original": "skills/arms-paper-fixer/SKILL.md",
+      "sha256": "b6a54d5948dcbc935b688f1a9eaa9885e1b7b711daaabd34de4fcfcdd3be0512",
+      "exported": "audit/baseline/skills/arms-paper-fixer/SKILL.md"
+    },
+    {
+      "original": "skills/arms-paper-grader/SKILL.md",
+      "sha256": "4f5c7a1803b4f638b4b09c9918100cc03ecc354a8b3aff849442566e13b9ba0c",
+      "exported": "audit/baseline/skills/arms-paper-grader/SKILL.md"
+    },
+    {
+      "original": "skills/arms-paper-modeler/SKILL.md",
+      "sha256": "1c1240472f69358a652aa2f60d47d9601e9aa4abd90fdae3f99a71d3c8f9825b",
+      "exported": "audit/baseline/skills/arms-paper-modeler/SKILL.md"
+    },
+    {
+      "original": "skills/arms-paper-writer/SKILL.md",
+      "sha256": "d13fbe95b4c2363314b7e6419f52e2af478793ce0d46c00996e6985c27519a63",
+      "exported": "audit/baseline/skills/arms-paper-writer/SKILL.md"
+    },
+    {
+      "original": "skills/arms-research-pipeline/README.md",
+      "sha256": "b43d7455da2f82f3c8c2b77e608406f82c957ce21205363040863e1acb2c61c1",
+      "exported": "skills/arms-research-pipeline/README.md"
+    },
+    {
+      "original": "skills/arms-research-pipeline/research_brief_template.md",
+      "sha256": "75ccca995d7a3f3fadfb48ffa9d488d7f93b0a7de2ece790deb86081fabf2c9c",
+      "exported": "audit/baseline/skills/arms-research-pipeline/research_brief_template.md"
+    },
+    {
+      "original": "skills/arms-research-pipeline/SKILL.md",
+      "sha256": "062014d052e27e5c916799bc11fbf58479eaf0044dff49f9e64c904b4aa4d6db",
+      "exported": "audit/baseline/skills/arms-research-pipeline/SKILL.md"
+    },
+    {
+      "original": "skills/arms-validate-method/SKILL.md",
+      "sha256": "bf25cefea1fde3dd7989e2f0453e6e5bb195f0bb2fdca99563462d846cd7cb40",
+      "exported": "audit/baseline/skills/arms-validate-method/SKILL.md"
+    },
+    {
+      "original": "skills/arms-write-manuscript/SKILL.md",
+      "sha256": "1ba6ae95d65be2e9a6eba10b4629481b516ae61b27d1355db9784a34670b817c",
+      "exported": "audit/baseline/skills/arms-write-manuscript/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-citation-chaining/SKILL.md",
+      "sha256": "28aee7448fea09936ea170b6a39f0e9182933db91019e934c283520981498dc3",
+      "exported": "audit/baseline/skills/evidence-citation-chaining/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-citations-and-references/SKILL.md",
+      "sha256": "e79530dca6dbc2e2f38688a636508c92974e72f2b2e02f706d8f93eb6a71003a",
+      "exported": "audit/baseline/skills/evidence-citations-and-references/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-claim-checker/SKILL.md",
+      "sha256": "aff78c9285c228fe0a2b95f8920b32494f19b26aaf19aa0eb22f578e3edf98a6",
+      "exported": "audit/baseline/skills/evidence-claim-checker/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-compare-studies/SKILL.md",
+      "sha256": "b5489e464e3bf05857bcfcaaaf2e46339450fcaa93d9ee29704df07985e9ce64",
+      "exported": "audit/baseline/skills/evidence-compare-studies/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-data-extraction/SKILL.md",
+      "sha256": "f9f0934e3fbb31f2e73082d5b027504752c589a88cf4e00ec3ef39d1bf653edb",
+      "exported": "audit/baseline/skills/evidence-data-extraction/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-database-guide/SKILL.md",
+      "sha256": "8426ec45d6311deab97ab7dad598c79e807c3560f9b9bcffab2128cd032dd481",
+      "exported": "audit/baseline/skills/evidence-database-guide/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-debate-and-argument-evidence/SKILL.md",
+      "sha256": "c15f3d9908ba83438952e2f596053cf23498aab136ea1d5ce23dfc14c22d2571",
+      "exported": "audit/baseline/skills/evidence-debate-and-argument-evidence/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-decision-evidence/SKILL.md",
+      "sha256": "447abffa9450f5a6a7ca5ae81768c64a6e1f5a15efff8f26915bb9add7cd02a7",
+      "exported": "audit/baseline/skills/evidence-decision-evidence/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-evidence-answer/SKILL.md",
+      "sha256": "90cf012a95bc47be24896d702d0ff362ad9a6b0e87edbe58d5a8f24b1817eb37",
+      "exported": "audit/baseline/skills/evidence-evidence-answer/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-evidence-based-writing/SKILL.md",
+      "sha256": "ac001aed28b113ad1c624d708aad365e0f569dd3a0f3c904d6252ae8054fa704",
+      "exported": "audit/baseline/skills/evidence-evidence-based-writing/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-evidence-help/SKILL.md",
+      "sha256": "ee413f134898066da54f192e7da15421ac8c3a844636b994c2f025a6a005a12b",
+      "exported": "audit/baseline/skills/evidence-evidence-help/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-evidence-meter/SKILL.md",
+      "sha256": "097fcdaf88e26717abc9ab0f09a509f3f9c019331943c09f965fa5699571a538",
+      "exported": "audit/baseline/skills/evidence-evidence-meter/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-field-guides/SKILL.md",
+      "sha256": "f3b54c30c2a3fa978c3e7eb5a47814938ef536c7118adacb77e18e008dc19fc4",
+      "exported": "audit/baseline/skills/evidence-field-guides/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-find-studies/SKILL.md",
+      "sha256": "dd7c3ccb6b02c183a116647b926fe9f27d3909adaf63932814780d0d310e673f",
+      "exported": "audit/baseline/skills/evidence-find-studies/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-literature-review/SKILL.md",
+      "sha256": "e138b807eae777693d40f3b0d8cdb3b6efc554e652249824df6b72d2a48958a5",
+      "exported": "audit/baseline/skills/evidence-literature-review/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-meta-analysis/SKILL.md",
+      "sha256": "73af66b82cf5d1c4fc95f16cc67b64ced695312bf0829d2249522479da19b03b",
+      "exported": "audit/baseline/skills/evidence-meta-analysis/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-open-access-full-text/SKILL.md",
+      "sha256": "68ce6358c1fa18f72ee58d2f2f6cb81f102e5d7a3c98e6923abaca251cc2050e",
+      "exported": "audit/baseline/skills/evidence-open-access-full-text/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-paper-summary/SKILL.md",
+      "sha256": "fee29e3577ef6e649974f1b5b5fca636066cb988c786d849975f17fe503ea558",
+      "exported": "audit/baseline/skills/evidence-paper-summary/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-plain-language-research/SKILL.md",
+      "sha256": "6c2e61e2d070413e841f34125ca94b4b682ed6174189522fd25176209702ff36",
+      "exported": "audit/baseline/skills/evidence-plain-language-research/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-research-evidence-finder/SKILL.md",
+      "sha256": "7c6784502066efb0c402554491525210b81eab2898eea11727f3fac6825116da",
+      "exported": "audit/baseline/skills/evidence-research-evidence-finder/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-research-gaps/SKILL.md",
+      "sha256": "e1a640922f2a546fa1d8118245e3998d517f072788edebf22e2a6fb403e55dc7",
+      "exported": "audit/baseline/skills/evidence-research-gaps/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-research-proposal-background/SKILL.md",
+      "sha256": "ae173ed82318a0d9dc2506125a687969f294a0db7b29bf11934f2f838b531cd1",
+      "exported": "audit/baseline/skills/evidence-research-proposal-background/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-research-question/SKILL.md",
+      "sha256": "612897b938aadeb12e200ceca46a0f48ecb44f11f96afb71bccb5d34d443cc4b",
+      "exported": "audit/baseline/skills/evidence-research-question/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-search-strings/SKILL.md",
+      "sha256": "47847689e4a542c40f85cc04eff8b267198007b2a3b7806fd2bc7f458163f25d",
+      "exported": "audit/baseline/skills/evidence-search-strings/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-source-verification/SKILL.md",
+      "sha256": "35d188909caba66a5de5b4a02d438d003c51adba767d3f4062d297e2a3238aa4",
+      "exported": "audit/baseline/skills/evidence-source-verification/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-statistics-explained/SKILL.md",
+      "sha256": "767896c943c2bc1803c2feb1e287017eb1e04eddc3d142baf6b4dd1bc24cefe8",
+      "exported": "audit/baseline/skills/evidence-statistics-explained/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-study-appraisal/SKILL.md",
+      "sha256": "9760e557a8b5edd7fa0a89847b24b0250f0b0493200924b78cd15bf25b4e0b76",
+      "exported": "audit/baseline/skills/evidence-study-appraisal/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-study-designs-and-evidence-levels/SKILL.md",
+      "sha256": "9642f194e0e1a072bc82b95367be85817ba293145f5e53f1d9cb355c3cf56ab4",
+      "exported": "audit/baseline/skills/evidence-study-designs-and-evidence-levels/SKILL.md"
+    },
+    {
+      "original": "skills/evidence-systematic-review/SKILL.md",
+      "sha256": "a614911e67a5357e90d2cb0dd4368efe0fdf0650aaadc60b1813f14ff3570e62",
+      "exported": "audit/baseline/skills/evidence-systematic-review/SKILL.md"
+    },
+    {
+      "original": "skills/guardrails-compag-elsevier-paper-editing/references/style-audit.md",
+      "sha256": "262e5badddbb078bf2af621edaeb54925490147c9038bfe26f626bdec9e06e9a",
+      "exported": "skills/guardrails-compag-elsevier-paper-editing/references/style-audit.md"
+    },
+    {
+      "original": "skills/guardrails-compag-elsevier-paper-editing/SKILL.md",
+      "sha256": "bff05ec57b5c2905dd89e6eb2abf1cca4b5dba05c9ada7cf72d723644ff52c3d",
+      "exported": "audit/baseline/skills/guardrails-compag-elsevier-paper-editing/SKILL.md"
+    },
+    {
+      "original": "skills/guardrails-research-problem-mechanism-evidence/references/evidence-guide.md",
+      "sha256": "8fd90444aed20610a01ce51701f33665080de08a09fb58287257d03319a0b710",
+      "exported": "skills/guardrails-research-problem-mechanism-evidence/references/evidence-guide.md"
+    },
+    {
+      "original": "skills/guardrails-research-problem-mechanism-evidence/SKILL.md",
+      "sha256": "caa7cc15720a3a439c37ccd57919d530f2f1d6ad8235d2160deb7bb27ca26591",
+      "exported": "audit/baseline/skills/guardrails-research-problem-mechanism-evidence/SKILL.md"
+    },
+    {
+      "original": "skills/humanizer/.claude-plugin/marketplace.json",
+      "sha256": "e539740285b660d2288a38b6d9b237396c6769828c671c46b9f91e760db6cc29",
+      "exported": "audit/baseline/skills/humanizer/.claude-plugin/marketplace.json"
+    },
+    {
+      "original": "skills/humanizer/.claude-plugin/plugin.json",
+      "sha256": "054c0afeeb03c12f01a7f156da949edfdec3a2b756588f5ff4ee7357b0c07f6a",
+      "exported": "audit/baseline/skills/humanizer/.claude-plugin/plugin.json"
+    },
+    {
+      "original": "skills/humanizer/.cursor-plugin/plugin.json",
+      "sha256": "d1e0b50594cf4bbe57fd164b771b401713a91b76b5a213ebe8f4558bb2036546",
+      "exported": "audit/baseline/skills/humanizer/.cursor-plugin/plugin.json"
+    },
+    {
+      "original": "skills/humanizer/.github/ISSUE_TEMPLATE/config.yml",
+      "sha256": "cb7e95de7606d07654024c8d47916796b307033e23ddb2b0a821a9bf89e999ef",
+      "exported": "skills/humanizer/.github/ISSUE_TEMPLATE/config.yml"
+    },
+    {
+      "original": "skills/humanizer/.github/ISSUE_TEMPLATE/new-pattern.yml",
+      "sha256": "7436d578fa0056a09da5da6da950a03cb49f3ce27cf268ae295eb3d7ca19f604",
+      "exported": "skills/humanizer/.github/ISSUE_TEMPLATE/new-pattern.yml"
+    },
+    {
+      "original": "skills/humanizer/.github/ISSUE_TEMPLATE/rewrite-problem.yml",
+      "sha256": "ecfe5e82c5b6d44683e0cb63cfad117dfdd16e30cc6f03510ef335414eea4947",
+      "exported": "skills/humanizer/.github/ISSUE_TEMPLATE/rewrite-problem.yml"
+    },
+    {
+      "original": "skills/humanizer/.github/workflows/validate.yml",
+      "sha256": "f2d6a8780fb0b3cf6fa7d2ffccd72d0fc8bee29b4e63ea0fd65924712c9055fd",
+      "exported": "skills/humanizer/.github/workflows/validate.yml"
+    },
+    {
+      "original": "skills/humanizer/agents/openai.yaml",
+      "sha256": "9d87ff83149a04f86a372948b8ee35fa249de20923867bbc2a49304290aad736",
+      "exported": "skills/humanizer/agents/openai.yaml"
+    },
+    {
+      "original": "skills/humanizer/AGENTS.md",
+      "sha256": "de84a449da400454df1225ddb1ced728c35bf0be7811b239e3370c7dbe1f4e69",
+      "exported": "skills/humanizer/AGENTS.md"
+    },
+    {
+      "original": "skills/humanizer/CHANGELOG.md",
+      "sha256": "b3591fe203429f1a6bd2f713c79272e9a8e58a487843d0908d2bbe0700722afa",
+      "exported": "audit/baseline/skills/humanizer/CHANGELOG.md"
+    },
+    {
+      "original": "skills/humanizer/LICENSE",
+      "sha256": "4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96",
+      "exported": "skills/humanizer/LICENSE"
+    },
+    {
+      "original": "skills/humanizer/README.md",
+      "sha256": "500b53c0d29cd3219d160b5f9a109c0969f706aec74b49a4a081d2026ba48ec7",
+      "exported": "audit/baseline/skills/humanizer/README.md"
+    },
+    {
+      "original": "skills/humanizer/scripts/validate-package.py",
+      "sha256": "941bd99e52b2ba21449719bb7969607ac8117e3dc173d0c9dfe64fd274c65938",
+      "exported": "skills/humanizer/scripts/validate-package.py"
+    },
+    {
+      "original": "skills/humanizer/SKILL.md",
+      "sha256": "8e142094cb0a4373acb24a5bb239092190a41723e3149c263c57d1bd09664707",
+      "exported": "audit/baseline/skills/humanizer/SKILL.md"
+    },
+    {
+      "original": "skills/latex-academic-poster/SKILL.md",
+      "sha256": "e35e57cfe97c1c95c857145d9505b1c68076e0828bd10eccb4fc3c4e937f1a42",
+      "exported": "audit/baseline/skills/latex-academic-poster/SKILL.md"
+    },
+    {
+      "original": "skills/latex-algorithms-code/SKILL.md",
+      "sha256": "f2252e489ef753c87ca41c3c2ed982dc489f058bd9485c468508a5e8ebf99882",
+      "exported": "audit/baseline/skills/latex-algorithms-code/SKILL.md"
+    },
+    {
+      "original": "skills/latex-beamer-slides/SKILL.md",
+      "sha256": "aaf5a7c462014cafb0cd71e925807f938070cd81e60ee151f885f3ffc451dd23",
+      "exported": "audit/baseline/skills/latex-beamer-slides/SKILL.md"
+    },
+    {
+      "original": "skills/latex-bibliography-citations/SKILL.md",
+      "sha256": "b7b24f5cb0f65d8b68ab36dbc2a0387cac807c6f2bffa6265359783fbf868f88",
+      "exported": "audit/baseline/skills/latex-bibliography-citations/SKILL.md"
+    },
+    {
+      "original": "skills/latex-books-notes/SKILL.md",
+      "sha256": "44c5e3c43a49257ea44cc58c64a66d55f0eb8e8802fc8f3a38339b9be11f2d6c",
+      "exported": "audit/baseline/skills/latex-books-notes/SKILL.md"
+    },
+    {
+      "original": "skills/latex-certificates-flyers/SKILL.md",
+      "sha256": "cd2101046441c14a69f89d03e2ced12cb22cc180b65815b994a1f7020c10d332",
+      "exported": "audit/baseline/skills/latex-certificates-flyers/SKILL.md"
+    },
+    {
+      "original": "skills/latex-cross-references-links/SKILL.md",
+      "sha256": "6cfcf51f769377fd0b58db3c30881151f98064c180316beb90af8f4992452624",
+      "exported": "audit/baseline/skills/latex-cross-references-links/SKILL.md"
+    },
+    {
+      "original": "skills/latex-custom-macros/SKILL.md",
+      "sha256": "d819dd0007aa9c6b4cfd9fe9fb1e31aef9a8c4a971d75c80b44e461b94cc91a4",
+      "exported": "audit/baseline/skills/latex-custom-macros/SKILL.md"
+    },
+    {
+      "original": "skills/latex-document-builder/SKILL.md",
+      "sha256": "bb1055b16e07abf833de93bae20b3f32cb73f2f8b7a42322226c6bf357f83abf",
+      "exported": "audit/baseline/skills/latex-document-builder/SKILL.md"
+    },
+    {
+      "original": "skills/latex-equation-converter/SKILL.md",
+      "sha256": "1995ee7dd0807a8474ebbccd127cc8fea93fe3c9fa3e570843dc91d13bf2d775",
+      "exported": "audit/baseline/skills/latex-equation-converter/SKILL.md"
+    },
+    {
+      "original": "skills/latex-error-fixer/SKILL.md",
+      "sha256": "f7fd2813f0478b026413e07a80bf862cd2f5af32de58025bf06cb54639eb80fb",
+      "exported": "audit/baseline/skills/latex-error-fixer/SKILL.md"
+    },
+    {
+      "original": "skills/latex-figures-images/SKILL.md",
+      "sha256": "6b0cb87b4bbad53ba11359ddf31fe9bf93bca55a98ae30c104f5fd2d21d53c7d",
+      "exported": "audit/baseline/skills/latex-figures-images/SKILL.md"
+    },
+    {
+      "original": "skills/latex-format-conversion/SKILL.md",
+      "sha256": "bc34803c3fe9bf67abfdef47d6a1bd7c43197e355eb83b884b0c450e4699212e",
+      "exported": "audit/baseline/skills/latex-format-conversion/SKILL.md"
+    },
+    {
+      "original": "skills/latex-homework-exams/SKILL.md",
+      "sha256": "70459817870a0aca887c58c95bdd5003a43db2c343d5130090609ebd91504a75",
+      "exported": "audit/baseline/skills/latex-homework-exams/SKILL.md"
+    },
+    {
+      "original": "skills/latex-journal-templates/SKILL.md",
+      "sha256": "68804e758b0cf0cdc2937846cb45b498723bd5609c0a8b882fee85a011d29ed3",
+      "exported": "audit/baseline/skills/latex-journal-templates/SKILL.md"
+    },
+    {
+      "original": "skills/latex-latex-cleanup/SKILL.md",
+      "sha256": "f2574b6ba15be2ecd94019b5a86ba0e248e4f29af034cc656130c4da13495743",
+      "exported": "audit/baseline/skills/latex-latex-cleanup/SKILL.md"
+    },
+    {
+      "original": "skills/latex-latex-help/SKILL.md",
+      "sha256": "91c695e298cdcf19e264ccb4ec79e2c86b5a8240ee42277a2d42eeb2ea0faf8d",
+      "exported": "audit/baseline/skills/latex-latex-help/SKILL.md"
+    },
+    {
+      "original": "skills/latex-latex-proofreading/SKILL.md",
+      "sha256": "1ca110b762227f66e62abc93b1be795a67adf41ec862ec076e3d509544fdf1da",
+      "exported": "audit/baseline/skills/latex-latex-proofreading/SKILL.md"
+    },
+    {
+      "original": "skills/latex-latex-studio/SKILL.md",
+      "sha256": "83ff754ed5626dc55a46cd9652badad682e93cbe30085470908fa5173ddb26db",
+      "exported": "audit/baseline/skills/latex-latex-studio/SKILL.md"
+    },
+    {
+      "original": "skills/latex-letters/SKILL.md",
+      "sha256": "2a8f702d34b52b0bd2f6fffd82d9cba12ab0c3064faaae5bfdd3c1e44b84c0e3",
+      "exported": "audit/baseline/skills/latex-letters/SKILL.md"
+    },
+    {
+      "original": "skills/latex-math-equations/SKILL.md",
+      "sha256": "0bb0387375b06624a0f9f78536f44be31dfffd812437ef659c2fd735c9722f6f",
+      "exported": "audit/baseline/skills/latex-math-equations/SKILL.md"
+    },
+    {
+      "original": "skills/latex-multilingual-fonts/SKILL.md",
+      "sha256": "a329905157c93bb013681f7b6c0d7d238636bd9ca3cf45de0e3c840c75fab2d9",
+      "exported": "audit/baseline/skills/latex-multilingual-fonts/SKILL.md"
+    },
+    {
+      "original": "skills/latex-page-formatting/SKILL.md",
+      "sha256": "03b058f366aabf06a8d113f5053a492547e756a2083ac44a199d32bda4ff3907",
+      "exported": "audit/baseline/skills/latex-page-formatting/SKILL.md"
+    },
+    {
+      "original": "skills/latex-pgfplots-charts/SKILL.md",
+      "sha256": "30f9d965a8ca539c7524698bb7fb33afbc1f62fcbe11306e4ed5ac452fd2d494",
+      "exported": "audit/baseline/skills/latex-pgfplots-charts/SKILL.md"
+    },
+    {
+      "original": "skills/latex-reports-manuals/SKILL.md",
+      "sha256": "2825fd0619ae35dffde586b7933ec96cebab504507d35968e4bf081c923fbf1f",
+      "exported": "audit/baseline/skills/latex-reports-manuals/SKILL.md"
+    },
+    {
+      "original": "skills/latex-research-paper/SKILL.md",
+      "sha256": "92bc6872a58c31d49bd673a4ab1a0a9ac3a311c60aaa3059cf8b01acffab9b89",
+      "exported": "audit/baseline/skills/latex-research-paper/SKILL.md"
+    },
+    {
+      "original": "skills/latex-resume-cv/SKILL.md",
+      "sha256": "a80d4869afee812b3f98701c33958e2e1fa6dde639dcdff0a2a0fc9f383d3c16",
+      "exported": "audit/baseline/skills/latex-resume-cv/SKILL.md"
+    },
+    {
+      "original": "skills/latex-science-notation/SKILL.md",
+      "sha256": "45ea525b4c249bf1a1cc4b28d8f2f144c56a242c4bda5d68ca44b493fa930c7a",
+      "exported": "audit/baseline/skills/latex-science-notation/SKILL.md"
+    },
+    {
+      "original": "skills/latex-setup-compiling/SKILL.md",
+      "sha256": "ed2fd06ae720f120493b7c615c7ad1d867d0858473b3c9b8ef681930f10e01ba",
+      "exported": "audit/baseline/skills/latex-setup-compiling/SKILL.md"
+    },
+    {
+      "original": "skills/latex-tables/SKILL.md",
+      "sha256": "4dca94c964f7a8b30872bded0454301efe85c757efa57bb4d20366cff644bff4",
+      "exported": "audit/baseline/skills/latex-tables/SKILL.md"
+    },
+    {
+      "original": "skills/latex-theorems-proofs/SKILL.md",
+      "sha256": "8c292e0d8987505d7b043ef016c215702e3a479638124dcb2894eeaebbe11700",
+      "exported": "audit/baseline/skills/latex-theorems-proofs/SKILL.md"
+    },
+    {
+      "original": "skills/latex-thesis-dissertation/SKILL.md",
+      "sha256": "b745fe0a6e83b517b2a638118aa66f6e2f8a63f13d41a41852c342802da0c3e1",
+      "exported": "audit/baseline/skills/latex-thesis-dissertation/SKILL.md"
+    },
+    {
+      "original": "skills/latex-tikz-diagrams/SKILL.md",
+      "sha256": "483a72fe4c7f1e31199e365c761e1eb614279368a2c55f4cbd6d46d9cfa8a687",
+      "exported": "audit/baseline/skills/latex-tikz-diagrams/SKILL.md"
+    },
+    {
+      "original": "skills/research-assistant/agents/openai.yaml",
+      "sha256": "7f1fa4a661ee24d95fe96eed808ef5da7b20436cdf6428583f61266fec72b783",
+      "exported": "skills/research-assistant/agents/openai.yaml"
+    },
+    {
+      "original": "skills/research-assistant/SKILL.md",
+      "sha256": "27c87ec57361ba652f4349522771e1d8ffc5f5464878b9224a443901c356ade3",
+      "exported": "audit/baseline/skills/research-assistant/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-abstract-introduction/SKILL.md",
+      "sha256": "69713fc9870a7a7744d106dd6c089fd3b7f4d2246dbd08b0efd98366c99c5369",
+      "exported": "audit/baseline/skills/scholar-abstract-introduction/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-academic-editing/SKILL.md",
+      "sha256": "09a787e3ae8ffd27767d176aa58fcaae72a215152f18c4846cf34059a06f138d",
+      "exported": "audit/baseline/skills/scholar-academic-editing/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-academic-translation/SKILL.md",
+      "sha256": "efe91a68172aaa489018f450a228c3e6091b3d6af70540153358d74c28031f9e",
+      "exported": "audit/baseline/skills/scholar-academic-translation/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-citation-generator/SKILL.md",
+      "sha256": "632c82bbeaf7f149acc27394e8d75371a4dd39375c02f8e2581b58b1d6f1b3c4",
+      "exported": "audit/baseline/skills/scholar-citation-generator/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-data-analysis-plan/SKILL.md",
+      "sha256": "21b30f420ccdebdbdf1880ecf74858cc7450e7ffb00c4d2b42562abe560b55b4",
+      "exported": "audit/baseline/skills/scholar-data-analysis-plan/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-evidence-synthesis/SKILL.md",
+      "sha256": "63e7c1fafa50ac85c42d47ade6f106810fa5f39cca0c37557e938aa5e04c31bc",
+      "exported": "audit/baseline/skills/scholar-evidence-synthesis/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-find-sources/SKILL.md",
+      "sha256": "8752f2d6528472f2f2ec6ebcc5733788ed441e058d8e5261360797a412bfd5b1",
+      "exported": "audit/baseline/skills/scholar-find-sources/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-grant-proposal/SKILL.md",
+      "sha256": "5ed0daebc18ed0f42664a95fe92ebb6bb377994c1613a4f5f4c63be47fa6e2cc",
+      "exported": "audit/baseline/skills/scholar-grant-proposal/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-journal-finder/SKILL.md",
+      "sha256": "22ed3029a0d4d973a685a597d7af295aa661fa9e4423dfcb779639efe91ccc86",
+      "exported": "audit/baseline/skills/scholar-journal-finder/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-literature-review/SKILL.md",
+      "sha256": "1a57afdef8a66cc852f995b1d8a0c63fe245a0b80d1a87090e9a4bf242c8a439",
+      "exported": "audit/baseline/skills/scholar-literature-review/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-methodology-design/SKILL.md",
+      "sha256": "9e1b9b6e009c20191caae5b56b1067111134c08aa2bc73ff98be66c58a03640c",
+      "exported": "audit/baseline/skills/scholar-methodology-design/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-originality-integrity/SKILL.md",
+      "sha256": "969d3ced2b2548e63756e9a4aa0c84b3d780eb77a86e3670501cdc9e18bc1cfb",
+      "exported": "audit/baseline/skills/scholar-originality-integrity/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-outline-builder/SKILL.md",
+      "sha256": "1e7ccd431272104557e828d50096070fd7c9765c2d7235a51cc952b03da5e22f",
+      "exported": "audit/baseline/skills/scholar-outline-builder/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-paper-breakdown/SKILL.md",
+      "sha256": "2b59a7895010b0392b5cf0af549b27f8744cd8e44b38491091fbbc820ef506d6",
+      "exported": "audit/baseline/skills/scholar-paper-breakdown/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-paper-sections/SKILL.md",
+      "sha256": "69acf5e846f05fc9e0897ffe06cce9651f8b3d365e0431024b3f2986e346f0e8",
+      "exported": "audit/baseline/skills/scholar-paper-sections/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-paperpal-tools/SKILL.md",
+      "sha256": "ae9487c49ddf1bf741f0bd0d0b854354e7836297bad18757d3b2d7e3390e7ab1",
+      "exported": "audit/baseline/skills/scholar-paperpal-tools/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-paraphrase-summarize/SKILL.md",
+      "sha256": "bf3d32b6fd51e0f4d1c8f20a5344b2d5214612d5538c3990b82b087374578cb9",
+      "exported": "audit/baseline/skills/scholar-paraphrase-summarize/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-peer-review-critique/SKILL.md",
+      "sha256": "fef038169984cf38c3edb3b0c377567634a9f5aa21454d0ce86a677bcf16a4e5",
+      "exported": "audit/baseline/skills/scholar-peer-review-critique/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-qualitative-analysis/SKILL.md",
+      "sha256": "2d669958920144fa85a450519738034ff1cd612cb41f7728845f2bd8e8e60976",
+      "exported": "audit/baseline/skills/scholar-qualitative-analysis/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-research-communication/SKILL.md",
+      "sha256": "6d9b930f3eb3bd271f839a5736779b17f2ef52250d0a65007f0f45328942d01b",
+      "exported": "audit/baseline/skills/scholar-research-communication/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-research-ethics/SKILL.md",
+      "sha256": "86949f6ffcc66b0304a83dcc2e34812f9401413815ecd6625796de162cbfbe97",
+      "exported": "audit/baseline/skills/scholar-research-ethics/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-research-gaps/SKILL.md",
+      "sha256": "deedb7f5f23c5a44a21873fabe0266d6bc77dc6adc13aaddc1553cb6a39eb054",
+      "exported": "audit/baseline/skills/scholar-research-gaps/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-research-planner/SKILL.md",
+      "sha256": "3ce8cf2c71553aea406312452982ccf2f5c66d742f20b6e1ae9280f57e83e9ee",
+      "exported": "audit/baseline/skills/scholar-research-planner/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-research-proposal/SKILL.md",
+      "sha256": "0796230aa2250689448ba566b21effce75331f864aa4410f44e4bea816f6cbfb",
+      "exported": "audit/baseline/skills/scholar-research-proposal/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-research-question/SKILL.md",
+      "sha256": "ba0843db2e381daed88fd51a60d81fda1da94cdef1af79317b5a4d09532469a7",
+      "exported": "audit/baseline/skills/scholar-research-question/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-results-interpreter/SKILL.md",
+      "sha256": "e5ee876b2cab4581b4af458111a3a323e228a76c85b37908bc8212f7de396217",
+      "exported": "audit/baseline/skills/scholar-results-interpreter/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-reviewer-response/SKILL.md",
+      "sha256": "97f4bce70bcbc6334b72395d82923b9d13c40805945eac03962df4e4693fc8c1",
+      "exported": "audit/baseline/skills/scholar-reviewer-response/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-scholar-help/SKILL.md",
+      "sha256": "d08d628cc4089b68d2fb2695b7f43a6749b6709493e3916d6699de46149fd256",
+      "exported": "audit/baseline/skills/scholar-scholar-help/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-scholar-studio/SKILL.md",
+      "sha256": "99caaa511c5f2564216f91d8dbce53a16e477e0f2e8c555b000b4a06386cabd7",
+      "exported": "audit/baseline/skills/scholar-scholar-studio/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-source-evaluation/SKILL.md",
+      "sha256": "ea2a8b2b985d313f5e1fb2c07e330fe7af37d1faf822afe00b44cbbf298abe43",
+      "exported": "audit/baseline/skills/scholar-source-evaluation/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-submission-checklist/SKILL.md",
+      "sha256": "2d5cc1485ae358bf7af8e4d5f0d994bb817aff4274e1b6be9453722b03d71b2b",
+      "exported": "audit/baseline/skills/scholar-submission-checklist/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-survey-design/SKILL.md",
+      "sha256": "b16485658acf15743a83ee0ebb379d62166a50a91a458888141cf430147f615f",
+      "exported": "audit/baseline/skills/scholar-survey-design/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-systematic-review/SKILL.md",
+      "sha256": "b71d0728034926c3a9b329ca58a21801e120399bb8a480e7b0d45296398679f8",
+      "exported": "audit/baseline/skills/scholar-systematic-review/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-theoretical-framework/SKILL.md",
+      "sha256": "60f4009f0ddd943eaa626b5801e4a0ed9c4e72fa362c4bb1a08efb6384627b41",
+      "exported": "audit/baseline/skills/scholar-theoretical-framework/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-thesis-dissertation/SKILL.md",
+      "sha256": "c514dd77b2a20359ef599d15996a736145c274c656016afffd5aeb65f9e20a24",
+      "exported": "audit/baseline/skills/scholar-thesis-dissertation/SKILL.md"
+    },
+    {
+      "original": "skills/scholar-word-reduction/SKILL.md",
+      "sha256": "4b5ff9dd89f8fc1d7e34b54fd24be31ccc879bff13aa705c36925bad238e31a4",
+      "exported": "audit/baseline/skills/scholar-word-reduction/SKILL.md"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/agents/openai.yaml",
+      "sha256": "bf12e6762e241e8307d6050b77e4f87bb4c92f5308c5b0f880b794e2f9b26b1a",
+      "exported": "skills/visuals-scientific-visual-table-style/agents/openai.yaml"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/examples/example_openai_visuals.py",
+      "sha256": "f2f91998840625987635d4c718af28f13f86e3453cdda32a8637a13c783f12c6",
+      "exported": "skills/visuals-scientific-visual-table-style/examples/example_openai_visuals.py"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/examples/README.md",
+      "sha256": "59bc7fb8acbc86d1549b6248b619b715e081d443eab062d604bb97c5fdef0c64",
+      "exported": "skills/visuals-scientific-visual-table-style/examples/README.md"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/references/direct_asset_manifest.txt",
+      "sha256": "cef99e4d82be06318c026e28066321c7870bc3b7403c9f80f66167bf29ccb856",
+      "exported": "skills/visuals-scientific-visual-table-style/references/direct_asset_manifest.txt"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/references/form_selection.md",
+      "sha256": "81db425b2cb4887149b89f2c4d63848e5cb681163f4e498543f0f3a43b2501a9",
+      "exported": "skills/visuals-scientific-visual-table-style/references/form_selection.md"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/references/gpt6_astra_north_star.md",
+      "sha256": "d5c2add660c2d2102c41a71f2b405600f7aa9eaf6a33932757d540b272626a29",
+      "exported": "skills/visuals-scientific-visual-table-style/references/gpt6_astra_north_star.md"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/references/gpt6_astra_reference_index.json",
+      "sha256": "804b93bb010c6b78c34afb0a1bfb01dfb7a56e5e3bb1daf03c3f19523baae014",
+      "exported": "skills/visuals-scientific-visual-table-style/references/gpt6_astra_reference_index.json"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/references/openai_visual_reference_library.jsonl",
+      "sha256": "fb04dc85ec9227dc6fa6780e368a03b29c38a7c5db9a6792acadbc4705403989",
+      "exported": "skills/visuals-scientific-visual-table-style/references/openai_visual_reference_library.jsonl"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/references/provenance.md",
+      "sha256": "b4c0fe139b7f54f2d9e0dae5dee36b996e02c53fde926cc926e3fd4a22b2ad1c",
+      "exported": "skills/visuals-scientific-visual-table-style/references/provenance.md"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/references/quality_gates.md",
+      "sha256": "4c5044e68757666c69e405e1ea6d95b7201a3255c2e6aa4658c723a9b7c44045",
+      "exported": "skills/visuals-scientific-visual-table-style/references/quality_gates.md"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/references/reference_design_spec.md",
+      "sha256": "2a7d8cdfd4e09a6cff708716ed17653423b9cde40b82f14f2e49a62daa0ad0ef",
+      "exported": "skills/visuals-scientific-visual-table-style/references/reference_design_spec.md"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/references/style_contract.md",
+      "sha256": "12b30c2c64a338d2ab8e37755077f40518cc158f950b7f4d865c00d03617f875",
+      "exported": "skills/visuals-scientific-visual-table-style/references/style_contract.md"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/references/top_reference_set.md",
+      "sha256": "8d2a1243b5da313f6dd8d4d777cc08d0d5eefbca394344d35c3d7144a187f626",
+      "exported": "skills/visuals-scientific-visual-table-style/references/top_reference_set.md"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/scripts/astra_visual_qa.py",
+      "sha256": "308a9e58d01e753b7711b576f0a59225651857a93c01acf15a0a3a32fed96efe",
+      "exported": "skills/visuals-scientific-visual-table-style/scripts/astra_visual_qa.py"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/scripts/select_references.py",
+      "sha256": "05859447fe1a04b7238c7b15a657cb6569bf595c552411949c8482723a4166ec",
+      "exported": "skills/visuals-scientific-visual-table-style/scripts/select_references.py"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/scripts/table_qa.py",
+      "sha256": "dbbfd708cf7651c42bf14cd9fd9a258dd7bf63f30eee80af74287619dd0c40d6",
+      "exported": "skills/visuals-scientific-visual-table-style/scripts/table_qa.py"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/scripts/visual_qa.py",
+      "sha256": "4710630aad5ceddc682ba151bbf9c79f698601d642e24005a289c8d4f1de0269",
+      "exported": "skills/visuals-scientific-visual-table-style/scripts/visual_qa.py"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/SKILL.md",
+      "sha256": "e4df5c31f28266f5868fd363783ac5abaca862e3e24f1c545f4612bc6cfc83d4",
+      "exported": "audit/baseline/skills/visuals-scientific-visual-table-style/SKILL.md"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/templates/astra_visual_system.py",
+      "sha256": "ae5fbc703f1161cea7a9dc0161bec02e929429ec31e71ac6d5ce9e4919569435",
+      "exported": "skills/visuals-scientific-visual-table-style/templates/astra_visual_system.py"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/templates/astra_visual_tokens.json",
+      "sha256": "1446818fec2c5c7a650592ccf5319edc5e66e28a581b8395662b93930381b9a9",
+      "exported": "skills/visuals-scientific-visual-table-style/templates/astra_visual_tokens.json"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/templates/openai_table.css",
+      "sha256": "2c71b61e3351b9a5ead5578466bb0c1cf6342b4ae6db1638acb12302ef53060e",
+      "exported": "skills/visuals-scientific-visual-table-style/templates/openai_table.css"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/templates/openai_table.tex",
+      "sha256": "aaf7aa5469bdb5794cf75daceb304e296da84306369614d7df2f9e761af2a080",
+      "exported": "skills/visuals-scientific-visual-table-style/templates/openai_table.tex"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/templates/openai_visuals.py",
+      "sha256": "b0c79958480298e705759e8c8c440adf43d81a1a2548cc7efa4f15ac29159bfa",
+      "exported": "skills/visuals-scientific-visual-table-style/templates/openai_visuals.py"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/templates/visual_spec.schema.json",
+      "sha256": "3e1be0bef17143d6b0863307d74ea5d613f1729b05e836fc9e6d5ea2478e6f8f",
+      "exported": "skills/visuals-scientific-visual-table-style/templates/visual_spec.schema.json"
+    },
+    {
+      "original": "skills/visuals-scientific-visual-table-style/VERSION",
+      "sha256": "c4a2383a03bdb6739d16a0e24058e4b9c7da4e63d203e0be2f448868cc03c530",
+      "exported": "skills/visuals-scientific-visual-table-style/VERSION"
+    },
+    {
+      "original": "THIRD_PARTY_NOTICES.md",
+      "sha256": "68d9e8ea02003041c92a9355e3bc8886de43d7bd67de521cd43f7974f56aae52",
+      "exported": "THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "original": "workflows/arms-orchestration.md",
+      "sha256": "8cb105e591c153d93c31c8480b28be07c0e677f97dd147a73f8c367118e18f17",
+      "exported": "workflows/arms-orchestration.md"
+    },
+    {
+      "original": "workflows/design-and-validate.md",
+      "sha256": "3876eb39a7c973e09032773945e1d9e3fdf4ced7830af4614c149d3eb82d8f27",
+      "exported": "audit/baseline/workflows/design-and-validate.md"
+    },
+    {
+      "original": "workflows/discover-and-synthesize.md",
+      "sha256": "c688d3402d1dd5ed5ef1cad8c06ba315d1b123752f5a96fb3797f6be58d6c73c",
+      "exported": "workflows/discover-and-synthesize.md"
+    },
+    {
+      "original": "workflows/evidence-review.md",
+      "sha256": "384b480b2c8ffb91f3217db78050e34a94e6e629248c36da5640c53ecae1e561",
+      "exported": "workflows/evidence-review.md"
+    },
+    {
+      "original": "workflows/plan-and-fund.md",
+      "sha256": "e395a29c592046aa9db45a5f41510116f815a25f6ad20fa86197f56160dd10c2",
+      "exported": "workflows/plan-and-fund.md"
+    },
+    {
+      "original": "workflows/review-and-publish.md",
+      "sha256": "5f225a58215ce4b70b94b2d3a3b754a43bfe05be41d57a8bf9b5657caad081d5",
+      "exported": "workflows/review-and-publish.md"
+    },
+    {
+      "original": "workflows/visualize-and-communicate.md",
+      "sha256": "6e04fb628389894e71b23cc17d38569b02c11b94fab01de20c11f3b176640a79",
+      "exported": "workflows/visualize-and-communicate.md"
+    },
+    {
+      "original": "workflows/write-and-typeset.md",
+      "sha256": "a1c44f12a9e573da569aea4304f5ada69858e1fd7d66448950b7eb0b7dbccfd7",
+      "exported": "workflows/write-and-typeset.md"
+    }
+  ]
+}

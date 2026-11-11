@@ -1,0 +1,341 @@
+{
+  "source_map": {
+    "records": 452,
+    "csv_rows": 452,
+    "all_fields": [
+      "active_destinations",
+      "archive",
+      "bytes",
+      "destination",
+      "disposition",
+      "integration_reason",
+      "integration_role",
+      "kind",
+      "sha256",
+      "source"
+    ],
+    "roles": {
+      "resource-directory": 43,
+      "upstream-plugin-specification": 17,
+      "source-asset": 23,
+      "supporting-resource-or-specification": 7,
+      "active-skill-or-support": 316,
+      "original-archive": 4,
+      "license-or-provenance": 2,
+      "complete-example-or-case-study": 40
+    },
+    "dispositions": {
+      "directory-preserved": 179,
+      "preserved-byte-for-byte": 273
+    },
+    "reasons": [
+      "Complete content copied into the indicated discoverable skill/support tree; original bytes separately preserved.",
+      "Complete runnable/documentary example resource retained; workflows expose it with runtime and historical-evidence limits. No automatic experiment rerun or alteration of supplied results.",
+      "Complete source resource retained and accessible from resource paths/catalog. Dependencies and source-specific configuration constraints are described in the inspection and integration documentation.",
+      "Exact supplied ZIP retained; every member separately expanded, inspected and mapped.",
+      "Original binary/vector asset retained and inspected; host viewer/file tools access it. Upstream branding and evidence are not silently replaced.",
+      "Original directory structure retained for contained reads, provenance and resource relationships.",
+      "Original terms/disclaimer retained and referenced by third-party notices; no blanket relicensing or unsupported historical claim.",
+      "Retained as integration/provenance metadata. Unified manifests supersede registration; foreign identities, legacy fields and marketplace records cannot be merged as authenticated connections."
+    ],
+    "issues": []
+  },
+  "source_inspection": {
+    "records": 273,
+    "types": {
+      "binary": 36,
+      "text": 237
+    },
+    "fields": {
+      "tree": 273,
+      "path": 273,
+      "bytes": 273,
+      "sha256": 273,
+      "type": 273,
+      "zip_members": 4,
+      "lines": 237,
+      "headings": 237,
+      "urls": 237,
+      "references": 237,
+      "dependencies": 237,
+      "json": 23,
+      "image_size": 25,
+      "image_mode": 25,
+      "frontmatter": 108,
+      "yaml": 6,
+      "imports": 13,
+      "pdf_pages": 7,
+      "pdf_text": 7,
+      "csv_header": 23,
+      "csv_rows": 23,
+      "frontmatter_error": 9
+    },
+    "issues": [],
+    "errors": [
+      {
+        "path": "ARMS-main/skills/literature-lead/SKILL.md",
+        "error": "missing frontmatter"
+      },
+      {
+        "path": "ARMS-main/skills/paper-critic/SKILL.md",
+        "error": "missing frontmatter"
+      },
+      {
+        "path": "ARMS-main/skills/paper-fixer/SKILL.md",
+        "error": "missing frontmatter"
+      },
+      {
+        "path": "ARMS-main/skills/paper-grader/SKILL.md",
+        "error": "missing frontmatter"
+      },
+      {
+        "path": "ARMS-main/skills/paper-modeler/SKILL.md",
+        "error": "missing frontmatter"
+      },
+      {
+        "path": "ARMS-main/skills/paper-writer/SKILL.md",
+        "error": "missing frontmatter"
+      },
+      {
+        "path": "ARMS-main/skills/research-pipeline/SKILL.md",
+        "error": "missing frontmatter"
+      },
+      {
+        "path": "ARMS-main/skills/validate-method/SKILL.md",
+        "error": "missing frontmatter"
+      },
+      {
+        "path": "ARMS-main/skills/write-manuscript/SKILL.md",
+        "error": "missing frontmatter"
+      }
+    ],
+    "derived_fields_compared": 1458,
+    "derived_field_mismatches": [
+      {
+        "path": "humanizer-main/.github/workflows/validate.yml",
+        "field": "yaml",
+        "recorded": {
+          "name": "Check package",
+          "true": {
+            "pull_request": null,
+            "push": {
+              "branches": [
+                "main"
+              ]
+            }
+          },
+          "permissions": {
+            "contents": "read"
+          },
+          "jobs": {
+            "check": {
+              "runs-on": "ubuntu-latest",
+              "steps": [
+                {
+                  "uses": "actions/checkout@11d5960a326750d5838078e36cf38b85af677262"
+                },
+                {
+                  "uses": "actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+                  "with": {
+                    "node-version": 22
+                  }
+                },
+                {
+                  "uses": "actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+                  "with": {
+                    "python-version": "3.12"
+                  }
+                },
+                {
+                  "name": "Check package files",
+                  "run": "python3 scripts/validate-package.py"
+                },
+                {
+                  "name": "Check skill discovery",
+                  "run": "npx --yes skills@1.5.20 add . --list"
+                },
+                {
+                  "name": "Check Claude marketplace",
+                  "run": "npm install --global @anthropic-ai/claude-code@2.1.237\nclaude plugin validate .\n"
+                }
+              ]
+            }
+          }
+        },
+        "current": {
+          "name": "Check package",
+          "true": {
+            "pull_request": null,
+            "push": {
+              "branches": [
+                "main"
+              ]
+            }
+          },
+          "permissions": {
+            "contents": "read"
+          },
+          "jobs": {
+            "check": {
+              "runs-on": "ubuntu-latest",
+              "steps": [
+                {
+                  "uses": "actions/checkout@11d5960a326750d5838078e36cf38b85af677262"
+                },
+                {
+                  "uses": "actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+                  "with": {
+                    "node-version": 22
+                  }
+                },
+                {
+                  "uses": "actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+                  "with": {
+                    "python-version": "3.12"
+                  }
+                },
+                {
+                  "name": "Check package files",
+                  "run": "python3 scripts/validate-package.py"
+                },
+                {
+                  "name": "Check skill discovery",
+                  "run": "npx --yes skills@1.5.20 add . --list"
+                },
+                {
+                  "name": "Check Claude marketplace",
+                  "run": "npm install --global @anthropic-ai/claude-code@2.1.237\nclaude plugin validate .\n"
+                }
+              ]
+            }
+          }
+        },
+        "resolution": "Exact after JSON key serialization; YAML 1.1 on-key coercion is historical parser behavior."
+      }
+    ]
+  },
+  "catalog": {
+    "records": 117,
+    "fields": [
+      "changes",
+      "description",
+      "execution",
+      "family",
+      "name",
+      "original_name",
+      "path",
+      "source",
+      "source_sha256",
+      "source_tree",
+      "support_files"
+    ],
+    "families": {
+      "LaTeX Document Maker": 33,
+      "Research Writing Guardrails": 2,
+      "Research Evidence Finder": 29,
+      "Scholar Research": 36,
+      "Scientific Visuals & Tables": 1,
+      "academic-humanizer": 1,
+      "academic-pptx": 1,
+      "ARMS": 13,
+      "humanizer": 1
+    },
+    "support_entries": 180,
+    "issues": []
+  },
+  "reference_links": {
+    "records": 269,
+    "fields": [
+      "exists",
+      "file",
+      "target"
+    ],
+    "declared_missing": [],
+    "current_missing": []
+  },
+  "package_files": {
+    "excludes": "This index itself; runtime bytecode/cache files are not delivered",
+    "entries": 599,
+    "mismatch": []
+  },
+  "academic_pptx_archive": {
+    "members": [
+      {
+        "name": "academic-pptx-skill-main/",
+        "directory": true,
+        "bytes": 0,
+        "compressed_bytes": 0,
+        "external_attr": 16
+      },
+      {
+        "name": "academic-pptx-skill-main/Academic_Presentation_Best_Practices_DH_built_with_Claude_2_2026.pdf",
+        "directory": false,
+        "bytes": 194343,
+        "compressed_bytes": 188509,
+        "external_attr": 0,
+        "sha256": "ad89e2b8e4f276d9e9f25f7f090706906e5aac499a6e8acbd2b712d4094f9945",
+        "expanded_equal": true
+      },
+      {
+        "name": "academic-pptx-skill-main/LICENSE",
+        "directory": false,
+        "bytes": 1068,
+        "compressed_bytes": 630,
+        "external_attr": 0,
+        "sha256": "20d9c009d0e5d7150da5e081c8d5a81463731dcf338323992a74a0648e6fb542",
+        "expanded_equal": true
+      },
+      {
+        "name": "academic-pptx-skill-main/README.md",
+        "directory": false,
+        "bytes": 3033,
+        "compressed_bytes": 1536,
+        "external_attr": 0,
+        "sha256": "c27a1813d8af720fb1bfbbad7582df6d515fd7c9202f2e50be94aae65532fa3e",
+        "expanded_equal": true
+      },
+      {
+        "name": "academic-pptx-skill-main/SKILL.md",
+        "directory": false,
+        "bytes": 7557,
+        "compressed_bytes": 3344,
+        "external_attr": 0,
+        "sha256": "c321851cd9d9b98d429de4798766207525024f3f28c3fe6dd5932ae79a2efb28",
+        "expanded_equal": true
+      },
+      {
+        "name": "academic-pptx-skill-main/content_guidelines.md",
+        "directory": false,
+        "bytes": 12160,
+        "compressed_bytes": 5289,
+        "external_attr": 0,
+        "sha256": "d9b0351b31995d2aa34ac31550fb430310bf1ba6bfc19e1767eba8f24f807bf1",
+        "expanded_equal": true
+      },
+      {
+        "name": "academic-pptx-skill-main/slide_patterns.md",
+        "directory": false,
+        "bytes": 20082,
+        "compressed_bytes": 6265,
+        "external_attr": 0,
+        "sha256": "f367318f3a9e4b0031e10c179cc673b7a59abeeb3bc0249680e64d3277f18764",
+        "expanded_equal": true
+      }
+    ],
+    "crc_error": null
+  },
+  "arms_audit": {
+    "inventory_entries": 69,
+    "source_line_excerpts": 207,
+    "skill_headers": 13,
+    "issues": []
+  },
+  "collection_audit": {
+    "inventory_entries": 200,
+    "issues": [],
+    "python_syntax_values": [
+      "valid"
+    ],
+    "python_sources_statically_parsed": 8
+  }
+}

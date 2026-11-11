@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "transport": "actual stdio subprocess",
+  "protocol": "2025-11-25",
+  "discovered_tools": [
+    "search_capabilities",
+    "route_task",
+    "read_resource",
+    "environment_status",
+    "verify_sources"
+  ],
+  "successful_calls": [
+    "search_capabilities",
+    "route_task",
+    "read_resource",
+    "environment_status",
+    "verify_sources"
+  ],
+  "source_preservation": {
+    "verified": 273,
+    "directories_verified": 179,
+    "missing": [],
+    "mismatched": [],
+    "passed": true
+  },
+  "external_services": "not_configured_by_this_plugin",
+  "stderr": "",
+  "exit_code": 0
+}

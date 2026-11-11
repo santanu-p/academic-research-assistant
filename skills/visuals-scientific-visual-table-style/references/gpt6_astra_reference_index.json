@@ -1,0 +1,72 @@
+{
+  "source": "https://deploymentsafety.openai.com/gpt-6-astra/gpt-6-astra.pdf",
+  "precedence": "governing",
+  "tables": [
+    {
+      "number": 1,
+      "role": "north-star table"
+    },
+    {
+      "number": 2,
+      "role": "north-star table"
+    },
+    {
+      "number": 4,
+      "role": "north-star table"
+    },
+    {
+      "number": 6,
+      "role": "north-star table"
+    },
+    {
+      "number": 7,
+      "role": "north-star table"
+    },
+    {
+      "number": 8,
+      "role": "north-star table"
+    }
+  ],
+  "figures": [
+    {
+      "number": 1,
+      "role": "north-star figure"
+    },
+    {
+      "number": 2,
+      "role": "north-star figure"
+    },
+    {
+      "number": 5,
+      "role": "north-star figure"
+    },
+    {
+      "number": 6,
+      "role": "north-star figure"
+    },
+    {
+      "number": 9,
+      "role": "north-star figure"
+    },
+    {
+      "number": 12,
+      "role": "north-star figure"
+    },
+    {
+      "number": 13,
+      "role": "north-star figure"
+    },
+    {
+      "number": 14,
+      "role": "north-star figure"
+    },
+    {
+      "number": 17,
+      "role": "north-star figure"
+    },
+    {
+      "number": 19,
+      "role": "north-star figure"
+    }
+  ]
+}

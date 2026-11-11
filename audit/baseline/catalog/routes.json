@@ -1,0 +1,414 @@
+[
+  {
+    "id": "systematic-review",
+    "terms": [
+      "systematic review",
+      "scoping review",
+      "prisma",
+      "screening"
+    ],
+    "skills": [
+      "evidence-systematic-review",
+      "scholar-systematic-review",
+      "evidence-data-extraction",
+      "evidence-study-appraisal"
+    ]
+  },
+  {
+    "id": "meta-analysis",
+    "terms": [
+      "meta-analysis",
+      "meta analysis",
+      "pooled effect",
+      "heterogeneity"
+    ],
+    "skills": [
+      "evidence-meta-analysis",
+      "evidence-statistics-explained",
+      "scholar-data-analysis-plan"
+    ]
+  },
+  {
+    "id": "literature",
+    "terms": [
+      "literature",
+      "papers",
+      "find studies",
+      "search strings",
+      "citation chaining"
+    ],
+    "skills": [
+      "evidence-find-studies",
+      "evidence-search-strings",
+      "evidence-citation-chaining",
+      "scholar-literature-review",
+      "evidence-literature-review"
+    ]
+  },
+  {
+    "id": "citation",
+    "terms": [
+      "verify",
+      "citation",
+      "doi",
+      "references",
+      "bibliography"
+    ],
+    "skills": [
+      "evidence-source-verification",
+      "evidence-citations-and-references",
+      "scholar-citation-generator",
+      "latex-bibliography-citations"
+    ]
+  },
+  {
+    "id": "gap",
+    "terms": [
+      "gap",
+      "novelty",
+      "research topic",
+      "research question",
+      "hypothesis"
+    ],
+    "skills": [
+      "evidence-research-gaps",
+      "scholar-research-question",
+      "scholar-theoretical-framework",
+      "guardrails-research-problem-mechanism-evidence"
+    ]
+  },
+  {
+    "id": "qualitative",
+    "terms": [
+      "qualitative",
+      "thematic",
+      "interview",
+      "codebook",
+      "grounded theory"
+    ],
+    "skills": [
+      "scholar-qualitative-analysis",
+      "scholar-survey-design",
+      "scholar-methodology-design"
+    ]
+  },
+  {
+    "id": "methods",
+    "terms": [
+      "experimental design",
+      "methodology",
+      "sampling",
+      "study design",
+      "mixed methods"
+    ],
+    "skills": [
+      "scholar-methodology-design",
+      "arms-methodology-architect",
+      "scholar-data-analysis-plan"
+    ]
+  },
+  {
+    "id": "ethics",
+    "terms": [
+      "ethics",
+      "consent",
+      "irb",
+      "participant information"
+    ],
+    "skills": [
+      "scholar-research-ethics",
+      "scholar-originality-integrity"
+    ]
+  },
+  {
+    "id": "statistics",
+    "terms": [
+      "statistics",
+      "statistical",
+      "regression",
+      "anova",
+      "p-value",
+      "effect size",
+      "confidence interval"
+    ],
+    "skills": [
+      "scholar-data-analysis-plan",
+      "scholar-results-interpreter",
+      "evidence-statistics-explained"
+    ]
+  },
+  {
+    "id": "modeling",
+    "terms": [
+      "mathematical",
+      "modeling",
+      "modelling",
+      "conformal",
+      "derivation",
+      "simulation"
+    ],
+    "skills": [
+      "arms-paper-modeler",
+      "arms-validate-method",
+      "arms-methodology-architect"
+    ]
+  },
+  {
+    "id": "pipeline",
+    "terms": [
+      "full arms",
+      "research pipeline",
+      "end-to-end",
+      "autonomous research"
+    ],
+    "skills": [
+      "arms-research-pipeline",
+      "arms-brief-expander",
+      "arms-literature-lead",
+      "arms-methodology-architect",
+      "arms-validate-method"
+    ]
+  },
+  {
+    "id": "review",
+    "terms": [
+      "peer review",
+      "review my manuscript",
+      "critic",
+      "grade my paper",
+      "adversarial loop"
+    ],
+    "skills": [
+      "arms-paper-critic",
+      "arms-paper-grader",
+      "scholar-peer-review-critique",
+      "arms-critic-revisor"
+    ]
+  },
+  {
+    "id": "reviewer-response",
+    "terms": [
+      "reviewer response",
+      "respond to reviewer",
+      "point-by-point",
+      "rebuttal",
+      "reviewer comments"
+    ],
+    "skills": [
+      "scholar-reviewer-response",
+      "arms-paper-fixer",
+      "guardrails-compag-elsevier-paper-editing"
+    ]
+  },
+  {
+    "id": "grant",
+    "terms": [
+      "grant",
+      "funding",
+      "nih",
+      "nsf",
+      "specific aims"
+    ],
+    "skills": [
+      "scholar-grant-proposal",
+      "academic-humanizer",
+      "scholar-research-proposal"
+    ]
+  },
+  {
+    "id": "proposal",
+    "terms": [
+      "proposal",
+      "synopsis",
+      "research brief"
+    ],
+    "skills": [
+      "scholar-research-proposal",
+      "evidence-research-proposal-background",
+      "arms-brief-expander"
+    ]
+  },
+  {
+    "id": "thesis",
+    "terms": [
+      "thesis",
+      "dissertation",
+      "viva",
+      "capstone"
+    ],
+    "skills": [
+      "scholar-thesis-dissertation",
+      "latex-thesis-dissertation",
+      "scholar-research-planner"
+    ]
+  },
+  {
+    "id": "presentation",
+    "terms": [
+      "presentation",
+      "powerpoint",
+      "pptx",
+      "conference talk",
+      "slides",
+      "seminar"
+    ],
+    "skills": [
+      "academic-pptx",
+      "scholar-research-communication",
+      "latex-beamer-slides"
+    ]
+  },
+  {
+    "id": "poster",
+    "terms": [
+      "poster",
+      "a0",
+      "a1",
+      "beamerposter"
+    ],
+    "skills": [
+      "latex-academic-poster",
+      "scholar-research-communication"
+    ]
+  },
+  {
+    "id": "visuals",
+    "terms": [
+      "figure",
+      "plot",
+      "chart",
+      "visualization",
+      "visualisation",
+      "scientific figures",
+      "scientific tables"
+    ],
+    "skills": [
+      "visuals-scientific-visual-table-style",
+      "latex-pgfplots-charts",
+      "latex-tables"
+    ]
+  },
+  {
+    "id": "math",
+    "terms": [
+      "equation",
+      "equations",
+      "formula",
+      "math",
+      "theorem",
+      "proof"
+    ],
+    "skills": [
+      "latex-math-equations",
+      "latex-equation-converter",
+      "latex-theorems-proofs"
+    ]
+  },
+  {
+    "id": "latex",
+    "terms": [
+      "latex",
+      "tex",
+      "overleaf",
+      "compile"
+    ],
+    "skills": [
+      "latex-latex-studio",
+      "latex-document-builder",
+      "latex-error-fixer",
+      "latex-setup-compiling"
+    ]
+  },
+  {
+    "id": "humanize",
+    "terms": [
+      "ai-sounding",
+      "humanize",
+      "humanise",
+      "writer voice",
+      "ai tells"
+    ],
+    "skills": [
+      "humanizer",
+      "academic-humanizer",
+      "arms-house-style"
+    ]
+  },
+  {
+    "id": "edit",
+    "terms": [
+      "edit",
+      "proofread",
+      "polish",
+      "academic prose",
+      "word count",
+      "shorten",
+      "translate"
+    ],
+    "skills": [
+      "scholar-academic-editing",
+      "academic-humanizer",
+      "scholar-word-reduction",
+      "scholar-academic-translation"
+    ]
+  },
+  {
+    "id": "write",
+    "terms": [
+      "manuscript",
+      "write a paper",
+      "abstract",
+      "introduction",
+      "results section",
+      "discussion"
+    ],
+    "skills": [
+      "arms-write-manuscript",
+      "scholar-paper-sections",
+      "scholar-abstract-introduction",
+      "guardrails-compag-elsevier-paper-editing"
+    ]
+  },
+  {
+    "id": "publish",
+    "terms": [
+      "journal",
+      "submission",
+      "publish",
+      "cover letter"
+    ],
+    "skills": [
+      "scholar-journal-finder",
+      "scholar-submission-checklist",
+      "latex-journal-templates"
+    ]
+  },
+  {
+    "id": "manage",
+    "terms": [
+      "timeline",
+      "milestone",
+      "project plan",
+      "schedule",
+      "supervisor"
+    ],
+    "skills": [
+      "scholar-research-planner"
+    ]
+  },
+  {
+    "id": "integrity",
+    "terms": [
+      "reproducibility",
+      "reproduce",
+      "integrity",
+      "audit claims",
+      "evidence alignment"
+    ],
+    "skills": [
+      "guardrails-research-problem-mechanism-evidence",
+      "arms-validate-method",
+      "scholar-originality-integrity"
+    ]
+  }
+]

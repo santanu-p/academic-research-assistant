@@ -1,0 +1,18 @@
+{
+  "source_files": 174,
+  "expanded_archive_files": 99,
+  "source_skills": 117,
+  "families": {
+    "LaTeX Document Maker": 33,
+    "Research Writing Guardrails": 2,
+    "Research Evidence Finder": 29,
+    "Scholar Research": 36,
+    "Scientific Visuals & Tables": 1,
+    "ARMS": 13,
+    "academic-humanizer": 1,
+    "academic-pptx": 1,
+    "humanizer": 1
+  },
+  "mapped_items_including_directories": 452,
+  "mcp_configs_supplied": 0
+}

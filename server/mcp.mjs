@@ -1,16 +1,18 @@
-import {ROOT,json,search,route,readText,verify,environment} from '../lib/core.mjs';
+import {ROOT,json,search,route,readText,verify,verifySources,environment} from '../lib/core.mjs';
 import {pathToFileURL} from 'node:url';
+import {dependencyStatus} from '../lib/dependencies.mjs';
 const protocols=['2025-06-18','2025-11-25'];
 const definition=(name,description,properties={},required=[])=>({name,description,inputSchema:{type:'object',properties,required,additionalProperties:false},annotations:{readOnlyHint:true,destructiveHint:false,openWorldHint:false}});
 const TOOLS=[
  definition('search_capabilities','Find canonical research instructions; does not execute them.',{query:{type:'string',minLength:1},limit:{type:'integer',minimum:1,maximum:250}},['query']),
  definition('route_task','Select skills for a research task and report execution boundaries.',{task:{type:'string',minLength:1}},['task']),
- definition('read_resource','Read UTF-8 public package resources with pagination measured in Unicode code points.',{path:{type:'string'},offset:{type:'integer',minimum:0},max_chars:{type:'integer',minimum:1,maximum:64000}},['path']),
- definition('environment_status','Report this runtime and declared optional requirements; no commands or network probes.'),
+ definition('read_resource','Read UTF-8 public package resources with Unicode code-point pagination.',{path:{type:'string'},offset:{type:'integer',minimum:0},max_chars:{type:'integer',minimum:1,maximum:64000}},['path']),
+ definition('environment_status','Check local executable and Python module presence; does not verify credentials or execute research.'),
  definition('verify_package','Compare the public bundle with its local SHA-256 inventory; not a research or publisher attestation.'),
+ definition('verify_sources','Check recorded original payloads against the reviewed source preservation ledger.'),
 ];
 const funcs={search_capabilities:({query,limit})=>search(query,limit),route_task:({task})=>route(task),
- read_resource:({path,offset,max_chars})=>readText(path,offset,max_chars),environment_status:()=>environment(),verify_package:()=>verify()};
+ read_resource:({path,offset,max_chars})=>readText(path,offset,max_chars),environment_status:async()=>({...environment(),...(await dependencyStatus()),optional_python:'Module presence is checked using the Python interpreter found on PATH when available.'}),verify_package:()=>verify(),verify_sources:()=>verifySources()};
 const object=x=>x!==null&&typeof x==='object'&&!Array.isArray(x);
 const validId=x=>typeof x==='string'||Number.isSafeInteger(x);
 const error=(id,code,message)=>({jsonrpc:'2.0',id:validId(id)?id:null,error:{code,message}});
@@ -25,7 +27,7 @@ export async function handle(request){
      ||typeof params.clientInfo.name!=='string'||!params.clientInfo.name||typeof params.clientInfo.version!=='string'||!params.clientInfo.version)return error(id,-32602,'Missing or invalid initialize fields');
   const version=(await json('package.json')).version;
   result={protocolVersion:protocols.includes(params.protocolVersion)?params.protocolVersion:protocols.at(-1),
-   capabilities:{tools:{listChanged:false}},serverInfo:{name:'academic-research-assistant',version},
+   capabilities:{tools:{listChanged:false}},serverInfo:{name:'academic-research-assistant-full',version},
    instructions:'Read the selected canonical skills and research contract. Local read-only tools do not perform research or configure external services.'};
  }else if(request.method==='ping')result={};
  else if(request.method==='tools/list')result={tools:TOOLS};

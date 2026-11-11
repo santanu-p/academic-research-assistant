@@ -1,0 +1,15 @@
+{
+  "cross_reference_normalization": {
+    "latex-cleanup": "latex-latex-cleanup",
+    "latex-studio": "latex-latex-studio",
+    "latex-proofreading": "latex-latex-proofreading"
+  },
+  "routing_corrections": [
+    "Prospective methodology design precedes pilot validation.",
+    "A canonical-audit consumer fixing a manuscript is a fixer, not the audit-producing modeler.",
+    "Feasible thesis-question development selects scholar research-question design.",
+    "Verified-reference formatting takes precedence over supporting source-evaluation notes.",
+    "Standalone source annotations expose both legitimate specialists and request context."
+  ],
+  "fixture_correction": "A bare 150-word source-annotation request fits both complete source modes. The verified-reference test now explicitly states that context; a separate ambiguity test preserves the overlap."
+}

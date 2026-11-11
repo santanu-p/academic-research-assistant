@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "input": "small deterministic synthetic scores, not an empirical coverage study",
+  "quantile": 1.2076923076923076,
+  "coverage_on_fixture": 0.85,
+  "width": 2.4153846153846152,
+  "scope": "fit/predict/width invariants only; no scientific reproduction"
+}

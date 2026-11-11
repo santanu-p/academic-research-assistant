@@ -1,8 +1,34 @@
 ---
 name: academic-humanizer
-description: "Edit academic and proposal prose for author voice while preserving evidence, citations, uncertainty and technical meaning."
+description: "Edit AI-assisted papers, theses, abstracts, rebuttals and funding proposals for clear scholarly author voice. Preserve technical meaning, numbers, equations and citations; match claims to evidence and proposal ambition to real feasibility. Keep general prose with humanizer."
 ---
+## Selection and handoffs
 
+Edit AI-assisted academic and funding-proposal prose for clear author voice with evidence-appropriate claims.
+
+**Select for:** Humanize academic manuscript or rebuttal prose while preserving evidence and citations; Edit an NSF Project Summary/Description or NIH Specific Aims in proposal mode; Match a researcher writing sample and venue register
+
+**Expected work:** Read document, author sample and venue/agency; distinguish paper from proposal; Audit pattern locations and empirical evidence before editing; Rewrite complete same-structure content with calibrated claims and citation pointers; Apply six layers with scholarly exceptions and separate proposal register; Return cleaned text and change report confirming unchanged numerical/equation/citation content
+
+**Expected output:** Cleaned scholarly/proposal text; Audit/change report of pattern fixes, claim calibration and evidence pointers; Voice/venue notes and explicit preservation confirmation
+
+**Scope boundaries:** Blogs/marketing/personal essays; Inventing evidence or editing results; A full ARMS production orchestration request; Disclosure or detector evasion
+
+**Related skills:** [humanizer](../humanizer/SKILL.md), [arms-house-style](../arms-house-style/SKILL.md), [guardrails-compag-elsevier-paper-editing](../guardrails-compag-elsevier-paper-editing/SKILL.md)
+
+Apply this skill only to the selected task. Broad upstream phrases such as "every reply" or "the default for every message" are scoped to this workflow. They do not activate it for unrelated chat. User instructions and the [integration contract](../../docs/INTEGRATION.md) govern combined work. Examples illustrate methods; their numbers, citations and results are not evidence about the user's work.
+
+## Preserved source instructions
+
+
+## Unified plugin integration
+
+Read [the integration contract](../../docs/INTEGRATION.md) when combining workflows. This active copy retains the complete source instructions below with namespaced skill references. Original bytes and upstream metadata remain in `../../resources/`. Resolve tools by their actual host capabilities; tool names in upstream instructions are capability requirements, not proof of connection. Use the task workspace for generated outputs. Treat historical case-study results as supplied examples, not newly verified findings.
+
+Family skill aliases (read the linked SKILL.md before use):
+- `academic-humanizer-main` → `academic-humanizer` (`../academic-humanizer/SKILL.md`)
+
+---
 
 # Academic Humanizer
 

@@ -1,0 +1,1347 @@
+[
+  {
+    "file": "skills/academic-humanizer/README.md",
+    "target": "examples/before-after.md",
+    "exists": true
+  },
+  {
+    "file": "skills/academic-humanizer/README.md",
+    "target": "SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "skills/academic-humanizer/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/academic-pptx/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/academic-pptx/SKILL.md",
+    "target": "content_guidelines.md",
+    "exists": true
+  },
+  {
+    "file": "skills/academic-pptx/SKILL.md",
+    "target": "slide_patterns.md",
+    "exists": true
+  },
+  {
+    "file": "skills/academic-pptx/SKILL.md",
+    "target": "content_guidelines.md",
+    "exists": true
+  },
+  {
+    "file": "skills/arms-brief-expander/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/arms-critic-revisor/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/arms-house-style/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/arms-literature-lead/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/arms-methodology-architect/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/arms-paper-critic/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/arms-paper-fixer/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/arms-paper-grader/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/arms-paper-modeler/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/arms-paper-writer/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/arms-research-pipeline/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/arms-validate-method/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/arms-write-manuscript/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-citation-chaining/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-citations-and-references/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-claim-checker/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-compare-studies/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-data-extraction/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-database-guide/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-debate-and-argument-evidence/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-decision-evidence/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-evidence-answer/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-evidence-based-writing/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-evidence-help/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-evidence-meter/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-field-guides/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-find-studies/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-literature-review/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-meta-analysis/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-open-access-full-text/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-paper-summary/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-plain-language-research/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-research-evidence-finder/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-research-gaps/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-research-proposal-background/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-research-question/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-search-strings/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-source-verification/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-statistics-explained/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-study-appraisal/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-study-designs-and-evidence-levels/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/evidence-systematic-review/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/guardrails-compag-elsevier-paper-editing/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/guardrails-research-problem-mechanism-evidence/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/humanizer/README.md",
+    "target": "CHANGELOG.md",
+    "exists": true
+  },
+  {
+    "file": "skills/humanizer/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-academic-poster/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-algorithms-code/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-beamer-slides/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-bibliography-citations/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-books-notes/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-certificates-flyers/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-cross-references-links/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-custom-macros/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-document-builder/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-equation-converter/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-error-fixer/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-figures-images/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-format-conversion/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-homework-exams/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-journal-templates/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-latex-cleanup/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-latex-help/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-latex-proofreading/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-latex-studio/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-letters/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-math-equations/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-multilingual-fonts/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-page-formatting/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-pgfplots-charts/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-reports-manuals/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-research-paper/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-resume-cv/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-science-notation/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-setup-compiling/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-tables/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-theorems-proofs/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-thesis-dissertation/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/latex-tikz-diagrams/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/research-assistant/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/research-assistant/SKILL.md",
+    "target": "../../docs/INVENTORY.md",
+    "exists": true
+  },
+  {
+    "file": "skills/research-assistant/SKILL.md",
+    "target": "../../catalog/routes.json",
+    "exists": true
+  },
+  {
+    "file": "skills/research-assistant/SKILL.md",
+    "target": "../../docs/DEPENDENCIES.md",
+    "exists": true
+  },
+  {
+    "file": "skills/research-assistant/SKILL.md",
+    "target": "../../docs/ARMS.md",
+    "exists": true
+  },
+  {
+    "file": "skills/research-assistant/SKILL.md",
+    "target": "../../workflows/discover-and-synthesize.md",
+    "exists": true
+  },
+  {
+    "file": "skills/research-assistant/SKILL.md",
+    "target": "../../workflows/evidence-review.md",
+    "exists": true
+  },
+  {
+    "file": "skills/research-assistant/SKILL.md",
+    "target": "../../workflows/design-and-validate.md",
+    "exists": true
+  },
+  {
+    "file": "skills/research-assistant/SKILL.md",
+    "target": "../../workflows/plan-and-fund.md",
+    "exists": true
+  },
+  {
+    "file": "skills/research-assistant/SKILL.md",
+    "target": "../../workflows/write-and-typeset.md",
+    "exists": true
+  },
+  {
+    "file": "skills/research-assistant/SKILL.md",
+    "target": "../../workflows/visualize-and-communicate.md",
+    "exists": true
+  },
+  {
+    "file": "skills/research-assistant/SKILL.md",
+    "target": "../../workflows/review-and-publish.md",
+    "exists": true
+  },
+  {
+    "file": "skills/research-assistant/SKILL.md",
+    "target": "../../workflows/arms-orchestration.md",
+    "exists": true
+  },
+  {
+    "file": "skills/research-assistant/SKILL.md",
+    "target": "../../agents/README.md",
+    "exists": true
+  },
+  {
+    "file": "skills/research-assistant/SKILL.md",
+    "target": "../../docs/SETUP.md",
+    "exists": true
+  },
+  {
+    "file": "skills/research-assistant/SKILL.md",
+    "target": "../../docs/LIMITATIONS.md",
+    "exists": true
+  },
+  {
+    "file": "skills/research-assistant/SKILL.md",
+    "target": "../../docs/INVENTORY.md",
+    "exists": true
+  },
+  {
+    "file": "skills/research-assistant/SKILL.md",
+    "target": "../../audit/source-map.json",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-abstract-introduction/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-academic-editing/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-academic-translation/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-citation-generator/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-data-analysis-plan/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-evidence-synthesis/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-find-sources/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-grant-proposal/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-journal-finder/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-literature-review/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-methodology-design/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-originality-integrity/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-outline-builder/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-paper-breakdown/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-paper-sections/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-paperpal-tools/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-paraphrase-summarize/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-peer-review-critique/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-qualitative-analysis/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-research-communication/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-research-ethics/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-research-gaps/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-research-planner/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-research-proposal/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-research-question/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-results-interpreter/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-reviewer-response/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-scholar-help/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-scholar-studio/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-source-evaluation/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-submission-checklist/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-survey-design/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-systematic-review/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-theoretical-framework/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-thesis-dissertation/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/scholar-word-reduction/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "skills/visuals-scientific-visual-table-style/SKILL.md",
+    "target": "../../docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../audit/source-map.csv",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../audit/source-map.json",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../audit/source-inspection.json",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-academic-poster/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-algorithms-code/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-beamer-slides/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-bibliography-citations/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-books-notes/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-certificates-flyers/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-cross-references-links/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-custom-macros/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-document-builder/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-equation-converter/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-error-fixer/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-figures-images/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-format-conversion/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-homework-exams/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-journal-templates/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-latex-cleanup/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-latex-help/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-latex-proofreading/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-latex-studio/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-letters/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-math-equations/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-multilingual-fonts/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-page-formatting/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-pgfplots-charts/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-reports-manuals/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-research-paper/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-resume-cv/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-science-notation/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-setup-compiling/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-tables/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-theorems-proofs/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-thesis-dissertation/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/latex-tikz-diagrams/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/guardrails-compag-elsevier-paper-editing/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/guardrails-research-problem-mechanism-evidence/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-citation-chaining/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-citations-and-references/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-claim-checker/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-compare-studies/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-data-extraction/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-database-guide/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-debate-and-argument-evidence/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-decision-evidence/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-evidence-answer/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-evidence-based-writing/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-evidence-help/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-evidence-meter/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-field-guides/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-find-studies/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-literature-review/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-meta-analysis/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-open-access-full-text/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-paper-summary/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-plain-language-research/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-research-evidence-finder/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-research-gaps/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-research-proposal-background/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-research-question/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-search-strings/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-source-verification/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-statistics-explained/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-study-appraisal/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-study-designs-and-evidence-levels/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/evidence-systematic-review/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-abstract-introduction/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-academic-editing/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-academic-translation/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-citation-generator/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-data-analysis-plan/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-evidence-synthesis/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-find-sources/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-grant-proposal/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-journal-finder/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-literature-review/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-methodology-design/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-originality-integrity/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-outline-builder/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-paper-breakdown/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-paper-sections/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-paperpal-tools/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-paraphrase-summarize/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-peer-review-critique/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-qualitative-analysis/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-research-communication/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-research-ethics/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-research-gaps/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-research-planner/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-research-proposal/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-research-question/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-results-interpreter/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-reviewer-response/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-scholar-help/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-scholar-studio/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-source-evaluation/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-submission-checklist/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-survey-design/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-systematic-review/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-theoretical-framework/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-thesis-dissertation/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/scholar-word-reduction/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/visuals-scientific-visual-table-style/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/academic-humanizer/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/academic-pptx/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/arms-brief-expander/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/arms-critic-revisor/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/arms-house-style/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/arms-literature-lead/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/arms-methodology-architect/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/arms-paper-critic/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/arms-paper-fixer/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/arms-paper-grader/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/arms-paper-modeler/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/arms-paper-writer/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/arms-research-pipeline/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/arms-validate-method/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/arms-write-manuscript/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "docs/INVENTORY.md",
+    "target": "../skills/humanizer/SKILL.md",
+    "exists": true
+  },
+  {
+    "file": "README.md",
+    "target": "docs/SETUP.md",
+    "exists": true
+  },
+  {
+    "file": "README.md",
+    "target": "docs/INVENTORY.md",
+    "exists": true
+  },
+  {
+    "file": "README.md",
+    "target": "docs/INTEGRATION.md",
+    "exists": true
+  },
+  {
+    "file": "README.md",
+    "target": "audit/VERIFICATION.md",
+    "exists": true
+  },
+  {
+    "file": "README.md",
+    "target": "audit/source-map.csv",
+    "exists": true
+  },
+  {
+    "file": "README.md",
+    "target": "docs/DEPENDENCIES.md",
+    "exists": true
+  },
+  {
+    "file": "README.md",
+    "target": "docs/LIMITATIONS.md",
+    "exists": true
+  },
+  {
+    "file": "README.md",
+    "target": "THIRD_PARTY_NOTICES.md",
+    "exists": true
+  }
+]

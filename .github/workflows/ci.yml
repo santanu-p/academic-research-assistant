@@ -1,5 +1,6 @@
-name: Package checks
+name: Core package checks
 
+# These checks verify the package. They do not publish or upload release assets.
 on:
   push:
   pull_request:
@@ -9,35 +10,48 @@ permissions:
   contents: read
 
 jobs:
-  node:
+  core:
+    name: Node 22 / Python 3.11 / ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
     strategy:
       fail-fast: false
       matrix:
         os: [ubuntu-24.04, windows-latest]
+    env:
+      PYTHONUTF8: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+      - name: Set up Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version: '22'
+          node-version: "22"
           package-manager-cache: false
-      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
-          python-version: '3.11'
-      - name: Install optional helper test dependencies
-        run: python -m pip install numpy matplotlib Pillow PyMuPDF python-pptx 'jsonschema>=4,<5'
-      - name: Verify helper test dependencies are importable
-        run: python -c "import numpy, matplotlib, PIL, pymupdf, pptx, jsonschema"
-      - run: npm run validate
-      - run: npm run build
-      - run: npm run validate
-      - run: npm test
-      - name: Test Python helpers
-        run: python -X utf8 -B -m unittest discover -s tests/python
-      - name: Test release ZIP construction and source retention
-        run: python -X utf8 -B tests/test_package_release.py
-      - run: npm pack --ignore-scripts --pack-destination .
-      - name: Check offline installation from the actual package tarball
-        run: python -B tests/test_draft_artifact.py
+          python-version: "3.11"
+      - name: Install preservation validator dependency
+        run: python -m pip install "PyYAML>=6.0"
+      # No npm install is needed: the core package has no npm dependencies.
+      # Optional scientific runtimes and authenticated hosts are not exercised.
+      - name: Build runtime index
+        run: npm run build
+      - name: Check runtime index is tracked
+        run: git ls-files --error-unmatch -- catalog/files.json
+      - name: Check committed runtime index is current
+        run: git diff --exit-code -- catalog/files.json
+      - name: Validate preserved sources and active instructions
+        run: npm run validate
+      - name: Test local routing, stdio, and export formats
+        run: npm test
+      - name: Test Python server compatibility
+        run: python -X utf8 -B tests/test_python_server.py
+      - name: Verify runtime file consistency
+        run: node cli/ara.mjs verify
+      - name: Check npm archive preservation and exclusions
+        run: python -X utf8 -B tests/test_package_artifact.py

@@ -1,0 +1,303 @@
+{
+  "reviewer": "review118_artifacts_independent_cross_domain",
+  "scope": "Independent full-body comparison of eight immutable original SKILL.md files before any collection changes.",
+  "criterion": "A merger needs effectively the same task and context across the whole skill; shared headings, broad domains, formatting or boilerplate do not establish duplication. Nonredundant source methods/examples/outputs must remain usable and discoverable.",
+  "files_read": [
+    {
+      "id": "evidence-evidence-answer",
+      "path": "D:/PLUGIN/.review-118/original/skills/evidence-evidence-answer/SKILL.md",
+      "sha256": "90cf012a95bc47be24896d702d0ff362ad9a6b0e87edbe58d5a8f24b1817eb37",
+      "inspection": "Read full entrypoint including complete substantive body and integration/alias instructions; no local supporting files in these eight directories."
+    },
+    {
+      "id": "scholar-evidence-synthesis",
+      "path": "D:/PLUGIN/.review-118/original/skills/scholar-evidence-synthesis/SKILL.md",
+      "sha256": "63e7c1fafa50ac85c42d47ade6f106810fa5f39cca0c37557e938aa5e04c31bc",
+      "inspection": "Read full entrypoint including complete substantive body and integration/alias instructions; no local supporting files in these eight directories."
+    },
+    {
+      "id": "evidence-literature-review",
+      "path": "D:/PLUGIN/.review-118/original/skills/evidence-literature-review/SKILL.md",
+      "sha256": "e138b807eae777693d40f3b0d8cdb3b6efc554e652249824df6b72d2a48958a5",
+      "inspection": "Read full entrypoint including complete substantive body and integration/alias instructions; no local supporting files in these eight directories."
+    },
+    {
+      "id": "scholar-literature-review",
+      "path": "D:/PLUGIN/.review-118/original/skills/scholar-literature-review/SKILL.md",
+      "sha256": "1a57afdef8a66cc852f995b1d8a0c63fe245a0b80d1a87090e9a4bf242c8a439",
+      "inspection": "Read full entrypoint including complete substantive body and integration/alias instructions; no local supporting files in these eight directories."
+    },
+    {
+      "id": "evidence-research-gaps",
+      "path": "D:/PLUGIN/.review-118/original/skills/evidence-research-gaps/SKILL.md",
+      "sha256": "e1a640922f2a546fa1d8118245e3998d517f072788edebf22e2a6fb403e55dc7",
+      "inspection": "Read full entrypoint including complete substantive body and integration/alias instructions; no local supporting files in these eight directories."
+    },
+    {
+      "id": "scholar-research-gaps",
+      "path": "D:/PLUGIN/.review-118/original/skills/scholar-research-gaps/SKILL.md",
+      "sha256": "deedb7f5f23c5a44a21873fabe0266d6bc77dc6adc13aaddc1553cb6a39eb054",
+      "inspection": "Read full entrypoint including complete substantive body and integration/alias instructions; no local supporting files in these eight directories."
+    },
+    {
+      "id": "evidence-systematic-review",
+      "path": "D:/PLUGIN/.review-118/original/skills/evidence-systematic-review/SKILL.md",
+      "sha256": "a614911e67a5357e90d2cb0dd4368efe0fdf0650aaadc60b1813f14ff3570e62",
+      "inspection": "Read full entrypoint including complete substantive body and integration/alias instructions; no local supporting files in these eight directories."
+    },
+    {
+      "id": "scholar-systematic-review",
+      "path": "D:/PLUGIN/.review-118/original/skills/scholar-systematic-review/SKILL.md",
+      "sha256": "b71d0728034926c3a9b329ca58a21801e120399bb8a480e7b0d45296398679f8",
+      "inspection": "Read full entrypoint including complete substantive body and integration/alias instructions; no local supporting files in these eight directories."
+    }
+  ],
+  "pairs": [
+    {
+      "pair": [
+        "evidence-evidence-answer",
+        "scholar-evidence-synthesis"
+      ],
+      "recommendation": "keep-separate",
+      "same_context": "Partly: both answer a research question and communicate overall confidence.",
+      "same_whole_task": false,
+      "overlap": "Both restate the question, synthesize main evidence, explain disagreement/limits and provide a confidence-qualified bottom line.",
+      "decisive_differences": [
+        "evidence-evidence-answer explicitly acquires and verifies research: search best evidence, grade it, synthesize effect magnitude and who it concerns, and cite every factual claim to a verified source.",
+        "scholar-evidence-synthesis does not prescribe a search. It weighs lines of evidence and may work from supplied evidence or carefully qualified general knowledge; specific nonprovided sources remain verify-before-citing and the answer ends with how to check further.",
+        "These differ in evidence acquisition/verification commitment and admissible answer status. A shared generic answer description would conceal whether a current source search happened."
+      ],
+      "nonredundant_extras": [
+        {
+          "source": "evidence-evidence-answer",
+          "items": [
+            "Search sequence: reviews/meta-analyses then strong primary studies, subject to question-appropriate evidence hierarchy.",
+            "Summarize effect magnitude and applicability: how big, for whom.",
+            "Five confidence-category definitions: strong = several high-quality reviews/large studies agree; moderate = consistent with design limits; limited = few/small; conflicting = good studies disagree; insufficient = not enough research.",
+            "Grade by design/size/consistency with study-designs-and-evidence-levels handoff.",
+            "Verified sources for every factual claim and a key-sources reference list.",
+            "Explicit observational-association versus causation safeguard."
+          ]
+        },
+        {
+          "source": "scholar-evidence-synthesis",
+          "items": [
+            "Explicit inventory of evidence types: meta-analyses, experiments, longitudinal, cross-sectional, qualitative and expert opinion.",
+            "Disagreement may reflect time periods in addition to populations/measures/methods.",
+            "Distinguish established knowledge from general knowledge and mark unprovided specific sources verify-before-citing.",
+            "How-to-check-further section with search terms and databases.",
+            "Compact supports/complicates/uncertainty output suitable for source-bound synthesis.",
+            "Full quality/integrity/privacy/copyright protections remain applicable."
+          ]
+        }
+      ],
+      "routing": [
+        {
+          "request": "Search the current literature and tell me what research says about this intervention, with verified citations.",
+          "primary": "evidence-evidence-answer",
+          "reason": "Current retrieval/verification is part of the task."
+        },
+        {
+          "request": "Using only these six supplied studies, weigh the evidence, explain disagreements, and state confidence; do not search.",
+          "primary": "scholar-evidence-synthesis",
+          "reason": "The operation is synthesis within a bounded supplied corpus."
+        },
+        {
+          "request": "Explain broadly what the evidence suggests and give a search strategy; I do not need a current literature search.",
+          "primary": "scholar-evidence-synthesis",
+          "reason": "Qualify general knowledge and specific references rather than implying fresh verification."
+        }
+      ],
+      "proposed_boundary_refinement": "Make retrieval-backed research answers versus supplied-evidence/general-knowledge synthesis explicit in discovery descriptions and cross-references. This is a proposed narrower routing boundary inferred from substantive workflows, not an assertion that scholar source only permits supplied files.",
+      "merge_caution": "A canonical umbrella could technically expose both branches, but that is not proof the whole workflows are duplicate under the user's strict same-task/same-context requirement. Preserve separate entrypoints here."
+    },
+    {
+      "pair": [
+        "evidence-literature-review",
+        "scholar-literature-review"
+      ],
+      "recommendation": "keep-separate",
+      "same_context": "Yes for narrative/thematic review drafting; not for scholar's independent source-annotation deliverable.",
+      "same_whole_task": false,
+      "overlap": "Both organize a literature synthesis by themes/methods/chronology, compare studies, identify limits/gaps and cite sources.",
+      "decisive_differences": [
+        "scholar-literature-review contains a complete annotated-bibliography mode: each source gets citation, summary, evaluation and project relevance at a course-adapted length. This is not a shortened literature review or generic duplicate paragraph.",
+        "evidence-literature-review includes source discovery/screening and review-type selection across narrative/thematic/chronological/methodological/scoping/integrative/systematic; scholar emphasizes a supplied-source synthesis matrix, justified organizing logic and optional draft prose.",
+        "Whole-skill consolidation based only on the shared literature-review heading risks burying or dropping the annotation mode and confusing source annotations with cross-source synthesis."
+      ],
+      "nonredundant_extras": [
+        {
+          "source": "evidence-literature-review",
+          "items": [
+            "Seven review-type distinctions with systematic-review specialist handoff.",
+            "Define scope in question, years, fields and study types.",
+            "Find and screen sources via find-studies/search-strings handoffs.",
+            "Source-versus-themes extraction matrix and thematic/debate outline.",
+            "Outline first for long reviews, then full sections, in-text citations and reference list.",
+            "End with gaps, limitations and fit of user work; verified or user-supplied sources only; original paraphrased text.",
+            "Synthesis phrases highlighting divergent study results and possible design explanations."
+          ]
+        },
+        {
+          "source": "scholar-literature-review",
+          "items": [
+            "Explicit synthesis-matrix fields: author, year, aim, method, sample, findings, limitations, theme.",
+            "Organizing logic includes theoretical organization and must be justified.",
+            "Per-theme agreement/disagreement/reasons/evidence strength and trajectory of the field.",
+            "Outline includes topic sentences; draft synthesis paragraphs only when asked; explicit gap statement; requested citation style with APA 7 default.",
+            "Independent annotated-bibliography mode: full citation; 2–3-sentence aim/method/findings summary; strengths/limitations/credibility/bias evaluation; relevance/how source will be used.",
+            "Annotation default 100–150 words, overridden by course length/style; missing citation details marked [missing: field].",
+            "Annotations require supplied/verifiable sources and encourage user's own evaluation/critical voice.",
+            "Full quality/integrity/privacy/copyright protections remain applicable."
+          ]
+        }
+      ],
+      "routing": [
+        {
+          "request": "Write a review of this topic, first choose the review type, find/screen sources and give an outline.",
+          "primary": "evidence-literature-review",
+          "reason": "Discovery, screening and review-type selection are primary."
+        },
+        {
+          "request": "Build a synthesis matrix with aim/method/sample/limitations from these supplied papers and propose theme topic sentences.",
+          "primary": "scholar-literature-review",
+          "reason": "Structured source-bound synthesis is primary."
+        },
+        {
+          "request": "Create a 120-word annotation for each provided source with summary, critique and relevance to my project.",
+          "primary": "scholar-literature-review",
+          "reason": "This is its full annotated-bibliography mode and must remain discoverable."
+        }
+      ],
+      "proposed_boundary_refinement": "Retain separate entrypoints and make annotation mode explicit. If future restructuring splits annotation into a dedicated source-preserving skill, reassess only the remaining review-synthesis branches after full comparison; that split is outside this review and not authorized here.",
+      "merge_caution": "Preserving the original text somewhere does not make losing a distinct discoverable annotation capability acceptable. Broad topic overlap is insufficient."
+    },
+    {
+      "pair": [
+        "evidence-research-gaps",
+        "scholar-research-gaps"
+      ],
+      "recommendation": "justified-merge-candidate",
+      "same_context": "Yes: analyze a literature base to identify defensible research gaps and turn them into questions/designs/contribution framing.",
+      "same_whole_task": true,
+      "overlap": "Both enumerate the same seven gap categories and produce evidence-linked gap/question/design outputs for the user's study. Neither contains a separate artifact mode comparable to annotated bibliography.",
+      "decisive_differences": [
+        "evidence supplies discovery mechanics and recency checking; scholar supplies a structured evidence/page table plus gap/contribution wording.",
+        "These are complementary stages and presentation detail within the same gap-analysis task. They do not require different top-level user intent or artifact selection.",
+        "Source-bounded versus wider literature confirmation must remain explicit: a gap observed in supplied papers is provisional until appropriate current searching establishes its wider status."
+      ],
+      "nonredundant_extras": [
+        {
+          "source": "evidence-research-gaps",
+          "items": [
+            "Read limitations/future-research sections in recent reviews and primary studies.",
+            "Map population, setting, method and outcome; look for empty cells.",
+            "Use disagreements among good studies as an evidence-gap signal.",
+            "Check recent years to see whether the apparent gap has already been filled.",
+            "Return 3–6 gaps, each with supporting citations, why it matters, a research question and suggested design.",
+            "Gap taxonomy signals include outdated technology/conditions, absent long-term studies and real-world application testing."
+          ]
+        },
+        {
+          "source": "scholar-research-gaps",
+          "items": [
+            "Explicit table columns: gap, type, evidence (source/page), research question, suggested design.",
+            "Ready-to-adapt gap-statement paragraph and contribution-statement paragraph.",
+            "Additional taxonomy examples: small samples, self-report, missing longitudinal data, theory untested in the current context.",
+            "Explicit supplied-papers/literature-review activation and novelty/contribution requests.",
+            "Full quality/integrity/privacy/copyright protections and source-verification qualifiers."
+          ]
+        }
+      ],
+      "routing": [
+        {
+          "request": "From these supplied papers, identify evidence-backed gaps, questions, candidate designs and a gap/contribution paragraph.",
+          "primary": "One consolidated gap-analysis skill, if root approves consolidation after collection gate.",
+          "reason": "Both entries perform the same task; preserve all source-specific method/output detail."
+        },
+        {
+          "request": "Check whether this candidate gap is still open in current literature.",
+          "primary": "Gap analysis with actual retrieval/verification branch and relevant search specialist.",
+          "reason": "Source-limited observation must not be presented as universal novelty."
+        }
+      ],
+      "proposed_preserving_merge": "A canonical gap-analysis entry may combine taxonomy, discovery matrix, source/page table, importance, recent-gap-closure check, questions/designs and gap/contribution statements. Retain complete source instructions/provenance and all aliases; select supplied-corpus analysis versus current literature confirmation explicitly. Do not require a live search when the user requests analysis of supplied files only; label wider novelty unresolved.",
+      "merge_caution": "This is a justified candidate, not a completed or mandatory merge. No novelty claim follows from empty matrix cells, a known future-work statement or this review."
+    },
+    {
+      "pair": [
+        "evidence-systematic-review",
+        "scholar-systematic-review"
+      ],
+      "recommendation": "justified-merge-candidate",
+      "same_context": "Yes: planning/executing/reporting a transparent systematic or scoping review, with protocol, search, screening, extraction, appraisal and synthesis.",
+      "same_whole_task": true,
+      "overlap": "Both define the same review lifecycle and offer protocol/search/screening/extraction/PRISMA outputs. The scholar description says plan while its purpose says help run; this is a phase distinction within the same reproducible-review task.",
+      "decisive_differences": [
+        "evidence has more operational detail for database/grey-literature search, piloted extraction, named bias tools, pooling suitability, SWiM and certainty grading.",
+        "scholar adds review-type justification/rapid review, SPIDER, explicit eligibility dimensions, disagreement resolution and effect-measure/heterogeneity/model planning.",
+        "Both already include planning and real review conduct; no separate non-review artifact mode prevents consolidation. Preserve phase/actual-execution boundaries, field fit and user-requested scope."
+      ],
+      "nonredundant_extras": [
+        {
+          "source": "evidence-systematic-review",
+          "items": [
+            "PICO/PEO/PCC framework routing to research-question.",
+            "Protocol includes objectives, eligibility, databases/search, screening, extraction form, bias tool and synthesis plan.",
+            "Registration example OSF Registries.",
+            "Search default at least two or three databases plus grey literature/citation chaining, with dates and exact strings recorded.",
+            "Title/abstract then full-text screening, ideally two reviewers, and exclusion reasons.",
+            "Pilot extraction form and data-extraction handoff.",
+            "Design-fit bias tools named RoB 2, ROBINS-I, CASP and MMAT.",
+            "Pool only sufficiently similar studies; otherwise structured narrative synthesis with SWiM guidance.",
+            "GRADE-style certainty per outcome.",
+            "PRISMA 2020/PRISMA-ScR and exact tracked flow stages: per-database records, duplicates, screened, excluded, full-text assessed, full-text exclusions/reasons, included.",
+            "Flexible output: protocol/search strategy/eligibility table or requested written section."
+          ]
+        },
+        {
+          "source": "scholar-systematic-review",
+          "items": [
+            "Justify review type, including systematic/scoping/rapid/meta-analysis.",
+            "SPIDER framework in addition to PICO/PEO/PCC.",
+            "Explicit eligibility dimensions: population, concept, context, designs, dates and languages.",
+            "Information sources and complete search strings for each database.",
+            "Independent reviewers and disagreement-resolution procedure.",
+            "Synthesis may be narrative, thematic or meta-analytic; specify effect measure, heterogeneity and model.",
+            "Concrete protocol outline, fill-in-count PRISMA text flow template and extraction-table template.",
+            "Full quality/integrity/privacy/copyright protections and source-verification qualifiers."
+          ]
+        }
+      ],
+      "routing": [
+        {
+          "request": "Prepare a systematic-review protocol with eligibility, two-stage screening, disagreement rules and extraction form.",
+          "primary": "One consolidated reproducible-review skill, if root approves consolidation after collection gate.",
+          "reason": "Identical task/context with complementary details."
+        },
+        {
+          "request": "Using my actual search exports and screening log, draft a PRISMA flow and narrative synthesis.",
+          "primary": "Same consolidated review workflow in execution/reporting phase.",
+          "reason": "Use recorded counts only; missing execution is not replaced by template numbers."
+        },
+        {
+          "request": "Compute a pooled effect from these extracted studies.",
+          "primary": "Review workflow plus an appropriate separately reviewed meta-analysis specialist.",
+          "reason": "The pair plans synthesis but does not replace a full numerical meta-analysis workflow."
+        }
+      ],
+      "proposed_preserving_merge": "A canonical review entry should expose protocol, execution and reporting phases; retain every question framework, eligibility field, reviewer rule, search log field, pilot extraction, bias/quality choice, similarity check, SWiM/uncertainty/PRISMA detail and template output. Tailor database counts, evidence hierarchies, bias tools and certainty methods to the field/question; they are not universally sufficient rules. Never invent counts, dual-review activity, registration or an executed search.",
+      "merge_caution": "No review or meta-analysis was executed during this source review. Preserve all methods and requested-scope choice; user authorization and actual available tools govern execution."
+    }
+  ],
+  "summary": {
+    "keep_separate": 2,
+    "justified_merge_candidates": 2,
+    "collection_changes_made": false
+  },
+  "limits": [
+    "This review used the complete supplied eight entrypoints and shared integration contract already read; each assigned directory contains only SKILL.md.",
+    "Linked family specialists are handoff references; this comparison does not pretend to independently review their bodies or validate scientific standards/current provider behavior.",
+    "Recommendations are provisional and do not authorize collection mutation before root's all-118 full-read gate."
+  ]
+}

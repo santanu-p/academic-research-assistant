@@ -1,0 +1,13 @@
+{
+  "command": "python -m unittest discover -s tests",
+  "python": "system Python 3.14",
+  "tests_run": 33,
+  "passed": 32,
+  "skipped": 1,
+  "failures": 0,
+  "errors": 0,
+  "duration_seconds": 38.498,
+  "skipped_reason": "Real PyMuPDF backend unavailable",
+  "sandbox_note": "Git Bash fixture tests required approved escalation; model commands were stubs",
+  "status": "PASS"
+}

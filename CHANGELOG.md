@@ -1,26 +1,12 @@
-# Changes
+# Changelog
 
-## 3.2.0 — 2026-11-02
+## 4.0.0
 
-- Add an optional LaTeX revision helper that calls separately installed latexdiff and Tectonic to build clean and marked PDFs from two project versions.
-- Route tracked PDF and LaTeX redline requests to the revision workflow. Review the PDFs and tool logs; included assets and bibliography files are not compared.
-- Add evidence-required weighted rubric arithmetic that withholds a complete score while any criterion remains unassessed.
-- Add a dry-run-first local workflow runner for caller-supplied command phases, dependencies, timeouts and output hashes.
+- Publish the complete reviewed collection: 118 mapped skills, 116 canonical methods, two compatibility entries, preserved support resources, and source credits.
+- Provide a GitHub-release tarball for `npx --package` installation without npm registry sign-in.
+- Retain source-specific license notices; the root MIT notice is scoped to the integration runtime and original project material.
+- Record the project maintainer's stated additional permission to distribute the complete collection; the package remains mixed-license.
 
-## 3.1.0 — 2026-10-30
+## 4.0.0-local.1
 
-- Add 50 research and specialized LaTeX skills alongside the 38 existing methods; retain overlapping methods under distinct names. The general `latex-document-workflow` skill is excluded.
-- Preserve the complete MIT Humanizer and Academic Humanizer sources, notices and instructional bodies as distinct skills.
-- Add local Antigravity export and skill profiles, isolate host plugin markers from instruction-only exports, and check source integrity before exporting.
-- This incremental release does not establish parity with the separately preserved full collection. Live host activation and external services remain to be tested.
-
-## 3.0.0
-
-- Newly authored MIT public source replaces the earlier private mixed-license integration.
-- Thirty-eight research skills share an evidence and artifact-verification contract.
-- Dependency-free Node CLI and read-only stdio MCP server.
-- Explicit exports for Codex, Claude Code and generic local hosts.
-- Original Python plotting, prose/table/visual inspection and explicit-command revision tools.
-- Runtime allowlists and SHA-256 inventories exclude private sources, tests and generated outputs.
-
-Previous private versions are preserved separately for recovery and are not public dependencies.
+Restore and fully review all 118 original skill entries and 600 original files. Refine task-specific discovery and scope; retain both Humanizers, all detailed source methods and supporting resources. Combine only gap-analysis and systematic-review pairs with complete methods and legacy aliases. Correct 14 source-reviewed ARMS metadata and handoff inconsistencies. Add contextual local routing and preservation checks. This mixed-license local collection is not a new public release.

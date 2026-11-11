@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Research reasoning and scientific writing skills for problem-mechanism-evidence alignment and evidence-bounded Elsevier/COMPAG manuscript editing.",
+  "name": "research-writing-guardrails",
+  "version": "1.0.0"
+}

@@ -1,0 +1,42 @@
+{
+  "author": {
+    "name": "Navish Kumar",
+    "url": "https://kumarnavish.github.io/"
+  },
+  "description": "Publication-grade scientific figures and tables with evidence fidelity, adaptive layout, and rendered-output QA.",
+  "homepage": "https://kumarnavish.github.io/",
+  "interface": {
+    "brandColor": "#1F6F5F",
+    "brandColorDark": "#90E0D0",
+    "capabilities": [
+      "Design scientific figures",
+      "Format research tables",
+      "Preserve quantitative evidence",
+      "Select analytical chart forms",
+      "Inspect final-size renders"
+    ],
+    "category": "Education & Research",
+    "composerIcon": "./.codex-plugin/assets/composer-icon.png",
+    "defaultPrompt": [
+      "Create a publication-ready benchmark figure and exact-value table from these results.",
+      "Plot score versus cost and latency, compute the Pareto frontier, and inspect the final-size render.",
+      "Audit these research figures and fix hierarchy, density, labels, clipping, and consistency."
+    ],
+    "developerName": "Navish Kumar",
+    "displayName": "Scientific Visuals & Tables",
+    "logo": "./.codex-plugin/assets/logo.png",
+    "longDescription": "Create and quality-assure scientific, quantitative, statistical, benchmark, and data-analysis figures and tables. The skill preserves supplied evidence, selects visual forms using deterministic rules, applies restrained publication-grade hierarchy and typography, adapts layouts to labels and density, and inspects the actual final-size render before delivery. It supports comparison charts, uncertainty plots, distributions, calibration, ablations, Pareto frontiers, time series, analytical diagrams, and research-result tables. Explicit generative-image, illustration, artwork, and photorealistic-image requests remain outside this workflow unless the user asks to combine them.",
+    "shortDescription": "Research figures and tables",
+    "websiteURL": "https://kumarnavish.github.io/"
+  },
+  "keywords": [
+    "scientific visualization",
+    "research figures",
+    "data visualization",
+    "benchmark tables",
+    "visual QA"
+  ],
+  "name": "scientific-visual-table-style",
+  "skills": "./skills/",
+  "version": "2.2.0"
+}

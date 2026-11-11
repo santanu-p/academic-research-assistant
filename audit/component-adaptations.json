@@ -1,0 +1,186 @@
+[
+  {
+    "path": "skills/arms-brief-expander/SKILL.md",
+    "source_sha256": "2bb4d5d715d6e5dd5b8e1a75ab1b0c139f093d813ed49ad201d845ae8c6b760c",
+    "adapted_sha256": "0b949ed5f495503b00a724877766d93148f8c4b6287c83eddbb23e974a10ad70",
+    "changes": [
+      "Portable package-relative paths and host capability resolution",
+      "Absent upstream dependencies explicitly marked; local replacement roles labelled"
+    ]
+  },
+  {
+    "path": "skills/arms-critic-revisor/run_loop.sh",
+    "source_sha256": "88b22066a0278711f371009cb064d3e844e43233e58efb0a12b962b3b4e82d72",
+    "adapted_sha256": "a64a28f15ffe888981d4fe44d9285e983fdefb409959fb6099cddb67f6f6c3e9",
+    "changes": [
+      "Prerequisite preflight before outputs/model CLIs",
+      "Git snapshots opt-in; clean index; manuscript and current run only"
+    ]
+  },
+  {
+    "path": "skills/arms-critic-revisor/SKILL.md",
+    "source_sha256": "11704259670e946a7cb76b2338ea69c29941a31c471a2098b331d653f93493b6",
+    "adapted_sha256": "052a9f65244d8efc5d7b1411e15ea732efdf3bc89c49a89d5dd144effbf33c82",
+    "changes": [
+      "Portable package-relative paths and host capability resolution",
+      "Absent upstream dependencies explicitly marked; local replacement roles labelled"
+    ]
+  },
+  {
+    "path": "skills/arms-house-style/SKILL.md",
+    "source_sha256": "b091fbde9f93ee26d6ef661b5e1f9ea09552eef0bc0937f3158ceaf9e6465e06",
+    "adapted_sha256": "01ce333e21df1fae3333cea2a514ec7b8fe8e031aba7071bb26c17dd7d06f147",
+    "changes": [
+      "Portable package-relative paths and host capability resolution",
+      "Absent upstream dependencies explicitly marked; local replacement roles labelled"
+    ]
+  },
+  {
+    "path": "skills/arms-literature-lead/SKILL.md",
+    "source_sha256": "3ab89171aef9f3e3a9d45664a9b15da73a0b0345ea0818d383004fd031dcc8f3",
+    "adapted_sha256": "8f9c65f3916f3b20d86d98a5fb29b0430f9f49878b1574ea93690117a72e741b",
+    "changes": [
+      "Portable package-relative paths and host capability resolution",
+      "Absent upstream dependencies explicitly marked; local replacement roles labelled"
+    ]
+  },
+  {
+    "path": "skills/arms-methodology-architect/SKILL.md",
+    "source_sha256": "03f5aa52c7c7f332cf943e9a841845cbb619bc0cda9952cb2b9d9c96eed38c5b",
+    "adapted_sha256": "c3be29ce0cc771e1bdd4f3ae3f98ed859ff13b967c7d1973e58e758af068c49c",
+    "changes": [
+      "Portable package-relative paths and host capability resolution",
+      "Absent upstream dependencies explicitly marked; local replacement roles labelled"
+    ]
+  },
+  {
+    "path": "skills/arms-paper-critic/SKILL.md",
+    "source_sha256": "54371a0a90db3d0c26485f1bd01b98af8e4c770f4b83cca2fd00010f32454a73",
+    "adapted_sha256": "7f7cd33b39f98f462b508a8c54bee34017789b9f81a0b7bc206ed95f6b0623f8",
+    "changes": [
+      "Portable package-relative paths and host capability resolution",
+      "Absent upstream dependencies explicitly marked; local replacement roles labelled"
+    ]
+  },
+  {
+    "path": "skills/arms-paper-fixer/SKILL.md",
+    "source_sha256": "09f965c064a6b5c60f8e4f9be761db006606e2002fae90ff18d724ccd41b7dda",
+    "adapted_sha256": "b6a54d5948dcbc935b688f1a9eaa9885e1b7b711daaabd34de4fcfcdd3be0512",
+    "changes": [
+      "Portable package-relative paths and host capability resolution",
+      "Absent upstream dependencies explicitly marked; local replacement roles labelled"
+    ]
+  },
+  {
+    "path": "skills/arms-paper-grader/SKILL.md",
+    "source_sha256": "b99f58aa08f5d771f3c8c039e2c6081dd98d7a326917921f716455098b87f185",
+    "adapted_sha256": "4f5c7a1803b4f638b4b09c9918100cc03ecc354a8b3aff849442566e13b9ba0c",
+    "changes": [
+      "Portable package-relative paths and host capability resolution",
+      "Absent upstream dependencies explicitly marked; local replacement roles labelled"
+    ]
+  },
+  {
+    "path": "skills/arms-paper-modeler/SKILL.md",
+    "source_sha256": "c6888765b3ad70cdb45ba3013ccd012ba17be7ba0fd8f54f13b7cd97a4c1b560",
+    "adapted_sha256": "1c1240472f69358a652aa2f60d47d9601e9aa4abd90fdae3f99a71d3c8f9825b",
+    "changes": [
+      "Portable package-relative paths and host capability resolution",
+      "Absent upstream dependencies explicitly marked; local replacement roles labelled"
+    ]
+  },
+  {
+    "path": "skills/arms-paper-writer/SKILL.md",
+    "source_sha256": "c9280ecb2e7c26d937925a1678eb3ef3be368fd3d18dcd6576d022a55330ed05",
+    "adapted_sha256": "d13fbe95b4c2363314b7e6419f52e2af478793ce0d46c00996e6985c27519a63",
+    "changes": [
+      "Portable package-relative paths and host capability resolution",
+      "Absent upstream dependencies explicitly marked; local replacement roles labelled"
+    ]
+  },
+  {
+    "path": "skills/arms-research-pipeline/README.md",
+    "source_sha256": "33915ecdd9d201b771bfcc38c51636c91cf7987d19f51cc9ca2ae699a7b90a33",
+    "adapted_sha256": "b43d7455da2f82f3c8c2b77e608406f82c957ce21205363040863e1acb2c61c1",
+    "changes": [
+      "Portable package-relative paths and host capability resolution",
+      "Absent upstream dependencies explicitly marked; local replacement roles labelled"
+    ]
+  },
+  {
+    "path": "skills/arms-research-pipeline/SKILL.md",
+    "source_sha256": "d1a55938e1498842989f5ac28f79e4b71924e52ba57e2c2338c3da42162f9b56",
+    "adapted_sha256": "062014d052e27e5c916799bc11fbf58479eaf0044dff49f9e64c904b4aa4d6db",
+    "changes": [
+      "Portable package-relative paths and host capability resolution",
+      "Absent upstream dependencies explicitly marked; local replacement roles labelled"
+    ]
+  },
+  {
+    "path": "skills/arms-validate-method/SKILL.md",
+    "source_sha256": "642ad93f976dbd25768f28866e9c97652c495acd913e9b93944d7b34e410a1db",
+    "adapted_sha256": "bf25cefea1fde3dd7989e2f0453e6e5bb195f0bb2fdca99563462d846cd7cb40",
+    "changes": [
+      "Portable package-relative paths and host capability resolution",
+      "Absent upstream dependencies explicitly marked; local replacement roles labelled"
+    ]
+  },
+  {
+    "path": "skills/arms-write-manuscript/SKILL.md",
+    "source_sha256": "44b8e338d2ba18fbcc64ba068ab38a3341219d10a0b6f04b37cb33140d5cf128",
+    "adapted_sha256": "1ba6ae95d65be2e9a6eba10b4629481b516ae61b27d1355db9784a34670b817c",
+    "changes": [
+      "Portable package-relative paths and host capability resolution",
+      "Absent upstream dependencies explicitly marked; local replacement roles labelled"
+    ]
+  },
+  {
+    "path": "skills/visuals-scientific-visual-table-style/templates/openai_visuals.py",
+    "kind": "active_visual_helper_adaptation",
+    "changes": [
+      "Use a writable temporary Matplotlib cache without home-directory writes or os.getuid.",
+      "Default to unconnected frontier points; explicit family connections remain available.",
+      "Place estimate labels beyond outward error-bar endpoints without changing their values.",
+      "Report text completely outside the figure canvas as clipped."
+    ],
+    "before_sha256": "05450d6faaca6e6ba02fd60f3c84ac20ff8cb5216e084fb0e160ca5f225d05be",
+    "after_sha256": "b0c79958480298e705759e8c8c440adf43d81a1a2548cc7efa4f15ac29159bfa"
+  },
+  {
+    "path": "skills/visuals-scientific-visual-table-style/scripts/table_qa.py",
+    "kind": "active_visual_helper_adaptation",
+    "changes": [
+      "Recognize grouped fractional numbers such as 1,234.50 in numeric-table QA."
+    ],
+    "before_sha256": "1200cb6779c50586ab26b3765b3fa2fb9f05b97b35c5135b52d252f9f259bd70",
+    "after_sha256": "dbbfd708cf7651c42bf14cd9fd9a258dd7bf63f30eee80af74287619dd0c40d6"
+  },
+  {
+    "path": "skills/visuals-scientific-visual-table-style/scripts/select_references.py",
+    "kind": "active_visual_helper_adaptation",
+    "changes": [
+      "Import Sequence so public helper annotations resolve."
+    ],
+    "before_sha256": "580b88559f43edc92e2362abf1545dee999e36bf0edea5fd5e2cdb8330db0cc8",
+    "after_sha256": "05859447fe1a04b7238c7b15a657cb6569bf595c552411949c8482723a4166ec"
+  },
+  {
+    "path": "skills/visuals-scientific-visual-table-style/scripts/visual_qa.py",
+    "kind": "active_visual_helper_adaptation",
+    "changes": [
+      "Fail PDF preflight explicitly when the PDF backend or rasterizer is unavailable.",
+      "Propagate the requested font minimum and inspect extractable text sizes on every PDF page."
+    ],
+    "before_sha256": "aee6c39eab6823a8b68c45aa44bcfbacf06d9e08bf17d89638e55ed18f5e8e2e",
+    "after_sha256": "4710630aad5ceddc682ba151bbf9c79f698601d642e24005a289c8d4f1de0269"
+  },
+  {
+    "path": "skills/visuals-scientific-visual-table-style/examples/example_openai_visuals.py",
+    "kind": "active_visual_helper_adaptation",
+    "changes": [
+      "Reserve export margin for reliability-curve endpoint labels while retaining all values and final figure dimensions."
+    ],
+    "before_sha256": "94512555a8d3a528071e51c2f2dee2fa40acd451e9e3c62c587a889163c0854d",
+    "after_sha256": "f2f91998840625987635d4c718af28f13f86e3453cdda32a8637a13c783f12c6"
+  }
+]

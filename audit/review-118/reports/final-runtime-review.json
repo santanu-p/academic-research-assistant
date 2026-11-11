@@ -1,0 +1,665 @@
+{
+  "reviewer": "shared_file_audit",
+  "scope": "Independent actual core consumer routing and preservation/export review; no source fixes",
+  "runtime": "v25.2.0",
+  "snapshots": {
+    "lib/core.mjs": "f2fb9eb4b5a8ae80042ab4709221c2bf676e4a4536c843f6fbf97cefd6dfbbe6",
+    "cli/ara.mjs": "861f84b090c4744c303c85b1a56886fab538b1f05d21c567b4f66aea2a0d5fd1",
+    "server/mcp.mjs": "d378e2a85233e24c14f9f317d8952fecbb44d65c2a982fbcba95d326f90ad379",
+    "catalog/routes.json": "873a65a5318a3f2fa4f854692cb0941956540a7dc781f6305fb0ad1eb60676b0",
+    "catalog/skills.json": "6f2acf1ee0aa8ee7fbe284d08840f97cb0af5dc4ca77a8a5032379c3e473fdba",
+    "catalog/aliases.json": "aff7130211b400afe04f823993b8f06e4c4f1b420dc2fdaf010191eb2ec6fc3d"
+  },
+  "catalog": {
+    "canonical": 116,
+    "aliases": 2,
+    "alias_failures": [],
+    "top_level_skill_folders": 118
+  },
+  "cases": [
+    {
+      "id": "general-email",
+      "request": "Humanize this personal email to our neighbors; retain my understated voice.",
+      "expected_primary": "humanizer",
+      "expected_clarification": false,
+      "actual_primary": "humanizer",
+      "actual_skills": [
+        "humanizer"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "writing-general-prose-humanization",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "general-blog",
+      "request": "Remove the AI tells from this travel blog and keep the opinions I actually wrote.",
+      "expected_primary": "humanizer",
+      "expected_clarification": false,
+      "actual_primary": "humanizer",
+      "actual_skills": [
+        "humanizer"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "writing-general-prose-humanization",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "academic-rebuttal",
+      "request": "Humanize the rebuttal text for my paper while keeping all citations and estimates intact.",
+      "expected_primary": "academic-humanizer",
+      "expected_clarification": false,
+      "actual_primary": "academic-humanizer",
+      "actual_skills": [
+        "academic-humanizer"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "writing-academic-evidence-preserving-edit",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "funding-voice",
+      "request": "Rewrite the NSF Project Description in my voice without promising work we cannot support.",
+      "expected_primary": "academic-humanizer",
+      "expected_clarification": false,
+      "actual_primary": "academic-humanizer",
+      "actual_skills": [
+        "academic-humanizer"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "writing-academic-evidence-preserving-edit",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "research-schedule",
+      "request": "My PhD has nine months left. Schedule recruitment, fieldwork and writing into a realistic research timeline.",
+      "expected_primary": "scholar-research-planner",
+      "expected_clarification": false,
+      "actual_primary": "scholar-research-planner",
+      "actual_skills": [
+        "scholar-research-planner"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "evidence-research-planner-56",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "thesis-source",
+      "request": "Build a LuaLaTeX dissertation with separate chapter files, declaration pages and binding margins.",
+      "expected_primary": "latex-thesis-dissertation",
+      "expected_clarification": false,
+      "actual_primary": "latex-thesis-dissertation",
+      "actual_skills": [
+        "latex-thesis-dissertation"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "artifact-artifact-thesis",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "research-question",
+      "request": "Help narrow a thesis topic on teacher retention into a feasible research question.",
+      "expected_primary": "scholar-research-question",
+      "expected_clarification": false,
+      "actual_primary": "evidence-research-question",
+      "actual_skills": [
+        "evidence-research-question",
+        "scholar-research-question",
+        "scholar-outline-builder",
+        "research-assistant",
+        "evidence-plain-language-research"
+      ],
+      "needs_clarification": true,
+      "alternatives": [],
+      "selection": "candidates",
+      "matched_rule": null,
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": false
+    },
+    {
+      "id": "proposal-content",
+      "request": "Draft a PhD research proposal around the question, recruitment strategy and practical constraints.",
+      "expected_primary": "scholar-research-proposal",
+      "expected_clarification": false,
+      "actual_primary": "scholar-research-proposal",
+      "actual_skills": [
+        "scholar-research-proposal"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "evidence-research-proposal-31",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "proposal-typeset",
+      "request": "Typeset the approved project proposal in LaTeX as a report with a cover page and budget.",
+      "expected_primary": "latex-reports-manuals",
+      "expected_clarification": false,
+      "actual_primary": "latex-reports-manuals",
+      "actual_skills": [
+        "latex-reports-manuals"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "artifact-artifact-reports",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "frozen-production",
+      "request": "Run our frozen implementation at production precision, preserve every hyperparameter, and produce the canonical formula-code audit.",
+      "expected_primary": "arms-paper-modeler",
+      "expected_clarification": false,
+      "actual_primary": "arms-paper-modeler",
+      "actual_skills": [
+        "arms-paper-modeler"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "writing-postvalidation-frozen-production-and-audit",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "method-combination",
+      "request": "Propose a new methodology specification by combining ideas from adjacent fields and red-team the candidates before validation.",
+      "expected_primary": "arms-methodology-architect",
+      "expected_clarification": false,
+      "actual_primary": "arms-validate-method",
+      "actual_skills": [
+        "arms-validate-method"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "writing-prewriting-pilot-method-validation",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": false
+    },
+    {
+      "id": "formula-consumer",
+      "request": "Read the canonical formula-code audit and fix the manuscript discrepancies it already identifies.",
+      "expected_primary": "arms-paper-fixer",
+      "expected_clarification": false,
+      "actual_primary": "arms-paper-modeler",
+      "actual_skills": [
+        "arms-paper-modeler",
+        "arms-write-manuscript",
+        "latex-algorithms-code",
+        "arms-paper-fixer",
+        "arms-paper-grader"
+      ],
+      "needs_clarification": true,
+      "alternatives": [],
+      "selection": "candidates",
+      "matched_rule": null,
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": false
+    },
+    {
+      "id": "reference-authenticity",
+      "request": "Verify whether the authors, titles and DOI metadata in these references identify real publications.",
+      "expected_primary": "evidence-source-verification",
+      "expected_clarification": false,
+      "actual_primary": "evidence-source-verification",
+      "actual_skills": [
+        "evidence-source-verification"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "evidence-source-verification-16",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "bibliography-repair",
+      "request": "My natbib citation keys are undefined even after BibTeX. Diagnose the backend wiring in this TeX project.",
+      "expected_primary": "latex-bibliography-citations",
+      "expected_clarification": false,
+      "actual_primary": "latex-bibliography-citations",
+      "actual_skills": [
+        "latex-bibliography-citations"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "artifact-artifact-bibliography",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "bibliography-output",
+      "request": "Format the supplied references consistently in APA and provide BibTeX entries.",
+      "expected_primary": "scholar-citation-generator",
+      "expected_clarification": false,
+      "actual_primary": "scholar-citation-generator",
+      "actual_skills": [
+        "scholar-citation-generator"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "evidence-citation-generator-18",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "closed-synthesis",
+      "request": "Using only these six studies, weigh the evidence for the intervention; do not retrieve new papers.",
+      "expected_primary": "scholar-evidence-synthesis",
+      "expected_clarification": false,
+      "actual_primary": "scholar-evidence-synthesis",
+      "actual_skills": [
+        "scholar-evidence-synthesis"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "evidence-evidence-synthesis-33",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "new-retrieval",
+      "request": "Find recent longitudinal studies on teacher retention and give verifiable sources.",
+      "expected_primary": "evidence-find-studies",
+      "expected_clarification": false,
+      "actual_primary": "evidence-find-studies",
+      "actual_skills": [
+        "evidence-find-studies"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "evidence-find-studies-2",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "data-extract",
+      "request": "Extract group sizes, means and standard deviations from the supplied trial PDFs into a CSV.",
+      "expected_primary": "evidence-data-extraction",
+      "expected_clarification": false,
+      "actual_primary": "evidence-data-extraction",
+      "actual_skills": [
+        "evidence-data-extraction"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "evidence-data-extraction-9",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "annotation-ambiguous",
+      "request": "Prepare an annotated bibliography of these eight papers.",
+      "expected_primary": "scholar-literature-review",
+      "expected_clarification": true,
+      "actual_primary": "scholar-literature-review",
+      "actual_skills": [
+        "scholar-literature-review"
+      ],
+      "needs_clarification": true,
+      "alternatives": [
+        "evidence-citations-and-references"
+      ],
+      "selection": "rules",
+      "matched_rule": "evidence-literature-review-20",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "annotation-verified-fields",
+      "request": "Gather verified reference fields and format an annotated bibliography with source evaluation notes.",
+      "expected_primary": "evidence-citations-and-references",
+      "expected_clarification": false,
+      "actual_primary": "evidence-citations-and-references",
+      "actual_skills": [
+        "evidence-citations-and-references"
+      ],
+      "needs_clarification": true,
+      "alternatives": [
+        "scholar-source-evaluation"
+      ],
+      "selection": "rules",
+      "matched_rule": "evidence-citations-and-references-19",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": false
+    },
+    {
+      "id": "pptx-format",
+      "request": "Produce an academic PowerPoint deck explaining these experimental results to the seminar audience.",
+      "expected_primary": "academic-pptx",
+      "expected_clarification": false,
+      "actual_primary": "academic-pptx",
+      "actual_skills": [
+        "academic-pptx",
+        "scholar-research-communication"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "artifact-artifact-presentation",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "beamer-format",
+      "request": "Use Beamer to make a seminar talk with progressive reveals and speaker notes.",
+      "expected_primary": "latex-beamer-slides",
+      "expected_clarification": false,
+      "actual_primary": "latex-beamer-slides",
+      "actual_skills": [
+        "latex-beamer-slides",
+        "academic-pptx"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "artifact-artifact-beamer",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "math-transcription",
+      "request": "Transcribe the photographed handwritten integral into clean MathJax and flag uncertain symbols.",
+      "expected_primary": "latex-equation-converter",
+      "expected_clarification": false,
+      "actual_primary": "latex-equation-converter",
+      "actual_skills": [
+        "latex-equation-converter"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "artifact-artifact-transcribe-math",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "math-layout",
+      "request": "Arrange these LaTeX expressions into aligned equations with a shared number.",
+      "expected_primary": "latex-math-equations",
+      "expected_clarification": false,
+      "actual_primary": "latex-math-equations",
+      "actual_skills": [
+        "latex-math-equations"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "artifact-artifact-math-typesetting",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "tex-setup",
+      "request": "Choose the compiler and latexmk command for a project using system fonts and biber.",
+      "expected_primary": "latex-setup-compiling",
+      "expected_clarification": false,
+      "actual_primary": "latex-setup-compiling",
+      "actual_skills": [
+        "latex-setup-compiling"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "artifact-artifact-setup",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "tex-failure",
+      "request": "This Overleaf build fails with a missing dollar sign and an undefined control sequence. Repair the source.",
+      "expected_primary": "latex-error-fixer",
+      "expected_clarification": false,
+      "actual_primary": "latex-error-fixer",
+      "actual_skills": [
+        "latex-error-fixer"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "artifact-artifact-compile-error",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "chart-syntax",
+      "request": "Create a PGFPlots chart with measured error bars from the supplied CSV.",
+      "expected_primary": "latex-pgfplots-charts",
+      "expected_clarification": false,
+      "actual_primary": "latex-pgfplots-charts",
+      "actual_skills": [
+        "latex-pgfplots-charts",
+        "visuals-scientific-visual-table-style"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "artifact-artifact-pgfplots",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "diagram-syntax",
+      "request": "Draw a TikZ state machine with three states and a feedback arrow.",
+      "expected_primary": "latex-tikz-diagrams",
+      "expected_clarification": false,
+      "actual_primary": "latex-tikz-diagrams",
+      "actual_skills": [
+        "latex-tikz-diagrams",
+        "visuals-scientific-visual-table-style"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "artifact-artifact-tikz-diagram",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "onboarding",
+      "request": "capabilities",
+      "expected_primary": "research-assistant",
+      "expected_clarification": false,
+      "actual_primary": "research-assistant",
+      "actual_skills": [
+        "research-assistant"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "onboarding",
+      "matched_rule": null,
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "alias-gaps",
+      "request": "scholar-research-gaps",
+      "expected_primary": "evidence-research-gaps",
+      "expected_clarification": false,
+      "actual_primary": "evidence-research-gaps",
+      "actual_skills": [
+        "evidence-research-gaps"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "legacy-alias",
+      "matched_rule": null,
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    },
+    {
+      "id": "alias-systematic",
+      "request": "/scholar-systematic-review",
+      "expected_primary": "evidence-systematic-review",
+      "expected_clarification": false,
+      "actual_primary": "evidence-systematic-review",
+      "actual_skills": [
+        "evidence-systematic-review"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "legacy-alias",
+      "matched_rule": "evidence-systematic-review-35",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": true
+    }
+  ],
+  "actionable_failures": [
+    {
+      "id": "research-question",
+      "request": "Help narrow a thesis topic on teacher retention into a feasible research question.",
+      "expected_primary": "scholar-research-question",
+      "expected_clarification": false,
+      "actual_primary": "evidence-research-question",
+      "actual_skills": [
+        "evidence-research-question",
+        "scholar-research-question",
+        "scholar-outline-builder",
+        "research-assistant",
+        "evidence-plain-language-research"
+      ],
+      "needs_clarification": true,
+      "alternatives": [],
+      "selection": "candidates",
+      "matched_rule": null,
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": false
+    },
+    {
+      "id": "method-combination",
+      "request": "Propose a new methodology specification by combining ideas from adjacent fields and red-team the candidates before validation.",
+      "expected_primary": "arms-methodology-architect",
+      "expected_clarification": false,
+      "actual_primary": "arms-validate-method",
+      "actual_skills": [
+        "arms-validate-method"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "selection": "rules",
+      "matched_rule": "writing-prewriting-pilot-method-validation",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": false
+    },
+    {
+      "id": "formula-consumer",
+      "request": "Read the canonical formula-code audit and fix the manuscript discrepancies it already identifies.",
+      "expected_primary": "arms-paper-fixer",
+      "expected_clarification": false,
+      "actual_primary": "arms-paper-modeler",
+      "actual_skills": [
+        "arms-paper-modeler",
+        "arms-write-manuscript",
+        "latex-algorithms-code",
+        "arms-paper-fixer",
+        "arms-paper-grader"
+      ],
+      "needs_clarification": true,
+      "alternatives": [],
+      "selection": "candidates",
+      "matched_rule": null,
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": false
+    },
+    {
+      "id": "annotation-verified-fields",
+      "request": "Gather verified reference fields and format an annotated bibliography with source evaluation notes.",
+      "expected_primary": "evidence-citations-and-references",
+      "expected_clarification": false,
+      "actual_primary": "evidence-citations-and-references",
+      "actual_skills": [
+        "evidence-citations-and-references"
+      ],
+      "needs_clarification": true,
+      "alternatives": [
+        "scholar-source-evaluation"
+      ],
+      "selection": "rules",
+      "matched_rule": "evidence-citations-and-references-19",
+      "execution_status": "Instruction routing only; no research, external service or model has been executed.",
+      "passed": false
+    }
+  ],
+  "preservation": {
+    "export_target": "D:\\PLUGIN\\.review-118\\holdout-export-generic\\",
+    "baseline_files": 600,
+    "preserved": 600,
+    "preserved_in_place": 466,
+    "preserved_in_audit_baseline": 134,
+    "missing": [],
+    "export_file_count": 771,
+    "index_verification": {
+      "passed": true,
+      "verified": 770,
+      "failures": [],
+      "unindexed": [],
+      "scope": "Local consistency only, not a cryptographic publisher signature or research validation."
+    },
+    "export_catalog_count": 116,
+    "export_alias_primary": "evidence-systematic-review",
+    "host_settings_changed": false,
+    "manifest_file_count": 770
+  },
+  "failure_analysis": [
+    {
+      "id": "method-combination",
+      "priority": "P1",
+      "problem": "A prevalidation design request is selected as validation solely because it contains before validation. The architect workflow designs candidate methods; running validation prematurely skips that required input artifact.",
+      "suggestion": "Treat planning/negated validation wording as architectural context; require positive implementation/pilot/evaluation intent for validate-method."
+    },
+    {
+      "id": "formula-consumer",
+      "priority": "P1",
+      "problem": "Consuming an existing canonical audit to repair a manuscript has no matching fixer rule and falls back to the modeler first. The modeler owns production evaluation/audit creation, not audit-consumption fixes.",
+      "suggestion": "Recognize a supplied/existing audit plus located manuscript discrepancies as a bounded fixer handoff; preserve the modeler exclusion for read/consume/copy."
+    },
+    {
+      "id": "research-question",
+      "priority": "P2",
+      "problem": "Narrowing a thesis topic into a feasible new question falls back to a searchable evidence-question specialist. The Scholar design capability explicitly includes topic narrowing and feasibility; the evidence question skill instead prepares a searchable question.",
+      "suggestion": "Broaden design-question intent for topic narrowing/feasibility while retaining search-oriented PICO/synonym/query boundaries."
+    }
+  ],
+  "clarification_observations": [
+    {
+      "id": "annotation-ambiguous",
+      "assessment": "Pass: unqualified annotated-bibliography request identifies Scholar literature-review plus Evidence citations alternative and asks for task clarification."
+    },
+    {
+      "id": "annotation-verified-fields",
+      "assessment": "Correct primary selected. Extra clarification is conservative for this mixed request because source evaluation is also named; review whether explicit verified reference fields should settle the handoff without a second clarification. This is lower confidence than the3 clear failures."
+    }
+  ],
+  "boundary_review": {
+    "no_fake_execution": "All31 actual route outputs explicitly report instruction-only routing; the inspected core/CLI/server perform local selection, reads, hashing, environment declaration and user-requested copying, without executing research scripts or configuring authenticated services.",
+    "scope": "Canonical catalog116 plus2 compatibility alias folders totals118; both aliases resolve in search and route, including exported bundle.",
+    "preservation": "All600 original baseline payloads are in actual exported publicFiles and match recorded SHA256/byte length. New index covers every export file except itself."
+  },
+  "review_status": "Consumer routing review completed with3 clear actionable failures and1 optional clarification refinement; export preservation passes."
+}

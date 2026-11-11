@@ -1,0 +1,4044 @@
+{
+  "root": "D:\\PLUGIN\\work\\expanded\\ARMS-main",
+  "file_inventory": [
+    {
+      "path": "case-studies/conformal-prediction/code/comparators.py",
+      "bytes": 12921,
+      "sha256": "8e558c082888453d50050736888bcda8a93eaaa777800f6c4e49492030e8a325",
+      "lines": 388
+    },
+    {
+      "path": "case-studies/conformal-prediction/code/generate_figures.py",
+      "bytes": 7034,
+      "sha256": "d2c56a7b8abab21626994847c0d21fd478f63be5586fd38a32603b6a2955096d",
+      "lines": 187
+    },
+    {
+      "path": "case-studies/conformal-prediction/code/method.py",
+      "bytes": 13155,
+      "sha256": "6c5d8c1585be24bf28c24c43e81b335c2f2db67c210243f2b54a3ad8df536767",
+      "lines": 367
+    },
+    {
+      "path": "case-studies/conformal-prediction/code/run_validation.py",
+      "bytes": 31580,
+      "sha256": "fdfcda5142912b28fbb5728718197834b2a4a179b9cb005bbd822b4fcffda611",
+      "lines": 892
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/ablation_results.csv",
+      "bytes": 452,
+      "sha256": "4de5393cd4d82ba30cf294aef7af4145395498d20006f7f3824e019ab530150b",
+      "lines": 5
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/conditional_coverage_concentration.csv",
+      "bytes": 186,
+      "sha256": "f5454ab7a56dfecaf30cdc2a0fb4f97b7dba094b6be395fc9feb3fe5173dc467",
+      "lines": 3
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/conditional_coverage_quartile.csv",
+      "bytes": 713,
+      "sha256": "ddddc831a6c2a343671fe5029051000433569a3bf3136637058406f19b78c879",
+      "lines": 21
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/high_dim_results.csv",
+      "bytes": 2377,
+      "sha256": "a3fb0e9eec8b7122b482f7bc173426762446cfabb08280eaaf31acdbd34a0c43",
+      "lines": 22
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/joint_shift.csv",
+      "bytes": 1854,
+      "sha256": "15062c55ae7c7a79f6043dabfaddc187abfaecf1943e2ab4906be10ec606bda2",
+      "lines": 8
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/label_shift.csv",
+      "bytes": 1910,
+      "sha256": "30855c3557b17409fbc6e4c78c24d72fb7e66325531576e1bd83f4cec8cfe1a6",
+      "lines": 8
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/mve_production.csv",
+      "bytes": 1782,
+      "sha256": "3420645cf78a7b1ae4ded1c83a4ae4e29d6cdc073299e08d9f258d09d01a3e15",
+      "lines": 8
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/real_world_results.csv",
+      "bytes": 2791,
+      "sha256": "8005b51598ec17c2d1710402b8dc7e31c0a3042d67fd791c7d1f382d0443ea70",
+      "lines": 22
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/scalability.csv",
+      "bytes": 772,
+      "sha256": "4c64385e525f2b6fba33bd0a4ae6db842450aaa10e3498f8ec5af00a1cf5fcae",
+      "lines": 16
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/sensitivity_K.csv",
+      "bytes": 8219,
+      "sha256": "a49a4c0e9a7fd9e69743e0ca0a6fe1cd7da672551bf69ba4d44c3f0f3be3244e",
+      "lines": 36
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/sensitivity_nk.csv",
+      "bytes": 10018,
+      "sha256": "625da192d8052d1a2ccdabbd791343f6d6b120f62d9d4fb0e2862f5ce2800bd0",
+      "lines": 43
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/sensitivity_shift.csv",
+      "bytes": 9882,
+      "sha256": "c33a5c77797d9f46175c5ef3caaa2e9acc2f6aa9165a5580e7d4f034e7923c82",
+      "lines": 43
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/significance_tests.csv",
+      "bytes": 741,
+      "sha256": "9d7f262d60d5f26a90e355f7c82d1212ea69901afddd1314df7339e5ea2ab739",
+      "lines": 4
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/source_weights.csv",
+      "bytes": 337,
+      "sha256": "0926ccb02e4207d96cef2e80d69e25ff2f1cec274a78172fb1ff50f596d3aeaa",
+      "lines": 2
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/stress_adversarial_source.csv",
+      "bytes": 1907,
+      "sha256": "ad6040a9ded33b8830501626c7618df649c848c3878cf49347cca47ac422f3bf",
+      "lines": 8
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/stress_all.csv",
+      "bytes": 8532,
+      "sha256": "e56577f92305dc7c47a4fcc4a952f01d9264b57af7c4c45ad0264d621f7a3ab8",
+      "lines": 36
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/stress_all_bad.csv",
+      "bytes": 1860,
+      "sha256": "3de54c0bb9b136b6790ba5cd1158c9c86cb656cac7047a450a3c267544b2eea4",
+      "lines": 8
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/stress_exact_match.csv",
+      "bytes": 1817,
+      "sha256": "5db5ad013489afd3ab6eb5e44aaa81b11a8299a660081557fedacd7f86fde16a",
+      "lines": 8
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/stress_high_dim.csv",
+      "bytes": 1827,
+      "sha256": "6a6b23aa9a279f4772c6af3801d10f9c49f356a2f85335f8a677ceb063952f68",
+      "lines": 8
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/stress_single_source.csv",
+      "bytes": 1909,
+      "sha256": "92615e3c44beb069367c17e13e4dab81ee19c15210bd44f052195ec167e879bf",
+      "lines": 8
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/timings.csv",
+      "bytes": 905,
+      "sha256": "674fbd97a445cfccb9a5222cecbd5b353855a8d4969d6e77315c5e3fe0bc164b",
+      "lines": 2
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/wine_results.csv",
+      "bytes": 2701,
+      "sha256": "9c805e14101b72436d49941b2215698c55be5e58484a171a43fca447c6eedc16",
+      "lines": 22
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/wine_significance.csv",
+      "bytes": 663,
+      "sha256": "82ad8b7f60189552aa6856b3c2561a66a7ce6573f33dac95d26d9e2ff5db0f32",
+      "lines": 4
+    },
+    {
+      "path": "case-studies/conformal-prediction/figures/comparison_main.pdf",
+      "bytes": 19824,
+      "sha256": "869c34075770eba5803de1e1ac7e6d370d5f42801a6b2ee103fb2dcb3a6a3925"
+    },
+    {
+      "path": "case-studies/conformal-prediction/figures/method_overview.pdf",
+      "bytes": 128317,
+      "sha256": "13ce40b70b2091b019699395406ef1294410acf75658b384211f9fe6794805f9"
+    },
+    {
+      "path": "case-studies/conformal-prediction/figures/sensitivity_shift.pdf",
+      "bytes": 22277,
+      "sha256": "9413f1b8f7beb6d575b83a8fea9da99f993a386b4c5047afefd3198ff7298da3"
+    },
+    {
+      "path": "case-studies/conformal-prediction/figures/shift_type_comparison.pdf",
+      "bytes": 18531,
+      "sha256": "f7d168b3cb7e2f00e7ccc7f26cea923c1de3ac394c8c7fb32f2991294b515a3c"
+    },
+    {
+      "path": "case-studies/conformal-prediction/figures/source_weights.pdf",
+      "bytes": 15781,
+      "sha256": "18a24baf98eb832cd25dba72fb1db0d6108763f01a8c4199ac7d8f82088f82bc"
+    },
+    {
+      "path": "case-studies/conformal-prediction/figures/stress_heatmap.pdf",
+      "bytes": 23568,
+      "sha256": "c054c0ebbd788144f40b9fc6447833088859ad5b2e55b0e401cc919c504f56f9"
+    },
+    {
+      "path": "case-studies/conformal-prediction/manuscript.tex",
+      "bytes": 77765,
+      "sha256": "32401901ebeaec1d6baaab5f9a22884ea45ba9bb33817262f1ab8c4b09e3ab5e",
+      "lines": 1062
+    },
+    {
+      "path": "case-studies/conformal-prediction/methodology_specification.md",
+      "bytes": 33467,
+      "sha256": "a68743129bef12153b40d69fd8b8f757ebc2e9c3c910750ac20c38ba7966b064",
+      "lines": 468
+    },
+    {
+      "path": "case-studies/conformal-prediction/paper_grade.md",
+      "bytes": 19841,
+      "sha256": "d375048b88ca7ccf351247f8ecd302bf9aca162b7af94e9eaad76b05fcafac3b",
+      "lines": 187
+    },
+    {
+      "path": "case-studies/conformal-prediction/pipeline_log.md",
+      "bytes": 4871,
+      "sha256": "355c6b3a966288ae4820cf7f3b88d952cf8689d25533b01aeff2117d75bc7be5",
+      "lines": 81
+    },
+    {
+      "path": "case-studies/conformal-prediction/references.bib",
+      "bytes": 4329,
+      "sha256": "901ae690fb0d721df0abd2d7271d59baa00770be68a0dbfd383f0aea6cb62e68",
+      "lines": 144
+    },
+    {
+      "path": "case-studies/conformal-prediction/validation_report.md",
+      "bytes": 10959,
+      "sha256": "fedf39eeaac6c9aae506998f2879edbe41c43df92d8f49472bfcf1c278593ef1",
+      "lines": 174
+    },
+    {
+      "path": "DISCLAIMER.md",
+      "bytes": 2230,
+      "sha256": "a59011c29302f8371d52c9bf76f53468fac013fe2507a914da762d67233c83b2",
+      "lines": 49
+    },
+    {
+      "path": "docs/contribution-evidence-validation.md",
+      "bytes": 1834,
+      "sha256": "573d5f2309477676719a3ef0323268688e290480396270a97b4d7b47da337d83",
+      "lines": 20
+    },
+    {
+      "path": "docs/validation/author-grounded-manuscript-trial.md",
+      "bytes": 2484,
+      "sha256": "ad38710f5e3567a9c9fc077f1d5ae40eacf9fa33f4088407bec238db9b9bf58a",
+      "lines": 46
+    },
+    {
+      "path": "examples/conformal_prediction/research_brief.md",
+      "bytes": 14007,
+      "sha256": "6ed0b227b84f3cff64166d2165bc0faed6eb4769c304836c95bb9884f46b9e80",
+      "lines": 215
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 684,
+      "sha256": "117c864bc72784010cec0e140853a08818beda9369a7e5bb4bb0f34b7d14b45b",
+      "lines": 21
+    },
+    {
+      "path": "README.md",
+      "bytes": 24494,
+      "sha256": "1c8d6557e3fcf94c67fcf8bd218932b9d1fd65e9eba43b72a14f6e1db11e6ccf",
+      "lines": 309
+    },
+    {
+      "path": "research_brief_template.md",
+      "bytes": 7823,
+      "sha256": "eada60ab1bdf1624a305ab5891ef3e7a5d7f667897d6abf73d762124a87b096d",
+      "lines": 202
+    },
+    {
+      "path": "skills/brief-expander/SKILL.md",
+      "bytes": 14567,
+      "sha256": "c204e19e021e0e2b1b9483ce563e4b710defa31112aabfdadcd94d07da721d72",
+      "lines": 326
+    },
+    {
+      "path": "skills/critic-revisor/run_loop.sh",
+      "bytes": 22500,
+      "sha256": "88b22066a0278711f371009cb064d3e844e43233e58efb0a12b962b3b4e82d72",
+      "lines": 522
+    },
+    {
+      "path": "skills/critic-revisor/SKILL.md",
+      "bytes": 11378,
+      "sha256": "e8f6441327284536a6c8d55939b4faeef95f0ed4ddd9b3ecbe6a7e2da2bd2af4",
+      "lines": 145
+    },
+    {
+      "path": "skills/house-style/examples/abstract-reader-first.md",
+      "bytes": 6218,
+      "sha256": "dd661866cc616f2a7a511f298164af806e62bf7af07711838566f74a02c32b66",
+      "lines": 76
+    },
+    {
+      "path": "skills/house-style/examples/dense-results-paragraph.md",
+      "bytes": 5372,
+      "sha256": "b9b378628f7c5518e28694343fd0aa0eeeb916de3d6480961df964e1ad057c1c",
+      "lines": 106
+    },
+    {
+      "path": "skills/house-style/references/contribution-evidence.md",
+      "bytes": 5660,
+      "sha256": "8891c83c6ef3b2b2e5c541d2e43f82b14e8fb3faaeaa19f3125c32d13a1a7693",
+      "lines": 32
+    },
+    {
+      "path": "skills/house-style/references/manuscript-shape.md",
+      "bytes": 5505,
+      "sha256": "3bf3ac32629f9728ef431913328bc0fcd39baab716556822e4b86308d726c428",
+      "lines": 36
+    },
+    {
+      "path": "skills/house-style/references/synopsis-gate.md",
+      "bytes": 2661,
+      "sha256": "8800f13295b924be1b21f6c3f6f61029d9a8ffd5c7bd58b4d9b4d9da087049e1",
+      "lines": 42
+    },
+    {
+      "path": "skills/house-style/references/yuan-ji.md",
+      "bytes": 2826,
+      "sha256": "8a26b2f8b50af03886606a6fbf8fdfec9e0d1019115b29478437692d18343c81",
+      "lines": 14
+    },
+    {
+      "path": "skills/house-style/scripts/style_metrics.py",
+      "bytes": 13127,
+      "sha256": "f92201bb65c0af2cb63c2553c300edddfd082074c5ff84596b43caa09c4b9b14",
+      "lines": 291
+    },
+    {
+      "path": "skills/house-style/SKILL.md",
+      "bytes": 28459,
+      "sha256": "212156ae05b027b56e5e595e88f849df582db0f06dfee72fd9c8434f77d9910b",
+      "lines": 467
+    },
+    {
+      "path": "skills/literature-lead/SKILL.md",
+      "bytes": 12432,
+      "sha256": "2f52218467c349e51ae32181f56d3613ad24434918ec7478006a00198432ce33",
+      "lines": 379
+    },
+    {
+      "path": "skills/methodology-architect/SKILL.md",
+      "bytes": 33022,
+      "sha256": "7020a89a3bda67eaeb5d31c50736bef141a859e952e0fa33247c8d6f578a2b73",
+      "lines": 778
+    },
+    {
+      "path": "skills/paper-critic/SKILL.md",
+      "bytes": 9985,
+      "sha256": "d91a2cbffe782f4e1a3cb2ecbf4d255d3aa91f13b0abe8d544e9ca80f97f5ad0",
+      "lines": 219
+    },
+    {
+      "path": "skills/paper-fixer/SKILL.md",
+      "bytes": 14952,
+      "sha256": "0f793932d1b0947bd326eb6ea89928f07f387761c5548229a6e91279fcf47a56",
+      "lines": 366
+    },
+    {
+      "path": "skills/paper-grader/SKILL.md",
+      "bytes": 26012,
+      "sha256": "5fbda1132df8a77733053fa3fdb6563c13714b3a9f579840a9110c59cac10c11",
+      "lines": 563
+    },
+    {
+      "path": "skills/paper-modeler/SKILL.md",
+      "bytes": 14790,
+      "sha256": "c84b8090062ff8924713a96ac96af9888f4a4cac7980a212a4fddb33a1ba4506",
+      "lines": 333
+    },
+    {
+      "path": "skills/paper-writer/SKILL.md",
+      "bytes": 18573,
+      "sha256": "2581e6de3be931fd9833af179dc59b4cb2757cd8efefb59ed63270ec946e17f3",
+      "lines": 437
+    },
+    {
+      "path": "skills/research-pipeline/README.md",
+      "bytes": 11972,
+      "sha256": "33915ecdd9d201b771bfcc38c51636c91cf7987d19f51cc9ca2ae699a7b90a33",
+      "lines": 170
+    },
+    {
+      "path": "skills/research-pipeline/research_brief_template.md",
+      "bytes": 7575,
+      "sha256": "75ccca995d7a3f3fadfb48ffa9d488d7f93b0a7de2ece790deb86081fabf2c9c",
+      "lines": 192
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "bytes": 49452,
+      "sha256": "ffb4cd823d31cd9d7c662cd29a9408e76ba80af26c0e28065b58e369dd24c04c",
+      "lines": 1031
+    },
+    {
+      "path": "skills/validate-method/SKILL.md",
+      "bytes": 24271,
+      "sha256": "d967c268d843e717bcc625ca2582d9cc02a56ac423acca2d0799a9dbf4bee0da",
+      "lines": 514
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "bytes": 29173,
+      "sha256": "1b42d55a59f3b3219a8a0b238ff5409d031d17cc17903d7c1c4f25f97f0977a3",
+      "lines": 682
+    }
+  ],
+  "csv_inventory": [
+    {
+      "path": "case-studies/conformal-prediction/data/ablation_results.csv",
+      "rows": 4,
+      "columns": [
+        "variant",
+        "mean_coverage",
+        "se_coverage",
+        "mean_width",
+        "se_width",
+        "n_reps"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [],
+      "scenarios": [],
+      "n_reps_values": [
+        "2000"
+      ],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/conditional_coverage_concentration.csv",
+      "rows": 2,
+      "columns": [
+        "weight_concentration",
+        "mean_coverage",
+        "se_coverage",
+        "mean_width",
+        "se_width",
+        "n_reps"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [],
+      "scenarios": [],
+      "n_reps_values": [
+        "1914",
+        "86"
+      ],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/conditional_coverage_quartile.csv",
+      "rows": 20,
+      "columns": [
+        "method",
+        "quartile",
+        "mean_coverage",
+        "se_coverage",
+        "n_reps"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [
+        "DISCOM-CP",
+        "Oracle",
+        "RCP",
+        "Split Conformal",
+        "WCP"
+      ],
+      "scenarios": [],
+      "n_reps_values": [
+        "2000"
+      ],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/high_dim_results.csv",
+      "rows": 21,
+      "columns": [
+        "d",
+        "method",
+        "mean_coverage",
+        "se_coverage",
+        "mean_width",
+        "se_width",
+        "rel_efficiency",
+        "n_reps"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [
+        "ACI",
+        "DISCOM-CP",
+        "Oracle Single-Source",
+        "RCP",
+        "Split Conformal",
+        "Uniform Mixture",
+        "WCP"
+      ],
+      "scenarios": [],
+      "n_reps_values": [
+        "500"
+      ],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/joint_shift.csv",
+      "rows": 7,
+      "columns": [
+        "method",
+        "mean_coverage",
+        "std_coverage",
+        "se_coverage",
+        "ci_coverage_lo",
+        "ci_coverage_hi",
+        "mean_width",
+        "std_width",
+        "se_width",
+        "ci_width_lo",
+        "ci_width_hi",
+        "min_coverage",
+        "max_coverage",
+        "rel_efficiency",
+        "mean_time",
+        "n_reps",
+        "scenario"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [
+        "ACI",
+        "DISCOM-CP",
+        "Oracle Single-Source",
+        "RCP",
+        "Split Conformal",
+        "Uniform Mixture",
+        "WCP"
+      ],
+      "scenarios": [
+        "pure_joint_shift"
+      ],
+      "n_reps_values": [
+        "2000"
+      ],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/label_shift.csv",
+      "rows": 7,
+      "columns": [
+        "method",
+        "mean_coverage",
+        "std_coverage",
+        "se_coverage",
+        "ci_coverage_lo",
+        "ci_coverage_hi",
+        "mean_width",
+        "std_width",
+        "se_width",
+        "ci_width_lo",
+        "ci_width_hi",
+        "min_coverage",
+        "max_coverage",
+        "rel_efficiency",
+        "mean_time",
+        "n_reps",
+        "scenario"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [
+        "ACI",
+        "DISCOM-CP",
+        "Oracle Single-Source",
+        "RCP",
+        "Split Conformal",
+        "Uniform Mixture",
+        "WCP"
+      ],
+      "scenarios": [
+        "pure_label_shift"
+      ],
+      "n_reps_values": [
+        "2000"
+      ],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/mve_production.csv",
+      "rows": 7,
+      "columns": [
+        "method",
+        "mean_coverage",
+        "std_coverage",
+        "se_coverage",
+        "ci_coverage_lo",
+        "ci_coverage_hi",
+        "mean_width",
+        "std_width",
+        "se_width",
+        "ci_width_lo",
+        "ci_width_hi",
+        "min_coverage",
+        "max_coverage",
+        "rel_efficiency",
+        "mean_time",
+        "n_reps"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [
+        "ACI",
+        "DISCOM-CP",
+        "Oracle Single-Source",
+        "RCP",
+        "Split Conformal",
+        "Uniform Mixture",
+        "WCP"
+      ],
+      "scenarios": [],
+      "n_reps_values": [
+        "2000"
+      ],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/real_world_results.csv",
+      "rows": 21,
+      "columns": [
+        "dataset",
+        "method",
+        "mean_coverage",
+        "se_coverage",
+        "mean_width",
+        "se_width",
+        "rel_efficiency",
+        "n_reps"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [
+        "ACI",
+        "DISCOM-CP",
+        "Oracle Single-Source",
+        "RCP",
+        "Split Conformal",
+        "Uniform Mixture",
+        "WCP"
+      ],
+      "scenarios": [],
+      "n_reps_values": [
+        "500"
+      ],
+      "datasets": [
+        "CA Housing (Demographic)",
+        "CA Housing (Geographic)",
+        "CA Housing (Temporal)"
+      ]
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/scalability.csv",
+      "rows": 15,
+      "columns": [
+        "K",
+        "n_k",
+        "mean_time",
+        "std_time"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [],
+      "scenarios": [],
+      "n_reps_values": [],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/sensitivity_K.csv",
+      "rows": 35,
+      "columns": [
+        "method",
+        "mean_coverage",
+        "std_coverage",
+        "se_coverage",
+        "ci_coverage_lo",
+        "ci_coverage_hi",
+        "mean_width",
+        "std_width",
+        "se_width",
+        "ci_width_lo",
+        "ci_width_hi",
+        "min_coverage",
+        "max_coverage",
+        "rel_efficiency",
+        "mean_time",
+        "n_reps",
+        "K"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [
+        "ACI",
+        "DISCOM-CP",
+        "Oracle Single-Source",
+        "RCP",
+        "Split Conformal",
+        "Uniform Mixture",
+        "WCP"
+      ],
+      "scenarios": [],
+      "n_reps_values": [
+        "500"
+      ],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/sensitivity_nk.csv",
+      "rows": 42,
+      "columns": [
+        "method",
+        "mean_coverage",
+        "std_coverage",
+        "se_coverage",
+        "ci_coverage_lo",
+        "ci_coverage_hi",
+        "mean_width",
+        "std_width",
+        "se_width",
+        "ci_width_lo",
+        "ci_width_hi",
+        "min_coverage",
+        "max_coverage",
+        "rel_efficiency",
+        "mean_time",
+        "n_reps",
+        "n_k"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [
+        "ACI",
+        "DISCOM-CP",
+        "Oracle Single-Source",
+        "RCP",
+        "Split Conformal",
+        "Uniform Mixture",
+        "WCP"
+      ],
+      "scenarios": [],
+      "n_reps_values": [
+        "500"
+      ],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/sensitivity_shift.csv",
+      "rows": 42,
+      "columns": [
+        "method",
+        "mean_coverage",
+        "std_coverage",
+        "se_coverage",
+        "ci_coverage_lo",
+        "ci_coverage_hi",
+        "mean_width",
+        "std_width",
+        "se_width",
+        "ci_width_lo",
+        "ci_width_hi",
+        "min_coverage",
+        "max_coverage",
+        "rel_efficiency",
+        "mean_time",
+        "n_reps",
+        "shift_magnitude"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [
+        "ACI",
+        "DISCOM-CP",
+        "Oracle Single-Source",
+        "RCP",
+        "Split Conformal",
+        "Uniform Mixture",
+        "WCP"
+      ],
+      "scenarios": [],
+      "n_reps_values": [
+        "500"
+      ],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/significance_tests.csv",
+      "rows": 3,
+      "columns": [
+        "scenario",
+        "discom_mean_width",
+        "wcp_mean_width",
+        "mean_diff",
+        "se_diff",
+        "wilcoxon_stat",
+        "wilcoxon_pval",
+        "ttest_stat",
+        "ttest_pval",
+        "n_discom_wins",
+        "n_wcp_wins",
+        "n_ties",
+        "discom_mean_coverage",
+        "wcp_mean_coverage",
+        "n_reps"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [],
+      "scenarios": [
+        "MVE (mixed shift)",
+        "Pure joint shift",
+        "Pure label shift"
+      ],
+      "n_reps_values": [
+        "2000"
+      ],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/source_weights.csv",
+      "rows": 1,
+      "columns": [
+        "source_1_mean",
+        "source_2_mean",
+        "source_3_mean",
+        "source_4_mean",
+        "source_5_mean",
+        "source_1_std",
+        "source_2_std",
+        "source_3_std",
+        "source_4_std",
+        "source_5_std"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [],
+      "scenarios": [],
+      "n_reps_values": [],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/stress_adversarial_source.csv",
+      "rows": 7,
+      "columns": [
+        "method",
+        "mean_coverage",
+        "std_coverage",
+        "se_coverage",
+        "ci_coverage_lo",
+        "ci_coverage_hi",
+        "mean_width",
+        "std_width",
+        "se_width",
+        "ci_width_lo",
+        "ci_width_hi",
+        "min_coverage",
+        "max_coverage",
+        "rel_efficiency",
+        "mean_time",
+        "n_reps",
+        "scenario"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [
+        "ACI",
+        "DISCOM-CP",
+        "Oracle Single-Source",
+        "RCP",
+        "Split Conformal",
+        "Uniform Mixture",
+        "WCP"
+      ],
+      "scenarios": [
+        "adversarial_source"
+      ],
+      "n_reps_values": [
+        "2000"
+      ],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/stress_all.csv",
+      "rows": 35,
+      "columns": [
+        "method",
+        "mean_coverage",
+        "std_coverage",
+        "se_coverage",
+        "ci_coverage_lo",
+        "ci_coverage_hi",
+        "mean_width",
+        "std_width",
+        "se_width",
+        "ci_width_lo",
+        "ci_width_hi",
+        "min_coverage",
+        "max_coverage",
+        "rel_efficiency",
+        "mean_time",
+        "n_reps",
+        "scenario"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [
+        "ACI",
+        "DISCOM-CP",
+        "Oracle Single-Source",
+        "RCP",
+        "Split Conformal",
+        "Uniform Mixture",
+        "WCP"
+      ],
+      "scenarios": [
+        "adversarial_source",
+        "all_bad",
+        "exact_match",
+        "high_dim",
+        "single_source"
+      ],
+      "n_reps_values": [
+        "2000"
+      ],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/stress_all_bad.csv",
+      "rows": 7,
+      "columns": [
+        "method",
+        "mean_coverage",
+        "std_coverage",
+        "se_coverage",
+        "ci_coverage_lo",
+        "ci_coverage_hi",
+        "mean_width",
+        "std_width",
+        "se_width",
+        "ci_width_lo",
+        "ci_width_hi",
+        "min_coverage",
+        "max_coverage",
+        "rel_efficiency",
+        "mean_time",
+        "n_reps",
+        "scenario"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [
+        "ACI",
+        "DISCOM-CP",
+        "Oracle Single-Source",
+        "RCP",
+        "Split Conformal",
+        "Uniform Mixture",
+        "WCP"
+      ],
+      "scenarios": [
+        "all_bad"
+      ],
+      "n_reps_values": [
+        "2000"
+      ],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/stress_exact_match.csv",
+      "rows": 7,
+      "columns": [
+        "method",
+        "mean_coverage",
+        "std_coverage",
+        "se_coverage",
+        "ci_coverage_lo",
+        "ci_coverage_hi",
+        "mean_width",
+        "std_width",
+        "se_width",
+        "ci_width_lo",
+        "ci_width_hi",
+        "min_coverage",
+        "max_coverage",
+        "rel_efficiency",
+        "mean_time",
+        "n_reps",
+        "scenario"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [
+        "ACI",
+        "DISCOM-CP",
+        "Oracle Single-Source",
+        "RCP",
+        "Split Conformal",
+        "Uniform Mixture",
+        "WCP"
+      ],
+      "scenarios": [
+        "exact_match"
+      ],
+      "n_reps_values": [
+        "2000"
+      ],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/stress_high_dim.csv",
+      "rows": 7,
+      "columns": [
+        "method",
+        "mean_coverage",
+        "std_coverage",
+        "se_coverage",
+        "ci_coverage_lo",
+        "ci_coverage_hi",
+        "mean_width",
+        "std_width",
+        "se_width",
+        "ci_width_lo",
+        "ci_width_hi",
+        "min_coverage",
+        "max_coverage",
+        "rel_efficiency",
+        "mean_time",
+        "n_reps",
+        "scenario"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [
+        "ACI",
+        "DISCOM-CP",
+        "Oracle Single-Source",
+        "RCP",
+        "Split Conformal",
+        "Uniform Mixture",
+        "WCP"
+      ],
+      "scenarios": [
+        "high_dim"
+      ],
+      "n_reps_values": [
+        "2000"
+      ],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/stress_single_source.csv",
+      "rows": 7,
+      "columns": [
+        "method",
+        "mean_coverage",
+        "std_coverage",
+        "se_coverage",
+        "ci_coverage_lo",
+        "ci_coverage_hi",
+        "mean_width",
+        "std_width",
+        "se_width",
+        "ci_width_lo",
+        "ci_width_hi",
+        "min_coverage",
+        "max_coverage",
+        "rel_efficiency",
+        "mean_time",
+        "n_reps",
+        "scenario"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [
+        "ACI",
+        "DISCOM-CP",
+        "Oracle Single-Source",
+        "RCP",
+        "Split Conformal",
+        "Uniform Mixture",
+        "WCP"
+      ],
+      "scenarios": [
+        "single_source"
+      ],
+      "n_reps_values": [
+        "2000"
+      ],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/timings.csv",
+      "rows": 1,
+      "columns": [
+        "mve",
+        "stress_adversarial_source",
+        "stress_all_bad",
+        "stress_single_source",
+        "stress_exact_match",
+        "stress_high_dim",
+        "label_shift",
+        "joint_shift",
+        "sensitivity_shift_0.25",
+        "sensitivity_shift_0.5",
+        "sensitivity_shift_1.0",
+        "sensitivity_shift_1.5",
+        "sensitivity_shift_2.0",
+        "sensitivity_shift_3.0",
+        "sensitivity_K_2",
+        "sensitivity_K_3",
+        "sensitivity_K_5",
+        "sensitivity_K_8",
+        "sensitivity_K_10",
+        "sensitivity_nk_50",
+        "sensitivity_nk_100",
+        "sensitivity_nk_200",
+        "sensitivity_nk_300",
+        "sensitivity_nk_500",
+        "sensitivity_nk_1000"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [],
+      "scenarios": [],
+      "n_reps_values": [],
+      "datasets": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/wine_results.csv",
+      "rows": 21,
+      "columns": [
+        "dataset",
+        "method",
+        "mean_coverage",
+        "se_coverage",
+        "mean_width",
+        "se_width",
+        "rel_efficiency",
+        "n_reps"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [
+        "ACI",
+        "DISCOM-CP",
+        "Oracle Single-Source",
+        "RCP",
+        "Split Conformal",
+        "Uniform Mixture",
+        "WCP"
+      ],
+      "scenarios": [],
+      "n_reps_values": [
+        "500"
+      ],
+      "datasets": [
+        "Wine (Acidity Shift)",
+        "Wine (Alcohol Shift)",
+        "Wine (Type Shift)"
+      ]
+    },
+    {
+      "path": "case-studies/conformal-prediction/data/wine_significance.csv",
+      "rows": 3,
+      "columns": [
+        "scenario",
+        "discom_mean_width",
+        "wcp_mean_width",
+        "mean_diff",
+        "se_diff",
+        "wilcoxon_stat",
+        "wilcoxon_pval",
+        "n_discom_wins",
+        "n_wcp_wins",
+        "n_ties",
+        "discom_mean_coverage",
+        "wcp_mean_coverage",
+        "n_reps"
+      ],
+      "missing_cells": 0,
+      "nonfinite_cells": [],
+      "methods": [],
+      "scenarios": [
+        "Wine (Acidity Shift)",
+        "Wine (Alcohol Shift)",
+        "Wine (Type Shift)"
+      ],
+      "n_reps_values": [
+        "500"
+      ],
+      "datasets": []
+    }
+  ],
+  "python_inventory": [
+    {
+      "path": "case-studies/conformal-prediction/code/comparators.py",
+      "syntax": "OK",
+      "imports": [
+        "from scipy import stats",
+        "from sklearn.linear_model import LogisticRegression",
+        "import numpy as np"
+      ],
+      "functions": [
+        {
+          "name": "weighted_quantile",
+          "line": 17,
+          "args": "scores, weights, level"
+        },
+        {
+          "name": "__init__",
+          "line": 47,
+          "args": "self, alpha=0.1"
+        },
+        {
+          "name": "fit",
+          "line": 51,
+          "args": "self, source_scores, **kwargs"
+        },
+        {
+          "name": "predict",
+          "line": 60,
+          "args": "self, X=None"
+        },
+        {
+          "name": "coverage_and_width",
+          "line": 63,
+          "args": "self, test_scores"
+        },
+        {
+          "name": "__init__",
+          "line": 85,
+          "args": "self, alpha=0.1"
+        },
+        {
+          "name": "fit",
+          "line": 89,
+          "args": "self, source_scores, source_X=None, target_X=None, **kwargs"
+        },
+        {
+          "name": "predict",
+          "line": 148,
+          "args": "self, X=None"
+        },
+        {
+          "name": "coverage_and_width",
+          "line": 151,
+          "args": "self, test_scores"
+        },
+        {
+          "name": "__init__",
+          "line": 173,
+          "args": "self, alpha=0.1, rho=None"
+        },
+        {
+          "name": "fit",
+          "line": 185,
+          "args": "self, source_scores, target_scores=None, **kwargs"
+        },
+        {
+          "name": "predict",
+          "line": 215,
+          "args": "self, X=None"
+        },
+        {
+          "name": "coverage_and_width",
+          "line": 218,
+          "args": "self, test_scores"
+        },
+        {
+          "name": "__init__",
+          "line": 240,
+          "args": "self, alpha=0.1, gamma=0.005"
+        },
+        {
+          "name": "fit",
+          "line": 252,
+          "args": "self, source_scores, target_scores=None, **kwargs"
+        },
+        {
+          "name": "predict",
+          "line": 277,
+          "args": "self, X=None"
+        },
+        {
+          "name": "coverage_and_width",
+          "line": 280,
+          "args": "self, test_scores"
+        },
+        {
+          "name": "__init__",
+          "line": 299,
+          "args": "self, alpha=0.1"
+        },
+        {
+          "name": "fit",
+          "line": 304,
+          "args": "self, source_scores, target_scores=None, **kwargs"
+        },
+        {
+          "name": "predict",
+          "line": 332,
+          "args": "self, X=None"
+        },
+        {
+          "name": "coverage_and_width",
+          "line": 335,
+          "args": "self, test_scores"
+        },
+        {
+          "name": "__init__",
+          "line": 351,
+          "args": "self, alpha=0.1"
+        },
+        {
+          "name": "fit",
+          "line": 355,
+          "args": "self, source_scores, **kwargs"
+        },
+        {
+          "name": "predict",
+          "line": 381,
+          "args": "self, X=None"
+        },
+        {
+          "name": "coverage_and_width",
+          "line": 384,
+          "args": "self, test_scores"
+        }
+      ],
+      "classes": [
+        {
+          "name": "SplitConformal",
+          "line": 39
+        },
+        {
+          "name": "WeightedConformal",
+          "line": 74
+        },
+        {
+          "name": "RobustConformal",
+          "line": 162
+        },
+        {
+          "name": "AdaptiveConformal",
+          "line": 229
+        },
+        {
+          "name": "OracleSingleSource",
+          "line": 291
+        },
+        {
+          "name": "UniformMixture",
+          "line": 346
+        }
+      ]
+    },
+    {
+      "path": "case-studies/conformal-prediction/code/generate_figures.py",
+      "syntax": "OK",
+      "imports": [
+        "from method import DISCOMCP, compute_ks_statistic",
+        "from run_validation import generate_mve_data",
+        "from sklearn.linear_model import Ridge",
+        "import matplotlib",
+        "import matplotlib.pyplot as plt",
+        "import numpy as np",
+        "import os",
+        "import pandas as pd",
+        "import sys"
+      ],
+      "functions": [
+        {
+          "name": "plot_mve_results",
+          "line": 17,
+          "args": ""
+        },
+        {
+          "name": "plot_stress_tests",
+          "line": 58,
+          "args": ""
+        },
+        {
+          "name": "plot_weight_analysis",
+          "line": 118,
+          "args": ""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "path": "case-studies/conformal-prediction/code/method.py",
+      "syntax": "OK",
+      "imports": [
+        "from scipy import stats",
+        "from scipy.optimize import linprog",
+        "import numpy as np"
+      ],
+      "functions": [
+        {
+          "name": "compute_ks_statistic",
+          "line": 21,
+          "args": "scores_a, scores_b"
+        },
+        {
+          "name": "weighted_quantile",
+          "line": 27,
+          "args": "scores, weights, level"
+        },
+        {
+          "name": "mixture_quantile",
+          "line": 48,
+          "args": "w, source_scores, level"
+        },
+        {
+          "name": "solve_weight_lp",
+          "line": 67,
+          "args": "source_quantiles, discrepancies, budget, K"
+        },
+        {
+          "name": "optimize_weights",
+          "line": 93,
+          "args": "source_scores, source_quantiles, discrepancies, alpha, K, n_ks, n_grid=100, delta_refine=0.1"
+        },
+        {
+          "name": "__init__",
+          "line": 216,
+          "args": "self, alpha=0.1, epsilon_safety=0.005, n_grid=100, delta_refine=0.1, disc_threshold=0.3"
+        },
+        {
+          "name": "fit",
+          "line": 230,
+          "args": "self, source_scores, target_scores=None, target_predictions=None, source_predictions=None"
+        },
+        {
+          "name": "predict",
+          "line": 356,
+          "args": "self, X=None"
+        },
+        {
+          "name": "coverage_and_width",
+          "line": 362,
+          "args": "self, test_scores"
+        }
+      ],
+      "classes": [
+        {
+          "name": "DISCOMCP",
+          "line": 198
+        }
+      ]
+    },
+    {
+      "path": "case-studies/conformal-prediction/code/run_validation.py",
+      "syntax": "OK",
+      "imports": [
+        "from comparators import SplitConformal, WeightedConformal, RobustConformal, AdaptiveConformal, OracleSingleSource, UniformMixture",
+        "from method import DISCOMCP, compute_ks_statistic",
+        "from scipy import stats",
+        "from sklearn.linear_model import Ridge",
+        "import json",
+        "import numpy as np",
+        "import os",
+        "import pandas as pd",
+        "import sys",
+        "import time",
+        "import warnings"
+      ],
+      "functions": [
+        {
+          "name": "generate_mve_data",
+          "line": 41,
+          "args": "seed, d=10, K=5, n_k=300, n_0=50, n_test=1000"
+        },
+        {
+          "name": "generate_stress_data",
+          "line": 135,
+          "args": "scenario, seed, d=10, n_k=300, n_0=50, n_test=1000"
+        },
+        {
+          "name": "run_single_replication",
+          "line": 260,
+          "args": "data, alpha=0.1"
+        },
+        {
+          "name": "run_mve",
+          "line": 385,
+          "args": "n_reps=500, alpha=0.1, base_seed=42"
+        },
+        {
+          "name": "run_stress_tests",
+          "line": 526,
+          "args": "n_reps=200, alpha=0.1, base_seed=42"
+        },
+        {
+          "name": "run_adversarial_robustness_test",
+          "line": 632,
+          "args": "n_reps=200, alpha=0.1, base_seed=42"
+        },
+        {
+          "name": "check_success_criteria",
+          "line": 719,
+          "args": "mve_summary, mve_extras, stress_results, adv_results"
+        },
+        {
+          "name": "main",
+          "line": 848,
+          "args": ""
+        }
+      ],
+      "classes": []
+    },
+    {
+      "path": "skills/house-style/scripts/style_metrics.py",
+      "syntax": "OK",
+      "imports": [
+        "import json",
+        "import os",
+        "import re",
+        "import sys"
+      ],
+      "functions": [
+        {
+          "name": "derive_ranges",
+          "line": 101,
+          "args": "ref"
+        },
+        {
+          "name": "body",
+          "line": 122,
+          "args": "s, include_appendix=False"
+        },
+        {
+          "name": "clean",
+          "line": 137,
+          "args": "s"
+        },
+        {
+          "name": "collapse",
+          "line": 150,
+          "args": "p"
+        },
+        {
+          "name": "measure",
+          "line": 161,
+          "args": "text, label"
+        },
+        {
+          "name": "metrics",
+          "line": 199,
+          "args": "path, include_appendix=False"
+        },
+        {
+          "name": "sections",
+          "line": 204,
+          "args": "path, include_appendix=False"
+        },
+        {
+          "name": "compare",
+          "line": 214,
+          "args": "m, ref, genre, ranges"
+        },
+        {
+          "name": "main",
+          "line": 239,
+          "args": ""
+        }
+      ],
+      "classes": []
+    }
+  ],
+  "pdf_inventory": [
+    {
+      "path": "case-studies/conformal-prediction/figures/comparison_main.pdf",
+      "pages": 1,
+      "metadata": {
+        "/Creator": "Matplotlib v3.9.4, https://matplotlib.org",
+        "/Producer": "Matplotlib pdf backend v3.9.4",
+        "/CreationDate": "D:20260324073817+08'00'"
+      },
+      "page_sizes": [
+        [
+          228.265625,
+          350.1418619434
+        ]
+      ],
+      "encrypted": false,
+      "text": "DISCOM-CP\nWCP ACI\nSplit Conf.\nUniform Mix.\nRCP Oracle\n0\n1\n2\n3\n4\n5\n6Mean Interval Width\n0.916 0.920\n0.941 0.950 0.950\n1.000\n0.908\n11.3\nOracle"
+    },
+    {
+      "path": "case-studies/conformal-prediction/figures/method_overview.pdf",
+      "pages": 1,
+      "metadata": {
+        "/Producer": "pdfTeX-1.40.26",
+        "/Creator": "TeX",
+        "/CreationDate": "D:20260324081743+08'00'",
+        "/ModDate": "D:20260324081743+08'00'",
+        "/Trapped": "/False",
+        "/PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) kpathsea version 6.4.0"
+      },
+      "page_sizes": [
+        [
+          465.647,
+          176.062
+        ]
+      ],
+      "encrypted": false,
+      "text": "Source 1\nCovariate shift\nSource 2\nLabel shift\n...\nSource K\nAdversarial\nTarget D0\nn0 labeled\nNonconformity\nscores R(k)\ni\nKS discrepancies\ndk = dKS( ˆFk, ˆF0)\nLP weight\noptimization\nWeighted quantile\nˆqw∗ (1 − α)\nSafety net\nˆqtarget\nˆq = max(ˆqw∗ , ˆqtarget) Prediction set\nCα(Xtest)\nw∗\nQk(1−α)\nK source\ndomains\nStep 1 Step 2 Step 3\nStep 4"
+    },
+    {
+      "path": "case-studies/conformal-prediction/figures/sensitivity_shift.pdf",
+      "pages": 1,
+      "metadata": {
+        "/Creator": "Matplotlib v3.9.4, https://matplotlib.org",
+        "/Producer": "Matplotlib pdf backend v3.9.4",
+        "/CreationDate": "D:20260324073817+08'00'"
+      },
+      "page_sizes": [
+        [
+          486.14625,
+          188.71625
+        ]
+      ],
+      "encrypted": false,
+      "text": "0.5 1.0 1.5 2.0 2.5 3.0\nShift Magnitude\n3.5\n4.0\n4.5\n5.0\n5.5Mean Interval Width\nInterval Width vs. Shift Magnitude\nDISCOM-CP\nWCP\nSplit Conformal\nACI\nOracle Single-Source\n0.5 1.0 1.5 2.0 2.5 3.0\nShift Magnitude\n0.86\n0.88\n0.90\n0.92\n0.94\n0.96\n0.98\n1.00Mean Coverage\nCoverage vs. Shift Magnitude"
+    },
+    {
+      "path": "case-studies/conformal-prediction/figures/shift_type_comparison.pdf",
+      "pages": 1,
+      "metadata": {
+        "/Creator": "Matplotlib v3.9.4, https://matplotlib.org",
+        "/Producer": "Matplotlib pdf backend v3.9.4",
+        "/CreationDate": "D:20260324073817+08'00'"
+      },
+      "page_sizes": [
+        [
+          491.315625,
+          203.50375
+        ]
+      ],
+      "encrypted": false,
+      "text": "Mixed Label Shift Joint Shift\n0\n1\n2\n3\n4\n5\n6Mean Interval Width\nInterval Width by Shift Type\nDISCOM-CP\nWCP\nSplit Conformal\nOracle Single-Source\nMixed Label Shift Joint Shift\n0.86\n0.88\n0.90\n0.92\n0.94\n0.96\n0.98\n1.00\n1.02Mean Coverage\nCoverage by Shift Type"
+    },
+    {
+      "path": "case-studies/conformal-prediction/figures/source_weights.pdf",
+      "pages": 1,
+      "metadata": {
+        "/Creator": "Matplotlib v3.9.4, https://matplotlib.org",
+        "/Producer": "Matplotlib pdf backend v3.9.4",
+        "/CreationDate": "D:20260324073817+08'00'"
+      },
+      "page_sizes": [
+        [
+          239.296875,
+          174.1189149543
+        ]
+      ],
+      "encrypted": false,
+      "text": "S1\n(Mild\ncov.)\nS2\n(Mod.\ncov.)\nS3\n(Label\nshift)\nS4\n(Joint\nshift)\nS5\n(Adver-\nsarial)\nSource\n0.0\n0.2\n0.4\n0.6\n0.8Mean Weight\n0.568\n0.093\n0.335\n0.003 0.000"
+    },
+    {
+      "path": "case-studies/conformal-prediction/figures/stress_heatmap.pdf",
+      "pages": 1,
+      "metadata": {
+        "/Creator": "Matplotlib v3.9.4, https://matplotlib.org",
+        "/Producer": "Matplotlib pdf backend v3.9.4",
+        "/CreationDate": "D:20260324073817+08'00'"
+      },
+      "page_sizes": [
+        [
+          273.54776,
+          203.9815
+        ]
+      ],
+      "encrypted": false,
+      "text": "DISCOM WCP Split\nConf.\nACI Oracle\nAdversarial\nAll Bad\nK=1\nExact Match\nd=50\n6.7 7.3 8.8 8.1 6.3\n6.4 6.6 7.5 7.2 6.5\n3.6 3.3 3.2 3.3 3.2\n3.6 4.7 7.0 6.4 3.4\n4.2 4.1 4.8 4.6 4.0\nMean Interval Width by Scenario\n4\n5\n6\n7\n8\nWidth"
+    }
+  ],
+  "skill_headers": [
+    {
+      "folder": "brief-expander",
+      "frontmatter": "\nname: brief-expander\ndescription: >\n  Takes a minimal research idea (even one sentence) and expands it into a complete\n  research brief that can drive the 10-skill pipeline. Performs web search, literature\n  scanning, and field analysis to fill in problem statement, data assets, domain context,\n  target venue, success criteria, comparators, adjacent fields, and evaluation design.\n  Usage: /brief-expander \"your research question or idea\"\nuser-invocable: true\nallowed-tools: Read, Glob, Grep, Bash, WebSearch, WebFetch, Agent, Write\n",
+      "headings": [
+        "## Core Philosophy",
+        "## INPUT",
+        "## OUTPUT",
+        "## PROCESS",
+        "### Phase 0.1: Parse and Assess (5 minutes)",
+        "### Phase 0.2: Landscape Survey (10 minutes)",
+        "### Phase 0.3: Problem Scoping (10 minutes)",
+        "### Phase 0.4: Literature Scan (10 minutes)",
+        "### Phase 0.5: Brief Assembly (10 minutes)",
+        "### Phase 0.6: Self-Check (5 minutes)",
+        "## RULES",
+        "## CONTEXT MANAGEMENT",
+        "## INTEGRATION WITH RESEARCH-PIPELINE",
+        "## EXAMPLE"
+      ]
+    },
+    {
+      "folder": "critic-revisor",
+      "frontmatter": "\nname: critic-revisor\ndescription: >\n  Autonomous adversarial critic-revisor loop on a LaTeX manuscript. Two parallel\n  Opus reviews per round with differentiated angles (methodologist + applied/\n  contextual reader); reviewers can web-search within a per-round budget; Codex\n  CLI applies the combined review; latexmk rebuilds the clean PDF; latexdiff\n  produces a color-tracked PDF. Repeats until both reviewers say accept, no diff\n  is produced, the LaTeX build fails, or the round budget is exhausted. Saves\n  per-round subfolders under critic_revisor_logs/. Paper-agnostic. Use when the\n  user asks to \"run the adversarial loop\", \"auto-revise the manuscript\",\n  \"critic-revisor\", or similar.\nuser-invocable: true\nargument-hint: <manuscript.tex> [max_rounds=5] [venue] [--sources <paths>]\n",
+      "headings": [
+        "# Critic-Revisor Loop",
+        "## Identity",
+        "## Reviewer mission",
+        "## Source verification policy",
+        "## How to invoke",
+        "## Stop conditions (handled by the script)",
+        "## Outputs (under the manuscript's directory)",
+        "## Cost / safety notes",
+        "## Operational hardening (lessons from earlier runs)",
+        "## What to tell the user when you finish"
+      ]
+    },
+    {
+      "folder": "house-style",
+      "frontmatter": "\nname: house-style\ndescription: >-\n  Exemplar-based house voice for LaTeX manuscripts: a reader-first standard judged against an\n  approved exemplar, a house-voice rewrite that never changes meaning, numbers, citations, or\n  defined terms, and advisory style metrics (sentence length, paragraph length, first-person\n  plural, semicolons, numbers in prose) printed beside the exemplar's values. The exemplar can\n  be replaced with your own via --ref. Used by write-manuscript, paper-writer, paper-grader,\n  paper-fixer, paper-critic, and research-pipeline; also runs standalone.\nuser-invocable: true\nargument-hint: <file.tex> [--review-only] [--ref <exemplar.tex>] [--genre results] [--relocate-numbers] [--light|--thorough] [--out <newfile>]\n",
+      "headings": [
+        "# House Style",
+        "## Whole-paper structure",
+        "## Identity",
+        "## The standard, and what the metrics are for",
+        "## Paths",
+        "## The house voice (default target)",
+        "## Style metrics (advisory)",
+        "### What the default exemplar looks like",
+        "### Comparing with your own exemplar",
+        "### Results-heavy genre",
+        "### Do not write to the metrics",
+        "### Common fixes when a paragraph reads wrong and a metric points the same way",
+        "## Reader-first voice (what the metrics cannot see)",
+        "## AI tics (fix in the same pass)",
+        "## Hard constraints (never change these)",
+        "## Procedure",
+        "### 0. Parse options",
+        "### 1. Snapshot and measure the baseline",
+        "### 2. Read the exemplar (if one is available)",
+        "### 3. Plan, then edit",
+        "### 4. Integrity check (always)",
+        "### 5. Compile, record the metrics, and run the reader-first read",
+        "### 6. Report",
+        "## What NOT to do"
+      ]
+    },
+    {
+      "folder": "literature-lead",
+      "frontmatter": null,
+      "headings": [
+        "## Contribution evidence (shared contract)",
+        "# Literature Lead",
+        "## Identity",
+        "## Purpose",
+        "## Invocation",
+        "## Input",
+        "## Output",
+        "## Phase 0: Read Phase 1 Literature Briefing (MANDATORY — reuse, don't redo)",
+        "## Phase 1: Triage Papers (incremental — only Coverage Gaps)",
+        "## Phase 2: Dispatch Readers (Parallel)",
+        "### Primary Reader Prompt Template",
+        "## Setup",
+        "## Paper to Read",
+        "## Research Context",
+        "## Output File",
+        "## Extraction Template",
+        "### 1. Bibliographic",
+        "### 2. Method Summary (500+ words)",
+        "### 3. Theoretical Results",
+        "### 4. Evaluation Design",
+        "### 5. Sections & Structure",
+        "### 6. Relevance to Our Work",
+        "### 7. Potential Criticisms",
+        "### Secondary Reader Prompt Template",
+        "## Setup",
+        "## Papers to Read",
+        "## Research Context",
+        "## Output File",
+        "## For Each Paper, Provide:",
+        "### [Paper Key]",
+        "## Phase 3: Review Reader Outputs",
+        "## Phase 4: Dispatch Synthesizer",
+        "## Files to Read",
+        "## Output File",
+        "## Required Sections",
+        "### Executive Summary",
+        "### Comparative Table",
+        "### Gap Analysis",
+        "### Quality Benchmarks",
+        "### Related Work Draft (500+ words)",
+        "### Action Items for Writer",
+        "## Phase 5: Critic Review",
+        "## Deliverable to Review",
+        "## Files to Review",
+        "## Success Criteria",
+        "## Reference Papers",
+        "## Phase 6: Fix Loop",
+        "## Phase 7: Report to Orchestrator",
+        "## Literature Lead: Complete",
+        "### Papers Analyzed",
+        "### Critical Gaps Found",
+        "### Quality Benchmarks",
+        "### Files Written",
+        "### Action Items for Writer",
+        "### Unresolved Critic Challenges",
+        "### Subagent Dispatches",
+        "## Dispatch Budget",
+        "## Rules"
+      ]
+    },
+    {
+      "folder": "methodology-architect",
+      "frontmatter": "\nname: methodology-architect\ndescription: >\n  Methodology reasoning agent. Reads literature deeply, identifies combinations\n  of existing ideas that address gaps, assesses societal impact, and produces a\n  methodology specification. Can be invoked standalone (pre-brief) or by\n  write-paper/auto-research when methodology revision is needed.\n  Usage: /methodology-architect problem_statement.md [literature_dir/]\nuser-invocable: true\nallowed-tools: Read, Glob, Grep, Bash, Task, WebSearch, WebFetch\n",
+      "headings": [
+        "## Contribution evidence (shared contract)",
+        "## Quality target",
+        "## Your Core Philosophy",
+        "## INPUT",
+        "### Using Project History",
+        "## PHASE 0.5: Brief Audit",
+        "## PHASE 1: Problem Understanding",
+        "## Problem Decomposition",
+        "### Core Question",
+        "### Who Benefits",
+        "### Current Practice",
+        "### Pain Points",
+        "### Constraints",
+        "### Success Criteria",
+        "## PHASE 2: Deep Literature Analysis",
+        "### 2.1 Identify Papers to Read",
+        "### 2.2 Dispatch Deep Readers",
+        "## Setup",
+        "## How to Obtain Papers",
+        "## Paper(s) to Read",
+        "## Problem Context",
+        "## Output File",
+        "## Extraction Template",
+        "### 1. Bibliographic",
+        "### 2. The Problem They Solve",
+        "### 3. Core Insight (the ONE idea that makes it work)",
+        "### 4. Design Rationale",
+        "### 5. Strengths (what this method does well)",
+        "### 6. Weaknesses (what this method does poorly)",
+        "### 7. Combinability Assessment",
+        "### 8. Mathematical Core (be precise)",
+        "### 9. Steelman Objection",
+        "### 10. Overlooked Connection",
+        "### 11. Would They Cite Us?",
+        "### 2.3 Review Reader Outputs",
+        "## PHASE 2.5: Wildcard Search (Adjacent Fields)",
+        "### Instructions",
+        "## PHASE 3: Combination Reasoning",
+        "### 3.1 Build a Provides/Needs Matrix",
+        "### 3.2 Identify Candidate Combinations",
+        "### 3.3 Stress-Test the Top Candidate",
+        "## PHASE 3.5: Red Team the Candidate List",
+        "### Dispatch Prompt for Red Team Critic",
+        "## Files to Read",
+        "## Your Task",
+        "## Output File",
+        "### After the Critic Returns",
+        "## PHASE 4: Impact Assessment",
+        "### 4.1 Value to Practitioners",
+        "### 4.2 Value to the Field",
+        "### 4.3 Value to Society",
+        "## PHASE 5: Methodology Specification",
+        "### 5.1 `briefings/methodology_specification.md`",
+        "## Proposed Method: [Name]",
+        "### One-Sentence Summary",
+        "### Core Idea",
+        "### Mathematical Specification",
+        "### Algorithm",
+        "### Parameters and Tuning",
+        "### Theoretical Properties (expected)",
+        "### Comparators for Evaluation",
+        "### Expected Strengths",
+        "### Expected Weaknesses",
+        "### Minimum Viable Evaluation",
+        "### Success Criterion",
+        "### Novelty Statement",
+        "### 5.2 `briefings/methodology_rationale.md`",
+        "## Design Rationale for [Name]",
+        "### Literature Basis",
+        "### Combination Reasoning",
+        "### Alternatives Considered",
+        "### Impact Justification",
+        "### Stress Test Results",
+        "### Open Questions",
+        "### 5.3 `briefings/literature_briefing.md` (Phase 1 → Phase 3 bridge)",
+        "# Phase 1 Literature Briefing (for downstream consumption)",
+        "## Papers read in Phase 1",
+        "## Per-paper key takeaways",
+        "## Provides/Needs matrix",
+        "## Positioning seeds (for Phase 3 literature-lead)",
+        "## Coverage gaps for Phase 3 to fill (positioning-only)",
+        "## INVESTIGATIVE BUDGET",
+        "## DISPATCH BUDGET",
+        "## CONTEXT MANAGEMENT",
+        "### Disk as Memory (mandatory pattern)",
+        "### What NOT to Hold in Context",
+        "## RULES",
+        "## REVISION MODE",
+        "## OUTPUT SUMMARY",
+        "## Methodology Architect: Complete",
+        "### Proposed Method",
+        "### Key Innovation",
+        "### Impact Assessment",
+        "### Feasibility",
+        "### Files Written",
+        "### Recommended Next Step"
+      ]
+    },
+    {
+      "folder": "paper-critic",
+      "frontmatter": null,
+      "headings": [
+        "## Synopsis approval before full drafting",
+        "## Contribution evidence (shared contract)",
+        "# Paper Critic",
+        "## Manuscript shape and author exemplars",
+        "## Identity",
+        "## Purpose",
+        "## Invocation",
+        "## Review Dimensions",
+        "### 1. Mathematical Correctness",
+        "### 2. Completeness (vs Reference Papers)",
+        "### 3. Technical Validity",
+        "### 4. Code-Manuscript Consistency",
+        "### 5. Failure Modes",
+        "### 6. House Voice (minor dimension)",
+        "## Severity Definitions",
+        "## Severity-Based Escalation Protocol",
+        "## Buried Treasure Check",
+        "## Definition Audit",
+        "## Scope Constraint (v2 Pipeline)",
+        "## Output Format",
+        "## Challenge 1: [Descriptive Title]",
+        "## Rules"
+      ]
+    },
+    {
+      "folder": "paper-fixer",
+      "frontmatter": null,
+      "headings": [
+        "# Paper Fixer",
+        "## Manuscript shape and author exemplars",
+        "## Synopsis gate for substantive revision",
+        "## Identity",
+        "## Purpose",
+        "## Invocation",
+        "## Input Artifacts",
+        "## Output",
+        "## Procedure",
+        "### Step 1: Read and Triage the Grade Report",
+        "### Step 2: Build Fix List",
+        "## Fix List",
+        "### Critical Fixes (Correctness/Rigor — highest priority)",
+        "### Major Fixes (Completeness — high priority)",
+        "### Minor Fixes (Clarity — medium priority)",
+        "### Out of Scope (logged, not fixed)",
+        "### Step 3: Apply Fixes",
+        "### Step 3b: House-Voice Fixes (when the reader-first read flags paragraphs)",
+        "### Step 4: Compile Check",
+        "### Step 5: Write Fix Report",
+        "## Fix Report — Round [N]",
+        "### Fixes Applied",
+        "### Issues Logged (Out of Scope)",
+        "### House Voice (if Step 3b ran)",
+        "### Summary",
+        "## Allowed Fixes (whitelist)",
+        "## Forbidden Fixes (blacklist)",
+        "## Common Fix Patterns",
+        "### Pattern 1: Number Mismatch (Table vs CSV)",
+        "### Pattern 2: Formula↔Code Mismatch (read from audit, do NOT re-derive)",
+        "### Pattern 3: Missing Comparator in Table",
+        "### Pattern 4: Claim-vs-Data Inconsistency",
+        "## Context Management",
+        "## Anti-Patterns"
+      ]
+    },
+    {
+      "folder": "paper-grader",
+      "frontmatter": null,
+      "headings": [
+        "## Contribution evidence (shared contract)",
+        "# Paper Grader",
+        "## Manuscript shape and author exemplars",
+        "## Identity",
+        "## Purpose",
+        "## Invocation",
+        "## Input",
+        "## Rubric",
+        "### 1. Correctness (1-5)",
+        "### 2. Completeness (1-5)",
+        "### 3. Rigor (1-5)",
+        "### 4. Clarity (1-5)",
+        "### 5. Novelty (1-5)",
+        "#### Novelty Scoring Guidance",
+        "### 6. Impact (1-5)",
+        "#### Impact Scoring Guidance",
+        "### 7. Performance (1-5)",
+        "## Phase A: Manuscript Grading (Dimensions 1-7)",
+        "### Weighted Scoring",
+        "## House Voice (Clarity)",
+        "## Phase B: Evaluation Code Audit",
+        "### Dispatch the Code Auditor",
+        "## Files to Read",
+        "## Audit Checklist",
+        "### Category 1: Formula Correctness (verify the canonical audit)",
+        "### Category 2: Parameter Consistency",
+        "### Category 3: Methodological Completeness",
+        "## Output Format",
+        "### [Item number]. [Item name]",
+        "### Audit Summary",
+        "### Critical Findings",
+        "### Flags for Human Review",
+        "### \"So What?\" Test",
+        "### Definition Audit",
+        "### Incorporate Audit Results into Scoring",
+        "## Output Format",
+        "## Paper Assessment",
+        "### Manuscript: [title]",
+        "### Date: [today]",
+        "### 1. Correctness: [score]/5",
+        "### 2. Completeness: [score]/5",
+        "### 3. Rigor: [score]/5",
+        "### 4. Clarity: [score]/5",
+        "### 5. Novelty: [score]/5",
+        "### 6. Impact: [score]/5",
+        "### 7. Performance: [score]/5",
+        "### Raw Score: [total]/35",
+        "### Weighted Score: [weighted]/50",
+        "### Grade: [A (>=42) | B (>=34) | C (>=25) | F (<25)]",
+        "### Contribution Assessment",
+        "### Code Audit Summary",
+        "### Top 3 Strengths",
+        "### Top 3 Weaknesses (with suggested improvement)",
+        "### Fixable Issues (for paper-fixer)",
+        "### Verdict",
+        "## Calibration Notes",
+        "## Shared Rubric Reference",
+        "## Context Management"
+      ]
+    },
+    {
+      "folder": "paper-modeler",
+      "frontmatter": null,
+      "headings": [
+        "## Contribution evidence (shared contract)",
+        "# Paper Modeler",
+        "## Identity",
+        "## Purpose",
+        "## Invocation",
+        "## Working Style",
+        "## Code Conventions",
+        "## Computational Efficiency",
+        "## Deliverable Structure",
+        "### A. Scale Validated Code to Production",
+        "### A.5 Ground-Truth Evaluation (MANDATORY)",
+        "### B. Formula-Code Audit (authoritative artifact, MANDATORY)",
+        "# Formula↔Code Audit (authoritative)",
+        "## Owner: paper-modeler (single source of truth)",
+        "## Verification table",
+        "## Provenance",
+        "## Reconciliation rule",
+        "## Downstream consumers (do not duplicate this work)",
+        "### C. Generate Publication Figures",
+        "### D. Write Modeling Briefing",
+        "# Modeling Briefing",
+        "## Evaluations Run",
+        "## Formula-Code Consistency Check",
+        "### Mismatches Found",
+        "## Comparator Coverage",
+        "## Consistency Check vs Phase 2",
+        "## Monte Carlo Standard Errors",
+        "## Relevant Diagnostics",
+        "## Figures Produced",
+        "## Anomalies or Warnings",
+        "### E. Anomaly Detection (MANDATORY)",
+        "# Anomaly Log (paper-modeler-owned)",
+        "## Detection criteria applied (all CSVs in pipeline/phase3_write/data/)",
+        "## Detected anomalies",
+        "## Discussion contract",
+        "## Grader contract",
+        "## Output Format",
+        "## Summary",
+        "## Files Created",
+        "## Formula Verification",
+        "## Consistency vs Phase 2",
+        "## Blockers",
+        "## Rules"
+      ]
+    },
+    {
+      "folder": "paper-writer",
+      "frontmatter": null,
+      "headings": [
+        "## Synopsis approval before full drafting",
+        "## Contribution evidence (shared contract)",
+        "# Paper Writer",
+        "## Manuscript shape and author exemplars",
+        "## Identity",
+        "## Purpose",
+        "## Invocation",
+        "## Motivating example (before writing)",
+        "## Definition Development Rule",
+        "## Investigative Budget",
+        "## Working Style",
+        "## House Voice (MANDATORY, from the first draft)",
+        "## LaTeX Conventions",
+        "## Section Guidelines",
+        "### Length and display allocation",
+        "### Abstract (~200 words)",
+        "### Introduction (within the plan)",
+        "### Methods (within the plan)",
+        "### Formula-Code Consistency (read from canonical audit, do NOT re-derive)",
+        "### Theoretical Properties (if applicable for the domain)",
+        "### Results (within the plan)",
+        "### Discussion (within the plan)",
+        "## Anomaly Interpretation Protocol (MANDATORY — read canonical log)",
+        "### Step 1: Read anomaly_log.md",
+        "### Step 2: Interpret and place the findings",
+        "### Step 3: Counterfactual Reasoning",
+        "### Step 4: Record Anomaly Coverage in Output",
+        "## Anomaly Coverage",
+        "## Claim-vs-Data Verification Protocol (MANDATORY)",
+        "### Step 1: Extract Claims",
+        "### Step 2: Check Each Claim Against Data",
+        "### Step 3: Fix Inconsistencies",
+        "### Step 4: Flag Unfavorable Results",
+        "### Step 5: Record in Output",
+        "## Claim Verification",
+        "## Ablation Interpretation Protocol (MANDATORY when simpler variant matches full method)",
+        "## Data Provenance Rule (CRITICAL)",
+        "## Comparator Completeness Gate (read inventory)",
+        "## Inter-Table Consistency Check",
+        "## Figure Integration Requirements",
+        "## Output Format",
+        "## Summary",
+        "## Files Modified",
+        "## Files Created",
+        "## Cross-References Added",
+        "## Missing References",
+        "## Anomaly Scan (if Discussion was written)",
+        "## Claim Verification (if Results/Discussion was written)",
+        "## Style Self-Check",
+        "## Blockers",
+        "## Rules"
+      ]
+    },
+    {
+      "folder": "research-pipeline",
+      "frontmatter": null,
+      "headings": [
+        "## Synopsis approval before full drafting",
+        "## Contribution evidence (shared contract)",
+        "# Research Pipeline",
+        "## Manuscript shape and author exemplars",
+        "## Identity",
+        "## Scope",
+        "## Quality target",
+        "## Purpose",
+        "## Invocation",
+        "## Writing Style (house voice)",
+        "## House voice (mandatory)",
+        "## High-Level Flow",
+        "## Working Directory",
+        "## Startup: Resume Check",
+        "## Phase 0: SCOPE (auto-triggered if brief is sparse)",
+        "### Brief Completeness Check (deterministic)",
+        "### If ≥ 5 sections present: SKIP Phase 0",
+        "### If < 5 sections present: EXPAND",
+        "### Phase 0 Gate",
+        "## Phase 0: SCOPE",
+        "## Phase 1: THINK",
+        "### Dispatch",
+        "### Phase 1 Gate",
+        "### `brief_audit.md` Specification",
+        "## Phase 2: VALIDATE",
+        "### Dispatch",
+        "### Contribution gate (before drafting)",
+        "### Phase 2 Gate",
+        "### MARGINAL Decision File Format",
+        "# MARGINAL Decision Required",
+        "## Validation Summary",
+        "## Decision: [PENDING | PROCEED | RETHINK | STOP]",
+        "## Decision rationale (optional): [user fills in]",
+        "## How to resume",
+        "### MARGINAL Resume Logic",
+        "### RETHINK Protocol",
+        "## Phase 3: WRITE",
+        "### Mandatory entry gate",
+        "### Dispatch",
+        "### Phase 3 Scope",
+        "### Phase 3 Sub-Agents",
+        "### Phase 3 Gate",
+        "### Brief Fidelity Check",
+        "## Phase 4: POLISH",
+        "### Loop Structure",
+        "### Phase 4 Sub-Gate: Venue Compliance (if `venue_compliance=on`)",
+        "### Phase 4 Dispatch: Grading",
+        "### Phase 4 Dispatch: Fixing",
+        "### Phase 4 Scope Constraint (CRITICAL)",
+        "## Phase 4.5: CONSISTENCY AUDIT (gate before finalization)",
+        "### Phase 4.5 Gate",
+        "## Pipeline Log",
+        "## [timestamp] — Phase N: [THINK/VALIDATE/WRITE/POLISH]",
+        "### Status: [COMPLETED / FAILED / RETHINK / MARGINAL_STOP]",
+        "### Duration: [estimated tokens consumed]",
+        "### Key Output:",
+        "### Score (if applicable): [X/50]",
+        "### Files Produced:",
+        "### Decision: [proceed to Phase N+1 / rethink / stop]",
+        "### Rethink Count: [0/1/2]",
+        "## Pipeline State (for resume)",
+        "# Pipeline State",
+        "## Configuration",
+        "## Current Phase: [1/2/3/4]",
+        "## Phase Status",
+        "## Rethink Count: [0/1/2]",
+        "## Phase1 Retries: [0/1/2]",
+        "## Phase3 Retries: [0/1/2]",
+        "## Polish Round: [0/1/2/3]",
+        "## Latest Score: [X/50 or N/A]",
+        "## House Voice: [reader-first read PASS | paragraphs flagged: N | N/A] (genre: default | results; exemplar: default | <style_ref>)",
+        "## Marginal Decision: [N/A | PENDING | PROCEED | RETHINK | STOP]",
+        "## Context for Resume",
+        "## Stopping Criteria",
+        "## Final Report",
+        "# Research Pipeline Final Report",
+        "## Outcome: [SUCCESS / VALIDATED_BELOW_TARGET / MARGINAL / NO_GO / KILL]",
+        "## Contribution and impact",
+        "## Total Phases Executed: [N]",
+        "## Rethinks Used: [N]",
+        "## Phase 1: THINK",
+        "## Phase 2: VALIDATE",
+        "## Phase 3: WRITE (if executed)",
+        "## Phase 4: POLISH (if executed)",
+        "## Writing Style (if Phase 3 executed)",
+        "## Score Breakdown (if graded)",
+        "## Lessons Learned",
+        "## All Files Produced",
+        "## Anti-Patterns",
+        "## Context Management",
+        "### Phase 4 cost scaling",
+        "## Differences from v1 System (auto-research)"
+      ]
+    },
+    {
+      "folder": "validate-method",
+      "frontmatter": null,
+      "headings": [
+        "## Contribution evidence (shared contract)",
+        "# Validate Method",
+        "## Select the validation track before executing",
+        "## Identity",
+        "## Purpose",
+        "## Invocation",
+        "## Input Artifacts",
+        "## Output Artifacts",
+        "## Internal Loop (max 3 iterations)",
+        "### Iteration 0: SETUP (run once)",
+        "### Step 1: IMPLEMENT",
+        "### Step 1.5: Build Comparator Inventory (MANDATORY)",
+        "# Comparator Inventory (validate-method-owned)",
+        "## Comparators promised by research_brief.md",
+        "## Comparators implemented in validated_code/",
+        "## Coverage: brief vs implemented",
+        "## Gate result: COMPLETE | INCOMPLETE",
+        "## Downstream contract",
+        "### Step 2: QUICK VALIDATION",
+        "### Step 3: JUDGE",
+        "## Iteration N: DIAGNOSE",
+        "### Step 4: STRESS TEST (only if Step 3 passes)",
+        "### Step 5: FINAL JUDGMENT",
+        "# Validation Report",
+        "## Verdict: [GO / CONDITIONAL GO / MARGINAL / NO-GO]",
+        "## One-Sentence Summary",
+        "## Quantitative Evidence",
+        "### Primary Experiment (Quick Validation)",
+        "### Stress Test: Scale",
+        "### Stress Test: Adversarial",
+        "### Stress Test: Sensitivity",
+        "### Stress Test: Ablation",
+        "## Conditions and Caveats",
+        "## Recommendation for Phase 3 (WRITE)",
+        "## Iteration History",
+        "## Files Produced",
+        "## Kill Criterion",
+        "## Quality Checks",
+        "### Code Audit Checklist",
+        "### Data Provenance",
+        "### Comparator Non-Negotiability",
+        "## Context Management",
+        "## Anti-Patterns"
+      ]
+    },
+    {
+      "folder": "write-manuscript",
+      "frontmatter": null,
+      "headings": [
+        "## Synopsis approval before full drafting",
+        "## Contribution evidence (shared contract)",
+        "# Write Manuscript",
+        "## Manuscript shape and author exemplars",
+        "## Identity",
+        "## Purpose",
+        "## Invocation",
+        "## Input Artifacts",
+        "## Output Artifacts",
+        "## Sub-Agent Architecture",
+        "## Phase A: Setup & Planning",
+        "## Phase B: Literature Review",
+        "### Dispatch",
+        "### Gate Check",
+        "## Phase C: Production Evaluations",
+        "### Dispatch",
+        "### Gate Check",
+        "## Phase D: Writing",
+        "### D.1: Methods + Theoretical Properties",
+        "### D.2: Introduction + Related Work",
+        "### D.3: Results",
+        "### D.4: Discussion + Abstract + Supplementary",
+        "### After Each Writer Dispatch",
+        "## Spec Fidelity Check (before critique)",
+        "## Phase E: Internal Critique",
+        "## Phase F: Finalization",
+        "### F.1 Compile LaTeX",
+        "### F.2 Mandate Compliance Check",
+        "### F.2b House-Voice Pass (last writing step)",
+        "### F.3 Final Verification",
+        "### F.4 Write Final Decision Log",
+        "## Finalization",
+        "## Scope Constraints (CRITICAL)",
+        "### MUST do",
+        "### MUST NOT do",
+        "## Context Management",
+        "## Anti-Patterns"
+      ]
+    }
+  ],
+  "reference_hits": [
+    {
+      "path": "case-studies/conformal-prediction/code/generate_figures.py",
+      "line": 14,
+      "text": "                           \"validated_results\")"
+    },
+    {
+      "path": "case-studies/conformal-prediction/code/run_validation.py",
+      "line": 8,
+      "text": "Outputs results to pipeline/phase2_validate/validated_results/"
+    },
+    {
+      "path": "case-studies/conformal-prediction/code/run_validation.py",
+      "line": 30,
+      "text": "RESULTS_DIR = os.path.join(os.path.dirname(SCRIPT_DIR), \"validated_results\")"
+    },
+    {
+      "path": "case-studies/conformal-prediction/manuscript.tex",
+      "line": 4,
+      "text": "\\usepackage[final]{neurips_2025}"
+    },
+    {
+      "path": "case-studies/conformal-prediction/pipeline_log.md",
+      "line": 40,
+      "text": "- pipeline/phase2_validate/validated_results/: CSVs, figures, summary JSON"
+    },
+    {
+      "path": "case-studies/conformal-prediction/pipeline_log.md",
+      "line": 52,
+      "text": "- pipeline/phase3_write/manuscript.tex: Complete 691-line manuscript"
+    },
+    {
+      "path": "case-studies/conformal-prediction/pipeline_log.md",
+      "line": 53,
+      "text": "- pipeline/phase3_write/manuscript.pdf: Compiled PDF (14 pages)"
+    },
+    {
+      "path": "case-studies/conformal-prediction/pipeline_log.md",
+      "line": 54,
+      "text": "- pipeline/phase3_write/references.bib: 14 entries"
+    },
+    {
+      "path": "case-studies/conformal-prediction/pipeline_log.md",
+      "line": 55,
+      "text": "- pipeline/phase3_write/figures/: 5 PDF figures"
+    },
+    {
+      "path": "case-studies/conformal-prediction/pipeline_log.md",
+      "line": 56,
+      "text": "- pipeline/phase3_write/data/: 15 CSV result files"
+    },
+    {
+      "path": "case-studies/conformal-prediction/pipeline_log.md",
+      "line": 57,
+      "text": "- pipeline/phase3_write/decision_log.md: Writing decisions and mandate checklist"
+    },
+    {
+      "path": "case-studies/conformal-prediction/validation_report.md",
+      "line": 169,
+      "text": "- `validated_results/mve_results.csv` -- MVE results (500 reps)"
+    },
+    {
+      "path": "case-studies/conformal-prediction/validation_report.md",
+      "line": 170,
+      "text": "- `validated_results/stress_tests_combined.csv` -- Stress test results"
+    },
+    {
+      "path": "case-studies/conformal-prediction/validation_report.md",
+      "line": 171,
+      "text": "- `validated_results/validation_summary.json` -- Machine-readable summary"
+    },
+    {
+      "path": "case-studies/conformal-prediction/validation_report.md",
+      "line": 172,
+      "text": "- `validated_results/mve_comparison.png` -- MVE bar chart"
+    },
+    {
+      "path": "case-studies/conformal-prediction/validation_report.md",
+      "line": 173,
+      "text": "- `validated_results/stress_tests.png` -- Stress test heatmap"
+    },
+    {
+      "path": "case-studies/conformal-prediction/validation_report.md",
+      "line": 174,
+      "text": "- `validated_results/weight_analysis.png` -- Source weight analysis"
+    },
+    {
+      "path": "DISCLAIMER.md",
+      "line": 22,
+      "text": "The clinical trial dataset (`data/trials_data.csv`) was curated from published"
+    },
+    {
+      "path": "examples/conformal_prediction/research_brief.md",
+      "line": 84,
+      "text": "- **Template**: NeurIPS 2025 LaTeX style (`neurips_2025.sty`)"
+    },
+    {
+      "path": "LICENSE",
+      "line": 21,
+      "text": "Full license text: https://creativecommons.org/licenses/by-nc/4.0/legalcode"
+    },
+    {
+      "path": "README.md",
+      "line": 3,
+      "text": "A system of 13 coordinated [Claude Code](https://claude.com/claude-code) skills that automate the full lifecycle of a research methodology paper — from idea to a polished, adversarially revised manuscript. Twelve skills form the autonomous pipeline, including **House Style**, an exemplar-based house voice judged by a reader-first read, with advisory style metrics; the thirteenth, the **Critic-Revisor**, is an optional adversarial-revision layer that runs on the resulting draft. **Domain-agnostic**: all domain knowledge lives in the research brief, not in the skills."
+    },
+    {
+      "path": "README.md",
+      "line": 8,
+      "text": "# 1. Copy skills into your project (or install globally to ~/.claude/skills/)"
+    },
+    {
+      "path": "README.md",
+      "line": 9,
+      "text": "cp -r skills/ your-project/.claude/skills/"
+    },
+    {
+      "path": "README.md",
+      "line": 17,
+      "text": "claude -p \"/research-pipeline research_brief.md\" --dangerously-skip-permissions"
+    },
+    {
+      "path": "README.md",
+      "line": 21,
+      "text": "claude -p \"/research-pipeline idea.md\" --dangerously-skip-permissions"
+    },
+    {
+      "path": "README.md",
+      "line": 208,
+      "text": "3. Run: `/research-pipeline your_brief.md`"
+    },
+    {
+      "path": "README.md",
+      "line": 231,
+      "text": "│   ├── research-pipeline/SKILL.md         #   Outer orchestrator"
+    },
+    {
+      "path": "README.md",
+      "line": 232,
+      "text": "│   ├── brief-expander/SKILL.md            #   Phase 0: SCOPE"
+    },
+    {
+      "path": "README.md",
+      "line": 233,
+      "text": "│   ├── methodology-architect/SKILL.md     #   Phase 1: THINK"
+    },
+    {
+      "path": "README.md",
+      "line": 234,
+      "text": "│   ├── validate-method/SKILL.md           #   Phase 2: VALIDATE"
+    },
+    {
+      "path": "README.md",
+      "line": 235,
+      "text": "│   ├── write-manuscript/SKILL.md          #   Phase 3: WRITE orchestrator"
+    },
+    {
+      "path": "README.md",
+      "line": 236,
+      "text": "│   ├── literature-lead/SKILL.md           #   Phase 3 sub-agent"
+    },
+    {
+      "path": "README.md",
+      "line": 237,
+      "text": "│   ├── paper-modeler/SKILL.md             #   Phase 3 sub-agent"
+    },
+    {
+      "path": "README.md",
+      "line": 238,
+      "text": "│   ├── paper-writer/SKILL.md              #   Phase 3 sub-agent"
+    },
+    {
+      "path": "README.md",
+      "line": 239,
+      "text": "│   ├── paper-critic/SKILL.md              #   Phase 3 sub-agent"
+    },
+    {
+      "path": "README.md",
+      "line": 240,
+      "text": "│   ├── paper-grader/SKILL.md              #   Phase 4: POLISH"
+    },
+    {
+      "path": "README.md",
+      "line": 241,
+      "text": "│   ├── paper-fixer/SKILL.md               #   Phase 4: POLISH"
+    },
+    {
+      "path": "README.md",
+      "line": 243,
+      "text": "│   │   ├── SKILL.md"
+    },
+    {
+      "path": "README.md",
+      "line": 247,
+      "text": "│       ├── SKILL.md                       #     Orchestrator (Opus review, Codex revise)"
+    },
+    {
+      "path": "README.md",
+      "line": 288,
+      "text": "Two additional case studies using the biostatistics-specific version of these skills are available at [ARMS-Biostat](https://github.com/koaeraser/ARMS-Biostat):"
+    },
+    {
+      "path": "README.md",
+      "line": 297,
+      "text": "Developed March 2026. The v1 system (simple write-grade-fix loop) identified the plateau problem; the v2 system was designed from scratch to address it. The 11 pipeline skills began as a biostatistics-specific pipeline ([ARMS-Biostat](https://github.com/koaeraser/ARMS-Biostat), KG-DAP run 2026-03-23), then were generalized to domain-agnostic form and first released here on 2026-03-24; the conformal prediction case study was produced the same day, as the first test of the generalized skills. The **Critic-Revisor** augmentation (now the 13th skill) was added on 2026-06-10. The **House Style** skill was added on 2026-09-25, after drafts that passed every tic check were still found to drift from the target voice. Its style metrics began as enforced bands and were made advisory the same day, when an approved exemplar abstract fell outside the sentence-length band; the exemplar and the reader-first read became the standard."
+    },
+    {
+      "path": "research_brief_template.md",
+      "line": 30,
+      "text": "- **Location**: <!-- Relative path, e.g., data/trials_data.csv -->"
+    },
+    {
+      "path": "research_brief_template.md",
+      "line": 67,
+      "text": "- **Document class / template**: <!-- e.g., biom.cls, neurips_2025.sty -->"
+    },
+    {
+      "path": "skills/brief-expander/SKILL.md",
+      "line": 61,
+      "text": "   `~/.claude/skills/research-pipeline/research_brief_template.md`"
+    },
+    {
+      "path": "skills/brief-expander/SKILL.md",
+      "line": 154,
+      "text": "Read the template: `~/.claude/skills/research-pipeline/research_brief_template.md`"
+    },
+    {
+      "path": "skills/brief-expander/SKILL.md",
+      "line": 289,
+      "text": "   - User then runs `/research-pipeline research_brief.md`"
+    },
+    {
+      "path": "skills/critic-revisor/SKILL.md",
+      "line": 21,
+      "text": "You are an orchestrator. The actual work is done by `~/.claude/skills/critic-revisor/run_loop.sh`. Your job is to validate inputs, launch the script, and report the outcome."
+    },
+    {
+      "path": "skills/critic-revisor/SKILL.md",
+      "line": 75,
+      "text": "   bash ~/.claude/skills/critic-revisor/run_loop.sh \"<manuscript.tex>\" <max_rounds> [venue] [--sources <paths>]"
+    },
+    {
+      "path": "skills/house-style/examples/abstract-reader-first.md",
+      "line": 9,
+      "text": "**Maps to.** SKILL.md, \"Reader-first voice (what the metrics cannot see)\", all eight rules."
+    },
+    {
+      "path": "skills/house-style/examples/dense-results-paragraph.md",
+      "line": 7,
+      "text": "**Maps to.** SKILL.md, \"Numbers in prose\" and \"Style metrics (advisory)\". This is the paragraph-level"
+    },
+    {
+      "path": "skills/house-style/scripts/style_metrics.py",
+      "line": 20,
+      "text": "            an exemplar Statistical Science methods paper (see ../SKILL.md,"
+    },
+    {
+      "path": "skills/house-style/scripts/style_metrics.py",
+      "line": 35,
+      "text": "(../SKILL.md), which is a judgement. These numbers help a writer see where a"
+    },
+    {
+      "path": "skills/house-style/scripts/style_metrics.py",
+      "line": 69,
+      "text": "# Typical ranges of the default exemplar (see SKILL.md, \"Style metrics"
+    },
+    {
+      "path": "skills/house-style/scripts/style_metrics.py",
+      "line": 279,
+      "text": "                  \"reader-first read (SKILL.md).\")"
+    },
+    {
+      "path": "skills/house-style/SKILL.md",
+      "line": 53,
+      "text": "`<skill-dir>` is the directory holding this `SKILL.md`: `.claude/skills/house-style` when"
+    },
+    {
+      "path": "skills/house-style/SKILL.md",
+      "line": 54,
+      "text": "the skills are copied into a project, or `~/.claude/skills/house-style` when installed"
+    },
+    {
+      "path": "skills/house-style/SKILL.md",
+      "line": 55,
+      "text": "globally. Other ARMS skills refer to `.claude/skills/house-style/`; substitute the global"
+    },
+    {
+      "path": "skills/literature-lead/SKILL.md",
+      "line": 65,
+      "text": "`pipeline/phase3_write/briefings/`):"
+    },
+    {
+      "path": "skills/literature-lead/SKILL.md",
+      "line": 286,
+      "text": "Read `.claude/skills/paper-critic/SKILL.md`. Dispatch the Critic to review"
+    },
+    {
+      "path": "skills/literature-lead/SKILL.md",
+      "line": 290,
+      "text": "[Full content of paper-critic/SKILL.md]"
+    },
+    {
+      "path": "skills/methodology-architect/SKILL.md",
+      "line": 7,
+      "text": "  write-paper/auto-research when methodology revision is needed."
+    },
+    {
+      "path": "skills/methodology-architect/SKILL.md",
+      "line": 776,
+      "text": "and run /write-paper\" or \"Have the Modeler implement the core model class"
+    },
+    {
+      "path": "skills/paper-critic/SKILL.md",
+      "line": 85,
+      "text": "  exemplar and the rules in `.claude/skills/house-style/SKILL.md`, \"Reader-first voice (what"
+    },
+    {
+      "path": "skills/paper-critic/SKILL.md",
+      "line": 90,
+      "text": "  `python3 .claude/skills/house-style/scripts/style_metrics.py <manuscript.tex> --compare --sections --genre <G> [--ref <exemplar>]`"
+    },
+    {
+      "path": "skills/paper-critic/SKILL.md",
+      "line": 107,
+      "text": "**`~/.claude/skills/_shared/scoring_rubric.md`** (read it before reviewing)."
+    },
+    {
+      "path": "skills/paper-critic/SKILL.md",
+      "line": 130,
+      "text": "`~/.claude/skills/_shared/scoring_rubric.md`. (Single source of truth — the"
+    },
+    {
+      "path": "skills/paper-critic/SKILL.md",
+      "line": 205,
+      "text": "  in `~/.claude/skills/_shared/scoring_rubric.md` §2. Format:"
+    },
+    {
+      "path": "skills/paper-critic/SKILL.md",
+      "line": 209,
+      "text": "  `pipeline/phase3_write/briefings/formula_code_audit.md`** rather than"
+    },
+    {
+      "path": "skills/paper-fixer/SKILL.md",
+      "line": 124,
+      "text": "Voice), rewrite each one under `.claude/skills/house-style/SKILL.md`, section \"Reader-first"
+    },
+    {
+      "path": "skills/paper-fixer/SKILL.md",
+      "line": 130,
+      "text": "1. Read `.claude/skills/house-style/SKILL.md` in full and follow it (thorough mode when many"
+    },
+    {
+      "path": "skills/paper-fixer/SKILL.md",
+      "line": 139,
+      "text": "   `python3 .claude/skills/house-style/scripts/style_metrics.py <fixed manuscript.tex> --compare --sections --genre <G> [--ref <exemplar>] --json > <round dir>/style_metrics.json`"
+    },
+    {
+      "path": "skills/paper-fixer/SKILL.md",
+      "line": 197,
+      "text": "   Read `pipeline/phase3_write/briefings/formula_code_audit.md` (paper-modeler-owned)"
+    },
+    {
+      "path": "skills/paper-fixer/SKILL.md",
+      "line": 291,
+      "text": "1. Read pipeline/phase3_write/briefings/formula_code_audit.md"
+    },
+    {
+      "path": "skills/paper-grader/SKILL.md",
+      "line": 51,
+      "text": "   - `pipeline/phase3_write/briefings/formula_code_audit.md` (paper-modeler)"
+    },
+    {
+      "path": "skills/paper-grader/SKILL.md",
+      "line": 52,
+      "text": "   - `pipeline/phase3_write/briefings/anomaly_log.md` (paper-modeler)"
+    },
+    {
+      "path": "skills/paper-grader/SKILL.md",
+      "line": 206,
+      "text": "The house voice is defined in `.claude/skills/house-style/SKILL.md`, sections \"The house voice\""
+    },
+    {
+      "path": "skills/paper-grader/SKILL.md",
+      "line": 224,
+      "text": "in `.claude/skills/house-style/SKILL.md`, section \"Reader-first voice (what the metrics cannot"
+    },
+    {
+      "path": "skills/paper-grader/SKILL.md",
+      "line": 238,
+      "text": "python3 .claude/skills/house-style/scripts/style_metrics.py <manuscript.tex> --compare --sections --genre <G> [--ref <exemplar>]"
+    },
+    {
+      "path": "skills/paper-grader/SKILL.md",
+      "line": 269,
+      "text": "- Production evaluation scripts: look for evaluation scripts in pipeline/phase3_write/ or"
+    },
+    {
+      "path": "skills/paper-grader/SKILL.md",
+      "line": 278,
+      "text": "`pipeline/phase3_write/briefings/formula_code_audit.md`. Your job here is to"
+    },
+    {
+      "path": "skills/paper-grader/SKILL.md",
+      "line": 341,
+      "text": "    - Read `pipeline/phase3_write/briefings/anomaly_log.md`."
+    },
+    {
+      "path": "skills/paper-grader/SKILL.md",
+      "line": 543,
+      "text": "`~/.claude/skills/_shared/scoring_rubric.md`"
+    },
+    {
+      "path": "skills/paper-modeler/SKILL.md",
+      "line": 97,
+      "text": "5. Save results to pipeline/phase3_write/data/evaluation_*.csv"
+    },
+    {
+      "path": "skills/paper-modeler/SKILL.md",
+      "line": 136,
+      "text": "`pipeline/phase3_write/briefings/formula_code_audit.md` with this exact"
+    },
+    {
+      "path": "skills/paper-modeler/SKILL.md",
+      "line": 189,
+      "text": "- Save to `pipeline/phase3_write/figures/`"
+    },
+    {
+      "path": "skills/paper-modeler/SKILL.md",
+      "line": 193,
+      "text": "Write `pipeline/phase3_write/briefings/modeling_briefing.md`:"
+    },
+    {
+      "path": "skills/paper-modeler/SKILL.md",
+      "line": 216,
+      "text": "under `pipeline/phase3_write/data/`. Diagnostic or input CSVs need not contain"
+    },
+    {
+      "path": "skills/paper-modeler/SKILL.md",
+      "line": 247,
+      "text": "See `pipeline/phase3_write/briefings/anomaly_log.md` (canonical, paper-modeler-owned)."
+    },
+    {
+      "path": "skills/paper-modeler/SKILL.md",
+      "line": 255,
+      "text": "`pipeline/phase3_write/data/` and write the canonical anomaly catalog to"
+    },
+    {
+      "path": "skills/paper-modeler/SKILL.md",
+      "line": 256,
+      "text": "`pipeline/phase3_write/briefings/anomaly_log.md`. This is the **single source"
+    },
+    {
+      "path": "skills/paper-modeler/SKILL.md",
+      "line": 265,
+      "text": "## Detection criteria applied (all CSVs in pipeline/phase3_write/data/)"
+    },
+    {
+      "path": "skills/paper-modeler/SKILL.md",
+      "line": 296,
+      "text": "- pipeline/phase3_write/data/[name].csv — [description]"
+    },
+    {
+      "path": "skills/paper-modeler/SKILL.md",
+      "line": 297,
+      "text": "- pipeline/phase3_write/figures/[name].pdf — [description]"
+    },
+    {
+      "path": "skills/paper-modeler/SKILL.md",
+      "line": 298,
+      "text": "- pipeline/phase3_write/briefings/modeling_briefing.md"
+    },
+    {
+      "path": "skills/paper-modeler/SKILL.md",
+      "line": 299,
+      "text": "- pipeline/phase3_write/briefings/formula_code_audit.md (canonical)"
+    },
+    {
+      "path": "skills/paper-modeler/SKILL.md",
+      "line": 300,
+      "text": "- pipeline/phase3_write/briefings/anomaly_log.md (canonical)"
+    },
+    {
+      "path": "skills/paper-writer/SKILL.md",
+      "line": 111,
+      "text": "The target is the house voice defined in `.claude/skills/house-style/SKILL.md`, its single"
+    },
+    {
+      "path": "skills/paper-writer/SKILL.md",
+      "line": 115,
+      "text": "1. `.claude/skills/house-style/SKILL.md`, sections \"The house voice\" (including the numbers-in-"
+    },
+    {
+      "path": "skills/paper-writer/SKILL.md",
+      "line": 120,
+      "text": "3. `.claude/skills/house-style/examples/dense-results-paragraph.md` before writing any results"
+    },
+    {
+      "path": "skills/paper-writer/SKILL.md",
+      "line": 122,
+      "text": "4. `.claude/skills/house-style/SKILL.md`, section \"Reader-first voice (what the metrics"
+    },
+    {
+      "path": "skills/paper-writer/SKILL.md",
+      "line": 141,
+      "text": "python3 .claude/skills/house-style/scripts/style_metrics.py <manuscript.tex> --compare --sections [--genre results] [--ref <exemplar>]"
+    },
+    {
+      "path": "skills/paper-writer/SKILL.md",
+      "line": 199,
+      "text": "`pipeline/phase3_write/briefings/formula_code_audit.md`. For every equation"
+    },
+    {
+      "path": "skills/paper-writer/SKILL.md",
+      "line": 254,
+      "text": "catalog: `pipeline/phase3_write/briefings/anomaly_log.md` (paper-modeler-owned)."
+    },
+    {
+      "path": "skills/paper-writer/SKILL.md",
+      "line": 349,
+      "text": "`pipeline/phase3_write/data/` produced during the current pipeline run."
+    },
+    {
+      "path": "skills/research-pipeline/README.md",
+      "line": 7,
+      "text": "For execution detail and prompt content see `SKILL.md`. For the brief format, see `research_brief_template.md`."
+    },
+    {
+      "path": "skills/research-pipeline/README.md",
+      "line": 14,
+      "text": "/research-pipeline research_brief.md [target=42] [max_polish=3] [max_rethinks=2] [max_phase_retries=2] [venue_compliance=on] [style_ref=reference/style_exemplar.tex] [style_genre=default]"
+    },
+    {
+      "path": "skills/research-pipeline/README.md",
+      "line": 112,
+      "text": "| `pipeline/phase3_write/briefings/formula_code_audit.md` | paper-modeler | paper-writer, paper-grader, paper-fixer |"
+    },
+    {
+      "path": "skills/research-pipeline/README.md",
+      "line": 113,
+      "text": "| `pipeline/phase3_write/briefings/anomaly_log.md` | paper-modeler | paper-writer (Discussion), paper-grader |"
+    },
+    {
+      "path": "skills/research-pipeline/README.md",
+      "line": 116,
+      "text": "| `pipeline/phase3_write/style_metrics.json`, `pipeline/phase4_polish/round_N/style_metrics.json` (optional, advisory) | research-pipeline (runs `style_metrics.py`) | paper-grader, paper-fixer, final report (information only) |"
+    },
+    {
+      "path": "skills/research-pipeline/README.md",
+      "line": 118,
+      "text": "Downstream skills READ these; they do NOT re-derive. This is enforced in each consumer's SKILL.md."
+    },
+    {
+      "path": "skills/research-pipeline/README.md",
+      "line": 124,
+      "text": "`~/.claude/skills/_shared/scoring_rubric.md` is the canonical mapping between:"
+    },
+    {
+      "path": "skills/research-pipeline/README.md",
+      "line": 138,
+      "text": "            Stop hook                                /skill-auditor                       apply-proposal.sh"
+    },
+    {
+      "path": "skills/research-pipeline/README.md",
+      "line": 144,
+      "text": "      ~/.claude/skill-telemetry/         ~/.claude/skill-proposals/         ~/.claude/skills/_snapshots/"
+    },
+    {
+      "path": "skills/research-pipeline/README.md",
+      "line": 151,
+      "text": "- **Telemetry**: every finished `pipeline/final_report.md` triggers `~/.claude/hooks/research-pipeline-telemetry.sh`, which extracts a structured JSON snapshot (outcome, scores, gate failures, rethinks, residual issues, lessons-learned excerpt) into `~/.claude/skill-telemetry/research-pipeline/`. Idempotent via `(path, mtime)` fingerprint; never blocks the Stop event."
+    },
+    {
+      "path": "skills/research-pipeline/README.md",
+      "line": 152,
+      "text": "- **Audit**: `/skill-auditor research-pipeline --last 10` reads the corpus, aggregates failure patterns, and proposes ≤7 surgical SKILL.md edits as unified diffs. Every edit cites at least one `run_id`. Frontmatter changes require ≥3-run signal (high blast radius)."
+    },
+    {
+      "path": "skills/research-pipeline/README.md",
+      "line": 153,
+      "text": "- **Apply**: `~/.claude/scripts/apply-proposal.sh <proposal-dir>` snapshots affected SKILL.md files to `~/.claude/skills/_snapshots/<ts>/`, validates ALL diffs (atomic — either all apply or none), and applies them. Rollback with `apply-proposal.sh --rollback <ts>`."
+    },
+    {
+      "path": "skills/research-pipeline/README.md",
+      "line": 162,
+      "text": "- `SKILL.md` — full orchestrator behavior (gates, dispatch prompts, retry logic, anti-patterns)"
+    },
+    {
+      "path": "skills/research-pipeline/README.md",
+      "line": 168,
+      "text": "- Per-round backups before any major refactor: `~/.claude/skills_backup_pre_round_{A,B,C}_<timestamp>/`"
+    },
+    {
+      "path": "skills/research-pipeline/README.md",
+      "line": 169,
+      "text": "- Per-apply snapshots from `apply-proposal.sh`: `~/.claude/skills/_snapshots/<timestamp>/`"
+    },
+    {
+      "path": "skills/research-pipeline/README.md",
+      "line": 170,
+      "text": "- All apply/rollback events logged in `~/.claude/skills/_snapshots/_history.log`"
+    },
+    {
+      "path": "skills/research-pipeline/research_brief_template.md",
+      "line": 30,
+      "text": "- **Location**: <!-- Relative path, e.g., data/trials_data.csv -->"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 64,
+      "text": "/research-pipeline research_brief.md [target=25] [max_polish=3]"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 89,
+      "text": "truth for the voice is `.claude/skills/house-style/SKILL.md` (sections \"The house voice\" and"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 92,
+      "text": "`~/.claude/skills/house-style/` for a global install). The standard is the exemplar and the"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 96,
+      "text": "**Advisory metrics.** `.claude/skills/house-style/scripts/style_metrics.py` (section \"Style"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 103,
+      "text": "python3 .claude/skills/house-style/scripts/style_metrics.py <manuscript.tex> \\"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 117,
+      "text": ".claude/skills/house-style/SKILL.md, sections \"The house voice\", \"Reader-first voice (what"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 125,
+      "text": "  python3 .claude/skills/house-style/scripts/style_metrics.py <file.tex> --compare --sections --genre <G> [--ref <style_ref>]"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 222,
+      "text": "│   └── validated_results/"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 227,
+      "text": "├── phase3_write/"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 277,
+      "text": "      - `phase3_write/manuscript.tex` plus its completion record and required data → inspect the plan and Phase 3 gates before inferring completion"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 473,
+      "text": "| **MARGINAL** | Write `pipeline/MARGINAL_decision_required.md` (template below). Set `pipeline_state.md` → `status: AWAITING_USER_INPUT`. Halt. To resume, the user edits the file's `Decision:` line to one of `PROCEED | RETHINK | STOP`, then re-invokes `/research-pipeline` (resume mode picks up the decision automatically). |"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 499,
+      "text": "Then run: `/research-pipeline research_brief.md` (resume detected from pipeline_state.md)"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 568,
+      "text": "           - pipeline/phase2_validate/validated_results/ (result CSVs and figures)"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 570,
+      "text": "           Write the manuscript to pipeline/phase3_write/"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 574,
+      "text": "  Output: pipeline/phase3_write/"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 616,
+      "text": "- [ ] `pipeline/phase3_write/data/` contains evaluation result CSVs"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 619,
+      "text": "      `pipeline/phase3_write/style_metrics.json` for the final report; they do not gate"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 647,
+      "text": "  Grade pipeline/phase3_write/manuscript.tex"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 705,
+      "text": "  prompt: \"/paper-grader pipeline/phase3_write/manuscript.tex\""
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 719,
+      "text": "           (or pipeline/phase3_write/manuscript.tex for round 0)"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 962,
+      "text": "     test types listed in `validate-method/SKILL.md §Step 4` must be present"
+    },
+    {
+      "path": "skills/research-pipeline/SKILL.md",
+      "line": 964,
+      "text": "     `validated_results/` each."
+    },
+    {
+      "path": "skills/validate-method/SKILL.md",
+      "line": 76,
+      "text": "| `validated_results/` | CSV result tables, key figures |"
+    },
+    {
+      "path": "skills/validate-method/SKILL.md",
+      "line": 198,
+      "text": "- Save ALL results to CSV files in `pipeline/phase2_validate/validated_results/`"
+    },
+    {
+      "path": "skills/validate-method/SKILL.md",
+      "line": 310,
+      "text": "- Save ALL results to CSV in `pipeline/phase2_validate/validated_results/`"
+    },
+    {
+      "path": "skills/validate-method/SKILL.md",
+      "line": 314,
+      "text": "- Save figures to `pipeline/phase2_validate/validated_results/figures/`"
+    },
+    {
+      "path": "skills/validate-method/SKILL.md",
+      "line": 380,
+      "text": "- `validated_results/[evaluation]_results.csv` — [description]"
+    },
+    {
+      "path": "skills/validate-method/SKILL.md",
+      "line": 381,
+      "text": "- `validated_results/stress_test_*.csv` — [description]"
+    },
+    {
+      "path": "skills/validate-method/SKILL.md",
+      "line": 382,
+      "text": "- `validated_results/figures/*.pdf` — [description]"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 68,
+      "text": "| `validated_results/` | pipeline/phase2_validate/ | YES |"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 73,
+      "text": "Write to `pipeline/phase3_write/`:"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 90,
+      "text": "| **Literature Lead** | `.claude/skills/literature-lead/SKILL.md` | Writing-focused literature review (positioning, citations) |"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 91,
+      "text": "| **Paper Modeler** | `.claude/skills/paper-modeler/SKILL.md` | Production evaluations, formula verification, figures |"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 92,
+      "text": "| **Paper Writer** | `.claude/skills/paper-writer/SKILL.md` | Manuscript sections (LaTeX prose, tables, figure integration) |"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 93,
+      "text": "| **Paper Critic** | `.claude/skills/paper-critic/SKILL.md` | Adversarial review (max 3 rounds) |"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 94,
+      "text": "| **House Style** | `.claude/skills/house-style/SKILL.md` | Final house-voice pass, judged against the exemplar by the reader-first read (F.2b) |"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 96,
+      "text": "**CRITICAL**: Before dispatching any sub-agent, read its SKILL.md file and include"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 110,
+      "text": "   pipeline/phase3_write/"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 138,
+      "text": "7. **Write initial plan** to `pipeline/phase3_write/decision_log.md`:"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 162,
+      "text": "  prompt: \"[Full content of .claude/skills/literature-lead/SKILL.md]"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 195,
+      "text": "  Write all briefings to pipeline/phase3_write/briefings/\""
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 202,
+      "text": "- [ ] `pipeline/phase3_write/briefings/literature_briefing.md` exists"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 220,
+      "text": "  prompt: \"[Full content of .claude/skills/paper-modeler/SKILL.md]"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 248,
+      "text": "  - Production data CSVs: pipeline/phase3_write/data/"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 249,
+      "text": "  - Publication figures (PDF): pipeline/phase3_write/figures/"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 250,
+      "text": "  - Modeling briefing: pipeline/phase3_write/briefings/modeling_briefing.md"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 253,
+      "text": "    pipeline/phase3_write/briefings/formula_code_audit.md"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 255,
+      "text": "    pipeline/phase3_write/briefings/anomaly_log.md"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 272,
+      "text": "- [ ] `pipeline/phase3_write/data/` contains result CSVs"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 273,
+      "text": "- [ ] `pipeline/phase3_write/figures/` contains the displays required by the manuscript plan"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 274,
+      "text": "- [ ] `pipeline/phase3_write/briefings/modeling_briefing.md` exists"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 275,
+      "text": "- [ ] `pipeline/phase3_write/briefings/formula_code_audit.md` exists with ZERO unresolved MISMATCH rows"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 276,
+      "text": "- [ ] `pipeline/phase3_write/briefings/anomaly_log.md` exists"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 277,
+      "text": "- [ ] `pipeline/phase2_validate/comparator_inventory.md` gate=COMPLETE (or CONDITIONAL with documented rationale); every FULL ID present in EVERY CSV under `pipeline/phase3_write/data/`"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 297,
+      "text": "Phase 3 prompt (§Writing Style of `research-pipeline/SKILL.md`). If you run standalone"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 299,
+      "text": "`.claude/skills/house-style/SKILL.md` and the exemplar (if any), and gives the `--genre` flag"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 308,
+      "text": "  prompt: \"[Full content of .claude/skills/paper-writer/SKILL.md]"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 316,
+      "text": "  - Modeling briefing: pipeline/phase3_write/briefings/modeling_briefing.md"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 320,
+      "text": "  Create pipeline/phase3_write/manuscript.tex with the full document preamble"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 325,
+      "text": "  Also create pipeline/phase3_write/references.bib with initial bibliography entries."
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 331,
+      "text": "  - For every equation, READ pipeline/phase3_write/briefings/formula_code_audit.md"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 344,
+      "text": "  prompt: \"[Full content of .claude/skills/paper-writer/SKILL.md]"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 350,
+      "text": "  - Literature briefing: pipeline/phase3_write/briefings/literature_briefing.md"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 355,
+      "text": "  - Current manuscript: pipeline/phase3_write/manuscript.tex"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 370,
+      "text": "  prompt: \"[Full content of .claude/skills/paper-writer/SKILL.md]"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 376,
+      "text": "  - Production data: pipeline/phase3_write/data/*.csv (ALL files)"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 377,
+      "text": "  - Figures: pipeline/phase3_write/figures/ (ALL files)"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 380,
+      "text": "  - Modeling briefing: pipeline/phase3_write/briefings/modeling_briefing.md"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 381,
+      "text": "  - Current manuscript: pipeline/phase3_write/manuscript.tex"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 399,
+      "text": "  prompt: \"[Full content of .claude/skills/paper-writer/SKILL.md]"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 405,
+      "text": "  - Full manuscript so far: pipeline/phase3_write/manuscript.tex"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 406,
+      "text": "  - Production data: pipeline/phase3_write/data/*.csv"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 411,
+      "text": "  - Read pipeline/phase3_write/briefings/anomaly_log.md (paper-modeler-owned)."
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 428,
+      "text": "2. Check for LaTeX compilation: `pdflatex --draftmode pipeline/phase3_write/manuscript.tex`"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 434,
+      "text": "   (`python3 .claude/skills/house-style/scripts/style_metrics.py pipeline/phase3_write/manuscript.tex --compare --sections --genre <G> [--ref <exemplar>]`)"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 465,
+      "text": "       prompt: \"[Full content of .claude/skills/paper-critic/SKILL.md]"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 471,
+      "text": "       - Manuscript: pipeline/phase3_write/manuscript.tex"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 472,
+      "text": "       - Production data: pipeline/phase3_write/data/"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 473,
+      "text": "       - Figures: pipeline/phase3_write/figures/"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 475,
+      "text": "       - Decision log: pipeline/phase3_write/decision_log.md"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 511,
+      "text": "cd pipeline/phase3_write && pdflatex manuscript && bibtex manuscript && pdflatex manuscript && pdflatex manuscript"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 542,
+      "text": "  prompt: \"[Full content of .claude/skills/house-style/SKILL.md]"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 543,
+      "text": "  Run: house-style on pipeline/phase3_write/manuscript.tex --thorough --relocate-numbers"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 574,
+      "text": "      pipeline report: `python3 .claude/skills/house-style/scripts/style_metrics.py"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 575,
+      "text": "      pipeline/phase3_write/manuscript.tex --compare --sections --genre <G> [--ref <exemplar>]"
+    },
+    {
+      "path": "skills/write-manuscript/SKILL.md",
+      "line": 576,
+      "text": "      --json > pipeline/phase3_write/style_metrics.json`. The metrics are information, not a"
+    }
+  ],
+  "runtime_packages": {
+    "numpy": "2.3.5",
+    "scipy": null,
+    "pandas": "3.0.1",
+    "matplotlib": null,
+    "scikit-learn": null,
+    "pypdf": "6.10.0",
+    "pymupdf": null
+  },
+  "totals": {
+    "files": 69,
+    "bytes": 932413,
+    "csv": 23,
+    "pdf": 6,
+    "python": 5,
+    "skills": 13
+  },
+  "latex_static": {
+    "bibliography_entries": 17,
+    "citation_keys": 16,
+    "missing_citation_keys": [],
+    "uncited_bibliography_keys": [
+      "diakonikolas2019algorithmic"
+    ],
+    "duplicate_labels": [],
+    "undefined_refs": [],
+    "included_graphics": [
+      {
+        "path": "figures/comparison_main.pdf",
+        "exists": true
+      },
+      {
+        "path": "figures/source_weights.pdf",
+        "exists": true
+      },
+      {
+        "path": "figures/sensitivity_shift.pdf",
+        "exists": true
+      },
+      {
+        "path": "figures/stress_heatmap.pdf",
+        "exists": true
+      }
+    ],
+    "style_file_neurips_2025_present": false,
+    "compiled_manuscript_present": false
+  },
+  "csv_checks": {
+    "rows_read": 322,
+    "coverage_and_pvalue_range_issues": [],
+    "empty_cells": 0,
+    "nonfinite_cells": 0
+  },
+  "tests": [
+    {
+      "test": "all Python source parses via ast.parse",
+      "status": "PASS",
+      "files": 5,
+      "writes": "none"
+    },
+    {
+      "test": "Bash syntax only (bash -n)",
+      "status": "PASS",
+      "exit_code": 0,
+      "stderr": "",
+      "writes": "none; loop not executed",
+      "initial_sandbox_failure": "      0 [main] bash (5976) C:\\Program Files\\Git\\usr\\bin\\bash.exe: *** fatal error - NtCreateDirectoryObject(\\BaseNamedObjects\\msys-2.0S5-1888ae32e00d56aa): 0xC0000022\n",
+      "retry": "Read-only bash -n retried with approved escalation; no loop executed"
+    },
+    {
+      "test": "style_metrics.py CLI --compare --sections --json",
+      "status": "PASS",
+      "exit_code": 0,
+      "result": {
+        "reference": {
+          "file": "(default exemplar: Statistical Science methods paper)",
+          "paragraphs": 82,
+          "prose_words": 8227,
+          "sentences_per_paragraph": 5.3,
+          "mean_sentence_words": 19.0,
+          "pct_sentences_over_45": 1.8,
+          "numbers_per_1k": 8.0,
+          "pct_sentences_over_3_numbers": 1.2,
+          "max_numbers_per_sentence": 6,
+          "we_per_1k": 11.4,
+          "which_per_1k": 2.7,
+          "semicolons_per_1k": 2.8
+        },
+        "target": {
+          "file": "manuscript.tex",
+          "paragraphs": 47,
+          "prose_words": 3208,
+          "sentences_per_paragraph": 3.7,
+          "mean_sentence_words": 18.4,
+          "pct_sentences_over_45": 1.7,
+          "numbers_per_1k": 53.9,
+          "pct_sentences_over_3_numbers": 7.5,
+          "max_numbers_per_sentence": 8,
+          "we_per_1k": 5.9,
+          "which_per_1k": 2.2,
+          "semicolons_per_1k": 6.2
+        },
+        "genre": "default",
+        "calibration": "default",
+        "comparison": [
+          {
+            "metric": "mean_sentence_words",
+            "value": 18.4,
+            "exemplar": 19.0,
+            "typical_range": "17-24",
+            "note": "close to exemplar"
+          },
+          {
+            "metric": "pct_sentences_over_45",
+            "value": 1.7,
+            "exemplar": 1.8,
+            "typical_range": "up to 5",
+            "note": "close to exemplar"
+          },
+          {
+            "metric": "sentences_per_paragraph",
+            "value": 3.7,
+            "exemplar": 5.3,
+            "typical_range": "4-7",
+            "note": "below exemplar; outside exemplar's typical range"
+          },
+          {
+            "metric": "we_per_1k",
+            "value": 5.9,
+            "exemplar": 11.4,
+            "typical_range": "7 or more",
+            "note": "below exemplar; outside exemplar's typical range"
+          },
+          {
+            "metric": "semicolons_per_1k",
+            "value": 6.2,
+            "exemplar": 2.8,
+            "typical_range": "up to 3.5",
+            "note": "above exemplar; outside exemplar's typical range"
+          },
+          {
+            "metric": "numbers_per_1k",
+            "value": 53.9,
+            "exemplar": 8.0,
+            "typical_range": "up to 10",
+            "note": "above exemplar; outside exemplar's typical range"
+          },
+          {
+            "metric": "pct_sentences_over_3_numbers",
+            "value": 7.5,
+            "exemplar": 1.2,
+            "typical_range": "up to 2",
+            "note": "above exemplar; outside exemplar's typical range"
+          }
+        ],
+        "sections": [
+          {
+            "file": "(front matter)",
+            "paragraphs": 1,
+            "prose_words": 151,
+            "sentences_per_paragraph": 7.0,
+            "mean_sentence_words": 21.6,
+            "pct_sentences_over_45": 0.0,
+            "numbers_per_1k": 26.5,
+            "pct_sentences_over_3_numbers": 0.0,
+            "max_numbers_per_sentence": 2,
+            "we_per_1k": 13.2,
+            "which_per_1k": 6.6,
+            "semicolons_per_1k": 0.0
+          },
+          {
+            "file": "Introduction",
+            "paragraphs": 6,
+            "prose_words": 414,
+            "sentences_per_paragraph": 3.8,
+            "mean_sentence_words": 18.0,
+            "pct_sentences_over_45": 0.0,
+            "numbers_per_1k": 4.8,
+            "pct_sentences_over_3_numbers": 0.0,
+            "max_numbers_per_sentence": 2,
+            "we_per_1k": 7.2,
+            "which_per_1k": 4.8,
+            "semicolons_per_1k": 0.0
+          },
+          {
+            "file": "Related Work",
+            "paragraphs": 4,
+            "prose_words": 219,
+            "sentences_per_paragraph": 2.2,
+            "mean_sentence_words": 24.3,
+            "pct_sentences_over_45": 11.1,
+            "numbers_per_1k": 0.0,
+            "pct_sentences_over_3_numbers": 0.0,
+            "max_numbers_per_sentence": 0,
+            "we_per_1k": 4.6,
+            "which_per_1k": 0.0,
+            "semicolons_per_1k": 9.1
+          },
+          {
+            "file": "Problem Setup",
+            "paragraphs": 3,
+            "prose_words": 113,
+            "sentences_per_paragraph": 2.3,
+            "mean_sentence_words": 16.1,
+            "pct_sentences_over_45": 0.0,
+            "numbers_per_1k": 0.0,
+            "pct_sentences_over_3_numbers": 0.0,
+            "max_numbers_per_sentence": 0,
+            "we_per_1k": 8.8,
+            "which_per_1k": 0.0,
+            "semicolons_per_1k": 8.8
+          },
+          {
+            "file": "Proposed Method: \\DISCOM{}",
+            "paragraphs": 4,
+            "prose_words": 187,
+            "sentences_per_paragraph": 3.2,
+            "mean_sentence_words": 14.4,
+            "pct_sentences_over_45": 0.0,
+            "numbers_per_1k": 5.3,
+            "pct_sentences_over_3_numbers": 0.0,
+            "max_numbers_per_sentence": 1,
+            "we_per_1k": 0.0,
+            "which_per_1k": 5.3,
+            "semicolons_per_1k": 0.0
+          },
+          {
+            "file": "Theoretical Analysis",
+            "paragraphs": 1,
+            "prose_words": 38,
+            "sentences_per_paragraph": 2.0,
+            "mean_sentence_words": 19.0,
+            "pct_sentences_over_45": 0.0,
+            "numbers_per_1k": 0.0,
+            "pct_sentences_over_3_numbers": 0.0,
+            "max_numbers_per_sentence": 0,
+            "we_per_1k": 0.0,
+            "which_per_1k": 0.0,
+            "semicolons_per_1k": 0.0
+          },
+          {
+            "file": "Experiments",
+            "paragraphs": 23,
+            "prose_words": 1548,
+            "sentences_per_paragraph": 3.8,
+            "mean_sentence_words": 17.8,
+            "pct_sentences_over_45": 0.0,
+            "numbers_per_1k": 91.7,
+            "pct_sentences_over_3_numbers": 13.8,
+            "max_numbers_per_sentence": 8,
+            "we_per_1k": 7.1,
+            "which_per_1k": 1.9,
+            "semicolons_per_1k": 5.8
+          },
+          {
+            "file": "Discussion",
+            "paragraphs": 4,
+            "prose_words": 383,
+            "sentences_per_paragraph": 4.5,
+            "mean_sentence_words": 21.3,
+            "pct_sentences_over_45": 5.6,
+            "numbers_per_1k": 47.0,
+            "pct_sentences_over_3_numbers": 5.6,
+            "max_numbers_per_sentence": 4,
+            "we_per_1k": 0.0,
+            "which_per_1k": 0.0,
+            "semicolons_per_1k": 18.3
+          },
+          {
+            "file": "Conclusion",
+            "paragraphs": 1,
+            "prose_words": 155,
+            "sentences_per_paragraph": 8.0,
+            "mean_sentence_words": 19.4,
+            "pct_sentences_over_45": 12.5,
+            "numbers_per_1k": 38.7,
+            "pct_sentences_over_3_numbers": 0.0,
+            "max_numbers_per_sentence": 3,
+            "we_per_1k": 6.5,
+            "which_per_1k": 0.0,
+            "semicolons_per_1k": 6.5
+          }
+        ]
+      },
+      "writes": "stdout only"
+    },
+    {
+      "test": "style_metrics.py CLI --gate --genre results --ref D:\\PLUGIN\\work\\expanded\\ARMS-main\\case-studies\\conformal-prediction\\manuscript.tex --json",
+      "status": "PASS",
+      "exit_code": 0,
+      "result": {
+        "reference": {
+          "file": "manuscript.tex",
+          "paragraphs": 47,
+          "prose_words": 3208,
+          "sentences_per_paragraph": 3.7,
+          "mean_sentence_words": 18.4,
+          "pct_sentences_over_45": 1.7,
+          "numbers_per_1k": 53.9,
+          "pct_sentences_over_3_numbers": 7.5,
+          "max_numbers_per_sentence": 8,
+          "we_per_1k": 5.9,
+          "which_per_1k": 2.2,
+          "semicolons_per_1k": 6.2
+        },
+        "target": {
+          "file": "manuscript.tex",
+          "paragraphs": 47,
+          "prose_words": 3208,
+          "sentences_per_paragraph": 3.7,
+          "mean_sentence_words": 18.4,
+          "pct_sentences_over_45": 1.7,
+          "numbers_per_1k": 53.9,
+          "pct_sentences_over_3_numbers": 7.5,
+          "max_numbers_per_sentence": 8,
+          "we_per_1k": 5.9,
+          "which_per_1k": 2.2,
+          "semicolons_per_1k": 6.2
+        },
+        "genre": "results",
+        "calibration": "derived from --ref",
+        "comparison": [
+          {
+            "metric": "mean_sentence_words",
+            "value": 18.4,
+            "exemplar": 18.4,
+            "typical_range": "16.6-23",
+            "note": "close to exemplar"
+          },
+          {
+            "metric": "pct_sentences_over_45",
+            "value": 1.7,
+            "exemplar": 1.7,
+            "typical_range": "up to 4.8",
+            "note": "close to exemplar"
+          },
+          {
+            "metric": "sentences_per_paragraph",
+            "value": 3.7,
+            "exemplar": 3.7,
+            "typical_range": "2.8-4.9",
+            "note": "close to exemplar"
+          },
+          {
+            "metric": "we_per_1k",
+            "value": 5.9,
+            "exemplar": 5.9,
+            "typical_range": "3.5 or more",
+            "note": "close to exemplar"
+          },
+          {
+            "metric": "semicolons_per_1k",
+            "value": 6.2,
+            "exemplar": 6.2,
+            "typical_range": "up to 7.8",
+            "note": "close to exemplar"
+          },
+          {
+            "metric": "numbers_per_1k",
+            "value": 53.9,
+            "exemplar": 53.9,
+            "typical_range": "up to 102.4",
+            "note": "close to exemplar"
+          },
+          {
+            "metric": "pct_sentences_over_3_numbers",
+            "value": 7.5,
+            "exemplar": 7.5,
+            "typical_range": "up to 31.5",
+            "note": "close to exemplar"
+          }
+        ]
+      },
+      "writes": "stdout only"
+    },
+    {
+      "test": "small deterministic DISCOMCP fit/predict and five comparator fits",
+      "status": "PASS",
+      "method_threshold": 1.9199999999999997,
+      "method_weights": [
+        1.0,
+        0.0
+      ],
+      "method_coverage": 0.76,
+      "method_width": 3.8399999999999994,
+      "comparators": [
+        "SplitConformal",
+        "RobustConformal",
+        "AdaptiveConformal",
+        "OracleSingleSource",
+        "UniformMixture"
+      ],
+      "excluded": "WeightedConformal imports unavailable scikit-learn; run_validation import avoided because os.makedirs at module scope",
+      "writes": "none; python -B prevents bytecode"
+    }
+  ],
+  "system_python_packages": {
+    "numpy": "2.4.2",
+    "scipy": "1.17.1",
+    "pandas": "3.0.1",
+    "matplotlib": "3.10.8",
+    "scikit-learn": null,
+    "pypdf": "6.7.1"
+  },
+  "audit_date": "2026-10-25",
+  "scope": "Static full-file inventory, all UTF-8 text and CSV bytes read, all code inspected, PDF metadata and extractable text inspected; no expensive experiments or external model loops.",
+  "findings": [
+    {
+      "id": "ARMS-01",
+      "severity": "blocker",
+      "title": "Three invoked helper skills are absent",
+      "locations": [
+        "skills/research-pipeline/SKILL.md:530",
+        "skills/research-pipeline/SKILL.md:688",
+        "skills/research-pipeline/SKILL.md:762"
+      ],
+      "details": "failure-diagnoser, venue-compliance-gate, consistency-auditor are invoked but not shipped. Venue gate defaults off in SKILL (README example says on). Consistency audit is a required final gate.",
+      "adaptation": "Use separately labelled local replacement role documents with explicit provenance and existence checks, or report gate unavailable. Do not claim these are supplied upstream skills."
+    },
+    {
+      "id": "ARMS-02",
+      "severity": "blocker",
+      "title": "Canonical shared scoring rubric is not shipped",
+      "locations": [
+        "skills/paper-critic/SKILL.md:107",
+        "skills/paper-critic/SKILL.md:130",
+        "skills/paper-critic/SKILL.md:205",
+        "skills/paper-grader/SKILL.md:543",
+        "skills/research-pipeline/README.md:124"
+      ],
+      "details": "References ~/.claude/skills/_shared/scoring_rubric.md, absent. Embedded paper-grader scoring text exists, but is not proof of the absent canonical severity/escalation document.",
+      "adaptation": "Mark unavailable explicitly; retain embedded rubric as supplied, never fabricate the canonical document."
+    },
+    {
+      "id": "ARMS-03",
+      "severity": "high",
+      "title": "Critic loop edits in place and automatically commits unrelated repository state",
+      "locations": [
+        "skills/critic-revisor/run_loop.sh:120",
+        "skills/critic-revisor/run_loop.sh:469",
+        "skills/critic-revisor/run_loop.sh:490",
+        "skills/critic-revisor/run_loop.sh:491"
+      ],
+      "details": "Automatic git add -A and commit run on any enclosing Git repository. Snapshots protect main .tex/.pdf only; revisor may edit in place and failed builds do not roll back. Model processes have no wall-clock timeout.",
+      "adaptation": "Default Git snapshots off; explicit opt-in, clean-index precondition, bounded manuscript/run paths only. Check all prerequisites before outputs/models. Never run against preserved resources."
+    },
+    {
+      "id": "ARMS-04",
+      "severity": "high",
+      "title": "Private installation paths and Claude APIs require adaptation",
+      "locations": [
+        "skills/brief-expander/SKILL.md:61",
+        "skills/critic-revisor/SKILL.md:21",
+        "skills/house-style/SKILL.md:53",
+        "skills/research-pipeline/README.md:151"
+      ],
+      "details": "Claude Read/Glob/Grep/Bash/Task/Agent/WebSearch/WebFetch and general-purpose subagent_type are host-specific. Private telemetry hook, skill-auditor, apply-proposal script, snapshots and macOS LaunchAgent are absent.",
+      "adaptation": "Resolve bundled skills relative to SKILL directory; execute from resolved absolute paths. Use host equivalents honestly; mark private services unavailable. Project pipeline outputs remain task-local."
+    },
+    {
+      "id": "ARMS-05",
+      "severity": "high",
+      "title": "Case-study executable package is incomplete",
+      "locations": [
+        "case-studies/conformal-prediction/code/run_validation.py:30",
+        "case-studies/conformal-prediction/code/run_validation.py:31",
+        "case-studies/conformal-prediction/code/generate_figures.py:19",
+        "case-studies/conformal-prediction/code/generate_figures.py:60",
+        "case-studies/conformal-prediction/manuscript.tex:4"
+      ],
+      "details": "Scripts expect/create sibling validated_results, but shipped results are data/mve_production.csv and data/stress_all.csv, not mve_results.csv/stress_tests_combined.csv. Production/sensitivity/real-data/ablation/significance/conditional-coverage generators and raw Housing/Wine inputs are absent. NeurIPS 2025 style and compiled manuscript are absent.",
+      "adaptation": "Preserve as historical example. For a rerun copy full case to writable task workspace and configure output/input directories. Do not equate production data with 500-rep validation simply by renaming. Obtain missing official style/data and rebuild generators separately if reproduction is requested."
+    },
+    {
+      "id": "ARMS-06",
+      "severity": "medium",
+      "title": "Conflicting templates and historical narrative",
+      "locations": [
+        "research_brief_template.md",
+        "skills/research-pipeline/research_brief_template.md",
+        "DISCLAIMER.md",
+        "case-studies/conformal-prediction/pipeline_log.md"
+      ],
+      "details": "Root template has author exemplars/manuscript shape/contribution fields missing from skill-local template; skill template has statistics-specific defaults. DISCLAIMER describes absent clinical data/trials_data.csv and two biostatistics case studies. README markets domain-agnostic pipeline; pipeline scope is statistical/biostatistical methodology. Six historic validation iterations exceed present max-three instructions.",
+      "adaptation": "Use richer root template for new briefs while preserving both originals. Mark clinical disclaimer cross-repo provenance and historic results; do not advertise general-domain autonomous scientific validation."
+    },
+    {
+      "id": "ARMS-07",
+      "severity": "medium",
+      "title": "Numerical implementation assumptions must remain visible",
+      "locations": [
+        "case-studies/conformal-prediction/code/run_validation.py:41",
+        "case-studies/conformal-prediction/code/run_validation.py:283",
+        "case-studies/conformal-prediction/code/run_validation.py:288",
+        "case-studies/conformal-prediction/code/run_validation.py:763",
+        "case-studies/conformal-prediction/code/comparators.py:293",
+        "case-studies/conformal-prediction/code/method.py:105"
+      ],
+      "details": "generate_mve_data accepts K but always creates five sources and assumes d>=4. Base model is fitted on the same source observations scored for calibration. Oracle label says test/ground-truth selection but caller supplies target calibration scores. Report CONDITIONAL GO accepts min coverage 0.840 while code marks min<0.85 NO-GO. Method validation of empty/nonfinite/negative input and alpha bounds is absent; RandomState(0) search fixed.",
+      "adaptation": "Treat code as demonstration, not general validated conformal library; document parameter domain and compare exact scripts/data before any new scientific claim. Formal deployed data-dependent-weight guarantee is acknowledged missing in manuscript."
+    },
+    {
+      "id": "ARMS-08",
+      "severity": "medium",
+      "title": "Style metrics are portable diagnostics with parser limits",
+      "locations": [
+        "skills/house-style/scripts/style_metrics.py:46",
+        "skills/house-style/scripts/style_metrics.py:127",
+        "skills/house-style/scripts/style_metrics.py:165",
+        "skills/house-style/scripts/style_metrics.py:200",
+        "skills/house-style/scripts/style_metrics.py:244"
+      ],
+      "details": "Stdlib only. Ignores paragraphs <=40 tokens, uses regex rather than TeX parser, does not follow input/include, locale-default decoding errors ignored. include-appendix still stops at bibliography, so appendices after bibliography are not included. --ref/--genre missing arguments can IndexError; unknown genre is unchecked; successful --gate always exits zero by design. Default full exemplar is not distributed.",
+      "adaptation": "Keep advisory. Supply accessible user exemplar with --ref. Do not interpret metric CLI success as manuscript, style or scientific approval."
+    }
+  ],
+  "dependencies": {
+    "stdlib_style_metrics": [
+      "json",
+      "os",
+      "re",
+      "sys"
+    ],
+    "case_python": [
+      "numpy",
+      "scipy (stats, optimize.linprog/HiGHS)",
+      "pandas",
+      "matplotlib (Agg/pyplot)",
+      "scikit-learn (Ridge, LogisticRegression)"
+    ],
+    "version_constraints": "No requirements file, environment lock, minimum versions, or package manifest supplied. scikit-learn missing from README requirements despite imports.",
+    "critic_cli": [
+      "Bash",
+      "claude (authenticated)",
+      "codex (authenticated)",
+      "latexmk",
+      "latexdiff",
+      "pdflatex/TeX engine",
+      "md5 or md5sum",
+      "dirname",
+      "basename",
+      "date",
+      "mkdir",
+      "cp",
+      "find",
+      "xargs",
+      "grep",
+      "tail",
+      "seq",
+      "cat",
+      "awk",
+      "rm",
+      "sleep",
+      "kill",
+      "timeout or gtimeout optional; shell watchdog fallback",
+      "git optional; original enabled automatically"
+    ],
+    "latex_packages": [
+      "article",
+      "neurips_2025 (missing)",
+      "inputenc",
+      "fontenc",
+      "hyperref",
+      "url",
+      "booktabs",
+      "amsfonts",
+      "amsmath",
+      "amssymb",
+      "amsthm",
+      "nicefrac",
+      "microtype",
+      "xcolor",
+      "graphicx",
+      "algorithm",
+      "algorithmic",
+      "natbib",
+      "multirow",
+      "subcaption",
+      "tikz (shapes.geometric, arrows.meta, positioning, fit, calc, decorations.pathreplacing)",
+      "plainnat.bst",
+      "BibTeX"
+    ],
+    "external_services": [
+      "Claude Code model/API via claude CLI",
+      "Codex model/API via codex CLI; source mentions chatgpt.com/backend-api/codex/responses",
+      "Host WebSearch/WebFetch against scholarly pages (arXiv/journal/author repositories). No direct HTTP client in supplied Python or shell."
+    ],
+    "explicit_urls": [
+      "https://creativecommons.org/licenses/by-nc/4.0/legalcode",
+      "https://claude.com/claude-code",
+      "https://github.com/koaeraser/ARMS-Biostat"
+    ]
+  },
+  "license": {
+    "identifier": "CC-BY-NC-4.0",
+    "file": "LICENSE",
+    "copyright": "Copyright (c) 2026; no named holder in license text",
+    "terms_observed": [
+      "Attribution and license link",
+      "Indicate changes",
+      "NonCommercial",
+      "No additional restrictions"
+    ],
+    "integration": "Retain license/disclaimer and source provenance; do not label ARMS content MIT or unrestricted commercial. No separate asset license notices found."
+  },
+  "path_adaptations": [
+    {
+      "from": ".claude/skills/<skill>/ and ~/.claude/skills/<skill>/",
+      "to": "../arms-<skill>/ relative to current active skill directory; resolve absolute before shell execution"
+    },
+    {
+      "from": "../house-style/",
+      "to": "../arms-house-style/"
+    },
+    {
+      "from": "~/.claude/skills/research-pipeline/research_brief_template.md",
+      "to": "../../resources/upstream/ARMS-main/research_brief_template.md relative active skill"
+    },
+    {
+      "from": "skills/critic-revisor/run_loop.sh",
+      "to": "active skills/arms-critic-revisor/run_loop.sh; preserve original upstream separately"
+    },
+    {
+      "from": "private _shared, telemetry, apply-proposal, LaunchAgent",
+      "to": "explicit unavailable markers; no fabricated replacement"
+    },
+    {
+      "from": "pipeline/... and research_brief.md",
+      "to": "retain generated task-workspace relative paths; never output into plugin resources"
+    }
+  ],
+  "immutable_verification": {
+    "files": 69,
+    "changed": [],
+    "extra_files": []
+  },
+  "adapter_implementation": {
+    "module": "build_tools/adapt_arms.py",
+    "entrypoint": "adapt_arms(package_root: Path) -> list[dict]",
+    "test_file": "tests/test_arms_adapters.py",
+    "adapter_tests": 6,
+    "adapter_tests_status": "PASS",
+    "full_current_suite": {
+      "tests": 28,
+      "skipped": 3,
+      "status": "PASS"
+    },
+    "execution": "No real model loops or expensive experiments. Git Bash tests needed approved escalation. Git commits created only in temporary test repositories.",
+    "residuals": [
+      "Full pipeline needs actual host scholarly search/delegation and user data; no external account is configured by this adapter.",
+      "Canonical upstream scoring rubric is absent and remains explicitly unavailable. Three local helper role documents must be supplied separately.",
+      "Case-study scientific reproduction is not completed; raw/production inputs and generators/style remain absent.",
+      "Critic loop still edits manuscript in place; model defaults and prompt-only reviewer constraints remain upstream behavior.",
+      "Case-study and style-metrics parser limitations remain documented; numerical/style scripts were not changed by adapter."
+    ]
+  }
+}

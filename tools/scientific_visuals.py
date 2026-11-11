@@ -16,26 +16,6 @@ import tempfile
 from pathlib import Path
 
 
-def contrast_ratio(foreground, background):
-    """Return the WCAG sRGB luminance contrast of two opaque hex colors.
-
-    Accepts #RGB or #RRGGBB; transparency and other color spaces must be
-    resolved by the caller. A ratio alone does not establish accessibility.
-    """
-    def luminance(value):
-        if not isinstance(value, str) or not re.fullmatch(r"#(?:[0-9a-fA-F]{3}|[0-9a-fA-F]{6})", value):
-            raise ValueError("colors must be opaque sRGB hex values in #RGB or #RRGGBB form")
-        digits = value[1:]
-        if len(digits) == 3:
-            digits = ''.join(c * 2 for c in digits)
-        channels = [int(digits[i:i + 2], 16) / 255 for i in (0, 2, 4)]
-        linear = [c / 12.92 if c <= 0.04045 else ((c + 0.055) / 1.055) ** 2.4 for c in channels]
-        return sum(weight * channel for weight, channel in zip((0.2126, 0.7152, 0.0722), linear))
-
-    a, b = luminance(foreground), luminance(background)
-    return (max(a, b) + 0.05) / (min(a, b) + 0.05)
-
-
 def _dependencies():
     # Matplotlib may otherwise create a cache under the user's home directory.
     if "MPLCONFIGDIR" not in os.environ:
@@ -156,6 +136,24 @@ def interval_plot(labels, estimates, lower, upper, *, xlabel="Estimate", referen
     return fig, ax
 
 
+def contrast_ratio(foreground, background):
+    """Return the WCAG sRGB luminance contrast of two opaque hex colors.
+
+    Accepts #RGB or #RRGGBB; transparency and other color spaces must be
+    resolved by the caller. A ratio alone does not establish accessibility.
+    """
+    def luminance(value):
+        if not isinstance(value, str) or not re.fullmatch(r"#(?:[0-9a-fA-F]{3}|[0-9a-fA-F]{6})", value):
+            raise ValueError("colors must be opaque sRGB hex values in #RGB or #RRGGBB form")
+        digits = value[1:]
+        if len(digits) == 3:
+            digits = ''.join(c * 2 for c in digits)
+        channels = [int(digits[i:i + 2], 16) / 255 for i in (0, 2, 4)]
+        linear = [c / 12.92 if c <= 0.04045 else ((c + 0.055) / 1.055) ** 2.4 for c in channels]
+        return sum(weight * channel for weight, channel in zip((0.2126, 0.7152, 0.0722), linear))
+
+    a, b = luminance(foreground), luminance(background)
+    return (max(a, b) + 0.05) / (min(a, b) + 0.05)
 
 def distribution_plot(groups, labels, *, ylabel="Value", title=None, width=160, height=100):
     """Show each supplied observation without estimating a distribution or interval.
@@ -178,7 +176,6 @@ def distribution_plot(groups, labels, *, ylabel="Value", title=None, width=160, 
     ax.set(ylabel=ylabel, title=title or "")
     ax.margins(x=.2, y=.15)
     return fig, ax
-
 
 def paired_plot(values, labels, *, subject_labels=None, ylabel="Value", title=None, width=160, height=100):
     """Plot each row as one paired unit; NaN marks an unavailable observation.
@@ -208,7 +205,6 @@ def paired_plot(values, labels, *, subject_labels=None, ylabel="Value", title=No
     ax.set(ylabel=ylabel, title=title or "")
     ax.margins(x=.2, y=.15)
     return fig, ax
-
 
 def grid_heatmap(values, x_labels, y_labels, *, value_label="Value", xlabel="", ylabel="",
                  vmin=None, vmax=None, title=None, width=160, height=100):
@@ -246,7 +242,6 @@ def grid_heatmap(values, x_labels, y_labels, *, value_label="Value", xlabel="", 
         ax.legend(handles=[Patch(facecolor="#d0d0d0", edgecolor="0.3", label="Missing")],
                   loc="upper left", bbox_to_anchor=(1.02, 1))
     return fig, ax
-
 
 def pareto_frontier(points, directions=("lower", "higher")):
     """Return nondominated input indices, retaining exact duplicate points.

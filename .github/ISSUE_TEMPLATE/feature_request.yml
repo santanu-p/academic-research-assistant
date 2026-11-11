@@ -1,16 +1,34 @@
-name: Feature request
-description: Suggest an improvement to an independent research workflow.
-title: '[Feature]: '
+name: Improvement request
+description: Propose a focused improvement to the local research assistant.
+title: "[Improvement]: "
 body:
+  - type: markdown
+    attributes:
+      value: |
+        This public collection includes third-party materials with separate terms. Do not attach source materials unless you have permission to share them. A catalog entry or local check does not prove an external service connection or completed research.
   - type: textarea
     id: problem
     attributes:
-      label: Problem and desired outcome
-      description: Describe the task, why current behavior is insufficient, and what a successful result would look like.
+      label: User problem
+      description: Describe the task that is difficult today and a concrete example.
     validations:
       required: true
   - type: textarea
-    id: constraints
+    id: proposal
     attributes:
-      label: Constraints and verification
-      description: Include relevant inputs, tools, dependencies and ways to verify the result. Do not paste private material.
+      label: Proposed behavior
+      description: Describe the observable result and any relevant skill or command.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How could a reviewer determine that this improvement works?
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and alternatives
+      description: Note required host tools, optional runtimes, services, source permissions, and alternatives considered. Do not include credentials.

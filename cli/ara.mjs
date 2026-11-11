@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {constants} from 'node:fs';
 import {ROOT,RUNTIME_DIRS,catalog,search,route,readText,environment,verify,publicFiles,indexFiles,json} from '../lib/core.mjs';
-const HELP='Academic Research Assistant\n\nUsage:\n  academic-research-assistant list [--json]\n  academic-research-assistant route "research task"\n  academic-research-assistant read skills/name/SKILL.md\n  academic-research-assistant doctor\n  academic-research-assistant verify\n  academic-research-assistant mcp\n  academic-research-assistant export --host codex|claude|antigravity|generic|codex-skill|claude-skill|antigravity-skill --target NEW_DIRECTORY\n  academic-research-assistant install --host HOST --target NEW_DIRECTORY\n  academic-research-assistant config --host codex|claude|antigravity|generic --root INSTALLED_BUNDLE\n\nInstall/export copy files only. They do not edit account settings, install dependencies or publish anything.\nClaude and Antigravity plugin exports contain one complete outer skill; their JSON result identifies the nested runtime bundle.\nAntigravity MCP is optional: config prints absolute paths for its mcp_config.json after the final bundle location is known.\n';
+const HELP='Academic Research Assistant\n\nUsage:\n  academic-research-assistant-full list [--json]\n  academic-research-assistant-full route "research task"\n  academic-research-assistant-full read skills/name/SKILL.md\n  academic-research-assistant-full doctor\n  academic-research-assistant-full verify\n  academic-research-assistant-full mcp\n  academic-research-assistant-full export --host codex|claude|antigravity|generic|codex-skill|claude-skill|antigravity-skill --target NEW_DIRECTORY\n  academic-research-assistant-full install --host HOST --target NEW_DIRECTORY\n  academic-research-assistant-full config --host codex|claude|antigravity|generic --root INSTALLED_BUNDLE\n\nInstall/export copy files only. They do not edit account settings, install dependencies or publish anything.\nClaude and Antigravity plugin exports contain one complete outer skill; their JSON result identifies the nested runtime bundle.\nAntigravity MCP is optional: config prints absolute paths for its mcp_config.json after the final bundle location is known.\n';
 function options(args,allowed){
  const out={};for(let i=0;i<args.length;i++){
   const name=args[i];if(!allowed.includes(name)||out[name]!==undefined)throw Error('Unknown or repeated option: '+name);
@@ -36,13 +36,15 @@ async function exportBundle(host,target){
  if(pathKey(realDest)===pathKey(realRoot)||RUNTIME_DIRS.some(x=>inside(realDest,path.join(realRoot,x))))throw Error('Target overlaps package runtime files');
  const sourceCheck=await verify();if(!sourceCheck.passed)throw Error('Source verification failed; run verify for details before exporting');
  await catalog();const files=await publicFiles();
+ if(host==='codex'&&['plugin.json','mcp.json','.codex-plugin/plugin.json'].some(file=>!files.includes(file)))
+  throw Error('Codex export requires the original complete bundle with its plugin manifests and MCP configuration; run export from the original full bundle');
  try{await fs.lstat(dest);throw Error('Target already exists; choose a new directory');}catch(error){if(error.code!=='ENOENT')throw error;}
  await fs.mkdir(path.dirname(dest),{recursive:true});
  await fs.mkdir(dest); // exclusive: existing files are never overwritten
  const wrapper=host==='claude'||host==='antigravity';
  const instructionOnly=wrapper||host.endsWith('-skill');
- const bundle=host==='codex'?path.join(dest,'plugins/academic-research-assistant'):
-  wrapper?path.join(dest,'skills/academic-research-assistant'):dest;
+ const bundle=host==='codex'?path.join(dest,'plugins/academic-research-assistant-full'):
+  wrapper?path.join(dest,'skills/academic-research-assistant-full'):dest;
  await fs.mkdir(bundle,{recursive:true});
  for(const rel of files){
   // Keep archived originals intact; omit only live plugin-discovery markers.
@@ -62,23 +64,29 @@ async function exportBundle(host,target){
    for(const notice of ['LICENSE','THIRD_PARTY_NOTICES.md'])await fs.copyFile(path.join(bundle,notice),path.join(dest,notice),constants.COPYFILE_EXCL);
    await fs.mkdir(path.join(dest,'.claude-plugin'));
    await fs.writeFile(path.join(dest,'.claude-plugin/plugin.json'),JSON.stringify(manifest,null,2)+'\n');
-   await fs.writeFile(path.join(dest,'.mcp.json'),JSON.stringify({mcpServers:{[packageInfo.name]:{command:'node',args:['${CLAUDE_PLUGIN_ROOT}/skills/academic-research-assistant/server/mcp.mjs']}}},null,2)+'\n');
+   const marketplace={name:'academic-research-assistant-full-local',description:packageInfo.description,
+    owner:{name:'santanu-p',url:'https://github.com/santanu-p'},plugins:[{name:packageInfo.name,source:'.',
+     description:packageInfo.description,category:'Research',tags:['academic','research','writing','science']}]};
+   await fs.writeFile(path.join(dest,'.claude-plugin/marketplace.json'),JSON.stringify(marketplace,null,2)+'\n');
+   await fs.writeFile(path.join(dest,'.mcp.json'),JSON.stringify({mcpServers:{[packageInfo.name]:{command:'node',args:['${CLAUDE_PLUGIN_ROOT}/skills/academic-research-assistant-full/server/mcp.mjs']}}},null,2)+'\n');
   }else await fs.writeFile(path.join(dest,'plugin.json'),JSON.stringify(manifest,null,2)+'\n');
  }
  if(host==='codex'){
   const file=path.join(dest,'.agents/plugins/marketplace.json');await fs.mkdir(path.dirname(file),{recursive:true});
-  await fs.writeFile(file,JSON.stringify({name:'academic-research-assistant-local',plugins:[{name:'academic-research-assistant',
-   source:{source:'local',path:'./plugins/academic-research-assistant'},policy:{installation:'AVAILABLE',authentication:'ON_INSTALL'},category:'Education & Research'}]},null,2)+'\n');
+  await fs.writeFile(file,JSON.stringify({name:'academic-research-assistant-full-local',plugins:[{name:'academic-research-assistant-full',
+   source:{source:'local',path:'./plugins/academic-research-assistant-full'},policy:{installation:'AVAILABLE',authentication:'ON_INSTALL'},category:'Education & Research'}]},null,2)+'\n');
  }
  await indexFiles(bundle);
- const next=host==='codex'?['codex plugin marketplace add '+shellQuote(dest),'codex plugin add academic-research-assistant@academic-research-assistant-local']:
-  host==='claude'?['claude plugin validate '+shellQuote(dest),'claude --plugin-dir '+shellQuote(dest)]:
+ const next=host==='codex'?['codex plugin marketplace add '+shellQuote(dest),'codex plugin add academic-research-assistant-full@academic-research-assistant-full-local']:
+  host==='claude'?['claude plugin validate '+shellQuote(dest),'claude plugin marketplace add '+shellQuote(dest),
+   'claude plugin install academic-research-assistant-full@academic-research-assistant-full-local --scope user',
+   'claude --plugin-dir '+shellQuote(dest)]:
   host==='antigravity'?['agy plugin install '+shellQuote(dest),'agy plugin list --json',
    'Optional MCP: use the actual installed nested bundle path with config --host antigravity --root INSTALLED_BUNDLE, then apply the JSON through the host MCP manager. Regenerate after relocation.']:
   host.endsWith('-skill')?['Place this complete directory at the host skill path, then restart/reload that host.','The outer skill reads the nested canonical methods; MCP registration remains optional and explicit.']:
   ['Read SKILL.md or configure an MCP-capable host with:','node '+shellQuote(path.join(bundle,'cli/ara.mjs'))+' config --host generic --root '+shellQuote(bundle)];
  return {host,target:dest,bundle,next,next_shell:process.platform==='win32'?'PowerShell':'POSIX sh',host_settings_changed:false,
-  ...(wrapper?{skill_entrypoint:'academic-research-assistant',wrapper_root_agents_directory_included:false}:{}),
+  ...(wrapper?{skill_entrypoint:'academic-research-assistant-full',wrapper_root_agents_directory_included:false}:{}),
   ...(host==='antigravity'?{mcp_bundled:false,mcp_configuration:'Optional absolute-path configuration after installation; no plugin-root interpolation assumed.'}:{})};
 }
 async function main(){
@@ -105,9 +113,9 @@ async function main(){
   const opts=options(args,['--host','--root']);const host=opts['--host'];const root=absoluteRoot(opts['--root']);
   if(!['codex','claude','antigravity','generic'].includes(host))throw Error('Choose --host codex, claude, antigravity or generic');
   await fs.access(path.join(root,'server/mcp.mjs'));
-  if(host==='codex'){console.log('[mcp_servers.academic-research-assistant]\ncommand = "node"\nargs = ['+JSON.stringify(path.join(root,'server/mcp.mjs'))+']');return;}
-  value={mcpServers:{'academic-research-assistant':serverConfig(root)}};
+  if(host==='codex'){console.log('[mcp_servers.academic-research-assistant-full]\ncommand = "node"\nargs = ['+JSON.stringify(path.join(root,'server/mcp.mjs'))+']');return;}
+  value={mcpServers:{'academic-research-assistant-full':serverConfig(root)}};
  }else throw Error('Unknown command: '+cmd+'\nUse --help');
  console.log(JSON.stringify(value,null,2));
 }
-main().catch(error=>{console.error('academic-research-assistant: '+error.message);process.exitCode=1;});
+main().catch(error=>{console.error('academic-research-assistant-full: '+error.message);process.exitCode=1;});

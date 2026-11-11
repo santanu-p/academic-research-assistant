@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-10-26T13:32:09.161645+00:00",
+  "node": "v25.2.0",
+  "tests": {
+    "tests": 182,
+    "pass": 182,
+    "fail": 0
+  },
+  "source_preservation": {
+    "passed": true,
+    "source_files_preserved": 600,
+    "source_skills_mapped": 118,
+    "canonical_methods": 116,
+    "compatibility_entries": 2,
+    "unmerged_complete_bodies": 114,
+    "active_skill_yaml_valid": 118,
+    "active_skill_links_resolved": 427,
+    "semantic_merged_method_review": "audit/review-118/reports/final-content-review.json",
+    "scope": "File preservation, complete active source bodies and package metadata; not research execution or host installation."
+  },
+  "public_checkout_head": "060e41b12f32a3217fa3e71d194c0dc8e6da7ab0",
+  "public_checkout_dirty": false,
+  "current_hashes": {
+    "lib/core.mjs": "f2fb9eb4b5a8ae80042ab4709221c2bf676e4a4536c843f6fbf97cefd6dfbbe6",
+    "catalog/routes.json": "d1ffbac6ac0f12ffa5ecc57c81470fa999b2a487ac1a40726861cb31aabff6ed",
+    "catalog/skills.json": "0af8d89ca3a18bfcca4502d22603e826fc221e1a83197e182d15c3a515a3dfb7",
+    "catalog/aliases.json": "aff7130211b400afe04f823993b8f06e4c4f1b420dc2fdaf010191eb2ec6fc3d"
+  },
+  "supersedes": "Earlier independent runtime-review and recheck failures are retained as history; the four primary/clarification failures and two subsequent neighbor failures are now regression tests passing in this suite.",
+  "not_executed": [
+    "Scientific case-study reproduction",
+    "External research services and paid model loops",
+    "Live installed Codex/Claude application invocation",
+    "Public GitHub/npm publication of this full mixed-source collection"
+  ]
+}

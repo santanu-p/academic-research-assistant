@@ -1,0 +1,36 @@
+{
+  "python": "3.14.0",
+  "python_executable": "C:\\Users\\psant\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+  "modules": {
+    "numpy": true,
+    "scipy": true,
+    "pandas": true,
+    "matplotlib": true,
+    "sklearn": false,
+    "PIL": true,
+    "fitz": false,
+    "pptx": false,
+    "yaml": true,
+    "jsonschema": false
+  },
+  "commands": {
+    "latexmk": false,
+    "pdflatex": false,
+    "xelatex": false,
+    "lualatex": false,
+    "tectonic": false,
+    "biber": false,
+    "pandoc": false,
+    "soffice": false,
+    "pdftoppm": true,
+    "latexdiff": false,
+    "bash": true,
+    "claude": false,
+    "codex": true,
+    "node": true,
+    "Rscript": false
+  },
+  "external_services": "not_configured_by_this_plugin",
+  "limits": "Presence checks only; no imports, authentication, API requests or program execution.",
+  "setup": "docs/DEPENDENCIES.md"
+}

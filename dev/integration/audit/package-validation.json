@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": [
+    "plugin.json official schema PASS",
+    "mcp.json official schema PASS",
+    "118 unique active skills and metadata PASS",
+    "All route destinations PASS",
+    "273 source file hashes and 179 directory entries PASS",
+    "Manifest/overlay identity and interface synchronized PASS"
+  ],
+  "json_files": 62,
+  "yaml_files": 14,
+  "python_files": 37,
+  "jsonl_records": 552,
+  "markdown_links": 269,
+  "source_preservation": {
+    "verified": 273,
+    "directories_verified": 179,
+    "missing": [],
+    "mismatched": [],
+    "passed": true
+  },
+  "failures": []
+}

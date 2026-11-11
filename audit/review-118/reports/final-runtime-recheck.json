@@ -1,0 +1,339 @@
+{
+  "reviewer": "shared_file_audit",
+  "supersedes": ".review-118/reviews/final-runtime-review.json routing failures only; earlier export preservation evidence remains applicable",
+  "scope": "Actual current core, four formerly failing holdouts and six nearby counterexamples; no package mutation or export rerun",
+  "snapshots": {
+    "core_sha256": "f2fb9eb4b5a8ae80042ab4709221c2bf676e4a4536c843f6fbf97cefd6dfbbe6",
+    "routes_sha256": "07c376aaf81f76cb445f9cfb344d2e95198b93c3bfe998e9967722d300f00480"
+  },
+  "rules_inspected": [
+    {
+      "id": "evidence-research-question-7",
+      "primary": "scholar-research-question",
+      "support": [],
+      "when_any": [
+        "feasible.{0,20}(thesis )?topics?|objectives and hypotheses|h0.{0,5}h1|develop.{0,20}hypothes|formulate.{0,20}(objectives|research question)",
+        "narrow.{0,50}(thesis )?topic",
+        "feasible research question"
+      ],
+      "when_all": [],
+      "unless_any": [],
+      "priority": 145
+    },
+    {
+      "id": "evidence-source-evaluation-17",
+      "primary": "scholar-source-evaluation",
+      "support": [],
+      "when_any": [
+        "advocacy website|evidence or a viewpoint|source.{0,20}(credib|evaluat)|evaluate.{0,20}(website|source)|can i use this.{0,15}(website|source)"
+      ],
+      "when_all": [],
+      "unless_any": [
+        "verified.{0,20}(reference|citation) fields|verified bibliography"
+      ],
+      "priority": 155
+    },
+    {
+      "id": "writing-prevalidation-method-combination-design",
+      "primary": "arms-methodology-architect",
+      "support": [],
+      "when_any": [
+        "\\b(?:design|invent|propose|rethink)\\b.{0,70}\\b(?:new\\s+)?(?:research\\s+)?method(?:ology)?\\b",
+        "\\bProvides\\s*/\\s*Needs\\b",
+        "\\b(?:methodology\\s+specification|method\\s+candidates?)\\b.{0,100}\\b(?:cross[- ]field|adjacent\\s+fields?|combin\\w*|red[- ]team|design)\\b",
+        "\\bnew\\s+mathematical\\s+derivation\\b.{0,100}\\b(?:no|without)\\b.{0,30}\\bvalidated\\b"
+      ],
+      "when_all": [
+        "\\b(?:research|brief|methodology|specification|candidates?|Provides|derivation|validation\\s+failure)\\b"
+      ],
+      "unless_any": [
+        "\\b(?:production\\s+evaluations?|frozen\\s+(?:validated\\s+)?code|unchanged\\s+(?:hyper)?parameters|grade\\s+report)\\b"
+      ],
+      "priority": 176
+    },
+    {
+      "id": "writing-prewriting-pilot-method-validation",
+      "primary": "arms-validate-method",
+      "support": [],
+      "when_any": [
+        "\\b(?:implement|validate|test)\\b.{0,80}\\b(?:proposed|unvalidated)\\b.{0,60}\\bmethod\\b",
+        "\\b(?:minimum\\s+viable\\s+(?:experiment|evaluation)|pilot\\s+validation|GO\\s*/\\s*NO[- ]GO)\\b",
+        "\\bmethodology\\s+specification\\b.{0,100}\\b(?:implement|pilot|validation|stress\\s+test|ablation)\\b"
+      ],
+      "when_all": [
+        "\\b(?:method|methodology|specification|proposed|pre[- ]writing)\\b"
+      ],
+      "unless_any": [
+        "\\b(?:production\\s+(?:precision|evaluations?)|frozen\\s+(?:validated\\s+)?code|unchanged\\s+(?:hyper)?parameters|grade\\s+report)\\b"
+      ],
+      "priority": 170
+    },
+    {
+      "id": "writing-postvalidation-frozen-production-and-audit",
+      "primary": "arms-paper-modeler",
+      "support": [],
+      "when_any": [
+        "\\b(?:scale|run|execute)\\b.{0,100}\\b(?:validated|frozen)\\b.{0,60}\\b(?:code|implementation|evaluations?)\\b",
+        "\\b(?:post[- ]validation|production[- ](?:quality|grade)|production\\s+(?:precision|evaluations?))\\b",
+        "\\b(?:canonical\\s+)?formula[-\u2194 ]code\\s+(?:audit|reconciliation)\\b",
+        "\\bformula_code_audit\\.md\\b.{0,70}\\b(?:create|produce|reconcile|own)\\b"
+      ],
+      "when_all": [
+        "\\b(?:validated|frozen|post[- ]validation|unchanged\\s+(?:hyper)?parameters|Phase\\s*2|production|canonical)\\b"
+      ],
+      "unless_any": [
+        "\\b(?:missing|read|consume|copy|fix\\s+from)\\s+(?:the\\s+)?(?:canonical\\s+)?(?:formula[-\u2194 ]code\\s+)?audit\\b",
+        "\\b(?:draft|write)\\b.{0,40}\\b(?:section|whole\\s+manuscript|complete\\s+manuscript)\\b"
+      ],
+      "priority": 180
+    },
+    {
+      "id": "writing-targeted-grade-report-fixes",
+      "primary": "arms-paper-fixer",
+      "support": [],
+      "when_any": [
+        "\\b(?:apply|fix|repair|revise)\\b.{0,85}\\b(?:grade[- ]report|grade\\s+report|grader.s\\s+(?:findings|issues)|graded\\s+issues)\\b",
+        "\\b(?:grade[- ]report|grade\\s+report)\\b.{0,100}\\b(?:fix|repair|correction|table|formula|cross[- ]reference|clarity)\\b",
+        "(?:read|consume|use).{0,55}(?:canonical|existing).{0,50}(?:formula.code )?audit.{0,65}(?:fix|repair|correct).{0,40}(?:manuscript|transcription|discrepanc)"
+      ],
+      "when_all": [
+        "\\b(?:manuscript|paper|CSV|formula|table|cross[- ]reference|validated)\\b"
+      ],
+      "unless_any": [
+        "\\b(?:launch|run)\\b.{0,40}\\bcritic[- ]revisor\\b"
+      ],
+      "priority": 210
+    }
+  ],
+  "implementation_assessment": [
+    "Question design now recognizes topic narrowing and feasible research questions while evidence-search PICO/synonym rules remain separate.",
+    "Architect priority176 now wins over validation170 when the request is still design/combination before validation; positive implementation/pilot work without design intent continues to validation.",
+    "Fixer rule now accepts consuming an existing/canonical audit for located manuscript repairs; modeler retains production audit ownership and its read/consume exclusion.",
+    "Source evaluation excludes explicitly verified reference/citation fields, removing an unnecessary equal-priority alternative; genuinely unqualified annotated bibliography remains ambiguous in core."
+  ],
+  "cases": [
+    {
+      "id": "research-question",
+      "request": "Help narrow a thesis topic on teacher retention into a feasible research question.",
+      "expected_primary": "scholar-research-question",
+      "expected_clarification": false,
+      "kind": "previously failing holdout",
+      "actual_primary": "scholar-research-question",
+      "actual_skills": [
+        "scholar-research-question"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "matched_rule": "evidence-research-question-7",
+      "selection": "rules",
+      "passed": true
+    },
+    {
+      "id": "method-combination",
+      "request": "Propose a new methodology specification by combining ideas from adjacent fields and red-team the candidates before validation.",
+      "expected_primary": "arms-methodology-architect",
+      "expected_clarification": false,
+      "kind": "previously failing holdout",
+      "actual_primary": "arms-methodology-architect",
+      "actual_skills": [
+        "arms-methodology-architect"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "matched_rule": "writing-prevalidation-method-combination-design",
+      "selection": "rules",
+      "passed": true
+    },
+    {
+      "id": "formula-consumer",
+      "request": "Read the canonical formula-code audit and fix the manuscript discrepancies it already identifies.",
+      "expected_primary": "arms-paper-fixer",
+      "expected_clarification": false,
+      "kind": "previously failing holdout",
+      "actual_primary": "arms-paper-fixer",
+      "actual_skills": [
+        "arms-paper-fixer"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "matched_rule": "writing-targeted-grade-report-fixes",
+      "selection": "rules",
+      "passed": true
+    },
+    {
+      "id": "annotation-verified-fields",
+      "request": "Gather verified reference fields and format an annotated bibliography with source evaluation notes.",
+      "expected_primary": "evidence-citations-and-references",
+      "expected_clarification": false,
+      "kind": "previously failing holdout",
+      "actual_primary": "evidence-citations-and-references",
+      "actual_skills": [
+        "evidence-citations-and-references"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "matched_rule": "evidence-citations-and-references-19",
+      "selection": "rules",
+      "passed": true
+    },
+    {
+      "id": "pilot-implementation-counterexample",
+      "request": "Implement the proposed method from this methodology specification, then run pilot validation and ablations before any manuscript drafting.",
+      "expected_primary": "arms-validate-method",
+      "expected_clarification": false,
+      "kind": "nearby positive implementation counterexample",
+      "actual_primary": "arms-validate-method",
+      "actual_skills": [
+        "arms-validate-method"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "matched_rule": "writing-prewriting-pilot-method-validation",
+      "selection": "rules",
+      "passed": true
+    },
+    {
+      "id": "prospective-combination-counterexample",
+      "request": "Design candidate research methodologies from the brief, compare adjacent-field combinations, and choose what should be validated later.",
+      "expected_primary": "arms-methodology-architect",
+      "expected_clarification": false,
+      "kind": "prospective design counterexample",
+      "actual_primary": "arms-brief-expander",
+      "actual_skills": [
+        "arms-brief-expander",
+        "evidence-research-gaps",
+        "scholar-research-communication",
+        "arms-research-pipeline",
+        "evidence-compare-studies"
+      ],
+      "needs_clarification": true,
+      "alternatives": [],
+      "matched_rule": null,
+      "selection": "candidates",
+      "passed": false
+    },
+    {
+      "id": "audit-producer-counterexample",
+      "request": "Run the frozen validated code at production precision and produce the canonical formula-code audit from the actual implementation.",
+      "expected_primary": "arms-paper-modeler",
+      "expected_clarification": false,
+      "kind": "produce audit counterexample",
+      "actual_primary": "arms-paper-modeler",
+      "actual_skills": [
+        "arms-paper-modeler"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "matched_rule": "writing-postvalidation-frozen-production-and-audit",
+      "selection": "rules",
+      "passed": true
+    },
+    {
+      "id": "audit-consumer-counterexample",
+      "request": "Use the existing canonical audit to correct manuscript transcription errors and preserve the validated formulas.",
+      "expected_primary": "arms-paper-fixer",
+      "expected_clarification": false,
+      "kind": "consume existing audit counterexample",
+      "actual_primary": "arms-paper-fixer",
+      "actual_skills": [
+        "arms-paper-fixer"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "matched_rule": "writing-targeted-grade-report-fixes",
+      "selection": "rules",
+      "passed": true
+    },
+    {
+      "id": "searchable-question-counterexample",
+      "request": "Turn this evidence-review question into searchable PICO concepts and synonym blocks.",
+      "expected_primary": "evidence-research-question",
+      "expected_clarification": false,
+      "kind": "evidence-search question counterexample",
+      "actual_primary": "evidence-search-strings",
+      "actual_skills": [
+        "evidence-search-strings"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "matched_rule": "evidence-search-strings-3",
+      "selection": "rules",
+      "passed": false
+    },
+    {
+      "id": "annotations-still-ambiguous",
+      "request": "Make an annotated bibliography from the supplied papers.",
+      "expected_primary": "scholar-literature-review",
+      "expected_clarification": true,
+      "kind": "ambiguity retained counterexample",
+      "actual_primary": "scholar-literature-review",
+      "actual_skills": [
+        "scholar-literature-review"
+      ],
+      "needs_clarification": true,
+      "alternatives": [
+        "evidence-citations-and-references"
+      ],
+      "matched_rule": "evidence-literature-review-20",
+      "selection": "rules",
+      "passed": true
+    }
+  ],
+  "passed": false,
+  "actionable_failures": [
+    {
+      "id": "prospective-combination-counterexample",
+      "request": "Design candidate research methodologies from the brief, compare adjacent-field combinations, and choose what should be validated later.",
+      "expected_primary": "arms-methodology-architect",
+      "expected_clarification": false,
+      "kind": "prospective design counterexample",
+      "actual_primary": "arms-brief-expander",
+      "actual_skills": [
+        "arms-brief-expander",
+        "evidence-research-gaps",
+        "scholar-research-communication",
+        "arms-research-pipeline",
+        "evidence-compare-studies"
+      ],
+      "needs_clarification": true,
+      "alternatives": [],
+      "matched_rule": null,
+      "selection": "candidates",
+      "passed": false
+    },
+    {
+      "id": "searchable-question-counterexample",
+      "request": "Turn this evidence-review question into searchable PICO concepts and synonym blocks.",
+      "expected_primary": "evidence-research-question",
+      "expected_clarification": false,
+      "kind": "evidence-search question counterexample",
+      "actual_primary": "evidence-search-strings",
+      "actual_skills": [
+        "evidence-search-strings"
+      ],
+      "needs_clarification": false,
+      "alternatives": [],
+      "matched_rule": "evidence-search-strings-3",
+      "selection": "rules",
+      "passed": false
+    }
+  ],
+  "previous_failures_resolved": true,
+  "previously_failed_holdouts_passed": 4,
+  "counterexample_cases": 6,
+  "counterexample_failures": 2,
+  "failure_assessment": [
+    {
+      "id": "prospective-combination-counterexample",
+      "priority": "P2",
+      "confidence": "high",
+      "cause": "Architect regex accepts method or methodology but not the plural methodologies; the request therefore falls through to keyword candidates despite an explicit prospective design instruction."
+    },
+    {
+      "id": "searchable-question-counterexample",
+      "priority": "P2",
+      "confidence": "moderate",
+      "cause": "PICO question/concept structuring overlaps synonym-block query drafting. Current search-strings keyword priority forces query syntax without considering whether the requested artifact is a research-question formulation. Clarification or a question-structuring preference would preserve the distinction."
+    }
+  ]
+}

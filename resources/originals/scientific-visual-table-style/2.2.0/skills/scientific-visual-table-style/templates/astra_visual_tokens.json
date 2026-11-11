@@ -1,0 +1,36 @@
+{
+  "name": "GPT-6 Astra governing visual tokens",
+  "version": "2.2.0",
+  "precedence": "governing",
+  "typography": {
+    "minimum_body_pt": 7.5,
+    "preferred_body_pt": [
+      8.0,
+      9.0
+    ]
+  },
+  "palette": {
+    "field": "#FFFFFF",
+    "text": "#171717",
+    "secondary_text": "#5E6462",
+    "focal_teal": "#1F6F5F",
+    "structure": "#E4E7E5",
+    "risk": "#C84B31"
+  },
+  "density": {
+    "max_line_series": 5,
+    "max_grouped_bar_series": 4,
+    "max_annotations": 3
+  },
+  "qa": {
+    "minimum_data_width_fraction": 0.55,
+    "minimum_raster_scale": 2.0,
+    "required": [
+      "final_size",
+      "clipping",
+      "grayscale",
+      "family_consistency",
+      "scientific_integrity"
+    ]
+  }
+}

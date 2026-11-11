@@ -1,0 +1,50 @@
+{
+  "author": {
+    "name": "Fasih"
+  },
+  "description": "Research Evidence Finder: an expert research librarian and evidence analyst. Finds what the research really says: evidence-based answers with verified citations, real peer-reviewed studies, evidence meters across studies, expert search strings, claim and headline checks, source verification, study appraisal, statistics explained, paper summaries and comparisons, data extraction, literature reviews, systematic reviews and meta-analyses, research gaps, evidence-based writing, debate and decision evidence, plain-language explanations, free legal full texts, proposal backgrounds and citations in every major style.",
+  "interface": {
+    "capabilities": [
+      "Answers any question with what the research says, backed by verified citations",
+      "Finds real peer-reviewed studies, systematic reviews and meta-analyses on any topic",
+      "Shows an evidence meter of how many studies support, oppose or are mixed on a question",
+      "Checks claims, headlines and \"studies show\" posts against the actual research",
+      "Rates study quality, explains statistics and detects fake or retracted citations",
+      "Writes literature reviews, evidence tables and Boolean search strings for any database",
+      "Formats citations in APA, MLA, Chicago, Harvard and IEEE, plus annotated bibliographies"
+    ],
+    "category": "Education & Research",
+    "composerIcon": "./.codex-plugin/assets/composer-icon.png",
+    "composerIconDark": "./.codex-plugin/assets/composer-icon-dark.png",
+    "defaultPrompt": [
+      "What does the research say about this topic, and how strong is the evidence?",
+      "Find the best peer-reviewed studies for the topic I'm researching",
+      "Check if this claim is backed by scientific evidence"
+    ],
+    "developerName": "Syed Fasih Haider Raza Rizvi",
+    "displayName": "Research Evidence Finder",
+    "logo": "./.codex-plugin/assets/logo.png",
+    "logoDark": "./.codex-plugin/assets/logo-dark.png",
+    "longDescription": "Find and understand research evidence with verified citations and peer-reviewed sources. Check claims, compare studies, assess study quality, explain statistics, extract data, and build literature reviews, systematic review plans, research summaries, and evidence-based writing. Get help with search strategies, source verification, research gaps, plain-language explanations, proposal backgrounds, and citations in major academic styles.",
+    "privacyPolicyURL": "https://github.com/Fasih38/plugin-pages/blob/main/privacy.md",
+    "shortDescription": "Find research and citations",
+    "supportURL": "https://github.com/Fasih38/plugin-pages/blob/main/support.md",
+    "termsOfServiceURL": "https://github.com/Fasih38/plugin-pages/blob/main/terms.md",
+    "websiteURL": "https://github.com/Fasih38/plugin-pages/blob/main/README.md"
+  },
+  "keywords": [
+    "research evidence",
+    "evidence finder",
+    "find research papers",
+    "scientific studies",
+    "literature review",
+    "academic search",
+    "fact check claims",
+    "systematic review",
+    "citations",
+    "scholar"
+  ],
+  "name": "researchevidencefinder",
+  "skills": "./skills/",
+  "version": "1.0.0"
+}

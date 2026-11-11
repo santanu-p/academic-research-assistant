@@ -1,0 +1,2561 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-10-25",
+  "external_services_used": false,
+  "source_instructions_treated_as_data": true,
+  "provenance_mutations": false,
+  "scope": {
+    "root": "D:\\PLUGIN\\work",
+    "included_sources": [
+      "academic-humanizer-main",
+      "academic-pptx-skill-main",
+      "humanizer-main",
+      "latexdocumentmaker",
+      "research-writing-guardrails",
+      "researchevidencefinder",
+      "scholarresearch",
+      "scientific-visual-table-style"
+    ],
+    "excluded": [
+      "original source ZIP contents as separate archives",
+      "expanded/ARMS-main"
+    ],
+    "source_skills": 104,
+    "files": 200,
+    "text_files": 174,
+    "binary_files": 26,
+    "bytes": 4873890
+  },
+  "source_summary": [
+    {
+      "source": "academic-humanizer-main",
+      "files": 10,
+      "text_files": 8,
+      "binary_files": 2,
+      "bytes": 310666,
+      "skills": 1,
+      "supplied_license": "MIT"
+    },
+    {
+      "source": "academic-pptx-skill-main",
+      "files": 6,
+      "text_files": 5,
+      "binary_files": 1,
+      "bytes": 238243,
+      "skills": 1,
+      "supplied_license": "MIT with contradictory SKILL frontmatter"
+    },
+    {
+      "source": "humanizer-main",
+      "files": 14,
+      "text_files": 14,
+      "binary_files": 0,
+      "bytes": 65930,
+      "skills": 1,
+      "supplied_license": "MIT"
+    },
+    {
+      "source": "latexdocumentmaker",
+      "files": 44,
+      "text_files": 38,
+      "binary_files": 6,
+      "bytes": 1239412,
+      "skills": 33,
+      "supplied_license": "unspecified in supplied files"
+    },
+    {
+      "source": "research-writing-guardrails",
+      "files": 9,
+      "text_files": 7,
+      "binary_files": 2,
+      "bytes": 703015,
+      "skills": 2,
+      "supplied_license": "unspecified in supplied files"
+    },
+    {
+      "source": "researchevidencefinder",
+      "files": 40,
+      "text_files": 34,
+      "binary_files": 6,
+      "bytes": 1467054,
+      "skills": 29,
+      "supplied_license": "unspecified in supplied files"
+    },
+    {
+      "source": "scholarresearch",
+      "files": 46,
+      "text_files": 41,
+      "binary_files": 5,
+      "bytes": 363244,
+      "skills": 36,
+      "supplied_license": "unspecified in supplied files"
+    },
+    {
+      "source": "scientific-visual-table-style",
+      "files": 31,
+      "text_files": 27,
+      "binary_files": 4,
+      "bytes": 486326,
+      "skills": 1,
+      "supplied_license": "unspecified in supplied files"
+    }
+  ],
+  "findings": [
+    {
+      "id": "C01",
+      "title": "Unbounded activation",
+      "evidence_and_normalization": "`latex-studio` calls itself default for every message, greetings, off-topic replies; `research-evidence-finder` says every message while active; all 36 Scholar descriptions include all later Scholar follow-ups. Scope each active skill to its actual task and route through one unified front door. Preserve every compatible specialty rather than merging duplicate names away."
+    },
+    {
+      "id": "C02",
+      "title": "Incomplete promotional mandates",
+      "evidence_and_normalization": "Three Scholar plugin manifests require every response to end in an affiliate footer and disclosure, but no exact footer or affiliate URL is supplied. `scholar-studio`, `latex-studio`, and Scholar `academic-translation` retain stale footer references. Do not invent a destination or append mandatory advertising. Retain original text in provenance and normalize active metadata/body to scoped, neutral behavior."
+    },
+    {
+      "id": "C03",
+      "title": "Commercial recommendations",
+      "evidence_and_normalization": "`scholar/paperpal-tools` gives feature descriptions and prohibits pressure, unverified prices/discounts, and claiming an official relationship. Humanizer README says sponsored by `cfo.ai` and asks for a GitHub star. These are attribution/commercial context, not response requirements. Retain them in provenance; use tool guidance only when asked or relevant, verify changeable product claims when tools permit, disclose actual relationships if recommending an affiliate destination."
+    },
+    {
+      "id": "C04",
+      "title": "No supplied licenses for five original plugin folders",
+      "evidence_and_normalization": "No LICENSE/COPYING or license grant is supplied for LaTeX Document Maker, Research Evidence Finder, Scholar Research, Research Writing Guardrails, or Scientific Visuals & Tables. Source inclusion does not establish redistribution rights. A private local integration can preserve user-supplied material, but the package must not label all third-party content MIT or imply rights for public redistribution. Mark the license status as unspecified and retain author metadata."
+    },
+    {
+      "id": "C05",
+      "title": "Conflicting PPTX license metadata",
+      "evidence_and_normalization": "`academic-pptx/SKILL.md` says `Proprietary. LICENSE.txt has complete terms`; `LICENSE.txt` is absent. Supplied `LICENSE` and README say MIT, copyright Gabberflast 2026. Retain both claims in provenance, use the supplied MIT notice with the active adaptation, and record the contradictory upstream metadata."
+    },
+    {
+      "id": "C06",
+      "title": "Third-party MIT notices",
+      "evidence_and_normalization": "Academic Humanizer has an MIT permission notice, AIScientists-Dev 2026, with attribution to Humanizer and ARMS. Humanizer has MIT, Siqi Chen 2025. Academic PPTX has MIT, Gabberflast 2026. Preserve these notices and their required attribution with substantial copied portions. Academic Humanizer's warranty text is shorter than the common MIT form; preserve its exact supplied notice rather than silently replacing it."
+    },
+    {
+      "id": "C07",
+      "title": "Names collide across families",
+      "evidence_and_normalization": "`literature-review`, `research-question`, `research-gaps`, `systematic-review`, and `thesis-dissertation` overlap. Prefix every original family skill and rewrite active routing tables, explicit invocation examples, `agents/openai.yaml` metadata, and cross-skill references to their mapped names. Keep resource paths relative to their relocated skill directory."
+    },
+    {
+      "id": "C08",
+      "title": "Missing external PPTX implementation skill",
+      "evidence_and_normalization": "Academic PPTX requires a separate `pptx SKILL.md`, `pptxgenjs.md`, `editing.md`, and its QA procedure. None is supplied in these eight source trees. Keep Academic PPTX active for argument/content standards, then discover the host's available presentation backend or state the missing backend before technical generation. Never claim those referenced documents are bundled."
+    },
+    {
+      "id": "C09",
+      "title": "PPTX dependencies are described, not bundled",
+      "evidence_and_normalization": "Source lists `markitdown[pptx]`, `pptxgenjs`, LibreOffice/`soffice`, and Poppler/`pdftoppm`. No executable, lockfile, or installation is supplied. Prefer a supported host presentation runtime; otherwise preflight those tools. Install commands in source are documentation, not authorization to run global installs."
+    },
+    {
+      "id": "C10",
+      "title": "PPTX approval rule is too broad for inherited authorization",
+      "evidence_and_normalization": "Source demands outline agreement before building complex or >10-slide decks. Preserve the planning/ghost-deck step; treat an already explicit user-approved outline or instruction to proceed as agreement. Ask only for material unresolved choices. Do not use an embedded source's blanket approval rule to stall an authorized reversible draft."
+    },
+    {
+      "id": "C11",
+      "title": "PPTX end-of-deck contradiction",
+      "evidence_and_normalization": "`SKILL.md` requires conclusions as last non-appendix slide; content guidance says references must be last before appendix and allows a final standalone contact slide. Keep conclusions visible for Q&A, retain full references in an agreed pre-conclusion or backup/appendix position, and put contact details on conclusions. Explicit user/venue requirements take precedence."
+    },
+    {
+      "id": "C12",
+      "title": "PPTX patterns violate their own rules",
+      "evidence_and_normalization": "`slide_patterns.md` repeatedly adds title divider rules although SKILL prohibits accent lines; uses `FONTS.body - 1` and explicit 19 pt text although body minimum is 20 pt; uses a dark conclusions content slide despite white-background rule; carries duplicate `breakLine` keys. Treat patterns as examples and apply the active content/design rules to generated files. Validate the selected PptxGenJS API against the actual backend."
+    },
+    {
+      "id": "C13",
+      "title": "Illustrative presentation content looks evidential",
+      "evidence_and_normalization": "Code examples contain invented study details, estimates, p-values, authors and references. They are not a research dataset. Preserve examples, label them illustrative, and never transfer them into a real deck as user findings or verified sources."
+    },
+    {
+      "id": "C14",
+      "title": "Oversimplified reproduction-permission claim",
+      "evidence_and_normalization": "PPTX text/PDF broadly says conference reproduction is often/typically fair use. No jurisdiction or permission analysis is supplied. Do not convert this into a blanket permission guarantee. Attribution and reproduction rights are separate checks; preserve the original phrasing only in provenance."
+    },
+    {
+      "id": "C15",
+      "title": "Academic Humanizer examples can teach invention",
+      "evidence_and_normalization": "Several before/after pairs introduce numerical gains, tests, datasets, mechanisms, and evidence pointers not present in the preceding before text. Some larger examples explicitly say constructed/generic and forbid invention. An active overlay must make that boundary apply to every example: add detail only from supplied evidence, otherwise flag the gap or soften wording."
+    },
+    {
+      "id": "C16",
+      "title": "Academic Humanizer preservation tension",
+      "evidence_and_normalization": "It forbids dropping any citation/number but also suggests citing only the one or two works that matter. Preserve every cite key and factual detail under an editing request; regroup citations or flag relevance issues without silently dropping them. Preserve paragraph count by default here; general Humanizer's merge/split freedom does not override this academic mode."
+    },
+    {
+      "id": "C17",
+      "title": "Humanizer cannot diagnose AI authorship",
+      "evidence_and_normalization": "Humanizer is a style editing heuristic. It includes categorical claims about text before 2022-11-30 and unaudited statements about human detection performance. README's 16/16 preference test is an upstream claim, not verified effectiveness. Do not promise detector evasion or infer authorship from tells. Retain legitimate uncertainty, quotations, technical terms, and disclosure obligations."
+    },
+    {
+      "id": "C18",
+      "title": "General Humanizer permits edits unsuitable for manuscripts",
+      "evidence_and_normalization": "It permits adding a personal reaction when voice calls for one and removing claims when a pattern asks; its examples sometimes remove factual details or add illustrative detail. Scope scientific work to Academic Humanizer plus evidence/frozen-content guardrails; prohibit fabricated facts, omitted results/citations, altered scope, and invented opinions. File mode already protects code, inline code, YAML, data, paths and link targets; keep those protections."
+    },
+    {
+      "id": "C19",
+      "title": "Style rules conflict across artifact types",
+      "evidence_and_normalization": "COMPAG editing prohibits ordinary colons and italic emphasis. Academic Humanizer proposal mode promotes bold/italic run-in aim labels with colons. Humanizer bans en/em dashes while visuals require en dashes for ranges and em dashes for missing cells. Keep COMPAG rules only for explicitly requested manuscript style, scholarly notation/data symbols intact, proposal/slide structure appropriate to its artifact, and general Humanizer changes limited to prose."
+    },
+    {
+      "id": "C20",
+      "title": "Source counts/version metadata drift",
+      "evidence_and_normalization": "LaTeX README claims 34 skills; supplied set contains 33. Academic Humanizer README badge says 0.3.2 while SKILL says 0.3.3. Report actual inventory and record source versions per file; do not invent a missing skill or modify provenance to hide the mismatch. Humanizer's changelog references old pattern counts as history; current 3.1.0 consistently has 26 patterns."
+    },
+    {
+      "id": "C21",
+      "title": "Runtime and external-search claims need preflight",
+      "evidence_and_normalization": "Evidence and Scholar skill bodies are prompts, not database connectors. Google Scholar, Scopus, Web of Science, DOI/retraction checks and current guidelines require available authorized search/access. Use host connectors/search when available, record dates/limits, and otherwise provide a search strategy or clearly bounded draft without claiming verified/current findings."
+    },
+    {
+      "id": "C22",
+      "title": "Evidence-ranking/statistical heuristics need domain scope",
+      "evidence_and_normalization": "Evidence skills prefer reviews/meta-analyses; theory, numerical physics and methods work require question-appropriate primary evidence. The source itself partly qualifies the hierarchy. Effect-size thresholds, I-squared thresholds, test-selection tables, random-effects-default advice and p-value explanations are compact heuristics, not validated analysis software. Require assumptions, actual data and domain-appropriate sources for scientific conclusions."
+    },
+    {
+      "id": "C23",
+      "title": "LaTeX runtime is external",
+      "evidence_and_normalization": "Classes/packages, TeX engines, latexmk, BibTeX/biber, Pygments/minted shell escape, Inkscape/SVG conversion, Pandoc, make4ht and LaTeXML are referenced but unbundled. Compiler/tool availability must be checked and missing assets resolved before claiming a fresh compile. Placeholder `results.pdf`, `figure.pdf`, `before.png`, `after.png`, `refs.bib`, and CSV paths in examples are illustrative, not broken package dependencies. Never enable shell escape merely because a source example mentions it."
+    },
+    {
+      "id": "C24",
+      "title": "Visual corpus is local metadata with remote assets",
+      "evidence_and_normalization": "276 JSONL records and 84 asset links are bundled, not the external images, papers or fonts. All recorded accessed dates are 2026-09-02; listed publication dates span 2023-03-14 to 2026-08-25. Hosts/sources and the GPT-6 Astra system card are upstream claims unverified in this offline audit. The package may use supplied operational grammar but must not claim fresh source verification, official endorsement, or copyrighted-asset redistribution rights."
+    },
+    {
+      "id": "C25",
+      "title": "Visual minima/palette standards disagree",
+      "evidence_and_normalization": "Main skill/quality gates say paper text >=8 pt, Astra tokens/north-star allow 7.5 pt; schema accepts 6 pt. Main/Astra palettes differ; annotation and salient-line limits also differ. A scoped active adapter should establish one precedence, normally stricter paper minima of 8 pt unless venue/user rules authorize otherwise, and apply the chosen palette consistently. The schema is a structural contract, not complete visual validation."
+    },
+    {
+      "id": "C26",
+      "title": "Windows Matplotlib fallback can fail or write outside task",
+      "evidence_and_normalization": "`openai_visuals.py::_ensure_writable_matplotlib_config` tries `~/.config/matplotlib` first; fallback calls `os.getuid()`, absent on Windows. Set or resolve a writable task/cache MPLCONFIGDIR before importing, and provide a portable fallback. Do not edit originals."
+    },
+    {
+      "id": "C27",
+      "title": "Default frontier connection contradicts scientific rule",
+      "evidence_and_normalization": "`plot_pareto_frontier(connect_frontier=True)` joins every nondominated point without family information. `example_openai_visuals.py::build_cost_frontier` uses the default across baseline/prior/focal families. Default to unconnected frontier points; connect only known ordered settings in one family. Preserve the parameter for callers with legitimate family-specific data."
+    },
+    {
+      "id": "C28",
+      "title": "Table decimal parser misses grouped fractional numbers",
+      "evidence_and_normalization": "`table_qa.py::NUMBER_RE` accepts grouped integers or ordinary decimals, but not `1,234.5`. This can suppress numeric-column/precision checks. Widen the grouped-number grammar without changing accepted old forms, and regression-test grouped decimals/exponents/signs."
+    },
+    {
+      "id": "C29",
+      "title": "QA success does not imply full inspection",
+      "evidence_and_normalization": "`visual_qa.py` returns a warning when PyMuPDF is absent, allowing PASS despite skipped PDF inspection; its PDF branch does not consume minimum font size. `astra_visual_qa.py` checks only body font and grouped-series count. Matplotlib audit cannot reliably judge collisions or meaning and misses text completely outside canvas. Require a final rendered inspection; explicitly flag incomplete PDF checks and audit detectable PDF text sizes."
+    },
+    {
+      "id": "C30",
+      "title": "Minor typing/import issue",
+      "evidence_and_normalization": "`select_references.py::format_markdown` annotates `Sequence` without importing it. Deferred annotations allow ordinary CLI execution, but runtime type introspection fails. Import the existing stdlib typing name in the active copy."
+    },
+    {
+      "id": "C31",
+      "title": "Optional Python dependencies/encoding",
+      "evidence_and_normalization": "Plotting requires Matplotlib and NumPy; raster QA requires Pillow; PDF QA requires PyMuPDF. No requirements/lock file is supplied. Python 3.10+ syntax is used. On this Windows Python, non-ASCII corpus printing under default cp1252 failed; `python -X utf8 -B` avoids that output-encoding failure. Dependency preflight should distinguish unavailable libraries from validation failure."
+    },
+    {
+      "id": "C32",
+      "title": "Preserved Humanizer validator is source-specific",
+      "evidence_and_normalization": "It insists on exactly one root SKILL.md, Humanizer names, synchronized upstream manifests, and a 5,500-word source budget. Its CI installs external skills CLI/Claude Code. Preserve this validator and workflow as upstream evidence; do not run it as the unified plugin's validator, trigger global installs, or adopt its AGENTS.md as root governance."
+    }
+  ],
+  "corpus": {
+    "records": 276,
+    "unique_ids": 276,
+    "publications": 28,
+    "direct_assets": 84,
+    "direct_manifest_matches_corpus": true,
+    "access_dates": {
+      "2026-09-02": 276
+    },
+    "external_assets_bundled": false,
+    "live_verification_performed": false
+  },
+  "files": [
+    {
+      "path": "originals/latexdocumentmaker/.codex-remote-plugin-install.json",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 92,
+      "sha256": "fc70777b6342770d660860df7b55cc30081d49df01aec2ebe0196fa37a57cc33",
+      "inspection_sha256": "fc70777b6342770d660860df7b55cc30081d49df01aec2ebe0196fa37a57cc33",
+      "inspection_hash_matches": true,
+      "lines": 4,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/.claude-plugin/plugin.json",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 1298,
+      "sha256": "4b453def62f0e4d109bce288047eef227ff1614d7169e54fdebd7419f6c068c0",
+      "inspection_sha256": "4b453def62f0e4d109bce288047eef227ff1614d7169e54fdebd7419f6c068c0",
+      "inspection_hash_matches": true,
+      "lines": 27,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/.codex-plugin/assets/composer-icon-dark.png",
+      "source": "latexdocumentmaker",
+      "type": "binary",
+      "bytes": 1056090,
+      "sha256": "fd86014853ac04946536f4eb3ba4304dc92469c7f23a147df472ae7b5f17c196",
+      "inspection_sha256": "fd86014853ac04946536f4eb3ba4304dc92469c7f23a147df472ae7b5f17c196",
+      "inspection_hash_matches": true,
+      "image_size": [
+        1254,
+        1254
+      ],
+      "image_mode": "RGBA"
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/.codex-plugin/assets/composer-icon.png",
+      "source": "latexdocumentmaker",
+      "type": "binary",
+      "bytes": 3068,
+      "sha256": "f4c007cc7d5aa54b3ac7dd5bf55f10d9540b90a14decb9dddf1bea6126935f59",
+      "inspection_sha256": "f4c007cc7d5aa54b3ac7dd5bf55f10d9540b90a14decb9dddf1bea6126935f59",
+      "inspection_hash_matches": true,
+      "image_size": [
+        256,
+        256
+      ],
+      "image_mode": "P"
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/.codex-plugin/assets/logo-dark.png",
+      "source": "latexdocumentmaker",
+      "type": "binary",
+      "bytes": 59306,
+      "sha256": "a9360bd6ea4a94eeebb0f74dd4d8468dcdf1bbc81f5c0e98457110018dd13495",
+      "inspection_sha256": "a9360bd6ea4a94eeebb0f74dd4d8468dcdf1bbc81f5c0e98457110018dd13495",
+      "inspection_hash_matches": true,
+      "image_size": [
+        256,
+        256
+      ],
+      "image_mode": "RGBA"
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/.codex-plugin/assets/logo.png",
+      "source": "latexdocumentmaker",
+      "type": "binary",
+      "bytes": 11684,
+      "sha256": "bf538c803607a6e704448bd08cc172f1feaaeae23be21dab4292f502ba5a9a9c",
+      "inspection_sha256": "bf538c803607a6e704448bd08cc172f1feaaeae23be21dab4292f502ba5a9a9c",
+      "inspection_hash_matches": true,
+      "image_size": [
+        1024,
+        1024
+      ],
+      "image_mode": "P"
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/.codex-plugin/plugin.json",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 3246,
+      "sha256": "f579bb1c53a2718c8aa0a1618468839b367114b38169a0aeb312e0e64514a277",
+      "inspection_sha256": "f579bb1c53a2718c8aa0a1618468839b367114b38169a0aeb312e0e64514a277",
+      "inspection_hash_matches": true,
+      "lines": 52,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/assets/icon.png",
+      "source": "latexdocumentmaker",
+      "type": "binary",
+      "bytes": 3068,
+      "sha256": "f4c007cc7d5aa54b3ac7dd5bf55f10d9540b90a14decb9dddf1bea6126935f59",
+      "inspection_sha256": "f4c007cc7d5aa54b3ac7dd5bf55f10d9540b90a14decb9dddf1bea6126935f59",
+      "inspection_hash_matches": true,
+      "image_size": [
+        256,
+        256
+      ],
+      "image_mode": "P"
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/assets/logo.png",
+      "source": "latexdocumentmaker",
+      "type": "binary",
+      "bytes": 11684,
+      "sha256": "bf538c803607a6e704448bd08cc172f1feaaeae23be21dab4292f502ba5a9a9c",
+      "inspection_sha256": "bf538c803607a6e704448bd08cc172f1feaaeae23be21dab4292f502ba5a9a9c",
+      "inspection_hash_matches": true,
+      "image_size": [
+        1024,
+        1024
+      ],
+      "image_mode": "P"
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/plugin.json",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 1298,
+      "sha256": "4b453def62f0e4d109bce288047eef227ff1614d7169e54fdebd7419f6c068c0",
+      "inspection_sha256": "4b453def62f0e4d109bce288047eef227ff1614d7169e54fdebd7419f6c068c0",
+      "inspection_hash_matches": true,
+      "lines": 27,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/README.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 696,
+      "sha256": "8a2a693a7540ea7c3f90a0050a26299539b5e7c7ebecf5908477c09853105e90",
+      "inspection_sha256": "8a2a693a7540ea7c3f90a0050a26299539b5e7c7ebecf5908477c09853105e90",
+      "inspection_hash_matches": true,
+      "lines": 5,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/academic-poster/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2258,
+      "sha256": "f78c5c70cf998d614bcdf98b67b6375c15c2c978e925f718cbf9ecf28cb0c34e",
+      "inspection_sha256": "f78c5c70cf998d614bcdf98b67b6375c15c2c978e925f718cbf9ecf28cb0c34e",
+      "inspection_hash_matches": true,
+      "lines": 46,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/algorithms-code/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2476,
+      "sha256": "fe14c45e1b799891a5fb468e593c93c4d7094bf3e5f754a5623a96ead0a0c1be",
+      "inspection_sha256": "fe14c45e1b799891a5fb468e593c93c4d7094bf3e5f754a5623a96ead0a0c1be",
+      "inspection_hash_matches": true,
+      "lines": 48,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/beamer-slides/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2689,
+      "sha256": "d03d9df65b8ce4122cc704d2f030c68dfefdff662b982fd697d98e45ee4d47a6",
+      "inspection_sha256": "d03d9df65b8ce4122cc704d2f030c68dfefdff662b982fd697d98e45ee4d47a6",
+      "inspection_hash_matches": true,
+      "lines": 53,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/bibliography-citations/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2889,
+      "sha256": "1779b22f62a063aa2d93be08f43168c0097c18545f297c1500a553c5856955a1",
+      "inspection_sha256": "1779b22f62a063aa2d93be08f43168c0097c18545f297c1500a553c5856955a1",
+      "inspection_hash_matches": true,
+      "lines": 49,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/books-notes/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2552,
+      "sha256": "96b713320bf5bb2f7d3c70a2bf40fc6d863f61018e610afcc9bb1a8883997b79",
+      "inspection_sha256": "96b713320bf5bb2f7d3c70a2bf40fc6d863f61018e610afcc9bb1a8883997b79",
+      "inspection_hash_matches": true,
+      "lines": 35,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/certificates-flyers/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2438,
+      "sha256": "4c0edb1e95c034dade4ce947ff04a4fb40c995b0056723a03e1eb67c1651d0ba",
+      "inspection_sha256": "4c0edb1e95c034dade4ce947ff04a4fb40c995b0056723a03e1eb67c1651d0ba",
+      "inspection_hash_matches": true,
+      "lines": 32,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/cross-references-links/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2424,
+      "sha256": "3c07912b42ee9168316769650f65d4e3bc2f7aaeead8d9c5086ee6141f7c5777",
+      "inspection_sha256": "3c07912b42ee9168316769650f65d4e3bc2f7aaeead8d9c5086ee6141f7c5777",
+      "inspection_hash_matches": true,
+      "lines": 38,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/custom-macros/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2432,
+      "sha256": "2db2ca9321d3d2938175d81671831ed767d23fb967aec5251cb125fc5d941f69",
+      "inspection_sha256": "2db2ca9321d3d2938175d81671831ed767d23fb967aec5251cb125fc5d941f69",
+      "inspection_hash_matches": true,
+      "lines": 43,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/document-builder/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2802,
+      "sha256": "e2584066174a0b5e5eb27384338681cefb08ee8a839e3e96a81fff508ba09989",
+      "inspection_sha256": "e2584066174a0b5e5eb27384338681cefb08ee8a839e3e96a81fff508ba09989",
+      "inspection_hash_matches": true,
+      "lines": 52,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/equation-converter/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2339,
+      "sha256": "9d46198a7a3894e4a9036b5aa8bf9a84976b0bb630e461ca00a1212818f1194b",
+      "inspection_sha256": "9d46198a7a3894e4a9036b5aa8bf9a84976b0bb630e461ca00a1212818f1194b",
+      "inspection_hash_matches": true,
+      "lines": 31,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/error-fixer/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 3408,
+      "sha256": "2acc5f970f04a73157bc7ca95f554486204b680add568d83d594cdc383fc6017",
+      "inspection_sha256": "2acc5f970f04a73157bc7ca95f554486204b680add568d83d594cdc383fc6017",
+      "inspection_hash_matches": true,
+      "lines": 43,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/figures-images/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2626,
+      "sha256": "a7c710e24525597b95f056cbb0d794045edae476ea09854e54b02287a68b10c7",
+      "inspection_sha256": "a7c710e24525597b95f056cbb0d794045edae476ea09854e54b02287a68b10c7",
+      "inspection_hash_matches": true,
+      "lines": 48,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/format-conversion/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2460,
+      "sha256": "6d130397ea5e7ed5da08217696364e898479d1a43427f2462e0df9037ffd9913",
+      "inspection_sha256": "6d130397ea5e7ed5da08217696364e898479d1a43427f2462e0df9037ffd9913",
+      "inspection_hash_matches": true,
+      "lines": 37,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/homework-exams/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2534,
+      "sha256": "19148367ab5544eb39ba8f23e672f62b6324165a4acdbe206d7961e9eb9a9503",
+      "inspection_sha256": "19148367ab5544eb39ba8f23e672f62b6324165a4acdbe206d7961e9eb9a9503",
+      "inspection_hash_matches": true,
+      "lines": 44,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/journal-templates/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 3010,
+      "sha256": "bae1a40bd86496cc81c197b477af8b2253cbbafdf643cacb50e9b79e933a3d17",
+      "inspection_sha256": "bae1a40bd86496cc81c197b477af8b2253cbbafdf643cacb50e9b79e933a3d17",
+      "inspection_hash_matches": true,
+      "lines": 40,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/latex-cleanup/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2473,
+      "sha256": "228fdbb4d715587ccd89e37b391e9fec0964b87c99bb954195373f8ba60c3d88",
+      "inspection_sha256": "228fdbb4d715587ccd89e37b391e9fec0964b87c99bb954195373f8ba60c3d88",
+      "inspection_hash_matches": true,
+      "lines": 37,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/latex-help/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2830,
+      "sha256": "cff1dcf079e6d62706dc2ba26c59eb19a84ea2e360d4da2920d6282cf06cb5fa",
+      "inspection_sha256": "cff1dcf079e6d62706dc2ba26c59eb19a84ea2e360d4da2920d6282cf06cb5fa",
+      "inspection_hash_matches": true,
+      "lines": 35,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/latex-proofreading/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2412,
+      "sha256": "b0c87d0dd1261547a62b7b7d148e998dbf03670cd3e0e7bca1a66cb55d1270d5",
+      "inspection_sha256": "b0c87d0dd1261547a62b7b7d148e998dbf03670cd3e0e7bca1a66cb55d1270d5",
+      "inspection_hash_matches": true,
+      "lines": 39,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/latex-studio/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 4339,
+      "sha256": "c73890fea1961a2063668b802c4cb9fc613a299df4c3ebdf6dfcd10ffbe28c8a",
+      "inspection_sha256": "c73890fea1961a2063668b802c4cb9fc613a299df4c3ebdf6dfcd10ffbe28c8a",
+      "inspection_hash_matches": true,
+      "lines": 46,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/letters/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2247,
+      "sha256": "c2a68fabb8d264bb3c0f0d4b8f96933d182726dcb42a378d6566800eefcdaf65",
+      "inspection_sha256": "c2a68fabb8d264bb3c0f0d4b8f96933d182726dcb42a378d6566800eefcdaf65",
+      "inspection_hash_matches": true,
+      "lines": 32,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/math-equations/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2546,
+      "sha256": "3c3d86b23b12e16899ec716660b839c308baf5ae61e0d5fd0bf5d92b1e64ef04",
+      "inspection_sha256": "3c3d86b23b12e16899ec716660b839c308baf5ae61e0d5fd0bf5d92b1e64ef04",
+      "inspection_hash_matches": true,
+      "lines": 49,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/multilingual-fonts/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2641,
+      "sha256": "2cbb7a4f898a9dea6b8460660b68f02e72e33463e26715076fa9f5467d957019",
+      "inspection_sha256": "2cbb7a4f898a9dea6b8460660b68f02e72e33463e26715076fa9f5467d957019",
+      "inspection_hash_matches": true,
+      "lines": 42,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/page-formatting/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2694,
+      "sha256": "8c247c1c97aabb685b8658630329c0f7a6df1f85caca15b25d58f63819e84fff",
+      "inspection_sha256": "8c247c1c97aabb685b8658630329c0f7a6df1f85caca15b25d58f63819e84fff",
+      "inspection_hash_matches": true,
+      "lines": 47,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/pgfplots-charts/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2415,
+      "sha256": "271a68d1c09be881b896c8611f3ef73cb8eed0af1dd72a255bac1a33a7b48946",
+      "inspection_sha256": "271a68d1c09be881b896c8611f3ef73cb8eed0af1dd72a255bac1a33a7b48946",
+      "inspection_hash_matches": true,
+      "lines": 45,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/reports-manuals/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2548,
+      "sha256": "f46176413884bf270df40b06a9a83b3016f9bb76b4cd6a2fed6f6b250c674a31",
+      "inspection_sha256": "f46176413884bf270df40b06a9a83b3016f9bb76b4cd6a2fed6f6b250c674a31",
+      "inspection_hash_matches": true,
+      "lines": 31,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/research-paper/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2604,
+      "sha256": "ef4c1861ffca319170f5ffcf3edef29bf9a9eec56310003aa38da7dd8d7858c2",
+      "inspection_sha256": "ef4c1861ffca319170f5ffcf3edef29bf9a9eec56310003aa38da7dd8d7858c2",
+      "inspection_hash_matches": true,
+      "lines": 38,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/resume-cv/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2512,
+      "sha256": "daee34dfec8c0c64381c3a733f7510e6c893298e3ca16621a688845df806e59e",
+      "inspection_sha256": "daee34dfec8c0c64381c3a733f7510e6c893298e3ca16621a688845df806e59e",
+      "inspection_hash_matches": true,
+      "lines": 32,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/science-notation/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2491,
+      "sha256": "e485c173b076ad4a649eeb307c70e69c4e4cf82623ceac1cf20636dc7eca592c",
+      "inspection_sha256": "e485c173b076ad4a649eeb307c70e69c4e4cf82623ceac1cf20636dc7eca592c",
+      "inspection_hash_matches": true,
+      "lines": 40,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/setup-compiling/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2655,
+      "sha256": "ddafebc9f5246aea6953e725af69bfacd85028de6acccd7a30a76069cd170573",
+      "inspection_sha256": "ddafebc9f5246aea6953e725af69bfacd85028de6acccd7a30a76069cd170573",
+      "inspection_hash_matches": true,
+      "lines": 41,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/tables/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2578,
+      "sha256": "794858788d849acc5439039ee4f7d168b0558d5e265d4076bb9618dc0ee200d8",
+      "inspection_sha256": "794858788d849acc5439039ee4f7d168b0558d5e265d4076bb9618dc0ee200d8",
+      "inspection_hash_matches": true,
+      "lines": 51,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/theorems-proofs/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2608,
+      "sha256": "093ca26bdf5e607deacb8f021dc118dde7c9d78fd05765c5b3c3fd9a7e87bdf5",
+      "inspection_sha256": "093ca26bdf5e607deacb8f021dc118dde7c9d78fd05765c5b3c3fd9a7e87bdf5",
+      "inspection_hash_matches": true,
+      "lines": 49,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/thesis-dissertation/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 3044,
+      "sha256": "7bbf80f20e7fe8809f585234fa28e73b8a45dd4082a1b1b1a498593fbc0dee55",
+      "inspection_sha256": "7bbf80f20e7fe8809f585234fa28e73b8a45dd4082a1b1b1a498593fbc0dee55",
+      "inspection_hash_matches": true,
+      "lines": 49,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/latexdocumentmaker/1.0.1/skills/tikz-diagrams/SKILL.md",
+      "source": "latexdocumentmaker",
+      "type": "text",
+      "bytes": 2908,
+      "sha256": "dd5eaaca75b83b7a97035c9e9dbdbc8bfdec2762d72a48cf13de4f3759342970",
+      "inspection_sha256": "dd5eaaca75b83b7a97035c9e9dbdbc8bfdec2762d72a48cf13de4f3759342970",
+      "inspection_hash_matches": true,
+      "lines": 52,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/research-writing-guardrails/.codex-remote-plugin-install.json",
+      "source": "research-writing-guardrails",
+      "type": "text",
+      "bytes": 92,
+      "sha256": "3a70727350fb7e8fad7daa08fc58bf27f71141a0841d362f74d5b52268efebee",
+      "inspection_sha256": "3a70727350fb7e8fad7daa08fc58bf27f71141a0841d362f74d5b52268efebee",
+      "inspection_hash_matches": true,
+      "lines": 4,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/research-writing-guardrails/1.0.0/.codex-plugin/assets/composer-icon.png",
+      "source": "research-writing-guardrails",
+      "type": "binary",
+      "bytes": 620690,
+      "sha256": "33c0bc82ab860299f2d0894234a5ed2deb29d69d0d5447cdaf684e6f754af8d3",
+      "inspection_sha256": "33c0bc82ab860299f2d0894234a5ed2deb29d69d0d5447cdaf684e6f754af8d3",
+      "inspection_hash_matches": true,
+      "image_size": [
+        1254,
+        1254
+      ],
+      "image_mode": "RGBA"
+    },
+    {
+      "path": "originals/research-writing-guardrails/1.0.0/.codex-plugin/assets/logo.png",
+      "source": "research-writing-guardrails",
+      "type": "binary",
+      "bytes": 67956,
+      "sha256": "0d8299ccbf4c24642b8bd1df5d7fc5b5d5c047b8172c2eed95e5d5409f2259b6",
+      "inspection_sha256": "0d8299ccbf4c24642b8bd1df5d7fc5b5d5c047b8172c2eed95e5d5409f2259b6",
+      "inspection_hash_matches": true,
+      "image_size": [
+        256,
+        256
+      ],
+      "image_mode": "RGBA"
+    },
+    {
+      "path": "originals/research-writing-guardrails/1.0.0/.codex-plugin/plugin.json",
+      "source": "research-writing-guardrails",
+      "type": "text",
+      "bytes": 1381,
+      "sha256": "f74b8dc18377b3372cedb99dbe87a5ac98fa61754f9abef60cc793200f7570a2",
+      "inspection_sha256": "f74b8dc18377b3372cedb99dbe87a5ac98fa61754f9abef60cc793200f7570a2",
+      "inspection_hash_matches": true,
+      "lines": 26,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/research-writing-guardrails/1.0.0/plugin.json",
+      "source": "research-writing-guardrails",
+      "type": "text",
+      "bytes": 308,
+      "sha256": "a8e0ba8db0716af6b20d9440982909c123357e209909945a3e123520419d5813",
+      "inspection_sha256": "a8e0ba8db0716af6b20d9440982909c123357e209909945a3e123520419d5813",
+      "inspection_hash_matches": true,
+      "lines": 6,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/research-writing-guardrails/1.0.0/skills/compag-elsevier-paper-editing/references/style-audit.md",
+      "source": "research-writing-guardrails",
+      "type": "text",
+      "bytes": 1927,
+      "sha256": "262e5badddbb078bf2af621edaeb54925490147c9038bfe26f626bdec9e06e9a",
+      "inspection_sha256": "262e5badddbb078bf2af621edaeb54925490147c9038bfe26f626bdec9e06e9a",
+      "inspection_hash_matches": true,
+      "lines": 58,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/research-writing-guardrails/1.0.0/skills/compag-elsevier-paper-editing/SKILL.md",
+      "source": "research-writing-guardrails",
+      "type": "text",
+      "bytes": 4159,
+      "sha256": "228ec64dd3470d9cab3d0b7109e18c34ec4fb11bd3e8f8da310cf5a5e41d65e9",
+      "inspection_sha256": "228ec64dd3470d9cab3d0b7109e18c34ec4fb11bd3e8f8da310cf5a5e41d65e9",
+      "inspection_hash_matches": true,
+      "lines": 67,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/research-writing-guardrails/1.0.0/skills/research-problem-mechanism-evidence/references/evidence-guide.md",
+      "source": "research-writing-guardrails",
+      "type": "text",
+      "bytes": 2610,
+      "sha256": "8fd90444aed20610a01ce51701f33665080de08a09fb58287257d03319a0b710",
+      "inspection_sha256": "8fd90444aed20610a01ce51701f33665080de08a09fb58287257d03319a0b710",
+      "inspection_hash_matches": true,
+      "lines": 58,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/research-writing-guardrails/1.0.0/skills/research-problem-mechanism-evidence/SKILL.md",
+      "source": "research-writing-guardrails",
+      "type": "text",
+      "bytes": 3892,
+      "sha256": "5f0c4cb41d9200566b6ef14fa9d5a03739233dcd29f017e84956e72723595fa5",
+      "inspection_sha256": "5f0c4cb41d9200566b6ef14fa9d5a03739233dcd29f017e84956e72723595fa5",
+      "inspection_hash_matches": true,
+      "lines": 51,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/.codex-remote-plugin-install.json",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 92,
+      "sha256": "89859191a053167c258de322a31e63d191722c228b115685e9d833b093bbd6e7",
+      "inspection_sha256": "89859191a053167c258de322a31e63d191722c228b115685e9d833b093bbd6e7",
+      "inspection_hash_matches": true,
+      "lines": 4,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/.claude-plugin/plugin.json",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1307,
+      "sha256": "d91f33c65cb010216d1822a75598108b79b2bff2860140334e8cfca4218c8428",
+      "inspection_sha256": "d91f33c65cb010216d1822a75598108b79b2bff2860140334e8cfca4218c8428",
+      "inspection_hash_matches": true,
+      "lines": 25,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/.codex-plugin/assets/composer-icon-dark.png",
+      "source": "researchevidencefinder",
+      "type": "binary",
+      "bytes": 1031243,
+      "sha256": "63d8b623d8d678e19db235e5ccae1abf0742a5b10e0f1314769662e54753174c",
+      "inspection_sha256": "63d8b623d8d678e19db235e5ccae1abf0742a5b10e0f1314769662e54753174c",
+      "inspection_hash_matches": true,
+      "image_size": [
+        1254,
+        1254
+      ],
+      "image_mode": "RGBA"
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/.codex-plugin/assets/composer-icon.png",
+      "source": "researchevidencefinder",
+      "type": "binary",
+      "bytes": 29459,
+      "sha256": "51495bdf03cb64e61fc0f9772105046e3be6d4860829fc36655d30ceb7accabe",
+      "inspection_sha256": "51495bdf03cb64e61fc0f9772105046e3be6d4860829fc36655d30ceb7accabe",
+      "inspection_hash_matches": true,
+      "image_size": [
+        256,
+        256
+      ],
+      "image_mode": "P"
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/.codex-plugin/assets/logo-dark.png",
+      "source": "researchevidencefinder",
+      "type": "binary",
+      "bytes": 61966,
+      "sha256": "ea4d23621cda53134d3bba76c4d1d8578daac24514715af8c474a2e9b589fdf8",
+      "inspection_sha256": "ea4d23621cda53134d3bba76c4d1d8578daac24514715af8c474a2e9b589fdf8",
+      "inspection_hash_matches": true,
+      "image_size": [
+        256,
+        256
+      ],
+      "image_mode": "RGBA"
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/.codex-plugin/assets/logo.png",
+      "source": "researchevidencefinder",
+      "type": "binary",
+      "bytes": 131273,
+      "sha256": "4bd4f10e99d65b9a49d0c16d0e13198af5f32ae45b1762593a69ef3ec79a6995",
+      "inspection_sha256": "4bd4f10e99d65b9a49d0c16d0e13198af5f32ae45b1762593a69ef3ec79a6995",
+      "inspection_hash_matches": true,
+      "image_size": [
+        512,
+        512
+      ],
+      "image_mode": "P"
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/.codex-plugin/plugin.json",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 3203,
+      "sha256": "aced40dfb3ea9a7d7f98d5310250069e03046380b99aacb8066e481c0547619c",
+      "inspection_sha256": "aced40dfb3ea9a7d7f98d5310250069e03046380b99aacb8066e481c0547619c",
+      "inspection_hash_matches": true,
+      "lines": 50,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/assets/icon.png",
+      "source": "researchevidencefinder",
+      "type": "binary",
+      "bytes": 29459,
+      "sha256": "51495bdf03cb64e61fc0f9772105046e3be6d4860829fc36655d30ceb7accabe",
+      "inspection_sha256": "51495bdf03cb64e61fc0f9772105046e3be6d4860829fc36655d30ceb7accabe",
+      "inspection_hash_matches": true,
+      "image_size": [
+        256,
+        256
+      ],
+      "image_mode": "P"
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/assets/logo.png",
+      "source": "researchevidencefinder",
+      "type": "binary",
+      "bytes": 131273,
+      "sha256": "4bd4f10e99d65b9a49d0c16d0e13198af5f32ae45b1762593a69ef3ec79a6995",
+      "inspection_sha256": "4bd4f10e99d65b9a49d0c16d0e13198af5f32ae45b1762593a69ef3ec79a6995",
+      "inspection_hash_matches": true,
+      "image_size": [
+        512,
+        512
+      ],
+      "image_mode": "P"
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/plugin.json",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1307,
+      "sha256": "d91f33c65cb010216d1822a75598108b79b2bff2860140334e8cfca4218c8428",
+      "inspection_sha256": "d91f33c65cb010216d1822a75598108b79b2bff2860140334e8cfca4218c8428",
+      "inspection_hash_matches": true,
+      "lines": 25,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/README.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 727,
+      "sha256": "207f79a16f0886a5695dc8033c9565b67e03c0d144efd82f73d4aefd4af38a7c",
+      "inspection_sha256": "207f79a16f0886a5695dc8033c9565b67e03c0d144efd82f73d4aefd4af38a7c",
+      "inspection_hash_matches": true,
+      "lines": 5,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/citation-chaining/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1987,
+      "sha256": "7ccb161ce2cdc303b5bacbdc4068297fc087dcee2491abd4d374692572229e34",
+      "inspection_sha256": "7ccb161ce2cdc303b5bacbdc4068297fc087dcee2491abd4d374692572229e34",
+      "inspection_hash_matches": true,
+      "lines": 33,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/citations-and-references/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1501,
+      "sha256": "b8999812b501cdf6c7ef408cc414fa8b65a3ce24be69daae2e3c23ab26e26a03",
+      "inspection_sha256": "b8999812b501cdf6c7ef408cc414fa8b65a3ce24be69daae2e3c23ab26e26a03",
+      "inspection_hash_matches": true,
+      "lines": 33,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/claim-checker/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1582,
+      "sha256": "38b312054486bd7820daca9a026af2022f65efcc83e8e9e8e90effee02e46737",
+      "inspection_sha256": "38b312054486bd7820daca9a026af2022f65efcc83e8e9e8e90effee02e46737",
+      "inspection_hash_matches": true,
+      "lines": 35,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/compare-studies/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1056,
+      "sha256": "59fd67ad736a4bab33a433b0dd020d450dc295c47861787dcd35ca00a4987e95",
+      "inspection_sha256": "59fd67ad736a4bab33a433b0dd020d450dc295c47861787dcd35ca00a4987e95",
+      "inspection_hash_matches": true,
+      "lines": 28,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/data-extraction/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1354,
+      "sha256": "bb64353448c077d45667e09e547733e841092106e80e563e5f037d2a6f31bfc9",
+      "inspection_sha256": "bb64353448c077d45667e09e547733e841092106e80e563e5f037d2a6f31bfc9",
+      "inspection_hash_matches": true,
+      "lines": 32,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/database-guide/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1496,
+      "sha256": "2386c7ad92f9cc0872de4062cec9d30c1852396e29117c048bf414efab7edb2e",
+      "inspection_sha256": "2386c7ad92f9cc0872de4062cec9d30c1852396e29117c048bf414efab7edb2e",
+      "inspection_hash_matches": true,
+      "lines": 31,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/debate-and-argument-evidence/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1242,
+      "sha256": "7720a1633227bc0395aeecc61f5523f054585e2f052fa3eedc7a40aeeba5173a",
+      "inspection_sha256": "7720a1633227bc0395aeecc61f5523f054585e2f052fa3eedc7a40aeeba5173a",
+      "inspection_hash_matches": true,
+      "lines": 25,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/decision-evidence/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1608,
+      "sha256": "30c48d0d9ed0e380c97fe7685b0ca3a914ede2c4d104fd4bd4717c76a99ec06d",
+      "inspection_sha256": "30c48d0d9ed0e380c97fe7685b0ca3a914ede2c4d104fd4bd4717c76a99ec06d",
+      "inspection_hash_matches": true,
+      "lines": 27,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/evidence-answer/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1695,
+      "sha256": "2bdf4868932f7a70a252c05bba64abef6f7f18311e7f4134aa63eace4b2d2c55",
+      "inspection_sha256": "2bdf4868932f7a70a252c05bba64abef6f7f18311e7f4134aa63eace4b2d2c55",
+      "inspection_hash_matches": true,
+      "lines": 37,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/evidence-based-writing/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1498,
+      "sha256": "05c63d8e71a2152dd7924df54b261c81b679506d8e807d009a18f67c2922ce4e",
+      "inspection_sha256": "05c63d8e71a2152dd7924df54b261c81b679506d8e807d009a18f67c2922ce4e",
+      "inspection_hash_matches": true,
+      "lines": 27,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/evidence-help/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1472,
+      "sha256": "044d9f3e0f8eebf442cd6b29dafcdf7f1ff7eaf0341a838e398c9d734b2d11a8",
+      "inspection_sha256": "044d9f3e0f8eebf442cd6b29dafcdf7f1ff7eaf0341a838e398c9d734b2d11a8",
+      "inspection_hash_matches": true,
+      "lines": 23,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/evidence-meter/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1427,
+      "sha256": "f66f4e612a2f63e81bdfcaf02527e7119e222ca0384d932572f401ddc3ea3102",
+      "inspection_sha256": "f66f4e612a2f63e81bdfcaf02527e7119e222ca0384d932572f401ddc3ea3102",
+      "inspection_hash_matches": true,
+      "lines": 29,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/field-guides/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1752,
+      "sha256": "37811bc962b604b843abfb40002c13a7a574b715b0b75409e3baa2e5ea0c6cb2",
+      "inspection_sha256": "37811bc962b604b843abfb40002c13a7a574b715b0b75409e3baa2e5ea0c6cb2",
+      "inspection_hash_matches": true,
+      "lines": 23,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/find-studies/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1652,
+      "sha256": "93b3241fb7d94d7b5cb0ea0ac64176ab50bcdccbc26689aa7fff5f97ab06e5bc",
+      "inspection_sha256": "93b3241fb7d94d7b5cb0ea0ac64176ab50bcdccbc26689aa7fff5f97ab06e5bc",
+      "inspection_hash_matches": true,
+      "lines": 31,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/literature-review/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1603,
+      "sha256": "5e13094b959f2127eff484972139a69b5d6fc5aff42942287f95a3ca7f2fba13",
+      "inspection_sha256": "5e13094b959f2127eff484972139a69b5d6fc5aff42942287f95a3ca7f2fba13",
+      "inspection_hash_matches": true,
+      "lines": 35,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/meta-analysis/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1526,
+      "sha256": "2b498c39dfb0973c8e6341ab35268cf8df98abc8db879b1e082693a54a2b7952",
+      "inspection_sha256": "2b498c39dfb0973c8e6341ab35268cf8df98abc8db879b1e082693a54a2b7952",
+      "inspection_hash_matches": true,
+      "lines": 27,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/open-access-full-text/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1375,
+      "sha256": "d7e95b29128869cfba512307b89011bd47804978371e5a50c97ebdd75d2f025f",
+      "inspection_sha256": "d7e95b29128869cfba512307b89011bd47804978371e5a50c97ebdd75d2f025f",
+      "inspection_hash_matches": true,
+      "lines": 23,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/paper-summary/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1336,
+      "sha256": "c9871168adfac4661b33a29b389cd13ee2bcf54ec83d7dbd7bc76984380089c7",
+      "inspection_sha256": "c9871168adfac4661b33a29b389cd13ee2bcf54ec83d7dbd7bc76984380089c7",
+      "inspection_hash_matches": true,
+      "lines": 29,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/plain-language-research/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1303,
+      "sha256": "f227cda020d84477ce6f96a76878cc935eb3ad2e26d181556d484d0e33a92962",
+      "inspection_sha256": "f227cda020d84477ce6f96a76878cc935eb3ad2e26d181556d484d0e33a92962",
+      "inspection_hash_matches": true,
+      "lines": 28,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/research-evidence-finder/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 3324,
+      "sha256": "a6376e2bd2d3cdf20c1240f8ae84c92fcf51afd2f26434c31b26139bee157125",
+      "inspection_sha256": "a6376e2bd2d3cdf20c1240f8ae84c92fcf51afd2f26434c31b26139bee157125",
+      "inspection_hash_matches": true,
+      "lines": 44,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/research-gaps/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1257,
+      "sha256": "05c38516c61e8ebb62e08153b7cf977c1c1c0dfc6e152e8f0edd08e525c296b9",
+      "inspection_sha256": "05c38516c61e8ebb62e08153b7cf977c1c1c0dfc6e152e8f0edd08e525c296b9",
+      "inspection_hash_matches": true,
+      "lines": 27,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/research-proposal-background/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1275,
+      "sha256": "043ab6d39da18c951267bfeeb4c40badac764f4e40f1bc191bf8ff45ef84bfa2",
+      "inspection_sha256": "043ab6d39da18c951267bfeeb4c40badac764f4e40f1bc191bf8ff45ef84bfa2",
+      "inspection_hash_matches": true,
+      "lines": 29,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/research-question/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1548,
+      "sha256": "75ba7b0eada81dd29f63fafef88a71f62cf25de3f01ea001d7f3efc7d6b8a787",
+      "inspection_sha256": "75ba7b0eada81dd29f63fafef88a71f62cf25de3f01ea001d7f3efc7d6b8a787",
+      "inspection_hash_matches": true,
+      "lines": 33,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/search-strings/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1644,
+      "sha256": "ac74b2ee8ced6754d094111ac2d74eac3d05f08a206df6fc7ba1a0f874a88061",
+      "inspection_sha256": "ac74b2ee8ced6754d094111ac2d74eac3d05f08a206df6fc7ba1a0f874a88061",
+      "inspection_hash_matches": true,
+      "lines": 34,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/source-verification/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1577,
+      "sha256": "50d75db370f2dc543466959deb48fea0cfc50f3645aea9419ce7bbfecf094cba",
+      "inspection_sha256": "50d75db370f2dc543466959deb48fea0cfc50f3645aea9419ce7bbfecf094cba",
+      "inspection_hash_matches": true,
+      "lines": 26,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/statistics-explained/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1694,
+      "sha256": "05905d0ff38e178e7d53737f7745e87300e937bbf9aad69408f20b5bdfd9adf6",
+      "inspection_sha256": "05905d0ff38e178e7d53737f7745e87300e937bbf9aad69408f20b5bdfd9adf6",
+      "inspection_hash_matches": true,
+      "lines": 26,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/study-appraisal/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1600,
+      "sha256": "f1f525323043bee7933f208c05a4c2aa58202d577a493a63af06cd999d461016",
+      "inspection_sha256": "f1f525323043bee7933f208c05a4c2aa58202d577a493a63af06cd999d461016",
+      "inspection_hash_matches": true,
+      "lines": 30,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/study-designs-and-evidence-levels/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1794,
+      "sha256": "69bf07de6c7070f787174b5b9492a59a8bac6362f2be1c793b6443c303b9304d",
+      "inspection_sha256": "69bf07de6c7070f787174b5b9492a59a8bac6362f2be1c793b6443c303b9304d",
+      "inspection_hash_matches": true,
+      "lines": 34,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/researchevidencefinder/1.0.0/skills/systematic-review/SKILL.md",
+      "source": "researchevidencefinder",
+      "type": "text",
+      "bytes": 1567,
+      "sha256": "6252932953a4a22e79d80ab37b9735aef73d2f98294e5d3452305d0f62bb934c",
+      "inspection_sha256": "6252932953a4a22e79d80ab37b9735aef73d2f98294e5d3452305d0f62bb934c",
+      "inspection_hash_matches": true,
+      "lines": 26,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/.codex-remote-plugin-install.json",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 92,
+      "sha256": "ebfcc6df9a8b7596bd21d8a3200b9e5554396a30090cb9217fc8a2c854892330",
+      "inspection_sha256": "ebfcc6df9a8b7596bd21d8a3200b9e5554396a30090cb9217fc8a2c854892330",
+      "inspection_hash_matches": true,
+      "lines": 4,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/.claude-plugin/plugin.json",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 1604,
+      "sha256": "aa639c997ea6dfac778b7eb3112c300dc011fba509cceeeb38160af5f93888a5",
+      "inspection_sha256": "aa639c997ea6dfac778b7eb3112c300dc011fba509cceeeb38160af5f93888a5",
+      "inspection_hash_matches": true,
+      "lines": 27,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/.codex-plugin/assets/composer-icon.png",
+      "source": "scholarresearch",
+      "type": "binary",
+      "bytes": 10762,
+      "sha256": "c0c9a2a6c0b142d26c718255fe1b4b3e1c116dbb48b7dd51cb00614929820401",
+      "inspection_sha256": "c0c9a2a6c0b142d26c718255fe1b4b3e1c116dbb48b7dd51cb00614929820401",
+      "inspection_hash_matches": true,
+      "image_size": [
+        256,
+        256
+      ],
+      "image_mode": "P"
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/.codex-plugin/assets/logo-dark.png",
+      "source": "scholarresearch",
+      "type": "binary",
+      "bytes": 75398,
+      "sha256": "4ac0a2a5033d2ecc3c9127f8a9dc66721aa5fb0a29ffeb8078732588037d4bc1",
+      "inspection_sha256": "4ac0a2a5033d2ecc3c9127f8a9dc66721aa5fb0a29ffeb8078732588037d4bc1",
+      "inspection_hash_matches": true,
+      "image_size": [
+        256,
+        256
+      ],
+      "image_mode": "RGBA"
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/.codex-plugin/assets/logo.png",
+      "source": "scholarresearch",
+      "type": "binary",
+      "bytes": 83258,
+      "sha256": "09a173703f731000c52b430e57d2411ea54acb8e3dd852c7278af8dcd309d216",
+      "inspection_sha256": "09a173703f731000c52b430e57d2411ea54acb8e3dd852c7278af8dcd309d216",
+      "inspection_hash_matches": true,
+      "image_size": [
+        1024,
+        1024
+      ],
+      "image_mode": "P"
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/.codex-plugin/plugin.json",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 3549,
+      "sha256": "4dba95f0b648c63ff8b56649a8c1a4664d721839b8607178ed86f9681fbdd71b",
+      "inspection_sha256": "4dba95f0b648c63ff8b56649a8c1a4664d721839b8607178ed86f9681fbdd71b",
+      "inspection_hash_matches": true,
+      "lines": 51,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/assets/icon.png",
+      "source": "scholarresearch",
+      "type": "binary",
+      "bytes": 10762,
+      "sha256": "c0c9a2a6c0b142d26c718255fe1b4b3e1c116dbb48b7dd51cb00614929820401",
+      "inspection_sha256": "c0c9a2a6c0b142d26c718255fe1b4b3e1c116dbb48b7dd51cb00614929820401",
+      "inspection_hash_matches": true,
+      "image_size": [
+        256,
+        256
+      ],
+      "image_mode": "P"
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/assets/logo.png",
+      "source": "scholarresearch",
+      "type": "binary",
+      "bytes": 83258,
+      "sha256": "09a173703f731000c52b430e57d2411ea54acb8e3dd852c7278af8dcd309d216",
+      "inspection_sha256": "09a173703f731000c52b430e57d2411ea54acb8e3dd852c7278af8dcd309d216",
+      "inspection_hash_matches": true,
+      "image_size": [
+        1024,
+        1024
+      ],
+      "image_mode": "P"
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/plugin.json",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 1604,
+      "sha256": "aa639c997ea6dfac778b7eb3112c300dc011fba509cceeeb38160af5f93888a5",
+      "inspection_sha256": "aa639c997ea6dfac778b7eb3112c300dc011fba509cceeeb38160af5f93888a5",
+      "inspection_hash_matches": true,
+      "lines": 27,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/README.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 782,
+      "sha256": "c5a2e015c002db9ead63e19551a2196f3519974c3c355035a4fb3607878848ce",
+      "inspection_sha256": "c5a2e015c002db9ead63e19551a2196f3519974c3c355035a4fb3607878848ce",
+      "inspection_hash_matches": true,
+      "lines": 5,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/abstract-introduction/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2879,
+      "sha256": "6e0fd692c1d43034552a1e26e7d9e4635aa62a91df893e52daa1a66dfa2e73b3",
+      "inspection_sha256": "6e0fd692c1d43034552a1e26e7d9e4635aa62a91df893e52daa1a66dfa2e73b3",
+      "inspection_hash_matches": true,
+      "lines": 47,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/academic-editing/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2360,
+      "sha256": "ef277e9d1d80e5c4111c3185a1a9b743116a988b4d687ff620a734e3b126eef9",
+      "inspection_sha256": "ef277e9d1d80e5c4111c3185a1a9b743116a988b4d687ff620a734e3b126eef9",
+      "inspection_hash_matches": true,
+      "lines": 31,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/academic-translation/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2194,
+      "sha256": "5a36d7c3b8a40d33a959c8699828ccbc1b6a5f14954ae45319444ca08328538b",
+      "inspection_sha256": "5a36d7c3b8a40d33a959c8699828ccbc1b6a5f14954ae45319444ca08328538b",
+      "inspection_hash_matches": true,
+      "lines": 27,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/citation-generator/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 3332,
+      "sha256": "c4b41b677ed3781f4057f1c3deb4066aa0f516023c575c1cd2c1c347ed4793da",
+      "inspection_sha256": "c4b41b677ed3781f4057f1c3deb4066aa0f516023c575c1cd2c1c347ed4793da",
+      "inspection_hash_matches": true,
+      "lines": 52,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/data-analysis-plan/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2605,
+      "sha256": "cc645500d747a8116546379fe49d25319ae994e6f657824376f663d2bf41e5dc",
+      "inspection_sha256": "cc645500d747a8116546379fe49d25319ae994e6f657824376f663d2bf41e5dc",
+      "inspection_hash_matches": true,
+      "lines": 36,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/evidence-synthesis/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2366,
+      "sha256": "1c6f58749e030f544d33bd8c9249f38e82535342a434f8d85a092f2e90982fe2",
+      "inspection_sha256": "1c6f58749e030f544d33bd8c9249f38e82535342a434f8d85a092f2e90982fe2",
+      "inspection_hash_matches": true,
+      "lines": 33,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/find-sources/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2513,
+      "sha256": "2a62388eccbf993ceb000a28ec1b24d22f805fb1c58ec6f04646e1196412808e",
+      "inspection_sha256": "2a62388eccbf993ceb000a28ec1b24d22f805fb1c58ec6f04646e1196412808e",
+      "inspection_hash_matches": true,
+      "lines": 37,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/grant-proposal/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2171,
+      "sha256": "dd4e95cb3ed9da256f7d811ea1abf0e8917869022e111fff337151aa1723d672",
+      "inspection_sha256": "dd4e95cb3ed9da256f7d811ea1abf0e8917869022e111fff337151aa1723d672",
+      "inspection_hash_matches": true,
+      "lines": 27,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/journal-finder/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2286,
+      "sha256": "4b58ed326fcbc7744a62664c30e3776234319dd45a03a55216f789a14b12b2f5",
+      "inspection_sha256": "4b58ed326fcbc7744a62664c30e3776234319dd45a03a55216f789a14b12b2f5",
+      "inspection_hash_matches": true,
+      "lines": 27,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/literature-review/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 3377,
+      "sha256": "6aa5173eba0fd001af1d57842f0284017f02af6f30a0c49387df8f0a9961bc11",
+      "inspection_sha256": "6aa5173eba0fd001af1d57842f0284017f02af6f30a0c49387df8f0a9961bc11",
+      "inspection_hash_matches": true,
+      "lines": 52,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/methodology-design/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2581,
+      "sha256": "5f4697915fda85da172abc7c86b4ca4639098d9f175369286e31dc49a0ebb4df",
+      "inspection_sha256": "5f4697915fda85da172abc7c86b4ca4639098d9f175369286e31dc49a0ebb4df",
+      "inspection_hash_matches": true,
+      "lines": 27,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/originality-integrity/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2402,
+      "sha256": "7be16d78de72bb3b17a74fa7415dd7703e277b85754c07a7158b8e531d4751c4",
+      "inspection_sha256": "7be16d78de72bb3b17a74fa7415dd7703e277b85754c07a7158b8e531d4751c4",
+      "inspection_hash_matches": true,
+      "lines": 26,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/outline-builder/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2306,
+      "sha256": "06f324673efc214e7cdcd8c7286613a1e19b1acd76b6469098c7dcb4427ad6c2",
+      "inspection_sha256": "06f324673efc214e7cdcd8c7286613a1e19b1acd76b6469098c7dcb4427ad6c2",
+      "inspection_hash_matches": true,
+      "lines": 31,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/paper-breakdown/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 3119,
+      "sha256": "df9286bb6fee40c4016780a0a1f6ef310205ea2d923deffe99685eef9fcdb99c",
+      "inspection_sha256": "df9286bb6fee40c4016780a0a1f6ef310205ea2d923deffe99685eef9fcdb99c",
+      "inspection_hash_matches": true,
+      "lines": 57,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/paper-sections/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2950,
+      "sha256": "c1f372f001a1c9254914491b68ee347f32b0c387b7cf5cb7d7acfd13c640fa2f",
+      "inspection_sha256": "c1f372f001a1c9254914491b68ee347f32b0c387b7cf5cb7d7acfd13c640fa2f",
+      "inspection_hash_matches": true,
+      "lines": 48,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/paperpal-tools/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2632,
+      "sha256": "d8825db5e6e2ee11ae131e2e305593dec75e7d99d23cf09baadbb9c51c83bb03",
+      "inspection_sha256": "d8825db5e6e2ee11ae131e2e305593dec75e7d99d23cf09baadbb9c51c83bb03",
+      "inspection_hash_matches": true,
+      "lines": 26,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/paraphrase-summarize/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2108,
+      "sha256": "c1e665dc4ecab1a52b71364910f93f05662bee9554e4f16da0e66bccc12f5e85",
+      "inspection_sha256": "c1e665dc4ecab1a52b71364910f93f05662bee9554e4f16da0e66bccc12f5e85",
+      "inspection_hash_matches": true,
+      "lines": 26,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/peer-review-critique/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2308,
+      "sha256": "d923f6a3e59e9b9194297aa657b273ea242868ac97276f4de87134ac685b0b49",
+      "inspection_sha256": "d923f6a3e59e9b9194297aa657b273ea242868ac97276f4de87134ac685b0b49",
+      "inspection_hash_matches": true,
+      "lines": 31,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/qualitative-analysis/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2284,
+      "sha256": "4be9d6fe2de8ca7cd2640c70d9d68348bd41e9c0b5b4aac0613e40e7e33474a3",
+      "inspection_sha256": "4be9d6fe2de8ca7cd2640c70d9d68348bd41e9c0b5b4aac0613e40e7e33474a3",
+      "inspection_hash_matches": true,
+      "lines": 32,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/research-communication/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2878,
+      "sha256": "c3c651c2b5a46702ab7536d9ced3d00300f569055d4a21af2df8e733c5f6ea84",
+      "inspection_sha256": "c3c651c2b5a46702ab7536d9ced3d00300f569055d4a21af2df8e733c5f6ea84",
+      "inspection_hash_matches": true,
+      "lines": 39,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/research-ethics/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2352,
+      "sha256": "622794c0c9ecd4dbd7825e1ba6061dec984f0cc6af50ab8b21c6b37c8e76a2e6",
+      "inspection_sha256": "622794c0c9ecd4dbd7825e1ba6061dec984f0cc6af50ab8b21c6b37c8e76a2e6",
+      "inspection_hash_matches": true,
+      "lines": 27,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/research-gaps/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2228,
+      "sha256": "c36fad4b068e20517986c893bba92c9215df658f58a1e85be556f9e212357120",
+      "inspection_sha256": "c36fad4b068e20517986c893bba92c9215df658f58a1e85be556f9e212357120",
+      "inspection_hash_matches": true,
+      "lines": 30,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/research-planner/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2143,
+      "sha256": "572aaa61702916746f6aaf07b09f70678036eea35c90d3569f250a434167dce2",
+      "inspection_sha256": "572aaa61702916746f6aaf07b09f70678036eea35c90d3569f250a434167dce2",
+      "inspection_hash_matches": true,
+      "lines": 27,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/research-proposal/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2275,
+      "sha256": "457f8f04a37700526f31719c98bb7eaf868e7587d46c0f40ca1f8c6a199b65e2",
+      "inspection_sha256": "457f8f04a37700526f31719c98bb7eaf868e7587d46c0f40ca1f8c6a199b65e2",
+      "inspection_hash_matches": true,
+      "lines": 33,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/research-question/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 3463,
+      "sha256": "ea2fbc7cfc01eb49d32fa7da478c6b608524165ec5acf99ea6f433d6f3df37f6",
+      "inspection_sha256": "ea2fbc7cfc01eb49d32fa7da478c6b608524165ec5acf99ea6f433d6f3df37f6",
+      "inspection_hash_matches": true,
+      "lines": 53,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/results-interpreter/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2128,
+      "sha256": "9d14e2cc3b10bcb628868d871243dd0e3e6cd7e31b31afc36b96a993bcecd366",
+      "inspection_sha256": "9d14e2cc3b10bcb628868d871243dd0e3e6cd7e31b31afc36b96a993bcecd366",
+      "inspection_hash_matches": true,
+      "lines": 32,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/reviewer-response/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2104,
+      "sha256": "2075938fc2392160f1ccd758fe5d33b64a495d1ccafd6db0b8e3d0f13c498cad",
+      "inspection_sha256": "2075938fc2392160f1ccd758fe5d33b64a495d1ccafd6db0b8e3d0f13c498cad",
+      "inspection_hash_matches": true,
+      "lines": 31,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/scholar-help/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2919,
+      "sha256": "4608980acbab799edcb4548813e1c8172019c5c5b27425eab67080ba4ba06aea",
+      "inspection_sha256": "4608980acbab799edcb4548813e1c8172019c5c5b27425eab67080ba4ba06aea",
+      "inspection_hash_matches": true,
+      "lines": 34,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/scholar-studio/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 4148,
+      "sha256": "d38439382c47f21fcb4ef8e977644213867b676080b8a664ada608363309cb7b",
+      "inspection_sha256": "d38439382c47f21fcb4ef8e977644213867b676080b8a664ada608363309cb7b",
+      "inspection_hash_matches": true,
+      "lines": 43,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/source-evaluation/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2379,
+      "sha256": "aea7ae338e4ff0126f6c3c31340b5a70fd865d98bf91a0b97386cfb3cef32583",
+      "inspection_sha256": "aea7ae338e4ff0126f6c3c31340b5a70fd865d98bf91a0b97386cfb3cef32583",
+      "inspection_hash_matches": true,
+      "lines": 32,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/submission-checklist/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 3320,
+      "sha256": "3ae768d2467ba3a9f2342d08c0c69cc576368b784d23fb9b67ec9b46c42d909c",
+      "inspection_sha256": "3ae768d2467ba3a9f2342d08c0c69cc576368b784d23fb9b67ec9b46c42d909c",
+      "inspection_hash_matches": true,
+      "lines": 45,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/survey-design/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2269,
+      "sha256": "57f542ae82b8c538a207fa04be7d61f9d04e1a13b4c677c3d75637cd56bb2a19",
+      "inspection_sha256": "57f542ae82b8c538a207fa04be7d61f9d04e1a13b4c677c3d75637cd56bb2a19",
+      "inspection_hash_matches": true,
+      "lines": 27,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/systematic-review/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2395,
+      "sha256": "0c07aa06944fbfd17b30be8fb13f34cb66bd1be23330cdc4aab0169303ca6e66",
+      "inspection_sha256": "0c07aa06944fbfd17b30be8fb13f34cb66bd1be23330cdc4aab0169303ca6e66",
+      "inspection_hash_matches": true,
+      "lines": 30,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/theoretical-framework/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2191,
+      "sha256": "dd09982a2026560ec3954542de9aa7d635efbd7101c6a1a8ae1fd3d97dfe46b2",
+      "inspection_sha256": "dd09982a2026560ec3954542de9aa7d635efbd7101c6a1a8ae1fd3d97dfe46b2",
+      "inspection_hash_matches": true,
+      "lines": 25,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/thesis-dissertation/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 2255,
+      "sha256": "4dfd884d135c35858fe2650cd7255f1e085959b2d4a2d88b3b4bacedfd956264",
+      "inspection_sha256": "4dfd884d135c35858fe2650cd7255f1e085959b2d4a2d88b3b4bacedfd956264",
+      "inspection_hash_matches": true,
+      "lines": 26,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scholarresearch/1.1.0/skills/word-reduction/SKILL.md",
+      "source": "scholarresearch",
+      "type": "text",
+      "bytes": 1955,
+      "sha256": "d1406e28d35a15bcb54019d05dd0c326e8efa8c0c9c7ca265947c387c54a605b",
+      "inspection_sha256": "d1406e28d35a15bcb54019d05dd0c326e8efa8c0c9c7ca265947c387c54a605b",
+      "inspection_hash_matches": true,
+      "lines": 25,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/.codex-remote-plugin-install.json",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 92,
+      "sha256": "c787bbf98aef0eb0655096ede9f2c0d4fdd040c6df6220f9da8dac77a069486f",
+      "inspection_sha256": "c787bbf98aef0eb0655096ede9f2c0d4fdd040c6df6220f9da8dac77a069486f",
+      "inspection_hash_matches": true,
+      "lines": 4,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/.codex-plugin/assets/composer-icon.png",
+      "source": "scientific-visual-table-style",
+      "type": "binary",
+      "bytes": 3305,
+      "sha256": "be0abc05b10c0e12aecd76b96c7106b452643d981ddc3642a225307f048e640d",
+      "inspection_sha256": "be0abc05b10c0e12aecd76b96c7106b452643d981ddc3642a225307f048e640d",
+      "inspection_hash_matches": true,
+      "image_size": [
+        512,
+        512
+      ],
+      "image_mode": "RGBA"
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/.codex-plugin/assets/logo.png",
+      "source": "scientific-visual-table-style",
+      "type": "binary",
+      "bytes": 8906,
+      "sha256": "f1cd1be6ba5eef68cc381d955978b287e93b76489f682cff13495f9f7e2bbe3e",
+      "inspection_sha256": "f1cd1be6ba5eef68cc381d955978b287e93b76489f682cff13495f9f7e2bbe3e",
+      "inspection_hash_matches": true,
+      "image_size": [
+        1024,
+        1024
+      ],
+      "image_mode": "RGBA"
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/.codex-plugin/plugin.json",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 2187,
+      "sha256": "4d227166deb75cb40043fe995f952a73253e48684a46068e04308bdef4a9ca20",
+      "inspection_sha256": "4d227166deb75cb40043fe995f952a73253e48684a46068e04308bdef4a9ca20",
+      "inspection_hash_matches": true,
+      "lines": 42,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/assets/composer-icon.png",
+      "source": "scientific-visual-table-style",
+      "type": "binary",
+      "bytes": 3305,
+      "sha256": "be0abc05b10c0e12aecd76b96c7106b452643d981ddc3642a225307f048e640d",
+      "inspection_sha256": "be0abc05b10c0e12aecd76b96c7106b452643d981ddc3642a225307f048e640d",
+      "inspection_hash_matches": true,
+      "image_size": [
+        512,
+        512
+      ],
+      "image_mode": "RGBA"
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/assets/logo.png",
+      "source": "scientific-visual-table-style",
+      "type": "binary",
+      "bytes": 8906,
+      "sha256": "f1cd1be6ba5eef68cc381d955978b287e93b76489f682cff13495f9f7e2bbe3e",
+      "inspection_sha256": "f1cd1be6ba5eef68cc381d955978b287e93b76489f682cff13495f9f7e2bbe3e",
+      "inspection_hash_matches": true,
+      "image_size": [
+        1024,
+        1024
+      ],
+      "image_mode": "RGBA"
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/agents/openai.yaml",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 301,
+      "sha256": "bf12e6762e241e8307d6050b77e4f87bb4c92f5308c5b0f880b794e2f9b26b1a",
+      "inspection_sha256": "bf12e6762e241e8307d6050b77e4f87bb4c92f5308c5b0f880b794e2f9b26b1a",
+      "inspection_hash_matches": true,
+      "lines": 10,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/examples/example_openai_visuals.py",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 4187,
+      "sha256": "94512555a8d3a528071e51c2f2dee2fa40acd451e9e3c62c587a889163c0854d",
+      "inspection_sha256": "94512555a8d3a528071e51c2f2dee2fa40acd451e9e3c62c587a889163c0854d",
+      "inspection_hash_matches": true,
+      "lines": 143,
+      "utf8_decoded": true,
+      "python_syntax": "valid"
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/examples/README.md",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 494,
+      "sha256": "59bc7fb8acbc86d1549b6248b619b715e081d443eab062d604bb97c5fdef0c64",
+      "inspection_sha256": "59bc7fb8acbc86d1549b6248b619b715e081d443eab062d604bb97c5fdef0c64",
+      "inspection_hash_matches": true,
+      "lines": 18,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/direct_asset_manifest.txt",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 15756,
+      "sha256": "cef99e4d82be06318c026e28066321c7870bc3b7403c9f80f66167bf29ccb856",
+      "inspection_sha256": "cef99e4d82be06318c026e28066321c7870bc3b7403c9f80f66167bf29ccb856",
+      "inspection_hash_matches": true,
+      "lines": 88,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/form_selection.md",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 11733,
+      "sha256": "81db425b2cb4887149b89f2c4d63848e5cb681163f4e498543f0f3a43b2501a9",
+      "inspection_sha256": "81db425b2cb4887149b89f2c4d63848e5cb681163f4e498543f0f3a43b2501a9",
+      "inspection_hash_matches": true,
+      "lines": 252,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/gpt6_astra_north_star.md",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 3538,
+      "sha256": "d5c2add660c2d2102c41a71f2b405600f7aa9eaf6a33932757d540b272626a29",
+      "inspection_sha256": "d5c2add660c2d2102c41a71f2b405600f7aa9eaf6a33932757d540b272626a29",
+      "inspection_hash_matches": true,
+      "lines": 63,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/gpt6_astra_reference_index.json",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 1202,
+      "sha256": "804b93bb010c6b78c34afb0a1bfb01dfb7a56e5e3bb1daf03c3f19523baae014",
+      "inspection_sha256": "804b93bb010c6b78c34afb0a1bfb01dfb7a56e5e3bb1daf03c3f19523baae014",
+      "inspection_hash_matches": true,
+      "lines": 72,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/openai_visual_reference_library.jsonl",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 252401,
+      "sha256": "fb04dc85ec9227dc6fa6780e368a03b29c38a7c5db9a6792acadbc4705403989",
+      "inspection_sha256": "fb04dc85ec9227dc6fa6780e368a03b29c38a7c5db9a6792acadbc4705403989",
+      "inspection_hash_matches": true,
+      "lines": 276,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/provenance.md",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 2099,
+      "sha256": "b4c0fe139b7f54f2d9e0dae5dee36b996e02c53fde926cc926e3fd4a22b2ad1c",
+      "inspection_sha256": "b4c0fe139b7f54f2d9e0dae5dee36b996e02c53fde926cc926e3fd4a22b2ad1c",
+      "inspection_hash_matches": true,
+      "lines": 33,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/quality_gates.md",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 9040,
+      "sha256": "4c5044e68757666c69e405e1ea6d95b7201a3255c2e6aa4658c723a9b7c44045",
+      "inspection_sha256": "4c5044e68757666c69e405e1ea6d95b7201a3255c2e6aa4658c723a9b7c44045",
+      "inspection_hash_matches": true,
+      "lines": 279,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/reference_design_spec.md",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 8120,
+      "sha256": "2a7d8cdfd4e09a6cff708716ed17653423b9cde40b82f14f2e49a62daa0ad0ef",
+      "inspection_sha256": "2a7d8cdfd4e09a6cff708716ed17653423b9cde40b82f14f2e49a62daa0ad0ef",
+      "inspection_hash_matches": true,
+      "lines": 203,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/style_contract.md",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 21434,
+      "sha256": "12b30c2c64a338d2ab8e37755077f40518cc158f950b7f4d865c00d03617f875",
+      "inspection_sha256": "12b30c2c64a338d2ab8e37755077f40518cc158f950b7f4d865c00d03617f875",
+      "inspection_hash_matches": true,
+      "lines": 677,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/references/top_reference_set.md",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 7049,
+      "sha256": "8d2a1243b5da313f6dd8d4d777cc08d0d5eefbca394344d35c3d7144a187f626",
+      "inspection_sha256": "8d2a1243b5da313f6dd8d4d777cc08d0d5eefbca394344d35c3d7144a187f626",
+      "inspection_hash_matches": true,
+      "lines": 43,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/scripts/astra_visual_qa.py",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 331,
+      "sha256": "308a9e58d01e753b7711b576f0a59225651857a93c01acf15a0a3a32fed96efe",
+      "inspection_sha256": "308a9e58d01e753b7711b576f0a59225651857a93c01acf15a0a3a32fed96efe",
+      "inspection_hash_matches": true,
+      "lines": 9,
+      "utf8_decoded": true,
+      "python_syntax": "valid"
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/scripts/select_references.py",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 9774,
+      "sha256": "580b88559f43edc92e2362abf1545dee999e36bf0edea5fd5e2cdb8330db0cc8",
+      "inspection_sha256": "580b88559f43edc92e2362abf1545dee999e36bf0edea5fd5e2cdb8330db0cc8",
+      "inspection_hash_matches": true,
+      "lines": 293,
+      "utf8_decoded": true,
+      "python_syntax": "valid"
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/scripts/table_qa.py",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 15378,
+      "sha256": "1200cb6779c50586ab26b3765b3fa2fb9f05b97b35c5135b52d252f9f259bd70",
+      "inspection_sha256": "1200cb6779c50586ab26b3765b3fa2fb9f05b97b35c5135b52d252f9f259bd70",
+      "inspection_hash_matches": true,
+      "lines": 428,
+      "utf8_decoded": true,
+      "python_syntax": "valid"
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/scripts/visual_qa.py",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 19012,
+      "sha256": "aee6c39eab6823a8b68c45aa44bcfbacf06d9e08bf17d89638e55ed18f5e8e2e",
+      "inspection_sha256": "aee6c39eab6823a8b68c45aa44bcfbacf06d9e08bf17d89638e55ed18f5e8e2e",
+      "inspection_hash_matches": true,
+      "lines": 560,
+      "utf8_decoded": true,
+      "python_syntax": "valid"
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/SKILL.md",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 22263,
+      "sha256": "86d684ab88ec1396d6d17b241d58409798c93f71334b60b75391d987900eebe3",
+      "inspection_sha256": "86d684ab88ec1396d6d17b241d58409798c93f71334b60b75391d987900eebe3",
+      "inspection_hash_matches": true,
+      "lines": 417,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/templates/astra_visual_system.py",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 275,
+      "sha256": "ae5fbc703f1161cea7a9dc0161bec02e929429ec31e71ac6d5ce9e4919569435",
+      "inspection_sha256": "ae5fbc703f1161cea7a9dc0161bec02e929429ec31e71ac6d5ce9e4919569435",
+      "inspection_hash_matches": true,
+      "lines": 6,
+      "utf8_decoded": true,
+      "python_syntax": "valid"
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/templates/astra_visual_tokens.json",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 717,
+      "sha256": "1446818fec2c5c7a650592ccf5319edc5e66e28a581b8395662b93930381b9a9",
+      "inspection_sha256": "1446818fec2c5c7a650592ccf5319edc5e66e28a581b8395662b93930381b9a9",
+      "inspection_hash_matches": true,
+      "lines": 36,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/templates/openai_table.css",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 2426,
+      "sha256": "2c71b61e3351b9a5ead5578466bb0c1cf6342b4ae6db1638acb12302ef53060e",
+      "inspection_sha256": "2c71b61e3351b9a5ead5578466bb0c1cf6342b4ae6db1638acb12302ef53060e",
+      "inspection_hash_matches": true,
+      "lines": 132,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/templates/openai_table.tex",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 3143,
+      "sha256": "aaf7aa5469bdb5794cf75daceb304e296da84306369614d7df2f9e761af2a080",
+      "inspection_sha256": "aaf7aa5469bdb5794cf75daceb304e296da84306369614d7df2f9e761af2a080",
+      "inspection_hash_matches": true,
+      "lines": 92,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/templates/openai_visuals.py",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 41224,
+      "sha256": "05450d6faaca6e6ba02fd60f3c84ac20ff8cb5216e084fb0e160ca5f225d05be",
+      "inspection_sha256": "05450d6faaca6e6ba02fd60f3c84ac20ff8cb5216e084fb0e160ca5f225d05be",
+      "inspection_hash_matches": true,
+      "lines": 1204,
+      "utf8_decoded": true,
+      "python_syntax": "valid"
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/templates/visual_spec.schema.json",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 7722,
+      "sha256": "3e1be0bef17143d6b0863307d74ea5d613f1729b05e836fc9e6d5ea2478e6f8f",
+      "inspection_sha256": "3e1be0bef17143d6b0863307d74ea5d613f1729b05e836fc9e6d5ea2478e6f8f",
+      "inspection_hash_matches": true,
+      "lines": 264,
+      "utf8_decoded": true
+    },
+    {
+      "path": "originals/scientific-visual-table-style/2.2.0/skills/scientific-visual-table-style/VERSION",
+      "source": "scientific-visual-table-style",
+      "type": "text",
+      "bytes": 6,
+      "sha256": "c4a2383a03bdb6739d16a0e24058e4b9c7da4e63d203e0be2f448868cc03c530",
+      "inspection_sha256": "c4a2383a03bdb6739d16a0e24058e4b9c7da4e63d203e0be2f448868cc03c530",
+      "inspection_hash_matches": true,
+      "lines": 1,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/academic-humanizer-main/.gitignore",
+      "source": "academic-humanizer-main",
+      "type": "text",
+      "bytes": 10,
+      "sha256": "cf237c7aff44efbe6e502e645c3e06da03a69d7bdeb43392108ef3348143417e",
+      "inspection_sha256": "cf237c7aff44efbe6e502e645c3e06da03a69d7bdeb43392108ef3348143417e",
+      "inspection_hash_matches": true,
+      "lines": 1,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/academic-humanizer-main/assets/banner.svg",
+      "source": "academic-humanizer-main",
+      "type": "text",
+      "bytes": 1374,
+      "sha256": "e3a332cac2dcb74c57137ed29231bc154534191827f1d8488201440e7e6803cb",
+      "inspection_sha256": "e3a332cac2dcb74c57137ed29231bc154534191827f1d8488201440e7e6803cb",
+      "inspection_hash_matches": true,
+      "lines": 20,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/academic-humanizer-main/assets/rednote-zh.png",
+      "source": "academic-humanizer-main",
+      "type": "binary",
+      "bytes": 106124,
+      "sha256": "cf1ada64d95deef03b484e5d27421fd47a5591ea255aceedf955d4af3d43eb53",
+      "inspection_sha256": "cf1ada64d95deef03b484e5d27421fd47a5591ea255aceedf955d4af3d43eb53",
+      "inspection_hash_matches": true,
+      "image_size": [
+        1080,
+        1440
+      ],
+      "image_mode": "RGBA"
+    },
+    {
+      "path": "expanded/academic-humanizer-main/assets/rednote-zh.svg",
+      "source": "academic-humanizer-main",
+      "type": "text",
+      "bytes": 1649,
+      "sha256": "935e4c7d9c2606a652fc5710dd4b33a087a00e08d93aa6eba3a772bbe1a7a153",
+      "inspection_sha256": "935e4c7d9c2606a652fc5710dd4b33a087a00e08d93aa6eba3a772bbe1a7a153",
+      "inspection_hash_matches": true,
+      "lines": 23,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/academic-humanizer-main/assets/x-en.png",
+      "source": "academic-humanizer-main",
+      "type": "binary",
+      "bytes": 169099,
+      "sha256": "016424a96666490e96802b9900fd6047f1297e313bcd526cdef03c6c15659615",
+      "inspection_sha256": "016424a96666490e96802b9900fd6047f1297e313bcd526cdef03c6c15659615",
+      "inspection_hash_matches": true,
+      "image_size": [
+        2400,
+        1350
+      ],
+      "image_mode": "RGBA"
+    },
+    {
+      "path": "expanded/academic-humanizer-main/assets/x-en.svg",
+      "source": "academic-humanizer-main",
+      "type": "text",
+      "bytes": 1587,
+      "sha256": "7b699c6b14a6be52eb0722db513e52156f814b7d0b17f50a7fe01171abba5f01",
+      "inspection_sha256": "7b699c6b14a6be52eb0722db513e52156f814b7d0b17f50a7fe01171abba5f01",
+      "inspection_hash_matches": true,
+      "lines": 22,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/academic-humanizer-main/examples/before-after.md",
+      "source": "academic-humanizer-main",
+      "type": "text",
+      "bytes": 6949,
+      "sha256": "60e73dfa2bab743998af2ed389b9afffa38e2c63e7248fca48bae32a19458a5e",
+      "inspection_sha256": "60e73dfa2bab743998af2ed389b9afffa38e2c63e7248fca48bae32a19458a5e",
+      "inspection_hash_matches": true,
+      "lines": 92,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/academic-humanizer-main/LICENSE",
+      "source": "academic-humanizer-main",
+      "type": "text",
+      "bytes": 890,
+      "sha256": "95201f07cd5d4454f205a53a65337cbe00298a4d21a4e68a1fc516958e7cdaf9",
+      "inspection_sha256": "95201f07cd5d4454f205a53a65337cbe00298a4d21a4e68a1fc516958e7cdaf9",
+      "inspection_hash_matches": true,
+      "lines": 17,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/academic-humanizer-main/README.md",
+      "source": "academic-humanizer-main",
+      "type": "text",
+      "bytes": 6205,
+      "sha256": "ed40692dbee51ed2f2c53a02c7c34772ce23f94cab2394877544e98c0b445b54",
+      "inspection_sha256": "ed40692dbee51ed2f2c53a02c7c34772ce23f94cab2394877544e98c0b445b54",
+      "inspection_hash_matches": true,
+      "lines": 121,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/academic-humanizer-main/SKILL.md",
+      "source": "academic-humanizer-main",
+      "type": "text",
+      "bytes": 16779,
+      "sha256": "1f4501cb7331cffe9018960f8db045c719eea0658ce04e4af5e273ee59785a9c",
+      "inspection_sha256": "1f4501cb7331cffe9018960f8db045c719eea0658ce04e4af5e273ee59785a9c",
+      "inspection_hash_matches": true,
+      "lines": 261,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/academic-pptx-skill-main/Academic_Presentation_Best_Practices_DH_built_with_Claude_2_2026.pdf",
+      "source": "academic-pptx-skill-main",
+      "type": "binary",
+      "bytes": 194343,
+      "sha256": "ad89e2b8e4f276d9e9f25f7f090706906e5aac499a6e8acbd2b712d4094f9945",
+      "inspection_sha256": "ad89e2b8e4f276d9e9f25f7f090706906e5aac499a6e8acbd2b712d4094f9945",
+      "inspection_hash_matches": true,
+      "pdf_pages": 5
+    },
+    {
+      "path": "expanded/academic-pptx-skill-main/content_guidelines.md",
+      "source": "academic-pptx-skill-main",
+      "type": "text",
+      "bytes": 12160,
+      "sha256": "d9b0351b31995d2aa34ac31550fb430310bf1ba6bfc19e1767eba8f24f807bf1",
+      "inspection_sha256": "d9b0351b31995d2aa34ac31550fb430310bf1ba6bfc19e1767eba8f24f807bf1",
+      "inspection_hash_matches": true,
+      "lines": 245,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/academic-pptx-skill-main/LICENSE",
+      "source": "academic-pptx-skill-main",
+      "type": "text",
+      "bytes": 1068,
+      "sha256": "20d9c009d0e5d7150da5e081c8d5a81463731dcf338323992a74a0648e6fb542",
+      "inspection_sha256": "20d9c009d0e5d7150da5e081c8d5a81463731dcf338323992a74a0648e6fb542",
+      "inspection_hash_matches": true,
+      "lines": 21,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/academic-pptx-skill-main/README.md",
+      "source": "academic-pptx-skill-main",
+      "type": "text",
+      "bytes": 3033,
+      "sha256": "c27a1813d8af720fb1bfbbad7582df6d515fd7c9202f2e50be94aae65532fa3e",
+      "inspection_sha256": "c27a1813d8af720fb1bfbbad7582df6d515fd7c9202f2e50be94aae65532fa3e",
+      "inspection_hash_matches": true,
+      "lines": 58,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/academic-pptx-skill-main/SKILL.md",
+      "source": "academic-pptx-skill-main",
+      "type": "text",
+      "bytes": 7557,
+      "sha256": "c321851cd9d9b98d429de4798766207525024f3f28c3fe6dd5932ae79a2efb28",
+      "inspection_sha256": "c321851cd9d9b98d429de4798766207525024f3f28c3fe6dd5932ae79a2efb28",
+      "inspection_hash_matches": true,
+      "lines": 152,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/academic-pptx-skill-main/slide_patterns.md",
+      "source": "academic-pptx-skill-main",
+      "type": "text",
+      "bytes": 20082,
+      "sha256": "f367318f3a9e4b0031e10c179cc673b7a59abeeb3bc0249680e64d3277f18764",
+      "inspection_sha256": "f367318f3a9e4b0031e10c179cc673b7a59abeeb3bc0249680e64d3277f18764",
+      "inspection_hash_matches": true,
+      "lines": 553,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/humanizer-main/.claude-plugin/marketplace.json",
+      "source": "humanizer-main",
+      "type": "text",
+      "bytes": 521,
+      "sha256": "e539740285b660d2288a38b6d9b237396c6769828c671c46b9f91e760db6cc29",
+      "inspection_sha256": "e539740285b660d2288a38b6d9b237396c6769828c671c46b9f91e760db6cc29",
+      "inspection_hash_matches": true,
+      "lines": 18,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/humanizer-main/.claude-plugin/plugin.json",
+      "source": "humanizer-main",
+      "type": "text",
+      "bytes": 526,
+      "sha256": "054c0afeeb03c12f01a7f156da949edfdec3a2b756588f5ff4ee7357b0c07f6a",
+      "inspection_sha256": "054c0afeeb03c12f01a7f156da949edfdec3a2b756588f5ff4ee7357b0c07f6a",
+      "inspection_hash_matches": true,
+      "lines": 15,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/humanizer-main/.cursor-plugin/plugin.json",
+      "source": "humanizer-main",
+      "type": "text",
+      "bytes": 388,
+      "sha256": "d1e0b50594cf4bbe57fd164b771b401713a91b76b5a213ebe8f4558bb2036546",
+      "inspection_sha256": "d1e0b50594cf4bbe57fd164b771b401713a91b76b5a213ebe8f4558bb2036546",
+      "inspection_hash_matches": true,
+      "lines": 12,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/humanizer-main/.github/ISSUE_TEMPLATE/config.yml",
+      "source": "humanizer-main",
+      "type": "text",
+      "bytes": 393,
+      "sha256": "cb7e95de7606d07654024c8d47916796b307033e23ddb2b0a821a9bf89e999ef",
+      "inspection_sha256": "cb7e95de7606d07654024c8d47916796b307033e23ddb2b0a821a9bf89e999ef",
+      "inspection_hash_matches": true,
+      "lines": 8,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/humanizer-main/.github/ISSUE_TEMPLATE/new-pattern.yml",
+      "source": "humanizer-main",
+      "type": "text",
+      "bytes": 681,
+      "sha256": "7436d578fa0056a09da5da6da950a03cb49f3ce27cf268ae295eb3d7ca19f604",
+      "inspection_sha256": "7436d578fa0056a09da5da6da950a03cb49f3ce27cf268ae295eb3d7ca19f604",
+      "inspection_hash_matches": true,
+      "lines": 24,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/humanizer-main/.github/ISSUE_TEMPLATE/rewrite-problem.yml",
+      "source": "humanizer-main",
+      "type": "text",
+      "bytes": 1286,
+      "sha256": "ecfe5e82c5b6d44683e0cb63cfad117dfdd16e30cc6f03510ef335414eea4947",
+      "inspection_sha256": "ecfe5e82c5b6d44683e0cb63cfad117dfdd16e30cc6f03510ef335414eea4947",
+      "inspection_hash_matches": true,
+      "lines": 44,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/humanizer-main/.github/workflows/validate.yml",
+      "source": "humanizer-main",
+      "type": "text",
+      "bytes": 815,
+      "sha256": "f2d6a8780fb0b3cf6fa7d2ffccd72d0fc8bee29b4e63ea0fd65924712c9055fd",
+      "inspection_sha256": "f2d6a8780fb0b3cf6fa7d2ffccd72d0fc8bee29b4e63ea0fd65924712c9055fd",
+      "inspection_hash_matches": true,
+      "lines": 29,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/humanizer-main/agents/openai.yaml",
+      "source": "humanizer-main",
+      "type": "text",
+      "bytes": 201,
+      "sha256": "9d87ff83149a04f86a372948b8ee35fa249de20923867bbc2a49304290aad736",
+      "inspection_sha256": "9d87ff83149a04f86a372948b8ee35fa249de20923867bbc2a49304290aad736",
+      "inspection_hash_matches": true,
+      "lines": 4,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/humanizer-main/AGENTS.md",
+      "source": "humanizer-main",
+      "type": "text",
+      "bytes": 3439,
+      "sha256": "de84a449da400454df1225ddb1ced728c35bf0be7811b239e3370c7dbe1f4e69",
+      "inspection_sha256": "de84a449da400454df1225ddb1ced728c35bf0be7811b239e3370c7dbe1f4e69",
+      "inspection_hash_matches": true,
+      "lines": 54,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/humanizer-main/CHANGELOG.md",
+      "source": "humanizer-main",
+      "type": "text",
+      "bytes": 5922,
+      "sha256": "b3591fe203429f1a6bd2f713c79272e9a8e58a487843d0908d2bbe0700722afa",
+      "inspection_sha256": "b3591fe203429f1a6bd2f713c79272e9a8e58a487843d0908d2bbe0700722afa",
+      "inspection_hash_matches": true,
+      "lines": 116,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/humanizer-main/LICENSE",
+      "source": "humanizer-main",
+      "type": "text",
+      "bytes": 1066,
+      "sha256": "4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96",
+      "inspection_sha256": "4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96",
+      "inspection_hash_matches": true,
+      "lines": 21,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/humanizer-main/README.md",
+      "source": "humanizer-main",
+      "type": "text",
+      "bytes": 12926,
+      "sha256": "500b53c0d29cd3219d160b5f9a109c0969f706aec74b49a4a081d2026ba48ec7",
+      "inspection_sha256": "500b53c0d29cd3219d160b5f9a109c0969f706aec74b49a4a081d2026ba48ec7",
+      "inspection_hash_matches": true,
+      "lines": 209,
+      "utf8_decoded": true
+    },
+    {
+      "path": "expanded/humanizer-main/scripts/validate-package.py",
+      "source": "humanizer-main",
+      "type": "text",
+      "bytes": 5418,
+      "sha256": "941bd99e52b2ba21449719bb7969607ac8117e3dc173d0c9dfe64fd274c65938",
+      "inspection_sha256": "941bd99e52b2ba21449719bb7969607ac8117e3dc173d0c9dfe64fd274c65938",
+      "inspection_hash_matches": true,
+      "lines": 146,
+      "utf8_decoded": true,
+      "python_syntax": "valid"
+    },
+    {
+      "path": "expanded/humanizer-main/SKILL.md",
+      "source": "humanizer-main",
+      "type": "text",
+      "bytes": 32348,
+      "sha256": "0612f1dfb1672b0ea9b97e139bf1f06cabe98d8b27424fe8ff01e1fb4cc99cad",
+      "inspection_sha256": "0612f1dfb1672b0ea9b97e139bf1f06cabe98d8b27424fe8ff01e1fb4cc99cad",
+      "inspection_hash_matches": true,
+      "lines": 397,
+      "utf8_decoded": true
+    }
+  ]
+}

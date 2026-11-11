@@ -1,21 +1,52 @@
 name: Bug report
-description: Report a reproducible problem in the local draft.
-title: '[Bug]: '
+description: Report a reproducible local runtime, routing, resource, or documentation problem.
+title: "[Bug]: "
 body:
   - type: markdown
     attributes:
-      value: Do not include credentials, private research data, or sensitive review correspondence.
-  - type: textarea
-    id: reproduction
+      value: |
+        Share a minimal sanitized example. Do not include API keys, private manuscripts, personal data, or sensitive vulnerability details. Report sensitive issues to the repository owner privately through an established channel.
+  - type: dropdown
+    id: component
     attributes:
-      label: Steps and expected behavior
-      description: Include a minimal sanitized command or request and what should happen.
+      label: Affected component
+      options:
+        - CLI or local MCP server
+        - Skill selection or routing
+        - Skill instructions or resource links
+        - Export or host configuration format
+        - Build or validation
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: Include the command or request, working directory relative to the package root, and steps to reproduce.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
-      label: Actual behavior and environment
-      description: Include sanitized output, operating system, Node version, draft version and any checks run.
+      label: Actual behavior and sanitized output
     validations:
       required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include OS, package version, node --version, python --version when relevant, and host/version if testing an installed host.
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: Checks performed
+      description: State which build, validation, tests, or manual integration checks you ran and their results. Distinguish local export checks from a live host connection.

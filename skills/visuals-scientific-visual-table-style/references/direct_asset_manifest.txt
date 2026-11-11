@@ -1,0 +1,88 @@
+# OpenAI quantitative visual direct-asset manifest
+# Generated 2026-09-02; 84 direct assets.
+# ID<TAB>publication<TAB>caption<TAB>URL
+
+OAI-VIS-005	GPT‑5.6: Frontier intelligence, more efficiently	Append-only context	https://images.ctfassets.net/kftzwdyauwt9/4Yc2D5KqZejneZPTlOtA39/9799e64403c51e214ca4c53d9c8b40ed/Append-only_context_light_desktop.svg?w=3840&q=80
+OAI-VIS-006	HealthBench: Evaluating Large Language Models Towards Improved Human Health	Figure 2: HealthBench score versus inference cost	https://arxiv.org/html/2505.08775v1/figures/cost_2.png
+OAI-VIS-007	HealthBench: Evaluating Large Language Models Towards Improved Human Health	Figure 7: worst-at-k performance up to k=16	https://arxiv.org/html/2505.08775v1/figures/worst.png
+OAI-VIS-009	GPT‑5.6 preview System Card — Deployment Safety Hub	SEC-Bench Pro	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6-preview/assets/images/image21.png
+OAI-VIS-013	GPT‑5.6 System Card — Deployment Safety Hub	Deployment simulation: rate of undesired behavior	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image12.png
+OAI-VIS-014	GPT‑5.6 System Card — Deployment Safety Hub	First-person fairness evaluations	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image29.png
+OAI-VIS-015	GPT‑5.6 System Card — Deployment Safety Hub	Chain-of-thought controllability versus response length	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image42.png
+OAI-VIS-016	SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?	Figure 4: reasoning effort by price bucket	https://arxiv.org/html/2502.12115v3/x4.png
+OAI-VIS-048	GPT‑5 System Card — Deployment Safety Hub	Autograded Gryphon free response	https://deploymentsafety.openai.com/data/eval-sets/gpt-5/assets/Autograded_Gryphon_Free_Response.png
+OAI-VIS-049	GPT‑5 System Card — Deployment Safety Hub	Biorisk tacit knowledge and troubleshooting	https://deploymentsafety.openai.com/data/eval-sets/gpt-5/assets/Biorisk_Tacit_Knowledge_and_Troubleshooting.png
+OAI-VIS-050	GPT‑5 System Card — Deployment Safety Hub	GPT‑5 SWE-bench Verified	https://deploymentsafety.openai.com/data/eval-sets/gpt-5/assets/GPT-5_SWE-bench_Verified_n%3D477.png
+OAI-VIS-051	GPT‑5 System Card — Deployment Safety Hub	Long-horizon task evaluation	https://deploymentsafety.openai.com/data/eval-sets/gpt-5/assets/horizon2.png
+OAI-VIS-052	GPT‑5 System Card — Deployment Safety Hub	MLE-bench evaluation workflow	https://deploymentsafety.openai.com/data/eval-sets/gpt-5/assets/mle.png
+OAI-VIS-053	GPT‑5 System Card — Deployment Safety Hub	MLE-Bench-30	https://deploymentsafety.openai.com/data/eval-sets/gpt-5/assets/MLE-Bench-30.png
+OAI-VIS-054	GPT‑5 System Card — Deployment Safety Hub	Molecule evaluation example	https://deploymentsafety.openai.com/data/eval-sets/gpt-5/assets/molecule.png
+OAI-VIS-055	GPT‑5 System Card — Deployment Safety Hub	Multimodal troubleshooting and virology	https://deploymentsafety.openai.com/data/eval-sets/gpt-5/assets/Multimodal_Troubleshooting_Virology_Multi-select.png
+OAI-VIS-056	GPT‑5 System Card — Deployment Safety Hub	OpenAI pull requests without browsing	https://deploymentsafety.openai.com/data/eval-sets/gpt-5/assets/OpenAI_PRs_no_browsing.png
+OAI-VIS-057	GPT‑5 System Card — Deployment Safety Hub	OpenAI-Proof Q&A	https://deploymentsafety.openai.com/data/eval-sets/gpt-5/assets/OpenAI-Proof_Q_A.png
+OAI-VIS-058	GPT‑5 System Card — Deployment Safety Hub	PaperBench without browsing	https://deploymentsafety.openai.com/data/eval-sets/gpt-5/assets/PaperBench_no_browsing.png
+OAI-VIS-059	GPT‑5 System Card — Deployment Safety Hub	Production traffic by deception category	https://deploymentsafety.openai.com/data/eval-sets/gpt-5/assets/prod_traffic_deception_category.png
+OAI-VIS-060	GPT‑5 System Card — Deployment Safety Hub	ProtocolQA open-ended	https://deploymentsafety.openai.com/data/eval-sets/gpt-5/assets/ProtocolQA_Open-Ended.png
+OAI-VIS-061	GPT‑5 System Card — Deployment Safety Hub	SWE-Lancer independent-contracting software tasks	https://deploymentsafety.openai.com/data/eval-sets/gpt-5/assets/SWE-Lancer_IC_SWE.png
+OAI-VIS-062	GPT‑5.6 preview System Card — Deployment Safety Hub	CTF performance versus token use	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6-preview/assets/images/image23.png
+OAI-VIS-063	GPT‑5.6 preview System Card — Deployment Safety Hub	CTF score comparison	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6-preview/assets/images/image16.png
+OAI-VIS-064	GPT‑5.6 preview System Card — Deployment Safety Hub	CVE exploitation evaluation	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6-preview/assets/images/cve.png
+OAI-VIS-065	GPT‑5.6 preview System Card — Deployment Safety Hub	CyberGym robustness	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6-preview/assets/images/image14.png
+OAI-VIS-066	GPT‑5.6 preview System Card — Deployment Safety Hub	ExploitBench	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6-preview/assets/images/image6.png
+OAI-VIS-067	GPT‑5.6 preview System Card — Deployment Safety Hub	ExploitGym	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6-preview/assets/images/image24.png
+OAI-VIS-068	GPT‑5.6 preview System Card — Deployment Safety Hub	Internal Research Debugging Eval versus cost	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6-preview/assets/images/image3.png
+OAI-VIS-069	GPT‑5.6 preview System Card — Deployment Safety Hub	Internal Research Debugging Eval versus latency	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6-preview/assets/images/debug1.png
+OAI-VIS-070	GPT‑5.6 preview System Card — Deployment Safety Hub	KernelGen 1P versus cost	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6-preview/assets/images/image31.png
+OAI-VIS-071	GPT‑5.6 preview System Card — Deployment Safety Hub	KernelGen 1P versus latency	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6-preview/assets/images/image2.png
+OAI-VIS-072	GPT‑5.6 preview System Card — Deployment Safety Hub	MLE-Bench Revised versus cost	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6-preview/assets/images/image1.png
+OAI-VIS-073	GPT‑5.6 preview System Card — Deployment Safety Hub	MLE-Bench Revised versus latency	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6-preview/assets/images/image26.png
+OAI-VIS-074	GPT‑5.6 preview System Card — Deployment Safety Hub	NanoGPT cost frontier, zoomed	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6-preview/assets/images/image22.png
+OAI-VIS-075	GPT‑5.6 preview System Card — Deployment Safety Hub	NanoGPT latency frontier, zoomed	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6-preview/assets/images/image38.png
+OAI-VIS-076	GPT‑5.6 preview System Card — Deployment Safety Hub	NanoGPT versus cost	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6-preview/assets/images/image7.png
+OAI-VIS-077	GPT‑5.6 preview System Card — Deployment Safety Hub	NanoGPT versus latency	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6-preview/assets/images/image15.png
+OAI-VIS-078	GPT‑5.6 preview System Card — Deployment Safety Hub	PostTrainBench Lite versus latency	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6-preview/assets/images/image19.png
+OAI-VIS-079	GPT‑5.6 System Card — Deployment Safety Hub	Agentic misalignment	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/Agentic_misalignment.png
+OAI-VIS-080	GPT‑5.6 System Card — Deployment Safety Hub	Chain-of-thought controllability by dataset	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image45.png
+OAI-VIS-081	GPT‑5.6 System Card — Deployment Safety Hub	Chain-of-thought controllability by instruction	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image43.png
+OAI-VIS-082	GPT‑5.6 System Card — Deployment Safety Hub	Chain-of-thought monitorability scatterplots	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/Scatterplots_main.png
+OAI-VIS-083	GPT‑5.6 System Card — Deployment Safety Hub	Chain-of-thought monitorability summary	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/Barplot.png
+OAI-VIS-084	GPT‑5.6 System Card — Deployment Safety Hub	Deployment simulation outcome funnel	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image48.png
+OAI-VIS-085	GPT‑5.6 System Card — Deployment Safety Hub	Early versus late metagaming	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image44.png
+OAI-VIS-086	GPT‑5.6 System Card — Deployment Safety Hub	GPT‑5.6 versus GPT‑5.5 metagaming	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image46.png
+OAI-VIS-087	GPT‑5.6 System Card — Deployment Safety Hub	Hallucination and factuality comparison	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image47.png
+OAI-VIS-088	GPT‑5.6 System Card — Deployment Safety Hub	Hallucination rate versus cost	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image34.png
+OAI-VIS-089	GPT‑5.6 System Card — Deployment Safety Hub	Hallucination rate versus latency	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image37.png
+OAI-VIS-090	GPT‑5.6 System Card — Deployment Safety Hub	Health queries requesting patient opinion	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/Health_queries_patient_opinion.png
+OAI-VIS-091	GPT‑5.6 System Card — Deployment Safety Hub	Impossible tasks	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/impossible_tasks.png
+OAI-VIS-092	GPT‑5.6 System Card — Deployment Safety Hub	Internal deployment evaluation	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/internaldep.png
+OAI-VIS-093	GPT‑5.6 System Card — Deployment Safety Hub	Jailbreak robustness	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image32.png
+OAI-VIS-094	GPT‑5.6 System Card — Deployment Safety Hub	Metagaming behavior	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image11.png
+OAI-VIS-095	GPT‑5.6 System Card — Deployment Safety Hub	Metagaming over training	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image8.png
+OAI-VIS-096	GPT‑5.6 System Card — Deployment Safety Hub	ProtocolQA versus API cost	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/Protocolqa.png
+OAI-VIS-097	GPT‑5.6 System Card — Deployment Safety Hub	ProtocolQA versus latency	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image20.png
+OAI-VIS-098	GPT‑5.6 System Card — Deployment Safety Hub	Scruples / moral reasoning	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/scruples.png
+OAI-VIS-099	GPT‑5.6 System Card — Deployment Safety Hub	Tacit-knowledge evaluation versus API cost	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image35.png
+OAI-VIS-100	GPT‑5.6 System Card — Deployment Safety Hub	Tacit-knowledge evaluation versus latency	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image18.png
+OAI-VIS-101	GPT‑5.6 System Card — Deployment Safety Hub	Troubleshooting benchmark versus API cost	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image17.png
+OAI-VIS-102	GPT‑5.6 System Card — Deployment Safety Hub	Troubleshooting benchmark versus latency	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image41.png
+OAI-VIS-103	GPT‑5.6 System Card — Deployment Safety Hub	Virology troubleshooting versus API cost	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image4.png
+OAI-VIS-104	GPT‑5.6 System Card — Deployment Safety Hub	Virology troubleshooting versus latency	https://deploymentsafety.openai.com/data/eval-sets/gpt-5-6/assets/images/image5.png
+OAI-VIS-105	GPT‑5.6: Frontier intelligence, more efficiently	Accelerating inference with GPT‑5.6 SOL	https://images.ctfassets.net/kftzwdyauwt9/3Hr3nq2SNbbjMbtCGVMbzp/aa96e2f3cdcf9681903d5af69399e240/figure1-light-desktop.svg?w=3840&q=90
+OAI-VIS-106	GPT‑5.6: Frontier intelligence, more efficiently	How our agentic harness streamlines repeated work	https://images.ctfassets.net/kftzwdyauwt9/4ufC2p4FrIJYDfnieoZ25Y/932a6d7e4931d64792f35f96a3afb1b0/figure3-light-desktop.svg?w=3840&q=90
+OAI-VIS-107	HealthBench: Evaluating Large Language Models Towards Improved Human Health	Figure 10: HealthBench Hard by axis	https://arxiv.org/html/2505.08775v1/figures/hard.png
+OAI-VIS-110	HealthBench: Evaluating Large Language Models Towards Improved Human Health	Figure 5: performance stratified by conversation theme	https://arxiv.org/html/2505.08775v1/figures/theme.png
+OAI-VIS-111	HealthBench: Evaluating Large Language Models Towards Improved Human Health	Figure 6: performance stratified by axis	https://arxiv.org/html/2505.08775v1/figures/axis.png
+OAI-VIS-113	HealthBench: Evaluating Large Language Models Towards Improved Human Health	Figure 9: error rates on consensus criteria by theme	https://arxiv.org/html/2505.08775v1/figures/consensus.png
+OAI-VIS-244	MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering	Figure 1: MLE-bench overview	https://arxiv.org/html/2410.07095v6/x1.png
+OAI-VIS-245	MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering	Figure 2: medals by competition percentile	https://arxiv.org/html/2410.07095v6/x2.png
+OAI-VIS-259	PaperBench: Evaluating AI’s Ability to Replicate AI Research	Figure 1: PaperBench overview	https://arxiv.org/html/2504.01848v3/x1.png
+OAI-VIS-261	PaperBench: Evaluating AI’s Ability to Replicate AI Research	Figure 4a: incremental progress on a lower-cost paper	https://arxiv.org/html/2504.01848v3/x8.png
+OAI-VIS-262	PaperBench: Evaluating AI’s Ability to Replicate AI Research	Figure 4b: incremental progress on a higher-cost paper	https://arxiv.org/html/2504.01848v3/x9.png
+OAI-VIS-268	SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?	Figure 1: SWE-Lancer task and evaluation overview	https://arxiv.org/html/2502.12115v3/x1.png
+OAI-VIS-269	SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?	Figure 2: task types and values	https://arxiv.org/html/2502.12115v3/x2.png
+OAI-VIS-270	SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?	Figure 3: resolved tasks by price bucket	https://arxiv.org/html/2502.12115v3/x3.png
+OAI-VIS-271	SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?	Figure 5: realized value by model	https://arxiv.org/html/2502.12115v3/x5.png
+OAI-VIS-272	SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?	Figure 6: model cost versus task value	https://arxiv.org/html/2502.12115v3/x6.png
+OAI-VIS-273	SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?	Figure 7: accepted, rejected, and unresolved outcomes	https://arxiv.org/html/2502.12115v3/x7.png
+OAI-VIS-274	SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?	Figure 8: expected realized value and cost savings	https://arxiv.org/html/2502.12115v3/x8.png
+OAI-VIS-276	SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?	Results by task category and price bucket	https://arxiv.org/html/2502.12115v3/x9.png

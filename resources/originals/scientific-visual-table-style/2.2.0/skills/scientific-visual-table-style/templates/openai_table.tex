@@ -1,0 +1,92 @@
+% OpenAI-inspired publication table template.
+% This is an operational style template, not an official OpenAI asset.
+%
+% Required packages in the document preamble:
+%   \usepackage{booktabs}
+%   \usepackage{threeparttable}
+%   \usepackage{siunitx}
+%   \usepackage{tabularx}
+%   \usepackage{array}
+%
+% Recommended global setup:
+%   \sisetup{
+%     detect-all,
+%     table-number-alignment = center,
+%     input-symbols = {\,\pm\text{--}},
+%     group-separator = {,},
+%     group-minimum-digits = 4,
+%   }
+%
+% Do not use vertical rules. Do not use \resizebox as the first response to
+% density. Shorten labels, remove false precision, transpose, or split first.
+
+\begin{table}[t]
+  \centering
+  \begin{threeparttable}
+    \caption{Claim-led or specific descriptive caption.}
+    \label{tab:openai_style_example}
+    \setlength{\tabcolsep}{5.0pt}
+    \renewcommand{\arraystretch}{1.24}
+    \begin{tabularx}{\linewidth}{
+      @{}
+      >{\raggedright\arraybackslash}X
+      S[table-format=2.1]
+      S[table-format=2.1]
+      S[table-format=2.1]
+      S[table-format=+2.1]
+      @{}
+    }
+      \toprule
+      \textbf{Benchmark} &
+      {\textbf{Baseline}} &
+      {\textbf{Prior}} &
+      {\textbf{Focal}} &
+      {\textbf{$\Delta$ vs. prior}} \\
+      \midrule
+      \multicolumn{5}{@{}l}{\textbf{Primary evaluations}} \\
+      Task A & 71.2 & 74.6 & \bfseries 79.1 & +4.5 \\
+      Task B & 63.0 & 68.4 & \bfseries 70.0 & +1.6 \\
+      \addlinespace[3pt]
+      \cmidrule(lr){1-5}
+      \multicolumn{5}{@{}l}{\textbf{Robustness evaluations}} \\
+      Task C & 54.8 & \bfseries 60.2 & 59.9 & -0.3 \\
+      Task D & 82.0 & 83.1 & \bfseries 85.4 & +2.3 \\
+      \bottomrule
+    \end{tabularx}
+    \begin{tablenotes}[flushleft]
+      \footnotesize
+      \item \textit{Note.} Values are actual scores in percent; higher is better.
+      Bold marks the best value in each row. Deltas are subordinate and never
+      replace the actual values. Use an em dash for unavailable values and
+      define uncertainty, sample size, and evaluation conditions here.
+    \end{tablenotes}
+  \end{threeparttable}
+\end{table}
+
+% ---------------------------------------------------------------------------
+% Compact uncertainty-aware alternative
+% ---------------------------------------------------------------------------
+%
+% \begin{table}[t]
+%   \centering
+%   \begin{threeparttable}
+%     \caption{Method performance with 95\% confidence intervals.}
+%     \label{tab:interval_example}
+%     \setlength{\tabcolsep}{5pt}
+%     \renewcommand{\arraystretch}{1.24}
+%     \begin{tabular}{@{}l S[table-format=2.1] @{\,\,$\pm$\,\,} S[table-format=1.1]@{}}
+%       \toprule
+%       \textbf{Method} & \multicolumn{2}{c}{\textbf{Accuracy (\%)}} \\
+%       \midrule
+%       Baseline & 72.1 & 1.4 \\
+%       Prior    & 75.8 & 1.1 \\
+%       Focal    & \bfseries 78.0 & 1.0 \\
+%       \bottomrule
+%     \end{tabular}
+%     \begin{tablenotes}[flushleft]
+%       \footnotesize
+%       \item \textit{Note.} Mean $\pm$ half-width of the 95\% confidence interval
+%       over five independent seeds. Higher is better.
+%     \end{tablenotes}
+%   \end{threeparttable}
+% \end{table}

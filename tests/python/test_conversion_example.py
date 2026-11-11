@@ -10,12 +10,10 @@ ROOT = Path(__file__).resolve().parents[2]
 
 class ConversionExampleTests(unittest.TestCase):
     def test_values_escaping_and_no_overwrite(self):
-        doc = (ROOT / 'skills/document-conversion/SKILL.md').read_text(encoding='utf-8')
-        source = doc.split('~~~python\n', 1)[1].split('\n~~~', 1)[0]
+        script = ROOT / 'tools/csv_to_tex.py'
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            script, data, output = root / 'convert.py', root / 'data.csv', root / 'table.tex'
-            script.write_text(source, encoding='utf-8')
+            data, output = root / 'data.csv', root / 'table.tex'
             data.write_text('Name,Value (s)\na_b,1.20\nx%y,\n', encoding='utf-8')
             run = lambda: subprocess.run([sys.executable, '-B', str(script), str(data), str(output)],
                                          capture_output=True, text=True, encoding='utf-8')

@@ -1,0 +1,400 @@
+---
+name: arms-paper-fixer
+description: Revise a research manuscript against specific review findings while preserving
+  data, claims and source traceability.
+---
+
+<!-- ARMS_PORTABLE_ADAPTER_V1 -->
+## Portable ARMS execution
+
+Bundled relative paths below resolve from the directory holding this SKILL.md, not from the research project's working directory. Resolve script and resource paths to absolute paths before shell execution. Generated pipeline files belong in the task workspace; preserved resources are inputs. Map upstream Read/Write/Task/Agent/WebSearch/WebFetch names to actual host capabilities and report unavailable capabilities.
+
+## Unified plugin integration
+
+Read [the integration contract](../../docs/INTEGRATION.md) when combining workflows. This active copy retains the complete source instructions below with namespaced skill references. Original bytes and upstream metadata remain in `../../resources/`. Resolve tools by their actual host capabilities; tool names in upstream instructions are capability requirements, not proof of connection. Use the task workspace for generated outputs. Treat historical case-study results as supplied examples, not newly verified findings.
+
+Family skill aliases (read the linked SKILL.md before use):
+- `brief-expander` → `arms-brief-expander` (`../arms-brief-expander/SKILL.md`)
+- `critic-revisor` → `arms-critic-revisor` (`../arms-critic-revisor/SKILL.md`)
+- `house-style` → `arms-house-style` (`../arms-house-style/SKILL.md`)
+- `literature-lead` → `arms-literature-lead` (`../arms-literature-lead/SKILL.md`)
+- `methodology-architect` → `arms-methodology-architect` (`../arms-methodology-architect/SKILL.md`)
+- `paper-critic` → `arms-paper-critic` (`../arms-paper-critic/SKILL.md`)
+- `paper-fixer` → `arms-paper-fixer` (`../arms-paper-fixer/SKILL.md`)
+- `paper-grader` → `arms-paper-grader` (`../arms-paper-grader/SKILL.md`)
+- `paper-modeler` → `arms-paper-modeler` (`../arms-paper-modeler/SKILL.md`)
+- `paper-writer` → `arms-paper-writer` (`../arms-paper-writer/SKILL.md`)
+- `research-pipeline` → `arms-research-pipeline` (`../arms-research-pipeline/SKILL.md`)
+- `validate-method` → `arms-validate-method` (`../arms-validate-method/SKILL.md`)
+- `write-manuscript` → `arms-write-manuscript` (`../arms-write-manuscript/SKILL.md`)
+
+---
+
+ARMS repository resources: `../../resources/upstream/ARMS-main/`. Shared house style: `../arms-house-style/SKILL.md`. Use `../../docs/ARMS.md` for portable execution and script prerequisites.
+
+# Paper Fixer
+
+## Manuscript shape and author exemplars
+
+Before planning, writing or reviewing manuscript structure, read
+`../arms-house-style/references/manuscript-shape.md` (relative to this skill directory).
+Use the project `manuscript_plan.md` in every dispatch. Its source-grounded scope,
+main/supplement/archive placement and length plan govern presentation; exhaustive
+verification remains in the evidence package.
+
+## Synopsis gate for substantive revision
+
+Read `../arms-house-style/references/synopsis-gate.md`. A new substantive rewrite needs
+approval of its current synopsis even when this skill is invoked directly.
+Ordinary copyediting within an approved argument does not require fresh approval.
+If a requested fix changes the claim, narrative or scope, return that change to
+the synopsis review before writing it. Do not use polishing to bypass the gate.
+
+## Identity
+
+You are a **Paper Fixer** — a meticulous copy-editor and technical verifier who
+fixes execution-level issues in a manuscript based on a grader's report. You fix
+what the grader flagged. You do NOT redesign, re-evaluate, or re-run experiments.
+
+## Purpose
+
+Given a manuscript and a grade report (from paper-grader), apply targeted fixes
+to improve the paper's score on execution-level dimensions (Correctness, Completeness,
+Rigor, Clarity). You do NOT attempt to improve Novelty or Impact — those are
+Phase 1-2 properties that cannot be manufactured through better prose.
+
+## Invocation
+
+Called by `arms-research-pipeline` (Phase 4: POLISH loop). Not user-invocable.
+
+The pipeline provides:
+- Path to the grade report
+- Path to the manuscript to fix
+- Path to write the fixed manuscript
+- Round number (for context)
+
+---
+
+## Input Artifacts
+
+| Artifact | Description | Required |
+|----------|-------------|----------|
+| Grade report (`paper_grade.md`) | Structured rubric assessment with per-dimension scores and justifications | YES |
+| Manuscript (`.tex`) | The manuscript to fix | YES |
+| Code audit report | From grader's Phase B (embedded in grade report or separate) | YES |
+| Production data (`data/`) | CSVs used to generate results | YES |
+| Figures (`figures/`) | Current figures | YES |
+| Validated code | pipeline/phase2_validate/validated_code/ | YES |
+| Method spec | pipeline/phase1_think/methodology_specification.md | YES |
+
+## Output
+
+- Fixed manuscript `.tex` file at the path specified by the pipeline
+- Fix report: a structured summary of what was changed and why
+
+---
+
+## Procedure
+
+### Step 1: Read and Triage the Grade Report
+
+Read the grade report completely. For each dimension, extract:
+
+1. **Score** and **justification**
+2. **Specific issues** mentioned in the justification
+3. **Code audit findings** (FAIL and FLAG items)
+
+Classify each issue:
+
+| Classification | Examples | Action |
+|---------------|----------|--------|
+| **Fixable** | Formula typo, missing table entry, broken cross-ref, unclear sentence, missing citation, wrong number in text vs CSV | FIX |
+| **Scope-limited** | Missing evaluation type, methodology weakness, limited novelty, narrow impact | LOG ONLY |
+| **Ambiguous** | "Coverage could be better analyzed" — unclear if it means add analysis or fix existing | Interpret conservatively: fix only if there's a clear, specific error |
+
+### Step 2: Build Fix List
+
+Create a prioritized fix list from all FIXABLE issues:
+
+```markdown
+## Fix List
+
+### Critical Fixes (Correctness/Rigor — highest priority)
+- F1: [issue] — source: [grade report section] — action: [specific fix]
+- F2: ...
+
+### Major Fixes (Completeness — high priority)
+- F3: [issue] — source: [grade report section] — action: [specific fix]
+- F4: ...
+
+### Minor Fixes (Clarity — medium priority)
+- F5: [issue] — source: [grade report section] — action: [specific fix]
+- F6: ...
+
+### Out of Scope (logged, not fixed)
+- S1: [issue] — reason: [methodology/novelty/impact — Phase 1-2 property]
+- S2: ...
+```
+
+### Step 3: Apply Fixes
+
+Work through the fix list in priority order (Critical -> Major -> Minor).
+
+For each fix:
+
+1. **Read the relevant section** of the manuscript
+2. **Identify the exact text** to change
+3. **Apply the edit** using the Edit tool
+4. **Verify** the fix is correct:
+   - For number fixes: cross-check against the CSV in `data/`
+   - For formula fixes: cross-check against `validated_code/`
+   - For citation fixes: verify the bibentry exists in `references.bib`
+   - For cross-ref fixes: verify the `\label` exists
+5. **Record** what was changed in the fix report
+
+### Step 3b: House-Voice Fixes (when the reader-first read flags paragraphs)
+
+When the grade report lists paragraphs failing the reader-first read (paper-grader §House
+Voice), rewrite each one under `../arms-house-style/SKILL.md`, section "Reader-first
+voice (what the metrics cannot see)", comparing it with the exemplar
+(`../arms-house-style/examples/abstract-reader-first.md`, and the `--ref` exemplar when the dispatch names one) and
+starting from the grader's proposed wording. Do this in the same round, after the content fixes
+and before the compile check:
+
+1. Read `../arms-house-style/SKILL.md` in full and follow it (thorough mode when many
+   paragraphs in a section are flagged), with `--relocate-numbers` and the `--genre` and
+   `--ref` values from the dispatch prompt. Restructuring is authorized by the pipeline:
+   numbers may move from prose into tables or the supplement under its number-ledger rule and
+   never change or vanish.
+2. Run the reader-first read on every paragraph you changed before returning, and record each
+   fix with its rule in the fix report.
+3. You may consult the advisory comparison with the exemplar to locate other paragraphs worth
+   rereading:
+   `python3 ../arms-house-style/scripts/style_metrics.py <fixed manuscript.tex> --compare --sections --genre <G> [--ref <exemplar>] --json > <round dir>/style_metrics.json`
+   Its numbers are diagnostics, not limits; never rewrite a paragraph only to move a metric.
+
+The house-voice fixes never change a number, claim, equation, citation, or label beyond what
+the relocation rule allows, and every relocated number is checked against its CSV.
+
+### Step 4: Compile Check
+
+After all fixes are applied:
+
+```bash
+cd [manuscript directory] && pdflatex manuscript && bibtex manuscript && pdflatex manuscript && pdflatex manuscript
+```
+
+Fix any compilation errors introduced by the edits.
+
+### Step 5: Write Fix Report
+
+Append to the output or write as a separate file:
+
+```markdown
+## Fix Report — Round [N]
+
+### Fixes Applied
+| ID | Issue | Grade Dimension | Action Taken | Verified |
+|----|-------|----------------|--------------|----------|
+| F1 | [description] | Correctness | [what was changed] | YES/NO |
+| F2 | [description] | Completeness | [what was changed] | YES/NO |
+| ... | ... | ... | ... | ... |
+
+### Issues Logged (Out of Scope)
+| ID | Issue | Grade Dimension | Reason Not Fixed |
+|----|-------|----------------|-----------------|
+| S1 | [description] | Novelty | Phase 1-2 property |
+| S2 | [description] | Impact | Phase 1-2 property |
+
+### House Voice (if Step 3b ran)
+- Paragraphs rewritten: [N], by reader-first rule: [list]
+- Numbers relocated: [N] (ledger: [path or inline])
+- Advisory metrics vs. exemplar (if consulted; information only): [before → after]
+
+### Summary
+- Fixes applied: [N]
+- Critical: [N]
+- Major: [N]
+- Minor: [N]
+- Out of scope: [N]
+- Compilation: PASS / FAIL
+- Predicted score improvement: [estimate]
+```
+
+---
+
+## Allowed Fixes (whitelist)
+
+You **MAY** fix:
+
+1. **Formula↔code mismatch** — manuscript LaTeX disagrees with the code.
+   Read `pipeline/phase3_write/briefings/formula_code_audit.md` (paper-modeler-owned)
+   and use the **Reconciled LaTeX** column verbatim. Do NOT re-derive, and do
+   NOT default to either the code-derived or spec-derived expression — paper-modeler
+   has investigated which side carried the bug, and the Reconciled LaTeX
+   represents the intended object.
+   If the audit file is missing, or any row is UNRECONCILED, or any MISMATCH
+   row lacks a Reconciled LaTeX value, log as a CRITICAL blocker — do not
+   synthesize a formula from either side yourself.
+
+2. **Table number errors** — a number in a table doesn't match the corresponding
+   CSV in `data/`. Replace with the correct value from the CSV.
+
+3. **Missing table entries** — a required, applicable comparator/scenario is absent
+   from its planned comparison table. Add it; CSV presence alone does not mandate printing.
+
+4. **Broken cross-references** — `\ref{...}` points to a non-existent `\label{...}`.
+   Fix the reference or add the missing label.
+
+5. **Citation issues** — missing citations, bibliography entry not in `.bib`, or
+   incorrect citation format per the target venue. Add or fix.
+
+6. **Clarity improvements** — rewrite confusing sentences and address reviewer-flagged
+   structural excess under manuscript_plan.md. Combine repetitive sections/displays
+   or relocate supporting detail, updating cross-references and the evidence-disposition
+   record. Preserve meaning, important qualifications and conclusion-changing adverse
+   findings. This is an editorial pass; a subsequent style-only pass preserves its content.
+
+7. **Missing figure references** — a figure selected by the manuscript plan is not
+   referenced at its intended destination. Add the reference and appropriate caption;
+   a file's presence alone does not require including it in the article.
+
+8. **Reproducibility gaps** — missing random seeds, unclear parameter values,
+   unstated Monte Carlo budget. Add the information from the code.
+
+9. **Notation inconsistencies** — a symbol used differently in two places. Unify
+   to match the Methods section definition.
+
+10. **Supplementary table references** — repair broken references; provide useful
+    links to supporting results, grouping related tables where appropriate.
+
+11. **House-voice rewrite** — when the reader-first read flags paragraphs, the house-style
+    rewrite of Step 3b, including moving numbers from prose into tables under its
+    number-ledger rule.
+
+## Forbidden Fixes (blacklist)
+
+You **MAY NOT**:
+
+1. **Change the methodology or core algorithms** — if the grader says the method
+   is weak, that's a Phase 1-2 problem. Log it, don't fix it.
+
+2. **Re-run experiments** with different parameters, seeds, or Monte Carlo budgets
+   to get different results.
+
+3. **Add new evaluation types** not already in the manuscript or validation report.
+
+4. **Change the narrative or conclusions** to be more favorable — if the results
+   are modest, report them as modest.
+
+5. **Modify the validated code** in `pipeline/phase2_validate/validated_code/`.
+
+6. **Add new figures or tables** with results not already computed. You may
+   reformat existing data into a new table if the data already exists in CSVs.
+
+7. **Delete unfavorable results** or move them to supplementary to hide them. A house-voice rewrite
+   may move the *numbers* of an unfavorable result into a table, but the prose must still
+   state the unfavorable finding in the main text.
+
+8. **Increase Monte Carlo budget** to change results.
+
+9. **Add new theoretical propositions** not in the methodology specification.
+
+**Rationale:** If the grader identifies methodology or novelty issues, those are
+Phase 1-2 problems. The method was validated. The paper may score below target
+on Novelty or Impact, but that's an honest reflection of the method's value, not
+an execution error the fixer should paper over.
+
+---
+
+## Common Fix Patterns
+
+### Pattern 1: Number Mismatch (Table vs CSV)
+
+```
+1. Read the CSV: data/[evaluation]_results.csv
+2. Read the table in manuscript.tex
+3. Identify the mismatched cell
+4. Replace with the correct value from CSV
+5. Verify: re-read the CSV and the fixed table cell
+```
+
+### Pattern 2: Formula↔Code Mismatch (read from audit, do NOT re-derive)
+
+```
+1. Read pipeline/phase3_write/briefings/formula_code_audit.md
+2. Find the row matching the equation in question (by Eq# or section)
+3. Use the "Reconciled LaTeX" column VERBATIM as the replacement
+4. If status=MATCH: nothing to fix; verify the manuscript LaTeX matches the spec column
+5. If status=NEW_IN_PAPER: out-of-scope — log as a Phase 1 issue (the equation
+   exists in the manuscript but not in the spec; do not synthesize from either side)
+6. If status=UNRECONCILED, or the audit row is missing for an equation in the
+   manuscript, or a MISMATCH row lacks Reconciled LaTeX: log as CRITICAL
+   blocker — paper-modeler must complete the reconciliation. Do not pick a
+   side yourself.
+```
+
+### Pattern 3: Missing Comparator in Table
+
+```
+1. Check the inventory and manuscript plan: is this comparator applicable and
+   required in this comparison? If not, do not expand the table.
+2. If required, read the CSV and add the verified row/column at the planned location.
+3. If required results are absent from the CSV, log an evaluation gap for the Modeler.
+```
+
+### Pattern 4: Claim-vs-Data Inconsistency
+
+```
+1. Read the claim in the text (e.g., "5.3% improvement")
+2. Read the corresponding data in CSV
+3. Compute the actual value
+4. If they disagree: fix the text to match the data
+5. If the claim is qualitatively wrong (says "better" but data shows
+   "worse"): fix the claim to be honest
+```
+
+---
+
+## Context Management
+
+Paper-fixer is a lightweight agent (~40K tokens per round).
+
+| Component | Budget |
+|-----------|--------|
+| Read grade report + manuscript | ~15K |
+| Triage + fix list | ~5K |
+| Apply fixes (read sections, edit, verify) | ~15K |
+| Compile + fix report | ~5K |
+| Style pass (Step 3b, only when the gate fails) | ~40K |
+| **Total** | **~40K (~80K with a house-voice rewrite)** |
+
+The pipeline dispatches one paper-fixer per polish round. Each invocation
+is independent — no state carried between rounds.
+
+---
+
+## Anti-Patterns
+
+1. **"The grader says novelty is low, let me add a new theoretical result"** —
+   NO. New theory is Phase 1. Log it and move on.
+
+2. **"The numbers would look better if I re-ran with a larger Monte Carlo budget"** — NO.
+   The numbers are what they are. Fix transcription errors, not results.
+
+3. **"Let me reorganize the paper structure for better flow"** — Only if the
+   grader explicitly flagged structural issues, or its reader-first read flags
+   paragraphs whose fix needs restructuring (Step 3b).
+   Don't refactor unprompted.
+
+4. **"The grader flagged a code audit issue, let me fix the code"** — NO.
+   Fix the MANUSCRIPT to match the code (if formula transcription error),
+   or log the code issue for the pipeline's final report. Do not modify
+   validated code.
+
+5. **"I'll add a sensitivity analysis the grader wanted"** — NO. That's
+   a new evaluation. Out of scope. Log it.
+
+6. **"The abstract could be more compelling"** — Only fix if the grader
+   specifically flagged the abstract for factual errors or misleading claims.
+   Do not "punch up" prose to make results sound better than they are.

@@ -1,0 +1,1820 @@
+[
+  {
+    "id": "evidence-citation-chaining-0",
+    "primary": "evidence-citation-chaining",
+    "support": [],
+    "when_any": [
+      "cited by|citing (it|this|the)|forward cit|backward cit|citation (network|map|chain)|seminal papers|builds on"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 170
+  },
+  {
+    "id": "evidence-find-sources-1",
+    "primary": "scholar-find-sources",
+    "support": [],
+    "when_any": [
+      "search (plan|strategy)|reproducible search plan|sources? search plan"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "systematic|scoping|prisma|boolean|search strings?"
+    ],
+    "priority": 150
+  },
+  {
+    "id": "evidence-find-studies-2",
+    "primary": "evidence-find-studies",
+    "support": [],
+    "when_any": [
+      "find.{0,35}(real|recent|studies|papers)|retrieve.{0,25}(studies|papers)|search.{0,25}current literature"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "search (plan|strategy)|using only|supplied|do not search|question with synonyms"
+    ],
+    "priority": 125
+  },
+  {
+    "id": "evidence-search-strings-3",
+    "primary": "evidence-search-strings",
+    "support": [],
+    "when_any": [
+      "boolean|search strings?|search quer(y|ies)|synonym blocks"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "systematic.{0,20}protocol"
+    ],
+    "priority": 165
+  },
+  {
+    "id": "evidence-database-guide-4",
+    "primary": "evidence-database-guide",
+    "support": [],
+    "when_any": [
+      "which databases?|choose.{0,15}databases?|database (selection|guide)"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 145
+  },
+  {
+    "id": "evidence-field-guides-5",
+    "primary": "evidence-field-guides",
+    "support": [],
+    "when_any": [
+      "discipline.specific.{0,15}(evidence|search)|evidence in (education|psychology|engineering|humanities)|field guide"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 130
+  },
+  {
+    "id": "evidence-research-question-6",
+    "primary": "evidence-research-question",
+    "support": [],
+    "when_any": [
+      "searchable.{0,20}(review )?question|question.{0,20}synonyms|pico|peo|pcc|spider"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "systematic|scoping|protocol"
+    ],
+    "priority": 135
+  },
+  {
+    "id": "evidence-research-question-7",
+    "primary": "scholar-research-question",
+    "support": [],
+    "when_any": [
+      "feasible.{0,20}(thesis )?topics?|objectives and hypotheses|h0.{0,5}h1|develop.{0,20}hypothes|formulate.{0,20}(objectives|research question)",
+      "narrow.{0,50}(thesis )?topic",
+      "feasible research question"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 145
+  },
+  {
+    "id": "evidence-research-gaps-8",
+    "primary": "evidence-research-gaps",
+    "support": [],
+    "when_any": [
+      "research gaps?|map gaps|gap.{0,30}contribution|gap statement|gap.{0,20}still open"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 165
+  },
+  {
+    "id": "evidence-data-extraction-9",
+    "primary": "evidence-data-extraction",
+    "support": [],
+    "when_any": [
+      "extract.{0,50}(sample|means|standard deviations|group sizes|csv)|data extraction|extraction table"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "systematic.{0,20}protocol|prisma|pool|meta.analysis"
+    ],
+    "priority": 150
+  },
+  {
+    "id": "evidence-meta-analysis-10",
+    "primary": "evidence-meta-analysis",
+    "support": [],
+    "when_any": [
+      "pool.{0,30}(effect|studies)|meta.analysis|heterogeneity|small.study bias"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "protocol|review type"
+    ],
+    "priority": 165
+  },
+  {
+    "id": "evidence-evidence-meter-11",
+    "primary": "evidence-evidence-meter",
+    "support": [],
+    "when_any": [
+      "how many.{0,40}(supported|opposed|studies)|evidence meter|support.{0,15}oppose|consensus percentage"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 175
+  },
+  {
+    "id": "evidence-study-appraisal-12",
+    "primary": "evidence-study-appraisal",
+    "support": [],
+    "when_any": [
+      "risk.of.bias|trustworthy.{0,20}(trial|study)|apprais(e|al).{0,20}(study|trial)|casp|robins.i"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "protocol|prisma|reviewer report|publication recommendation"
+    ],
+    "priority": 145
+  },
+  {
+    "id": "evidence-peer-review-critique-13",
+    "primary": "scholar-peer-review-critique",
+    "support": [],
+    "when_any": [
+      "reviewer report|major and minor|publication recommendation|peer.review.{0,20}(critique|report)|review this manuscript"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "grade|score|rubric|iterative|loop|revise"
+    ],
+    "priority": 160
+  },
+  {
+    "id": "evidence-paper-breakdown-14",
+    "primary": "scholar-paper-breakdown",
+    "support": [],
+    "when_any": [
+      "what does table|where does.{0,20}paper|explain.{0,20}(equation|section|figure)|paper.{0,20}(question|breakdown)|page.{0,15}evidence"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "research gaps?|contribution statement"
+    ],
+    "priority": 145
+  },
+  {
+    "id": "evidence-paper-summary-15",
+    "primary": "evidence-paper-summary",
+    "support": [],
+    "when_any": [
+      "summari[sz]e.{0,20}(paper|study)|summary.{0,25}(paper|claim|cite)|three.line summary|paper summary"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 140
+  },
+  {
+    "id": "evidence-source-verification-16",
+    "primary": "evidence-source-verification",
+    "support": [],
+    "when_any": [
+      "verify.{0,35}(doi|authors|title|citation)|doi.{0,25}(invented|match)|fabricated (source|reference)|retraction|source authenticity"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 175
+  },
+  {
+    "id": "evidence-source-evaluation-17",
+    "primary": "scholar-source-evaluation",
+    "support": [],
+    "when_any": [
+      "advocacy website|evidence or a viewpoint|source.{0,20}(credib|evaluat)|evaluate.{0,20}(website|source)|can i use this.{0,15}(website|source)"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "verified.{0,20}(reference|citation) fields|verified bibliography"
+    ],
+    "priority": 155
+  },
+  {
+    "id": "evidence-citation-generator-18",
+    "primary": "scholar-citation-generator",
+    "support": [],
+    "when_any": [
+      "bibtex|in.text.{0,40}(reference|list)|every citation|citation.{0,20}reference list|references to apa|citation (style|format)|format.{0,20}(references|citations)"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "biber|biblatex|question marks|bibliography is blank|compile|annotations"
+    ],
+    "priority": 150
+  },
+  {
+    "id": "evidence-citations-and-references-19",
+    "primary": "evidence-citations-and-references",
+    "support": [],
+    "when_any": [
+      "annotations.{0,30}(methods|limits|relevance)|verified.{0,20}(citation fields|reference fields)|verified bibliography|format.{0,20}annotated references"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 155
+  },
+  {
+    "id": "evidence-literature-review-20",
+    "primary": "scholar-literature-review",
+    "support": [],
+    "when_any": [
+      "annotated bibliograph|[0-9]+.word annotation|synthesis matrix|source annotations|theme topic sentences"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "find.{0,20}screen",
+      "verified.{0,20}(reference|citation) fields|verified bibliography|gather.{0,25}fields"
+    ],
+    "priority": 158
+  },
+  {
+    "id": "evidence-literature-review-21",
+    "primary": "evidence-literature-review",
+    "support": [],
+    "when_any": [
+      "literature review|review.{0,35}find.{0,15}screen|choose.{0,15}review type|thematic literature"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "synthesis matrix|annotated|systematic|scoping|prisma"
+    ],
+    "priority": 135
+  },
+  {
+    "id": "evidence-plain-language-research-22",
+    "primary": "evidence-plain-language-research",
+    "support": [],
+    "when_any": [
+      "natural frequencies|plain.language|explain.{0,25}(parents|children|lay audience)|define the key terms|lay summary"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "talk|slides|poster|press release"
+    ],
+    "priority": 150
+  },
+  {
+    "id": "evidence-research-communication-23",
+    "primary": "scholar-research-communication",
+    "support": [],
+    "when_any": [
+      "ten.minute talk|talk with notes|audience questions|communicat.{0,25}research|press release|three.minute thesis|3.minute thesis"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "beamer|tikzposter|powerpoint|pptx|deck"
+    ],
+    "priority": 135
+  },
+  {
+    "id": "evidence-methodology-design-24",
+    "primary": "scholar-methodology-design",
+    "support": [],
+    "when_any": [
+      "choose.{0,35}(qualitative|mixed.method|design)|justify.{0,15}sampling|study design|research methodology"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "questionnaire|interview guide|frozen|validated method|derive"
+    ],
+    "priority": 140
+  },
+  {
+    "id": "evidence-survey-design-25",
+    "primary": "scholar-survey-design",
+    "support": [],
+    "when_any": [
+      "questionnaire|interview guide|survey items|neutral.{0,15}items|design.{0,15}survey"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 155
+  },
+  {
+    "id": "evidence-data-analysis-plan-26",
+    "primary": "scholar-data-analysis-plan",
+    "support": [],
+    "when_any": [
+      "statistical analysis plan|choose.{0,20}statistical tests?|plan.{0,20}data analysis|analysis assumptions"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 145
+  },
+  {
+    "id": "evidence-results-interpreter-27",
+    "primary": "scholar-results-interpreter",
+    "support": [],
+    "when_any": [
+      "interpret.{0,20}(regression|anova|results|output|p.value)|what does.{0,20}(coefficient|p.value|confidence interval)"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 145
+  },
+  {
+    "id": "evidence-statistics-explained-28",
+    "primary": "evidence-statistics-explained",
+    "support": [],
+    "when_any": [
+      "explain.{0,25}(statistics|p.values?|confidence intervals?|odds ratios?|statistical power)|what is.{0,15}(standard deviation|p.value|effect size)"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 140
+  },
+  {
+    "id": "evidence-qualitative-analysis-29",
+    "primary": "scholar-qualitative-analysis",
+    "support": [],
+    "when_any": [
+      "thematic analysis|qualitative coding|code.{0,20}transcripts|reflexiv|qualitative analysis"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 150
+  },
+  {
+    "id": "evidence-grant-proposal-30",
+    "primary": "scholar-grant-proposal",
+    "support": [],
+    "when_any": [
+      "funder call|funding call|aims.{0,30}budget|grant proposal|funding proposal|research budget"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "humaniz|natural.{0,20}voice"
+    ],
+    "priority": 150
+  },
+  {
+    "id": "evidence-research-proposal-31",
+    "primary": "scholar-research-proposal",
+    "support": [],
+    "when_any": [
+      "research proposal|proposal.{0,20}(methods|objectives)|dissertation proposal"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "funder|grant|funding|background only"
+    ],
+    "priority": 130
+  },
+  {
+    "id": "evidence-research-proposal-background-32",
+    "primary": "evidence-research-proposal-background",
+    "support": [],
+    "when_any": [
+      "proposal background|background.{0,30}proposal|literature.{0,20}rationale.{0,20}proposal"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 155
+  },
+  {
+    "id": "evidence-evidence-synthesis-33",
+    "primary": "scholar-evidence-synthesis",
+    "support": [],
+    "when_any": [
+      "quality.weighted answer|weigh.{0,15}evidence|evidence synthesis|from these studies|using only.{0,35}studies"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "find and verify|search.{0,20}current"
+    ],
+    "priority": 155
+  },
+  {
+    "id": "evidence-evidence-answer-34",
+    "primary": "evidence-evidence-answer",
+    "support": [],
+    "when_any": [
+      "research says|answer.{0,35}verified citations|answer.{0,25}research question|what does.{0,15}evidence say"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "using only|do not search|supplied studies|from these studies"
+    ],
+    "priority": 150
+  },
+  {
+    "id": "evidence-systematic-review-35",
+    "primary": "evidence-systematic-review",
+    "support": [],
+    "when_any": [
+      "systematic.review|scoping.review|prisma|screening disagreement|review protocol"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "pool.{0,20}effect"
+    ],
+    "priority": 160
+  },
+  {
+    "id": "evidence-claim-checker-36",
+    "primary": "evidence-claim-checker",
+    "support": [],
+    "when_any": [
+      "fact.check|claim.check|check.{0,20}claim|verify.{0,20}claim"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 155
+  },
+  {
+    "id": "evidence-compare-studies-37",
+    "primary": "evidence-compare-studies",
+    "support": [],
+    "when_any": [
+      "compare.{0,20}(studies|papers)|side.by.side.{0,20}(studies|papers)"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 150
+  },
+  {
+    "id": "evidence-decision-evidence-38",
+    "primary": "evidence-decision-evidence",
+    "support": [],
+    "when_any": [
+      "evidence.{0,25}decision|decision brief|decision matrix|choose between.{0,20}interventions"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 140
+  },
+  {
+    "id": "evidence-debate-and-argument-evidence-39",
+    "primary": "evidence-debate-and-argument-evidence",
+    "support": [],
+    "when_any": [
+      "debate|both sides|arguments for and against|counterarguments"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 140
+  },
+  {
+    "id": "evidence-evidence-based-writing-40",
+    "primary": "evidence-evidence-based-writing",
+    "support": [],
+    "when_any": [
+      "evidence.based essay|write.{0,20}essay.{0,20}evidence|article backed by research"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 135
+  },
+  {
+    "id": "evidence-open-access-full-text-41",
+    "primary": "evidence-open-access-full-text",
+    "support": [],
+    "when_any": [
+      "open.access|full.text|legal.{0,15}(copy|pdf)|paywall"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 160
+  },
+  {
+    "id": "evidence-study-designs-and-evidence-levels-42",
+    "primary": "evidence-study-designs-and-evidence-levels",
+    "support": [],
+    "when_any": [
+      "evidence hierarch|study designs and|evidence levels|rank.{0,20}study designs"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 150
+  },
+  {
+    "id": "evidence-citation-chaining-43",
+    "primary": "evidence-citation-chaining",
+    "support": [],
+    "when_any": [
+      "citation alerts|search alerts"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 145
+  },
+  {
+    "id": "evidence-abstract-introduction-44",
+    "primary": "scholar-abstract-introduction",
+    "support": [],
+    "when_any": [
+      "write.{0,20}(abstract|introduction)|draft.{0,20}(abstract|introduction)|abstract structure|research introduction"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "humaniz|copyedit|proofread|latex"
+    ],
+    "priority": 140
+  },
+  {
+    "id": "evidence-paper-sections-45",
+    "primary": "scholar-paper-sections",
+    "support": [],
+    "when_any": [
+      "write.{0,20}(methods|results|discussion|conclusion) section|paper sections"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "humaniz|proofread|latex"
+    ],
+    "priority": 140
+  },
+  {
+    "id": "evidence-outline-builder-46",
+    "primary": "scholar-outline-builder",
+    "support": [],
+    "when_any": [
+      "paper outline|outline.{0,20}(manuscript|research paper)|structure.{0,20}research paper"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "latex"
+    ],
+    "priority": 140
+  },
+  {
+    "id": "evidence-academic-editing-47",
+    "primary": "scholar-academic-editing",
+    "support": [],
+    "when_any": [
+      "academic editing|copyedit|proofread|grammar.{0,15}(paper|manuscript)|edit.{0,15}manuscript"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "tex|humaniz|ai writing|word limit|shorten|translate|compag"
+    ],
+    "priority": 125
+  },
+  {
+    "id": "evidence-academic-translation-48",
+    "primary": "scholar-academic-translation",
+    "support": [],
+    "when_any": [
+      "translat(e|ion).{0,40}(academic|paper|abstract|manuscript)|translate.{0,40}(english|chinese|hindi|french|german)"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 155
+  },
+  {
+    "id": "evidence-word-reduction-49",
+    "primary": "scholar-word-reduction",
+    "support": [],
+    "when_any": [
+      "word limit|word reduction|shorten.{0,20}(abstract|manuscript|paper)|cut.{0,15}words"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "humaniz"
+    ],
+    "priority": 155
+  },
+  {
+    "id": "evidence-paraphrase-summarize-50",
+    "primary": "scholar-paraphrase-summarize",
+    "support": [],
+    "when_any": [
+      "paraphrase|summari[sz]e.{0,20}source passage|summari[sz]e.{0,20}paragraph"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 145
+  },
+  {
+    "id": "evidence-originality-integrity-51",
+    "primary": "scholar-originality-integrity",
+    "support": [],
+    "when_any": [
+      "plagiarism|academic integrity|originality|ai.use disclosure|paraphras.{0,20}credit"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 155
+  },
+  {
+    "id": "evidence-research-ethics-52",
+    "primary": "scholar-research-ethics",
+    "support": [],
+    "when_any": [
+      "ethics approval|informed consent|participant privacy|irb|research ethics"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 155
+  },
+  {
+    "id": "evidence-journal-finder-53",
+    "primary": "scholar-journal-finder",
+    "support": [],
+    "when_any": [
+      "journal (finder|selection)|choose.{0,20}journal|where.{0,15}submit|target journals?"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 150
+  },
+  {
+    "id": "evidence-submission-checklist-54",
+    "primary": "scholar-submission-checklist",
+    "support": [],
+    "when_any": [
+      "submission checklist|ready.{0,15}submit|submission.readiness|author guidelines"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "latex|template|compag"
+    ],
+    "priority": 150
+  },
+  {
+    "id": "evidence-peer-review-critique-55",
+    "primary": "scholar-peer-review-critique",
+    "support": [],
+    "when_any": [
+      "peer review report"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 160
+  },
+  {
+    "id": "evidence-research-planner-56",
+    "primary": "scholar-research-planner",
+    "support": [],
+    "when_any": [
+      "research milestones|research (timeline|plan)|project management|dissertation.{0,20}milestones|gantt|plan.{0,20}milestones"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "literature search|systematic|analysis|proposal|thesis template"
+    ],
+    "priority": 145
+  },
+  {
+    "id": "evidence-thesis-dissertation-57",
+    "primary": "scholar-thesis-dissertation",
+    "support": [],
+    "when_any": [
+      "thesis (structure|chapters|defen[cs]e)|dissertation (structure|chapters|defen[cs]e)|viva|defen[cs]e preparation"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "latex|front matter|template"
+    ],
+    "priority": 140
+  },
+  {
+    "id": "evidence-paperpal-tools-58",
+    "primary": "scholar-paperpal-tools",
+    "support": [],
+    "when_any": [
+      "paperpal"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 160
+  },
+  {
+    "id": "evidence-evidence-help-59",
+    "primary": "evidence-evidence-help",
+    "support": [],
+    "when_any": [
+      "evidence finder.{0,20}(help|do)|what can.{0,20}evidence"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 100
+  },
+  {
+    "id": "evidence-research-evidence-finder-60",
+    "primary": "evidence-research-evidence-finder",
+    "support": [],
+    "when_any": [
+      "evidence finder|research evidence assistance"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 50
+  },
+  {
+    "id": "evidence-scholar-help-61",
+    "primary": "scholar-scholar-help",
+    "support": [],
+    "when_any": [
+      "what can.{0,15}scholar research|scholar research help|scholar.{0,15}capabilities"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 100
+  },
+  {
+    "id": "evidence-scholar-studio-62",
+    "primary": "scholar-scholar-studio",
+    "support": [],
+    "when_any": [
+      "academic research help|scholar research assistance"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 45
+  },
+  {
+    "id": "writing-arms-brief-expander-explicit",
+    "primary": "arms-brief-expander",
+    "support": [],
+    "when_any": [
+      "\\barms-brief-expander\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 1000
+  },
+  {
+    "id": "writing-arms-critic-revisor-explicit",
+    "primary": "arms-critic-revisor",
+    "support": [],
+    "when_any": [
+      "\\barms-critic-revisor\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 1000
+  },
+  {
+    "id": "writing-arms-house-style-explicit",
+    "primary": "arms-house-style",
+    "support": [],
+    "when_any": [
+      "\\barms-house-style\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 1000
+  },
+  {
+    "id": "writing-arms-literature-lead-explicit",
+    "primary": "arms-literature-lead",
+    "support": [],
+    "when_any": [
+      "\\barms-literature-lead\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 1000
+  },
+  {
+    "id": "writing-arms-methodology-architect-explicit",
+    "primary": "arms-methodology-architect",
+    "support": [],
+    "when_any": [
+      "\\barms-methodology-architect\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 1000
+  },
+  {
+    "id": "writing-arms-paper-critic-explicit",
+    "primary": "arms-paper-critic",
+    "support": [],
+    "when_any": [
+      "\\barms-paper-critic\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 1000
+  },
+  {
+    "id": "writing-arms-paper-fixer-explicit",
+    "primary": "arms-paper-fixer",
+    "support": [],
+    "when_any": [
+      "\\barms-paper-fixer\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 1000
+  },
+  {
+    "id": "writing-arms-paper-grader-explicit",
+    "primary": "arms-paper-grader",
+    "support": [],
+    "when_any": [
+      "\\barms-paper-grader\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 1000
+  },
+  {
+    "id": "writing-arms-paper-modeler-explicit",
+    "primary": "arms-paper-modeler",
+    "support": [],
+    "when_any": [
+      "\\barms-paper-modeler\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 1000
+  },
+  {
+    "id": "writing-arms-paper-writer-explicit",
+    "primary": "arms-paper-writer",
+    "support": [],
+    "when_any": [
+      "\\barms-paper-writer\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 1000
+  },
+  {
+    "id": "writing-arms-research-pipeline-explicit",
+    "primary": "arms-research-pipeline",
+    "support": [],
+    "when_any": [
+      "\\barms-research-pipeline\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 1000
+  },
+  {
+    "id": "writing-arms-validate-method-explicit",
+    "primary": "arms-validate-method",
+    "support": [],
+    "when_any": [
+      "\\barms-validate-method\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 1000
+  },
+  {
+    "id": "writing-arms-write-manuscript-explicit",
+    "primary": "arms-write-manuscript",
+    "support": [],
+    "when_any": [
+      "\\barms-write-manuscript\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 1000
+  },
+  {
+    "id": "writing-humanizer-explicit",
+    "primary": "humanizer",
+    "support": [],
+    "when_any": [
+      "(?<!academic-)\\bhumanizer\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 1000
+  },
+  {
+    "id": "writing-academic-humanizer-explicit",
+    "primary": "academic-humanizer",
+    "support": [],
+    "when_any": [
+      "\\bacademic-humanizer\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 1000
+  },
+  {
+    "id": "writing-guardrails-compag-elsevier-paper-editing-explicit",
+    "primary": "guardrails-compag-elsevier-paper-editing",
+    "support": [],
+    "when_any": [
+      "\\bguardrails-compag-elsevier-paper-editing\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 1000
+  },
+  {
+    "id": "writing-guardrails-research-problem-mechanism-evidence-explicit",
+    "primary": "guardrails-research-problem-mechanism-evidence",
+    "support": [],
+    "when_any": [
+      "\\bguardrails-research-problem-mechanism-evidence\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 1000
+  },
+  {
+    "id": "writing-research-assistant-explicit",
+    "primary": "research-assistant",
+    "support": [],
+    "when_any": [
+      "\\bresearch-assistant\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 1000
+  },
+  {
+    "id": "writing-general-prose-humanization",
+    "primary": "humanizer",
+    "support": [],
+    "when_any": [
+      "\\bhumaniz(?:e|ing|ation)\\b",
+      "\\bremove\\s+(?:the\\s+)?AI\\s+(?:tells|writing\\s+patterns)\\b",
+      "\\bAI[- ]sounding\\b.{0,60}\\b(?:blog|email|essay|reply|prose|text)\\b",
+      "\\b(?:blog|email|personal\\s+essay|reply|release\\s+notes?)\\b.{0,70}\\b(?:sound\\s+like\\s+me|my\\s+voice|less\\s+robotic)\\b"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "\\b(?:academic|scholarly)\\s+(?:prose|writing|draft|text)|\\bmanuscript\\b|\\b(?:paper|thesis|dissertation|rebuttal)\\s+(?:abstract|prose|text|writing|section|chapter|draft)|\\b(?:abstract|section|chapter)\\s+(?:of|for|in|from)\\s+(?:my|our|the|a)\\s+(?:paper|thesis|dissertation)|\\b(?:grant|funding|fellowship|foundation)\\s+(?:proposal|application)|\\b(?:NIH\\s+(?:Specific\\s+)?Aims|NSF\\s+(?:Project\\s+)?(?:Summary|Description)|Specific Aims)\\b",
+      "\\bCOMPAG\\b|Computers\\s+and\\s+Electronics\\s+in\\s+Agriculture|\\bElsevier\\s+(?:manuscript\\s+)?style\\b",
+      "\\bacademic-humanizer\\b"
+    ],
+    "priority": 70
+  },
+  {
+    "id": "writing-academic-evidence-preserving-edit",
+    "primary": "academic-humanizer",
+    "support": [],
+    "when_any": [
+      "\\b(?:humaniz\\w*|edit\\w*|polish\\w*|rewrite|revis\\w*|clean\\s+up|remove\\s+AI|AI[- ](?:sound\\w*|assist\\w*|generat\\w*)|match\\s+(?:my|our|the\\s+author.s)\\s+voice)\\b"
+    ],
+    "when_all": [
+      "\\b(?:academic|scholarly)\\s+(?:prose|writing|draft|text)|\\bmanuscript\\b|\\b(?:paper|thesis|dissertation|rebuttal)\\s+(?:abstract|prose|text|writing|section|chapter|draft)|\\b(?:abstract|section|chapter)\\s+(?:of|for|in|from)\\s+(?:my|our|the|a)\\s+(?:paper|thesis|dissertation)|\\b(?:grant|funding|fellowship|foundation)\\s+(?:proposal|application)|\\b(?:NIH\\s+(?:Specific\\s+)?Aims|NSF\\s+(?:Project\\s+)?(?:Summary|Description)|Specific Aims)\\b"
+    ],
+    "unless_any": [
+      "\\bhouse[- ](?:style|voice)\\b|\\breader[- ]first\\b|\\bstyle_metrics(?:\\.py)?\\b|\\bnumber[- ]relocation\\s+ledger\\b|\\b(?:match|calibrat\\w*)\\b.{0,65}\\b(?:exemplar|reference[- ]paper)\\b",
+      "\\bCOMPAG\\b|Computers\\s+and\\s+Electronics\\s+in\\s+Agriculture|\\bElsevier\\s+(?:manuscript\\s+)?style\\b"
+    ],
+    "priority": 150
+  },
+  {
+    "id": "writing-scholarly-house-exemplar-edit",
+    "primary": "arms-house-style",
+    "support": [],
+    "when_any": [
+      "\\bhouse[- ](?:style|voice)\\b|\\breader[- ]first\\b|\\bstyle_metrics(?:\\.py)?\\b|\\bnumber[- ]relocation\\s+ledger\\b|\\b(?:match|calibrat\\w*)\\b.{0,65}\\b(?:exemplar|reference[- ]paper)\\b"
+    ],
+    "when_all": [
+      "\\b(?:manuscript|paper|scholarly|academic|LaTeX|exemplar|number[- ]relocation)\\b|\\.tex\\b"
+    ],
+    "unless_any": [
+      "\\bCOMPAG\\b|Computers\\s+and\\s+Electronics\\s+in\\s+Agriculture|\\bElsevier\\s+(?:manuscript\\s+)?style\\b"
+    ],
+    "priority": 180
+  },
+  {
+    "id": "writing-requested-compag-edit",
+    "primary": "guardrails-compag-elsevier-paper-editing",
+    "support": [],
+    "when_any": [
+      "\\bCOMPAG\\b|Computers\\s+and\\s+Electronics\\s+in\\s+Agriculture|\\bElsevier\\s+(?:manuscript\\s+)?style\\b"
+    ],
+    "when_all": [
+      "\\b(?:humaniz\\w*|edit\\w*|polish\\w*|rewrite|revis\\w*|clean\\s+up|remove\\s+AI|AI[- ](?:sound\\w*|assist\\w*|generat\\w*)|match\\s+(?:my|our|the\\s+author.s)\\s+voice)\\b|\\b(?:audit|style|caption|manuscript)\\b"
+    ],
+    "unless_any": [],
+    "priority": 200
+  },
+  {
+    "id": "writing-technical-causal-evidence-audit",
+    "primary": "guardrails-research-problem-mechanism-evidence",
+    "support": [],
+    "when_any": [
+      "\\bproblem\\s*(?:→|->|[-/])\\s*mechanism\\s*(?:→|->|[-/])\\s*evidence\\b",
+      "\\b(?:ablation|comparison|diagnostic|implementation)\\b.{0,100}\\b(?:support|establish|isolate|causal|attribute|mechanism|claim)\\b",
+      "\\b(?:causal|mechanistic|technical)\\s+(?:claim|argument|reasoning|attribution)\\b",
+      "\\b(?:two|multiple|several)\\s+(?:modules?|factors?|components?)\\s+changed\\b"
+    ],
+    "when_all": [
+      "\\b(?:audit|check|assess|explain|interpret|evidence|claim|support|causal|mechanis\\w*)\\b"
+    ],
+    "unless_any": [
+      "\\b(?:grade\\s+report|critic[- ]revisor|production\\s+evaluations?)\\b",
+      "\\bCOMPAG\\b|Computers\\s+and\\s+Electronics\\s+in\\s+Agriculture|\\bElsevier\\s+(?:manuscript\\s+)?style\\b"
+    ],
+    "priority": 125
+  },
+  {
+    "id": "writing-collection-onboarding-and-handoff",
+    "primary": "research-assistant",
+    "support": [],
+    "when_any": [
+      "\\b(?:which|choose|select|find)\\b.{0,65}\\b(?:plugin\\s+)?(?:skill|capabilit\\w*|workflow)\\b",
+      "\\b(?:plugin|collection)\\s+(?:onboarding|capabilities|help)\\b",
+      "\\bcoordinate\\b.{0,100}\\b(?:literature|research)\\b.{0,90}\\b(?:LaTeX|slides|figures|publication|analysis)\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 80
+  },
+  {
+    "id": "writing-sparse-operational-research-brief",
+    "primary": "arms-brief-expander",
+    "support": [],
+    "when_any": [
+      "\\b(?:expand|scope|turn|develop)\\b.{0,90}\\b(?:one[- ]line|one[- ]sentence|sparse|vague|minimal|partial)\\b.{0,100}\\b(?:research\\s+)?(?:idea|brief)\\b",
+      "\\b(?:one[- ]line|one[- ]sentence|sparse|vague|minimal|partial)\\b.{0,90}\\b(?:research\\s+)?idea\\b.{0,110}\\b(?:brief|comparators?|data\\s+assets|evaluation\\s+criteria)\\b",
+      "\\b(?:complete|expand|fill)\\b.{0,45}\\bresearch_brief\\.md\\b"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "\\b(?:complete|end[- ]to[- ]end|full)\\b.{0,50}\\bpipeline\\b"
+    ],
+    "priority": 145
+  },
+  {
+    "id": "writing-prevalidation-method-combination-design",
+    "primary": "arms-methodology-architect",
+    "support": [],
+    "when_any": [
+      "\\b(?:design|invent|propose|rethink)\\b.{0,70}\\b(?:new\\s+)?(?:research\\s+)?(?:methods?|methodolog(?:y|ies))\\b",
+      "\\bProvides\\s*/\\s*Needs\\b",
+      "\\b(?:methodology\\s+specification|method\\s+candidates?)\\b.{0,100}\\b(?:cross[- ]field|adjacent\\s+fields?|combin\\w*|red[- ]team|design)\\b",
+      "\\bnew\\s+mathematical\\s+derivation\\b.{0,100}\\b(?:no|without)\\b.{0,30}\\bvalidated\\b"
+    ],
+    "when_all": [
+      "\\b(?:research|brief|methodology|specification|candidates?|Provides|derivation|validation\\s+failure)\\b"
+    ],
+    "unless_any": [
+      "\\b(?:production\\s+evaluations?|frozen\\s+(?:validated\\s+)?code|unchanged\\s+(?:hyper)?parameters|grade\\s+report)\\b"
+    ],
+    "priority": 176
+  },
+  {
+    "id": "writing-prewriting-pilot-method-validation",
+    "primary": "arms-validate-method",
+    "support": [],
+    "when_any": [
+      "\\b(?:implement|validate|test)\\b.{0,80}\\b(?:proposed|unvalidated)\\b.{0,60}\\bmethod\\b",
+      "\\b(?:minimum\\s+viable\\s+(?:experiment|evaluation)|pilot\\s+validation|GO\\s*/\\s*NO[- ]GO)\\b",
+      "\\bmethodology\\s+specification\\b.{0,100}\\b(?:implement|pilot|validation|stress\\s+test|ablation)\\b"
+    ],
+    "when_all": [
+      "\\b(?:method|methodology|specification|proposed|pre[- ]writing)\\b"
+    ],
+    "unless_any": [
+      "\\b(?:production\\s+(?:precision|evaluations?)|frozen\\s+(?:validated\\s+)?code|unchanged\\s+(?:hyper)?parameters|grade\\s+report)\\b"
+    ],
+    "priority": 170
+  },
+  {
+    "id": "writing-postvalidation-frozen-production-and-audit",
+    "primary": "arms-paper-modeler",
+    "support": [],
+    "when_any": [
+      "\\b(?:scale|run|execute)\\b.{0,100}\\b(?:validated|frozen)\\b.{0,60}\\b(?:code|implementation|evaluations?)\\b",
+      "\\b(?:post[- ]validation|production[- ](?:quality|grade)|production\\s+(?:precision|evaluations?))\\b",
+      "\\b(?:canonical\\s+)?formula[-↔ ]code\\s+(?:audit|reconciliation)\\b",
+      "\\bformula_code_audit\\.md\\b.{0,70}\\b(?:create|produce|reconcile|own)\\b"
+    ],
+    "when_all": [
+      "\\b(?:validated|frozen|post[- ]validation|unchanged\\s+(?:hyper)?parameters|Phase\\s*2|production|canonical)\\b"
+    ],
+    "unless_any": [
+      "\\b(?:missing|read|consume|copy|fix\\s+from)\\s+(?:the\\s+)?(?:canonical\\s+)?(?:formula[-↔ ]code\\s+)?audit\\b",
+      "\\b(?:draft|write)\\b.{0,40}\\b(?:section|whole\\s+manuscript|complete\\s+manuscript)\\b"
+    ],
+    "priority": 180
+  },
+  {
+    "id": "writing-phase3-incremental-literature-positioning",
+    "primary": "arms-literature-lead",
+    "support": [],
+    "when_any": [
+      "\\b(?:positioning|related[- ]work)\\b.{0,80}\\b(?:briefing|incremental|coverage\\s+gaps?)\\b",
+      "\\b(?:reuse|inherit)\\b.{0,80}\\bPhase\\s*1\\b.{0,80}\\b(?:literature|extractions?)\\b",
+      "\\bPhase\\s*3\\b.{0,90}\\bliterature\\b"
+    ],
+    "when_all": [
+      "\\b(?:validated|Phase\\s*3|Phase\\s*1|writer|manuscript|positioning)\\b"
+    ],
+    "unless_any": [
+      "\\b(?:design|invent)\\b.{0,35}\\bmethod\\b"
+    ],
+    "priority": 170
+  },
+  {
+    "id": "writing-phase3-single-section-evidence-drafting",
+    "primary": "arms-paper-writer",
+    "support": [],
+    "when_any": [
+      "\\b(?:draft|write|revise)\\b.{0,70}\\b(?:assigned\\s+)?(?:Results|Methods|Introduction|Discussion|Abstract|Related\\s+Work|Theoretical\\s+Properties)\\s+(?:section|prose)\\b",
+      "\\b(?:draft|write)\\b.{0,55}\\b(?:one|assigned|single)\\b.{0,30}\\b(?:manuscript|paper)\\s+section\\b"
+    ],
+    "when_all": [
+      "\\b(?:validated|canonical|current[- ]run|CSV|assigned|Phase\\s*3)\\b"
+    ],
+    "unless_any": [
+      "\\b(?:grade\\s+report|whole\\s+manuscript|complete\\s+manuscript|manuscript\\s+package)\\b"
+    ],
+    "priority": 170
+  },
+  {
+    "id": "writing-phase3-whole-manuscript-orchestration",
+    "primary": "arms-write-manuscript",
+    "support": [],
+    "when_any": [
+      "\\b(?:produce|build|coordinate|write|assemble)\\b.{0,85}\\b(?:complete|whole|full)\\s+manuscript(?:\\s+package)?\\b",
+      "\\bmanuscript\\s+package\\b.{0,80}\\b(?:validated|approved\\s+synopsis|production)\\b",
+      "\\bPhase\\s*3\\b.{0,70}\\b(?:orchestrat\\w*|manuscript\\s+production)\\b"
+    ],
+    "when_all": [
+      "\\b(?:validated|Phase\\s*2|approved\\s+synopsis|Phase\\s*3)\\b"
+    ],
+    "unless_any": [
+      "\\b(?:end[- ]to[- ]end|full|complete)\\b.{0,50}\\bresearch\\s+pipeline\\b"
+    ],
+    "priority": 190
+  },
+  {
+    "id": "writing-read-only-bounded-source-critique",
+    "primary": "arms-paper-critic",
+    "support": [],
+    "when_any": [
+      "\\b(?:critique|review)\\b.{0,100}\\b(?:five|5)\\s+(?:located\\s+)?(?:challenges|issues)\\b",
+      "\\b(?:read[- ]only|without\\s+editing|leave\\s+(?:all\\s+)?files\\s+unchanged)\\b.{0,120}\\b(?:critique|challenges|critical|major|minor)\\b",
+      "\\b(?:critique|review)\\b.{0,120}\\b(?:read[- ]only|without\\s+editing|leave\\s+(?:all\\s+)?files\\s+unchanged)\\b"
+    ],
+    "when_all": [
+      "\\b(?:manuscript|paper|deliverable|draft|ARMS|Phase\\s*3)\\b"
+    ],
+    "unless_any": [
+      "\\b(?:grade|weighted|score|out\\s+of\\s+50|critic[- ]revisor|external\\s+CLI|loop)\\b"
+    ],
+    "priority": 166
+  },
+  {
+    "id": "writing-completed-paper-seven-dimension-grade",
+    "primary": "arms-paper-grader",
+    "support": [],
+    "when_any": [
+      "\\b(?:grade|score|assess)\\b.{0,100}\\b(?:/\\s*50|out\\s+of\\s+50|weighted|seven[- ]dimension|7[- ]dimension)\\b",
+      "\\b(?:seven|7)\\s+(?:dimensions?|rubric)\\b",
+      "\\b(?:weighted\\s+grade|code\\s+audit)\\b.{0,80}\\b(?:correctness|novelty|impact|performance|completed\\s+manuscript)\\b"
+    ],
+    "when_all": [
+      "\\b(?:paper|manuscript|rubric|correctness|novelty)\\b"
+    ],
+    "unless_any": [
+      "\\b(?:apply|fix|repair)\\b.{0,60}\\b(?:grade[- ]report|grader|grade\\s+report)\\b"
+    ],
+    "priority": 180
+  },
+  {
+    "id": "writing-targeted-grade-report-fixes",
+    "primary": "arms-paper-fixer",
+    "support": [],
+    "when_any": [
+      "\\b(?:apply|fix|repair|revise)\\b.{0,85}\\b(?:grade[- ]report|grade\\s+report|grader.s\\s+(?:findings|issues)|graded\\s+issues)\\b",
+      "\\b(?:grade[- ]report|grade\\s+report)\\b.{0,100}\\b(?:fix|repair|correction|table|formula|cross[- ]reference|clarity)\\b",
+      "(?:read|consume|use).{0,55}(?:canonical|existing).{0,50}(?:formula.code )?audit.{0,65}(?:fix|repair|correct).{0,40}(?:manuscript|transcription|discrepanc)"
+    ],
+    "when_all": [
+      "\\b(?:manuscript|paper|CSV|formula|table|cross[- ]reference|validated)\\b"
+    ],
+    "unless_any": [
+      "\\b(?:launch|run)\\b.{0,40}\\bcritic[- ]revisor\\b"
+    ],
+    "priority": 210
+  },
+  {
+    "id": "writing-explicit-external-review-revise-loop",
+    "primary": "arms-critic-revisor",
+    "support": [],
+    "when_any": [
+      "\\bcritic[- ]revisor\\s+(?:loop|script)\\b",
+      "\\brun_loop\\.sh\\b",
+      "\\b(?:Claude|Opus)\\b.{0,100}\\b(?:Codex)\\b.{0,100}\\b(?:loop|latexdiff|latexmk)\\b",
+      "\\b(?:external|Bash)\\b.{0,70}\\b(?:review[- /]revision|adversarial\\s+review)\\b.{0,50}\\bloop\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 240
+  },
+  {
+    "id": "writing-end-to-end-arms-methodology-pipeline",
+    "primary": "arms-research-pipeline",
+    "support": [],
+    "when_any": [
+      "\\b(?:full|complete|end[- ]to[- ]end)\\b.{0,55}\\b(?:ARMS\\s+)?research\\s+pipeline\\b",
+      "\\b(?:SCOPE|THINK)\\s*(?:→|->|[-/])\\s*(?:THINK|VALIDATE)\\b",
+      "\\bresearch\\s+idea\\b.{0,110}\\bvalidated\\b.{0,50}\\b(?:manuscript|paper)\\b",
+      "\\bresume\\b.{0,70}\\b(?:ARMS|pipeline_state\\.md|MARGINAL_decision_required\\.md)\\b"
+    ],
+    "when_all": [
+      "\\b(?:ARMS|statistical|statistics|biostatistical|methodology|pipeline_state|MARGINAL|THINK|VALIDATE)\\b"
+    ],
+    "unless_any": [],
+    "priority": 230
+  },
+  {
+    "id": "artifact-powerpoint-poster",
+    "primary": "academic-pptx",
+    "support": [
+      "scholar-research-communication"
+    ],
+    "when_any": [
+      "\\bposter\\b"
+    ],
+    "when_all": [
+      "\\b(?:powerpoint|pptx)\\b"
+    ],
+    "unless_any": [],
+    "priority": 280
+  },
+  {
+    "id": "artifact-artifact-poster",
+    "primary": "latex-academic-poster",
+    "support": [],
+    "when_any": [
+      "\\b(?:tikzposter|beamerposter|baposter)\\b",
+      "\\b(?:A0|A1)\\b.{0,35}\\b(?:research|conference|portrait|landscape|poster)\\b"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 275
+  },
+  {
+    "id": "artifact-artifact-latex-poster",
+    "primary": "latex-academic-poster",
+    "support": [],
+    "when_any": [
+      "\\b(?:research|conference|academic)\\s+poster\\b"
+    ],
+    "when_all": [
+      "\\b(?:latex|overleaf|tex|pdflatex|xelatex|lualatex|beamer|tikz|bibtex|biblatex|natbib|biber|pgfplots)\\b|\\.tex\\b"
+    ],
+    "unless_any": [],
+    "priority": 260
+  },
+  {
+    "id": "artifact-artifact-algorithms",
+    "primary": "latex-algorithms-code",
+    "support": [],
+    "when_any": [
+      "\\b(?:pseudocode|algpseudocode|algorithm2e|algorithmic|minted|listings)\\b",
+      "(?:code|python|programming).{0,20}listing|syntax.highlight.{0,20}code"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 240
+  },
+  {
+    "id": "artifact-artifact-beamer",
+    "primary": "latex-beamer-slides",
+    "support": [
+      "academic-pptx"
+    ],
+    "when_any": [
+      "\\bbeamer\\b|latex\\s+(?:slides|presentation|talk)|(?:slides|presentation|talk)\\s+in\\s+latex",
+      "editable.{0,20}frames.{0,35}(?:reveal|notes|overlay)"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "beamerposter|tikzposter|baposter"
+    ],
+    "priority": 265
+  },
+  {
+    "id": "artifact-artifact-bibliography",
+    "primary": "latex-bibliography-citations",
+    "support": [],
+    "when_any": [
+      "\\b(?:biblatex|natbib|biber)\\b|\\.bib\\b",
+      "\\bbibtex\\b.{0,30}(?:setup|backend|compil|undefined|missing|wire)|(?:undefined|missing).{0,15}citation\\s+keys|references\\s+not\\s+showing"
+    ],
+    "when_all": [
+      "citation|bibliograph|references|(?:bibtex|biblatex|natbib|biber).{0,25}(?:setup|config|entries|keys|backend|show|wire)|\\.bib.{0,20}(?:keys|entries|backend|problem)|(?:undefined|missing).{0,20}keys"
+    ],
+    "unless_any": [
+      "correspond\\s+to\\s+real|verify.{0,20}(?:authentic|real)|check\\s+whether.{0,35}real"
+    ],
+    "priority": 245
+  },
+  {
+    "id": "artifact-artifact-books",
+    "primary": "latex-books-notes",
+    "support": [],
+    "when_any": [
+      "\\b(?:textbook|lecture\\s+notes|course\\s+notes|cheat\\s+sheet|memoir)\\b",
+      "\\bbook\\b.{0,35}(?:chapter|trim|print|latex)"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "\\b(?:thesis|dissertation|exam|quiz)\\b"
+    ],
+    "priority": 205
+  },
+  {
+    "id": "artifact-artifact-designed-pages",
+    "primary": "latex-certificates-flyers",
+    "support": [],
+    "when_any": [
+      "\\b(?:certificates?|flyers?|invitations?|business\\s+cards?|newsletters?|calendars?|brochures?|letterheads?)\\b"
+    ],
+    "when_all": [
+      "\\b(?:latex|overleaf|tex|pdflatex|xelatex|lualatex|beamer|tikz|bibtex|biblatex|natbib|biber|pgfplots)\\b|\\.tex\\b"
+    ],
+    "unless_any": [],
+    "priority": 220
+  },
+  {
+    "id": "artifact-artifact-internal-references",
+    "primary": "latex-cross-references-links",
+    "support": [],
+    "when_any": [
+      "\\b(?:cleveref|hyperref|glossar\\w*|acronyms?|bookmarks?|tocloft|imakeidx)\\b",
+      "(?:figure|section|table|equation).{0,8}\\?\\?|clickable\\s+contents|(?:label|ref)\\s+repair"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "(?:undefined|missing)\\s+citation|biblatex|natbib"
+    ],
+    "priority": 235
+  },
+  {
+    "id": "artifact-artifact-macros",
+    "primary": "latex-custom-macros",
+    "support": [],
+    "when_any": [
+      "\\b(?:newcommand|renewcommand|newdocumentcommand|providecommand)\\b",
+      "\\.sty\\b|\\.cls\\b|(?:custom|reusable).{0,20}(?:macro|environment|command|class|package)",
+      "package.{0,30}(?:definition|theorem|colored|repeated).{0,15}boxes"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 245
+  },
+  {
+    "id": "artifact-artifact-builder",
+    "primary": "latex-document-builder",
+    "support": [],
+    "when_any": [
+      "(?:make|create|build).{0,20}(?:complete\\s+)?latex\\s+(?:document|template)|(?:outline|supplied\\s+text).{0,50}(?:article.class|\\.tex|latex\\s+document)"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "\\b(?:thesis|dissertation|beamer|poster|research\\s+paper|manuscript|preprint|letter|report|manual|resume|curriculum|cv|book|textbook|exam|certificate)\\b"
+    ],
+    "priority": 150
+  },
+  {
+    "id": "artifact-artifact-transcribe-math",
+    "primary": "latex-equation-converter",
+    "support": [],
+    "when_any": [
+      "transcrib.{0,55}(?:equation|formula|matrix|math)|(?:equation|formula|math).{0,30}(?:screenshot|image|handwrit|photo|spoken|word\\s+equation)",
+      "(?:screenshot|handwrit|photo|image).{0,50}(?:equation|math|matrix)|(?:read|convert).{0,25}equation.{0,45}(?:katex|mathjax|anki|notion)"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 275
+  },
+  {
+    "id": "artifact-artifact-compile-error",
+    "primary": "latex-error-fixer",
+    "support": [],
+    "when_any": [
+      "undefined\\s+control\\s+sequence|runaway\\s+argument|missing\\s+\\$|option\\s+clash|emergency\\s+stop|misplaced\\s+alignment|overfull\\s+\\\\?hbox",
+      "(?:build|compil\\w*|overleaf).{0,25}(?:stop|fail|error|warning)|(?:fix|diagnos\\w*).{0,20}latex\\s+(?:error|warning)"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "(?:undefined|missing).{0,15}citation\\s+keys"
+    ],
+    "priority": 270
+  },
+  {
+    "id": "artifact-artifact-figures",
+    "primary": "latex-figures-images",
+    "support": [],
+    "when_any": [
+      "\\b(?:subfigures?|wrapfig|placeins)\\b|figure\\s+placement|float\\s+placement",
+      "(?:insert|place|include|arrange).{0,40}(?:figures?|images?|chart\\s+pdf|pdf\\s+figures?)"
+    ],
+    "when_all": [
+      "\\b(?:latex|overleaf|tex|pdflatex|xelatex|lualatex|beamer|tikz|bibtex|biblatex|natbib|biber|pgfplots)\\b|\\.tex\\b|(?:side\\s+by\\s+side|caption\\s+and\\s+label)"
+    ],
+    "unless_any": [
+      "(?:redesign|uncertainty\\s+encoding)"
+    ],
+    "priority": 225
+  },
+  {
+    "id": "artifact-artifact-convert-documents",
+    "primary": "latex-format-conversion",
+    "support": [],
+    "when_any": [
+      "\\bpandoc\\b|\\bmake4ht\\b|\\blatexml\\b",
+      "convert.{0,65}(?:latex|\\.tex).{0,35}(?:word|docx|html|markdown)|convert.{0,35}(?:docx|word|markdown|html|google\\s+docs).{0,40}latex"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "(?:equation|formula|handwrit)|(?:csv|excel).{0,30}(?:table|longtable)"
+    ],
+    "priority": 250
+  },
+  {
+    "id": "artifact-artifact-exams",
+    "primary": "latex-homework-exams",
+    "support": [],
+    "when_any": [
+      "\\b(?:exam\\s+class|printanswers|gradetable|answer\\s+key|problem\\s+set|worksheet|quiz)\\b",
+      "printable\\s+exam|exam.{0,30}(?:point|solution|grading)"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 235
+  },
+  {
+    "id": "artifact-artifact-venue-format",
+    "primary": "latex-journal-templates",
+    "support": [],
+    "when_any": [
+      "\\b(?:ieeetran|acmart|llncs|sn.jnl|elsarticle|revtex|camera.ready|double.blind)\\b",
+      "(?:official|journal|conference).{0,20}template"
+    ],
+    "when_all": [
+      "\\b(?:latex|overleaf|tex|pdflatex|xelatex|lualatex|beamer|tikz|bibtex|biblatex|natbib|biber|pgfplots)\\b|\\.tex\\b|(?:format|template|move\\s+my\\s+manuscript)"
+    ],
+    "unless_any": [
+      "(?:choose|select|which|suitable|recommend).{0,30}journal"
+    ],
+    "priority": 250
+  },
+  {
+    "id": "artifact-artifact-cleanup",
+    "primary": "latex-latex-cleanup",
+    "support": [],
+    "when_any": [
+      "(?:moderniz\\w*|clean\\s*up|refactor|organize|tidy).{0,35}(?:preamble|\\.tex|latex)|(?:obsolete|duplicate|conflicting)\\s+packages"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 245
+  },
+  {
+    "id": "artifact-artifact-help",
+    "primary": "latex-latex-help",
+    "support": [],
+    "when_any": [
+      "(?:what\\s+can|features|menu|how\\s+(?:should\\s+i|to)\\s+start).{0,30}latex|latex\\s+document\\s+maker.{0,35}(?:do|features|help|start)|what\\s+can\\s+latex\\s+document\\s+maker"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 175
+  },
+  {
+    "id": "artifact-artifact-proofread-tex",
+    "primary": "latex-latex-proofreading",
+    "support": [],
+    "when_any": [
+      "\\b(?:proofread|copyedit|grammar|polish|edit)\\b"
+    ],
+    "when_all": [
+      "\\b(?:latex|overleaf|tex|pdflatex|xelatex|lualatex|beamer|tikz|bibtex|biblatex|natbib|biber|pgfplots)\\b|\\.tex\\b",
+      "prose|grammar|writing|text|tone|copyedit|proofread"
+    ],
+    "unless_any": [
+      "\\b(?:preamble|obsolete\\s+packages|compile\\s+error)\\b"
+    ],
+    "priority": 245
+  },
+  {
+    "id": "artifact-artifact-studio",
+    "primary": "latex-latex-studio",
+    "support": [],
+    "when_any": [
+      "\\b(?:latex|overleaf|tex|pdflatex|xelatex|lualatex|beamer|tikz|bibtex|biblatex|natbib|biber|pgfplots)\\b|\\.tex\\b"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "\\b(?:thank|hello|hi)\\b",
+      "coordinate.{0,70}(?:research|literature)|literature.{0,35}analysis.{0,35}(?:latex|slides)"
+    ],
+    "priority": 80
+  },
+  {
+    "id": "artifact-artifact-letters",
+    "primary": "latex-letters",
+    "support": [],
+    "when_any": [
+      "\\b(?:cover|motivation|recommendation|formal|business)\\s+letter\\b|letterhead"
+    ],
+    "when_all": [
+      "\\b(?:latex|overleaf|tex|pdflatex|xelatex|lualatex|beamer|tikz|bibtex|biblatex|natbib|biber|pgfplots)\\b|\\.tex\\b"
+    ],
+    "unless_any": [],
+    "priority": 230
+  },
+  {
+    "id": "artifact-artifact-math-typesetting",
+    "primary": "latex-math-equations",
+    "support": [],
+    "when_any": [
+      "\\b(?:align|aligned|matrix|cases|piecewise|equations?|math|formula|subequations)\\b"
+    ],
+    "when_all": [
+      "\\b(?:latex|overleaf|tex|pdflatex|xelatex|lualatex|beamer|tikz|bibtex|biblatex|natbib|biber|pgfplots)\\b|\\.tex\\b|typeset.{0,30}(?:expression|derivation)|equation\\s+numbers"
+    ],
+    "unless_any": [
+      "transcrib|handwrit|screenshot|(?:image|photo).{0,25}(?:equation|math)|\\b(?:amsthm|newtheorem|restatable|qed)\\b"
+    ],
+    "priority": 205
+  },
+  {
+    "id": "artifact-artifact-multilingual",
+    "primary": "latex-multilingual-fonts",
+    "support": [],
+    "when_any": [
+      "\\b(?:fontspec|polyglossia|babelprovide|babelfont|ctex|xecjk|luatexja|kotex|bidi|nastaliq)\\b",
+      "\\b(?:arabic|urdu|persian|hebrew|chinese|japanese|korean|devanagari|cyrillic)\\b"
+    ],
+    "when_all": [
+      "\\b(?:latex|overleaf|tex|pdflatex|xelatex|lualatex|beamer|tikz|bibtex|biblatex|natbib|biber|pgfplots)\\b|\\.tex\\b"
+    ],
+    "unless_any": [],
+    "priority": 255
+  },
+  {
+    "id": "artifact-artifact-page-layout",
+    "primary": "latex-page-formatting",
+    "support": [],
+    "when_any": [
+      "\\b(?:margins?|fancyhdr|geometry|double\\s+spacing|line\\s+spacing|page\\s+numbers?|headers?\\s+and\\s+footers?|title\\s+page|paper\\s+size)\\b|(?:set\\s+a4|top\\s+right)"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "\\b(?:thesis|dissertation|beamerposter|tikzposter|certificate)\\b"
+    ],
+    "priority": 180
+  },
+  {
+    "id": "artifact-artifact-pgfplots",
+    "primary": "latex-pgfplots-charts",
+    "support": [
+      "visuals-scientific-visual-table-style"
+    ],
+    "when_any": [
+      "\\b(?:pgfplots|pgfplotstable|semilogyaxis|loglogaxis|addplot3|addplot)\\b",
+      "(?:plot|chart|histogram|scatter).{0,35}(?:latex|csv|error\\s+bars|logarithmic)"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "(?:flowchart|state.transition|branching|network|named\\s+nodes)",
+      "(?:insert|place|include).{0,35}(?:existing|pdf|image|figure)|existing\\s+chart"
+    ],
+    "priority": 260
+  },
+  {
+    "id": "artifact-artifact-reports",
+    "primary": "latex-reports-manuals",
+    "support": [],
+    "when_any": [
+      "\\b(?:manual|white\\s+paper|invoice|memo|minutes|lab\\s+report|technical\\s+report|project\\s+report)\\b",
+      "(?:typeset|create|build|write|format).{0,55}(?:\\breport\\b|\\bproposal\\b)"
+    ],
+    "when_all": [
+      "\\b(?:latex|overleaf|tex|pdflatex|xelatex|lualatex|beamer|tikz|bibtex|biblatex|natbib|biber|pgfplots)\\b|\\.tex\\b"
+    ],
+    "unless_any": [
+      "\\b(?:research\\s+paper|preprint|thesis|dissertation)\\b"
+    ],
+    "priority": 190
+  },
+  {
+    "id": "artifact-artifact-paper",
+    "primary": "latex-research-paper",
+    "support": [],
+    "when_any": [
+      "\\b(?:research\\s+paper|manuscript|preprint|theoretical\\s+paper|scientific\\s+paper)\\b"
+    ],
+    "when_all": [
+      "\\b(?:latex|overleaf|tex|pdflatex|xelatex|lualatex|beamer|tikz|bibtex|biblatex|natbib|biber|pgfplots)\\b|\\.tex\\b"
+    ],
+    "unless_any": [
+      "convert|grammar|copyedit|proofread|polish|preamble|(?:undefined|missing)\\s+citation|official|template|class|double.blind|camera.ready",
+      "house\\s+voice|exemplar|reader.first|read.only|review.only|number.relocation"
+    ],
+    "priority": 190
+  },
+  {
+    "id": "artifact-artifact-cv",
+    "primary": "latex-resume-cv",
+    "support": [],
+    "when_any": [
+      "\\b(?:resume|cv|curriculum\\s+vitae|moderncv)\\b"
+    ],
+    "when_all": [
+      "\\b(?:latex|overleaf|tex|pdflatex|xelatex|lualatex|beamer|tikz|bibtex|biblatex|natbib|biber|pgfplots)\\b|\\.tex\\b"
+    ],
+    "unless_any": [
+      "\\b(?:cover|motivation|recommendation)\\s+letter\\b"
+    ],
+    "priority": 235
+  },
+  {
+    "id": "artifact-artifact-science-notation",
+    "primary": "latex-science-notation",
+    "support": [],
+    "when_any": [
+      "\\b(?:siunitx|mhchem|chemfig|braket|bra.ket|tikz.feynman|circuitikz)\\b",
+      "(?:typeset|notation).{0,30}(?:ionic\\s+reactions|chemical|quantum\\s+states|units)"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 265
+  },
+  {
+    "id": "artifact-artifact-setup",
+    "primary": "latex-setup-compiling",
+    "support": [],
+    "when_any": [
+      "(?:which|choose).{0,15}(?:engine|compiler)|latexmk\\s+command|build\\s+sequence|bibliography\\s+build\\s+sequence",
+      "(?:set\\s*up|install).{0,25}(?:latex|overleaf|tex\\s+live|miktex|mactex)|compil\\w*\\s+is\\s+slow"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "undefined\\s+control|runaway\\s+argument|(?:compil\\w*|build|overleaf).{0,20}(?:error|fail|stop)"
+    ],
+    "priority": 260
+  },
+  {
+    "id": "artifact-artifact-tables",
+    "primary": "latex-tables",
+    "support": [],
+    "when_any": [
+      "\\b(?:longtable|booktabs|tabularx|multirow|multicolumn|threeparttable)\\b",
+      "latex\\s+table|table\\s+(?:in|into)\\s+latex|(?:csv|excel).{0,25}(?:decimal\\s+columns|s\\s+columns)"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 255
+  },
+  {
+    "id": "artifact-artifact-theorems",
+    "primary": "latex-theorems-proofs",
+    "support": [],
+    "when_any": [
+      "\\b(?:amsthm|newtheorem|restatable|qedhere|qed)\\b|(?:theorem|lemma).{0,25}(?:counter|numbering|environment)|shared.{0,20}(?:theorem|lemma)"
+    ],
+    "when_all": [],
+    "unless_any": [],
+    "priority": 255
+  },
+  {
+    "id": "artifact-artifact-thesis",
+    "primary": "latex-thesis-dissertation",
+    "support": [],
+    "when_any": [
+      "\\b(?:thesis|dissertation)\\b"
+    ],
+    "when_all": [
+      "\\b(?:latex|overleaf|tex|pdflatex|xelatex|lualatex|beamer|tikz|bibtex|biblatex|natbib|biber|pgfplots)\\b|\\.tex\\b|(?:university|institution).{0,20}template|roman\\s+front\\s+matter"
+    ],
+    "unless_any": [
+      "(?:research\\s+milestones|research\\s+timeline|weekly\\s+plan|supervisor\\s+meeting|align.{0,35}questions.{0,20}methods)"
+    ],
+    "priority": 245
+  },
+  {
+    "id": "artifact-artifact-tikz-diagram",
+    "primary": "latex-tikz-diagrams",
+    "support": [
+      "visuals-scientific-visual-table-style"
+    ],
+    "when_any": [
+      "\\btikz\\b|tikz.cd|standalone.{0,30}(?:workflow|diagram)|(?:flowchart|state.transition|network).{0,30}(?:nodes|arrows)"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "pgfplots|pgfplotstable|circuitikz|tikz.feynman|beamerposter|tikzposter|certificate|flyer"
+    ],
+    "priority": 245
+  },
+  {
+    "id": "artifact-artifact-presentation",
+    "primary": "academic-pptx",
+    "support": [
+      "scholar-research-communication"
+    ],
+    "when_any": [
+      "\\b(?:powerpoint|pptx|conference\\s+talk|seminar\\s+deck|academic\\s+deck|research\\s+presentation|defen[cs]e\\s+slides)\\b",
+      "(?:slides?|deck).{0,30}(?:argument|action\\s+titles|evidence|q.?a)|(?:presentation|talk)\\s+for\\s+(?:my\\s+)?(?:paper|dissertation|research)"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "\\bbeamer\\b|beamerposter|tikzposter|\\bposter\\b|latex\\s+(?:slides|talk|presentation)"
+    ],
+    "priority": 230
+  },
+  {
+    "id": "artifact-artifact-scientific-visuals",
+    "primary": "visuals-scientific-visual-table-style",
+    "support": [],
+    "when_any": [
+      "\\b(?:scientific|benchmark|quantitative|research|data.analysis)\\b.{0,30}\\b(?:figures?|plots?|charts?|tables?|visual)\\b",
+      "\\bscatter\\s*plots?\\b",
+      "(?:uncertainty\\s+encodings?|calibration\\s+plot|pareto\\s+frontier|final\\s+size.{0,20}(?:figure|plot)|redesign.{0,30}(?:plots?|tables?))"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "\\b(?:pgfplots|pgfplotstable|longtable|booktabs|tabularx)\\b|(?:insert|place|include).{0,25}(?:existing|pdf|image|figure)|\\b(?:photorealistic|artwork|generative\\s+image)\\b"
+    ],
+    "priority": 215
+  },
+  {
+    "id": "artifact-artifact-boundary-thesis-planning",
+    "primary": "scholar-thesis-dissertation",
+    "support": [],
+    "when_any": [
+      "\\b(?:thesis|dissertation)\\b"
+    ],
+    "when_all": [
+      "chapter\\s+(?:plan|outline|structure)|organize\\s+chapters|align.{0,40}(?:question|method)|supervisor\\s+feedback|viva|defen[cs]e\\s+prepar"
+    ],
+    "unless_any": [
+      "latex|\\.tex|university\\s+template|roman\\s+front\\s+matter"
+    ],
+    "priority": 200
+  },
+  {
+    "id": "artifact-artifact-boundary-real-references",
+    "primary": "evidence-source-verification",
+    "support": [],
+    "when_any": [
+      "(?:check|verify|confirm).{0,60}(?:real|authentic|fabricat|retract)|(?:doi|citation|references?).{0,35}correspond.{0,20}real"
+    ],
+    "when_all": [
+      "doi|citation|references?|papers?|sources?"
+    ],
+    "unless_any": [],
+    "priority": 225
+  },
+  {
+    "id": "artifact-artifact-boundary-consent-content",
+    "primary": "scholar-research-ethics",
+    "support": [],
+    "when_any": [
+      "informed[ -]consent|participant\\s+information|ethics\\s+application|\\birb\\b"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "latex|\\.tex|typeset\\s+supplied"
+    ],
+    "priority": 210
+  },
+  {
+    "id": "evidence-structured-question-before-query",
+    "primary": "evidence-research-question",
+    "support": [
+      "evidence-search-strings"
+    ],
+    "when_any": [
+      "question.{0,60}(pico|peo|pcc|spider).{0,35}(concepts|synonym)"
+    ],
+    "when_all": [],
+    "unless_any": [
+      "boolean|database.specific|exact search strings|systematic.review protocol"
+    ],
+    "priority": 175
+  }
+]

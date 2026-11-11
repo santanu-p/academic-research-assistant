@@ -1,5 +1,5 @@
 ---
-name: academic-research-assistant
+name: academic-research-assistant-full
 description: Use specialist academic research, evidence, writing, analysis and artifact workflows from a portable local bundle.
 ---
 

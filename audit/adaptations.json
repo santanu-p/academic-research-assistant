@@ -1,0 +1,717 @@
+[
+  {
+    "skill": "latex-academic-poster",
+    "changes": [
+      "Unique portable name: latex-academic-poster"
+    ]
+  },
+  {
+    "skill": "latex-algorithms-code",
+    "changes": [
+      "Unique portable name: latex-algorithms-code"
+    ]
+  },
+  {
+    "skill": "latex-beamer-slides",
+    "changes": [
+      "Unique portable name: latex-beamer-slides"
+    ]
+  },
+  {
+    "skill": "latex-bibliography-citations",
+    "changes": [
+      "Unique portable name: latex-bibliography-citations"
+    ]
+  },
+  {
+    "skill": "latex-books-notes",
+    "changes": [
+      "Unique portable name: latex-books-notes"
+    ]
+  },
+  {
+    "skill": "latex-certificates-flyers",
+    "changes": [
+      "Unique portable name: latex-certificates-flyers"
+    ]
+  },
+  {
+    "skill": "latex-cross-references-links",
+    "changes": [
+      "Unique portable name: latex-cross-references-links"
+    ]
+  },
+  {
+    "skill": "latex-custom-macros",
+    "changes": [
+      "Unique portable name: latex-custom-macros"
+    ]
+  },
+  {
+    "skill": "latex-document-builder",
+    "changes": [
+      "Unique portable name: latex-document-builder"
+    ]
+  },
+  {
+    "skill": "latex-equation-converter",
+    "changes": [
+      "Unique portable name: latex-equation-converter"
+    ]
+  },
+  {
+    "skill": "latex-error-fixer",
+    "changes": [
+      "Unique portable name: latex-error-fixer"
+    ]
+  },
+  {
+    "skill": "latex-figures-images",
+    "changes": [
+      "Unique portable name: latex-figures-images"
+    ]
+  },
+  {
+    "skill": "latex-format-conversion",
+    "changes": [
+      "Unique portable name: latex-format-conversion"
+    ]
+  },
+  {
+    "skill": "latex-homework-exams",
+    "changes": [
+      "Unique portable name: latex-homework-exams"
+    ]
+  },
+  {
+    "skill": "latex-journal-templates",
+    "changes": [
+      "Unique portable name: latex-journal-templates"
+    ]
+  },
+  {
+    "skill": "latex-latex-cleanup",
+    "changes": [
+      "Unique portable name: latex-latex-cleanup"
+    ]
+  },
+  {
+    "skill": "latex-latex-help",
+    "changes": [
+      "Unique portable name: latex-latex-help"
+    ]
+  },
+  {
+    "skill": "latex-latex-proofreading",
+    "changes": [
+      "Unique portable name: latex-latex-proofreading"
+    ]
+  },
+  {
+    "skill": "latex-latex-studio",
+    "changes": [
+      "Unique portable name: latex-latex-studio",
+      "Scoped global activation to relevant tasks; absent promotional footer not fabricated"
+    ]
+  },
+  {
+    "skill": "latex-letters",
+    "changes": [
+      "Unique portable name: latex-letters"
+    ]
+  },
+  {
+    "skill": "latex-math-equations",
+    "changes": [
+      "Unique portable name: latex-math-equations"
+    ]
+  },
+  {
+    "skill": "latex-multilingual-fonts",
+    "changes": [
+      "Unique portable name: latex-multilingual-fonts"
+    ]
+  },
+  {
+    "skill": "latex-page-formatting",
+    "changes": [
+      "Unique portable name: latex-page-formatting"
+    ]
+  },
+  {
+    "skill": "latex-pgfplots-charts",
+    "changes": [
+      "Unique portable name: latex-pgfplots-charts"
+    ]
+  },
+  {
+    "skill": "latex-reports-manuals",
+    "changes": [
+      "Unique portable name: latex-reports-manuals"
+    ]
+  },
+  {
+    "skill": "latex-research-paper",
+    "changes": [
+      "Unique portable name: latex-research-paper"
+    ]
+  },
+  {
+    "skill": "latex-resume-cv",
+    "changes": [
+      "Unique portable name: latex-resume-cv"
+    ]
+  },
+  {
+    "skill": "latex-science-notation",
+    "changes": [
+      "Unique portable name: latex-science-notation"
+    ]
+  },
+  {
+    "skill": "latex-setup-compiling",
+    "changes": [
+      "Unique portable name: latex-setup-compiling"
+    ]
+  },
+  {
+    "skill": "latex-tables",
+    "changes": [
+      "Unique portable name: latex-tables"
+    ]
+  },
+  {
+    "skill": "latex-theorems-proofs",
+    "changes": [
+      "Unique portable name: latex-theorems-proofs"
+    ]
+  },
+  {
+    "skill": "latex-thesis-dissertation",
+    "changes": [
+      "Unique portable name: latex-thesis-dissertation"
+    ]
+  },
+  {
+    "skill": "latex-tikz-diagrams",
+    "changes": [
+      "Unique portable name: latex-tikz-diagrams"
+    ]
+  },
+  {
+    "skill": "guardrails-compag-elsevier-paper-editing",
+    "changes": [
+      "Unique portable name: guardrails-compag-elsevier-paper-editing"
+    ]
+  },
+  {
+    "skill": "guardrails-research-problem-mechanism-evidence",
+    "changes": [
+      "Unique portable name: guardrails-research-problem-mechanism-evidence"
+    ]
+  },
+  {
+    "skill": "evidence-citation-chaining",
+    "changes": [
+      "Unique portable name: evidence-citation-chaining"
+    ]
+  },
+  {
+    "skill": "evidence-citations-and-references",
+    "changes": [
+      "Unique portable name: evidence-citations-and-references"
+    ]
+  },
+  {
+    "skill": "evidence-claim-checker",
+    "changes": [
+      "Unique portable name: evidence-claim-checker"
+    ]
+  },
+  {
+    "skill": "evidence-compare-studies",
+    "changes": [
+      "Unique portable name: evidence-compare-studies"
+    ]
+  },
+  {
+    "skill": "evidence-data-extraction",
+    "changes": [
+      "Unique portable name: evidence-data-extraction"
+    ]
+  },
+  {
+    "skill": "evidence-database-guide",
+    "changes": [
+      "Unique portable name: evidence-database-guide"
+    ]
+  },
+  {
+    "skill": "evidence-debate-and-argument-evidence",
+    "changes": [
+      "Unique portable name: evidence-debate-and-argument-evidence"
+    ]
+  },
+  {
+    "skill": "evidence-decision-evidence",
+    "changes": [
+      "Unique portable name: evidence-decision-evidence"
+    ]
+  },
+  {
+    "skill": "evidence-evidence-answer",
+    "changes": [
+      "Unique portable name: evidence-evidence-answer"
+    ]
+  },
+  {
+    "skill": "evidence-evidence-based-writing",
+    "changes": [
+      "Unique portable name: evidence-evidence-based-writing"
+    ]
+  },
+  {
+    "skill": "evidence-evidence-help",
+    "changes": [
+      "Unique portable name: evidence-evidence-help"
+    ]
+  },
+  {
+    "skill": "evidence-evidence-meter",
+    "changes": [
+      "Unique portable name: evidence-evidence-meter"
+    ]
+  },
+  {
+    "skill": "evidence-field-guides",
+    "changes": [
+      "Unique portable name: evidence-field-guides"
+    ]
+  },
+  {
+    "skill": "evidence-find-studies",
+    "changes": [
+      "Unique portable name: evidence-find-studies"
+    ]
+  },
+  {
+    "skill": "evidence-literature-review",
+    "changes": [
+      "Unique portable name: evidence-literature-review"
+    ]
+  },
+  {
+    "skill": "evidence-meta-analysis",
+    "changes": [
+      "Unique portable name: evidence-meta-analysis"
+    ]
+  },
+  {
+    "skill": "evidence-open-access-full-text",
+    "changes": [
+      "Unique portable name: evidence-open-access-full-text"
+    ]
+  },
+  {
+    "skill": "evidence-paper-summary",
+    "changes": [
+      "Unique portable name: evidence-paper-summary"
+    ]
+  },
+  {
+    "skill": "evidence-plain-language-research",
+    "changes": [
+      "Unique portable name: evidence-plain-language-research"
+    ]
+  },
+  {
+    "skill": "evidence-research-evidence-finder",
+    "changes": [
+      "Unique portable name: evidence-research-evidence-finder",
+      "Scoped global activation to relevant tasks; absent promotional footer not fabricated"
+    ]
+  },
+  {
+    "skill": "evidence-research-gaps",
+    "changes": [
+      "Unique portable name: evidence-research-gaps"
+    ]
+  },
+  {
+    "skill": "evidence-research-proposal-background",
+    "changes": [
+      "Unique portable name: evidence-research-proposal-background"
+    ]
+  },
+  {
+    "skill": "evidence-research-question",
+    "changes": [
+      "Unique portable name: evidence-research-question"
+    ]
+  },
+  {
+    "skill": "evidence-search-strings",
+    "changes": [
+      "Unique portable name: evidence-search-strings"
+    ]
+  },
+  {
+    "skill": "evidence-source-verification",
+    "changes": [
+      "Unique portable name: evidence-source-verification"
+    ]
+  },
+  {
+    "skill": "evidence-statistics-explained",
+    "changes": [
+      "Unique portable name: evidence-statistics-explained"
+    ]
+  },
+  {
+    "skill": "evidence-study-appraisal",
+    "changes": [
+      "Unique portable name: evidence-study-appraisal"
+    ]
+  },
+  {
+    "skill": "evidence-study-designs-and-evidence-levels",
+    "changes": [
+      "Unique portable name: evidence-study-designs-and-evidence-levels"
+    ]
+  },
+  {
+    "skill": "evidence-systematic-review",
+    "changes": [
+      "Unique portable name: evidence-systematic-review"
+    ]
+  },
+  {
+    "skill": "scholar-abstract-introduction",
+    "changes": [
+      "Unique portable name: scholar-abstract-introduction"
+    ]
+  },
+  {
+    "skill": "scholar-academic-editing",
+    "changes": [
+      "Unique portable name: scholar-academic-editing"
+    ]
+  },
+  {
+    "skill": "scholar-academic-translation",
+    "changes": [
+      "Unique portable name: scholar-academic-translation"
+    ]
+  },
+  {
+    "skill": "scholar-citation-generator",
+    "changes": [
+      "Unique portable name: scholar-citation-generator"
+    ]
+  },
+  {
+    "skill": "scholar-data-analysis-plan",
+    "changes": [
+      "Unique portable name: scholar-data-analysis-plan"
+    ]
+  },
+  {
+    "skill": "scholar-evidence-synthesis",
+    "changes": [
+      "Unique portable name: scholar-evidence-synthesis"
+    ]
+  },
+  {
+    "skill": "scholar-find-sources",
+    "changes": [
+      "Unique portable name: scholar-find-sources"
+    ]
+  },
+  {
+    "skill": "scholar-grant-proposal",
+    "changes": [
+      "Unique portable name: scholar-grant-proposal"
+    ]
+  },
+  {
+    "skill": "scholar-journal-finder",
+    "changes": [
+      "Unique portable name: scholar-journal-finder"
+    ]
+  },
+  {
+    "skill": "scholar-literature-review",
+    "changes": [
+      "Unique portable name: scholar-literature-review"
+    ]
+  },
+  {
+    "skill": "scholar-methodology-design",
+    "changes": [
+      "Unique portable name: scholar-methodology-design"
+    ]
+  },
+  {
+    "skill": "scholar-originality-integrity",
+    "changes": [
+      "Unique portable name: scholar-originality-integrity"
+    ]
+  },
+  {
+    "skill": "scholar-outline-builder",
+    "changes": [
+      "Unique portable name: scholar-outline-builder"
+    ]
+  },
+  {
+    "skill": "scholar-paper-breakdown",
+    "changes": [
+      "Unique portable name: scholar-paper-breakdown"
+    ]
+  },
+  {
+    "skill": "scholar-paper-sections",
+    "changes": [
+      "Unique portable name: scholar-paper-sections"
+    ]
+  },
+  {
+    "skill": "scholar-paperpal-tools",
+    "changes": [
+      "Unique portable name: scholar-paperpal-tools"
+    ]
+  },
+  {
+    "skill": "scholar-paraphrase-summarize",
+    "changes": [
+      "Unique portable name: scholar-paraphrase-summarize"
+    ]
+  },
+  {
+    "skill": "scholar-peer-review-critique",
+    "changes": [
+      "Unique portable name: scholar-peer-review-critique"
+    ]
+  },
+  {
+    "skill": "scholar-qualitative-analysis",
+    "changes": [
+      "Unique portable name: scholar-qualitative-analysis"
+    ]
+  },
+  {
+    "skill": "scholar-research-communication",
+    "changes": [
+      "Unique portable name: scholar-research-communication"
+    ]
+  },
+  {
+    "skill": "scholar-research-ethics",
+    "changes": [
+      "Unique portable name: scholar-research-ethics"
+    ]
+  },
+  {
+    "skill": "scholar-research-gaps",
+    "changes": [
+      "Unique portable name: scholar-research-gaps"
+    ]
+  },
+  {
+    "skill": "scholar-research-planner",
+    "changes": [
+      "Unique portable name: scholar-research-planner"
+    ]
+  },
+  {
+    "skill": "scholar-research-proposal",
+    "changes": [
+      "Unique portable name: scholar-research-proposal"
+    ]
+  },
+  {
+    "skill": "scholar-research-question",
+    "changes": [
+      "Unique portable name: scholar-research-question"
+    ]
+  },
+  {
+    "skill": "scholar-results-interpreter",
+    "changes": [
+      "Unique portable name: scholar-results-interpreter"
+    ]
+  },
+  {
+    "skill": "scholar-reviewer-response",
+    "changes": [
+      "Unique portable name: scholar-reviewer-response"
+    ]
+  },
+  {
+    "skill": "scholar-scholar-help",
+    "changes": [
+      "Unique portable name: scholar-scholar-help"
+    ]
+  },
+  {
+    "skill": "scholar-scholar-studio",
+    "changes": [
+      "Unique portable name: scholar-scholar-studio",
+      "Scoped global activation to relevant tasks; absent promotional footer not fabricated"
+    ]
+  },
+  {
+    "skill": "scholar-source-evaluation",
+    "changes": [
+      "Unique portable name: scholar-source-evaluation"
+    ]
+  },
+  {
+    "skill": "scholar-submission-checklist",
+    "changes": [
+      "Unique portable name: scholar-submission-checklist"
+    ]
+  },
+  {
+    "skill": "scholar-survey-design",
+    "changes": [
+      "Unique portable name: scholar-survey-design"
+    ]
+  },
+  {
+    "skill": "scholar-systematic-review",
+    "changes": [
+      "Unique portable name: scholar-systematic-review"
+    ]
+  },
+  {
+    "skill": "scholar-theoretical-framework",
+    "changes": [
+      "Unique portable name: scholar-theoretical-framework"
+    ]
+  },
+  {
+    "skill": "scholar-thesis-dissertation",
+    "changes": [
+      "Unique portable name: scholar-thesis-dissertation"
+    ]
+  },
+  {
+    "skill": "scholar-word-reduction",
+    "changes": [
+      "Unique portable name: scholar-word-reduction"
+    ]
+  },
+  {
+    "skill": "visuals-scientific-visual-table-style",
+    "changes": [
+      "Unique portable name: visuals-scientific-visual-table-style"
+    ]
+  },
+  {
+    "skill": "academic-humanizer",
+    "changes": [
+      "Unique portable name: academic-humanizer"
+    ]
+  },
+  {
+    "skill": "academic-pptx",
+    "changes": [
+      "Unique portable name: academic-pptx",
+      "Corrected source replacement character in active metadata; actual MIT license retained despite inaccurate upstream frontmatter"
+    ]
+  },
+  {
+    "skill": "arms-brief-expander",
+    "changes": [
+      "Unique portable name: arms-brief-expander"
+    ]
+  },
+  {
+    "skill": "arms-critic-revisor",
+    "changes": [
+      "Unique portable name: arms-critic-revisor"
+    ]
+  },
+  {
+    "skill": "arms-house-style",
+    "changes": [
+      "Unique portable name: arms-house-style"
+    ]
+  },
+  {
+    "skill": "arms-literature-lead",
+    "changes": [
+      "Unique portable name: arms-literature-lead",
+      "Added missing YAML name and description; full original body retained"
+    ]
+  },
+  {
+    "skill": "arms-methodology-architect",
+    "changes": [
+      "Unique portable name: arms-methodology-architect"
+    ]
+  },
+  {
+    "skill": "arms-paper-critic",
+    "changes": [
+      "Unique portable name: arms-paper-critic",
+      "Added missing YAML name and description; full original body retained"
+    ]
+  },
+  {
+    "skill": "arms-paper-fixer",
+    "changes": [
+      "Unique portable name: arms-paper-fixer",
+      "Added missing YAML name and description; full original body retained"
+    ]
+  },
+  {
+    "skill": "arms-paper-grader",
+    "changes": [
+      "Unique portable name: arms-paper-grader",
+      "Added missing YAML name and description; full original body retained"
+    ]
+  },
+  {
+    "skill": "arms-paper-modeler",
+    "changes": [
+      "Unique portable name: arms-paper-modeler",
+      "Added missing YAML name and description; full original body retained"
+    ]
+  },
+  {
+    "skill": "arms-paper-writer",
+    "changes": [
+      "Unique portable name: arms-paper-writer",
+      "Added missing YAML name and description; full original body retained"
+    ]
+  },
+  {
+    "skill": "arms-research-pipeline",
+    "changes": [
+      "Unique portable name: arms-research-pipeline",
+      "Added missing YAML name and description; full original body retained"
+    ]
+  },
+  {
+    "skill": "arms-validate-method",
+    "changes": [
+      "Unique portable name: arms-validate-method",
+      "Added missing YAML name and description; full original body retained"
+    ]
+  },
+  {
+    "skill": "arms-write-manuscript",
+    "changes": [
+      "Unique portable name: arms-write-manuscript",
+      "Added missing YAML name and description; full original body retained"
+    ]
+  },
+  {
+    "skill": "humanizer",
+    "changes": [
+      "Unique portable name: humanizer"
+    ]
+  }
+]

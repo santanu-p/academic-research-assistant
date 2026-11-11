@@ -1,0 +1,26 @@
+{
+  "author": {
+    "name": "ANDONG HUANG"
+  },
+  "description": "Research reasoning and scientific writing skills for problem-mechanism-evidence alignment and evidence-bounded Elsevier/COMPAG manuscript editing.",
+  "interface": {
+    "capabilities": [
+      "Research analysis Scientific writing Claim auditing Manuscript editing"
+    ],
+    "category": "Education & Research",
+    "composerIcon": "./.codex-plugin/assets/composer-icon.png",
+    "defaultPrompt": [
+      "Audit this technical argument for problem\u2013mechanism\u2013evidence consistency and flag unsupported causal claims.",
+      "Revise this text in concise COMPAG style while preserving technical meaning, frozen data, definitions, and evidence scope.",
+      "Check this manuscript for alignment among Introduction claims, Method mechanisms, experiments, Results, and Conclusion."
+    ],
+    "developerName": "ANDONG HUANG",
+    "displayName": "Research Writing Guardrails",
+    "logo": "./.codex-plugin/assets/logo.png",
+    "longDescription": "Checks technical arguments for problem, mechanism, and evidence alignment, then helps revise scientific manuscripts with evidence-bounded claims, consistent terminology, and concise Elsevier/COMPAG-style prose",
+    "shortDescription": "Research reasoning and writing"
+  },
+  "name": "research-writing-guardrails",
+  "skills": "./skills",
+  "version": "1.0.0"
+}

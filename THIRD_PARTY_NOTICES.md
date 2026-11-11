@@ -1,12 +1,17 @@
-# Third-party materials
+# Third-party notices and distribution scope
 
-This release includes research guidance and utility implementations, plus the following supplied MIT-licensed Humanizer projects. Their original files and notices are retained under `resources/upstream/`, and their complete instructional bodies are available in the two active skills. Active frontmatter is adapted for discovery. The academic project's original `.gitignore` is preserved as `gitignore.original.txt` because npm normalizes that filename. The source-file hashes and destinations are in [the source mapping](docs/humanizer-source-map.json).
+This public package combines original integration code with separately licensed source material. Original notices, README acknowledgments, metadata, licenses and credits remain intact under resources. Active adapted files are identified in the catalog/adaptations audit. No uniform license is applied to the collection. The project maintainer reports that additional permission for this distribution has been obtained; consult each source's terms for component-specific conditions.
 
-- Humanizer: MIT license, Copyright 2025 Siqi Chen; the upstream material acknowledges Wikipedia's Signs of AI writing. See [its license](resources/upstream/humanizer-main/LICENSE) and upstream README.
-- Academic Humanizer: MIT license, Copyright 2026 AIScientists-Dev; its upstream materials acknowledge Humanizer and ARMS. See [its license](resources/upstream/academic-humanizer-main/LICENSE) and upstream README. This grant does not cover separately supplied ARMS files.
+| Source | Supplied license/attribution | Adaptation |
+|---|---|---|
+| ARMS-main | CC BY-NC 4.0, Copyright 2026; source identifies koaeraser/ARMS. [License](https://creativecommons.org/licenses/by-nc/4.0/legalcode) | Namespaced metadata and references, portable integration guidance; active loop patch documented. Retain noncommercial and attribution terms. |
+| academic-humanizer-main | MIT, Copyright 2026 AIScientists-Dev; acknowledges blader/humanizer and ARMS | Portable metadata and integration contract; original examples, acknowledgments and license retained. |
+| academic-pptx-skill-main | MIT LICENSE, Copyright 2026 Gabberflast; original skill metadata also states Proprietary and refers to an absent LICENSE.txt | Preserve the source license and proprietary metadata; the project maintainer reports separate permission for this distribution. |
+| humanizer-main | MIT; original LICENSE and author metadata retained | Unified invocation wrapper; scientific evidence protections apply when combined with research workflows. |
+| latexdocumentmaker | Supplied metadata names Fasih / Syed Fasih Haider Raza Rizvi and links [author terms](https://github.com/Fasih38/plugin-pages/blob/main/terms.md); no license file supplied | Complete source preservation and namespaced skills. Preserve the linked terms; the project maintainer reports separate permission for this distribution. |
+| researchevidencefinder | Fasih / Syed Fasih Haider Raza Rizvi; same linked author terms; no license file supplied | Complete source preservation and namespaced skills. Preserve the linked terms; the project maintainer reports separate permission for this distribution. |
+| scholarresearch | Fasih / Syed Fasih Haider Raza Rizvi; same linked author terms; no license file supplied | Complete source preservation, namespaced skills and scoped activation. Preserve the linked terms; the project maintainer reports separate permission for this distribution. |
+| research-writing-guardrails | Supplied metadata names ANDONG HUANG; **no license file supplied** | Complete preservation and namespaced skills. The project maintainer reports separate permission for this distribution. |
+| scientific-visual-table-style | Supplied metadata names Navish Kumar; **no license file supplied**; the reference corpus describes links and metadata, while plugin icons and logos are included | Complete preservation and namespaced skills. The project maintainer reports separate permission for this distribution; original names and notices remain. |
 
-This release does not redistribute the other supplied source collections, historical research artifacts, reference corpus or restricted helper implementations. Source examples and descriptions of past work remain attributed upstream material, not verified outcomes or claims about this project's users.
-
-Node.js and optional Python libraries are external runtimes/dependencies, not vendored source. Their own licenses apply when obtained. Host names identify interoperability targets and do not imply endorsement.
-
-Do not remove copyright or license notices from third-party material added later. Contributors must identify its origin and compatible distribution terms. Public-domain research concepts and methods must still be described accurately; research sources need appropriate scholarly citation when used.
+This package's additional distribution permission is reported by the project maintainer; it does not change the published source records listed above. Existing service names and logos remain their owners' materials. Authentication, paid accounts, proprietary databases, remote services and host software are not sublicensed by this package.

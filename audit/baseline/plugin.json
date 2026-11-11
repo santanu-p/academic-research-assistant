@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "academic-research-assistant",
+  "version": "1.0.0",
+  "description": "Unified academic, scientific and research workflows from the complete supplied collection, with local capability routing and traceable preserved sources.",
+  "keywords": [
+    "academic",
+    "scientific",
+    "research",
+    "literature",
+    "methodology",
+    "writing",
+    "LaTeX",
+    "reproducibility"
+  ],
+  "extensions": {
+    "com.openai": {
+      "requires_local_executor": true,
+      "onboardingSkill": "./skills/research-assistant/SKILL.md",
+      "interface": {
+        "displayName": "Academic Research Assistant",
+        "shortDescription": "Academic & scientific research",
+        "category": "Education & Research",
+        "longDescription": "117 integrated source skills plus unified routing for literature, methods, analysis, research integrity, academic writing, LaTeX, scientific visuals, presentations and publication. Includes all supplied source files, datasets, scripts, examples and provenance. Optional scientific and document runtimes and authenticated services require separate setup; no external service connection is bundled.",
+        "capabilities": [
+          "Research workflow guidance",
+          "Local capability routing",
+          "Source preservation and integrity checks"
+        ],
+        "defaultPrompt": [
+          "Help me select and run the research workflow for my task.",
+          "Inventory the available capabilities and check local dependencies.",
+          "Review my research evidence and prepare a reproducible manuscript workflow."
+        ]
+      }
+    }
+  }
+}

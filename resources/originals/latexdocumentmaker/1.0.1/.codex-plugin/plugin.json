@@ -1,0 +1,52 @@
+{
+  "author": {
+    "name": "Fasih"
+  },
+  "description": "LaTeX Document Maker: your expert LaTeX engineer and typesetter. Complete, compile-ready documents from a description, research papers, IEEE, ACM, Springer and Elsevier templates, theses, resumes and CVs, cover letters, Beamer slides, posters, math equations, image and handwriting to LaTeX, tables, figures, TikZ diagrams, pgfplots charts, BibTeX and biblatex, cross-references, page formatting, custom macros, compile error fixes, Overleaf setup, homework and exams, books, theorems, algorithms, science notation, multilingual fonts, reports, certificates, format conversion, code cleanup and LaTeX proofreading.",
+  "interface": {
+    "capabilities": [
+      "Builds complete, compile-ready LaTeX documents, papers, theses, reports and books from any description",
+      "Formats papers for IEEE, ACM, Springer, Elsevier, APA and other journal and conference templates",
+      "Creates LaTeX resumes, CVs, cover letters, Beamer slides, academic posters, certificates and flyers",
+      "Writes equations, proofs and algorithms, and converts images, handwriting and Word math into LaTeX",
+      "Makes professional tables, figures, TikZ diagrams, flowcharts and pgfplots charts from your data",
+      "Sets up BibTeX and biblatex citations, cross-references, fonts, languages and page formatting",
+      "Fixes compile errors, cleans up code, proofreads .tex files and converts Word or Markdown to LaTeX"
+    ],
+    "category": "Education & Research",
+    "composerIcon": "./.codex-plugin/assets/composer-icon.png",
+    "composerIconDark": "./.codex-plugin/assets/composer-icon-dark.png",
+    "defaultPrompt": [
+      "Make me a complete LaTeX document from my description",
+      "Convert my text, equation or screenshot into clean LaTeX",
+      "Fix the error in my LaTeX code so it compiles"
+    ],
+    "developerName": "Syed Fasih Haider Raza Rizvi",
+    "displayName": "LaTeX Document Maker",
+    "logo": "./.codex-plugin/assets/logo.png",
+    "logoDark": "./.codex-plugin/assets/logo-dark.png",
+    "longDescription": "Create and fix LaTeX documents for academic, professional, and technical work. Build research papers, theses, resumes, cover letters, Beamer slides, posters, reports, books, exams, equations, tables, figures, TikZ diagrams, pgfplots charts, bibliographies, and journal-formatted documents. Get help with Overleaf setup, cross-references, macros, multilingual typesetting, format conversion, proofreading, code cleanup, and compile-error troubleshooting.",
+    "privacyPolicyURL": "https://github.com/Fasih38/plugin-pages/blob/main/privacy.md",
+    "shortDescription": "Write and fix LaTeX",
+    "supportURL": "https://github.com/Fasih38/plugin-pages/blob/main/support.md",
+    "termsOfServiceURL": "https://github.com/Fasih38/plugin-pages/blob/main/terms.md",
+    "websiteURL": "https://github.com/Fasih38/plugin-pages/blob/main/README.md"
+  },
+  "keywords": [
+    "latex",
+    "overleaf",
+    "latex document",
+    "latex template",
+    "beamer",
+    "tikz",
+    "bibtex",
+    "thesis latex",
+    "latex resume",
+    "latex equations",
+    "latex tables",
+    "latex error"
+  ],
+  "name": "latexdocumentmaker",
+  "skills": "./skills/",
+  "version": "1.0.1"
+}
